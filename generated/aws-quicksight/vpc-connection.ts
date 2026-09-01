@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcVPCConnectionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#availability_status CcVPCConnection#availability_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#availability_status CcVPCConnection#availability_status}
     */
     readonly availabilityStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#aws_account_id CcVPCConnection#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#aws_account_id CcVPCConnection#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#dns_resolvers CcVPCConnection#dns_resolvers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#dns_resolvers CcVPCConnection#dns_resolvers}
     */
     readonly dnsResolvers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#name CcVPCConnection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#name CcVPCConnection#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#role_arn CcVPCConnection#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#role_arn CcVPCConnection#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#security_group_ids CcVPCConnection#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#security_group_ids CcVPCConnection#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#subnet_ids CcVPCConnection#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#subnet_ids CcVPCConnection#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#tags CcVPCConnection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#tags CcVPCConnection#tags}
     */
     readonly tags?: CcVPCConnection.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#vpc_connection_id CcVPCConnection#vpc_connection_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#vpc_connection_id CcVPCConnection#vpc_connection_id}
     */
     readonly vpcConnectionId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection awscc_quicksight_vpc_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection awscc_quicksight_vpc_connection}
 */
 export class CcVPCConnection extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcVPCConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPCConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPCConnection to import
-    * @param importFromId The id of the existing CcVPCConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPCConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPCConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcVPCConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection awscc_quicksight_vpc_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection awscc_quicksight_vpc_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcVPCConnection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_vpc_connection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -507,13 +507,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#key CcVPCConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#key CcVPCConnection#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_vpc_connection#value CcVPCConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_vpc_connection#value CcVPCConnection#value}
     */
     readonly value?: string;
 }

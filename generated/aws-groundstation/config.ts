@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfigProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#config_data CcConfig#config_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#config_data CcConfig#config_data}
     */
     readonly configData: CcConfig.ConfigDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#name CcConfig#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#name CcConfig#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#tags CcConfig#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#tags CcConfig#tags}
     */
     readonly tags?: CcConfig.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config awscc_groundstation_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config awscc_groundstation_config}
 */
 export class CcConfig extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfig to import
-    * @param importFromId The id of the existing CcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config awscc_groundstation_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config awscc_groundstation_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcConfig extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_groundstation_config',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1076,11 +1076,11 @@ export function ccConfigTagPropertyToHclTerraform(struct?: CcConfig.TagProperty 
 export namespace CcConfig {
 export interface FrequencyBandwidthProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -1166,11 +1166,11 @@ export class FrequencyBandwidthPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface FrequencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -1256,15 +1256,15 @@ export class FrequencyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SpectrumConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#bandwidth CcConfig#bandwidth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#bandwidth CcConfig#bandwidth}
     */
     readonly bandwidth?: FrequencyBandwidthProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
     */
     readonly centerFrequency?: FrequencyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
     */
     readonly polarization?: string;
 }
@@ -1372,7 +1372,7 @@ export class SpectrumConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AntennaDownlinkConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
     */
     readonly spectrumConfig?: SpectrumConfigProperty;
 }
@@ -1436,7 +1436,7 @@ export class AntennaDownlinkConfigPropertyOutputReference extends cdktn.ComplexO
 }
 export interface DecodeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#unvalidated_json CcConfig#unvalidated_json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#unvalidated_json CcConfig#unvalidated_json}
     */
     readonly unvalidatedJson?: string;
 }
@@ -1500,7 +1500,7 @@ export class DecodeConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DemodulationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#unvalidated_json CcConfig#unvalidated_json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#unvalidated_json CcConfig#unvalidated_json}
     */
     readonly unvalidatedJson?: string;
 }
@@ -1564,11 +1564,11 @@ export class DemodulationConfigPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface BandwidthProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -1654,11 +1654,11 @@ export class BandwidthPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigCenterFrequencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -1744,15 +1744,15 @@ export class ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigCenterFrequ
 }
 export interface ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#bandwidth CcConfig#bandwidth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#bandwidth CcConfig#bandwidth}
     */
     readonly bandwidth?: BandwidthProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
     */
     readonly centerFrequency?: ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigCenterFrequencyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
     */
     readonly polarization?: string;
 }
@@ -1860,15 +1860,15 @@ export class ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigPropertyOut
 }
 export interface AntennaDownlinkDemodDecodeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#decode_config CcConfig#decode_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#decode_config CcConfig#decode_config}
     */
     readonly decodeConfig?: DecodeConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#demodulation_config CcConfig#demodulation_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#demodulation_config CcConfig#demodulation_config}
     */
     readonly demodulationConfig?: DemodulationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
     */
     readonly spectrumConfig?: ConfigDataAntennaDownlinkDemodDecodeConfigSpectrumConfigProperty;
 }
@@ -1976,11 +1976,11 @@ export class AntennaDownlinkDemodDecodeConfigPropertyOutputReference extends cdk
 }
 export interface ConfigDataAntennaUplinkConfigSpectrumConfigCenterFrequencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -2066,11 +2066,11 @@ export class ConfigDataAntennaUplinkConfigSpectrumConfigCenterFrequencyPropertyO
 }
 export interface UplinkSpectrumConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#center_frequency CcConfig#center_frequency}
     */
     readonly centerFrequency?: ConfigDataAntennaUplinkConfigSpectrumConfigCenterFrequencyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#polarization CcConfig#polarization}
     */
     readonly polarization?: string;
 }
@@ -2156,11 +2156,11 @@ export class UplinkSpectrumConfigPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface EirpProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#units CcConfig#units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#units CcConfig#units}
     */
     readonly units?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: number;
 }
@@ -2246,15 +2246,15 @@ export class EirpPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AntennaUplinkConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#spectrum_config CcConfig#spectrum_config}
     */
     readonly spectrumConfig?: UplinkSpectrumConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#target_eirp CcConfig#target_eirp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#target_eirp CcConfig#target_eirp}
     */
     readonly targetEirp?: EirpProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#transmit_disabled CcConfig#transmit_disabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#transmit_disabled CcConfig#transmit_disabled}
     */
     readonly transmitDisabled?: boolean | cdktn.IResolvable;
 }
@@ -2362,11 +2362,11 @@ export class AntennaUplinkConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface DataflowEndpointConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#dataflow_endpoint_name CcConfig#dataflow_endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#dataflow_endpoint_name CcConfig#dataflow_endpoint_name}
     */
     readonly dataflowEndpointName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#dataflow_endpoint_region CcConfig#dataflow_endpoint_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#dataflow_endpoint_region CcConfig#dataflow_endpoint_region}
     */
     readonly dataflowEndpointRegion?: string;
 }
@@ -2452,15 +2452,15 @@ export class DataflowEndpointConfigPropertyOutputReference extends cdktn.Complex
 }
 export interface S3RecordingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#bucket_arn CcConfig#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#bucket_arn CcConfig#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#prefix CcConfig#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#prefix CcConfig#prefix}
     */
     readonly prefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#role_arn CcConfig#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#role_arn CcConfig#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -2568,11 +2568,11 @@ export class S3RecordingConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface KinesisDataStreamDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#kinesis_data_stream_arn CcConfig#kinesis_data_stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#kinesis_data_stream_arn CcConfig#kinesis_data_stream_arn}
     */
     readonly kinesisDataStreamArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#kinesis_role_arn CcConfig#kinesis_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#kinesis_role_arn CcConfig#kinesis_role_arn}
     */
     readonly kinesisRoleArn?: string;
 }
@@ -2658,7 +2658,7 @@ export class KinesisDataStreamDataPropertyOutputReference extends cdktn.ComplexO
 }
 export interface TelemetrySinkDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#kinesis_data_stream_data CcConfig#kinesis_data_stream_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#kinesis_data_stream_data CcConfig#kinesis_data_stream_data}
     */
     readonly kinesisDataStreamData?: KinesisDataStreamDataProperty;
 }
@@ -2722,11 +2722,11 @@ export class TelemetrySinkDataPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TelemetrySinkConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#telemetry_sink_data CcConfig#telemetry_sink_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#telemetry_sink_data CcConfig#telemetry_sink_data}
     */
     readonly telemetrySinkData?: TelemetrySinkDataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#telemetry_sink_type CcConfig#telemetry_sink_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#telemetry_sink_type CcConfig#telemetry_sink_type}
     */
     readonly telemetrySinkType?: string;
 }
@@ -2812,7 +2812,7 @@ export class TelemetrySinkConfigPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TrackingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#autotrack CcConfig#autotrack}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#autotrack CcConfig#autotrack}
     */
     readonly autotrack?: string;
 }
@@ -2876,11 +2876,11 @@ export class TrackingConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface UplinkEchoConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#antenna_uplink_config_arn CcConfig#antenna_uplink_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#antenna_uplink_config_arn CcConfig#antenna_uplink_config_arn}
     */
     readonly antennaUplinkConfigArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#enabled CcConfig#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#enabled CcConfig#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2966,35 +2966,35 @@ export class UplinkEchoConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ConfigDataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#antenna_downlink_config CcConfig#antenna_downlink_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#antenna_downlink_config CcConfig#antenna_downlink_config}
     */
     readonly antennaDownlinkConfig?: AntennaDownlinkConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#antenna_downlink_demod_decode_config CcConfig#antenna_downlink_demod_decode_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#antenna_downlink_demod_decode_config CcConfig#antenna_downlink_demod_decode_config}
     */
     readonly antennaDownlinkDemodDecodeConfig?: AntennaDownlinkDemodDecodeConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#antenna_uplink_config CcConfig#antenna_uplink_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#antenna_uplink_config CcConfig#antenna_uplink_config}
     */
     readonly antennaUplinkConfig?: AntennaUplinkConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#dataflow_endpoint_config CcConfig#dataflow_endpoint_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#dataflow_endpoint_config CcConfig#dataflow_endpoint_config}
     */
     readonly dataflowEndpointConfig?: DataflowEndpointConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#s3_recording_config CcConfig#s3_recording_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#s3_recording_config CcConfig#s3_recording_config}
     */
     readonly s3RecordingConfig?: S3RecordingConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#telemetry_sink_config CcConfig#telemetry_sink_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#telemetry_sink_config CcConfig#telemetry_sink_config}
     */
     readonly telemetrySinkConfig?: TelemetrySinkConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#tracking_config CcConfig#tracking_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#tracking_config CcConfig#tracking_config}
     */
     readonly trackingConfig?: TrackingConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#uplink_echo_config CcConfig#uplink_echo_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#uplink_echo_config CcConfig#uplink_echo_config}
     */
     readonly uplinkEchoConfig?: UplinkEchoConfigProperty;
 }
@@ -3212,11 +3212,11 @@ export class ConfigDataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#key CcConfig#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#key CcConfig#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/groundstation_config#value CcConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/groundstation_config#value CcConfig#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcResourceSetProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the resource set to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#resource_set_name CcResourceSet#resource_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#resource_set_name CcResourceSet#resource_set_name}
     */
     readonly resourceSetName?: string;
     /**
@@ -17,25 +17,25 @@ export interface CcResourceSetProps extends cdktn.TerraformMetaArguments {
     * 
     * AWS: :AutoScaling: :AutoScalingGroup, AWS: :CloudWatch: :Alarm, AWS: :EC2: :CustomerGateway, AWS: :DynamoDB: :Table, AWS: :EC2: :Volume, AWS: :ElasticLoadBalancing: :LoadBalancer, AWS: :ElasticLoadBalancingV2: :LoadBalancer, AWS: :MSK: :Cluster, AWS: :RDS: :DBCluster, AWS: :Route53: :HealthCheck, AWS: :SQS: :Queue, AWS: :SNS: :Topic, AWS: :SNS: :Subscription, AWS: :EC2: :VPC, AWS: :EC2: :VPNConnection, AWS: :EC2: :VPNGateway, AWS::Route53RecoveryReadiness::DNSTargetResource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#resource_set_type CcResourceSet#resource_set_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#resource_set_type CcResourceSet#resource_set_type}
     */
     readonly resourceSetType: string;
     /**
     * A list of resource objects in the resource set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#resources CcResourceSet#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#resources CcResourceSet#resources}
     */
     readonly resources: CcResourceSet.ResourceProperty[] | cdktn.IResolvable;
     /**
     * A tag to associate with the parameters for a resource set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#tags CcResourceSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#tags CcResourceSet#tags}
     */
     readonly tags?: CcResourceSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set awscc_route53recoveryreadiness_resource_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set awscc_route53recoveryreadiness_resource_set}
 */
 export class CcResourceSet extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcResourceSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceSet to import
-    * @param importFromId The id of the existing CcResourceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcResourceSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set awscc_route53recoveryreadiness_resource_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set awscc_route53recoveryreadiness_resource_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class CcResourceSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53recoveryreadiness_resource_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -463,7 +463,7 @@ export interface NLBResourceProperty {
     /**
     * A Network Load Balancer resource Amazon Resource Name (ARN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#arn CcResourceSet#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#arn CcResourceSet#arn}
     */
     readonly arn?: string;
 }
@@ -529,13 +529,13 @@ export interface R53ResourceRecordProperty {
     /**
     * The DNS target domain name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#domain_name CcResourceSet#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#domain_name CcResourceSet#domain_name}
     */
     readonly domainName?: string;
     /**
     * The Resource Record set id.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#record_set_id CcResourceSet#record_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#record_set_id CcResourceSet#record_set_id}
     */
     readonly recordSetId?: string;
 }
@@ -623,13 +623,13 @@ export interface TargetResourceProperty {
     /**
     * The Network Load Balancer resource that a DNS target resource points to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#nlb_resource CcResourceSet#nlb_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#nlb_resource CcResourceSet#nlb_resource}
     */
     readonly nlbResource?: NLBResourceProperty;
     /**
     * The Route 53 resource that a DNS target resource record points to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#r53_resource CcResourceSet#r53_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#r53_resource CcResourceSet#r53_resource}
     */
     readonly r53Resource?: R53ResourceRecordProperty;
 }
@@ -717,31 +717,31 @@ export interface DNSTargetResourceProperty {
     /**
     * The domain name that acts as an ingress point to a portion of the customer application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#domain_name CcResourceSet#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#domain_name CcResourceSet#domain_name}
     */
     readonly domainName?: string;
     /**
     * The hosted zone Amazon Resource Name (ARN) that contains the DNS record with the provided name of the target resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#hosted_zone_arn CcResourceSet#hosted_zone_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#hosted_zone_arn CcResourceSet#hosted_zone_arn}
     */
     readonly hostedZoneArn?: string;
     /**
     * The Route 53 record set ID that will uniquely identify a DNS record, given a name and a type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#record_set_id CcResourceSet#record_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#record_set_id CcResourceSet#record_set_id}
     */
     readonly recordSetId?: string;
     /**
     * The type of DNS record of the target resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#record_type CcResourceSet#record_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#record_type CcResourceSet#record_type}
     */
     readonly recordType?: string;
     /**
     * The target resource that the Route 53 record points to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#target_resource CcResourceSet#target_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#target_resource CcResourceSet#target_resource}
     */
     readonly targetResource?: TargetResourceProperty;
 }
@@ -895,25 +895,25 @@ export interface ResourceProperty {
     /**
     * The component identifier of the resource, generated when DNS target resource is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#component_id CcResourceSet#component_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#component_id CcResourceSet#component_id}
     */
     readonly componentId?: string;
     /**
     * A component for DNS/routing control readiness checks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#dns_target_resource CcResourceSet#dns_target_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#dns_target_resource CcResourceSet#dns_target_resource}
     */
     readonly dnsTargetResource?: DNSTargetResourceProperty;
     /**
     * A list of recovery group Amazon Resource Names (ARNs) and cell ARNs that this resource is contained within.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#readiness_scopes CcResourceSet#readiness_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#readiness_scopes CcResourceSet#readiness_scopes}
     */
     readonly readinessScopes?: string[];
     /**
     * The Amazon Resource Name (ARN) of the AWS resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#resource_arn CcResourceSet#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#resource_arn CcResourceSet#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -1065,11 +1065,11 @@ export class ResourcePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#key CcResourceSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#key CcResourceSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoveryreadiness_resource_set#value CcResourceSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoveryreadiness_resource_set#value CcResourceSet#value}
     */
     readonly value?: string;
 }

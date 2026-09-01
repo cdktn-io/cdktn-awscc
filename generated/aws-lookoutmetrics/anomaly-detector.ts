@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAnomalyDetectorProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration options for the AnomalyDetector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_config CcAnomalyDetector#anomaly_detector_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_config CcAnomalyDetector#anomaly_detector_config}
     */
     readonly anomalyDetectorConfig: CcAnomalyDetector.AnomalyDetectorConfigProperty;
     /**
     * A description for the AnomalyDetector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_description CcAnomalyDetector#anomaly_detector_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_description CcAnomalyDetector#anomaly_detector_description}
     */
     readonly anomalyDetectorDescription?: string;
     /**
     * Name for the Amazon Lookout for Metrics Anomaly Detector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_name CcAnomalyDetector#anomaly_detector_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_name CcAnomalyDetector#anomaly_detector_name}
     */
     readonly anomalyDetectorName?: string;
     /**
     * KMS key used to encrypt the AnomalyDetector data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#kms_key_arn CcAnomalyDetector#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#kms_key_arn CcAnomalyDetector#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * List of metric sets for anomaly detection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_list CcAnomalyDetector#metric_set_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_list CcAnomalyDetector#metric_set_list}
     */
     readonly metricSetList: CcAnomalyDetector.MetricSetProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector awscc_lookoutmetrics_anomaly_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector awscc_lookoutmetrics_anomaly_detector}
 */
 export class CcAnomalyDetector extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAnomalyDetector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAnomalyDetector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAnomalyDetector to import
-    * @param importFromId The id of the existing CcAnomalyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAnomalyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAnomalyDetector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAnomalyDetector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector awscc_lookoutmetrics_anomaly_detector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector awscc_lookoutmetrics_anomaly_detector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcAnomalyDetector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lookoutmetrics_anomaly_detector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -985,7 +985,7 @@ export interface AnomalyDetectorConfigProperty {
     /**
     * Frequency of anomaly detection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_frequency CcAnomalyDetector#anomaly_detector_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#anomaly_detector_frequency CcAnomalyDetector#anomaly_detector_frequency}
     */
     readonly anomalyDetectorFrequency: string;
 }
@@ -1048,17 +1048,17 @@ export interface MetricProperty {
     /**
     * Operator used to aggregate metric values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#aggregation_function CcAnomalyDetector#aggregation_function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#aggregation_function CcAnomalyDetector#aggregation_function}
     */
     readonly aggregationFunction: string;
     /**
     * Name of a column in the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_name CcAnomalyDetector#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_name CcAnomalyDetector#metric_name}
     */
     readonly metricName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#namespace CcAnomalyDetector#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#namespace CcAnomalyDetector#namespace}
     */
     readonly namespace?: string;
 }
@@ -1182,11 +1182,11 @@ export class MetricPropertyList extends cdktn.ComplexList {
 }
 export interface AppFlowConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#flow_name CcAnomalyDetector#flow_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#flow_name CcAnomalyDetector#flow_name}
     */
     readonly flowName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1272,7 +1272,7 @@ export class AppFlowConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CloudwatchConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1336,11 +1336,11 @@ export class CloudwatchConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface VpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#security_group_id_list CcAnomalyDetector#security_group_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#security_group_id_list CcAnomalyDetector#security_group_id_list}
     */
     readonly securityGroupIdList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#subnet_id_list CcAnomalyDetector#subnet_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#subnet_id_list CcAnomalyDetector#subnet_id_list}
     */
     readonly subnetIdList?: string[];
 }
@@ -1426,35 +1426,35 @@ export class VpcConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RDSSourceConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_host CcAnomalyDetector#database_host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_host CcAnomalyDetector#database_host}
     */
     readonly databaseHost?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_name CcAnomalyDetector#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_name CcAnomalyDetector#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_port CcAnomalyDetector#database_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_port CcAnomalyDetector#database_port}
     */
     readonly databasePort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#db_instance_identifier CcAnomalyDetector#db_instance_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#db_instance_identifier CcAnomalyDetector#db_instance_identifier}
     */
     readonly dbInstanceIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#secret_manager_arn CcAnomalyDetector#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#secret_manager_arn CcAnomalyDetector#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#table_name CcAnomalyDetector#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#table_name CcAnomalyDetector#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#vpc_configuration CcAnomalyDetector#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#vpc_configuration CcAnomalyDetector#vpc_configuration}
     */
     readonly vpcConfiguration?: VpcConfigurationProperty;
 }
@@ -1672,11 +1672,11 @@ export class RDSSourceConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface MetricSetListMetricSourceRedshiftSourceConfigVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#security_group_id_list CcAnomalyDetector#security_group_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#security_group_id_list CcAnomalyDetector#security_group_id_list}
     */
     readonly securityGroupIdList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#subnet_id_list CcAnomalyDetector#subnet_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#subnet_id_list CcAnomalyDetector#subnet_id_list}
     */
     readonly subnetIdList?: string[];
 }
@@ -1762,35 +1762,35 @@ export class MetricSetListMetricSourceRedshiftSourceConfigVpcConfigurationProper
 }
 export interface RedshiftSourceConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#cluster_identifier CcAnomalyDetector#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#cluster_identifier CcAnomalyDetector#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_host CcAnomalyDetector#database_host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_host CcAnomalyDetector#database_host}
     */
     readonly databaseHost?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_name CcAnomalyDetector#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_name CcAnomalyDetector#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#database_port CcAnomalyDetector#database_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#database_port CcAnomalyDetector#database_port}
     */
     readonly databasePort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#secret_manager_arn CcAnomalyDetector#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#secret_manager_arn CcAnomalyDetector#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#table_name CcAnomalyDetector#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#table_name CcAnomalyDetector#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#vpc_configuration CcAnomalyDetector#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#vpc_configuration CcAnomalyDetector#vpc_configuration}
     */
     readonly vpcConfiguration?: MetricSetListMetricSourceRedshiftSourceConfigVpcConfigurationProperty;
 }
@@ -2008,27 +2008,27 @@ export class RedshiftSourceConfigPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface CsvFormatDescriptorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#charset CcAnomalyDetector#charset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#charset CcAnomalyDetector#charset}
     */
     readonly charset?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#contains_header CcAnomalyDetector#contains_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#contains_header CcAnomalyDetector#contains_header}
     */
     readonly containsHeader?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#delimiter CcAnomalyDetector#delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#delimiter CcAnomalyDetector#delimiter}
     */
     readonly delimiter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#file_compression CcAnomalyDetector#file_compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#file_compression CcAnomalyDetector#file_compression}
     */
     readonly fileCompression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#header_list CcAnomalyDetector#header_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#header_list CcAnomalyDetector#header_list}
     */
     readonly headerList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#quote_symbol CcAnomalyDetector#quote_symbol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#quote_symbol CcAnomalyDetector#quote_symbol}
     */
     readonly quoteSymbol?: string;
 }
@@ -2202,11 +2202,11 @@ export class CsvFormatDescriptorPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface JsonFormatDescriptorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#charset CcAnomalyDetector#charset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#charset CcAnomalyDetector#charset}
     */
     readonly charset?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#file_compression CcAnomalyDetector#file_compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#file_compression CcAnomalyDetector#file_compression}
     */
     readonly fileCompression?: string;
 }
@@ -2292,11 +2292,11 @@ export class JsonFormatDescriptorPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface FileFormatDescriptorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#csv_format_descriptor CcAnomalyDetector#csv_format_descriptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#csv_format_descriptor CcAnomalyDetector#csv_format_descriptor}
     */
     readonly csvFormatDescriptor?: CsvFormatDescriptorProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#json_format_descriptor CcAnomalyDetector#json_format_descriptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#json_format_descriptor CcAnomalyDetector#json_format_descriptor}
     */
     readonly jsonFormatDescriptor?: JsonFormatDescriptorProperty;
 }
@@ -2382,19 +2382,19 @@ export class FileFormatDescriptorPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface S3SourceConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#file_format_descriptor CcAnomalyDetector#file_format_descriptor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#file_format_descriptor CcAnomalyDetector#file_format_descriptor}
     */
     readonly fileFormatDescriptor?: FileFormatDescriptorProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#historical_data_path_list CcAnomalyDetector#historical_data_path_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#historical_data_path_list CcAnomalyDetector#historical_data_path_list}
     */
     readonly historicalDataPathList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#role_arn CcAnomalyDetector#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#templated_path_list CcAnomalyDetector#templated_path_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#templated_path_list CcAnomalyDetector#templated_path_list}
     */
     readonly templatedPathList?: string[];
 }
@@ -2524,23 +2524,23 @@ export class S3SourceConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MetricSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#app_flow_config CcAnomalyDetector#app_flow_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#app_flow_config CcAnomalyDetector#app_flow_config}
     */
     readonly appFlowConfig?: AppFlowConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#cloudwatch_config CcAnomalyDetector#cloudwatch_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#cloudwatch_config CcAnomalyDetector#cloudwatch_config}
     */
     readonly cloudwatchConfig?: CloudwatchConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#rds_source_config CcAnomalyDetector#rds_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#rds_source_config CcAnomalyDetector#rds_source_config}
     */
     readonly rdsSourceConfig?: RDSSourceConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#redshift_source_config CcAnomalyDetector#redshift_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#redshift_source_config CcAnomalyDetector#redshift_source_config}
     */
     readonly redshiftSourceConfig?: RedshiftSourceConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#s3_source_config CcAnomalyDetector#s3_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#s3_source_config CcAnomalyDetector#s3_source_config}
     */
     readonly s3SourceConfig?: S3SourceConfigProperty;
 }
@@ -2694,13 +2694,13 @@ export interface TimestampColumnProperty {
     /**
     * A timestamp format for the timestamps in the dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#column_format CcAnomalyDetector#column_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#column_format CcAnomalyDetector#column_format}
     */
     readonly columnFormat?: string;
     /**
     * Name of a column in the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#column_name CcAnomalyDetector#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#column_name CcAnomalyDetector#column_name}
     */
     readonly columnName?: string;
 }
@@ -2788,49 +2788,49 @@ export interface MetricSetProperty {
     /**
     * Dimensions for this MetricSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#dimension_list CcAnomalyDetector#dimension_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#dimension_list CcAnomalyDetector#dimension_list}
     */
     readonly dimensionList?: string[];
     /**
     * Metrics captured by this MetricSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_list CcAnomalyDetector#metric_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_list CcAnomalyDetector#metric_list}
     */
     readonly metricList: MetricProperty[] | cdktn.IResolvable;
     /**
     * A description for the MetricSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_description CcAnomalyDetector#metric_set_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_description CcAnomalyDetector#metric_set_description}
     */
     readonly metricSetDescription?: string;
     /**
     * A frequency period to aggregate the data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_frequency CcAnomalyDetector#metric_set_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_frequency CcAnomalyDetector#metric_set_frequency}
     */
     readonly metricSetFrequency?: string;
     /**
     * The name of the MetricSet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_name CcAnomalyDetector#metric_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_set_name CcAnomalyDetector#metric_set_name}
     */
     readonly metricSetName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#metric_source CcAnomalyDetector#metric_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#metric_source CcAnomalyDetector#metric_source}
     */
     readonly metricSource: MetricSourceProperty;
     /**
     * Offset, in seconds, between the frequency interval and the time at which the metrics are available.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#offset CcAnomalyDetector#offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#offset CcAnomalyDetector#offset}
     */
     readonly offset?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#timestamp_column CcAnomalyDetector#timestamp_column}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#timestamp_column CcAnomalyDetector#timestamp_column}
     */
     readonly timestampColumn?: TimestampColumnProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutmetrics_anomaly_detector#timezone CcAnomalyDetector#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutmetrics_anomaly_detector#timezone CcAnomalyDetector#timezone}
     */
     readonly timezone?: string;
 }

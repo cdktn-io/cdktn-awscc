@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcLocationObjectStorageProps extends cdktn.TerraformMetaArgumen
     /**
     * Optional. The access key is used if credentials are required to access the self-managed object storage server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#access_key CcLocationObjectStorage#access_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#access_key CcLocationObjectStorage#access_key}
     */
     readonly accessKey?: string;
     /**
     * Specifies the Amazon Resource Names (ARNs) of the DataSync agents that can connect with your object storage system. If you are setting up an agentless cross-cloud transfer, you do not need to specify a value for this parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#agent_arns CcLocationObjectStorage#agent_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#agent_arns CcLocationObjectStorage#agent_arns}
     */
     readonly agentArns?: string[];
     /**
     * The name of the bucket on the self-managed object storage server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#bucket_name CcLocationObjectStorage#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#bucket_name CcLocationObjectStorage#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#cmk_secret_config CcLocationObjectStorage#cmk_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#cmk_secret_config CcLocationObjectStorage#cmk_secret_config}
     */
     readonly cmkSecretConfig?: CcLocationObjectStorage.CmkSecretConfigProperty;
     /**
     * Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and an IAM role that DataSync can assume and access the customer-managed secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#custom_secret_config CcLocationObjectStorage#custom_secret_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#custom_secret_config CcLocationObjectStorage#custom_secret_config}
     */
     readonly customSecretConfig?: CcLocationObjectStorage.CustomSecretConfigProperty;
     /**
     * Optional. The secret key is used if credentials are required to access the self-managed object storage server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#secret_key CcLocationObjectStorage#secret_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#secret_key CcLocationObjectStorage#secret_key}
     */
     readonly secretKey?: string;
     /**
     * X.509 PEM content containing a certificate authority or chain to trust.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#server_certificate CcLocationObjectStorage#server_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#server_certificate CcLocationObjectStorage#server_certificate}
     */
     readonly serverCertificate?: string;
     /**
     * The name of the self-managed object storage server. This value is the IP address or Domain Name Service (DNS) name of the object storage server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#server_hostname CcLocationObjectStorage#server_hostname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#server_hostname CcLocationObjectStorage#server_hostname}
     */
     readonly serverHostname?: string;
     /**
     * The port that your self-managed server accepts inbound network traffic on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#server_port CcLocationObjectStorage#server_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#server_port CcLocationObjectStorage#server_port}
     */
     readonly serverPort?: number;
     /**
     * The protocol that the object storage server uses to communicate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#server_protocol CcLocationObjectStorage#server_protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#server_protocol CcLocationObjectStorage#server_protocol}
     */
     readonly serverProtocol?: string;
     /**
     * The subdirectory in the self-managed object storage server that is used to read data from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#subdirectory CcLocationObjectStorage#subdirectory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#subdirectory CcLocationObjectStorage#subdirectory}
     */
     readonly subdirectory?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#tags CcLocationObjectStorage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#tags CcLocationObjectStorage#tags}
     */
     readonly tags?: CcLocationObjectStorage.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage awscc_datasync_location_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage awscc_datasync_location_object_storage}
 */
 export class CcLocationObjectStorage extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcLocationObjectStorage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLocationObjectStorage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLocationObjectStorage to import
-    * @param importFromId The id of the existing CcLocationObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLocationObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLocationObjectStorage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcLocationObjectStorage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage awscc_datasync_location_object_storage} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage awscc_datasync_location_object_storage} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcLocationObjectStorage extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datasync_location_object_storage',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -593,7 +593,7 @@ export interface CmkSecretConfigProperty {
     /**
     * Specifies the ARN for the customer-managed AWS KMS key used to encrypt the secret specified for SecretArn. DataSync provides this key to AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#kms_key_arn CcLocationObjectStorage#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#kms_key_arn CcLocationObjectStorage#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -664,13 +664,13 @@ export interface CustomSecretConfigProperty {
     /**
     * Specifies the ARN for the AWS Identity and Access Management role that DataSync uses to access the secret specified for SecretArn.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#secret_access_role_arn CcLocationObjectStorage#secret_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#secret_access_role_arn CcLocationObjectStorage#secret_access_role_arn}
     */
     readonly secretAccessRoleArn?: string;
     /**
     * Specifies the ARN for a customer created AWS Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#secret_arn CcLocationObjectStorage#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#secret_arn CcLocationObjectStorage#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -791,13 +791,13 @@ export interface TagProperty {
     /**
     * The key for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#key CcLocationObjectStorage#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#key CcLocationObjectStorage#key}
     */
     readonly key?: string;
     /**
     * The value for an AWS resource tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datasync_location_object_storage#value CcLocationObjectStorage#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datasync_location_object_storage#value CcLocationObjectStorage#value}
     */
     readonly value?: string;
 }

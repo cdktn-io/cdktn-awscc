@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcGroupProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * The identifier of the Amazon DataZone domain in which the group profile would be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#domain_identifier CcGroupProfile#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#domain_identifier CcGroupProfile#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The ID of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#group_identifier CcGroupProfile#group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#group_identifier CcGroupProfile#group_identifier}
     */
     readonly groupIdentifier?: string;
     /**
     * The type of the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#group_type CcGroupProfile#group_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#group_type CcGroupProfile#group_type}
     */
     readonly groupType?: string;
     /**
     * The ARN of the role principal for the group profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#role_principal_arn CcGroupProfile#role_principal_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#role_principal_arn CcGroupProfile#role_principal_arn}
     */
     readonly rolePrincipalArn?: string;
     /**
     * The status of the group profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#status CcGroupProfile#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#status CcGroupProfile#status}
     */
     readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile awscc_datazone_group_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile awscc_datazone_group_profile}
 */
 export class CcGroupProfile extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcGroupProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGroupProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGroupProfile to import
-    * @param importFromId The id of the existing CcGroupProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGroupProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGroupProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcGroupProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_group_profile awscc_datazone_group_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_group_profile awscc_datazone_group_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcGroupProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datazone_group_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

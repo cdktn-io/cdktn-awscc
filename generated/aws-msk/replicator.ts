@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcReplicatorProps extends cdktn.TerraformMetaArguments {
     /**
     * A summary description of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#description CcReplicator#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#description CcReplicator#description}
     */
     readonly description?: string;
     /**
     * Specifies a list of Kafka clusters which are targets of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#kafka_clusters CcReplicator#kafka_clusters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#kafka_clusters CcReplicator#kafka_clusters}
     */
     readonly kafkaClusters: CcReplicator.KafkaClusterProperty[] | cdktn.IResolvable;
     /**
     * Configuration for log delivery for the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#log_delivery CcReplicator#log_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#log_delivery CcReplicator#log_delivery}
     */
     readonly logDelivery?: CcReplicator.LogDeliveryProperty;
     /**
     * A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replication_info_list CcReplicator#replication_info_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#replication_info_list CcReplicator#replication_info_list}
     */
     readonly replicationInfoList: CcReplicator.ReplicationInfoProperty[] | cdktn.IResolvable;
     /**
     * The name of the replicator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replicator_name CcReplicator#replicator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#replicator_name CcReplicator#replicator_name}
     */
     readonly replicatorName: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM role used by the replicator to access external resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#service_execution_role_arn CcReplicator#service_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#service_execution_role_arn CcReplicator#service_execution_role_arn}
     */
     readonly serviceExecutionRoleArn: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#tags CcReplicator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#tags CcReplicator#tags}
     */
     readonly tags?: CcReplicator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator awscc_msk_replicator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator awscc_msk_replicator}
 */
 export class CcReplicator extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcReplicator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcReplicator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcReplicator to import
-    * @param importFromId The id of the existing CcReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcReplicator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcReplicator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcReplicator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator awscc_msk_replicator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator awscc_msk_replicator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcReplicator extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_msk_replicator',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -392,6 +392,196 @@ export function ccReplicatorKafkaClusterMtlsAuthenticationPropertyToHclTerraform
 }
 
 
+export function ccReplicatorKafkaClusterOAuthClientCredentialsPropertyToTerraform(struct?: CcReplicator.KafkaClusterOAuthClientCredentialsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        token_request_secret_arn: cdktn.stringToTerraform(struct!.tokenRequestSecretArn),
+    }
+}
+
+
+export function ccReplicatorKafkaClusterOAuthClientCredentialsPropertyToHclTerraform(struct?: CcReplicator.KafkaClusterOAuthClientCredentialsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        token_request_secret_arn: {
+            value: cdktn.stringToHclTerraform(struct!.tokenRequestSecretArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccReplicatorKafkaClusterOAuthClientCredentialsAssertionPropertyToTerraform(struct?: CcReplicator.KafkaClusterOAuthClientCredentialsAssertionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        audience: cdktn.stringToTerraform(struct!.audience),
+        signing_algorithm: cdktn.stringToTerraform(struct!.signingAlgorithm),
+        token_request_secret_arn: cdktn.stringToTerraform(struct!.tokenRequestSecretArn),
+    }
+}
+
+
+export function ccReplicatorKafkaClusterOAuthClientCredentialsAssertionPropertyToHclTerraform(struct?: CcReplicator.KafkaClusterOAuthClientCredentialsAssertionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        audience: {
+            value: cdktn.stringToHclTerraform(struct!.audience),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        signing_algorithm: {
+            value: cdktn.stringToHclTerraform(struct!.signingAlgorithm),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_request_secret_arn: {
+            value: cdktn.stringToHclTerraform(struct!.tokenRequestSecretArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccReplicatorKafkaClusterOAuthIamJwtBearerPropertyToTerraform(struct?: CcReplicator.KafkaClusterOAuthIamJwtBearerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        audience: cdktn.stringToTerraform(struct!.audience),
+        signing_algorithm: cdktn.stringToTerraform(struct!.signingAlgorithm),
+        token_request_secret_arn: cdktn.stringToTerraform(struct!.tokenRequestSecretArn),
+    }
+}
+
+
+export function ccReplicatorKafkaClusterOAuthIamJwtBearerPropertyToHclTerraform(struct?: CcReplicator.KafkaClusterOAuthIamJwtBearerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        audience: {
+            value: cdktn.stringToHclTerraform(struct!.audience),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        signing_algorithm: {
+            value: cdktn.stringToHclTerraform(struct!.signingAlgorithm),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_request_secret_arn: {
+            value: cdktn.stringToHclTerraform(struct!.tokenRequestSecretArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccReplicatorKafkaClusterSaslOAuthBearerAuthenticationPropertyToTerraform(struct?: CcReplicator.KafkaClusterSaslOAuthBearerAuthenticationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        client_credentials: ccReplicatorKafkaClusterOAuthClientCredentialsPropertyToTerraform(struct!.clientCredentials),
+        client_credentials_assertion: ccReplicatorKafkaClusterOAuthClientCredentialsAssertionPropertyToTerraform(struct!.clientCredentialsAssertion),
+        iam_jwt_bearer: ccReplicatorKafkaClusterOAuthIamJwtBearerPropertyToTerraform(struct!.iamJwtBearer),
+        scope: cdktn.stringToTerraform(struct!.scope),
+        token_endpoint_authentication_method: cdktn.stringToTerraform(struct!.tokenEndpointAuthenticationMethod),
+        token_endpoint_tls_certificate_arn: cdktn.stringToTerraform(struct!.tokenEndpointTlsCertificateArn),
+        token_endpoint_url: cdktn.stringToTerraform(struct!.tokenEndpointUrl),
+    }
+}
+
+
+export function ccReplicatorKafkaClusterSaslOAuthBearerAuthenticationPropertyToHclTerraform(struct?: CcReplicator.KafkaClusterSaslOAuthBearerAuthenticationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        client_credentials: {
+            value: ccReplicatorKafkaClusterOAuthClientCredentialsPropertyToHclTerraform(struct!.clientCredentials),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "KafkaClusterOAuthClientCredentialsProperty",
+        },
+        client_credentials_assertion: {
+            value: ccReplicatorKafkaClusterOAuthClientCredentialsAssertionPropertyToHclTerraform(struct!.clientCredentialsAssertion),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "KafkaClusterOAuthClientCredentialsAssertionProperty",
+        },
+        iam_jwt_bearer: {
+            value: ccReplicatorKafkaClusterOAuthIamJwtBearerPropertyToHclTerraform(struct!.iamJwtBearer),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "KafkaClusterOAuthIamJwtBearerProperty",
+        },
+        scope: {
+            value: cdktn.stringToHclTerraform(struct!.scope),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_endpoint_authentication_method: {
+            value: cdktn.stringToHclTerraform(struct!.tokenEndpointAuthenticationMethod),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_endpoint_tls_certificate_arn: {
+            value: cdktn.stringToHclTerraform(struct!.tokenEndpointTlsCertificateArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_endpoint_url: {
+            value: cdktn.stringToHclTerraform(struct!.tokenEndpointUrl),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccReplicatorKafkaClusterSaslScramAuthenticationPropertyToTerraform(struct?: CcReplicator.KafkaClusterSaslScramAuthenticationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -436,6 +626,7 @@ export function ccReplicatorKafkaClusterClientAuthenticationPropertyToTerraform(
     }
     return {
         mtls: ccReplicatorKafkaClusterMtlsAuthenticationPropertyToTerraform(struct!.mtls),
+        sasl_o_auth_bearer: ccReplicatorKafkaClusterSaslOAuthBearerAuthenticationPropertyToTerraform(struct!.saslOAuthBearer),
         sasl_scram: ccReplicatorKafkaClusterSaslScramAuthenticationPropertyToTerraform(struct!.saslScram),
     }
 }
@@ -452,6 +643,12 @@ export function ccReplicatorKafkaClusterClientAuthenticationPropertyToHclTerrafo
             isBlock: true,
             type: "struct",
             storageClassType: "KafkaClusterMtlsAuthenticationProperty",
+        },
+        sasl_o_auth_bearer: {
+            value: ccReplicatorKafkaClusterSaslOAuthBearerAuthenticationPropertyToHclTerraform(struct!.saslOAuthBearer),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "KafkaClusterSaslOAuthBearerAuthenticationProperty",
         },
         sasl_scram: {
             value: ccReplicatorKafkaClusterSaslScramAuthenticationPropertyToHclTerraform(struct!.saslScram),
@@ -1094,7 +1291,7 @@ export interface AmazonMskClusterProperty {
     /**
     * The ARN of an Amazon MSK cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#msk_cluster_arn CcReplicator#msk_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#msk_cluster_arn CcReplicator#msk_cluster_arn}
     */
     readonly mskClusterArn?: string;
 }
@@ -1160,13 +1357,13 @@ export interface ApacheKafkaClusterProperty {
     /**
     * The ID of the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#apache_kafka_cluster_id CcReplicator#apache_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#apache_kafka_cluster_id CcReplicator#apache_kafka_cluster_id}
     */
     readonly apacheKafkaClusterId?: string;
     /**
     * The bootstrap broker string of the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#bootstrap_broker_string CcReplicator#bootstrap_broker_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#bootstrap_broker_string CcReplicator#bootstrap_broker_string}
     */
     readonly bootstrapBrokerString?: string;
 }
@@ -1254,7 +1451,7 @@ export interface KafkaClusterMtlsAuthenticationProperty {
     /**
     * The Amazon Resource Name (ARN) of the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1316,17 +1513,561 @@ export class KafkaClusterMtlsAuthenticationPropertyOutputReference extends cdktn
         return this._secretArn;
     }
 }
+export interface KafkaClusterOAuthClientCredentialsProperty {
+    /**
+    * Secrets Manager ARN of the secret containing the client_id and client_secret used to obtain an OAuth Bearer token via the client_credentials grant.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_request_secret_arn CcReplicator#token_request_secret_arn}
+    */
+    readonly tokenRequestSecretArn?: string;
+}
+export class KafkaClusterOAuthClientCredentialsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): KafkaClusterOAuthClientCredentialsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._tokenRequestSecretArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenRequestSecretArn = this._tokenRequestSecretArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: KafkaClusterOAuthClientCredentialsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._tokenRequestSecretArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._tokenRequestSecretArn = value.tokenRequestSecretArn;
+        }
+    }
+
+    // token_request_secret_arn - computed: true, optional: true, required: false
+    private _tokenRequestSecretArn?: string; 
+    public get tokenRequestSecretArn() {
+        return this.getStringAttribute('token_request_secret_arn');
+    }
+    public set tokenRequestSecretArn(value: string) {
+        this._tokenRequestSecretArn = value;
+    }
+    public resetTokenRequestSecretArn() {
+        this._tokenRequestSecretArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenRequestSecretArnInput() {
+        return this._tokenRequestSecretArn;
+    }
+}
+export interface KafkaClusterOAuthClientCredentialsAssertionProperty {
+    /**
+    * The audience (aud claim) set in the STS JWT client assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#audience CcReplicator#audience}
+    */
+    readonly audience?: string;
+    /**
+    * The algorithm used to sign the JWT client assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#signing_algorithm CcReplicator#signing_algorithm}
+    */
+    readonly signingAlgorithm?: string;
+    /**
+    * Optional Secrets Manager ARN for identity providers that require client_id as a form parameter alongside the JWT client assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_request_secret_arn CcReplicator#token_request_secret_arn}
+    */
+    readonly tokenRequestSecretArn?: string;
+}
+export class KafkaClusterOAuthClientCredentialsAssertionPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): KafkaClusterOAuthClientCredentialsAssertionProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._audience !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.audience = this._audience;
+        }
+        if (this._signingAlgorithm !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.signingAlgorithm = this._signingAlgorithm;
+        }
+        if (this._tokenRequestSecretArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenRequestSecretArn = this._tokenRequestSecretArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: KafkaClusterOAuthClientCredentialsAssertionProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._audience = undefined;
+            this._signingAlgorithm = undefined;
+            this._tokenRequestSecretArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._audience = value.audience;
+            this._signingAlgorithm = value.signingAlgorithm;
+            this._tokenRequestSecretArn = value.tokenRequestSecretArn;
+        }
+    }
+
+    // audience - computed: true, optional: true, required: false
+    private _audience?: string; 
+    public get audience() {
+        return this.getStringAttribute('audience');
+    }
+    public set audience(value: string) {
+        this._audience = value;
+    }
+    public resetAudience() {
+        this._audience = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get audienceInput() {
+        return this._audience;
+    }
+
+    // signing_algorithm - computed: true, optional: true, required: false
+    private _signingAlgorithm?: string; 
+    public get signingAlgorithm() {
+        return this.getStringAttribute('signing_algorithm');
+    }
+    public set signingAlgorithm(value: string) {
+        this._signingAlgorithm = value;
+    }
+    public resetSigningAlgorithm() {
+        this._signingAlgorithm = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get signingAlgorithmInput() {
+        return this._signingAlgorithm;
+    }
+
+    // token_request_secret_arn - computed: true, optional: true, required: false
+    private _tokenRequestSecretArn?: string; 
+    public get tokenRequestSecretArn() {
+        return this.getStringAttribute('token_request_secret_arn');
+    }
+    public set tokenRequestSecretArn(value: string) {
+        this._tokenRequestSecretArn = value;
+    }
+    public resetTokenRequestSecretArn() {
+        this._tokenRequestSecretArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenRequestSecretArnInput() {
+        return this._tokenRequestSecretArn;
+    }
+}
+export interface KafkaClusterOAuthIamJwtBearerProperty {
+    /**
+    * The audience (aud claim) set in the STS JWT assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#audience CcReplicator#audience}
+    */
+    readonly audience?: string;
+    /**
+    * The algorithm used to sign the JWT assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#signing_algorithm CcReplicator#signing_algorithm}
+    */
+    readonly signingAlgorithm?: string;
+    /**
+    * Optional Secrets Manager ARN for identity providers that require client authentication alongside the JWT Bearer assertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_request_secret_arn CcReplicator#token_request_secret_arn}
+    */
+    readonly tokenRequestSecretArn?: string;
+}
+export class KafkaClusterOAuthIamJwtBearerPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): KafkaClusterOAuthIamJwtBearerProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._audience !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.audience = this._audience;
+        }
+        if (this._signingAlgorithm !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.signingAlgorithm = this._signingAlgorithm;
+        }
+        if (this._tokenRequestSecretArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenRequestSecretArn = this._tokenRequestSecretArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: KafkaClusterOAuthIamJwtBearerProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._audience = undefined;
+            this._signingAlgorithm = undefined;
+            this._tokenRequestSecretArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._audience = value.audience;
+            this._signingAlgorithm = value.signingAlgorithm;
+            this._tokenRequestSecretArn = value.tokenRequestSecretArn;
+        }
+    }
+
+    // audience - computed: true, optional: true, required: false
+    private _audience?: string; 
+    public get audience() {
+        return this.getStringAttribute('audience');
+    }
+    public set audience(value: string) {
+        this._audience = value;
+    }
+    public resetAudience() {
+        this._audience = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get audienceInput() {
+        return this._audience;
+    }
+
+    // signing_algorithm - computed: true, optional: true, required: false
+    private _signingAlgorithm?: string; 
+    public get signingAlgorithm() {
+        return this.getStringAttribute('signing_algorithm');
+    }
+    public set signingAlgorithm(value: string) {
+        this._signingAlgorithm = value;
+    }
+    public resetSigningAlgorithm() {
+        this._signingAlgorithm = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get signingAlgorithmInput() {
+        return this._signingAlgorithm;
+    }
+
+    // token_request_secret_arn - computed: true, optional: true, required: false
+    private _tokenRequestSecretArn?: string; 
+    public get tokenRequestSecretArn() {
+        return this.getStringAttribute('token_request_secret_arn');
+    }
+    public set tokenRequestSecretArn(value: string) {
+        this._tokenRequestSecretArn = value;
+    }
+    public resetTokenRequestSecretArn() {
+        this._tokenRequestSecretArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenRequestSecretArnInput() {
+        return this._tokenRequestSecretArn;
+    }
+}
+export interface KafkaClusterSaslOAuthBearerAuthenticationProperty {
+    /**
+    * Details for SASL/OAUTHBEARER using standard client_credentials grant. Mutually exclusive with iamJwtBearer and clientCredentialsAssertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#client_credentials CcReplicator#client_credentials}
+    */
+    readonly clientCredentials?: KafkaClusterOAuthClientCredentialsProperty;
+    /**
+    * Details for SASL/OAUTHBEARER using client credentials grant with JWT client assertion (RFC 7521/7523). Mutually exclusive with clientCredentials and iamJwtBearer.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#client_credentials_assertion CcReplicator#client_credentials_assertion}
+    */
+    readonly clientCredentialsAssertion?: KafkaClusterOAuthClientCredentialsAssertionProperty;
+    /**
+    * Details for SASL/OAUTHBEARER using JWT Bearer assertion grant (RFC 7523). Mutually exclusive with clientCredentials and clientCredentialsAssertion.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#iam_jwt_bearer CcReplicator#iam_jwt_bearer}
+    */
+    readonly iamJwtBearer?: KafkaClusterOAuthIamJwtBearerProperty;
+    /**
+    * OAuth scope to request. Included in the token request if provided.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#scope CcReplicator#scope}
+    */
+    readonly scope?: string;
+    /**
+    * How client credentials are sent to the identity provider (POST, BASIC, or NONE).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_endpoint_authentication_method CcReplicator#token_endpoint_authentication_method}
+    */
+    readonly tokenEndpointAuthenticationMethod?: string;
+    /**
+    * Secrets Manager ARN containing a custom CA certificate for the identity provider. Required only if the identity provider uses a private CA.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_endpoint_tls_certificate_arn CcReplicator#token_endpoint_tls_certificate_arn}
+    */
+    readonly tokenEndpointTlsCertificateArn?: string;
+    /**
+    * The HTTPS URL of the OAuth token endpoint that vends OAuth Bearer tokens per RFC 6749.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#token_endpoint_url CcReplicator#token_endpoint_url}
+    */
+    readonly tokenEndpointUrl?: string;
+}
+export class KafkaClusterSaslOAuthBearerAuthenticationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): KafkaClusterSaslOAuthBearerAuthenticationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._clientCredentials?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.clientCredentials = this._clientCredentials?.internalValue;
+        }
+        if (this._clientCredentialsAssertion?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.clientCredentialsAssertion = this._clientCredentialsAssertion?.internalValue;
+        }
+        if (this._iamJwtBearer?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.iamJwtBearer = this._iamJwtBearer?.internalValue;
+        }
+        if (this._scope !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.scope = this._scope;
+        }
+        if (this._tokenEndpointAuthenticationMethod !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenEndpointAuthenticationMethod = this._tokenEndpointAuthenticationMethod;
+        }
+        if (this._tokenEndpointTlsCertificateArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenEndpointTlsCertificateArn = this._tokenEndpointTlsCertificateArn;
+        }
+        if (this._tokenEndpointUrl !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenEndpointUrl = this._tokenEndpointUrl;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: KafkaClusterSaslOAuthBearerAuthenticationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._clientCredentials.internalValue = undefined;
+            this._clientCredentialsAssertion.internalValue = undefined;
+            this._iamJwtBearer.internalValue = undefined;
+            this._scope = undefined;
+            this._tokenEndpointAuthenticationMethod = undefined;
+            this._tokenEndpointTlsCertificateArn = undefined;
+            this._tokenEndpointUrl = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._clientCredentials.internalValue = value.clientCredentials;
+            this._clientCredentialsAssertion.internalValue = value.clientCredentialsAssertion;
+            this._iamJwtBearer.internalValue = value.iamJwtBearer;
+            this._scope = value.scope;
+            this._tokenEndpointAuthenticationMethod = value.tokenEndpointAuthenticationMethod;
+            this._tokenEndpointTlsCertificateArn = value.tokenEndpointTlsCertificateArn;
+            this._tokenEndpointUrl = value.tokenEndpointUrl;
+        }
+    }
+
+    // client_credentials - computed: true, optional: true, required: false
+    private _clientCredentials = new KafkaClusterOAuthClientCredentialsPropertyOutputReference(this, "client_credentials");
+    public get clientCredentials() {
+        return this._clientCredentials;
+    }
+    public putClientCredentials(value: KafkaClusterOAuthClientCredentialsProperty) {
+        this._clientCredentials.internalValue = value;
+    }
+    public resetClientCredentials() {
+        this._clientCredentials.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get clientCredentialsInput() {
+        return this._clientCredentials.internalValue;
+    }
+
+    // client_credentials_assertion - computed: true, optional: true, required: false
+    private _clientCredentialsAssertion = new KafkaClusterOAuthClientCredentialsAssertionPropertyOutputReference(this, "client_credentials_assertion");
+    public get clientCredentialsAssertion() {
+        return this._clientCredentialsAssertion;
+    }
+    public putClientCredentialsAssertion(value: KafkaClusterOAuthClientCredentialsAssertionProperty) {
+        this._clientCredentialsAssertion.internalValue = value;
+    }
+    public resetClientCredentialsAssertion() {
+        this._clientCredentialsAssertion.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get clientCredentialsAssertionInput() {
+        return this._clientCredentialsAssertion.internalValue;
+    }
+
+    // iam_jwt_bearer - computed: true, optional: true, required: false
+    private _iamJwtBearer = new KafkaClusterOAuthIamJwtBearerPropertyOutputReference(this, "iam_jwt_bearer");
+    public get iamJwtBearer() {
+        return this._iamJwtBearer;
+    }
+    public putIamJwtBearer(value: KafkaClusterOAuthIamJwtBearerProperty) {
+        this._iamJwtBearer.internalValue = value;
+    }
+    public resetIamJwtBearer() {
+        this._iamJwtBearer.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get iamJwtBearerInput() {
+        return this._iamJwtBearer.internalValue;
+    }
+
+    // scope - computed: true, optional: true, required: false
+    private _scope?: string; 
+    public get scope() {
+        return this.getStringAttribute('scope');
+    }
+    public set scope(value: string) {
+        this._scope = value;
+    }
+    public resetScope() {
+        this._scope = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get scopeInput() {
+        return this._scope;
+    }
+
+    // token_endpoint_authentication_method - computed: true, optional: true, required: false
+    private _tokenEndpointAuthenticationMethod?: string; 
+    public get tokenEndpointAuthenticationMethod() {
+        return this.getStringAttribute('token_endpoint_authentication_method');
+    }
+    public set tokenEndpointAuthenticationMethod(value: string) {
+        this._tokenEndpointAuthenticationMethod = value;
+    }
+    public resetTokenEndpointAuthenticationMethod() {
+        this._tokenEndpointAuthenticationMethod = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenEndpointAuthenticationMethodInput() {
+        return this._tokenEndpointAuthenticationMethod;
+    }
+
+    // token_endpoint_tls_certificate_arn - computed: true, optional: true, required: false
+    private _tokenEndpointTlsCertificateArn?: string; 
+    public get tokenEndpointTlsCertificateArn() {
+        return this.getStringAttribute('token_endpoint_tls_certificate_arn');
+    }
+    public set tokenEndpointTlsCertificateArn(value: string) {
+        this._tokenEndpointTlsCertificateArn = value;
+    }
+    public resetTokenEndpointTlsCertificateArn() {
+        this._tokenEndpointTlsCertificateArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenEndpointTlsCertificateArnInput() {
+        return this._tokenEndpointTlsCertificateArn;
+    }
+
+    // token_endpoint_url - computed: true, optional: true, required: false
+    private _tokenEndpointUrl?: string; 
+    public get tokenEndpointUrl() {
+        return this.getStringAttribute('token_endpoint_url');
+    }
+    public set tokenEndpointUrl(value: string) {
+        this._tokenEndpointUrl = value;
+    }
+    public resetTokenEndpointUrl() {
+        this._tokenEndpointUrl = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenEndpointUrlInput() {
+        return this._tokenEndpointUrl;
+    }
+}
 export interface KafkaClusterSaslScramAuthenticationProperty {
     /**
     * The SASL/SCRAM authentication mechanism.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#mechanism CcReplicator#mechanism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#mechanism CcReplicator#mechanism}
     */
     readonly mechanism?: string;
     /**
     * The Amazon Resource Name (ARN) of the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#secret_arn CcReplicator#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1414,13 +2155,19 @@ export interface KafkaClusterClientAuthenticationProperty {
     /**
     * Details for mTLS client authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#mtls CcReplicator#mtls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#mtls CcReplicator#mtls}
     */
     readonly mtls?: KafkaClusterMtlsAuthenticationProperty;
     /**
+    * Details for client authentication using SASL/OAUTHBEARER.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#sasl_o_auth_bearer CcReplicator#sasl_o_auth_bearer}
+    */
+    readonly saslOAuthBearer?: KafkaClusterSaslOAuthBearerAuthenticationProperty;
+    /**
     * Details for SASL/SCRAM client authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#sasl_scram CcReplicator#sasl_scram}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#sasl_scram CcReplicator#sasl_scram}
     */
     readonly saslScram?: KafkaClusterSaslScramAuthenticationProperty;
 }
@@ -1446,6 +2193,10 @@ export class KafkaClusterClientAuthenticationPropertyOutputReference extends cdk
             hasAnyValues = true;
             internalValueResult.mtls = this._mtls?.internalValue;
         }
+        if (this._saslOAuthBearer?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.saslOAuthBearer = this._saslOAuthBearer?.internalValue;
+        }
         if (this._saslScram?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.saslScram = this._saslScram?.internalValue;
@@ -1458,6 +2209,7 @@ export class KafkaClusterClientAuthenticationPropertyOutputReference extends cdk
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._mtls.internalValue = undefined;
+            this._saslOAuthBearer.internalValue = undefined;
             this._saslScram.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -1468,6 +2220,7 @@ export class KafkaClusterClientAuthenticationPropertyOutputReference extends cdk
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._mtls.internalValue = value.mtls;
+            this._saslOAuthBearer.internalValue = value.saslOAuthBearer;
             this._saslScram.internalValue = value.saslScram;
         }
     }
@@ -1486,6 +2239,22 @@ export class KafkaClusterClientAuthenticationPropertyOutputReference extends cdk
     // Temporarily expose input value. Use with caution.
     public get mtlsInput() {
         return this._mtls.internalValue;
+    }
+
+    // sasl_o_auth_bearer - computed: true, optional: true, required: false
+    private _saslOAuthBearer = new KafkaClusterSaslOAuthBearerAuthenticationPropertyOutputReference(this, "sasl_o_auth_bearer");
+    public get saslOAuthBearer() {
+        return this._saslOAuthBearer;
+    }
+    public putSaslOAuthBearer(value: KafkaClusterSaslOAuthBearerAuthenticationProperty) {
+        this._saslOAuthBearer.internalValue = value;
+    }
+    public resetSaslOAuthBearer() {
+        this._saslOAuthBearer.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get saslOAuthBearerInput() {
+        return this._saslOAuthBearer.internalValue;
     }
 
     // sasl_scram - computed: true, optional: true, required: false
@@ -1508,13 +2277,13 @@ export interface KafkaClusterEncryptionInTransitProperty {
     /**
     * The type of encryption in transit to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#encryption_type CcReplicator#encryption_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#encryption_type CcReplicator#encryption_type}
     */
     readonly encryptionType?: string;
     /**
     * The root CA certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#root_ca_certificate CcReplicator#root_ca_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#root_ca_certificate CcReplicator#root_ca_certificate}
     */
     readonly rootCaCertificate?: string;
 }
@@ -1602,13 +2371,13 @@ export interface KafkaClusterClientVpcConfigProperty {
     /**
     * The AWS security groups to associate with the elastic network interfaces in order to specify what the replicator has access to. If a security group is not specified, the default security group associated with the VPC is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#security_group_ids CcReplicator#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#security_group_ids CcReplicator#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The list of subnets to connect to in the virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#subnet_ids CcReplicator#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#subnet_ids CcReplicator#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1696,31 +2465,31 @@ export interface KafkaClusterProperty {
     /**
     * Details of an Amazon MSK cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#amazon_msk_cluster CcReplicator#amazon_msk_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#amazon_msk_cluster CcReplicator#amazon_msk_cluster}
     */
     readonly amazonMskCluster?: AmazonMskClusterProperty;
     /**
     * Details of an Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#apache_kafka_cluster CcReplicator#apache_kafka_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#apache_kafka_cluster CcReplicator#apache_kafka_cluster}
     */
     readonly apacheKafkaCluster?: ApacheKafkaClusterProperty;
     /**
     * Details of the client authentication used by the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#client_authentication CcReplicator#client_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#client_authentication CcReplicator#client_authentication}
     */
     readonly clientAuthentication?: KafkaClusterClientAuthenticationProperty;
     /**
     * Details of encryption in transit to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#encryption_in_transit CcReplicator#encryption_in_transit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#encryption_in_transit CcReplicator#encryption_in_transit}
     */
     readonly encryptionInTransit?: KafkaClusterEncryptionInTransitProperty;
     /**
     * Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#vpc_config CcReplicator#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#vpc_config CcReplicator#vpc_config}
     */
     readonly vpcConfig?: KafkaClusterClientVpcConfigProperty;
 }
@@ -1896,13 +2665,13 @@ export interface CloudWatchLogsProperty {
     /**
     * Whether log delivery to CloudWatch Logs is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The CloudWatch log group that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#log_group CcReplicator#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#log_group CcReplicator#log_group}
     */
     readonly logGroup?: string;
 }
@@ -1990,13 +2759,13 @@ export interface FirehoseProperty {
     /**
     * The Firehose delivery stream that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#delivery_stream CcReplicator#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#delivery_stream CcReplicator#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
     * Whether log delivery to Firehose is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2084,19 +2853,19 @@ export interface S3Property {
     /**
     * The S3 bucket that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#bucket CcReplicator#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#bucket CcReplicator#bucket}
     */
     readonly bucket?: string;
     /**
     * Whether log delivery to S3 is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#enabled CcReplicator#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The S3 prefix that is the destination for log delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#prefix CcReplicator#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#prefix CcReplicator#prefix}
     */
     readonly prefix?: string;
 }
@@ -2206,19 +2975,19 @@ export interface ReplicatorLogDeliveryProperty {
     /**
     * Details of the CloudWatch Logs destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#cloudwatch_logs CcReplicator#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#cloudwatch_logs CcReplicator#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogsProperty;
     /**
     * Details of the Kinesis Data Firehose delivery stream that is the destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#firehose CcReplicator#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#firehose CcReplicator#firehose}
     */
     readonly firehose?: FirehoseProperty;
     /**
     * Details of the Amazon S3 destination for replicator logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#s3 CcReplicator#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#s3 CcReplicator#s3}
     */
     readonly s3?: S3Property;
 }
@@ -2328,7 +3097,7 @@ export interface LogDeliveryProperty {
     /**
     * The replicator logs configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#replicator_log_delivery CcReplicator#replicator_log_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#replicator_log_delivery CcReplicator#replicator_log_delivery}
     */
     readonly replicatorLogDelivery?: ReplicatorLogDeliveryProperty;
 }
@@ -2394,31 +3163,31 @@ export interface ConsumerGroupReplicationProperty {
     /**
     * The consumer group offset synchronization mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode CcReplicator#consumer_group_offset_sync_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#consumer_group_offset_sync_mode CcReplicator#consumer_group_offset_sync_mode}
     */
     readonly consumerGroupOffsetSyncMode?: string;
     /**
     * List of regular expression patterns indicating the consumer groups that should not be replicated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_groups_to_exclude CcReplicator#consumer_groups_to_exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#consumer_groups_to_exclude CcReplicator#consumer_groups_to_exclude}
     */
     readonly consumerGroupsToExclude?: string[];
     /**
     * List of regular expression patterns indicating the consumer groups to copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_groups_to_replicate CcReplicator#consumer_groups_to_replicate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#consumer_groups_to_replicate CcReplicator#consumer_groups_to_replicate}
     */
     readonly consumerGroupsToReplicate: string[];
     /**
     * Whether to periodically check for new consumer groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups CcReplicator#detect_and_copy_new_consumer_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#detect_and_copy_new_consumer_groups CcReplicator#detect_and_copy_new_consumer_groups}
     */
     readonly detectAndCopyNewConsumerGroups?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically write the translated offsets to __consumer_offsets topic in target cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets CcReplicator#synchronise_consumer_group_offsets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#synchronise_consumer_group_offsets CcReplicator#synchronise_consumer_group_offsets}
     */
     readonly synchroniseConsumerGroupOffsets?: boolean | cdktn.IResolvable;
 }
@@ -2569,7 +3338,7 @@ export interface ReplicationStartingPositionProperty {
     /**
     * The type of replication starting position.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#type CcReplicator#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#type CcReplicator#type}
     */
     readonly type?: string;
 }
@@ -2635,7 +3404,7 @@ export interface ReplicationTopicNameConfigurationProperty {
     /**
     * The type of replicated topic name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#type CcReplicator#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#type CcReplicator#type}
     */
     readonly type?: string;
 }
@@ -2701,43 +3470,43 @@ export interface TopicReplicationProperty {
     /**
     * Whether to periodically configure remote topic ACLs to match their corresponding upstream topics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics CcReplicator#copy_access_control_lists_for_topics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#copy_access_control_lists_for_topics CcReplicator#copy_access_control_lists_for_topics}
     */
     readonly copyAccessControlListsForTopics?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically configure remote topics to match their corresponding upstream topics.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#copy_topic_configurations CcReplicator#copy_topic_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#copy_topic_configurations CcReplicator#copy_topic_configurations}
     */
     readonly copyTopicConfigurations?: boolean | cdktn.IResolvable;
     /**
     * Whether to periodically check for new topics and partitions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#detect_and_copy_new_topics CcReplicator#detect_and_copy_new_topics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#detect_and_copy_new_topics CcReplicator#detect_and_copy_new_topics}
     */
     readonly detectAndCopyNewTopics?: boolean | cdktn.IResolvable;
     /**
     * Configuration for specifying the position in the topics to start replicating from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#starting_position CcReplicator#starting_position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#starting_position CcReplicator#starting_position}
     */
     readonly startingPosition?: ReplicationStartingPositionProperty;
     /**
     * Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topic_name_configuration CcReplicator#topic_name_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#topic_name_configuration CcReplicator#topic_name_configuration}
     */
     readonly topicNameConfiguration?: ReplicationTopicNameConfigurationProperty;
     /**
     * List of regular expression patterns indicating the topics that should not be replicated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topics_to_exclude CcReplicator#topics_to_exclude}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#topics_to_exclude CcReplicator#topics_to_exclude}
     */
     readonly topicsToExclude?: string[];
     /**
     * List of regular expression patterns indicating the topics to copy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topics_to_replicate CcReplicator#topics_to_replicate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#topics_to_replicate CcReplicator#topics_to_replicate}
     */
     readonly topicsToReplicate: string[];
 }
@@ -2932,43 +3701,43 @@ export interface ReplicationInfoProperty {
     /**
     * Configuration relating to consumer group replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#consumer_group_replication CcReplicator#consumer_group_replication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#consumer_group_replication CcReplicator#consumer_group_replication}
     */
     readonly consumerGroupReplication: ConsumerGroupReplicationProperty;
     /**
     * Amazon Resource Name of the source Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#source_kafka_cluster_arn CcReplicator#source_kafka_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#source_kafka_cluster_arn CcReplicator#source_kafka_cluster_arn}
     */
     readonly sourceKafkaClusterArn?: string;
     /**
     * The ID of the source Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#source_kafka_cluster_id CcReplicator#source_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#source_kafka_cluster_id CcReplicator#source_kafka_cluster_id}
     */
     readonly sourceKafkaClusterId?: string;
     /**
     * The type of compression to use writing records to target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_compression_type CcReplicator#target_compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#target_compression_type CcReplicator#target_compression_type}
     */
     readonly targetCompressionType: string;
     /**
     * Amazon Resource Name of the target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_kafka_cluster_arn CcReplicator#target_kafka_cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#target_kafka_cluster_arn CcReplicator#target_kafka_cluster_arn}
     */
     readonly targetKafkaClusterArn?: string;
     /**
     * The ID of the target Kafka cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#target_kafka_cluster_id CcReplicator#target_kafka_cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#target_kafka_cluster_id CcReplicator#target_kafka_cluster_id}
     */
     readonly targetKafkaClusterId?: string;
     /**
     * Configuration relating to topic replication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#topic_replication CcReplicator#topic_replication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#topic_replication CcReplicator#topic_replication}
     */
     readonly topicReplication: TopicReplicationProperty;
 }
@@ -3177,11 +3946,11 @@ export class ReplicationInfoPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#key CcReplicator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#key CcReplicator#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_replicator#value CcReplicator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_replicator#value CcReplicator#value}
     */
     readonly value?: string;
 }

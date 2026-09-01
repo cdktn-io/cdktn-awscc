@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBackupPlanProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#backup_plan CcBackupPlan#backup_plan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#backup_plan CcBackupPlan#backup_plan}
     */
     readonly backupPlan: CcBackupPlan.BackupPlanResourceTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#backup_plan_tags CcBackupPlan#backup_plan_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#backup_plan_tags CcBackupPlan#backup_plan_tags}
     */
     readonly backupPlanTags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan awscc_backup_backup_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan awscc_backup_backup_plan}
 */
 export class CcBackupPlan extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcBackupPlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBackupPlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBackupPlan to import
-    * @param importFromId The id of the existing CcBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBackupPlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcBackupPlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan awscc_backup_backup_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan awscc_backup_backup_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcBackupPlan extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_backup_plan',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -596,11 +596,11 @@ export function ccBackupPlanBackupPlanResourceTypePropertyToHclTerraform(struct?
 export namespace CcBackupPlan {
 export interface AdvancedBackupSettingResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#backup_options CcBackupPlan#backup_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#backup_options CcBackupPlan#backup_options}
     */
     readonly backupOptions?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#resource_type CcBackupPlan#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#resource_type CcBackupPlan#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -708,15 +708,15 @@ export class AdvancedBackupSettingResourceTypePropertyList extends cdktn.Complex
 }
 export interface LifecycleResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#delete_after_days CcBackupPlan#delete_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#delete_after_days CcBackupPlan#delete_after_days}
     */
     readonly deleteAfterDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#move_to_cold_storage_after_days CcBackupPlan#move_to_cold_storage_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#move_to_cold_storage_after_days CcBackupPlan#move_to_cold_storage_after_days}
     */
     readonly moveToColdStorageAfterDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#opt_in_to_archive_for_supported_resources CcBackupPlan#opt_in_to_archive_for_supported_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#opt_in_to_archive_for_supported_resources CcBackupPlan#opt_in_to_archive_for_supported_resources}
     */
     readonly optInToArchiveForSupportedResources?: boolean | cdktn.IResolvable;
 }
@@ -824,11 +824,11 @@ export class LifecycleResourceTypePropertyOutputReference extends cdktn.ComplexO
 }
 export interface CopyActionResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#destination_backup_vault_arn CcBackupPlan#destination_backup_vault_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#destination_backup_vault_arn CcBackupPlan#destination_backup_vault_arn}
     */
     readonly destinationBackupVaultArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#lifecycle CcBackupPlan#lifecycle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#lifecycle CcBackupPlan#lifecycle}
     */
     readonly lifecycle?: LifecycleResourceTypeProperty;
 }
@@ -936,7 +936,7 @@ export class CopyActionResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface IndexActionsResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#resource_types CcBackupPlan#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#resource_types CcBackupPlan#resource_types}
     */
     readonly resourceTypes?: string[];
 }
@@ -1022,15 +1022,15 @@ export class IndexActionsResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface LifecycleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#delete_after_days CcBackupPlan#delete_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#delete_after_days CcBackupPlan#delete_after_days}
     */
     readonly deleteAfterDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#move_to_cold_storage_after_days CcBackupPlan#move_to_cold_storage_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#move_to_cold_storage_after_days CcBackupPlan#move_to_cold_storage_after_days}
     */
     readonly moveToColdStorageAfterDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#opt_in_to_archive_for_supported_resources CcBackupPlan#opt_in_to_archive_for_supported_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#opt_in_to_archive_for_supported_resources CcBackupPlan#opt_in_to_archive_for_supported_resources}
     */
     readonly optInToArchiveForSupportedResources?: boolean | cdktn.IResolvable;
 }
@@ -1138,11 +1138,11 @@ export class LifecyclePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScanActionResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#malware_scanner CcBackupPlan#malware_scanner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#malware_scanner CcBackupPlan#malware_scanner}
     */
     readonly malwareScanner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#scan_mode CcBackupPlan#scan_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#scan_mode CcBackupPlan#scan_mode}
     */
     readonly scanMode?: string;
 }
@@ -1250,55 +1250,55 @@ export class ScanActionResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface BackupRuleResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#completion_window_minutes CcBackupPlan#completion_window_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#completion_window_minutes CcBackupPlan#completion_window_minutes}
     */
     readonly completionWindowMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#copy_actions CcBackupPlan#copy_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#copy_actions CcBackupPlan#copy_actions}
     */
     readonly copyActions?: CopyActionResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#enable_continuous_backup CcBackupPlan#enable_continuous_backup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#enable_continuous_backup CcBackupPlan#enable_continuous_backup}
     */
     readonly enableContinuousBackup?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#index_actions CcBackupPlan#index_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#index_actions CcBackupPlan#index_actions}
     */
     readonly indexActions?: IndexActionsResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#lifecycle CcBackupPlan#lifecycle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#lifecycle CcBackupPlan#lifecycle}
     */
     readonly lifecycle?: LifecycleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#recovery_point_tags CcBackupPlan#recovery_point_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#recovery_point_tags CcBackupPlan#recovery_point_tags}
     */
     readonly recoveryPointTags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#rule_name CcBackupPlan#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#rule_name CcBackupPlan#rule_name}
     */
     readonly ruleName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#scan_actions CcBackupPlan#scan_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#scan_actions CcBackupPlan#scan_actions}
     */
     readonly scanActions?: ScanActionResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#schedule_expression CcBackupPlan#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#schedule_expression CcBackupPlan#schedule_expression}
     */
     readonly scheduleExpression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#schedule_expression_timezone CcBackupPlan#schedule_expression_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#schedule_expression_timezone CcBackupPlan#schedule_expression_timezone}
     */
     readonly scheduleExpressionTimezone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#start_window_minutes CcBackupPlan#start_window_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#start_window_minutes CcBackupPlan#start_window_minutes}
     */
     readonly startWindowMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#target_backup_vault CcBackupPlan#target_backup_vault}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#target_backup_vault CcBackupPlan#target_backup_vault}
     */
     readonly targetBackupVault: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#target_logically_air_gapped_backup_vault_arn CcBackupPlan#target_logically_air_gapped_backup_vault_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#target_logically_air_gapped_backup_vault_arn CcBackupPlan#target_logically_air_gapped_backup_vault_arn}
     */
     readonly targetLogicallyAirGappedBackupVaultArn?: string;
 }
@@ -1642,15 +1642,15 @@ export class BackupRuleResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface ScanSettingResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#malware_scanner CcBackupPlan#malware_scanner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#malware_scanner CcBackupPlan#malware_scanner}
     */
     readonly malwareScanner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#resource_types CcBackupPlan#resource_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#resource_types CcBackupPlan#resource_types}
     */
     readonly resourceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#scanner_role_arn CcBackupPlan#scanner_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#scanner_role_arn CcBackupPlan#scanner_role_arn}
     */
     readonly scannerRoleArn?: string;
 }
@@ -1780,19 +1780,19 @@ export class ScanSettingResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface BackupPlanResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#advanced_backup_settings CcBackupPlan#advanced_backup_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#advanced_backup_settings CcBackupPlan#advanced_backup_settings}
     */
     readonly advancedBackupSettings?: AdvancedBackupSettingResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#backup_plan_name CcBackupPlan#backup_plan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#backup_plan_name CcBackupPlan#backup_plan_name}
     */
     readonly backupPlanName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#backup_plan_rule CcBackupPlan#backup_plan_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#backup_plan_rule CcBackupPlan#backup_plan_rule}
     */
     readonly backupPlanRule: BackupRuleResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_plan#scan_settings CcBackupPlan#scan_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_plan#scan_settings CcBackupPlan#scan_settings}
     */
     readonly scanSettings?: ScanSettingResourceTypeProperty[] | cdktn.IResolvable;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcControlPanelProps extends cdktn.TerraformMetaArguments {
     /**
     * Cluster to associate with the Control Panel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#cluster_arn CcControlPanel#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#cluster_arn CcControlPanel#cluster_arn}
     */
     readonly clusterArn?: string;
     /**
     * The name of the control panel. You can use any non-white space character in the name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#name CcControlPanel#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#name CcControlPanel#name}
     */
     readonly name: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#tags CcControlPanel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#tags CcControlPanel#tags}
     */
     readonly tags?: CcControlPanel.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel awscc_route53recoverycontrol_control_panel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel awscc_route53recoverycontrol_control_panel}
 */
 export class CcControlPanel extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcControlPanel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcControlPanel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcControlPanel to import
-    * @param importFromId The id of the existing CcControlPanel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcControlPanel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcControlPanel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcControlPanel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel awscc_route53recoverycontrol_control_panel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel awscc_route53recoverycontrol_control_panel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcControlPanel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53recoverycontrol_control_panel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -234,11 +234,11 @@ export function ccControlPanelTagPropertyToHclTerraform(struct?: CcControlPanel.
 export namespace CcControlPanel {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#key CcControlPanel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#key CcControlPanel#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53recoverycontrol_control_panel#value CcControlPanel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53recoverycontrol_control_panel#value CcControlPanel#value}
     */
     readonly value?: string;
 }

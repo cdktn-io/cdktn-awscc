@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcSessionProps extends cdktn.TerraformMetaArguments {
     /**
     * A enumeration value that specifies how frequently finding updates are published.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session#finding_publishing_frequency CcSession#finding_publishing_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session#finding_publishing_frequency CcSession#finding_publishing_frequency}
     */
     readonly findingPublishingFrequency?: string;
     /**
     * A enumeration value that specifies the status of the Macie Session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session#status CcSession#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session#status CcSession#status}
     */
     readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session awscc_macie_session}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session awscc_macie_session}
 */
 export class CcSession extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcSession extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSession resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSession to import
-    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSession to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcSession extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_session awscc_macie_session} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_session awscc_macie_session} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcSession extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_macie_session',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -12,31 +12,31 @@ export interface CcDBShardGroupProps extends cdktn.TerraformMetaArguments {
     *   +  1 - Creates a DB shard group with a standby DB data access shard in a different Availability Zone (AZ).
     *   +  2 - Creates a DB shard group with two standby DB data access shard in two different AZs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#compute_redundancy CcDBShardGroup#compute_redundancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#compute_redundancy CcDBShardGroup#compute_redundancy}
     */
     readonly computeRedundancy?: number;
     /**
     * The name of the primary DB cluster for the DB shard group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#db_cluster_identifier CcDBShardGroup#db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#db_cluster_identifier CcDBShardGroup#db_cluster_identifier}
     */
     readonly dbClusterIdentifier: string;
     /**
     * The name of the DB shard group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#db_shard_group_identifier CcDBShardGroup#db_shard_group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#db_shard_group_identifier CcDBShardGroup#db_shard_group_identifier}
     */
     readonly dbShardGroupIdentifier?: string;
     /**
     * The maximum capacity of the DB shard group in Aurora capacity units (ACUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#max_acu CcDBShardGroup#max_acu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#max_acu CcDBShardGroup#max_acu}
     */
     readonly maxAcu: number;
     /**
     * The minimum capacity of the DB shard group in Aurora capacity units (ACUs).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#min_acu CcDBShardGroup#min_acu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#min_acu CcDBShardGroup#min_acu}
     */
     readonly minAcu?: number;
     /**
@@ -52,19 +52,19 @@ export interface CcDBShardGroupProps extends cdktn.TerraformMetaArguments {
     *   +  If the subnets are part of a VPC that doesn?t have an internet gateway attached to it, the DB shard group is private.
     *   +  If the subnets are part of a VPC that has an internet gateway attached to it, the DB shard group is public.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#publicly_accessible CcDBShardGroup#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#publicly_accessible CcDBShardGroup#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * An optional set of key-value pairs to associate arbitrary data of your choosing with the DB shard group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#tags CcDBShardGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#tags CcDBShardGroup#tags}
     */
     readonly tags?: CcDBShardGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group awscc_rds_db_shard_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group awscc_rds_db_shard_group}
 */
 export class CcDBShardGroup extends cdktn.TerraformResource {
 
@@ -80,7 +80,7 @@ export class CcDBShardGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBShardGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBShardGroup to import
-    * @param importFromId The id of the existing CcDBShardGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBShardGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBShardGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -92,7 +92,7 @@ export class CcDBShardGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group awscc_rds_db_shard_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group awscc_rds_db_shard_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class CcDBShardGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rds_db_shard_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -356,13 +356,13 @@ export interface TagProperty {
     /**
     * A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#key CcDBShardGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#key CcDBShardGroup#key}
     */
     readonly key?: string;
     /**
     * A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with ``aws:`` or ``rds:``. The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', ':', '/', '=', '+', '-', '@' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-@]*)$").
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_shard_group#value CcDBShardGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_shard_group#value CcDBShardGroup#value}
     */
     readonly value?: string;
 }

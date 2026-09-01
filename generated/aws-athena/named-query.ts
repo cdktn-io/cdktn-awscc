@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcNamedQueryProps extends cdktn.TerraformMetaArguments {
     /**
     * The database to which the query belongs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#database CcNamedQuery#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#database CcNamedQuery#database}
     */
     readonly database: string;
     /**
     * The query description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#description CcNamedQuery#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#description CcNamedQuery#description}
     */
     readonly description?: string;
     /**
     * The query name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#name CcNamedQuery#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#name CcNamedQuery#name}
     */
     readonly name?: string;
     /**
     * The contents of the query with all query statements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#query_string CcNamedQuery#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#query_string CcNamedQuery#query_string}
     */
     readonly queryString: string;
     /**
     * The name of the workgroup that contains the named query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#work_group CcNamedQuery#work_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#work_group CcNamedQuery#work_group}
     */
     readonly workGroup?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query awscc_athena_named_query}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query awscc_athena_named_query}
 */
 export class CcNamedQuery extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcNamedQuery extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNamedQuery resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNamedQuery to import
-    * @param importFromId The id of the existing CcNamedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNamedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNamedQuery to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcNamedQuery extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_named_query awscc_athena_named_query} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_named_query awscc_athena_named_query} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcNamedQuery extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_athena_named_query',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

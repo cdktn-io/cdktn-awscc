@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDBSubnetGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The description for the subnet group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#db_subnet_group_description CcDBSubnetGroup#db_subnet_group_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#db_subnet_group_description CcDBSubnetGroup#db_subnet_group_description}
     */
     readonly dbSubnetGroupDescription: string;
     /**
     * The name for the db subnet group. This value is stored as a lowercase string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#db_subnet_group_name CcDBSubnetGroup#db_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#db_subnet_group_name CcDBSubnetGroup#db_subnet_group_name}
     */
     readonly dbSubnetGroupName?: string;
     /**
     * One or more subnet IDs to be assigned to the db subnet group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#subnet_ids CcDBSubnetGroup#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#subnet_ids CcDBSubnetGroup#subnet_ids}
     */
     readonly subnetIds: string[];
     /**
     * One or more tags to be assigned to the db subnet group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#tags CcDBSubnetGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#tags CcDBSubnetGroup#tags}
     */
     readonly tags?: CcDBSubnetGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group awscc_docdb_db_subnet_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group awscc_docdb_db_subnet_group}
 */
 export class CcDBSubnetGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDBSubnetGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBSubnetGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBSubnetGroup to import
-    * @param importFromId The id of the existing CcDBSubnetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBSubnetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBSubnetGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDBSubnetGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group awscc_docdb_db_subnet_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group awscc_docdb_db_subnet_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcDBSubnetGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_docdb_db_subnet_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -241,11 +241,11 @@ export function ccDBSubnetGroupTagPropertyToHclTerraform(struct?: CcDBSubnetGrou
 export namespace CcDBSubnetGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#key CcDBSubnetGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#key CcDBSubnetGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_db_subnet_group#value CcDBSubnetGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_db_subnet_group#value CcDBSubnetGroup#value}
     */
     readonly value?: string;
 }

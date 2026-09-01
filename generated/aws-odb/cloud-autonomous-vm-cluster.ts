@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,109 +9,109 @@ export interface CcCloudAutonomousVmClusterProps extends cdktn.TerraformMetaArgu
     /**
     * The data storage size allocated for Autonomous Databases in the Autonomous VM cluster, in TB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#autonomous_data_storage_size_in_t_bs CcCloudAutonomousVmCluster#autonomous_data_storage_size_in_t_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#autonomous_data_storage_size_in_t_bs CcCloudAutonomousVmCluster#autonomous_data_storage_size_in_t_bs}
     */
     readonly autonomousDataStorageSizeInTBs?: number;
     /**
     * The unique identifier of the Cloud Exadata Infrastructure containing this Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#cloud_exadata_infrastructure_id CcCloudAutonomousVmCluster#cloud_exadata_infrastructure_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#cloud_exadata_infrastructure_id CcCloudAutonomousVmCluster#cloud_exadata_infrastructure_id}
     */
     readonly cloudExadataInfrastructureId?: string;
     /**
     * The number of CPU cores enabled per node in the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#cpu_core_count_per_node CcCloudAutonomousVmCluster#cpu_core_count_per_node}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#cpu_core_count_per_node CcCloudAutonomousVmCluster#cpu_core_count_per_node}
     */
     readonly cpuCoreCountPerNode?: number;
     /**
     * The list of database servers associated with the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#db_servers CcCloudAutonomousVmCluster#db_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#db_servers CcCloudAutonomousVmCluster#db_servers}
     */
     readonly dbServers?: string[];
     /**
     * The user-provided description of the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#description CcCloudAutonomousVmCluster#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#description CcCloudAutonomousVmCluster#description}
     */
     readonly description?: string;
     /**
     * The display name of the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#display_name CcCloudAutonomousVmCluster#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#display_name CcCloudAutonomousVmCluster#display_name}
     */
     readonly displayName?: string;
     /**
     * The AWS Identity and Access Management (IAM) service roles associated with the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#iam_roles CcCloudAutonomousVmCluster#iam_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#iam_roles CcCloudAutonomousVmCluster#iam_roles}
     */
     readonly iamRoles?: CcCloudAutonomousVmCluster.IamRoleProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether mutual TLS (mTLS) authentication is enabled for the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#is_mtls_enabled_vm_cluster CcCloudAutonomousVmCluster#is_mtls_enabled_vm_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#is_mtls_enabled_vm_cluster CcCloudAutonomousVmCluster#is_mtls_enabled_vm_cluster}
     */
     readonly isMtlsEnabledVmCluster?: boolean | cdktn.IResolvable;
     /**
     * The Oracle license model that applies to the Autonomous VM cluster. Valid values are LICENSE_INCLUDED or BRING_YOUR_OWN_LICENSE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#license_model CcCloudAutonomousVmCluster#license_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#license_model CcCloudAutonomousVmCluster#license_model}
     */
     readonly licenseModel?: string;
     /**
     * The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#maintenance_window CcCloudAutonomousVmCluster#maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#maintenance_window CcCloudAutonomousVmCluster#maintenance_window}
     */
     readonly maintenanceWindow?: CcCloudAutonomousVmCluster.MaintenanceWindowProperty;
     /**
     * The amount of memory allocated per Oracle Compute Unit, in GB.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#memory_per_oracle_compute_unit_in_g_bs CcCloudAutonomousVmCluster#memory_per_oracle_compute_unit_in_g_bs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#memory_per_oracle_compute_unit_in_g_bs CcCloudAutonomousVmCluster#memory_per_oracle_compute_unit_in_g_bs}
     */
     readonly memoryPerOracleComputeUnitInGBs?: number;
     /**
     * The unique identifier of the ODB network associated with this Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#odb_network_id CcCloudAutonomousVmCluster#odb_network_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#odb_network_id CcCloudAutonomousVmCluster#odb_network_id}
     */
     readonly odbNetworkId?: string;
     /**
     * The SCAN listener port for non-TLS (TCP) protocol. The default is 1521.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#scan_listener_port_non_tls CcCloudAutonomousVmCluster#scan_listener_port_non_tls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#scan_listener_port_non_tls CcCloudAutonomousVmCluster#scan_listener_port_non_tls}
     */
     readonly scanListenerPortNonTls?: number;
     /**
     * The SCAN listener port for TLS (TCP) protocol. The default is 2484.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#scan_listener_port_tls CcCloudAutonomousVmCluster#scan_listener_port_tls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#scan_listener_port_tls CcCloudAutonomousVmCluster#scan_listener_port_tls}
     */
     readonly scanListenerPortTls?: number;
     /**
     * The tags associated with the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#tags CcCloudAutonomousVmCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#tags CcCloudAutonomousVmCluster#tags}
     */
     readonly tags?: CcCloudAutonomousVmCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * The time zone of the Autonomous VM cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#time_zone CcCloudAutonomousVmCluster#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#time_zone CcCloudAutonomousVmCluster#time_zone}
     */
     readonly timeZone?: string;
     /**
     * The total number of Autonomous Container Databases that can be created with the allocated local storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#total_container_databases CcCloudAutonomousVmCluster#total_container_databases}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#total_container_databases CcCloudAutonomousVmCluster#total_container_databases}
     */
     readonly totalContainerDatabases?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster awscc_odb_cloud_autonomous_vm_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster awscc_odb_cloud_autonomous_vm_cluster}
 */
 export class CcCloudAutonomousVmCluster extends cdktn.TerraformResource {
 
@@ -127,7 +127,7 @@ export class CcCloudAutonomousVmCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudAutonomousVmCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudAutonomousVmCluster to import
-    * @param importFromId The id of the existing CcCloudAutonomousVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudAutonomousVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudAutonomousVmCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -139,7 +139,7 @@ export class CcCloudAutonomousVmCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster awscc_odb_cloud_autonomous_vm_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster awscc_odb_cloud_autonomous_vm_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +150,7 @@ export class CcCloudAutonomousVmCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_odb_cloud_autonomous_vm_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -888,19 +888,19 @@ export interface IamRoleProperty {
     /**
     * The AWS integration configuration settings for the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#aws_integration CcCloudAutonomousVmCluster#aws_integration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#aws_integration CcCloudAutonomousVmCluster#aws_integration}
     */
     readonly awsIntegration?: string;
     /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#iam_role_arn CcCloudAutonomousVmCluster#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#iam_role_arn CcCloudAutonomousVmCluster#iam_role_arn}
     */
     readonly iamRoleArn?: string;
     /**
     * The current status of the AWS Identity and Access Management (IAM) service role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#status CcCloudAutonomousVmCluster#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#status CcCloudAutonomousVmCluster#status}
     */
     readonly status?: string;
 }
@@ -1032,37 +1032,37 @@ export interface MaintenanceWindowProperty {
     /**
     * The days of the week when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#days_of_week CcCloudAutonomousVmCluster#days_of_week}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#days_of_week CcCloudAutonomousVmCluster#days_of_week}
     */
     readonly daysOfWeek?: string[];
     /**
     * The hours of the day when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#hours_of_day CcCloudAutonomousVmCluster#hours_of_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#hours_of_day CcCloudAutonomousVmCluster#hours_of_day}
     */
     readonly hoursOfDay?: number[];
     /**
     * The lead time in weeks before the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#lead_time_in_weeks CcCloudAutonomousVmCluster#lead_time_in_weeks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#lead_time_in_weeks CcCloudAutonomousVmCluster#lead_time_in_weeks}
     */
     readonly leadTimeInWeeks?: number;
     /**
     * The months when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#months CcCloudAutonomousVmCluster#months}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#months CcCloudAutonomousVmCluster#months}
     */
     readonly months?: string[];
     /**
     * The preference for the maintenance window scheduling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#preference CcCloudAutonomousVmCluster#preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#preference CcCloudAutonomousVmCluster#preference}
     */
     readonly preference?: string;
     /**
     * The weeks of the month when maintenance can be performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#weeks_of_month CcCloudAutonomousVmCluster#weeks_of_month}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#weeks_of_month CcCloudAutonomousVmCluster#weeks_of_month}
     */
     readonly weeksOfMonth?: number[];
 }
@@ -1238,13 +1238,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., :, /, =, +, @, -, and ".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#key CcCloudAutonomousVmCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#key CcCloudAutonomousVmCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 1 to 256 characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/odb_cloud_autonomous_vm_cluster#value CcCloudAutonomousVmCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/odb_cloud_autonomous_vm_cluster#value CcCloudAutonomousVmCluster#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSchedulingPolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * Fair Share Policy for the Job Queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#fairshare_policy CcSchedulingPolicy#fairshare_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#fairshare_policy CcSchedulingPolicy#fairshare_policy}
     */
     readonly fairsharePolicy?: CcSchedulingPolicy.FairsharePolicyProperty;
     /**
     * Name of Scheduling Policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#name CcSchedulingPolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#name CcSchedulingPolicy#name}
     */
     readonly name?: string;
     /**
     * Quota Share Policy for the Job Queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#quota_share_policy CcSchedulingPolicy#quota_share_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#quota_share_policy CcSchedulingPolicy#quota_share_policy}
     */
     readonly quotaSharePolicy?: CcSchedulingPolicy.QuotaSharePolicyProperty;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#tags CcSchedulingPolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#tags CcSchedulingPolicy#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy awscc_batch_scheduling_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy awscc_batch_scheduling_policy}
 */
 export class CcSchedulingPolicy extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSchedulingPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSchedulingPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSchedulingPolicy to import
-    * @param importFromId The id of the existing CcSchedulingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSchedulingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSchedulingPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSchedulingPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy awscc_batch_scheduling_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy awscc_batch_scheduling_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcSchedulingPolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_batch_scheduling_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -326,11 +326,11 @@ export function ccSchedulingPolicyQuotaSharePolicyPropertyToHclTerraform(struct?
 export namespace CcSchedulingPolicy {
 export interface ShareAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#share_identifier CcSchedulingPolicy#share_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#share_identifier CcSchedulingPolicy#share_identifier}
     */
     readonly shareIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#weight_factor CcSchedulingPolicy#weight_factor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#weight_factor CcSchedulingPolicy#weight_factor}
     */
     readonly weightFactor?: number;
 }
@@ -438,17 +438,17 @@ export class ShareAttributesPropertyList extends cdktn.ComplexList {
 }
 export interface FairsharePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#compute_reservation CcSchedulingPolicy#compute_reservation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#compute_reservation CcSchedulingPolicy#compute_reservation}
     */
     readonly computeReservation?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#share_decay_seconds CcSchedulingPolicy#share_decay_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#share_decay_seconds CcSchedulingPolicy#share_decay_seconds}
     */
     readonly shareDecaySeconds?: number;
     /**
     * List of Share Attributes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#share_distribution CcSchedulingPolicy#share_distribution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#share_distribution CcSchedulingPolicy#share_distribution}
     */
     readonly shareDistribution?: ShareAttributesProperty[] | cdktn.IResolvable;
 }
@@ -556,7 +556,7 @@ export class FairsharePolicyPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface QuotaSharePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_scheduling_policy#idle_resource_assignment_strategy CcSchedulingPolicy#idle_resource_assignment_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_scheduling_policy#idle_resource_assignment_strategy CcSchedulingPolicy#idle_resource_assignment_strategy}
     */
     readonly idleResourceAssignmentStrategy?: string;
 }

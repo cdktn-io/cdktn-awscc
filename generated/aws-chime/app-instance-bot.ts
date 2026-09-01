@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAppInstanceBotProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the AppInstance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#app_instance_arn CcAppInstanceBot#app_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#app_instance_arn CcAppInstanceBot#app_instance_arn}
     */
     readonly appInstanceArn: string;
     /**
     * A structure that contains configuration data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#configuration CcAppInstanceBot#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#configuration CcAppInstanceBot#configuration}
     */
     readonly configuration: CcAppInstanceBot.ConfigurationProperty;
     /**
     * The metadata of the AppInstanceBot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#metadata CcAppInstanceBot#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#metadata CcAppInstanceBot#metadata}
     */
     readonly metadata?: string;
     /**
     * The name of the AppInstanceBot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#name CcAppInstanceBot#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#name CcAppInstanceBot#name}
     */
     readonly name?: string;
     /**
     * The tags assigned to the AppInstanceBot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#tags CcAppInstanceBot#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#tags CcAppInstanceBot#tags}
     */
     readonly tags?: CcAppInstanceBot.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot awscc_chime_app_instance_bot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot awscc_chime_app_instance_bot}
 */
 export class CcAppInstanceBot extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAppInstanceBot extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAppInstanceBot resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAppInstanceBot to import
-    * @param importFromId The id of the existing CcAppInstanceBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAppInstanceBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAppInstanceBot to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAppInstanceBot extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot awscc_chime_app_instance_bot} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot awscc_chime_app_instance_bot} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcAppInstanceBot extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_chime_app_instance_bot',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -132,7 +132,7 @@ export class CcAppInstanceBot extends cdktn.TerraformResource {
 
     // created_timestamp - computed: true, optional: false, required: false
     public get createdTimestamp() {
-        return this.getNumberAttribute('created_timestamp');
+        return this.getStringAttribute('created_timestamp');
     }
 
     // id - computed: true, optional: false, required: false
@@ -142,7 +142,7 @@ export class CcAppInstanceBot extends cdktn.TerraformResource {
 
     // last_updated_timestamp - computed: true, optional: false, required: false
     public get lastUpdatedTimestamp() {
-        return this.getNumberAttribute('last_updated_timestamp');
+        return this.getStringAttribute('last_updated_timestamp');
     }
 
     // metadata - computed: true, optional: true, required: false
@@ -413,13 +413,13 @@ export interface InvokedByProperty {
     /**
     * Sets standard messages as the bot trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#standard_messages CcAppInstanceBot#standard_messages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#standard_messages CcAppInstanceBot#standard_messages}
     */
     readonly standardMessages?: string;
     /**
     * Sets targeted messages as the bot trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#targeted_messages CcAppInstanceBot#targeted_messages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#targeted_messages CcAppInstanceBot#targeted_messages}
     */
     readonly targetedMessages?: string;
 }
@@ -507,31 +507,31 @@ export interface LexConfigurationProperty {
     /**
     * Specifies the type of message that triggers a bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#invoked_by CcAppInstanceBot#invoked_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#invoked_by CcAppInstanceBot#invoked_by}
     */
     readonly invokedBy?: InvokedByProperty;
     /**
     * The ARN of the Amazon Lex V2 bot's alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#lex_bot_alias_arn CcAppInstanceBot#lex_bot_alias_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#lex_bot_alias_arn CcAppInstanceBot#lex_bot_alias_arn}
     */
     readonly lexBotAliasArn: string;
     /**
     * Identifies the Amazon Lex V2 bot's language and locale.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#locale_id CcAppInstanceBot#locale_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#locale_id CcAppInstanceBot#locale_id}
     */
     readonly localeId: string;
     /**
     * Determines whether the Amazon Lex V2 bot responds to all standard messages. Control messages are not supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#responds_to CcAppInstanceBot#responds_to}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#responds_to CcAppInstanceBot#responds_to}
     */
     readonly respondsTo?: string;
     /**
     * The name of the welcome intent configured in the Amazon Lex V2 bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#welcome_intent CcAppInstanceBot#welcome_intent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#welcome_intent CcAppInstanceBot#welcome_intent}
     */
     readonly welcomeIntent?: string;
 }
@@ -679,7 +679,7 @@ export interface ConfigurationProperty {
     /**
     * The configuration for an Amazon Lex V2 bot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#lex CcAppInstanceBot#lex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#lex CcAppInstanceBot#lex}
     */
     readonly lex: LexConfigurationProperty;
 }
@@ -742,13 +742,13 @@ export interface TagProperty {
     /**
     * The key in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#key CcAppInstanceBot#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#key CcAppInstanceBot#key}
     */
     readonly key?: string;
     /**
     * The value in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_app_instance_bot#value CcAppInstanceBot#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_bot#value CcAppInstanceBot#value}
     */
     readonly value?: string;
 }

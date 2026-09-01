@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcConfigurationSetProps extends cdktn.TerraformMetaArguments {
     /**
     * An object that defines a MailManager archive that is used to preserve emails that you send using the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#archiving_options CcConfigurationSet#archiving_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#archiving_options CcConfigurationSet#archiving_options}
     */
     readonly archivingOptions?: CcConfigurationSet.ArchivingOptionsProperty;
     /**
     * An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#delivery_options CcConfigurationSet#delivery_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#delivery_options CcConfigurationSet#delivery_options}
     */
     readonly deliveryOptions?: CcConfigurationSet.DeliveryOptionsProperty;
     /**
     * The name of the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#name CcConfigurationSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#name CcConfigurationSet#name}
     */
     readonly name?: string;
     /**
     * An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#reputation_options CcConfigurationSet#reputation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#reputation_options CcConfigurationSet#reputation_options}
     */
     readonly reputationOptions?: CcConfigurationSet.ReputationOptionsProperty;
     /**
     * An object that defines whether or not Amazon SES can send email that you send using the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#sending_options CcConfigurationSet#sending_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#sending_options CcConfigurationSet#sending_options}
     */
     readonly sendingOptions?: CcConfigurationSet.SendingOptionsProperty;
     /**
     * An object that contains information about the suppression list preferences for your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#suppression_options CcConfigurationSet#suppression_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#suppression_options CcConfigurationSet#suppression_options}
     */
     readonly suppressionOptions?: CcConfigurationSet.SuppressionOptionsProperty;
     /**
     * The tags (keys and values) associated with the contact list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#tags CcConfigurationSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#tags CcConfigurationSet#tags}
     */
     readonly tags?: CcConfigurationSet.TagProperty[] | cdktn.IResolvable;
     /**
     * An object that defines the open and click tracking options for emails that you send using the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#tracking_options CcConfigurationSet#tracking_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#tracking_options CcConfigurationSet#tracking_options}
     */
     readonly trackingOptions?: CcConfigurationSet.TrackingOptionsProperty;
     /**
     * An object that contains Virtual Deliverability Manager (VDM) settings for this configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#vdm_options CcConfigurationSet#vdm_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#vdm_options CcConfigurationSet#vdm_options}
     */
     readonly vdmOptions?: CcConfigurationSet.VdmOptionsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set awscc_ses_configuration_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set awscc_ses_configuration_set}
 */
 export class CcConfigurationSet extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationSet to import
-    * @param importFromId The id of the existing CcConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set awscc_ses_configuration_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set awscc_ses_configuration_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcConfigurationSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_configuration_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -801,7 +801,7 @@ export interface ArchivingOptionsProperty {
     /**
     * The ARN of the MailManager archive to associate with the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#archive_arn CcConfigurationSet#archive_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#archive_arn CcConfigurationSet#archive_arn}
     */
     readonly archiveArn?: string;
 }
@@ -867,19 +867,19 @@ export interface DeliveryOptionsProperty {
     /**
     * Specifies the maximum time until which SES will retry sending emails
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#max_delivery_seconds CcConfigurationSet#max_delivery_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#max_delivery_seconds CcConfigurationSet#max_delivery_seconds}
     */
     readonly maxDeliverySeconds?: number;
     /**
     * The name of the dedicated IP pool to associate with the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#sending_pool_name CcConfigurationSet#sending_pool_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#sending_pool_name CcConfigurationSet#sending_pool_name}
     */
     readonly sendingPoolName?: string;
     /**
     * Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is Require , messages are only delivered if a TLS connection can be established. If the value is Optional , messages can be delivered in plain text if a TLS connection can't be established.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#tls_policy CcConfigurationSet#tls_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#tls_policy CcConfigurationSet#tls_policy}
     */
     readonly tlsPolicy?: string;
 }
@@ -989,7 +989,7 @@ export interface ReputationOptionsProperty {
     /**
     * If true , tracking of reputation metrics is enabled for the configuration set. If false , tracking of reputation metrics is disabled for the configuration set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#reputation_metrics_enabled CcConfigurationSet#reputation_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#reputation_metrics_enabled CcConfigurationSet#reputation_metrics_enabled}
     */
     readonly reputationMetricsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1053,7 +1053,7 @@ export class ReputationOptionsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface SendingOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#sending_enabled CcConfigurationSet#sending_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#sending_enabled CcConfigurationSet#sending_enabled}
     */
     readonly sendingEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1119,7 +1119,7 @@ export interface OverallConfidenceThresholdProperty {
     /**
     * The confidence verdict threshold level.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#confidence_verdict_threshold CcConfigurationSet#confidence_verdict_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#confidence_verdict_threshold CcConfigurationSet#confidence_verdict_threshold}
     */
     readonly confidenceVerdictThreshold?: string;
 }
@@ -1185,13 +1185,13 @@ export interface ConditionThresholdProperty {
     /**
     * Whether the condition threshold is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#condition_threshold_enabled CcConfigurationSet#condition_threshold_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#condition_threshold_enabled CcConfigurationSet#condition_threshold_enabled}
     */
     readonly conditionThresholdEnabled?: string;
     /**
     * The overall confidence threshold settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#overall_confidence_threshold CcConfigurationSet#overall_confidence_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#overall_confidence_threshold CcConfigurationSet#overall_confidence_threshold}
     */
     readonly overallConfidenceThreshold?: OverallConfidenceThresholdProperty;
 }
@@ -1279,7 +1279,7 @@ export interface ValidationOptionsProperty {
     /**
     * The condition threshold settings for suppression validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#condition_threshold CcConfigurationSet#condition_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#condition_threshold CcConfigurationSet#condition_threshold}
     */
     readonly conditionThreshold?: ConditionThresholdProperty;
 }
@@ -1345,13 +1345,13 @@ export interface SuppressionOptionsProperty {
     /**
     * A list that contains the reasons that email addresses are automatically added to the suppression list for your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#suppressed_reasons CcConfigurationSet#suppressed_reasons}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#suppressed_reasons CcConfigurationSet#suppressed_reasons}
     */
     readonly suppressedReasons?: string[];
     /**
     * An object that contains information about the validation options for your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#validation_options CcConfigurationSet#validation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#validation_options CcConfigurationSet#validation_options}
     */
     readonly validationOptions?: ValidationOptionsProperty;
 }
@@ -1437,11 +1437,11 @@ export class SuppressionOptionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#key CcConfigurationSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#key CcConfigurationSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#value CcConfigurationSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#value CcConfigurationSet#value}
     */
     readonly value?: string;
 }
@@ -1551,13 +1551,13 @@ export interface TrackingOptionsProperty {
     /**
     * The domain to use for tracking open and click events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#custom_redirect_domain CcConfigurationSet#custom_redirect_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#custom_redirect_domain CcConfigurationSet#custom_redirect_domain}
     */
     readonly customRedirectDomain?: string;
     /**
     * The https policy to use for tracking open and click events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#https_policy CcConfigurationSet#https_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#https_policy CcConfigurationSet#https_policy}
     */
     readonly httpsPolicy?: string;
 }
@@ -1645,7 +1645,7 @@ export interface DashboardOptionsProperty {
     /**
     * Whether emails sent with this configuration set have engagement tracking enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#engagement_metrics CcConfigurationSet#engagement_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#engagement_metrics CcConfigurationSet#engagement_metrics}
     */
     readonly engagementMetrics?: string;
 }
@@ -1711,7 +1711,7 @@ export interface GuardianOptionsProperty {
     /**
     * Whether emails sent with this configuration set have optimized delivery algorithm enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#optimized_shared_delivery CcConfigurationSet#optimized_shared_delivery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#optimized_shared_delivery CcConfigurationSet#optimized_shared_delivery}
     */
     readonly optimizedSharedDelivery?: string;
 }
@@ -1777,13 +1777,13 @@ export interface VdmOptionsProperty {
     /**
     * Preferences regarding the Dashboard feature.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#dashboard_options CcConfigurationSet#dashboard_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#dashboard_options CcConfigurationSet#dashboard_options}
     */
     readonly dashboardOptions?: DashboardOptionsProperty;
     /**
     * Preferences regarding the Guardian feature.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_configuration_set#guardian_options CcConfigurationSet#guardian_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_configuration_set#guardian_options CcConfigurationSet#guardian_options}
     */
     readonly guardianOptions?: GuardianOptionsProperty;
 }

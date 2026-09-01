@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './budget';
 export * from './farm';
 export * from './fleet';
 export * from './license-endpoint';
@@ -11,3 +12,4 @@ export * from './queue-environment';
 export * from './queue-fleet-association';
 export * from './queue-limit-association';
 export * from './storage-profile';
+export * from './worker';

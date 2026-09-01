@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRecommenderProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the recommender.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#description CcRecommender#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#description CcRecommender#description}
     */
     readonly description?: string;
     /**
     * The name of the domain for which the recommender will be created
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#domain_name CcRecommender#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#domain_name CcRecommender#domain_name}
     */
     readonly domainName: string;
     /**
     * Configuration for the recommender
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#recommender_config CcRecommender#recommender_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#recommender_config CcRecommender#recommender_config}
     */
     readonly recommenderConfig?: CcRecommender.RecommenderConfigProperty;
     /**
     * The name of the recommender
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#recommender_name CcRecommender#recommender_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#recommender_name CcRecommender#recommender_name}
     */
     readonly recommenderName: string;
     /**
     * The name of the recommender recipe.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#recommender_recipe_name CcRecommender#recommender_recipe_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#recommender_recipe_name CcRecommender#recommender_recipe_name}
     */
     readonly recommenderRecipeName: string;
     /**
     * The tags used to organize, track, or control access for this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#tags CcRecommender#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#tags CcRecommender#tags}
     */
     readonly tags?: CcRecommender.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender awscc_customerprofiles_recommender}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender awscc_customerprofiles_recommender}
 */
 export class CcRecommender extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRecommender extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRecommender resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRecommender to import
-    * @param importFromId The id of the existing CcRecommender that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRecommender that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRecommender to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRecommender extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender awscc_customerprofiles_recommender} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender awscc_customerprofiles_recommender} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRecommender extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_customerprofiles_recommender',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -741,13 +741,13 @@ export interface EventParametersProperty {
     /**
     * The type of event
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#event_type CcRecommender#event_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#event_type CcRecommender#event_type}
     */
     readonly eventType?: string;
     /**
     * The threshold of the event type. Only events with a value greater or equal to this threshold will be considered for solution creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#event_value_threshold CcRecommender#event_value_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#event_value_threshold CcRecommender#event_value_threshold}
     */
     readonly eventValueThreshold?: number;
 }
@@ -857,7 +857,7 @@ export interface EventsConfigProperty {
     /**
     * List of event parameters with their value thresholds
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#event_parameters_list CcRecommender#event_parameters_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#event_parameters_list CcRecommender#event_parameters_list}
     */
     readonly eventParametersList?: EventParametersProperty[] | cdktn.IResolvable;
 }
@@ -923,7 +923,7 @@ export interface RecommenderConfigProperty {
     /**
     * Configuration for events used in the recommender
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#events_config CcRecommender#events_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#events_config CcRecommender#events_config}
     */
     readonly eventsConfig?: EventsConfigProperty;
 }
@@ -987,11 +987,11 @@ export class RecommenderConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#key CcRecommender#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#key CcRecommender#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/customerprofiles_recommender#value CcRecommender#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_recommender#value CcRecommender#value}
     */
     readonly value?: string;
 }

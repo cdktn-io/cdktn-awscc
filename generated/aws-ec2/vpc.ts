@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -10,20 +10,20 @@ export interface CcVPCProps extends cdktn.TerraformMetaArguments {
     * The IPv4 network range for the VPC, in CIDR notation. For example, ``10.0.0.0/16``. We modify the specified CIDR block to its canonical form; for example, if you specify ``100.68.0.18/18``, we modify it to ``100.68.0.0/18``.
     *  You must specify either``CidrBlock`` or ``Ipv4IpamPoolId``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#cidr_block CcVPC#cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#cidr_block CcVPC#cidr_block}
     */
     readonly cidrBlock?: string;
     /**
     * Indicates whether the instances launched in the VPC get DNS hostnames. If enabled, instances in the VPC get DNS hostnames; otherwise, they do not. Disabled by default for nondefault VPCs. For more information, see [DNS attributes in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support).
     *  You can only enable DNS hostnames if you've enabled DNS support.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#enable_dns_hostnames CcVPC#enable_dns_hostnames}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#enable_dns_hostnames CcVPC#enable_dns_hostnames}
     */
     readonly enableDnsHostnames?: boolean | cdktn.IResolvable;
     /**
     * Indicates whether the DNS resolution is supported for the VPC. If enabled, queries to the Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP address at the base of the VPC network range "plus two" succeed. If disabled, the Amazon provided DNS service in the VPC that resolves public DNS hostnames to IP addresses is not enabled. Enabled by default. For more information, see [DNS attributes in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#enable_dns_support CcVPC#enable_dns_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#enable_dns_support CcVPC#enable_dns_support}
     */
     readonly enableDnsSupport?: boolean | cdktn.IResolvable;
     /**
@@ -33,39 +33,39 @@ export interface CcVPCProps extends cdktn.TerraformMetaArguments {
     *   
     *  Updating ``InstanceTenancy`` requires no replacement only if you are updating its value from ``dedicated`` to ``default``. Updating ``InstanceTenancy`` from ``default`` to ``dedicated`` requires replacement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#instance_tenancy CcVPC#instance_tenancy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#instance_tenancy CcVPC#instance_tenancy}
     */
     readonly instanceTenancy?: string;
     /**
     * The ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR. For more information, see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
     *  You must specify either``CidrBlock`` or ``Ipv4IpamPoolId``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#ipv_4_ipam_pool_id CcVPC#ipv_4_ipam_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#ipv_4_ipam_pool_id CcVPC#ipv_4_ipam_pool_id}
     */
     readonly ipv4IpamPoolId?: string;
     /**
     * The netmask length of the IPv4 CIDR you want to allocate to this VPC from an Amazon VPC IP Address Manager (IPAM) pool. For more information about IPAM, see [What is IPAM?](https://docs.aws.amazon.com//vpc/latest/ipam/what-is-it-ipam.html) in the *Amazon VPC IPAM User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#ipv_4_netmask_length CcVPC#ipv_4_netmask_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#ipv_4_netmask_length CcVPC#ipv_4_netmask_length}
     */
     readonly ipv4NetmaskLength?: number;
     /**
     * The tags for the VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#tags CcVPC#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#tags CcVPC#tags}
     */
     readonly tags?: CcVPC.TagProperty[] | cdktn.IResolvable;
     /**
     * Describes the configuration and state of VPC encryption controls.
     *  For more information, see [Enforce VPC encryption in transit](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html) in the *Amazon VPC User Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#vpc_encryption_control CcVPC#vpc_encryption_control}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#vpc_encryption_control CcVPC#vpc_encryption_control}
     */
     readonly vpcEncryptionControl?: CcVPC.VpcEncryptionControlProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc awscc_ec2_vpc}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc awscc_ec2_vpc}
 */
 export class CcVPC extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcVPC extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPC resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPC to import
-    * @param importFromId The id of the existing CcVPC that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPC that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPC to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcVPC extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc awscc_ec2_vpc} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc awscc_ec2_vpc} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcVPC extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_vpc',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -677,13 +677,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#key CcVPC#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#key CcVPC#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#value CcVPC#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#value CcVPC#value}
     */
     readonly value?: string;
 }
@@ -1171,41 +1171,41 @@ export class VpcEncryptionControlExclusionsPropertyOutputReference extends cdktn
 }
 export interface VpcEncryptionControlProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#egress_only_internet_gateway_exclusion CcVPC#egress_only_internet_gateway_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#egress_only_internet_gateway_exclusion CcVPC#egress_only_internet_gateway_exclusion}
     */
     readonly egressOnlyInternetGatewayExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#elastic_file_system_exclusion CcVPC#elastic_file_system_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#elastic_file_system_exclusion CcVPC#elastic_file_system_exclusion}
     */
     readonly elasticFileSystemExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#internet_gateway_exclusion CcVPC#internet_gateway_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#internet_gateway_exclusion CcVPC#internet_gateway_exclusion}
     */
     readonly internetGatewayExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#lambda_exclusion CcVPC#lambda_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#lambda_exclusion CcVPC#lambda_exclusion}
     */
     readonly lambdaExclusion?: string;
     /**
     * The encryption mode for the VPC Encryption Control configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#mode CcVPC#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#mode CcVPC#mode}
     */
     readonly mode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#nat_gateway_exclusion CcVPC#nat_gateway_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#nat_gateway_exclusion CcVPC#nat_gateway_exclusion}
     */
     readonly natGatewayExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#virtual_private_gateway_exclusion CcVPC#virtual_private_gateway_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#virtual_private_gateway_exclusion CcVPC#virtual_private_gateway_exclusion}
     */
     readonly virtualPrivateGatewayExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#vpc_lattice_exclusion CcVPC#vpc_lattice_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#vpc_lattice_exclusion CcVPC#vpc_lattice_exclusion}
     */
     readonly vpcLatticeExclusion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc#vpc_peering_exclusion CcVPC#vpc_peering_exclusion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc#vpc_peering_exclusion CcVPC#vpc_peering_exclusion}
     */
     readonly vpcPeeringExclusion?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -12,13 +12,13 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     *  To use a FARGATElong capacity provider, specify either the ``FARGATE`` or ``FARGATE_SPOT`` capacity providers. The FARGATElong capacity providers are available to all accounts and only need to be associated with a cluster to be used.
     *  The [PutCapacityProvider](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutCapacityProvider.html) API operation is used to update the list of available capacity providers for a cluster after the cluster is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#capacity_providers CcCluster#capacity_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#capacity_providers CcCluster#capacity_providers}
     */
     readonly capacityProviders?: string[];
     /**
     * A user-generated string that you use to identify your cluster. If you don't specify a name, CFNlong generates a unique physical ID for the name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName?: string;
     /**
@@ -26,26 +26,26 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     *  Container Insights with enhanced observability provides all the Container Insights metrics, plus additional task and container metrics. This version supports enhanced observability for Amazon ECS clusters using the Amazon EC2 and Fargate launch types. After you configure Container Insights with enhanced observability on Amazon ECS, Container Insights auto-collects detailed infrastructure telemetry from the cluster level down to the container level in your environment and displays these critical performance data in curated dashboards removing the heavy lifting in observability set-up. 
     *  For more information, see [Monitor Amazon ECS containers using Container Insights with enhanced observability](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-container-insights.html) in the *Amazon Elastic Container Service Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#cluster_settings CcCluster#cluster_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#cluster_settings CcCluster#cluster_settings}
     */
     readonly clusterSettings?: CcCluster.ClusterSettingsProperty[] | cdktn.IResolvable;
     /**
     * The execute command and managed storage configuration for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#configuration CcCluster#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#configuration CcCluster#configuration}
     */
     readonly configuration?: CcCluster.ClusterConfigurationProperty;
     /**
     * The default capacity provider strategy for the cluster. When services or tasks are run in the cluster with no launch type or capacity provider strategy specified, the default capacity provider strategy is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#default_capacity_provider_strategy CcCluster#default_capacity_provider_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#default_capacity_provider_strategy CcCluster#default_capacity_provider_strategy}
     */
     readonly defaultCapacityProviderStrategy?: CcCluster.CapacityProviderStrategyItemProperty[] | cdktn.IResolvable;
     /**
     * Use this parameter to set a default Service Connect namespace. After you set a default Service Connect namespace, any new services with Service Connect turned on that are created in the cluster are added as client services in the namespace. This setting only applies to new services that set the ``enabled`` parameter to ``true`` in the ``ServiceConnectConfiguration``. You can set the namespace of each service individually in the ``ServiceConnectConfiguration`` to override this default parameter.
     *  Tasks that run in a namespace can use short names to connect to services in the namespace. Tasks can connect to services across all of the clusters in the namespace. Tasks connect through a managed proxy container that collects logs and metrics for increased visibility. Only the tasks that Amazon ECS services create are supported with Service Connect. For more information, see [Service Connect](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html) in the *Amazon Elastic Container Service Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#service_connect_defaults CcCluster#service_connect_defaults}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#service_connect_defaults CcCluster#service_connect_defaults}
     */
     readonly serviceConnectDefaults?: CcCluster.ServiceConnectDefaultsProperty;
     /**
@@ -59,13 +59,13 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     *   +  Tag keys and values are case-sensitive.
     *   +  Do not use ``aws:``, ``AWS:``, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster awscc_ecs_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster awscc_ecs_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster awscc_ecs_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster awscc_ecs_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecs_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -645,7 +645,7 @@ export interface ClusterSettingsProperty {
     /**
     * The name of the cluster setting. The value is ``containerInsights``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#name CcCluster#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#name CcCluster#name}
     */
     readonly name?: string;
     /**
@@ -654,7 +654,7 @@ export interface ClusterSettingsProperty {
     *  To use Container Insights, set the ``containerInsights`` account setting to ``enabled``.
     *  If a cluster value is specified, it will override the ``containerInsights`` value set with [PutAccountSetting](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAccountSetting.html) or [PutAccountSettingDefault](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutAccountSettingDefault.html).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -764,33 +764,33 @@ export interface ExecuteCommandLogConfigurationProperty {
     /**
     * Determines whether to use encryption on the CloudWatch logs. If not specified, encryption will be off.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#cloudwatch_encryption_enabled CcCluster#cloudwatch_encryption_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#cloudwatch_encryption_enabled CcCluster#cloudwatch_encryption_enabled}
     */
     readonly cloudwatchEncryptionEnabled?: boolean | cdktn.IResolvable;
     /**
     * The name of the CloudWatch log group to send logs to.
     *   The CloudWatch log group must already be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#cloudwatch_log_group_name CcCluster#cloudwatch_log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#cloudwatch_log_group_name CcCluster#cloudwatch_log_group_name}
     */
     readonly cloudwatchLogGroupName?: string;
     /**
     * The name of the S3 bucket to send logs to.
     *   The S3 bucket must already be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#s3_bucket_name CcCluster#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#s3_bucket_name CcCluster#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
     * Determines whether to use encryption on the S3 logs. If not specified, encryption is not used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#s3_encryption_enabled CcCluster#s3_encryption_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#s3_encryption_enabled CcCluster#s3_encryption_enabled}
     */
     readonly s3EncryptionEnabled?: boolean | cdktn.IResolvable;
     /**
     * An optional folder in the S3 bucket to place logs in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#s3_key_prefix CcCluster#s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#s3_key_prefix CcCluster#s3_key_prefix}
     */
     readonly s3KeyPrefix?: string;
 }
@@ -944,13 +944,13 @@ export interface ExecuteCommandConfigurationProperty {
     /**
     * Specify an KMSlong key ID to encrypt the data between the local client and the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#kms_key_id CcCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#kms_key_id CcCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The log configuration for the results of the execute command actions. The logs can be sent to CloudWatch Logs or an Amazon S3 bucket. When ``logging=OVERRIDE`` is specified, a ``logConfiguration`` must be provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#log_configuration CcCluster#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#log_configuration CcCluster#log_configuration}
     */
     readonly logConfiguration?: ExecuteCommandLogConfigurationProperty;
     /**
@@ -959,7 +959,7 @@ export interface ExecuteCommandConfigurationProperty {
     *   +  ``DEFAULT``: The ``awslogs`` configuration in the task definition is used. If no logging parameter is specified, it defaults to this value. If no ``awslogs`` log driver is configured in the task definition, the output won't be logged.
     *   +  ``OVERRIDE``: Specify the logging details as a part of ``logConfiguration``. If the ``OVERRIDE`` logging option is specified, the ``logConfiguration`` is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#logging CcCluster#logging}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#logging CcCluster#logging}
     */
     readonly logging?: string;
 }
@@ -1071,7 +1071,7 @@ export interface ManagedStorageConfigurationProperty {
     *  When you specify a ``fargateEphemeralStorageKmsKeyId``, AWS Fargate uses the key to encrypt data at rest in ephemeral storage. For more information about Fargate ephemeral storage encryption, see [Customer managed keys for Fargate ephemeral storage for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-storage-encryption.html) in the *Amazon Elastic Container Service Developer Guide*.
     *  The key must be a single Region key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#fargate_ephemeral_storage_kms_key_id CcCluster#fargate_ephemeral_storage_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#fargate_ephemeral_storage_kms_key_id CcCluster#fargate_ephemeral_storage_kms_key_id}
     */
     readonly fargateEphemeralStorageKmsKeyId?: string;
     /**
@@ -1079,7 +1079,7 @@ export interface ManagedStorageConfigurationProperty {
     *   When you specify a ``kmsKeyId``, Amazon ECS uses the key to encrypt data volumes managed by Amazon ECS that are attached to tasks in the cluster. The following data volumes are managed by Amazon ECS: Amazon EBS. For more information about encryption of Amazon EBS volumes attached to Amazon ECS tasks, see [Encrypt data stored in Amazon EBS volumes for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-kms-encryption.html) in the *Amazon Elastic Container Service Developer Guide*.
     *  The key must be a single Region key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#kms_key_id CcCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#kms_key_id CcCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -1167,13 +1167,13 @@ export interface ClusterConfigurationProperty {
     /**
     * The details of the execute command configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#execute_command_configuration CcCluster#execute_command_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#execute_command_configuration CcCluster#execute_command_configuration}
     */
     readonly executeCommandConfiguration?: ExecuteCommandConfigurationProperty;
     /**
     * The details of the managed storage configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#managed_storage_configuration CcCluster#managed_storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#managed_storage_configuration CcCluster#managed_storage_configuration}
     */
     readonly managedStorageConfiguration?: ManagedStorageConfigurationProperty;
 }
@@ -1266,13 +1266,13 @@ export interface CapacityProviderStrategyItemProperty {
     *   +  The valid range is 0 to 100,000
     *   +  Base requirements are satisfied first before weight distribution
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#base CcCluster#base}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#base CcCluster#base}
     */
     readonly base?: number;
     /**
     * The short name of the capacity provider. This can be either an AWS managed capacity provider (``FARGATE`` or ``FARGATE_SPOT``) or the name of a custom capacity provider that you created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#capacity_provider CcCluster#capacity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#capacity_provider CcCluster#capacity_provider}
     */
     readonly capacityProvider?: string;
     /**
@@ -1293,7 +1293,7 @@ export interface CapacityProviderStrategyItemProperty {
     *  Equal Distribution: Two capacity providers both with weight ``1`` will split tasks evenly after base requirements are met.
     *  Weighted Distribution: If capacityProviderA has weight ``1`` and capacityProviderB has weight ``4``, then for every 1 task on A, 4 tasks will run on B.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#weight CcCluster#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#weight CcCluster#weight}
     */
     readonly weight?: number;
 }
@@ -1429,7 +1429,7 @@ export interface ServiceConnectDefaultsProperty {
     *  If you update the cluster with an empty string ``""`` for the namespace name, the cluster configuration for Service Connect is removed. Note that the namespace will remain in CMAP and must be deleted separately.
     *  For more information about CMAPlong, see [Working with Services](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-services.html) in the *Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#namespace CcCluster#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#namespace CcCluster#namespace}
     */
     readonly namespace?: string;
 }
@@ -1495,13 +1495,13 @@ export interface TagProperty {
     /**
     * One part of a key-value pair that make up a tag. A ``key`` is a general label that acts like a category for more specific tag values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The optional part of a key-value pair that make up a tag. A ``value`` acts as a descriptor within a tag category (key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }

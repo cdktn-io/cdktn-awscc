@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_sdb"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.SDB"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.sdb"
+    }
+  }
+}

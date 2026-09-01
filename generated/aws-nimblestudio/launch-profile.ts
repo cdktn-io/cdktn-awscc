@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLaunchProfileProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#description CcLaunchProfile#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#description CcLaunchProfile#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#ec_2_subnet_ids CcLaunchProfile#ec_2_subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#ec_2_subnet_ids CcLaunchProfile#ec_2_subnet_ids}
     */
     readonly ec2SubnetIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#launch_profile_protocol_versions CcLaunchProfile#launch_profile_protocol_versions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#launch_profile_protocol_versions CcLaunchProfile#launch_profile_protocol_versions}
     */
     readonly launchProfileProtocolVersions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#name CcLaunchProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#name CcLaunchProfile#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#stream_configuration CcLaunchProfile#stream_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#stream_configuration CcLaunchProfile#stream_configuration}
     */
     readonly streamConfiguration: CcLaunchProfile.StreamConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#studio_component_ids CcLaunchProfile#studio_component_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#studio_component_ids CcLaunchProfile#studio_component_ids}
     */
     readonly studioComponentIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#studio_id CcLaunchProfile#studio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#studio_id CcLaunchProfile#studio_id}
     */
     readonly studioId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#tags CcLaunchProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#tags CcLaunchProfile#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile awscc_nimblestudio_launch_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile awscc_nimblestudio_launch_profile}
 */
 export class CcLaunchProfile extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcLaunchProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLaunchProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLaunchProfile to import
-    * @param importFromId The id of the existing CcLaunchProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLaunchProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLaunchProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcLaunchProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile awscc_nimblestudio_launch_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile awscc_nimblestudio_launch_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcLaunchProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_nimblestudio_launch_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -549,11 +549,11 @@ export function ccLaunchProfileStreamConfigurationPropertyToHclTerraform(struct?
 export namespace CcLaunchProfile {
 export interface StreamConfigurationSessionBackupProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#max_backups_to_retain CcLaunchProfile#max_backups_to_retain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#max_backups_to_retain CcLaunchProfile#max_backups_to_retain}
     */
     readonly maxBackupsToRetain?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#mode CcLaunchProfile#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#mode CcLaunchProfile#mode}
     */
     readonly mode?: string;
 }
@@ -639,11 +639,11 @@ export class StreamConfigurationSessionBackupPropertyOutputReference extends cdk
 }
 export interface StreamingSessionStorageRootProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#linux CcLaunchProfile#linux}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#linux CcLaunchProfile#linux}
     */
     readonly linux?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#windows CcLaunchProfile#windows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#windows CcLaunchProfile#windows}
     */
     readonly windows?: string;
 }
@@ -729,11 +729,11 @@ export class StreamingSessionStorageRootPropertyOutputReference extends cdktn.Co
 }
 export interface StreamConfigurationSessionStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#mode CcLaunchProfile#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#mode CcLaunchProfile#mode}
     */
     readonly mode?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#root CcLaunchProfile#root}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#root CcLaunchProfile#root}
     */
     readonly root?: StreamingSessionStorageRootProperty;
 }
@@ -819,15 +819,15 @@ export class StreamConfigurationSessionStoragePropertyOutputReference extends cd
 }
 export interface VolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#iops CcLaunchProfile#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#iops CcLaunchProfile#iops}
     */
     readonly iops?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#size CcLaunchProfile#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#size CcLaunchProfile#size}
     */
     readonly size?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#throughput CcLaunchProfile#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#throughput CcLaunchProfile#throughput}
     */
     readonly throughput?: number;
 }
@@ -935,43 +935,43 @@ export class VolumeConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface StreamConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#automatic_termination_mode CcLaunchProfile#automatic_termination_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#automatic_termination_mode CcLaunchProfile#automatic_termination_mode}
     */
     readonly automaticTerminationMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#clipboard_mode CcLaunchProfile#clipboard_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#clipboard_mode CcLaunchProfile#clipboard_mode}
     */
     readonly clipboardMode: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#ec_2_instance_types CcLaunchProfile#ec_2_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#ec_2_instance_types CcLaunchProfile#ec_2_instance_types}
     */
     readonly ec2InstanceTypes: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#max_session_length_in_minutes CcLaunchProfile#max_session_length_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#max_session_length_in_minutes CcLaunchProfile#max_session_length_in_minutes}
     */
     readonly maxSessionLengthInMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#max_stopped_session_length_in_minutes CcLaunchProfile#max_stopped_session_length_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#max_stopped_session_length_in_minutes CcLaunchProfile#max_stopped_session_length_in_minutes}
     */
     readonly maxStoppedSessionLengthInMinutes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#session_backup CcLaunchProfile#session_backup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#session_backup CcLaunchProfile#session_backup}
     */
     readonly sessionBackup?: StreamConfigurationSessionBackupProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#session_persistence_mode CcLaunchProfile#session_persistence_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#session_persistence_mode CcLaunchProfile#session_persistence_mode}
     */
     readonly sessionPersistenceMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#session_storage CcLaunchProfile#session_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#session_storage CcLaunchProfile#session_storage}
     */
     readonly sessionStorage?: StreamConfigurationSessionStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#streaming_image_ids CcLaunchProfile#streaming_image_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#streaming_image_ids CcLaunchProfile#streaming_image_ids}
     */
     readonly streamingImageIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/nimblestudio_launch_profile#volume_configuration CcLaunchProfile#volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/nimblestudio_launch_profile#volume_configuration CcLaunchProfile#volume_configuration}
     */
     readonly volumeConfiguration?: VolumeConfigurationProperty;
 }

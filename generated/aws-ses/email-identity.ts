@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcEmailIdentityProps extends cdktn.TerraformMetaArguments {
     /**
     * Used to associate a configuration set with an email identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#configuration_set_attributes CcEmailIdentity#configuration_set_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#configuration_set_attributes CcEmailIdentity#configuration_set_attributes}
     */
     readonly configurationSetAttributes?: CcEmailIdentity.ConfigurationSetAttributesProperty;
     /**
     * Used to enable or disable DKIM authentication for an email identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#dkim_attributes CcEmailIdentity#dkim_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#dkim_attributes CcEmailIdentity#dkim_attributes}
     */
     readonly dkimAttributes?: CcEmailIdentity.DkimAttributesProperty;
     /**
     * If your request includes this object, Amazon SES configures the identity to use Bring Your Own DKIM (BYODKIM) for DKIM authentication purposes, or, configures the key length to be used for Easy DKIM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#dkim_signing_attributes CcEmailIdentity#dkim_signing_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#dkim_signing_attributes CcEmailIdentity#dkim_signing_attributes}
     */
     readonly dkimSigningAttributes?: CcEmailIdentity.DkimSigningAttributesProperty;
     /**
     * The email address or domain to verify.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#email_identity CcEmailIdentity#email_identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#email_identity CcEmailIdentity#email_identity}
     */
     readonly emailIdentity: string;
     /**
     * Used to enable or disable feedback forwarding for an identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#feedback_attributes CcEmailIdentity#feedback_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#feedback_attributes CcEmailIdentity#feedback_attributes}
     */
     readonly feedbackAttributes?: CcEmailIdentity.FeedbackAttributesProperty;
     /**
     * Used to enable or disable the custom Mail-From domain configuration for an email identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#mail_from_attributes CcEmailIdentity#mail_from_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#mail_from_attributes CcEmailIdentity#mail_from_attributes}
     */
     readonly mailFromAttributes?: CcEmailIdentity.MailFromAttributesProperty;
     /**
     * The tags (keys and values) associated with the email identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#tags CcEmailIdentity#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#tags CcEmailIdentity#tags}
     */
     readonly tags?: CcEmailIdentity.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity awscc_ses_email_identity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity awscc_ses_email_identity}
 */
 export class CcEmailIdentity extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcEmailIdentity extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEmailIdentity resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEmailIdentity to import
-    * @param importFromId The id of the existing CcEmailIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEmailIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEmailIdentity to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcEmailIdentity extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity awscc_ses_email_identity} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity awscc_ses_email_identity} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcEmailIdentity extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_email_identity',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -537,7 +537,7 @@ export interface ConfigurationSetAttributesProperty {
     /**
     * The configuration set to use by default when sending from this identity. Note that any configuration set defined in the email sending request takes precedence.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#configuration_set_name CcEmailIdentity#configuration_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#configuration_set_name CcEmailIdentity#configuration_set_name}
     */
     readonly configurationSetName?: string;
 }
@@ -603,7 +603,7 @@ export interface DkimAttributesProperty {
     /**
     * Sets the DKIM signing configuration for the identity. When you set this value true, then the messages that are sent from the identity are signed using DKIM. If you set this value to false, your messages are sent without DKIM signing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#signing_enabled CcEmailIdentity#signing_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#signing_enabled CcEmailIdentity#signing_enabled}
     */
     readonly signingEnabled?: boolean | cdktn.IResolvable;
 }
@@ -669,19 +669,19 @@ export interface DkimSigningAttributesProperty {
     /**
     * [Bring Your Own DKIM] A private key that's used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#domain_signing_private_key CcEmailIdentity#domain_signing_private_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#domain_signing_private_key CcEmailIdentity#domain_signing_private_key}
     */
     readonly domainSigningPrivateKey?: string;
     /**
     * [Bring Your Own DKIM] A string that's used to identify a public key in the DNS configuration for a domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#domain_signing_selector CcEmailIdentity#domain_signing_selector}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#domain_signing_selector CcEmailIdentity#domain_signing_selector}
     */
     readonly domainSigningSelector?: string;
     /**
     * [Easy DKIM] The key length of the future DKIM key pair to be generated. This can be changed at most once per day.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#next_signing_key_length CcEmailIdentity#next_signing_key_length}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#next_signing_key_length CcEmailIdentity#next_signing_key_length}
     */
     readonly nextSigningKeyLength?: string;
 }
@@ -791,7 +791,7 @@ export interface FeedbackAttributesProperty {
     /**
     * If the value is true, you receive email notifications when bounce or complaint events occur
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#email_forwarding_enabled CcEmailIdentity#email_forwarding_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#email_forwarding_enabled CcEmailIdentity#email_forwarding_enabled}
     */
     readonly emailForwardingEnabled?: boolean | cdktn.IResolvable;
 }
@@ -857,13 +857,13 @@ export interface MailFromAttributesProperty {
     /**
     * The action to take if the required MX record isn't found when you send an email. When you set this value to UseDefaultValue , the mail is sent using amazonses.com as the MAIL FROM domain. When you set this value to RejectMessage , the Amazon SES API v2 returns a MailFromDomainNotVerified error, and doesn't attempt to deliver the email.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#behavior_on_mx_failure CcEmailIdentity#behavior_on_mx_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#behavior_on_mx_failure CcEmailIdentity#behavior_on_mx_failure}
     */
     readonly behaviorOnMxFailure?: string;
     /**
     * The custom MAIL FROM domain that you want the verified identity to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#mail_from_domain CcEmailIdentity#mail_from_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#mail_from_domain CcEmailIdentity#mail_from_domain}
     */
     readonly mailFromDomain?: string;
 }
@@ -949,11 +949,11 @@ export class MailFromAttributesPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#key CcEmailIdentity#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#key CcEmailIdentity#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_email_identity#value CcEmailIdentity#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_email_identity#value CcEmailIdentity#value}
     */
     readonly value?: string;
 }

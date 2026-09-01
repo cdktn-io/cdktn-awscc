@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcPackagingGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * CDN Authorization
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#authorization CcPackagingGroup#authorization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#authorization CcPackagingGroup#authorization}
     */
     readonly authorization?: CcPackagingGroup.AuthorizationProperty;
     /**
     * The configuration parameters for egress access logging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#egress_access_logs CcPackagingGroup#egress_access_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#egress_access_logs CcPackagingGroup#egress_access_logs}
     */
     readonly egressAccessLogs?: CcPackagingGroup.LogConfigurationProperty;
     /**
     * The ID of the PackagingGroup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#packaging_group_id CcPackagingGroup#packaging_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#packaging_group_id CcPackagingGroup#packaging_group_id}
     */
     readonly packagingGroupId: string;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#tags CcPackagingGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#tags CcPackagingGroup#tags}
     */
     readonly tags?: CcPackagingGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group awscc_mediapackage_packaging_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group awscc_mediapackage_packaging_group}
 */
 export class CcPackagingGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcPackagingGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPackagingGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPackagingGroup to import
-    * @param importFromId The id of the existing CcPackagingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPackagingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPackagingGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcPackagingGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group awscc_mediapackage_packaging_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group awscc_mediapackage_packaging_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcPackagingGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_mediapackage_packaging_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -323,13 +323,13 @@ export interface AuthorizationProperty {
     /**
     * The Amazon Resource Name (ARN) for the secret in AWS Secrets Manager that is used for CDN authorization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#cdn_identifier_secret CcPackagingGroup#cdn_identifier_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#cdn_identifier_secret CcPackagingGroup#cdn_identifier_secret}
     */
     readonly cdnIdentifierSecret?: string;
     /**
     * The Amazon Resource Name (ARN) for the IAM role that allows MediaPackage to communicate with AWS Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#secrets_role_arn CcPackagingGroup#secrets_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#secrets_role_arn CcPackagingGroup#secrets_role_arn}
     */
     readonly secretsRoleArn?: string;
 }
@@ -417,7 +417,7 @@ export interface LogConfigurationProperty {
     /**
     * Sets a custom AWS CloudWatch log group name for egress logs. If a log group name isn't specified, the default name is used: /aws/MediaPackage/VodEgressAccessLogs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#log_group_name CcPackagingGroup#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#log_group_name CcPackagingGroup#log_group_name}
     */
     readonly logGroupName?: string;
 }
@@ -481,11 +481,11 @@ export class LogConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#key CcPackagingGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#key CcPackagingGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mediapackage_packaging_group#value CcPackagingGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackage_packaging_group#value CcPackagingGroup#value}
     */
     readonly value?: string;
 }

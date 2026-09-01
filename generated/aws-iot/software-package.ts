@@ -1,29 +1,29 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcSoftwarePackageProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#description CcSoftwarePackage#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#description CcSoftwarePackage#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#package_name CcSoftwarePackage#package_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#package_name CcSoftwarePackage#package_name}
     */
     readonly packageName?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#tags CcSoftwarePackage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#tags CcSoftwarePackage#tags}
     */
     readonly tags?: CcSoftwarePackage.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package awscc_iot_software_package}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package awscc_iot_software_package}
 */
 export class CcSoftwarePackage extends cdktn.TerraformResource {
 
@@ -39,7 +39,7 @@ export class CcSoftwarePackage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSoftwarePackage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSoftwarePackage to import
-    * @param importFromId The id of the existing CcSoftwarePackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSoftwarePackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSoftwarePackage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +51,7 @@ export class CcSoftwarePackage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package awscc_iot_software_package} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package awscc_iot_software_package} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +62,7 @@ export class CcSoftwarePackage extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_software_package',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -220,13 +220,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#key CcSoftwarePackage#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#key CcSoftwarePackage#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package#value CcSoftwarePackage#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package#value CcSoftwarePackage#value}
     */
     readonly value?: string;
 }

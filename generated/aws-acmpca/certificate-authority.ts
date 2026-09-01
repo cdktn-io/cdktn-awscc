@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,59 +9,59 @@ export interface CcCertificateAuthorityProps extends cdktn.TerraformMetaArgument
     /**
     * Structure that contains CSR pass through extension information used by the CreateCertificateAuthority action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#csr_extensions CcCertificateAuthority#csr_extensions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#csr_extensions CcCertificateAuthority#csr_extensions}
     */
     readonly csrExtensions?: CcCertificateAuthority.CsrExtensionsProperty;
     /**
     * Public key algorithm and size, in bits, of the key pair that your CA creates when it issues a certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_algorithm CcCertificateAuthority#key_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_algorithm CcCertificateAuthority#key_algorithm}
     */
     readonly keyAlgorithm: string;
     /**
     * KeyStorageSecurityStadard defines a cryptographic key management compliance standard used for handling CA keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_storage_security_standard CcCertificateAuthority#key_storage_security_standard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_storage_security_standard CcCertificateAuthority#key_storage_security_standard}
     */
     readonly keyStorageSecurityStandard?: string;
     /**
     * Certificate revocation information used by the CreateCertificateAuthority and UpdateCertificateAuthority actions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#revocation_configuration CcCertificateAuthority#revocation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#revocation_configuration CcCertificateAuthority#revocation_configuration}
     */
     readonly revocationConfiguration?: CcCertificateAuthority.RevocationConfigurationProperty;
     /**
     * Algorithm your CA uses to sign certificate requests.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#signing_algorithm CcCertificateAuthority#signing_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#signing_algorithm CcCertificateAuthority#signing_algorithm}
     */
     readonly signingAlgorithm: string;
     /**
     * Structure that contains X.500 distinguished name information for your CA.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#subject CcCertificateAuthority#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#subject CcCertificateAuthority#subject}
     */
     readonly subject: CcCertificateAuthority.SubjectProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#tags CcCertificateAuthority#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#tags CcCertificateAuthority#tags}
     */
     readonly tags?: CcCertificateAuthority.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of the certificate authority.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#type CcCertificateAuthority#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#type CcCertificateAuthority#type}
     */
     readonly type: string;
     /**
     * Usage mode of the ceritificate authority.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#usage_mode CcCertificateAuthority#usage_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#usage_mode CcCertificateAuthority#usage_mode}
     */
     readonly usageMode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority awscc_acmpca_certificate_authority}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority awscc_acmpca_certificate_authority}
 */
 export class CcCertificateAuthority extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCertificateAuthority resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCertificateAuthority to import
-    * @param importFromId The id of the existing CcCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCertificateAuthority to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority awscc_acmpca_certificate_authority} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority awscc_acmpca_certificate_authority} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,7 +100,7 @@ export class CcCertificateAuthority extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_acmpca_certificate_authority',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1256,39 +1256,39 @@ export function ccCertificateAuthorityTagPropertyToHclTerraform(struct?: CcCerti
 export namespace CcCertificateAuthority {
 export interface KeyUsageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#crl_sign CcCertificateAuthority#crl_sign}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#crl_sign CcCertificateAuthority#crl_sign}
     */
     readonly crlSign?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#data_encipherment CcCertificateAuthority#data_encipherment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#data_encipherment CcCertificateAuthority#data_encipherment}
     */
     readonly dataEncipherment?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#decipher_only CcCertificateAuthority#decipher_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#decipher_only CcCertificateAuthority#decipher_only}
     */
     readonly decipherOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#digital_signature CcCertificateAuthority#digital_signature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#digital_signature CcCertificateAuthority#digital_signature}
     */
     readonly digitalSignature?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#encipher_only CcCertificateAuthority#encipher_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#encipher_only CcCertificateAuthority#encipher_only}
     */
     readonly encipherOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_agreement CcCertificateAuthority#key_agreement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_agreement CcCertificateAuthority#key_agreement}
     */
     readonly keyAgreement?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_cert_sign CcCertificateAuthority#key_cert_sign}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_cert_sign CcCertificateAuthority#key_cert_sign}
     */
     readonly keyCertSign?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_encipherment CcCertificateAuthority#key_encipherment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_encipherment CcCertificateAuthority#key_encipherment}
     */
     readonly keyEncipherment?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#non_repudiation CcCertificateAuthority#non_repudiation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#non_repudiation CcCertificateAuthority#non_repudiation}
     */
     readonly nonRepudiation?: boolean | cdktn.IResolvable;
 }
@@ -1530,11 +1530,11 @@ export interface CustomAttributeProperty {
     /**
     * String that contains X.509 ObjectIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#object_identifier CcCertificateAuthority#object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#object_identifier CcCertificateAuthority#object_identifier}
     */
     readonly objectIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
     */
     readonly value?: string;
 }
@@ -1642,65 +1642,65 @@ export class CustomAttributePropertyList extends cdktn.ComplexList {
 }
 export interface DirectoryNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
     */
     readonly commonName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#country CcCertificateAuthority#country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#country CcCertificateAuthority#country}
     */
     readonly country?: string;
     /**
     * Array of X.500 attribute type and value. CustomAttributes cannot be used along with pre-defined attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#custom_attributes CcCertificateAuthority#custom_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#custom_attributes CcCertificateAuthority#custom_attributes}
     */
     readonly customAttributes?: CustomAttributeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#distinguished_name_qualifier CcCertificateAuthority#distinguished_name_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#distinguished_name_qualifier CcCertificateAuthority#distinguished_name_qualifier}
     */
     readonly distinguishedNameQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#generation_qualifier CcCertificateAuthority#generation_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#generation_qualifier CcCertificateAuthority#generation_qualifier}
     */
     readonly generationQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#given_name CcCertificateAuthority#given_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#given_name CcCertificateAuthority#given_name}
     */
     readonly givenName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#initials CcCertificateAuthority#initials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#initials CcCertificateAuthority#initials}
     */
     readonly initials?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#locality CcCertificateAuthority#locality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#locality CcCertificateAuthority#locality}
     */
     readonly locality?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#organization CcCertificateAuthority#organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#organization CcCertificateAuthority#organization}
     */
     readonly organization?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#organizational_unit CcCertificateAuthority#organizational_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#organizational_unit CcCertificateAuthority#organizational_unit}
     */
     readonly organizationalUnit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#pseudonym CcCertificateAuthority#pseudonym}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#pseudonym CcCertificateAuthority#pseudonym}
     */
     readonly pseudonym?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#serial_number CcCertificateAuthority#serial_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#serial_number CcCertificateAuthority#serial_number}
     */
     readonly serialNumber?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#state CcCertificateAuthority#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#state CcCertificateAuthority#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#surname CcCertificateAuthority#surname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#surname CcCertificateAuthority#surname}
     */
     readonly surname?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#title CcCertificateAuthority#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#title CcCertificateAuthority#title}
     */
     readonly title?: string;
 }
@@ -2072,11 +2072,11 @@ export class DirectoryNamePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EdiPartyNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#name_assigner CcCertificateAuthority#name_assigner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#name_assigner CcCertificateAuthority#name_assigner}
     */
     readonly nameAssigner?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#party_name CcCertificateAuthority#party_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#party_name CcCertificateAuthority#party_name}
     */
     readonly partyName?: string;
 }
@@ -2164,11 +2164,11 @@ export interface OtherNameProperty {
     /**
     * String that contains X.509 ObjectIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#type_id CcCertificateAuthority#type_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#type_id CcCertificateAuthority#type_id}
     */
     readonly typeId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
     */
     readonly value?: string;
 }
@@ -2256,49 +2256,49 @@ export interface GeneralNameProperty {
     /**
     * Structure that contains X.500 distinguished name information for your CA.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#directory_name CcCertificateAuthority#directory_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#directory_name CcCertificateAuthority#directory_name}
     */
     readonly directoryName?: DirectoryNameProperty;
     /**
     * String that contains X.509 DnsName information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#dns_name CcCertificateAuthority#dns_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#dns_name CcCertificateAuthority#dns_name}
     */
     readonly dnsName?: string;
     /**
     * Structure that contains X.509 EdiPartyName information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#edi_party_name CcCertificateAuthority#edi_party_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#edi_party_name CcCertificateAuthority#edi_party_name}
     */
     readonly ediPartyName?: EdiPartyNameProperty;
     /**
     * String that contains X.509 IpAddress information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#ip_address CcCertificateAuthority#ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#ip_address CcCertificateAuthority#ip_address}
     */
     readonly ipAddress?: string;
     /**
     * Structure that contains X.509 OtherName information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#other_name CcCertificateAuthority#other_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#other_name CcCertificateAuthority#other_name}
     */
     readonly otherName?: OtherNameProperty;
     /**
     * String that contains X.509 ObjectIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#registered_id CcCertificateAuthority#registered_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#registered_id CcCertificateAuthority#registered_id}
     */
     readonly registeredId?: string;
     /**
     * String that contains X.509 Rfc822Name information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#rfc_822_name CcCertificateAuthority#rfc_822_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#rfc_822_name CcCertificateAuthority#rfc_822_name}
     */
     readonly rfc822Name?: string;
     /**
     * String that contains X.509 UniformResourceIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#uniform_resource_identifier CcCertificateAuthority#uniform_resource_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#uniform_resource_identifier CcCertificateAuthority#uniform_resource_identifier}
     */
     readonly uniformResourceIdentifier?: string;
 }
@@ -2518,13 +2518,13 @@ export interface AccessMethodProperty {
     /**
     * Pre-defined enum string for X.509 AccessMethod ObjectIdentifiers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#access_method_type CcCertificateAuthority#access_method_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#access_method_type CcCertificateAuthority#access_method_type}
     */
     readonly accessMethodType?: string;
     /**
     * String that contains X.509 ObjectIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#custom_object_identifier CcCertificateAuthority#custom_object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#custom_object_identifier CcCertificateAuthority#custom_object_identifier}
     */
     readonly customObjectIdentifier?: string;
 }
@@ -2612,13 +2612,13 @@ export interface AccessDescriptionProperty {
     /**
     * Structure that contains X.509 GeneralName information. Assign one and ONLY one field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#access_location CcCertificateAuthority#access_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#access_location CcCertificateAuthority#access_location}
     */
     readonly accessLocation?: GeneralNameProperty;
     /**
     * Structure that contains X.509 AccessMethod information. Assign one and ONLY one field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#access_method CcCertificateAuthority#access_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#access_method CcCertificateAuthority#access_method}
     */
     readonly accessMethod?: AccessMethodProperty;
 }
@@ -2728,13 +2728,13 @@ export interface CsrExtensionsProperty {
     /**
     * Structure that contains X.509 KeyUsage information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key_usage CcCertificateAuthority#key_usage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key_usage CcCertificateAuthority#key_usage}
     */
     readonly keyUsage?: KeyUsageProperty;
     /**
     * Array of X.509 AccessDescription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#subject_information_access CcCertificateAuthority#subject_information_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#subject_information_access CcCertificateAuthority#subject_information_access}
     */
     readonly subjectInformationAccess?: AccessDescriptionProperty[] | cdktn.IResolvable;
 }
@@ -2820,7 +2820,7 @@ export class CsrExtensionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CrlDistributionPointExtensionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#omit_extension CcCertificateAuthority#omit_extension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#omit_extension CcCertificateAuthority#omit_extension}
     */
     readonly omitExtension?: boolean | cdktn.IResolvable;
 }
@@ -2886,35 +2886,35 @@ export interface CrlConfigurationProperty {
     /**
     * Configures the default behavior of the CRL Distribution Point extension for certificates issued by your certificate authority
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#crl_distribution_point_extension_configuration CcCertificateAuthority#crl_distribution_point_extension_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#crl_distribution_point_extension_configuration CcCertificateAuthority#crl_distribution_point_extension_configuration}
     */
     readonly crlDistributionPointExtensionConfiguration?: CrlDistributionPointExtensionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#crl_type CcCertificateAuthority#crl_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#crl_type CcCertificateAuthority#crl_type}
     */
     readonly crlType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#custom_cname CcCertificateAuthority#custom_cname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#custom_cname CcCertificateAuthority#custom_cname}
     */
     readonly customCname?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#custom_path CcCertificateAuthority#custom_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#custom_path CcCertificateAuthority#custom_path}
     */
     readonly customPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#enabled CcCertificateAuthority#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#enabled CcCertificateAuthority#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#expiration_in_days CcCertificateAuthority#expiration_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#expiration_in_days CcCertificateAuthority#expiration_in_days}
     */
     readonly expirationInDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#s3_bucket_name CcCertificateAuthority#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#s3_bucket_name CcCertificateAuthority#s3_bucket_name}
     */
     readonly s3BucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#s3_object_acl CcCertificateAuthority#s3_object_acl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#s3_object_acl CcCertificateAuthority#s3_object_acl}
     */
     readonly s3ObjectAcl?: string;
 }
@@ -3132,11 +3132,11 @@ export class CrlConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface OcspConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#enabled CcCertificateAuthority#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#enabled CcCertificateAuthority#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#ocsp_custom_cname CcCertificateAuthority#ocsp_custom_cname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#ocsp_custom_cname CcCertificateAuthority#ocsp_custom_cname}
     */
     readonly ocspCustomCname?: string;
 }
@@ -3224,13 +3224,13 @@ export interface RevocationConfigurationProperty {
     /**
     * Your certificate authority can create and maintain a certificate revocation list (CRL). A CRL contains information about certificates that have been revoked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#crl_configuration CcCertificateAuthority#crl_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#crl_configuration CcCertificateAuthority#crl_configuration}
     */
     readonly crlConfiguration?: CrlConfigurationProperty;
     /**
     * Helps to configure online certificate status protocol (OCSP) responder for your certificate authority
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#ocsp_configuration CcCertificateAuthority#ocsp_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#ocsp_configuration CcCertificateAuthority#ocsp_configuration}
     */
     readonly ocspConfiguration?: OcspConfigurationProperty;
 }
@@ -3318,11 +3318,11 @@ export interface CustomAttributesProperty {
     /**
     * String that contains X.509 ObjectIdentifier information.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#object_identifier CcCertificateAuthority#object_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#object_identifier CcCertificateAuthority#object_identifier}
     */
     readonly objectIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
     */
     readonly value?: string;
 }
@@ -3430,65 +3430,65 @@ export class CustomAttributesPropertyList extends cdktn.ComplexList {
 }
 export interface SubjectProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#common_name CcCertificateAuthority#common_name}
     */
     readonly commonName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#country CcCertificateAuthority#country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#country CcCertificateAuthority#country}
     */
     readonly country?: string;
     /**
     * Array of X.500 attribute type and value. CustomAttributes cannot be used along with pre-defined attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#custom_attributes CcCertificateAuthority#custom_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#custom_attributes CcCertificateAuthority#custom_attributes}
     */
     readonly customAttributes?: CustomAttributesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#distinguished_name_qualifier CcCertificateAuthority#distinguished_name_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#distinguished_name_qualifier CcCertificateAuthority#distinguished_name_qualifier}
     */
     readonly distinguishedNameQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#generation_qualifier CcCertificateAuthority#generation_qualifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#generation_qualifier CcCertificateAuthority#generation_qualifier}
     */
     readonly generationQualifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#given_name CcCertificateAuthority#given_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#given_name CcCertificateAuthority#given_name}
     */
     readonly givenName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#initials CcCertificateAuthority#initials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#initials CcCertificateAuthority#initials}
     */
     readonly initials?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#locality CcCertificateAuthority#locality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#locality CcCertificateAuthority#locality}
     */
     readonly locality?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#organization CcCertificateAuthority#organization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#organization CcCertificateAuthority#organization}
     */
     readonly organization?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#organizational_unit CcCertificateAuthority#organizational_unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#organizational_unit CcCertificateAuthority#organizational_unit}
     */
     readonly organizationalUnit?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#pseudonym CcCertificateAuthority#pseudonym}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#pseudonym CcCertificateAuthority#pseudonym}
     */
     readonly pseudonym?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#serial_number CcCertificateAuthority#serial_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#serial_number CcCertificateAuthority#serial_number}
     */
     readonly serialNumber?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#state CcCertificateAuthority#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#state CcCertificateAuthority#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#surname CcCertificateAuthority#surname}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#surname CcCertificateAuthority#surname}
     */
     readonly surname?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#title CcCertificateAuthority#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#title CcCertificateAuthority#title}
     */
     readonly title?: string;
 }
@@ -3860,11 +3860,11 @@ export class SubjectPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#key CcCertificateAuthority#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#key CcCertificateAuthority#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/acmpca_certificate_authority#value CcCertificateAuthority#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLegalHoldProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the legal hold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#description CcLegalHold#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#description CcLegalHold#description}
     */
     readonly description: string;
     /**
     * The criteria to assign a set of resources, such as resource types or backup vaults.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#recovery_point_selection CcLegalHold#recovery_point_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#recovery_point_selection CcLegalHold#recovery_point_selection}
     */
     readonly recoveryPointSelection: CcLegalHold.RecoveryPointSelectionProperty;
     /**
     * Optional tags to include.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#tags CcLegalHold#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#tags CcLegalHold#tags}
     */
     readonly tags?: CcLegalHold.TagsItemsProperty[] | cdktn.IResolvable;
     /**
     * The title of the legal hold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#title CcLegalHold#title}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#title CcLegalHold#title}
     */
     readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold awscc_backup_legal_hold}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold awscc_backup_legal_hold}
 */
 export class CcLegalHold extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLegalHold extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLegalHold resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLegalHold to import
-    * @param importFromId The id of the existing CcLegalHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLegalHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLegalHold to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLegalHold extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold awscc_backup_legal_hold} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold awscc_backup_legal_hold} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLegalHold extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_legal_hold',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -341,13 +341,13 @@ export interface DateRangeProperty {
     /**
     * The beginning date, inclusive. ISO 8601 date-time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#from_date CcLegalHold#from_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#from_date CcLegalHold#from_date}
     */
     readonly fromDate?: string;
     /**
     * The end date, inclusive. ISO 8601 date-time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#to_date CcLegalHold#to_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#to_date CcLegalHold#to_date}
     */
     readonly toDate?: string;
 }
@@ -435,19 +435,19 @@ export interface RecoveryPointSelectionProperty {
     /**
     * A date range for filtering recovery points.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#date_range CcLegalHold#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#date_range CcLegalHold#date_range}
     */
     readonly dateRange?: DateRangeProperty;
     /**
     * The resources included in the resource selection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#resource_identifiers CcLegalHold#resource_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#resource_identifiers CcLegalHold#resource_identifiers}
     */
     readonly resourceIdentifiers?: string[];
     /**
     * The names of the vaults in which the selected recovery points are contained.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#vault_names CcLegalHold#vault_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#vault_names CcLegalHold#vault_names}
     */
     readonly vaultNames?: string[];
 }
@@ -557,13 +557,13 @@ export interface TagsItemsProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#key CcLegalHold#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#key CcLegalHold#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_legal_hold#value CcLegalHold#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_legal_hold#value CcLegalHold#value}
     */
     readonly value?: string;
 }

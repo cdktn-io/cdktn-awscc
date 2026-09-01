@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcStageProps extends cdktn.TerraformMetaArguments {
     /**
     * Settings for logging access in this stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#access_log_settings CcStage#access_log_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#access_log_settings CcStage#access_log_settings}
     */
     readonly accessLogSettings?: CcStage.AccessLogSettingsProperty;
     /**
     * The API identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#api_id CcStage#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#api_id CcStage#api_id}
     */
     readonly apiId: string;
     /**
     * Specifies whether updates to an API automatically trigger a new deployment. The default value is false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#auto_deploy CcStage#auto_deploy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#auto_deploy CcStage#auto_deploy}
     */
     readonly autoDeploy?: boolean | cdktn.IResolvable;
     /**
     * The identifier of a client certificate for a Stage. Supported only for WebSocket APIs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#client_certificate_id CcStage#client_certificate_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#client_certificate_id CcStage#client_certificate_id}
     */
     readonly clientCertificateId?: string;
     /**
     * The default route settings for the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#default_route_settings CcStage#default_route_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#default_route_settings CcStage#default_route_settings}
     */
     readonly defaultRouteSettings?: CcStage.RouteSettingsProperty;
     /**
     * The deployment identifier for the API stage. Can't be updated if autoDeploy is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#deployment_id CcStage#deployment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#deployment_id CcStage#deployment_id}
     */
     readonly deploymentId?: string;
     /**
     * The description for the API stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#description CcStage#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#description CcStage#description}
     */
     readonly description?: string;
     /**
     * Route settings for the stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#route_settings CcStage#route_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#route_settings CcStage#route_settings}
     */
     readonly routeSettings?: string;
     /**
     * The stage name. Stage names can contain only alphanumeric characters, hyphens, and underscores, or be $default. Maximum length is 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#stage_name CcStage#stage_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#stage_name CcStage#stage_name}
     */
     readonly stageName: string;
     /**
     * A map that defines the stage variables for a Stage. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&=,]+.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#stage_variables CcStage#stage_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#stage_variables CcStage#stage_variables}
     */
     readonly stageVariables?: string;
     /**
     * The collection of tags. Each tag element is associated with a given resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#tags CcStage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#tags CcStage#tags}
     */
     readonly tags?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage awscc_apigatewayv2_stage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage awscc_apigatewayv2_stage}
 */
 export class CcStage extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcStage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStage to import
-    * @param importFromId The id of the existing CcStage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcStage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage awscc_apigatewayv2_stage} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage awscc_apigatewayv2_stage} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class CcStage extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apigatewayv2_stage',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -509,11 +509,11 @@ export function ccStageRouteSettingsPropertyToHclTerraform(struct?: CcStage.Rout
 export namespace CcStage {
 export interface AccessLogSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#destination_arn CcStage#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#destination_arn CcStage#destination_arn}
     */
     readonly destinationArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#format CcStage#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#format CcStage#format}
     */
     readonly format?: string;
 }
@@ -599,23 +599,23 @@ export class AccessLogSettingsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface RouteSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#data_trace_enabled CcStage#data_trace_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#data_trace_enabled CcStage#data_trace_enabled}
     */
     readonly dataTraceEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#detailed_metrics_enabled CcStage#detailed_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#detailed_metrics_enabled CcStage#detailed_metrics_enabled}
     */
     readonly detailedMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#logging_level CcStage#logging_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#logging_level CcStage#logging_level}
     */
     readonly loggingLevel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#throttling_burst_limit CcStage#throttling_burst_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#throttling_burst_limit CcStage#throttling_burst_limit}
     */
     readonly throttlingBurstLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigatewayv2_stage#throttling_rate_limit CcStage#throttling_rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigatewayv2_stage#throttling_rate_limit CcStage#throttling_rate_limit}
     */
     readonly throttlingRateLimit?: number;
 }

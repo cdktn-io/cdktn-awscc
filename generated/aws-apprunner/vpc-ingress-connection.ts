@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcVpcIngressConnectionProps extends cdktn.TerraformMetaArgument
     /**
     * The configuration of customer?s VPC and related VPC endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#ingress_vpc_configuration CcVpcIngressConnection#ingress_vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#ingress_vpc_configuration CcVpcIngressConnection#ingress_vpc_configuration}
     */
     readonly ingressVpcConfiguration: CcVpcIngressConnection.IngressVpcConfigurationProperty;
     /**
     * The Amazon Resource Name (ARN) of the service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#service_arn CcVpcIngressConnection#service_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#service_arn CcVpcIngressConnection#service_arn}
     */
     readonly serviceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#tags CcVpcIngressConnection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#tags CcVpcIngressConnection#tags}
     */
     readonly tags?: CcVpcIngressConnection.TagProperty[] | cdktn.IResolvable;
     /**
     * The customer-provided Vpc Ingress Connection name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#vpc_ingress_connection_name CcVpcIngressConnection#vpc_ingress_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#vpc_ingress_connection_name CcVpcIngressConnection#vpc_ingress_connection_name}
     */
     readonly vpcIngressConnectionName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection awscc_apprunner_vpc_ingress_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection awscc_apprunner_vpc_ingress_connection}
 */
 export class CcVpcIngressConnection extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcVpcIngressConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVpcIngressConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVpcIngressConnection to import
-    * @param importFromId The id of the existing CcVpcIngressConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVpcIngressConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVpcIngressConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcVpcIngressConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection awscc_apprunner_vpc_ingress_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection awscc_apprunner_vpc_ingress_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcVpcIngressConnection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apprunner_vpc_ingress_connection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -293,13 +293,13 @@ export interface IngressVpcConfigurationProperty {
     /**
     * The ID of the VPC endpoint that your App Runner service connects to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#vpc_endpoint_id CcVpcIngressConnection#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#vpc_endpoint_id CcVpcIngressConnection#vpc_endpoint_id}
     */
     readonly vpcEndpointId: string;
     /**
     * The ID of the VPC that the VPC endpoint is used in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#vpc_id CcVpcIngressConnection#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#vpc_id CcVpcIngressConnection#vpc_id}
     */
     readonly vpcId: string;
 }
@@ -379,11 +379,11 @@ export class IngressVpcConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#key CcVpcIngressConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#key CcVpcIngressConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_vpc_ingress_connection#value CcVpcIngressConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_vpc_ingress_connection#value CcVpcIngressConnection#value}
     */
     readonly value?: string;
 }

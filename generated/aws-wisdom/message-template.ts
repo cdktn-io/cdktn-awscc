@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcMessageTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * The channel subtype this message template applies to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#channel_subtype CcMessageTemplate#channel_subtype}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#channel_subtype CcMessageTemplate#channel_subtype}
     */
     readonly channelSubtype: string;
     /**
     * The content of the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
     */
     readonly content: CcMessageTemplate.ContentProperty;
     /**
     * An object that specifies the default values to use for variables in the message template. This object contains different categories of key-value pairs. Each key defines a variable or placeholder in the message template. The corresponding value defines the default value for that variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#default_attributes CcMessageTemplate#default_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#default_attributes CcMessageTemplate#default_attributes}
     */
     readonly defaultAttributes?: CcMessageTemplate.MessageTemplateAttributesProperty;
     /**
     * The description of the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#description CcMessageTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#description CcMessageTemplate#description}
     */
     readonly description?: string;
     /**
     * The configuration information of the user groups that the message template is accessible to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#grouping_configuration CcMessageTemplate#grouping_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#grouping_configuration CcMessageTemplate#grouping_configuration}
     */
     readonly groupingConfiguration?: CcMessageTemplate.GroupingConfigurationProperty;
     /**
     * The Amazon Resource Name (ARN) of the knowledge base to which the message template belongs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#knowledge_base_arn CcMessageTemplate#knowledge_base_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#knowledge_base_arn CcMessageTemplate#knowledge_base_arn}
     */
     readonly knowledgeBaseArn: string;
     /**
     * The language code value for the language in which the message template is written. The supported language codes include de_DE, en_US, es_ES, fr_FR, id_ID, it_IT, ja_JP, ko_KR, pt_BR, zh_CN, zh_TW
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#language CcMessageTemplate#language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#language CcMessageTemplate#language}
     */
     readonly language?: string;
     /**
     * List of message template attachments
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#message_template_attachments CcMessageTemplate#message_template_attachments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#message_template_attachments CcMessageTemplate#message_template_attachments}
     */
     readonly messageTemplateAttachments?: CcMessageTemplate.MessageTemplateAttachmentProperty[] | cdktn.IResolvable;
     /**
     * The name of the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
     */
     readonly name: string;
     /**
     * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#tags CcMessageTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#tags CcMessageTemplate#tags}
     */
     readonly tags?: CcMessageTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template awscc_wisdom_message_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template awscc_wisdom_message_template}
 */
 export class CcMessageTemplate extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcMessageTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMessageTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMessageTemplate to import
-    * @param importFromId The id of the existing CcMessageTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMessageTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMessageTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcMessageTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template awscc_wisdom_message_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template awscc_wisdom_message_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcMessageTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wisdom_message_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1437,7 +1437,7 @@ export function ccMessageTemplateTagPropertyToHclTerraform(struct?: CcMessageTem
 export namespace CcMessageTemplate {
 export interface MessageTemplateBodyContentProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
     */
     readonly content?: string;
 }
@@ -1501,7 +1501,7 @@ export class MessageTemplateBodyContentProviderPropertyOutputReference extends c
 }
 export interface ContentEmailMessageTemplateContentBodyPlainTextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
     */
     readonly content?: string;
 }
@@ -1567,13 +1567,13 @@ export interface EmailMessageTemplateContentBodyProperty {
     /**
     * The message body, in HTML format, to use in email messages that are based on the message template. We recommend using HTML format for email clients that render HTML content. You can include links, formatted text, and more in an HTML message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#html CcMessageTemplate#html}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#html CcMessageTemplate#html}
     */
     readonly html?: MessageTemplateBodyContentProviderProperty;
     /**
     * The message body, in plain text format, to use in email messages that are based on the message template. We recommend using plain text format for email clients that don't render HTML content and clients that are connected to high-latency networks, such as mobile devices.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#plain_text CcMessageTemplate#plain_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#plain_text CcMessageTemplate#plain_text}
     */
     readonly plainText?: ContentEmailMessageTemplateContentBodyPlainTextProperty;
 }
@@ -1661,13 +1661,13 @@ export interface EmailMessageTemplateHeaderProperty {
     /**
     * The name of the email header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
     */
     readonly name?: string;
     /**
     * The value of the email header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#value CcMessageTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#value CcMessageTemplate#value}
     */
     readonly value?: string;
 }
@@ -1777,19 +1777,19 @@ export interface EmailMessageTemplateContentProperty {
     /**
     * The body to use in email messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#body CcMessageTemplate#body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#body CcMessageTemplate#body}
     */
     readonly body?: EmailMessageTemplateContentBodyProperty;
     /**
     * The email headers to include in email messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#headers CcMessageTemplate#headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#headers CcMessageTemplate#headers}
     */
     readonly headers?: EmailMessageTemplateHeaderProperty[] | cdktn.IResolvable;
     /**
     * The subject line, or title, to use in email messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#subject CcMessageTemplate#subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#subject CcMessageTemplate#subject}
     */
     readonly subject?: string;
 }
@@ -1897,7 +1897,7 @@ export class EmailMessageTemplateContentPropertyOutputReference extends cdktn.Co
 }
 export interface ContentSmsMessageTemplateContentBodyPlainTextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#content CcMessageTemplate#content}
     */
     readonly content?: string;
 }
@@ -1963,7 +1963,7 @@ export interface SmsMessageTemplateContentBodyProperty {
     /**
     * The container of message template body.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#plain_text CcMessageTemplate#plain_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#plain_text CcMessageTemplate#plain_text}
     */
     readonly plainText?: ContentSmsMessageTemplateContentBodyPlainTextProperty;
 }
@@ -2029,7 +2029,7 @@ export interface SmsMessageTemplateContentProperty {
     /**
     * The body to use in SMS messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#body CcMessageTemplate#body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#body CcMessageTemplate#body}
     */
     readonly body?: SmsMessageTemplateContentBodyProperty;
 }
@@ -2095,13 +2095,13 @@ export interface ContentProperty {
     /**
     * The content of message template that applies to email channel subtype.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#email_message_template_content CcMessageTemplate#email_message_template_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#email_message_template_content CcMessageTemplate#email_message_template_content}
     */
     readonly emailMessageTemplateContent?: EmailMessageTemplateContentProperty;
     /**
     * The content of message template that applies to SMS channel subtype.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#sms_message_template_content CcMessageTemplate#sms_message_template_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#sms_message_template_content CcMessageTemplate#sms_message_template_content}
     */
     readonly smsMessageTemplateContent?: SmsMessageTemplateContentProperty;
 }
@@ -2189,13 +2189,13 @@ export interface AgentAttributesProperty {
     /**
     * The agent?s first name as entered in their Amazon Connect user account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#first_name CcMessageTemplate#first_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#first_name CcMessageTemplate#first_name}
     */
     readonly firstName?: string;
     /**
     * The agent?s last name as entered in their Amazon Connect user account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#last_name CcMessageTemplate#last_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#last_name CcMessageTemplate#last_name}
     */
     readonly lastName?: string;
 }
@@ -2283,349 +2283,349 @@ export interface CustomerProfileAttributesProperty {
     /**
     * A unique account number that you have given to the customer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#account_number CcMessageTemplate#account_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#account_number CcMessageTemplate#account_number}
     */
     readonly accountNumber?: string;
     /**
     * Any additional information relevant to the customer's profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#additional_information CcMessageTemplate#additional_information}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#additional_information CcMessageTemplate#additional_information}
     */
     readonly additionalInformation?: string;
     /**
     * The first line of a customer address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address_1 CcMessageTemplate#address_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address_1 CcMessageTemplate#address_1}
     */
     readonly address1?: string;
     /**
     * The second line of a customer address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address_2 CcMessageTemplate#address_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address_2 CcMessageTemplate#address_2}
     */
     readonly address2?: string;
     /**
     * The third line of a customer address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address_3 CcMessageTemplate#address_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address_3 CcMessageTemplate#address_3}
     */
     readonly address3?: string;
     /**
     * The fourth line of a customer address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address_4 CcMessageTemplate#address_4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address_4 CcMessageTemplate#address_4}
     */
     readonly address4?: string;
     /**
     * The first line of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_address_1 CcMessageTemplate#billing_address_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_address_1 CcMessageTemplate#billing_address_1}
     */
     readonly billingAddress1?: string;
     /**
     * The second line of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_address_2 CcMessageTemplate#billing_address_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_address_2 CcMessageTemplate#billing_address_2}
     */
     readonly billingAddress2?: string;
     /**
     * The third line of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_address_3 CcMessageTemplate#billing_address_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_address_3 CcMessageTemplate#billing_address_3}
     */
     readonly billingAddress3?: string;
     /**
     * The fourth line of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_address_4 CcMessageTemplate#billing_address_4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_address_4 CcMessageTemplate#billing_address_4}
     */
     readonly billingAddress4?: string;
     /**
     * The city of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_city CcMessageTemplate#billing_city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_city CcMessageTemplate#billing_city}
     */
     readonly billingCity?: string;
     /**
     * The country of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_country CcMessageTemplate#billing_country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_country CcMessageTemplate#billing_country}
     */
     readonly billingCountry?: string;
     /**
     * The county of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_county CcMessageTemplate#billing_county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_county CcMessageTemplate#billing_county}
     */
     readonly billingCounty?: string;
     /**
     * The postal code of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_postal_code CcMessageTemplate#billing_postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_postal_code CcMessageTemplate#billing_postal_code}
     */
     readonly billingPostalCode?: string;
     /**
     * The province of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_province CcMessageTemplate#billing_province}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_province CcMessageTemplate#billing_province}
     */
     readonly billingProvince?: string;
     /**
     * The state of a customer?s billing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#billing_state CcMessageTemplate#billing_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#billing_state CcMessageTemplate#billing_state}
     */
     readonly billingState?: string;
     /**
     * The customer's birth date.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#birth_date CcMessageTemplate#birth_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#birth_date CcMessageTemplate#birth_date}
     */
     readonly birthDate?: string;
     /**
     * The customer's business email address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#business_email_address CcMessageTemplate#business_email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#business_email_address CcMessageTemplate#business_email_address}
     */
     readonly businessEmailAddress?: string;
     /**
     * The name of the customer's business.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#business_name CcMessageTemplate#business_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#business_name CcMessageTemplate#business_name}
     */
     readonly businessName?: string;
     /**
     * The customer's business phone number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#business_phone_number CcMessageTemplate#business_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#business_phone_number CcMessageTemplate#business_phone_number}
     */
     readonly businessPhoneNumber?: string;
     /**
     * The city in which a customer lives.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#city CcMessageTemplate#city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#city CcMessageTemplate#city}
     */
     readonly city?: string;
     /**
     * The country in which a customer lives.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#country CcMessageTemplate#country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#country CcMessageTemplate#country}
     */
     readonly country?: string;
     /**
     * The county in which a customer lives.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#county CcMessageTemplate#county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#county CcMessageTemplate#county}
     */
     readonly county?: string;
     /**
     * The custom attributes that are used with the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#custom CcMessageTemplate#custom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#custom CcMessageTemplate#custom}
     */
     readonly custom?: { [key: string]: string };
     /**
     * The customer's email address, which has not been specified as a personal or business address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#email_address CcMessageTemplate#email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#email_address CcMessageTemplate#email_address}
     */
     readonly emailAddress?: string;
     /**
     * The customer's first name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#first_name CcMessageTemplate#first_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#first_name CcMessageTemplate#first_name}
     */
     readonly firstName?: string;
     /**
     * The customer's gender.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#gender CcMessageTemplate#gender}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#gender CcMessageTemplate#gender}
     */
     readonly gender?: string;
     /**
     * The customer's home phone number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#home_phone_number CcMessageTemplate#home_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#home_phone_number CcMessageTemplate#home_phone_number}
     */
     readonly homePhoneNumber?: string;
     /**
     * The customer's last name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#last_name CcMessageTemplate#last_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#last_name CcMessageTemplate#last_name}
     */
     readonly lastName?: string;
     /**
     * The first line of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_address_1 CcMessageTemplate#mailing_address_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_address_1 CcMessageTemplate#mailing_address_1}
     */
     readonly mailingAddress1?: string;
     /**
     * The second line of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_address_2 CcMessageTemplate#mailing_address_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_address_2 CcMessageTemplate#mailing_address_2}
     */
     readonly mailingAddress2?: string;
     /**
     * The third line of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_address_3 CcMessageTemplate#mailing_address_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_address_3 CcMessageTemplate#mailing_address_3}
     */
     readonly mailingAddress3?: string;
     /**
     * The fourth line of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_address_4 CcMessageTemplate#mailing_address_4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_address_4 CcMessageTemplate#mailing_address_4}
     */
     readonly mailingAddress4?: string;
     /**
     * The city of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_city CcMessageTemplate#mailing_city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_city CcMessageTemplate#mailing_city}
     */
     readonly mailingCity?: string;
     /**
     * The country of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_country CcMessageTemplate#mailing_country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_country CcMessageTemplate#mailing_country}
     */
     readonly mailingCountry?: string;
     /**
     * The county of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_county CcMessageTemplate#mailing_county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_county CcMessageTemplate#mailing_county}
     */
     readonly mailingCounty?: string;
     /**
     * The postal code of a customer?s mailing address
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_postal_code CcMessageTemplate#mailing_postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_postal_code CcMessageTemplate#mailing_postal_code}
     */
     readonly mailingPostalCode?: string;
     /**
     * The province of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_province CcMessageTemplate#mailing_province}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_province CcMessageTemplate#mailing_province}
     */
     readonly mailingProvince?: string;
     /**
     * The state of a customer?s mailing address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mailing_state CcMessageTemplate#mailing_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mailing_state CcMessageTemplate#mailing_state}
     */
     readonly mailingState?: string;
     /**
     * The customer's middle name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#middle_name CcMessageTemplate#middle_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#middle_name CcMessageTemplate#middle_name}
     */
     readonly middleName?: string;
     /**
     * The customer's mobile phone number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#mobile_phone_number CcMessageTemplate#mobile_phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#mobile_phone_number CcMessageTemplate#mobile_phone_number}
     */
     readonly mobilePhoneNumber?: string;
     /**
     * The customer's party type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#party_type CcMessageTemplate#party_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#party_type CcMessageTemplate#party_type}
     */
     readonly partyType?: string;
     /**
     * The customer's phone number, which has not been specified as a mobile, home, or business number.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#phone_number CcMessageTemplate#phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#phone_number CcMessageTemplate#phone_number}
     */
     readonly phoneNumber?: string;
     /**
     * The postal code of a customer address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#postal_code CcMessageTemplate#postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#postal_code CcMessageTemplate#postal_code}
     */
     readonly postalCode?: string;
     /**
     * The ARN of a customer profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#profile_arn CcMessageTemplate#profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#profile_arn CcMessageTemplate#profile_arn}
     */
     readonly profileArn?: string;
     /**
     * The unique identifier of a customer profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#profile_id CcMessageTemplate#profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#profile_id CcMessageTemplate#profile_id}
     */
     readonly profileId?: string;
     /**
     * The province in which a customer lives.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#province CcMessageTemplate#province}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#province CcMessageTemplate#province}
     */
     readonly province?: string;
     /**
     * The first line of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_address_1 CcMessageTemplate#shipping_address_1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_address_1 CcMessageTemplate#shipping_address_1}
     */
     readonly shippingAddress1?: string;
     /**
     * The second line of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_address_2 CcMessageTemplate#shipping_address_2}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_address_2 CcMessageTemplate#shipping_address_2}
     */
     readonly shippingAddress2?: string;
     /**
     * The third line of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_address_3 CcMessageTemplate#shipping_address_3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_address_3 CcMessageTemplate#shipping_address_3}
     */
     readonly shippingAddress3?: string;
     /**
     * The fourth line of a customer?s shipping address
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_address_4 CcMessageTemplate#shipping_address_4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_address_4 CcMessageTemplate#shipping_address_4}
     */
     readonly shippingAddress4?: string;
     /**
     * The city of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_city CcMessageTemplate#shipping_city}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_city CcMessageTemplate#shipping_city}
     */
     readonly shippingCity?: string;
     /**
     * The country of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_country CcMessageTemplate#shipping_country}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_country CcMessageTemplate#shipping_country}
     */
     readonly shippingCountry?: string;
     /**
     * The county of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_county CcMessageTemplate#shipping_county}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_county CcMessageTemplate#shipping_county}
     */
     readonly shippingCounty?: string;
     /**
     * The postal code of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_postal_code CcMessageTemplate#shipping_postal_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_postal_code CcMessageTemplate#shipping_postal_code}
     */
     readonly shippingPostalCode?: string;
     /**
     * The province of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_province CcMessageTemplate#shipping_province}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_province CcMessageTemplate#shipping_province}
     */
     readonly shippingProvince?: string;
     /**
     * The state of a customer?s shipping address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#shipping_state CcMessageTemplate#shipping_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#shipping_state CcMessageTemplate#shipping_state}
     */
     readonly shippingState?: string;
     /**
     * The state in which a customer lives.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#state CcMessageTemplate#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#state CcMessageTemplate#state}
     */
     readonly state?: string;
 }
@@ -3945,7 +3945,7 @@ export interface SystemEndpointAttributesProperty {
     /**
     * The customer's phone number if used with customerEndpoint, or the number the customer dialed to call your contact center if used with systemEndpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address CcMessageTemplate#address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address CcMessageTemplate#address}
     */
     readonly address?: string;
 }
@@ -4011,7 +4011,7 @@ export interface SystemEndpointProperty {
     /**
     * The customer's phone number if used with customerEndpoint, or the number the customer dialed to call your contact center if used with systemEndpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#address CcMessageTemplate#address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#address CcMessageTemplate#address}
     */
     readonly address?: string;
 }
@@ -4077,19 +4077,19 @@ export interface SystemAttributesProperty {
     /**
     * The CustomerEndpoint attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#customer_endpoint CcMessageTemplate#customer_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#customer_endpoint CcMessageTemplate#customer_endpoint}
     */
     readonly customerEndpoint?: SystemEndpointAttributesProperty;
     /**
     * The name of the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#name CcMessageTemplate#name}
     */
     readonly name?: string;
     /**
     * The SystemEndpoint attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#system_endpoint CcMessageTemplate#system_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#system_endpoint CcMessageTemplate#system_endpoint}
     */
     readonly systemEndpoint?: SystemEndpointProperty;
 }
@@ -4199,25 +4199,25 @@ export interface MessageTemplateAttributesProperty {
     /**
     * The agent attributes that are used with the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#agent_attributes CcMessageTemplate#agent_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#agent_attributes CcMessageTemplate#agent_attributes}
     */
     readonly agentAttributes?: AgentAttributesProperty;
     /**
     * The custom attributes that are used with the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#custom_attributes CcMessageTemplate#custom_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#custom_attributes CcMessageTemplate#custom_attributes}
     */
     readonly customAttributes?: { [key: string]: string };
     /**
     * The customer profile attributes that are used with the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#customer_profile_attributes CcMessageTemplate#customer_profile_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#customer_profile_attributes CcMessageTemplate#customer_profile_attributes}
     */
     readonly customerProfileAttributes?: CustomerProfileAttributesProperty;
     /**
     * The system attributes that are used with the message template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#system_attributes CcMessageTemplate#system_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#system_attributes CcMessageTemplate#system_attributes}
     */
     readonly systemAttributes?: SystemAttributesProperty;
 }
@@ -4349,13 +4349,13 @@ export interface GroupingConfigurationProperty {
     /**
     * The criteria used for grouping Amazon Q in Connect users.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#criteria CcMessageTemplate#criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#criteria CcMessageTemplate#criteria}
     */
     readonly criteria?: string;
     /**
     * The list of values that define different groups of Amazon Q in Connect users.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#values CcMessageTemplate#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#values CcMessageTemplate#values}
     */
     readonly values?: string[];
 }
@@ -4441,19 +4441,19 @@ export class GroupingConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface MessageTemplateAttachmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#attachment_id CcMessageTemplate#attachment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#attachment_id CcMessageTemplate#attachment_id}
     */
     readonly attachmentId?: string;
     /**
     * The name of the attachment file being uploaded. The name should include the file extension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#attachment_name CcMessageTemplate#attachment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#attachment_name CcMessageTemplate#attachment_name}
     */
     readonly attachmentName?: string;
     /**
     * The S3 Presigned URL for the attachment file. When generating the PreSignedUrl, please ensure that the expires-in time is set to 30 minutes. The URL can be generated through the AWS Console or through the AWS CLI (https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html). 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#s3_presigned_url CcMessageTemplate#s3_presigned_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#s3_presigned_url CcMessageTemplate#s3_presigned_url}
     */
     readonly s3PresignedUrl?: string;
 }
@@ -4585,13 +4585,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#key CcMessageTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#key CcMessageTemplate#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wisdom_message_template#value CcMessageTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wisdom_message_template#value CcMessageTemplate#value}
     */
     readonly value?: string;
 }

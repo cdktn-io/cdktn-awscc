@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcScalableTargetProps extends cdktn.TerraformMetaArguments {
     /**
     * The maximum value that you plan to scale out to. When a scaling policy is in effect, Application Auto Scaling can scale out (expand) as needed to the maximum capacity limit in response to changing demand.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#max_capacity CcScalableTarget#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#max_capacity CcScalableTarget#max_capacity}
     */
     readonly maxCapacity: number;
     /**
     * The minimum value that you plan to scale in to. When a scaling policy is in effect, Application Auto Scaling can scale in (contract) as needed to the minimum capacity limit in response to changing demand.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#min_capacity CcScalableTarget#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#min_capacity CcScalableTarget#min_capacity}
     */
     readonly minCapacity: number;
     /**
@@ -41,14 +41,14 @@ export interface CcScalableTargetProps extends cdktn.TerraformMetaArguments {
     *   +  SageMaker inference component - The resource type is ``inference-component`` and the unique identifier is the resource ID. Example: ``inference-component/my-inference-component``.
     *   +  Pool of WorkSpaces - The resource type is ``workspacespool`` and the unique identifier is the pool ID. Example: ``workspacespool/wspool-123456``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#resource_id CcScalableTarget#resource_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#resource_id CcScalableTarget#resource_id}
     */
     readonly resourceId: string;
     /**
     * Specify the Amazon Resource Name (ARN) of an Identity and Access Management (IAM) role that allows Application Auto Scaling to modify the scalable target on your behalf. This can be either an IAM service role that Application Auto Scaling can assume to make calls to other AWS resources on your behalf, or a service-linked role for the specified service. For more information, see [How Application Auto Scaling works with IAM](https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_service-with-iam.html) in the *Application Auto Scaling User Guide*.
     *  To automatically create a service-linked role (recommended), specify the full ARN of the service-linked role in your stack template. To find the exact ARN of the service-linked role for your AWS or custom resource, see the [Service-linked roles](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html) topic in the *Application Auto Scaling User Guide*. Look for the ARN in the table at the bottom of the page.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#role_arn CcScalableTarget#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#role_arn CcScalableTarget#role_arn}
     */
     readonly roleArn?: string;
     /**
@@ -78,19 +78,19 @@ export interface CcScalableTargetProps extends cdktn.TerraformMetaArguments {
     *   +  ``sagemaker:inference-component:DesiredCopyCount`` - The number of copies across an endpoint for a SageMaker inference component.
     *   +  ``workspaces:workspacespool:DesiredUserSessions`` - The number of user sessions for the WorkSpaces in the pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#scalable_dimension CcScalableTarget#scalable_dimension}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#scalable_dimension CcScalableTarget#scalable_dimension}
     */
     readonly scalableDimension: string;
     /**
     * The scheduled actions for the scalable target. Duplicates aren't allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#scheduled_actions CcScalableTarget#scheduled_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#scheduled_actions CcScalableTarget#scheduled_actions}
     */
     readonly scheduledActions?: CcScalableTarget.ScheduledActionProperty[] | cdktn.IResolvable;
     /**
     * The namespace of the AWS service that provides the resource, or a ``custom-resource``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#service_namespace CcScalableTarget#service_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#service_namespace CcScalableTarget#service_namespace}
     */
     readonly serviceNamespace: string;
     /**
@@ -100,13 +100,13 @@ export interface CcScalableTargetProps extends cdktn.TerraformMetaArguments {
     *   +  For ``DynamicScalingOutSuspended``, while a suspension is in effect, all scale-out activities that are triggered by a scaling policy are suspended.
     *   +  For ``ScheduledScalingSuspended``, while a suspension is in effect, all scaling activities that involve scheduled actions are suspended.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#suspended_state CcScalableTarget#suspended_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#suspended_state CcScalableTarget#suspended_state}
     */
     readonly suspendedState?: CcScalableTarget.SuspendedStateProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target awscc_applicationautoscaling_scalable_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target awscc_applicationautoscaling_scalable_target}
 */
 export class CcScalableTarget extends cdktn.TerraformResource {
 
@@ -122,7 +122,7 @@ export class CcScalableTarget extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScalableTarget resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScalableTarget to import
-    * @param importFromId The id of the existing CcScalableTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScalableTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScalableTarget to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -134,7 +134,7 @@ export class CcScalableTarget extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target awscc_applicationautoscaling_scalable_target} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target awscc_applicationautoscaling_scalable_target} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +145,7 @@ export class CcScalableTarget extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_applicationautoscaling_scalable_target',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -517,13 +517,13 @@ export interface ScalableTargetActionProperty {
     /**
     * The maximum capacity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#max_capacity CcScalableTarget#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#max_capacity CcScalableTarget#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The minimum capacity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#min_capacity CcScalableTarget#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#min_capacity CcScalableTarget#min_capacity}
     */
     readonly minCapacity?: number;
 }
@@ -611,13 +611,13 @@ export interface ScheduledActionProperty {
     /**
     * The date and time that the action is scheduled to end, in UTC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#end_time CcScalableTarget#end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#end_time CcScalableTarget#end_time}
     */
     readonly endTime?: string;
     /**
     * The new minimum and maximum capacity. You can set both values or just one. At the scheduled time, if the current capacity is below the minimum capacity, Application Auto Scaling scales out to the minimum capacity. If the current capacity is above the maximum capacity, Application Auto Scaling scales in to the maximum capacity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#scalable_target_action CcScalableTarget#scalable_target_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#scalable_target_action CcScalableTarget#scalable_target_action}
     */
     readonly scalableTargetAction?: ScalableTargetActionProperty;
     /**
@@ -631,25 +631,25 @@ export interface ScheduledActionProperty {
     *  The cron format consists of six fields separated by white spaces: [Minutes] [Hours] [Day_of_Month] [Month] [Day_of_Week] [Year].
     *  For rate expressions, *value* is a positive integer and *unit* is ``minute`` | ``minutes`` | ``hour`` | ``hours`` | ``day`` | ``days``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#schedule CcScalableTarget#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#schedule CcScalableTarget#schedule}
     */
     readonly schedule?: string;
     /**
     * The name of the scheduled action. This name must be unique among all other scheduled actions on the specified scalable target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#scheduled_action_name CcScalableTarget#scheduled_action_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#scheduled_action_name CcScalableTarget#scheduled_action_name}
     */
     readonly scheduledActionName?: string;
     /**
     * The date and time that the action is scheduled to begin, in UTC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#start_time CcScalableTarget#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#start_time CcScalableTarget#start_time}
     */
     readonly startTime?: string;
     /**
     * The time zone used when referring to the date and time of a scheduled action, when the scheduled action uses an at or cron expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#timezone CcScalableTarget#timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#timezone CcScalableTarget#timezone}
     */
     readonly timezone?: string;
 }
@@ -847,19 +847,19 @@ export interface SuspendedStateProperty {
     /**
     * Whether scale in by a target tracking scaling policy or a step scaling policy is suspended. Set the value to ``true`` if you don't want Application Auto Scaling to remove capacity when a scaling policy is triggered. The default is ``false``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#dynamic_scaling_in_suspended CcScalableTarget#dynamic_scaling_in_suspended}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#dynamic_scaling_in_suspended CcScalableTarget#dynamic_scaling_in_suspended}
     */
     readonly dynamicScalingInSuspended?: boolean | cdktn.IResolvable;
     /**
     * Whether scale out by a target tracking scaling policy or a step scaling policy is suspended. Set the value to ``true`` if you don't want Application Auto Scaling to add capacity when a scaling policy is triggered. The default is ``false``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#dynamic_scaling_out_suspended CcScalableTarget#dynamic_scaling_out_suspended}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#dynamic_scaling_out_suspended CcScalableTarget#dynamic_scaling_out_suspended}
     */
     readonly dynamicScalingOutSuspended?: boolean | cdktn.IResolvable;
     /**
     * Whether scheduled scaling is suspended. Set the value to ``true`` if you don't want Application Auto Scaling to add or remove capacity by initiating scheduled actions. The default is ``false``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationautoscaling_scalable_target#scheduled_scaling_suspended CcScalableTarget#scheduled_scaling_suspended}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationautoscaling_scalable_target#scheduled_scaling_suspended CcScalableTarget#scheduled_scaling_suspended}
     */
     readonly scheduledScalingSuspended?: boolean | cdktn.IResolvable;
 }

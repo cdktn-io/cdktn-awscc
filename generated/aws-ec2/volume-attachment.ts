@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcVolumeAttachmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The device name (for example, ``/dev/sdh`` or ``xvdh``).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment#device CcVolumeAttachment#device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment#device CcVolumeAttachment#device}
     */
     readonly device?: string;
     /**
     * The index of the EBS card. Some instance types support multiple EBS cards. The default EBS card index is 0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment#ebs_card_index CcVolumeAttachment#ebs_card_index}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment#ebs_card_index CcVolumeAttachment#ebs_card_index}
     */
     readonly ebsCardIndex?: number;
     /**
     * The ID of the instance to which the volume attaches. This value can be a reference to an [AWS::EC2::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html) resource, or it can be the physical ID of an existing EC2 instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment#instance_id CcVolumeAttachment#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment#instance_id CcVolumeAttachment#instance_id}
     */
     readonly instanceId: string;
     /**
     * The ID of the Amazon EBS volume. The volume and instance must be within the same Availability Zone. This value can be a reference to an [AWS::EC2::Volume](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html) resource, or it can be the volume ID of an existing Amazon EBS volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment#volume_id CcVolumeAttachment#volume_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment#volume_id CcVolumeAttachment#volume_id}
     */
     readonly volumeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment awscc_ec2_volume_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment awscc_ec2_volume_attachment}
 */
 export class CcVolumeAttachment extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcVolumeAttachment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVolumeAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVolumeAttachment to import
-    * @param importFromId The id of the existing CcVolumeAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVolumeAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVolumeAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcVolumeAttachment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume_attachment awscc_ec2_volume_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume_attachment awscc_ec2_volume_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcVolumeAttachment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_volume_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

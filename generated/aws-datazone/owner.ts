@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcOwnerProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the domain in which you want to add the entity owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#domain_identifier CcOwner#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#domain_identifier CcOwner#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The ID of the entity to which you want to add an owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#entity_identifier CcOwner#entity_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#entity_identifier CcOwner#entity_identifier}
     */
     readonly entityIdentifier: string;
     /**
     * The type of an entity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#entity_type CcOwner#entity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#entity_type CcOwner#entity_type}
     */
     readonly entityType: string;
     /**
     * The owner that you want to add to the entity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#owner CcOwner#owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#owner CcOwner#owner}
     */
     readonly owner: CcOwner.OwnerPropertiesProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner awscc_datazone_owner}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner awscc_datazone_owner}
 */
 export class CcOwner extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcOwner extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcOwner resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcOwner to import
-    * @param importFromId The id of the existing CcOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcOwner to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcOwner extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner awscc_datazone_owner} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner awscc_datazone_owner} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcOwner extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datazone_owner',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,7 +307,7 @@ export interface OwnerGroupPropertiesProperty {
     /**
     * The ID of the domain unit owners group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#group_identifier CcOwner#group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#group_identifier CcOwner#group_identifier}
     */
     readonly groupIdentifier?: string;
 }
@@ -373,7 +373,7 @@ export interface OwnerUserPropertiesProperty {
     /**
     * The ID of the owner user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#user_identifier CcOwner#user_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#user_identifier CcOwner#user_identifier}
     */
     readonly userIdentifier?: string;
 }
@@ -439,13 +439,13 @@ export interface OwnerPropertiesProperty {
     /**
     * The properties of the domain unit owners group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#group CcOwner#group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#group CcOwner#group}
     */
     readonly group?: OwnerGroupPropertiesProperty;
     /**
     * The properties of the owner user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_owner#user CcOwner#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_owner#user CcOwner#user}
     */
     readonly user?: OwnerUserPropertiesProperty;
 }

@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCapacityProviderProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#auto_scaling_group_provider CcCapacityProvider#auto_scaling_group_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#auto_scaling_group_provider CcCapacityProvider#auto_scaling_group_provider}
     */
     readonly autoScalingGroupProvider?: CcCapacityProvider.AutoScalingGroupProviderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#cluster_name CcCapacityProvider#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#cluster_name CcCapacityProvider#cluster_name}
     */
     readonly clusterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#managed_instances_provider CcCapacityProvider#managed_instances_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#managed_instances_provider CcCapacityProvider#managed_instances_provider}
     */
     readonly managedInstancesProvider?: CcCapacityProvider.ManagedInstancesProviderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#name CcCapacityProvider#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#name CcCapacityProvider#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#tags CcCapacityProvider#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#tags CcCapacityProvider#tags}
     */
     readonly tags?: CcCapacityProvider.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider awscc_ecs_capacity_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider awscc_ecs_capacity_provider}
 */
 export class CcCapacityProvider extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcCapacityProvider extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCapacityProvider resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCapacityProvider to import
-    * @param importFromId The id of the existing CcCapacityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCapacityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCapacityProvider to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcCapacityProvider extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider awscc_ecs_capacity_provider} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider awscc_ecs_capacity_provider} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcCapacityProvider extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecs_capacity_provider',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1245,23 +1245,23 @@ export function ccCapacityProviderTagPropertyToHclTerraform(struct?: CcCapacityP
 export namespace CcCapacityProvider {
 export interface ManagedScalingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#instance_warmup_period CcCapacityProvider#instance_warmup_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#instance_warmup_period CcCapacityProvider#instance_warmup_period}
     */
     readonly instanceWarmupPeriod?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#maximum_scaling_step_size CcCapacityProvider#maximum_scaling_step_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#maximum_scaling_step_size CcCapacityProvider#maximum_scaling_step_size}
     */
     readonly maximumScalingStepSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#minimum_scaling_step_size CcCapacityProvider#minimum_scaling_step_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#minimum_scaling_step_size CcCapacityProvider#minimum_scaling_step_size}
     */
     readonly minimumScalingStepSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#status CcCapacityProvider#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#status CcCapacityProvider#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#target_capacity CcCapacityProvider#target_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#target_capacity CcCapacityProvider#target_capacity}
     */
     readonly targetCapacity?: number;
 }
@@ -1413,21 +1413,21 @@ export class ManagedScalingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AutoScalingGroupProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#auto_scaling_group_arn CcCapacityProvider#auto_scaling_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#auto_scaling_group_arn CcCapacityProvider#auto_scaling_group_arn}
     */
     readonly autoScalingGroupArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#managed_draining CcCapacityProvider#managed_draining}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#managed_draining CcCapacityProvider#managed_draining}
     */
     readonly managedDraining?: string;
     /**
     * The managed scaling settings for the Auto Scaling group capacity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#managed_scaling CcCapacityProvider#managed_scaling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#managed_scaling CcCapacityProvider#managed_scaling}
     */
     readonly managedScaling?: ManagedScalingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#managed_termination_protection CcCapacityProvider#managed_termination_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#managed_termination_protection CcCapacityProvider#managed_termination_protection}
     */
     readonly managedTerminationProtection?: string;
 }
@@ -1557,7 +1557,7 @@ export class AutoScalingGroupProviderPropertyOutputReference extends cdktn.Compl
 }
 export interface AutoRepairConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#actions_status CcCapacityProvider#actions_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#actions_status CcCapacityProvider#actions_status}
     */
     readonly actionsStatus?: string;
 }
@@ -1623,7 +1623,7 @@ export interface InfrastructureOptimizationProperty {
     /**
     * This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are: Not set (null) - Uses the default optimization behavior, `-1` - Disables automatic infrastructure optimization, `0` to `3600` (inclusive) - Specifies the number of seconds to wait before optimizing instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#scale_in_after CcCapacityProvider#scale_in_after}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#scale_in_after CcCapacityProvider#scale_in_after}
     */
     readonly scaleInAfter?: number;
 }
@@ -1687,11 +1687,11 @@ export class InfrastructureOptimizationPropertyOutputReference extends cdktn.Com
 }
 export interface CapacityReservationRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#reservation_group_arn CcCapacityProvider#reservation_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#reservation_group_arn CcCapacityProvider#reservation_group_arn}
     */
     readonly reservationGroupArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#reservation_preference CcCapacityProvider#reservation_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#reservation_preference CcCapacityProvider#reservation_preference}
     */
     readonly reservationPreference?: string;
 }
@@ -1777,11 +1777,11 @@ export class CapacityReservationRequestPropertyOutputReference extends cdktn.Com
 }
 export interface AcceleratorCountRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -1867,11 +1867,11 @@ export class AcceleratorCountRequestPropertyOutputReference extends cdktn.Comple
 }
 export interface AcceleratorTotalMemoryMiBRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -1957,11 +1957,11 @@ export class AcceleratorTotalMemoryMiBRequestPropertyOutputReference extends cdk
 }
 export interface BaselineEbsBandwidthMbpsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2047,11 +2047,11 @@ export class BaselineEbsBandwidthMbpsRequestPropertyOutputReference extends cdkt
 }
 export interface MemoryGiBPerVCpuRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2137,11 +2137,11 @@ export class MemoryGiBPerVCpuRequestPropertyOutputReference extends cdktn.Comple
 }
 export interface MemoryMiBRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2227,11 +2227,11 @@ export class MemoryMiBRequestPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface NetworkBandwidthGbpsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2317,11 +2317,11 @@ export class NetworkBandwidthGbpsRequestPropertyOutputReference extends cdktn.Co
 }
 export interface NetworkInterfaceCountRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2407,11 +2407,11 @@ export class NetworkInterfaceCountRequestPropertyOutputReference extends cdktn.C
 }
 export interface TotalLocalStorageGBRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2497,11 +2497,11 @@ export class TotalLocalStorageGBRequestPropertyOutputReference extends cdktn.Com
 }
 export interface VCpuCountRangeRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max CcCapacityProvider#max}
     */
     readonly max?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#min CcCapacityProvider#min}
     */
     readonly min?: number;
 }
@@ -2587,99 +2587,99 @@ export class VCpuCountRangeRequestPropertyOutputReference extends cdktn.ComplexO
 }
 export interface InstanceRequirementsRequestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#accelerator_count CcCapacityProvider#accelerator_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#accelerator_count CcCapacityProvider#accelerator_count}
     */
     readonly acceleratorCount?: AcceleratorCountRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#accelerator_manufacturers CcCapacityProvider#accelerator_manufacturers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#accelerator_manufacturers CcCapacityProvider#accelerator_manufacturers}
     */
     readonly acceleratorManufacturers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#accelerator_names CcCapacityProvider#accelerator_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#accelerator_names CcCapacityProvider#accelerator_names}
     */
     readonly acceleratorNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#accelerator_total_memory_mi_b CcCapacityProvider#accelerator_total_memory_mi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#accelerator_total_memory_mi_b CcCapacityProvider#accelerator_total_memory_mi_b}
     */
     readonly acceleratorTotalMemoryMiB?: AcceleratorTotalMemoryMiBRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#accelerator_types CcCapacityProvider#accelerator_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#accelerator_types CcCapacityProvider#accelerator_types}
     */
     readonly acceleratorTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#allowed_instance_types CcCapacityProvider#allowed_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#allowed_instance_types CcCapacityProvider#allowed_instance_types}
     */
     readonly allowedInstanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#bare_metal CcCapacityProvider#bare_metal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#bare_metal CcCapacityProvider#bare_metal}
     */
     readonly bareMetal?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#baseline_ebs_bandwidth_mbps CcCapacityProvider#baseline_ebs_bandwidth_mbps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#baseline_ebs_bandwidth_mbps CcCapacityProvider#baseline_ebs_bandwidth_mbps}
     */
     readonly baselineEbsBandwidthMbps?: BaselineEbsBandwidthMbpsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#burstable_performance CcCapacityProvider#burstable_performance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#burstable_performance CcCapacityProvider#burstable_performance}
     */
     readonly burstablePerformance?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#cpu_manufacturers CcCapacityProvider#cpu_manufacturers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#cpu_manufacturers CcCapacityProvider#cpu_manufacturers}
     */
     readonly cpuManufacturers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#excluded_instance_types CcCapacityProvider#excluded_instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#excluded_instance_types CcCapacityProvider#excluded_instance_types}
     */
     readonly excludedInstanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#instance_generations CcCapacityProvider#instance_generations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#instance_generations CcCapacityProvider#instance_generations}
     */
     readonly instanceGenerations?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#local_storage CcCapacityProvider#local_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#local_storage CcCapacityProvider#local_storage}
     */
     readonly localStorage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#local_storage_types CcCapacityProvider#local_storage_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#local_storage_types CcCapacityProvider#local_storage_types}
     */
     readonly localStorageTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#max_spot_price_as_percentage_of_optimal_on_demand_price CcCapacityProvider#max_spot_price_as_percentage_of_optimal_on_demand_price}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#max_spot_price_as_percentage_of_optimal_on_demand_price CcCapacityProvider#max_spot_price_as_percentage_of_optimal_on_demand_price}
     */
     readonly maxSpotPriceAsPercentageOfOptimalOnDemandPrice?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#memory_gi_b_per_v_cpu CcCapacityProvider#memory_gi_b_per_v_cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#memory_gi_b_per_v_cpu CcCapacityProvider#memory_gi_b_per_v_cpu}
     */
     readonly memoryGiBPerVCpu?: MemoryGiBPerVCpuRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#memory_mi_b CcCapacityProvider#memory_mi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#memory_mi_b CcCapacityProvider#memory_mi_b}
     */
     readonly memoryMiB?: MemoryMiBRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#network_bandwidth_gbps CcCapacityProvider#network_bandwidth_gbps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#network_bandwidth_gbps CcCapacityProvider#network_bandwidth_gbps}
     */
     readonly networkBandwidthGbps?: NetworkBandwidthGbpsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#network_interface_count CcCapacityProvider#network_interface_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#network_interface_count CcCapacityProvider#network_interface_count}
     */
     readonly networkInterfaceCount?: NetworkInterfaceCountRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#on_demand_max_price_percentage_over_lowest_price CcCapacityProvider#on_demand_max_price_percentage_over_lowest_price}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#on_demand_max_price_percentage_over_lowest_price CcCapacityProvider#on_demand_max_price_percentage_over_lowest_price}
     */
     readonly onDemandMaxPricePercentageOverLowestPrice?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#require_hibernate_support CcCapacityProvider#require_hibernate_support}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#require_hibernate_support CcCapacityProvider#require_hibernate_support}
     */
     readonly requireHibernateSupport?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#spot_max_price_percentage_over_lowest_price CcCapacityProvider#spot_max_price_percentage_over_lowest_price}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#spot_max_price_percentage_over_lowest_price CcCapacityProvider#spot_max_price_percentage_over_lowest_price}
     */
     readonly spotMaxPricePercentageOverLowestPrice?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#total_local_storage_gb CcCapacityProvider#total_local_storage_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#total_local_storage_gb CcCapacityProvider#total_local_storage_gb}
     */
     readonly totalLocalStorageGb?: TotalLocalStorageGBRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#v_cpu_count CcCapacityProvider#v_cpu_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#v_cpu_count CcCapacityProvider#v_cpu_count}
     */
     readonly vCpuCount?: VCpuCountRangeRequestProperty;
 }
@@ -3249,7 +3249,7 @@ export class InstanceRequirementsRequestPropertyOutputReference extends cdktn.Co
 }
 export interface ManagedInstancesLocalStorageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#use_local_storage CcCapacityProvider#use_local_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#use_local_storage CcCapacityProvider#use_local_storage}
     */
     readonly useLocalStorage?: boolean | cdktn.IResolvable;
 }
@@ -3313,11 +3313,11 @@ export class ManagedInstancesLocalStorageConfigurationPropertyOutputReference ex
 }
 export interface ManagedInstancesNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#security_groups CcCapacityProvider#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#security_groups CcCapacityProvider#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#subnets CcCapacityProvider#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#subnets CcCapacityProvider#subnets}
     */
     readonly subnets?: string[];
 }
@@ -3403,7 +3403,7 @@ export class ManagedInstancesNetworkConfigurationPropertyOutputReference extends
 }
 export interface ManagedInstancesStorageConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#storage_size_gi_b CcCapacityProvider#storage_size_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#storage_size_gi_b CcCapacityProvider#storage_size_gi_b}
     */
     readonly storageSizeGiB?: number;
 }
@@ -3467,43 +3467,43 @@ export class ManagedInstancesStorageConfigurationPropertyOutputReference extends
 }
 export interface InstanceLaunchTemplateProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#capacity_option_type CcCapacityProvider#capacity_option_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#capacity_option_type CcCapacityProvider#capacity_option_type}
     */
     readonly capacityOptionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#capacity_reservations CcCapacityProvider#capacity_reservations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#capacity_reservations CcCapacityProvider#capacity_reservations}
     */
     readonly capacityReservations?: CapacityReservationRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#ec_2_instance_profile_arn CcCapacityProvider#ec_2_instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#ec_2_instance_profile_arn CcCapacityProvider#ec_2_instance_profile_arn}
     */
     readonly ec2InstanceProfileArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#fips_enabled CcCapacityProvider#fips_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#fips_enabled CcCapacityProvider#fips_enabled}
     */
     readonly fipsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#instance_metadata_tags_propagation CcCapacityProvider#instance_metadata_tags_propagation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#instance_metadata_tags_propagation CcCapacityProvider#instance_metadata_tags_propagation}
     */
     readonly instanceMetadataTagsPropagation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#instance_requirements CcCapacityProvider#instance_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#instance_requirements CcCapacityProvider#instance_requirements}
     */
     readonly instanceRequirements?: InstanceRequirementsRequestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#local_storage_configuration CcCapacityProvider#local_storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#local_storage_configuration CcCapacityProvider#local_storage_configuration}
     */
     readonly localStorageConfiguration?: ManagedInstancesLocalStorageConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#monitoring CcCapacityProvider#monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#monitoring CcCapacityProvider#monitoring}
     */
     readonly monitoring?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#network_configuration CcCapacityProvider#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#network_configuration CcCapacityProvider#network_configuration}
     */
     readonly networkConfiguration?: ManagedInstancesNetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#storage_configuration CcCapacityProvider#storage_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#storage_configuration CcCapacityProvider#storage_configuration}
     */
     readonly storageConfiguration?: ManagedInstancesStorageConfigurationProperty;
 }
@@ -3765,25 +3765,25 @@ export class InstanceLaunchTemplatePropertyOutputReference extends cdktn.Complex
 }
 export interface ManagedInstancesProviderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#auto_repair_configuration CcCapacityProvider#auto_repair_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#auto_repair_configuration CcCapacityProvider#auto_repair_configuration}
     */
     readonly autoRepairConfiguration?: AutoRepairConfigurationProperty;
     /**
     * Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#infrastructure_optimization CcCapacityProvider#infrastructure_optimization}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#infrastructure_optimization CcCapacityProvider#infrastructure_optimization}
     */
     readonly infrastructureOptimization?: InfrastructureOptimizationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#infrastructure_role_arn CcCapacityProvider#infrastructure_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#infrastructure_role_arn CcCapacityProvider#infrastructure_role_arn}
     */
     readonly infrastructureRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#instance_launch_template CcCapacityProvider#instance_launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#instance_launch_template CcCapacityProvider#instance_launch_template}
     */
     readonly instanceLaunchTemplate?: InstanceLaunchTemplateProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#propagate_tags CcCapacityProvider#propagate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#propagate_tags CcCapacityProvider#propagate_tags}
     */
     readonly propagateTags?: string;
 }
@@ -3935,11 +3935,11 @@ export class ManagedInstancesProviderPropertyOutputReference extends cdktn.Compl
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#key CcCapacityProvider#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#key CcCapacityProvider#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_capacity_provider#value CcCapacityProvider#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_capacity_provider#value CcCapacityProvider#value}
     */
     readonly value?: string;
 }

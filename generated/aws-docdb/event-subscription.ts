@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEventSubscriptionProps extends cdktn.TerraformMetaArguments {
     /**
     * A Boolean value; set to true to activate the subscription, set to false to create the subscription but not active it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#enabled CcEventSubscription#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#enabled CcEventSubscription#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * A list of event categories for a SourceType that you want to subscribe to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#event_categories CcEventSubscription#event_categories}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#event_categories CcEventSubscription#event_categories}
     */
     readonly eventCategories?: string[];
     /**
     * The Amazon Resource Name (ARN) of the SNS topic created for event notification. Amazon SNS creates the ARN when you create a topic and subscribe to it.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#sns_topic_arn CcEventSubscription#sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#sns_topic_arn CcEventSubscription#sns_topic_arn}
     */
     readonly snsTopicArn: string;
     /**
     * The list of identifiers of the event sources for which events are returned
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#source_ids CcEventSubscription#source_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#source_ids CcEventSubscription#source_ids}
     */
     readonly sourceIds?: string[];
     /**
     * The type of source that is generating the events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#source_type CcEventSubscription#source_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#source_type CcEventSubscription#source_type}
     */
     readonly sourceType?: string;
     /**
     * The name of the subscription.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#subscription_name CcEventSubscription#subscription_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#subscription_name CcEventSubscription#subscription_name}
     */
     readonly subscriptionName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription awscc_docdb_event_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription awscc_docdb_event_subscription}
 */
 export class CcEventSubscription extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEventSubscription extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventSubscription resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventSubscription to import
-    * @param importFromId The id of the existing CcEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventSubscription to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEventSubscription extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/docdb_event_subscription awscc_docdb_event_subscription} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/docdb_event_subscription awscc_docdb_event_subscription} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcEventSubscription extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_docdb_event_subscription',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

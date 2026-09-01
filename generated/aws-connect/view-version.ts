@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcViewVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * The description for the view version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version#version_description CcViewVersion#version_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version#version_description CcViewVersion#version_description}
     */
     readonly versionDescription?: string;
     /**
     * The Amazon Resource Name (ARN) of the view for which a version is being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version#view_arn CcViewVersion#view_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version#view_arn CcViewVersion#view_arn}
     */
     readonly viewArn: string;
     /**
     * The view content hash to be checked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version#view_content_sha_256 CcViewVersion#view_content_sha_256}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version#view_content_sha_256 CcViewVersion#view_content_sha_256}
     */
     readonly viewContentSha256?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version awscc_connect_view_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version awscc_connect_view_version}
 */
 export class CcViewVersion extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcViewVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcViewVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcViewVersion to import
-    * @param importFromId The id of the existing CcViewVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcViewVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcViewVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcViewVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_view_version awscc_connect_view_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_view_version awscc_connect_view_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcViewVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_view_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

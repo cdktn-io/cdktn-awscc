@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcFindingsFilterProps extends cdktn.TerraformMetaArguments {
     /**
     * Findings filter action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#action CcFindingsFilter#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#action CcFindingsFilter#action}
     */
     readonly action?: string;
     /**
     * Findings filter description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#description CcFindingsFilter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#description CcFindingsFilter#description}
     */
     readonly description?: string;
     /**
     * Findings filter criteria.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#finding_criteria CcFindingsFilter#finding_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#finding_criteria CcFindingsFilter#finding_criteria}
     */
     readonly findingCriteria: CcFindingsFilter.FindingCriteriaProperty;
     /**
     * Findings filter name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#name CcFindingsFilter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#name CcFindingsFilter#name}
     */
     readonly name: string;
     /**
     * Findings filter position.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#position CcFindingsFilter#position}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#position CcFindingsFilter#position}
     */
     readonly position?: number;
     /**
     * A collection of tags associated with a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#tags CcFindingsFilter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#tags CcFindingsFilter#tags}
     */
     readonly tags?: CcFindingsFilter.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter awscc_macie_findings_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter awscc_macie_findings_filter}
 */
 export class CcFindingsFilter extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcFindingsFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFindingsFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFindingsFilter to import
-    * @param importFromId The id of the existing CcFindingsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFindingsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFindingsFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcFindingsFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter awscc_macie_findings_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter awscc_macie_findings_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcFindingsFilter extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_macie_findings_filter',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -406,27 +406,27 @@ export function ccFindingsFilterTagPropertyToHclTerraform(struct?: CcFindingsFil
 export namespace CcFindingsFilter {
 export interface CriterionAdditionalPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#eq CcFindingsFilter#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#eq CcFindingsFilter#eq}
     */
     readonly eq?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#gt CcFindingsFilter#gt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#gt CcFindingsFilter#gt}
     */
     readonly gt?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#gte CcFindingsFilter#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#gte CcFindingsFilter#gte}
     */
     readonly gte?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#lt CcFindingsFilter#lt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#lt CcFindingsFilter#lt}
     */
     readonly lt?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#lte CcFindingsFilter#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#lte CcFindingsFilter#lte}
     */
     readonly lte?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#neq CcFindingsFilter#neq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#neq CcFindingsFilter#neq}
     */
     readonly neq?: string[];
 }
@@ -622,7 +622,7 @@ export interface FindingCriteriaProperty {
     /**
     * Map of filter criteria.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#criterion CcFindingsFilter#criterion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#criterion CcFindingsFilter#criterion}
     */
     readonly criterion?: { [key: string]: CriterionAdditionalPropertiesProperty } | cdktn.IResolvable;
 }
@@ -688,13 +688,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#key CcFindingsFilter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#key CcFindingsFilter#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/macie_findings_filter#value CcFindingsFilter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/macie_findings_filter#value CcFindingsFilter#value}
     */
     readonly value?: string;
 }

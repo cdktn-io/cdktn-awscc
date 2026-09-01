@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcDHCPOptionsProps extends cdktn.TerraformMetaArguments {
     /**
     * This value is used to complete unqualified DNS hostnames.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#domain_name CcDHCPOptions#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#domain_name CcDHCPOptions#domain_name}
     */
     readonly domainName?: string;
     /**
     * The IPv4 addresses of up to four domain name servers, or AmazonProvidedDNS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#domain_name_servers CcDHCPOptions#domain_name_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#domain_name_servers CcDHCPOptions#domain_name_servers}
     */
     readonly domainNameServers?: string[];
     /**
     * The preferred Lease Time for ipV6 address in seconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#ipv_6_address_preferred_lease_time CcDHCPOptions#ipv_6_address_preferred_lease_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#ipv_6_address_preferred_lease_time CcDHCPOptions#ipv_6_address_preferred_lease_time}
     */
     readonly ipv6AddressPreferredLeaseTime?: number;
     /**
     * The IPv4 addresses of up to four NetBIOS name servers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#netbios_name_servers CcDHCPOptions#netbios_name_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#netbios_name_servers CcDHCPOptions#netbios_name_servers}
     */
     readonly netbiosNameServers?: string[];
     /**
     * The NetBIOS node type (1, 2, 4, or 8).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#netbios_node_type CcDHCPOptions#netbios_node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#netbios_node_type CcDHCPOptions#netbios_node_type}
     */
     readonly netbiosNodeType?: number;
     /**
     * The IPv4 addresses of up to four Network Time Protocol (NTP) servers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#ntp_servers CcDHCPOptions#ntp_servers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#ntp_servers CcDHCPOptions#ntp_servers}
     */
     readonly ntpServers?: string[];
     /**
     * Any tags assigned to the DHCP options set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#tags CcDHCPOptions#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#tags CcDHCPOptions#tags}
     */
     readonly tags?: CcDHCPOptions.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options awscc_ec2_dhcp_options}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options awscc_ec2_dhcp_options}
 */
 export class CcDHCPOptions extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcDHCPOptions extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDHCPOptions resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDHCPOptions to import
-    * @param importFromId The id of the existing CcDHCPOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDHCPOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDHCPOptions to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcDHCPOptions extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options awscc_ec2_dhcp_options} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options awscc_ec2_dhcp_options} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcDHCPOptions extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_dhcp_options',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -342,11 +342,11 @@ export function ccDHCPOptionsTagPropertyToHclTerraform(struct?: CcDHCPOptions.Ta
 export namespace CcDHCPOptions {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#key CcDHCPOptions#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#key CcDHCPOptions#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_dhcp_options#value CcDHCPOptions#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_dhcp_options#value CcDHCPOptions#value}
     */
     readonly value?: string;
 }

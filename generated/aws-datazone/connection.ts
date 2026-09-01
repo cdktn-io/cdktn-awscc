@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,65 +9,65 @@ export interface CcConnectionProps extends cdktn.TerraformMetaArguments {
     /**
     * AWS Location of project
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#aws_location CcConnection#aws_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#aws_location CcConnection#aws_location}
     */
     readonly awsLocation?: CcConnection.AwsLocationProperty;
     /**
     * The configurations of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#configurations CcConnection#configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#configurations CcConnection#configurations}
     */
     readonly configurations?: CcConnection.ConnectionConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The description of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#description CcConnection#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#description CcConnection#description}
     */
     readonly description?: string;
     /**
     * The identifier of the domain in which the connection is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#domain_identifier CcConnection#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#domain_identifier CcConnection#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * Specifies whether the trusted identity propagation is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#enable_trusted_identity_propagation CcConnection#enable_trusted_identity_propagation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#enable_trusted_identity_propagation CcConnection#enable_trusted_identity_propagation}
     */
     readonly enableTrustedIdentityPropagation?: boolean | cdktn.IResolvable;
     /**
     * The identifier of the environment in which the connection is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#environment_identifier CcConnection#environment_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#environment_identifier CcConnection#environment_identifier}
     */
     readonly environmentIdentifier?: string;
     /**
     * The name of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#name CcConnection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#name CcConnection#name}
     */
     readonly name: string;
     /**
     * The identifier of the project in which the connection should be created. If 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#project_identifier CcConnection#project_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#project_identifier CcConnection#project_identifier}
     */
     readonly projectIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#props CcConnection#props}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#props CcConnection#props}
     */
     readonly props?: CcConnection.ConnectionPropertiesInputProperty;
     /**
     * The scope of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#scope CcConnection#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#scope CcConnection#scope}
     */
     readonly scope?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection awscc_datazone_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection awscc_datazone_connection}
 */
 export class CcConnection extends cdktn.TerraformResource {
 
@@ -83,7 +83,7 @@ export class CcConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnection to import
-    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -95,7 +95,7 @@ export class CcConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection awscc_datazone_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection awscc_datazone_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +106,7 @@ export class CcConnection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datazone_connection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1798,19 +1798,19 @@ export function ccConnectionConnectionPropertiesInputPropertyToHclTerraform(stru
 export namespace CcConnection {
 export interface AwsLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#access_role CcConnection#access_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#access_role CcConnection#access_role}
     */
     readonly accessRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#aws_account_id CcConnection#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#aws_account_id CcConnection#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#aws_region CcConnection#aws_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#aws_region CcConnection#aws_region}
     */
     readonly awsRegion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#iam_connection_id CcConnection#iam_connection_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#iam_connection_id CcConnection#iam_connection_id}
     */
     readonly iamConnectionId?: string;
 }
@@ -1942,13 +1942,13 @@ export interface ConnectionConfigurationProperty {
     /**
     * The classification of the connection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#classification CcConnection#classification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#classification CcConnection#classification}
     */
     readonly classification?: string;
     /**
     * Property Map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#properties CcConnection#properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#properties CcConnection#properties}
     */
     readonly properties?: { [key: string]: string };
 }
@@ -2058,17 +2058,17 @@ export interface AmazonQPropertiesInputProperty {
     /**
     * The authentication mode of the connection's AmazonQ properties
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#auth_mode CcConnection#auth_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#auth_mode CcConnection#auth_mode}
     */
     readonly authMode?: string;
     /**
     * Specifies whether Amazon Q is enabled for the connection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#is_enabled CcConnection#is_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#is_enabled CcConnection#is_enabled}
     */
     readonly isEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#profile_arn CcConnection#profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#profile_arn CcConnection#profile_arn}
     */
     readonly profileArn?: string;
 }
@@ -2176,7 +2176,7 @@ export class AmazonQPropertiesInputPropertyOutputReference extends cdktn.Complex
 }
 export interface AthenaPropertiesInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#workgroup_name CcConnection#workgroup_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#workgroup_name CcConnection#workgroup_name}
     */
     readonly workgroupName?: string;
 }
@@ -2240,11 +2240,11 @@ export class AthenaPropertiesInputPropertyOutputReference extends cdktn.ComplexO
 }
 export interface BasicAuthenticationCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#password CcConnection#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#password CcConnection#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#user_name CcConnection#user_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#user_name CcConnection#user_name}
     */
     readonly userName?: string;
 }
@@ -2330,11 +2330,11 @@ export class BasicAuthenticationCredentialsPropertyOutputReference extends cdktn
 }
 export interface AuthorizationCodePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#authorization_code CcConnection#authorization_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#authorization_code CcConnection#authorization_code}
     */
     readonly authorizationCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#redirect_uri CcConnection#redirect_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#redirect_uri CcConnection#redirect_uri}
     */
     readonly redirectUri?: string;
 }
@@ -2420,11 +2420,11 @@ export class AuthorizationCodePropertiesPropertyOutputReference extends cdktn.Co
 }
 export interface OAuth2ClientApplicationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#aws_managed_client_application_reference CcConnection#aws_managed_client_application_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#aws_managed_client_application_reference CcConnection#aws_managed_client_application_reference}
     */
     readonly awsManagedClientApplicationReference?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#user_managed_client_application_client_id CcConnection#user_managed_client_application_client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#user_managed_client_application_client_id CcConnection#user_managed_client_application_client_id}
     */
     readonly userManagedClientApplicationClientId?: string;
 }
@@ -2510,19 +2510,19 @@ export class OAuth2ClientApplicationPropertyOutputReference extends cdktn.Comple
 }
 export interface GlueOAuth2CredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#access_token CcConnection#access_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#access_token CcConnection#access_token}
     */
     readonly accessToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#jwt_token CcConnection#jwt_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#jwt_token CcConnection#jwt_token}
     */
     readonly jwtToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#refresh_token CcConnection#refresh_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#refresh_token CcConnection#refresh_token}
     */
     readonly refreshToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#user_managed_client_application_client_secret CcConnection#user_managed_client_application_client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#user_managed_client_application_client_secret CcConnection#user_managed_client_application_client_secret}
     */
     readonly userManagedClientApplicationClientSecret?: string;
 }
@@ -2654,35 +2654,35 @@ export interface OAuth2PropertiesProperty {
     /**
     * Authorization Code Properties
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#authorization_code_properties CcConnection#authorization_code_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#authorization_code_properties CcConnection#authorization_code_properties}
     */
     readonly authorizationCodeProperties?: AuthorizationCodePropertiesProperty;
     /**
     * OAuth2 Client Application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#o_auth_2_client_application CcConnection#o_auth_2_client_application}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#o_auth_2_client_application CcConnection#o_auth_2_client_application}
     */
     readonly oAuth2ClientApplication?: OAuth2ClientApplicationProperty;
     /**
     * Glue OAuth2 Credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#o_auth_2_credentials CcConnection#o_auth_2_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#o_auth_2_credentials CcConnection#o_auth_2_credentials}
     */
     readonly oAuth2Credentials?: GlueOAuth2CredentialsProperty;
     /**
     * OAuth2 Grant Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#o_auth_2_grant_type CcConnection#o_auth_2_grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#o_auth_2_grant_type CcConnection#o_auth_2_grant_type}
     */
     readonly oAuth2GrantType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#token_url CcConnection#token_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#token_url CcConnection#token_url}
     */
     readonly tokenUrl?: string;
     /**
     * The token URL parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#token_url_parameters_map CcConnection#token_url_parameters_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#token_url_parameters_map CcConnection#token_url_parameters_map}
     */
     readonly tokenUrlParametersMap?: { [key: string]: string };
 }
@@ -2858,33 +2858,33 @@ export interface AuthenticationConfigurationInputProperty {
     /**
     * Authentication Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#authentication_type CcConnection#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#authentication_type CcConnection#authentication_type}
     */
     readonly authenticationType?: string;
     /**
     * Basic Authentication Credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#basic_authentication_credentials CcConnection#basic_authentication_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#basic_authentication_credentials CcConnection#basic_authentication_credentials}
     */
     readonly basicAuthenticationCredentials?: BasicAuthenticationCredentialsProperty;
     /**
     * Credential Map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#custom_authentication_credentials CcConnection#custom_authentication_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#custom_authentication_credentials CcConnection#custom_authentication_credentials}
     */
     readonly customAuthenticationCredentials?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#kms_key_arn CcConnection#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#kms_key_arn CcConnection#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * OAuth2 Properties
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#o_auth_2_properties CcConnection#o_auth_2_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#o_auth_2_properties CcConnection#o_auth_2_properties}
     */
     readonly oAuth2Properties?: OAuth2PropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#secret_arn CcConnection#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#secret_arn CcConnection#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -3058,19 +3058,19 @@ export class AuthenticationConfigurationInputPropertyOutputReference extends cdk
 }
 export interface PhysicalConnectionRequirementsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#availability_zone CcConnection#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#availability_zone CcConnection#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#security_group_id_list CcConnection#security_group_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#security_group_id_list CcConnection#security_group_id_list}
     */
     readonly securityGroupIdList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#subnet_id CcConnection#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#subnet_id CcConnection#subnet_id}
     */
     readonly subnetId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#subnet_id_list CcConnection#subnet_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#subnet_id_list CcConnection#subnet_id_list}
     */
     readonly subnetIdList?: string[];
 }
@@ -3202,63 +3202,63 @@ export interface GlueConnectionInputProperty {
     /**
     * Property Map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#athena_properties CcConnection#athena_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#athena_properties CcConnection#athena_properties}
     */
     readonly athenaProperties?: { [key: string]: string };
     /**
     * Authentication Configuration Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#authentication_configuration CcConnection#authentication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#authentication_configuration CcConnection#authentication_configuration}
     */
     readonly authenticationConfiguration?: AuthenticationConfigurationInputProperty;
     /**
     * Connection Properties
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#connection_properties CcConnection#connection_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#connection_properties CcConnection#connection_properties}
     */
     readonly connectionProperties?: { [key: string]: string };
     /**
     * Glue Connection Type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#connection_type CcConnection#connection_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#connection_type CcConnection#connection_type}
     */
     readonly connectionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#description CcConnection#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#description CcConnection#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#match_criteria CcConnection#match_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#match_criteria CcConnection#match_criteria}
     */
     readonly matchCriteria?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#name CcConnection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#name CcConnection#name}
     */
     readonly name?: string;
     /**
     * Physical Connection Requirements
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#physical_connection_requirements CcConnection#physical_connection_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#physical_connection_requirements CcConnection#physical_connection_requirements}
     */
     readonly physicalConnectionRequirements?: PhysicalConnectionRequirementsProperty;
     /**
     * Property Map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#python_properties CcConnection#python_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#python_properties CcConnection#python_properties}
     */
     readonly pythonProperties?: { [key: string]: string };
     /**
     * Property Map
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#spark_properties CcConnection#spark_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#spark_properties CcConnection#spark_properties}
     */
     readonly sparkProperties?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#validate_credentials CcConnection#validate_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#validate_credentials CcConnection#validate_credentials}
     */
     readonly validateCredentials?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#validate_for_compute_environments CcConnection#validate_for_compute_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#validate_for_compute_environments CcConnection#validate_for_compute_environments}
     */
     readonly validateForComputeEnvironments?: string[];
 }
@@ -3566,7 +3566,7 @@ export interface GluePropertiesInputProperty {
     /**
     * Glue Connection Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_connection_input CcConnection#glue_connection_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_connection_input CcConnection#glue_connection_input}
     */
     readonly glueConnectionInput?: GlueConnectionInputProperty;
 }
@@ -3630,7 +3630,7 @@ export class GluePropertiesInputPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface HyperPodPropertiesInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#cluster_name CcConnection#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#cluster_name CcConnection#cluster_name}
     */
     readonly clusterName?: string;
 }
@@ -3694,7 +3694,7 @@ export class HyperPodPropertiesInputPropertyOutputReference extends cdktn.Comple
 }
 export interface IamPropertiesInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_lineage_sync_enabled CcConnection#glue_lineage_sync_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_lineage_sync_enabled CcConnection#glue_lineage_sync_enabled}
     */
     readonly glueLineageSyncEnabled?: boolean | cdktn.IResolvable;
 }
@@ -3760,7 +3760,7 @@ export interface LakehousePropertiesInputProperty {
     /**
     * Specifies whether Glue lineage sync is enabled for the lakehouse connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_lineage_sync_enabled CcConnection#glue_lineage_sync_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_lineage_sync_enabled CcConnection#glue_lineage_sync_enabled}
     */
     readonly glueLineageSyncEnabled?: boolean | cdktn.IResolvable;
 }
@@ -3826,7 +3826,7 @@ export interface MlflowPropertiesInputProperty {
     /**
     * The ARN of the MLflow tracking server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#tracking_server_arn CcConnection#tracking_server_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#tracking_server_arn CcConnection#tracking_server_arn}
     */
     readonly trackingServerArn?: string;
 }
@@ -3890,11 +3890,11 @@ export class MlflowPropertiesInputPropertyOutputReference extends cdktn.ComplexO
 }
 export interface UsernamePasswordProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#password CcConnection#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#password CcConnection#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#username CcConnection#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#username CcConnection#username}
     */
     readonly username?: string;
 }
@@ -3980,13 +3980,13 @@ export class UsernamePasswordPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RedshiftCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#secret_arn CcConnection#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#secret_arn CcConnection#secret_arn}
     */
     readonly secretArn?: string;
     /**
     * The username and password to be used for authentication.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#username_password CcConnection#username_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#username_password CcConnection#username_password}
     */
     readonly usernamePassword?: UsernamePasswordProperty;
 }
@@ -4072,7 +4072,7 @@ export class RedshiftCredentialsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface LineageSyncScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#schedule CcConnection#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#schedule CcConnection#schedule}
     */
     readonly schedule?: string;
 }
@@ -4136,13 +4136,13 @@ export class LineageSyncSchedulePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface RedshiftLineageSyncConfigurationInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#enabled CcConnection#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#enabled CcConnection#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * Lineage Sync Schedule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#schedule CcConnection#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#schedule CcConnection#schedule}
     */
     readonly schedule?: LineageSyncScheduleProperty;
 }
@@ -4228,11 +4228,11 @@ export class RedshiftLineageSyncConfigurationInputPropertyOutputReference extend
 }
 export interface RedshiftStoragePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#cluster_name CcConnection#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#cluster_name CcConnection#cluster_name}
     */
     readonly clusterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#workgroup_name CcConnection#workgroup_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#workgroup_name CcConnection#workgroup_name}
     */
     readonly workgroupName?: string;
 }
@@ -4318,29 +4318,29 @@ export class RedshiftStoragePropertiesPropertyOutputReference extends cdktn.Comp
 }
 export interface RedshiftPropertiesInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#credentials CcConnection#credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#credentials CcConnection#credentials}
     */
     readonly credentials?: RedshiftCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#database_name CcConnection#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#database_name CcConnection#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#host CcConnection#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#host CcConnection#host}
     */
     readonly host?: string;
     /**
     * Redshift Lineage Sync Configuration Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#lineage_sync CcConnection#lineage_sync}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#lineage_sync CcConnection#lineage_sync}
     */
     readonly lineageSync?: RedshiftLineageSyncConfigurationInputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#port CcConnection#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#port CcConnection#port}
     */
     readonly port?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#storage CcConnection#storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#storage CcConnection#storage}
     */
     readonly storage?: RedshiftStoragePropertiesProperty;
 }
@@ -4516,19 +4516,19 @@ export interface S3PropertiesInputProperty {
     /**
     * Specifies whether to register the S3 Access Grant location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#register_s3_access_grant_location CcConnection#register_s3_access_grant_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#register_s3_access_grant_location CcConnection#register_s3_access_grant_location}
     */
     readonly registerS3AccessGrantLocation?: boolean | cdktn.IResolvable;
     /**
     * The Amazon S3 Access Grant location ID that's part of the Amazon S3 properties of a connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#s3_access_grant_location_id CcConnection#s3_access_grant_location_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#s3_access_grant_location_id CcConnection#s3_access_grant_location_id}
     */
     readonly s3AccessGrantLocationId?: string;
     /**
     * The Amazon S3 URI that's part of the Amazon S3 properties of a connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#s3_uri CcConnection#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#s3_uri CcConnection#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -4636,35 +4636,35 @@ export class S3PropertiesInputPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface SparkEmrPropertiesInputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#compute_arn CcConnection#compute_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#compute_arn CcConnection#compute_arn}
     */
     readonly computeArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#instance_profile_arn CcConnection#instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#instance_profile_arn CcConnection#instance_profile_arn}
     */
     readonly instanceProfileArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#java_virtual_env CcConnection#java_virtual_env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#java_virtual_env CcConnection#java_virtual_env}
     */
     readonly javaVirtualEnv?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#log_uri CcConnection#log_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#log_uri CcConnection#log_uri}
     */
     readonly logUri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#managed_endpoint_arn CcConnection#managed_endpoint_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#managed_endpoint_arn CcConnection#managed_endpoint_arn}
     */
     readonly managedEndpointArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#python_virtual_env CcConnection#python_virtual_env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#python_virtual_env CcConnection#python_virtual_env}
     */
     readonly pythonVirtualEnv?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#runtime_role CcConnection#runtime_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#runtime_role CcConnection#runtime_role}
     */
     readonly runtimeRole?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#trusted_certificates_s3_uri CcConnection#trusted_certificates_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#trusted_certificates_s3_uri CcConnection#trusted_certificates_s3_uri}
     */
     readonly trustedCertificatesS3Uri?: string;
 }
@@ -4882,7 +4882,7 @@ export class SparkEmrPropertiesInputPropertyOutputReference extends cdktn.Comple
 }
 export interface SparkGlueArgsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#connection CcConnection#connection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#connection CcConnection#connection}
     */
     readonly connection?: string;
 }
@@ -4948,35 +4948,35 @@ export interface SparkGluePropertiesInputProperty {
     /**
     * Spark Glue Args.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#additional_args CcConnection#additional_args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#additional_args CcConnection#additional_args}
     */
     readonly additionalArgs?: SparkGlueArgsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_connection_name CcConnection#glue_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_connection_name CcConnection#glue_connection_name}
     */
     readonly glueConnectionName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_version CcConnection#glue_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_version CcConnection#glue_version}
     */
     readonly glueVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#idle_timeout CcConnection#idle_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#idle_timeout CcConnection#idle_timeout}
     */
     readonly idleTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#java_virtual_env CcConnection#java_virtual_env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#java_virtual_env CcConnection#java_virtual_env}
     */
     readonly javaVirtualEnv?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#number_of_workers CcConnection#number_of_workers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#number_of_workers CcConnection#number_of_workers}
     */
     readonly numberOfWorkers?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#python_virtual_env CcConnection#python_virtual_env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#python_virtual_env CcConnection#python_virtual_env}
     */
     readonly pythonVirtualEnv?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#worker_type CcConnection#worker_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#worker_type CcConnection#worker_type}
     */
     readonly workerType?: string;
 }
@@ -5196,7 +5196,7 @@ export interface WorkflowsMwaaPropertiesInputProperty {
     /**
     * The name of the MWAA environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#mwaa_environment_name CcConnection#mwaa_environment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#mwaa_environment_name CcConnection#mwaa_environment_name}
     */
     readonly mwaaEnvironmentName?: string;
 }
@@ -5262,79 +5262,79 @@ export interface ConnectionPropertiesInputProperty {
     /**
     * Amazon Q properties of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#amazon_q_properties CcConnection#amazon_q_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#amazon_q_properties CcConnection#amazon_q_properties}
     */
     readonly amazonQProperties?: AmazonQPropertiesInputProperty;
     /**
     * Athena Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#athena_properties CcConnection#athena_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#athena_properties CcConnection#athena_properties}
     */
     readonly athenaProperties?: AthenaPropertiesInputProperty;
     /**
     * Glue Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#glue_properties CcConnection#glue_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#glue_properties CcConnection#glue_properties}
     */
     readonly glueProperties?: GluePropertiesInputProperty;
     /**
     * HyperPod Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#hyper_pod_properties CcConnection#hyper_pod_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#hyper_pod_properties CcConnection#hyper_pod_properties}
     */
     readonly hyperPodProperties?: HyperPodPropertiesInputProperty;
     /**
     * IAM Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#iam_properties CcConnection#iam_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#iam_properties CcConnection#iam_properties}
     */
     readonly iamProperties?: IamPropertiesInputProperty;
     /**
     * Lakehouse Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#lakehouse_properties CcConnection#lakehouse_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#lakehouse_properties CcConnection#lakehouse_properties}
     */
     readonly lakehouseProperties?: LakehousePropertiesInputProperty;
     /**
     * MLflow Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#mlflow_properties CcConnection#mlflow_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#mlflow_properties CcConnection#mlflow_properties}
     */
     readonly mlflowProperties?: MlflowPropertiesInputProperty;
     /**
     * Redshift Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#redshift_properties CcConnection#redshift_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#redshift_properties CcConnection#redshift_properties}
     */
     readonly redshiftProperties?: RedshiftPropertiesInputProperty;
     /**
     * S3 Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#s3_properties CcConnection#s3_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#s3_properties CcConnection#s3_properties}
     */
     readonly s3Properties?: S3PropertiesInputProperty;
     /**
     * Spark EMR Properties Input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#spark_emr_properties CcConnection#spark_emr_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#spark_emr_properties CcConnection#spark_emr_properties}
     */
     readonly sparkEmrProperties?: SparkEmrPropertiesInputProperty;
     /**
     * Spark Glue Properties Input.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#spark_glue_properties CcConnection#spark_glue_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#spark_glue_properties CcConnection#spark_glue_properties}
     */
     readonly sparkGlueProperties?: SparkGluePropertiesInputProperty;
     /**
     * Workflows MWAA Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#workflows_mwaa_properties CcConnection#workflows_mwaa_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#workflows_mwaa_properties CcConnection#workflows_mwaa_properties}
     */
     readonly workflowsMwaaProperties?: WorkflowsMwaaPropertiesInputProperty;
     /**
     * Workflows Serverless Properties Input
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_connection#workflows_serverless_properties CcConnection#workflows_serverless_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_connection#workflows_serverless_properties CcConnection#workflows_serverless_properties}
     */
     readonly workflowsServerlessProperties?: string;
 }

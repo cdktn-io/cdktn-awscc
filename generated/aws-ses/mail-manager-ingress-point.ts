@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcMailManagerIngressPointProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#ingress_point_configuration CcMailManagerIngressPoint#ingress_point_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#ingress_point_configuration CcMailManagerIngressPoint#ingress_point_configuration}
     */
     readonly ingressPointConfiguration?: CcMailManagerIngressPoint.IngressPointConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#ingress_point_name CcMailManagerIngressPoint#ingress_point_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#ingress_point_name CcMailManagerIngressPoint#ingress_point_name}
     */
     readonly ingressPointName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#network_configuration CcMailManagerIngressPoint#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#network_configuration CcMailManagerIngressPoint#network_configuration}
     */
     readonly networkConfiguration?: CcMailManagerIngressPoint.NetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#rule_set_id CcMailManagerIngressPoint#rule_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#rule_set_id CcMailManagerIngressPoint#rule_set_id}
     */
     readonly ruleSetId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#status_to_update CcMailManagerIngressPoint#status_to_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#status_to_update CcMailManagerIngressPoint#status_to_update}
     */
     readonly statusToUpdate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#tags CcMailManagerIngressPoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#tags CcMailManagerIngressPoint#tags}
     */
     readonly tags?: CcMailManagerIngressPoint.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#tls_policy CcMailManagerIngressPoint#tls_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#tls_policy CcMailManagerIngressPoint#tls_policy}
     */
     readonly tlsPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#traffic_policy_id CcMailManagerIngressPoint#traffic_policy_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#traffic_policy_id CcMailManagerIngressPoint#traffic_policy_id}
     */
     readonly trafficPolicyId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#type CcMailManagerIngressPoint#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#type CcMailManagerIngressPoint#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point awscc_ses_mail_manager_ingress_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point awscc_ses_mail_manager_ingress_point}
 */
 export class CcMailManagerIngressPoint extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcMailManagerIngressPoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMailManagerIngressPoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMailManagerIngressPoint to import
-    * @param importFromId The id of the existing CcMailManagerIngressPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMailManagerIngressPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMailManagerIngressPoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcMailManagerIngressPoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point awscc_ses_mail_manager_ingress_point} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point awscc_ses_mail_manager_ingress_point} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcMailManagerIngressPoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_mail_manager_ingress_point',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -605,15 +605,15 @@ export function ccMailManagerIngressPointTagPropertyToHclTerraform(struct?: CcMa
 export namespace CcMailManagerIngressPoint {
 export interface TrustStoreProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#ca_content CcMailManagerIngressPoint#ca_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#ca_content CcMailManagerIngressPoint#ca_content}
     */
     readonly caContent?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#crl_content CcMailManagerIngressPoint#crl_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#crl_content CcMailManagerIngressPoint#crl_content}
     */
     readonly crlContent?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#kms_key_arn CcMailManagerIngressPoint#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#kms_key_arn CcMailManagerIngressPoint#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -721,7 +721,7 @@ export class TrustStorePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TlsAuthConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#trust_store CcMailManagerIngressPoint#trust_store}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#trust_store CcMailManagerIngressPoint#trust_store}
     */
     readonly trustStore?: TrustStoreProperty;
 }
@@ -785,15 +785,15 @@ export class TlsAuthConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface IngressPointConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#secret_arn CcMailManagerIngressPoint#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#secret_arn CcMailManagerIngressPoint#secret_arn}
     */
     readonly secretArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#smtp_password CcMailManagerIngressPoint#smtp_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#smtp_password CcMailManagerIngressPoint#smtp_password}
     */
     readonly smtpPassword?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#tls_auth_configuration CcMailManagerIngressPoint#tls_auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#tls_auth_configuration CcMailManagerIngressPoint#tls_auth_configuration}
     */
     readonly tlsAuthConfiguration?: TlsAuthConfigurationProperty;
 }
@@ -901,7 +901,7 @@ export class IngressPointConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface PrivateNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#vpc_endpoint_id CcMailManagerIngressPoint#vpc_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#vpc_endpoint_id CcMailManagerIngressPoint#vpc_endpoint_id}
     */
     readonly vpcEndpointId?: string;
 }
@@ -965,7 +965,7 @@ export class PrivateNetworkConfigurationPropertyOutputReference extends cdktn.Co
 }
 export interface PublicNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#ip_type CcMailManagerIngressPoint#ip_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#ip_type CcMailManagerIngressPoint#ip_type}
     */
     readonly ipType?: string;
 }
@@ -1029,11 +1029,11 @@ export class PublicNetworkConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface NetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#private_network_configuration CcMailManagerIngressPoint#private_network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#private_network_configuration CcMailManagerIngressPoint#private_network_configuration}
     */
     readonly privateNetworkConfiguration?: PrivateNetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#public_network_configuration CcMailManagerIngressPoint#public_network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#public_network_configuration CcMailManagerIngressPoint#public_network_configuration}
     */
     readonly publicNetworkConfiguration?: PublicNetworkConfigurationProperty;
 }
@@ -1119,11 +1119,11 @@ export class NetworkConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#key CcMailManagerIngressPoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#key CcMailManagerIngressPoint#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_mail_manager_ingress_point#value CcMailManagerIngressPoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_mail_manager_ingress_point#value CcMailManagerIngressPoint#value}
     */
     readonly value?: string;
 }

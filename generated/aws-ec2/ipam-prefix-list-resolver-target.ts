@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcIPAMPrefixListResolverTargetProps extends cdktn.TerraformMeta
     /**
     * The desired version of the Prefix List Resolver that this Target should synchronize with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#desired_version CcIPAMPrefixListResolverTarget#desired_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#desired_version CcIPAMPrefixListResolverTarget#desired_version}
     */
     readonly desiredVersion?: number;
     /**
     * The Id of the IPAM Prefix List Resolver associated with this Target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#ipam_prefix_list_resolver_id CcIPAMPrefixListResolverTarget#ipam_prefix_list_resolver_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#ipam_prefix_list_resolver_id CcIPAMPrefixListResolverTarget#ipam_prefix_list_resolver_id}
     */
     readonly ipamPrefixListResolverId: string;
     /**
     * The Id of the Managed Prefix List.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#prefix_list_id CcIPAMPrefixListResolverTarget#prefix_list_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#prefix_list_id CcIPAMPrefixListResolverTarget#prefix_list_id}
     */
     readonly prefixListId: string;
     /**
     * The region that the Managed Prefix List is located in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#prefix_list_region CcIPAMPrefixListResolverTarget#prefix_list_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#prefix_list_region CcIPAMPrefixListResolverTarget#prefix_list_region}
     */
     readonly prefixListRegion: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#tags CcIPAMPrefixListResolverTarget#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#tags CcIPAMPrefixListResolverTarget#tags}
     */
     readonly tags?: CcIPAMPrefixListResolverTarget.TagProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether this Target automatically tracks the latest version of the Prefix List Resolver.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#track_latest_version CcIPAMPrefixListResolverTarget#track_latest_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#track_latest_version CcIPAMPrefixListResolverTarget#track_latest_version}
     */
     readonly trackLatestVersion: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target awscc_ec2_ipam_prefix_list_resolver_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target awscc_ec2_ipam_prefix_list_resolver_target}
 */
 export class CcIPAMPrefixListResolverTarget extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcIPAMPrefixListResolverTarget extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIPAMPrefixListResolverTarget resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIPAMPrefixListResolverTarget to import
-    * @param importFromId The id of the existing CcIPAMPrefixListResolverTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIPAMPrefixListResolverTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIPAMPrefixListResolverTarget to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcIPAMPrefixListResolverTarget extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target awscc_ec2_ipam_prefix_list_resolver_target} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target awscc_ec2_ipam_prefix_list_resolver_target} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcIPAMPrefixListResolverTarget extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_ipam_prefix_list_resolver_target',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -307,13 +307,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#key CcIPAMPrefixListResolverTarget#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#key CcIPAMPrefixListResolverTarget#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_ipam_prefix_list_resolver_target#value CcIPAMPrefixListResolverTarget#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_ipam_prefix_list_resolver_target#value CcIPAMPrefixListResolverTarget#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcContainerProps extends cdktn.TerraformMetaArguments {
     /**
     * Describes a container deployment configuration of an Amazon Lightsail container service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#container_service_deployment CcContainer#container_service_deployment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#container_service_deployment CcContainer#container_service_deployment}
     */
     readonly containerServiceDeployment?: CcContainer.ContainerServiceDeploymentProperty;
     /**
     * A Boolean value to indicate whether the container service is disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#is_disabled CcContainer#is_disabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#is_disabled CcContainer#is_disabled}
     */
     readonly isDisabled?: boolean | cdktn.IResolvable;
     /**
     * The power specification for the container service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#power CcContainer#power}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#power CcContainer#power}
     */
     readonly power: string;
     /**
     * A Boolean value to indicate whether the container service has access to private container image repositories, such as Amazon Elastic Container Registry (Amazon ECR) private repositories.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#private_registry_access CcContainer#private_registry_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#private_registry_access CcContainer#private_registry_access}
     */
     readonly privateRegistryAccess?: CcContainer.PrivateRegistryAccessProperty;
     /**
     * The public domain names to use with the container service, such as example.com and www.example.com.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#public_domain_names CcContainer#public_domain_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#public_domain_names CcContainer#public_domain_names}
     */
     readonly publicDomainNames?: CcContainer.PublicDomainNameProperty[] | cdktn.IResolvable;
     /**
     * The scale specification for the container service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#scale CcContainer#scale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#scale CcContainer#scale}
     */
     readonly scale: number;
     /**
     * The name for the container service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#service_name CcContainer#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#service_name CcContainer#service_name}
     */
     readonly serviceName: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#tags CcContainer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#tags CcContainer#tags}
     */
     readonly tags?: CcContainer.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container awscc_lightsail_container}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container awscc_lightsail_container}
 */
 export class CcContainer extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcContainer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcContainer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcContainer to import
-    * @param importFromId The id of the existing CcContainer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcContainer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcContainer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcContainer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container awscc_lightsail_container} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container awscc_lightsail_container} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcContainer extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lightsail_container',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -748,11 +748,11 @@ export function ccContainerTagPropertyToHclTerraform(struct?: CcContainer.TagPro
 export namespace CcContainer {
 export interface EnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#value CcContainer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#value CcContainer#value}
     */
     readonly value?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#variable CcContainer#variable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#variable CcContainer#variable}
     */
     readonly variable?: string;
 }
@@ -860,11 +860,11 @@ export class EnvironmentVariablePropertyList extends cdktn.ComplexList {
 }
 export interface PortInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#port CcContainer#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#port CcContainer#port}
     */
     readonly port?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#protocol CcContainer#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#protocol CcContainer#protocol}
     */
     readonly protocol?: string;
 }
@@ -974,31 +974,31 @@ export interface ContainerProperty {
     /**
     * The launch command for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#command CcContainer#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#command CcContainer#command}
     */
     readonly command?: string[];
     /**
     * The name of the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#container_name CcContainer#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#container_name CcContainer#container_name}
     */
     readonly containerName?: string;
     /**
     * The environment variables of the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#environment CcContainer#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#environment CcContainer#environment}
     */
     readonly environment?: EnvironmentVariableProperty[] | cdktn.IResolvable;
     /**
     * The name of the image used for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#image CcContainer#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#image CcContainer#image}
     */
     readonly image?: string;
     /**
     * The open firewall ports of the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#ports CcContainer#ports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#ports CcContainer#ports}
     */
     readonly ports?: PortInfoProperty[] | cdktn.IResolvable;
 }
@@ -1174,37 +1174,37 @@ export interface HealthCheckConfigProperty {
     /**
     * The number of consecutive health checks successes required before moving the container to the Healthy state. The default value is 2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#healthy_threshold CcContainer#healthy_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#healthy_threshold CcContainer#healthy_threshold}
     */
     readonly healthyThreshold?: number;
     /**
     * The approximate interval, in seconds, between health checks of an individual container. You can specify between 5 and 300 seconds. The default value is 5.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#interval_seconds CcContainer#interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#interval_seconds CcContainer#interval_seconds}
     */
     readonly intervalSeconds?: number;
     /**
     * The path on the container on which to perform the health check. The default value is /.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#path CcContainer#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#path CcContainer#path}
     */
     readonly path?: string;
     /**
     * The HTTP codes to use when checking for a successful response from a container. You can specify values between 200 and 499. You can specify multiple values (for example, 200,202) or a range of values (for example, 200-299).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#success_codes CcContainer#success_codes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#success_codes CcContainer#success_codes}
     */
     readonly successCodes?: string;
     /**
     * The amount of time, in seconds, during which no response means a failed health check. You can specify between 2 and 60 seconds. The default value is 2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#timeout_seconds CcContainer#timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#timeout_seconds CcContainer#timeout_seconds}
     */
     readonly timeoutSeconds?: number;
     /**
     * The number of consecutive health check failures required before moving the container to the Unhealthy state. The default value is 2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#unhealthy_threshold CcContainer#unhealthy_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#unhealthy_threshold CcContainer#unhealthy_threshold}
     */
     readonly unhealthyThreshold?: number;
 }
@@ -1380,19 +1380,19 @@ export interface PublicEndpointProperty {
     /**
     * The name of the container for the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#container_name CcContainer#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#container_name CcContainer#container_name}
     */
     readonly containerName?: string;
     /**
     * The port of the container to which traffic is forwarded to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#container_port CcContainer#container_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#container_port CcContainer#container_port}
     */
     readonly containerPort?: number;
     /**
     * An object that describes the health check configuration of the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#health_check_config CcContainer#health_check_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#health_check_config CcContainer#health_check_config}
     */
     readonly healthCheckConfig?: HealthCheckConfigProperty;
 }
@@ -1502,13 +1502,13 @@ export interface ContainerServiceDeploymentProperty {
     /**
     * An object that describes the configuration for the containers of the deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#containers CcContainer#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#containers CcContainer#containers}
     */
     readonly containers?: ContainerProperty[] | cdktn.IResolvable;
     /**
     * An object that describes the endpoint of the deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#public_endpoint CcContainer#public_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#public_endpoint CcContainer#public_endpoint}
     */
     readonly publicEndpoint?: PublicEndpointProperty;
 }
@@ -1596,7 +1596,7 @@ export interface EcrImagePullerRoleProperty {
     /**
     * A Boolean value that indicates whether to activate the role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#is_active CcContainer#is_active}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#is_active CcContainer#is_active}
     */
     readonly isActive?: boolean | cdktn.IResolvable;
 }
@@ -1667,7 +1667,7 @@ export interface PrivateRegistryAccessProperty {
     /**
     * An object to describe a request to activate or deactivate the role that you can use to grant an Amazon Lightsail container service access to Amazon Elastic Container Registry (Amazon ECR) private repositories.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#ecr_image_puller_role CcContainer#ecr_image_puller_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#ecr_image_puller_role CcContainer#ecr_image_puller_role}
     */
     readonly ecrImagePullerRole?: EcrImagePullerRoleProperty;
 }
@@ -1731,13 +1731,13 @@ export class PrivateRegistryAccessPropertyOutputReference extends cdktn.ComplexO
 }
 export interface PublicDomainNameProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#certificate_name CcContainer#certificate_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#certificate_name CcContainer#certificate_name}
     */
     readonly certificateName?: string;
     /**
     * An object that describes the configuration for the containers of the deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#domain_names CcContainer#domain_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#domain_names CcContainer#domain_names}
     */
     readonly domainNames?: string[];
 }
@@ -1847,13 +1847,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#key CcContainer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#key CcContainer#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_container#value CcContainer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_container#value CcContainer#value}
     */
     readonly value?: string;
 }

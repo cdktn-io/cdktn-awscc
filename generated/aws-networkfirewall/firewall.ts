@@ -1,71 +1,71 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFirewallProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#availability_zone_change_protection CcFirewall#availability_zone_change_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone_change_protection CcFirewall#availability_zone_change_protection}
     */
     readonly availabilityZoneChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#availability_zone_mappings CcFirewall#availability_zone_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone_mappings CcFirewall#availability_zone_mappings}
     */
     readonly availabilityZoneMappings?: CcFirewall.AvailabilityZoneMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#delete_protection CcFirewall#delete_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#delete_protection CcFirewall#delete_protection}
     */
     readonly deleteProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#description CcFirewall#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#description CcFirewall#description}
     */
     readonly description?: string;
     /**
     * The types of analysis to enable for the firewall. Can be TLS_SNI, HTTP_HOST, or both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#enabled_analysis_types CcFirewall#enabled_analysis_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#enabled_analysis_types CcFirewall#enabled_analysis_types}
     */
     readonly enabledAnalysisTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#firewall_name CcFirewall#firewall_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_name CcFirewall#firewall_name}
     */
     readonly firewallName: string;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#firewall_policy_arn CcFirewall#firewall_policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_policy_arn CcFirewall#firewall_policy_arn}
     */
     readonly firewallPolicyArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection CcFirewall#firewall_policy_change_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection CcFirewall#firewall_policy_change_protection}
     */
     readonly firewallPolicyChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#subnet_change_protection CcFirewall#subnet_change_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_change_protection CcFirewall#subnet_change_protection}
     */
     readonly subnetChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#subnet_mappings CcFirewall#subnet_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_mappings CcFirewall#subnet_mappings}
     */
     readonly subnetMappings?: CcFirewall.SubnetMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#tags CcFirewall#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#tags CcFirewall#tags}
     */
     readonly tags?: CcFirewall.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#transit_gateway_id CcFirewall#transit_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#transit_gateway_id CcFirewall#transit_gateway_id}
     */
     readonly transitGatewayId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#vpc_id CcFirewall#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#vpc_id CcFirewall#vpc_id}
     */
     readonly vpcId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall}
 */
 export class CcFirewall extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcFirewall extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFirewall resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFirewall to import
-    * @param importFromId The id of the existing CcFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFirewall to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcFirewall extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcFirewall extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_networkfirewall_firewall',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -578,7 +578,7 @@ export interface AvailabilityZoneMappingProperty {
     /**
     * A AvailabilityZone
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#availability_zone CcFirewall#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone CcFirewall#availability_zone}
     */
     readonly availabilityZone?: string;
 }
@@ -666,13 +666,13 @@ export interface SubnetMappingProperty {
     /**
     * A IPAddressType
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#ip_address_type CcFirewall#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#ip_address_type CcFirewall#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * A SubnetId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#subnet_id CcFirewall#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_id CcFirewall#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -780,11 +780,11 @@ export class SubnetMappingPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#key CcFirewall#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#key CcFirewall#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkfirewall_firewall#value CcFirewall#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#value CcFirewall#value}
     */
     readonly value?: string;
 }

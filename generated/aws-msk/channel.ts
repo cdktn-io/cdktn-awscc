@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcChannelProps extends cdktn.TerraformMetaArguments {
     /**
     * Name of the channel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#channel_name CcChannel#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#channel_name CcChannel#channel_name}
     */
     readonly channelName: string;
     /**
     * The Amazon Resource Name (ARN) of the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#cluster_arn CcChannel#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#cluster_arn CcChannel#cluster_arn}
     */
     readonly clusterArn?: string;
     /**
     * Encryption configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#encryption_configuration CcChannel#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#encryption_configuration CcChannel#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcChannel.EncryptionConfigurationProperty;
     /**
     * Iceberg destination configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#iceberg_destination_configuration CcChannel#iceberg_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#iceberg_destination_configuration CcChannel#iceberg_destination_configuration}
     */
     readonly icebergDestinationConfiguration?: CcChannel.IcebergDestinationConfigurationProperty;
     /**
     * Log configuration details for Channel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#logging_info CcChannel#logging_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#logging_info CcChannel#logging_info}
     */
     readonly loggingInfo?: CcChannel.ChannelLoggingInfoProperty;
     /**
     * S3 destination configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#s3_destination_configuration CcChannel#s3_destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#s3_destination_configuration CcChannel#s3_destination_configuration}
     */
     readonly s3DestinationConfiguration?: CcChannel.S3DestinationConfigurationProperty;
     /**
     * Tags attached to the channel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#tags CcChannel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#tags CcChannel#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * Topic configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#topic_configuration_list CcChannel#topic_configuration_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#topic_configuration_list CcChannel#topic_configuration_list}
     */
     readonly topicConfigurationList: CcChannel.TopicConfigurationProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel awscc_msk_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel awscc_msk_channel}
 */
 export class CcChannel extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannel to import
-    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel awscc_msk_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel awscc_msk_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcChannel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_msk_channel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1157,7 +1157,7 @@ export interface EncryptionConfigurationProperty {
     /**
     * The ARN of the KMS key for encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#kms_key_arn CcChannel#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#kms_key_arn CcChannel#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -1223,13 +1223,13 @@ export interface CatalogProperty {
     /**
     * The ARN of the catalog
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#catalog_arn CcChannel#catalog_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#catalog_arn CcChannel#catalog_arn}
     */
     readonly catalogArn?: string;
     /**
     * The warehouse location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#warehouse_location CcChannel#warehouse_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#warehouse_location CcChannel#warehouse_location}
     */
     readonly warehouseLocation?: string;
 }
@@ -1317,19 +1317,19 @@ export interface DeadLetterQueueS3Property {
     /**
     * The ARN of the S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The error output prefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#error_output_prefix CcChannel#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#error_output_prefix CcChannel#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
     * Optional 12-digit AWS account ID expected to own the dead-letter S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
 }
@@ -1439,7 +1439,7 @@ export interface PartitionSourceProperty {
     /**
     * Source name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#source_name CcChannel#source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#source_name CcChannel#source_name}
     */
     readonly sourceName?: string;
 }
@@ -1527,13 +1527,13 @@ export interface PartitionSpecProperty {
     /**
     * Partition strategy for MSK channel
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#partition_strategy CcChannel#partition_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#partition_strategy CcChannel#partition_strategy}
     */
     readonly partitionStrategy?: string;
     /**
     * Source list
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#source_list CcChannel#source_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#source_list CcChannel#source_list}
     */
     readonly sourceList?: PartitionSourceProperty[] | cdktn.IResolvable;
 }
@@ -1621,19 +1621,19 @@ export interface DestinationTableProperty {
     /**
     * The destination database name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#destination_database_name CcChannel#destination_database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#destination_database_name CcChannel#destination_database_name}
     */
     readonly destinationDatabaseName?: string;
     /**
     * The destination table name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#destination_table_name CcChannel#destination_table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#destination_table_name CcChannel#destination_table_name}
     */
     readonly destinationTableName?: string;
     /**
     * Partition specification
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#partition_spec CcChannel#partition_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#partition_spec CcChannel#partition_spec}
     */
     readonly partitionSpec?: PartitionSpecProperty;
 }
@@ -1765,7 +1765,7 @@ export interface SchemaEvolutionProperty {
     /**
     * Whether schema evolution is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#enable_schema_evolution CcChannel#enable_schema_evolution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#enable_schema_evolution CcChannel#enable_schema_evolution}
     */
     readonly enableSchemaEvolution?: boolean | cdktn.IResolvable;
 }
@@ -1831,7 +1831,7 @@ export interface TableCreationProperty {
     /**
     * Whether table creation is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#enable_table_creation CcChannel#enable_table_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#enable_table_creation CcChannel#enable_table_creation}
     */
     readonly enableTableCreation?: boolean | cdktn.IResolvable;
 }
@@ -1897,55 +1897,55 @@ export interface IcebergDestinationConfigurationProperty {
     /**
     * Append only mode
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#append_only CcChannel#append_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#append_only CcChannel#append_only}
     */
     readonly appendOnly?: boolean | cdktn.IResolvable;
     /**
     * Catalog configuration of the destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#catalog CcChannel#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#catalog CcChannel#catalog}
     */
     readonly catalog?: CatalogProperty;
     /**
     * Compression codec for Iceberg table data files. Defaults to ZSTD.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#compression_type CcChannel#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#compression_type CcChannel#compression_type}
     */
     readonly compressionType?: string;
     /**
     * Data freshness in seconds
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#data_freshness_in_seconds CcChannel#data_freshness_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#data_freshness_in_seconds CcChannel#data_freshness_in_seconds}
     */
     readonly dataFreshnessInSeconds?: number;
     /**
     * Dead letter queue S3 configuration of the destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#dead_letter_queue_s3 CcChannel#dead_letter_queue_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#dead_letter_queue_s3 CcChannel#dead_letter_queue_s3}
     */
     readonly deadLetterQueueS3?: DeadLetterQueueS3Property;
     /**
     * List of destination tables
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#destination_table_list CcChannel#destination_table_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#destination_table_list CcChannel#destination_table_list}
     */
     readonly destinationTableList?: DestinationTableProperty[] | cdktn.IResolvable;
     /**
     * Schema evolution configuration of the destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#schema_evolution CcChannel#schema_evolution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#schema_evolution CcChannel#schema_evolution}
     */
     readonly schemaEvolution?: SchemaEvolutionProperty;
     /**
     * The Amazon Resource Name (ARN) of an IAM role used by MSK to access the table
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#service_execution_role_arn CcChannel#service_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#service_execution_role_arn CcChannel#service_execution_role_arn}
     */
     readonly serviceExecutionRoleArn?: string;
     /**
     * Table creation configuration of the destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#table_creation CcChannel#table_creation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#table_creation CcChannel#table_creation}
     */
     readonly tableCreation?: TableCreationProperty;
 }
@@ -2187,13 +2187,13 @@ export interface CloudWatchLogsLogDestinationProperty {
     /**
     * Whether CloudWatch Logs logging is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#enabled CcChannel#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#enabled CcChannel#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The CloudWatch log group for log delivery
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#log_group CcChannel#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#log_group CcChannel#log_group}
     */
     readonly logGroup?: string;
 }
@@ -2281,13 +2281,13 @@ export interface FirehoseLogDestinationProperty {
     /**
     * The Firehose delivery stream for log delivery
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#delivery_stream CcChannel#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#delivery_stream CcChannel#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
     * Whether Firehose logging is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#enabled CcChannel#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#enabled CcChannel#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2375,19 +2375,19 @@ export interface S3LogDestinationProperty {
     /**
     * The name of the S3 bucket for log delivery
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#bucket CcChannel#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#bucket CcChannel#bucket}
     */
     readonly bucket?: string;
     /**
     * Whether S3 logging is enabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#enabled CcChannel#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#enabled CcChannel#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The S3 prefix for log delivery
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#prefix CcChannel#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#prefix CcChannel#prefix}
     */
     readonly prefix?: string;
 }
@@ -2497,19 +2497,19 @@ export interface ChannelLoggingInfoProperty {
     /**
     * CloudWatch Logs log destination details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#cloudwatch_logs CcChannel#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#cloudwatch_logs CcChannel#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogsLogDestinationProperty;
     /**
     * Firehose log destination details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#firehose CcChannel#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#firehose CcChannel#firehose}
     */
     readonly firehose?: FirehoseLogDestinationProperty;
     /**
     * S3 log destination details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#s3 CcChannel#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#s3 CcChannel#s3}
     */
     readonly s3?: S3LogDestinationProperty;
 }
@@ -2619,19 +2619,19 @@ export interface S3DestinationConfigurationDeadLetterQueueS3Property {
     /**
     * The ARN of the S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The error output prefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#error_output_prefix CcChannel#error_output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#error_output_prefix CcChannel#error_output_prefix}
     */
     readonly errorOutputPrefix?: string;
     /**
     * Optional 12-digit AWS account ID expected to own the dead-letter S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
 }
@@ -2741,37 +2741,37 @@ export interface S3StorageProperty {
     /**
     * ARN of the S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#bucket_arn CcChannel#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * S3 compression type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#compression_type CcChannel#compression_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#compression_type CcChannel#compression_type}
     */
     readonly compressionType?: string;
     /**
     * Optional 12-digit AWS account ID expected to own the S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#expected_bucket_owner CcChannel#expected_bucket_owner}
     */
     readonly expectedBucketOwner?: string;
     /**
     * Template for S3 key for output objects, used for partitioning
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#output_key_template CcChannel#output_key_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#output_key_template CcChannel#output_key_template}
     */
     readonly outputKeyTemplate?: string;
     /**
     * Optional prefix for output objects
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#output_prefix CcChannel#output_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#output_prefix CcChannel#output_prefix}
     */
     readonly outputPrefix?: string;
     /**
     * S3 storage class
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#storage_class CcChannel#storage_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#storage_class CcChannel#storage_class}
     */
     readonly storageClass?: string;
 }
@@ -2947,25 +2947,25 @@ export interface S3DestinationConfigurationProperty {
     /**
     * Data freshness in seconds
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#data_freshness_in_seconds CcChannel#data_freshness_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#data_freshness_in_seconds CcChannel#data_freshness_in_seconds}
     */
     readonly dataFreshnessInSeconds?: number;
     /**
     * Dead letter queue S3 configuration of the destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#dead_letter_queue_s3 CcChannel#dead_letter_queue_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#dead_letter_queue_s3 CcChannel#dead_letter_queue_s3}
     */
     readonly deadLetterQueueS3?: S3DestinationConfigurationDeadLetterQueueS3Property;
     /**
     * The Amazon Resource Name (ARN) of an IAM role used by MSK to access S3
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#service_execution_role_arn CcChannel#service_execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#service_execution_role_arn CcChannel#service_execution_role_arn}
     */
     readonly serviceExecutionRoleArn?: string;
     /**
     * S3 storage configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#storage CcChannel#storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#storage CcChannel#storage}
     */
     readonly storage?: S3StorageProperty;
 }
@@ -3135,7 +3135,7 @@ export interface RecordConverterProperty {
     /**
     * Value converter for topic data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#value_converter CcChannel#value_converter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#value_converter CcChannel#value_converter}
     */
     readonly valueConverter: string;
 }
@@ -3198,7 +3198,7 @@ export interface RecordSchemaProperty {
     /**
     * ARN of Glue Schema Registry resource used for table schema
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#gsr_arn CcChannel#gsr_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#gsr_arn CcChannel#gsr_arn}
     */
     readonly gsrArn?: string;
 }
@@ -3264,19 +3264,19 @@ export interface TopicConfigurationProperty {
     /**
     * Record converter configuration for a topic
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#record_converter CcChannel#record_converter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#record_converter CcChannel#record_converter}
     */
     readonly recordConverter: RecordConverterProperty;
     /**
     * Record schema configuration for a topic
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#record_schema CcChannel#record_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#record_schema CcChannel#record_schema}
     */
     readonly recordSchema?: RecordSchemaProperty;
     /**
     * The Amazon Resource Name (ARN) that uniquely identifies the topic
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_channel#topic_arn CcChannel#topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_channel#topic_arn CcChannel#topic_arn}
     */
     readonly topicArn: string;
 }

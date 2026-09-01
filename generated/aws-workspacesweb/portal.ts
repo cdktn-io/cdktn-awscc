@@ -1,79 +1,79 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPortalProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#additional_encryption_context CcPortal#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#additional_encryption_context CcPortal#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#authentication_type CcPortal#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#authentication_type CcPortal#authentication_type}
     */
     readonly authenticationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#browser_settings_arn CcPortal#browser_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#browser_settings_arn CcPortal#browser_settings_arn}
     */
     readonly browserSettingsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#customer_managed_key CcPortal#customer_managed_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#customer_managed_key CcPortal#customer_managed_key}
     */
     readonly customerManagedKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#data_protection_settings_arn CcPortal#data_protection_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#data_protection_settings_arn CcPortal#data_protection_settings_arn}
     */
     readonly dataProtectionSettingsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#display_name CcPortal#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#display_name CcPortal#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#instance_type CcPortal#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#instance_type CcPortal#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#ip_access_settings_arn CcPortal#ip_access_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#ip_access_settings_arn CcPortal#ip_access_settings_arn}
     */
     readonly ipAccessSettingsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#max_concurrent_sessions CcPortal#max_concurrent_sessions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#max_concurrent_sessions CcPortal#max_concurrent_sessions}
     */
     readonly maxConcurrentSessions?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#network_settings_arn CcPortal#network_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#network_settings_arn CcPortal#network_settings_arn}
     */
     readonly networkSettingsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#portal_custom_domain CcPortal#portal_custom_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#portal_custom_domain CcPortal#portal_custom_domain}
     */
     readonly portalCustomDomain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#session_logger_arn CcPortal#session_logger_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#session_logger_arn CcPortal#session_logger_arn}
     */
     readonly sessionLoggerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#tags CcPortal#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#tags CcPortal#tags}
     */
     readonly tags?: CcPortal.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#trust_store_arn CcPortal#trust_store_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#trust_store_arn CcPortal#trust_store_arn}
     */
     readonly trustStoreArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#user_access_logging_settings_arn CcPortal#user_access_logging_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#user_access_logging_settings_arn CcPortal#user_access_logging_settings_arn}
     */
     readonly userAccessLoggingSettingsArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#user_settings_arn CcPortal#user_settings_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#user_settings_arn CcPortal#user_settings_arn}
     */
     readonly userSettingsArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal awscc_workspacesweb_portal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal awscc_workspacesweb_portal}
 */
 export class CcPortal extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcPortal extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPortal resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPortal to import
-    * @param importFromId The id of the existing CcPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPortal to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcPortal extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal awscc_workspacesweb_portal} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal awscc_workspacesweb_portal} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -112,7 +112,7 @@ export class CcPortal extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_workspacesweb_portal',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -615,11 +615,11 @@ export function ccPortalTagPropertyToHclTerraform(struct?: CcPortal.TagProperty 
 export namespace CcPortal {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#key CcPortal#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#key CcPortal#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_portal#value CcPortal#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_portal#value CcPortal#value}
     */
     readonly value?: string;
 }

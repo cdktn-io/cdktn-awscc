@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcDiscovererProps extends cdktn.TerraformMetaArguments {
     /**
     * Defines whether event schemas from other accounts are discovered. Default is True.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#cross_account CcDiscoverer#cross_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#cross_account CcDiscoverer#cross_account}
     */
     readonly crossAccount?: boolean | cdktn.IResolvable;
     /**
     * A description for the discoverer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#description CcDiscoverer#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#description CcDiscoverer#description}
     */
     readonly description?: string;
     /**
     * The ARN of the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#source_arn CcDiscoverer#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#source_arn CcDiscoverer#source_arn}
     */
     readonly sourceArn: string;
     /**
     * Tags associated with the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#tags CcDiscoverer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#tags CcDiscoverer#tags}
     */
     readonly tags?: CcDiscoverer.TagsEntryProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer awscc_eventschemas_discoverer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer awscc_eventschemas_discoverer}
 */
 export class CcDiscoverer extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDiscoverer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDiscoverer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDiscoverer to import
-    * @param importFromId The id of the existing CcDiscoverer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDiscoverer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDiscoverer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDiscoverer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer awscc_eventschemas_discoverer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer awscc_eventschemas_discoverer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcDiscoverer extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_eventschemas_discoverer',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -259,11 +259,11 @@ export function ccDiscovererTagsEntryPropertyToHclTerraform(struct?: CcDiscovere
 export namespace CcDiscoverer {
 export interface TagsEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#key CcDiscoverer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#key CcDiscoverer#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eventschemas_discoverer#value CcDiscoverer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eventschemas_discoverer#value CcDiscoverer#value}
     */
     readonly value?: string;
 }

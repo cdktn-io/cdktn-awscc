@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,89 +9,89 @@ export interface CcEnvironmentProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#description CcEnvironment#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#description CcEnvironment#description}
     */
     readonly description?: string;
     /**
     * The target platform for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#engine_type CcEnvironment#engine_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#engine_type CcEnvironment#engine_type}
     */
     readonly engineType: string;
     /**
     * The version of the runtime engine for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#engine_version CcEnvironment#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#engine_version CcEnvironment#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * Defines the details of a high availability configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#high_availability_config CcEnvironment#high_availability_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#high_availability_config CcEnvironment#high_availability_config}
     */
     readonly highAvailabilityConfig?: CcEnvironment.HighAvailabilityConfigProperty;
     /**
     * The type of instance underlying the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#instance_type CcEnvironment#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#instance_type CcEnvironment#instance_type}
     */
     readonly instanceType: string;
     /**
     * The ID or the Amazon Resource Name (ARN) of the customer managed KMS Key used for encrypting environment-related resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#kms_key_id CcEnvironment#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#kms_key_id CcEnvironment#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The name of the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#name CcEnvironment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#name CcEnvironment#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#network_type CcEnvironment#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#network_type CcEnvironment#network_type}
     */
     readonly networkType?: string;
     /**
     * Configures a desired maintenance window for the environment. If you do not provide a value, a random system-generated value will be assigned.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#preferred_maintenance_window CcEnvironment#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#preferred_maintenance_window CcEnvironment#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * Specifies whether the environment is publicly accessible.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#publicly_accessible CcEnvironment#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#publicly_accessible CcEnvironment#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The list of security groups for the VPC associated with this environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#security_group_ids CcEnvironment#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#security_group_ids CcEnvironment#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The storage configurations defined for the runtime environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#storage_configurations CcEnvironment#storage_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#storage_configurations CcEnvironment#storage_configurations}
     */
     readonly storageConfigurations?: CcEnvironment.StorageConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The unique identifiers of the subnets assigned to this runtime environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#subnet_ids CcEnvironment#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#subnet_ids CcEnvironment#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Tags associated to this environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#tags CcEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#tags CcEnvironment#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment awscc_m2_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment awscc_m2_environment}
 */
 export class CcEnvironment extends cdktn.TerraformResource {
 
@@ -107,7 +107,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironment to import
-    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -119,7 +119,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment awscc_m2_environment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment awscc_m2_environment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -130,7 +130,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_m2_environment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -650,7 +650,7 @@ export function ccEnvironmentStorageConfigurationPropertyToHclTerraform(struct?:
 export namespace CcEnvironment {
 export interface HighAvailabilityConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#desired_capacity CcEnvironment#desired_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#desired_capacity CcEnvironment#desired_capacity}
     */
     readonly desiredCapacity?: number;
 }
@@ -716,13 +716,13 @@ export interface EfsStorageConfigurationProperty {
     /**
     * The file system identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#file_system_id CcEnvironment#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#file_system_id CcEnvironment#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
     * The mount point for the file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#mount_point CcEnvironment#mount_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#mount_point CcEnvironment#mount_point}
     */
     readonly mountPoint?: string;
 }
@@ -810,13 +810,13 @@ export interface FsxStorageConfigurationProperty {
     /**
     * The file system identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#file_system_id CcEnvironment#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#file_system_id CcEnvironment#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
     * The mount point for the file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#mount_point CcEnvironment#mount_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#mount_point CcEnvironment#mount_point}
     */
     readonly mountPoint?: string;
 }
@@ -904,13 +904,13 @@ export interface StorageConfigurationProperty {
     /**
     * Defines the storage configuration for an Amazon EFS file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#efs CcEnvironment#efs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#efs CcEnvironment#efs}
     */
     readonly efs?: EfsStorageConfigurationProperty;
     /**
     * Defines the storage configuration for an Amazon FSx file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/m2_environment#fsx CcEnvironment#fsx}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/m2_environment#fsx CcEnvironment#fsx}
     */
     readonly fsx?: FsxStorageConfigurationProperty;
 }

@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFolderProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#aws_account_id CcFolder#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#aws_account_id CcFolder#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#folder_id CcFolder#folder_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#folder_id CcFolder#folder_id}
     */
     readonly folderId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#folder_type CcFolder#folder_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#folder_type CcFolder#folder_type}
     */
     readonly folderType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#name CcFolder#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#name CcFolder#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#parent_folder_arn CcFolder#parent_folder_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#parent_folder_arn CcFolder#parent_folder_arn}
     */
     readonly parentFolderArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#permissions CcFolder#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#permissions CcFolder#permissions}
     */
     readonly permissions?: CcFolder.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#sharing_model CcFolder#sharing_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#sharing_model CcFolder#sharing_model}
     */
     readonly sharingModel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#tags CcFolder#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#tags CcFolder#tags}
     */
     readonly tags?: CcFolder.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder awscc_quicksight_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder awscc_quicksight_folder}
 */
 export class CcFolder extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcFolder extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFolder resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFolder to import
-    * @param importFromId The id of the existing CcFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFolder to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcFolder extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder awscc_quicksight_folder} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder awscc_quicksight_folder} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcFolder extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_folder',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -405,7 +405,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#actions CcFolder#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#actions CcFolder#actions}
     */
     readonly actions?: string[];
     /**
@@ -425,7 +425,7 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#principal CcFolder#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#principal CcFolder#principal}
     */
     readonly principal?: string;
 }
@@ -535,13 +535,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#key CcFolder#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#key CcFolder#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_folder#value CcFolder#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_folder#value CcFolder#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcInstanceProfileProps extends cdktn.TerraformMetaArguments {
     /**
     * The property describes an availability zone of the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#availability_zone CcInstanceProfile#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#availability_zone CcInstanceProfile#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The optional description of the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#description CcInstanceProfile#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#description CcInstanceProfile#description}
     */
     readonly description?: string;
     /**
     * The property describes an identifier for the instance profile. It is used for describing/deleting/modifying. Can be name/arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#instance_profile_identifier CcInstanceProfile#instance_profile_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#instance_profile_identifier CcInstanceProfile#instance_profile_identifier}
     */
     readonly instanceProfileIdentifier?: string;
     /**
     * The property describes a name for the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#instance_profile_name CcInstanceProfile#instance_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#instance_profile_name CcInstanceProfile#instance_profile_name}
     */
     readonly instanceProfileName?: string;
     /**
     * The property describes kms key arn for the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#kms_key_arn CcInstanceProfile#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#kms_key_arn CcInstanceProfile#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The property describes a network type for the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#network_type CcInstanceProfile#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#network_type CcInstanceProfile#network_type}
     */
     readonly networkType?: string;
     /**
     * The property describes the publicly accessible of the instance profile
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#publicly_accessible CcInstanceProfile#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#publicly_accessible CcInstanceProfile#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The property describes a subnet group identifier for the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#subnet_group_identifier CcInstanceProfile#subnet_group_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#subnet_group_identifier CcInstanceProfile#subnet_group_identifier}
     */
     readonly subnetGroupIdentifier?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#tags CcInstanceProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#tags CcInstanceProfile#tags}
     */
     readonly tags?: CcInstanceProfile.TagProperty[] | cdktn.IResolvable;
     /**
     * The property describes vps security groups for the instance profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#vpc_security_groups CcInstanceProfile#vpc_security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#vpc_security_groups CcInstanceProfile#vpc_security_groups}
     */
     readonly vpcSecurityGroups?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile awscc_dms_instance_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile awscc_dms_instance_profile}
 */
 export class CcInstanceProfile extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcInstanceProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInstanceProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInstanceProfile to import
-    * @param importFromId The id of the existing CcInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInstanceProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcInstanceProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile awscc_dms_instance_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile awscc_dms_instance_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcInstanceProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_dms_instance_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -439,13 +439,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#key CcInstanceProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#key CcInstanceProfile#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_instance_profile#value CcInstanceProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_instance_profile#value CcInstanceProfile#value}
     */
     readonly value?: string;
 }

@@ -3,6 +3,7 @@
 export * from './blueprint';
 export * from './catalog';
 export * from './classifier';
+export * from './connection';
 export * from './crawler';
 export * from './custom-entity-type';
 export * from './data-catalog-encryption-settings';
@@ -18,6 +19,7 @@ export * from './schema';
 export * from './schema-version';
 export * from './schema-version-metadata';
 export * from './security-configuration';
+export * from './session';
 export * from './table-optimizer';
 export * from './trigger';
 export * from './user-defined-function';

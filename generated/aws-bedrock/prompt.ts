@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcPromptProps extends cdktn.TerraformMetaArguments {
     /**
     * A KMS key ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#customer_encryption_key_arn CcPrompt#customer_encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#customer_encryption_key_arn CcPrompt#customer_encryption_key_arn}
     */
     readonly customerEncryptionKeyArn?: string;
     /**
     * Name for a variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#default_variant CcPrompt#default_variant}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#default_variant CcPrompt#default_variant}
     */
     readonly defaultVariant?: string;
     /**
     * Name for a prompt resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#description CcPrompt#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#description CcPrompt#description}
     */
     readonly description?: string;
     /**
     * Name for a prompt resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name: string;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tags CcPrompt#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tags CcPrompt#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * List of prompt variants
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#variants CcPrompt#variants}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#variants CcPrompt#variants}
     */
     readonly variants?: CcPrompt.PromptVariantProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt awscc_bedrock_prompt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt awscc_bedrock_prompt}
 */
 export class CcPrompt extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcPrompt extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrompt resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrompt to import
-    * @param importFromId The id of the existing CcPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrompt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrompt to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcPrompt extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt awscc_bedrock_prompt} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt awscc_bedrock_prompt} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcPrompt extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_prompt',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1247,7 +1247,7 @@ export interface PromptAgentResourceProperty {
     /**
     * Arn representation of the Agent Alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#agent_identifier CcPrompt#agent_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#agent_identifier CcPrompt#agent_identifier}
     */
     readonly agentIdentifier?: string;
 }
@@ -1313,7 +1313,7 @@ export interface PromptGenAiResourceProperty {
     /**
     * Target Agent to invoke with Prompt
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#agent CcPrompt#agent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#agent CcPrompt#agent}
     */
     readonly agent?: PromptAgentResourceProperty;
 }
@@ -1379,25 +1379,25 @@ export interface PromptModelInferenceConfigurationProperty {
     /**
     * Maximum length of output
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#max_tokens CcPrompt#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#max_tokens CcPrompt#max_tokens}
     */
     readonly maxTokens?: number;
     /**
     * List of stop sequences
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#stop_sequences CcPrompt#stop_sequences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#stop_sequences CcPrompt#stop_sequences}
     */
     readonly stopSequences?: string[];
     /**
     * Controls randomness, higher values increase diversity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#temperature CcPrompt#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#temperature CcPrompt#temperature}
     */
     readonly temperature?: number;
     /**
     * Cumulative probability cutoff for token selection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#top_p CcPrompt#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#top_p CcPrompt#top_p}
     */
     readonly topP?: number;
 }
@@ -1529,7 +1529,7 @@ export interface PromptInferenceConfigurationProperty {
     /**
     * Prompt model inference configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text CcPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text CcPrompt#text}
     */
     readonly text?: PromptModelInferenceConfigurationProperty;
 }
@@ -1595,13 +1595,13 @@ export interface PromptMetadataEntryProperty {
     /**
     * The key of a metadata tag for a prompt variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#key CcPrompt#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#key CcPrompt#key}
     */
     readonly key?: string;
     /**
     * The value of a metadata tag for a prompt variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#value CcPrompt#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#value CcPrompt#value}
     */
     readonly value?: string;
 }
@@ -1711,7 +1711,7 @@ export interface PromptInputVariableProperty {
     /**
     * Name for an input variable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name?: string;
 }
@@ -1799,7 +1799,7 @@ export interface CachePointBlockProperty {
     /**
     * CachePoint types for CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#type CcPrompt#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#type CcPrompt#type}
     */
     readonly type?: string;
 }
@@ -1865,13 +1865,13 @@ export interface ContentBlockProperty {
     /**
     * CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
     */
     readonly cachePoint?: CachePointBlockProperty;
     /**
     * Configuration for chat prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text CcPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text CcPrompt#text}
     */
     readonly text?: string;
 }
@@ -1981,13 +1981,13 @@ export interface MessageProperty {
     /**
     * List of Content Blocks
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#content CcPrompt#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#content CcPrompt#content}
     */
     readonly content?: ContentBlockProperty[] | cdktn.IResolvable;
     /**
     * Conversation roles for the chat prompt
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#role CcPrompt#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#role CcPrompt#role}
     */
     readonly role?: string;
 }
@@ -2097,7 +2097,7 @@ export interface VariantsTemplateConfigurationChatSystemCachePointProperty {
     /**
     * CachePoint types for CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#type CcPrompt#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#type CcPrompt#type}
     */
     readonly type?: string;
 }
@@ -2163,13 +2163,13 @@ export interface SystemContentBlockProperty {
     /**
     * CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
     */
     readonly cachePoint?: VariantsTemplateConfigurationChatSystemCachePointProperty;
     /**
     * Configuration for chat prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text CcPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text CcPrompt#text}
     */
     readonly text?: string;
 }
@@ -2279,7 +2279,7 @@ export interface SpecificToolChoiceProperty {
     /**
     * Tool name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name?: string;
 }
@@ -2345,19 +2345,19 @@ export interface ToolChoiceProperty {
     /**
     * Any Tool choice
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#any CcPrompt#any}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#any CcPrompt#any}
     */
     readonly any?: string;
     /**
     * Auto Tool choice
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#auto CcPrompt#auto}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#auto CcPrompt#auto}
     */
     readonly auto?: string;
     /**
     * Specific Tool choice
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tool CcPrompt#tool}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tool CcPrompt#tool}
     */
     readonly tool?: SpecificToolChoiceProperty;
 }
@@ -2467,7 +2467,7 @@ export interface VariantsTemplateConfigurationChatToolConfigurationToolsCachePoi
     /**
     * CachePoint types for CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#type CcPrompt#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#type CcPrompt#type}
     */
     readonly type?: string;
 }
@@ -2531,7 +2531,7 @@ export class VariantsTemplateConfigurationChatToolConfigurationToolsCachePointPr
 }
 export interface ToolInputSchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#json CcPrompt#json}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#json CcPrompt#json}
     */
     readonly json?: string;
 }
@@ -2595,19 +2595,19 @@ export class ToolInputSchemaPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ToolSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#description CcPrompt#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#description CcPrompt#description}
     */
     readonly description?: string;
     /**
     * Tool input schema
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#input_schema CcPrompt#input_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#input_schema CcPrompt#input_schema}
     */
     readonly inputSchema?: ToolInputSchemaProperty;
     /**
     * Tool name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name?: string;
 }
@@ -2717,13 +2717,13 @@ export interface ToolProperty {
     /**
     * CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
     */
     readonly cachePoint?: VariantsTemplateConfigurationChatToolConfigurationToolsCachePointProperty;
     /**
     * Tool specification
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tool_spec CcPrompt#tool_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tool_spec CcPrompt#tool_spec}
     */
     readonly toolSpec?: ToolSpecificationProperty;
 }
@@ -2833,13 +2833,13 @@ export interface ToolConfigurationProperty {
     /**
     * Tool choice
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tool_choice CcPrompt#tool_choice}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tool_choice CcPrompt#tool_choice}
     */
     readonly toolChoice?: ToolChoiceProperty;
     /**
     * List of Tools
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tools CcPrompt#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tools CcPrompt#tools}
     */
     readonly tools?: ToolProperty[] | cdktn.IResolvable;
 }
@@ -2927,25 +2927,25 @@ export interface ChatPromptTemplateConfigurationProperty {
     /**
     * List of input variables
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#input_variables CcPrompt#input_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#input_variables CcPrompt#input_variables}
     */
     readonly inputVariables?: PromptInputVariableProperty[] | cdktn.IResolvable;
     /**
     * List of messages for chat prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#messages CcPrompt#messages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#messages CcPrompt#messages}
     */
     readonly messages?: MessageProperty[] | cdktn.IResolvable;
     /**
     * Configuration for chat prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#system CcPrompt#system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#system CcPrompt#system}
     */
     readonly systemAttribute?: SystemContentBlockProperty[] | cdktn.IResolvable;
     /**
     * Tool configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#tool_configuration CcPrompt#tool_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#tool_configuration CcPrompt#tool_configuration}
     */
     readonly toolConfiguration?: ToolConfigurationProperty;
 }
@@ -3077,7 +3077,7 @@ export interface VariantsTemplateConfigurationTextCachePointProperty {
     /**
     * CachePoint types for CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#type CcPrompt#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#type CcPrompt#type}
     */
     readonly type?: string;
 }
@@ -3143,7 +3143,7 @@ export interface InputVariablesProperty {
     /**
     * Name for an input variable
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name?: string;
 }
@@ -3231,19 +3231,19 @@ export interface TextS3LocationProperty {
     /**
     * A bucket in S3
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#bucket CcPrompt#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#bucket CcPrompt#bucket}
     */
     readonly bucket?: string;
     /**
     * A object key in S3
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#key CcPrompt#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#key CcPrompt#key}
     */
     readonly key?: string;
     /**
     * The version of the the S3 object to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#version CcPrompt#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#version CcPrompt#version}
     */
     readonly version?: string;
 }
@@ -3353,25 +3353,25 @@ export interface TextPromptTemplateConfigurationProperty {
     /**
     * CachePointBlock
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#cache_point CcPrompt#cache_point}
     */
     readonly cachePoint?: VariantsTemplateConfigurationTextCachePointProperty;
     /**
     * List of input variables
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#input_variables CcPrompt#input_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#input_variables CcPrompt#input_variables}
     */
     readonly inputVariables?: InputVariablesProperty[] | cdktn.IResolvable;
     /**
     * Prompt content for String prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text CcPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text CcPrompt#text}
     */
     readonly text?: string;
     /**
     * The identifier for the S3 resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text_s3_location CcPrompt#text_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text_s3_location CcPrompt#text_s3_location}
     */
     readonly textS3Location?: TextS3LocationProperty;
 }
@@ -3503,13 +3503,13 @@ export interface PromptTemplateConfigurationProperty {
     /**
     * Configuration for chat prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#chat CcPrompt#chat}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#chat CcPrompt#chat}
     */
     readonly chat?: ChatPromptTemplateConfigurationProperty;
     /**
     * Configuration for text prompt template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#text CcPrompt#text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#text CcPrompt#text}
     */
     readonly text?: TextPromptTemplateConfigurationProperty;
 }
@@ -3597,49 +3597,49 @@ export interface PromptVariantProperty {
     /**
     * Contains model-specific configurations
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#additional_model_request_fields CcPrompt#additional_model_request_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#additional_model_request_fields CcPrompt#additional_model_request_fields}
     */
     readonly additionalModelRequestFields?: string;
     /**
     * Target resource to invoke with Prompt
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#gen_ai_resource CcPrompt#gen_ai_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#gen_ai_resource CcPrompt#gen_ai_resource}
     */
     readonly genAiResource?: PromptGenAiResourceProperty;
     /**
     * Model inference configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#inference_configuration CcPrompt#inference_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#inference_configuration CcPrompt#inference_configuration}
     */
     readonly inferenceConfiguration?: PromptInferenceConfigurationProperty;
     /**
     * List of metadata to associate with the prompt variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#metadata CcPrompt#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#metadata CcPrompt#metadata}
     */
     readonly metadata?: PromptMetadataEntryProperty[] | cdktn.IResolvable;
     /**
     * ARN or Id of a Bedrock Foundational Model or Inference Profile, or the ARN of a imported model, or a provisioned throughput ARN for custom models.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#model_id CcPrompt#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#model_id CcPrompt#model_id}
     */
     readonly modelId?: string;
     /**
     * Name for a variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#name CcPrompt#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#name CcPrompt#name}
     */
     readonly name?: string;
     /**
     * Prompt template configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#template_configuration CcPrompt#template_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#template_configuration CcPrompt#template_configuration}
     */
     readonly templateConfiguration?: PromptTemplateConfigurationProperty;
     /**
     * Prompt template type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_prompt#template_type CcPrompt#template_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_prompt#template_type CcPrompt#template_type}
     */
     readonly templateType?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLicenseAssetRuleSetProps extends cdktn.TerraformMetaArguments
     /**
     * License asset ruleset description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#description CcLicenseAssetRuleSet#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#description CcLicenseAssetRuleSet#description}
     */
     readonly description?: string;
     /**
     * License asset ruleset name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#name CcLicenseAssetRuleSet#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#name CcLicenseAssetRuleSet#name}
     */
     readonly name: string;
     /**
     * License asset rules.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#rules CcLicenseAssetRuleSet#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#rules CcLicenseAssetRuleSet#rules}
     */
     readonly rules: CcLicenseAssetRuleSet.LicenseAssetRuleProperty[] | cdktn.IResolvable;
     /**
     * Tags to add to the license asset ruleset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#tags CcLicenseAssetRuleSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#tags CcLicenseAssetRuleSet#tags}
     */
     readonly tags?: CcLicenseAssetRuleSet.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set awscc_licensemanager_license_asset_rule_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set awscc_licensemanager_license_asset_rule_set}
 */
 export class CcLicenseAssetRuleSet extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLicenseAssetRuleSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLicenseAssetRuleSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLicenseAssetRuleSet to import
-    * @param importFromId The id of the existing CcLicenseAssetRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLicenseAssetRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLicenseAssetRuleSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLicenseAssetRuleSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set awscc_licensemanager_license_asset_rule_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set awscc_licensemanager_license_asset_rule_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLicenseAssetRuleSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_licensemanager_license_asset_rule_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1030,19 +1030,19 @@ export interface MatchingRuleStatementProperty {
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -1172,7 +1172,7 @@ export class MatchingRuleStatementPropertyList extends cdktn.ComplexList {
 }
 export interface AndRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: MatchingRuleStatementProperty[] | cdktn.IResolvable;
 }
@@ -1238,19 +1238,19 @@ export interface RulesRuleStatementInstanceRuleStatementMatchingRuleStatementPro
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -1360,19 +1360,19 @@ export interface RulesRuleStatementInstanceRuleStatementOrRuleStatementMatchingR
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -1502,7 +1502,7 @@ export class RulesRuleStatementInstanceRuleStatementOrRuleStatementMatchingRuleS
 }
 export interface OrRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: RulesRuleStatementInstanceRuleStatementOrRuleStatementMatchingRuleStatementsProperty[] | cdktn.IResolvable;
 }
@@ -1568,19 +1568,19 @@ export interface InstanceRuleStatementProperty {
     /**
     * AND rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
     */
     readonly andRuleStatement?: AndRuleStatementProperty;
     /**
     * Matching rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
     */
     readonly matchingRuleStatement?: RulesRuleStatementInstanceRuleStatementMatchingRuleStatementProperty;
     /**
     * OR rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
     */
     readonly orRuleStatement?: OrRuleStatementProperty;
 }
@@ -1690,19 +1690,19 @@ export interface RulesRuleStatementLicenseConfigurationRuleStatementAndRuleState
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -1832,7 +1832,7 @@ export class RulesRuleStatementLicenseConfigurationRuleStatementAndRuleStatement
 }
 export interface RulesRuleStatementLicenseConfigurationRuleStatementAndRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: RulesRuleStatementLicenseConfigurationRuleStatementAndRuleStatementMatchingRuleStatementsProperty[] | cdktn.IResolvable;
 }
@@ -1898,19 +1898,19 @@ export interface RulesRuleStatementLicenseConfigurationRuleStatementMatchingRule
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -2020,19 +2020,19 @@ export interface RulesRuleStatementLicenseConfigurationRuleStatementOrRuleStatem
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -2162,7 +2162,7 @@ export class RulesRuleStatementLicenseConfigurationRuleStatementOrRuleStatementM
 }
 export interface RulesRuleStatementLicenseConfigurationRuleStatementOrRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: RulesRuleStatementLicenseConfigurationRuleStatementOrRuleStatementMatchingRuleStatementsProperty[] | cdktn.IResolvable;
 }
@@ -2228,19 +2228,19 @@ export interface LicenseConfigurationRuleStatementProperty {
     /**
     * AND rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
     */
     readonly andRuleStatement?: RulesRuleStatementLicenseConfigurationRuleStatementAndRuleStatementProperty;
     /**
     * Matching rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
     */
     readonly matchingRuleStatement?: RulesRuleStatementLicenseConfigurationRuleStatementMatchingRuleStatementProperty;
     /**
     * OR rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
     */
     readonly orRuleStatement?: RulesRuleStatementLicenseConfigurationRuleStatementOrRuleStatementProperty;
 }
@@ -2350,19 +2350,19 @@ export interface RulesRuleStatementLicenseRuleStatementAndRuleStatementMatchingR
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -2492,7 +2492,7 @@ export class RulesRuleStatementLicenseRuleStatementAndRuleStatementMatchingRuleS
 }
 export interface RulesRuleStatementLicenseRuleStatementAndRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: RulesRuleStatementLicenseRuleStatementAndRuleStatementMatchingRuleStatementsProperty[] | cdktn.IResolvable;
 }
@@ -2558,19 +2558,19 @@ export interface RulesRuleStatementLicenseRuleStatementMatchingRuleStatementProp
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -2680,19 +2680,19 @@ export interface RulesRuleStatementLicenseRuleStatementOrRuleStatementMatchingRu
     /**
     * Constraint (e.g. Equals, Not_Equals).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#constraint CcLicenseAssetRuleSet#constraint}
     */
     readonly constraint?: string;
     /**
     * Key to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key_to_match CcLicenseAssetRuleSet#key_to_match}
     */
     readonly keyToMatch?: string;
     /**
     * Values to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value_to_match CcLicenseAssetRuleSet#value_to_match}
     */
     readonly valueToMatch?: string[];
 }
@@ -2822,7 +2822,7 @@ export class RulesRuleStatementLicenseRuleStatementOrRuleStatementMatchingRuleSt
 }
 export interface RulesRuleStatementLicenseRuleStatementOrRuleStatementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statements CcLicenseAssetRuleSet#matching_rule_statements}
     */
     readonly matchingRuleStatements?: RulesRuleStatementLicenseRuleStatementOrRuleStatementMatchingRuleStatementsProperty[] | cdktn.IResolvable;
 }
@@ -2888,19 +2888,19 @@ export interface LicenseRuleStatementProperty {
     /**
     * AND rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#and_rule_statement CcLicenseAssetRuleSet#and_rule_statement}
     */
     readonly andRuleStatement?: RulesRuleStatementLicenseRuleStatementAndRuleStatementProperty;
     /**
     * Matching rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#matching_rule_statement CcLicenseAssetRuleSet#matching_rule_statement}
     */
     readonly matchingRuleStatement?: RulesRuleStatementLicenseRuleStatementMatchingRuleStatementProperty;
     /**
     * OR rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#or_rule_statement CcLicenseAssetRuleSet#or_rule_statement}
     */
     readonly orRuleStatement?: RulesRuleStatementLicenseRuleStatementOrRuleStatementProperty;
 }
@@ -3010,19 +3010,19 @@ export interface RuleStatementProperty {
     /**
     * Instance rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#instance_rule_statement CcLicenseAssetRuleSet#instance_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#instance_rule_statement CcLicenseAssetRuleSet#instance_rule_statement}
     */
     readonly instanceRuleStatement?: InstanceRuleStatementProperty;
     /**
     * License configuration rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#license_configuration_rule_statement CcLicenseAssetRuleSet#license_configuration_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#license_configuration_rule_statement CcLicenseAssetRuleSet#license_configuration_rule_statement}
     */
     readonly licenseConfigurationRuleStatement?: LicenseConfigurationRuleStatementProperty;
     /**
     * License rule statement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#license_rule_statement CcLicenseAssetRuleSet#license_rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#license_rule_statement CcLicenseAssetRuleSet#license_rule_statement}
     */
     readonly licenseRuleStatement?: LicenseRuleStatementProperty;
 }
@@ -3132,7 +3132,7 @@ export interface LicenseAssetRuleProperty {
     /**
     * Rule statement. Specify exactly one of InstanceRuleStatement, LicenseRuleStatement, or LicenseConfigurationRuleStatement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#rule_statement CcLicenseAssetRuleSet#rule_statement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#rule_statement CcLicenseAssetRuleSet#rule_statement}
     */
     readonly ruleStatement: RuleStatementProperty;
 }
@@ -3215,11 +3215,11 @@ export class LicenseAssetRulePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#key CcLicenseAssetRuleSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#key CcLicenseAssetRuleSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/licensemanager_license_asset_rule_set#value CcLicenseAssetRuleSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/licensemanager_license_asset_rule_set#value CcLicenseAssetRuleSet#value}
     */
     readonly value?: string;
 }

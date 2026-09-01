@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcAutomationRuleV2Props extends cdktn.TerraformMetaArguments {
     /**
     * A list of actions to be performed when the rule criteria is met
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#actions CcAutomationRuleV2#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#actions CcAutomationRuleV2#actions}
     */
     readonly actions: CcAutomationRuleV2.AutomationRulesActionV2Property[] | cdktn.IResolvable;
     /**
     * Defines the parameters and conditions used to evaluate and filter security findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#criteria CcAutomationRuleV2#criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#criteria CcAutomationRuleV2#criteria}
     */
     readonly criteria: CcAutomationRuleV2.CriteriaProperty;
     /**
     * A description of the automation rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#description CcAutomationRuleV2#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#description CcAutomationRuleV2#description}
     */
     readonly description: string;
     /**
     * The name of the automation rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#rule_name CcAutomationRuleV2#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#rule_name CcAutomationRuleV2#rule_name}
     */
     readonly ruleName: string;
     /**
     * The value for the rule priority
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#rule_order CcAutomationRuleV2#rule_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#rule_order CcAutomationRuleV2#rule_order}
     */
     readonly ruleOrder: number;
     /**
     * The status of the automation rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#rule_status CcAutomationRuleV2#rule_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#rule_status CcAutomationRuleV2#rule_status}
     */
     readonly ruleStatus?: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#tags CcAutomationRuleV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#tags CcAutomationRuleV2#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2 awscc_securityhub_automation_rule_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2 awscc_securityhub_automation_rule_v2}
 */
 export class CcAutomationRuleV2 extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcAutomationRuleV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAutomationRuleV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAutomationRuleV2 to import
-    * @param importFromId The id of the existing CcAutomationRuleV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAutomationRuleV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAutomationRuleV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcAutomationRuleV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2 awscc_securityhub_automation_rule_v2} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2 awscc_securityhub_automation_rule_v2} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcAutomationRuleV2 extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securityhub_automation_rule_v2',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -978,7 +978,7 @@ export interface ExternalIntegrationConfigurationProperty {
     /**
     * The ARN of the connector that establishes the integration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#connector_arn CcAutomationRuleV2#connector_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#connector_arn CcAutomationRuleV2#connector_arn}
     */
     readonly connectorArn?: string;
 }
@@ -1044,19 +1044,19 @@ export interface AutomationRulesFindingFieldsUpdateV2Property {
     /**
     * Notes or contextual information for findings that are modified by the automation rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#comment CcAutomationRuleV2#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#comment CcAutomationRuleV2#comment}
     */
     readonly comment?: string;
     /**
     * The severity level to be assigned to findings that match the automation rule criteria
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#severity_id CcAutomationRuleV2#severity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#severity_id CcAutomationRuleV2#severity_id}
     */
     readonly severityId?: number;
     /**
     * The status to be applied to findings that match automation rule criteria
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#status_id CcAutomationRuleV2#status_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#status_id CcAutomationRuleV2#status_id}
     */
     readonly statusId?: number;
 }
@@ -1166,19 +1166,19 @@ export interface AutomationRulesActionV2Property {
     /**
     * The settings for integrating automation rule actions with external systems or service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#external_integration_configuration CcAutomationRuleV2#external_integration_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#external_integration_configuration CcAutomationRuleV2#external_integration_configuration}
     */
     readonly externalIntegrationConfiguration?: ExternalIntegrationConfigurationProperty;
     /**
     * The changes to be applied to fields in a security finding when an automation rule is triggered
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#finding_fields_update CcAutomationRuleV2#finding_fields_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#finding_fields_update CcAutomationRuleV2#finding_fields_update}
     */
     readonly findingFieldsUpdate?: AutomationRulesFindingFieldsUpdateV2Property;
     /**
     * The category of action to be executed by the automation rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#type CcAutomationRuleV2#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#type CcAutomationRuleV2#type}
     */
     readonly type: string;
 }
@@ -1307,7 +1307,7 @@ export interface BooleanFilterProperty {
     /**
     * The value of the boolean
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
     */
     readonly value?: boolean | cdktn.IResolvable;
 }
@@ -1373,13 +1373,13 @@ export interface OcsfBooleanFilterProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
     */
     readonly fieldName?: string;
     /**
     * Boolean filter for querying findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
     */
     readonly filter?: BooleanFilterProperty;
 }
@@ -1489,13 +1489,13 @@ export interface DateRangeProperty {
     /**
     * A date range unit for the date filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#unit CcAutomationRuleV2#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#unit CcAutomationRuleV2#unit}
     */
     readonly unit?: string;
     /**
     * A date range value for the date filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
     */
     readonly value?: number;
 }
@@ -1583,19 +1583,19 @@ export interface DateFilterProperty {
     /**
     * A date range for the date filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#date_range CcAutomationRuleV2#date_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#date_range CcAutomationRuleV2#date_range}
     */
     readonly dateRange?: DateRangeProperty;
     /**
     * The timestamp formatted in ISO8601
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#end CcAutomationRuleV2#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#end CcAutomationRuleV2#end}
     */
     readonly end?: string;
     /**
     * The timestamp formatted in ISO8601
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#start CcAutomationRuleV2#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#start CcAutomationRuleV2#start}
     */
     readonly start?: string;
 }
@@ -1705,13 +1705,13 @@ export interface OcsfDateFilterProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
     */
     readonly fieldName?: string;
     /**
     * A date filter for querying findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
     */
     readonly filter?: DateFilterProperty;
 }
@@ -1821,19 +1821,19 @@ export interface MapFilterProperty {
     /**
     * The condition to apply to the key value when filtering findings with a map filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#comparison CcAutomationRuleV2#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#comparison CcAutomationRuleV2#comparison}
     */
     readonly comparison?: string;
     /**
     * The key of the map filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#key CcAutomationRuleV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#key CcAutomationRuleV2#key}
     */
     readonly key?: string;
     /**
     * The value for the key in the map filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
     */
     readonly value?: string;
 }
@@ -1943,13 +1943,13 @@ export interface OcsfMapFilterProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
     */
     readonly fieldName?: string;
     /**
     * A map filter for filtering findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
     */
     readonly filter?: MapFilterProperty;
 }
@@ -2059,19 +2059,19 @@ export interface NumberFilterProperty {
     /**
     * The equal-to condition to be applied to a single field when querying for findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#eq CcAutomationRuleV2#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#eq CcAutomationRuleV2#eq}
     */
     readonly eq?: number;
     /**
     * The greater-than-equal condition to be applied to a single field when querying for findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#gte CcAutomationRuleV2#gte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#gte CcAutomationRuleV2#gte}
     */
     readonly gte?: number;
     /**
     * The less-than-equal condition to be applied to a single field when querying for findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#lte CcAutomationRuleV2#lte}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#lte CcAutomationRuleV2#lte}
     */
     readonly lte?: number;
 }
@@ -2181,13 +2181,13 @@ export interface OcsfNumberFilterProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
     */
     readonly fieldName?: string;
     /**
     * A number filter for querying findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
     */
     readonly filter?: NumberFilterProperty;
 }
@@ -2297,13 +2297,13 @@ export interface StringFilterProperty {
     /**
     * The condition to apply to a string value when filtering findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#comparison CcAutomationRuleV2#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#comparison CcAutomationRuleV2#comparison}
     */
     readonly comparison?: string;
     /**
     * The string filter value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#value CcAutomationRuleV2#value}
     */
     readonly value?: string;
 }
@@ -2391,13 +2391,13 @@ export interface OcsfStringFilterProperty {
     /**
     * The name of the field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#field_name CcAutomationRuleV2#field_name}
     */
     readonly fieldName?: string;
     /**
     * A string filter for filtering findings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#filter CcAutomationRuleV2#filter}
     */
     readonly filter?: StringFilterProperty;
 }
@@ -2507,37 +2507,37 @@ export interface CompositeFilterProperty {
     /**
     * Enables filtering based on boolean field values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#boolean_filters CcAutomationRuleV2#boolean_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#boolean_filters CcAutomationRuleV2#boolean_filters}
     */
     readonly booleanFilters?: OcsfBooleanFilterProperty[] | cdktn.IResolvable;
     /**
     * Enables filtering based on date and timestamp fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#date_filters CcAutomationRuleV2#date_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#date_filters CcAutomationRuleV2#date_filters}
     */
     readonly dateFilters?: OcsfDateFilterProperty[] | cdktn.IResolvable;
     /**
     * Enables filtering based on map field value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#map_filters CcAutomationRuleV2#map_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#map_filters CcAutomationRuleV2#map_filters}
     */
     readonly mapFilters?: OcsfMapFilterProperty[] | cdktn.IResolvable;
     /**
     * Enables filtering based on numerical field values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#number_filters CcAutomationRuleV2#number_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#number_filters CcAutomationRuleV2#number_filters}
     */
     readonly numberFilters?: OcsfNumberFilterProperty[] | cdktn.IResolvable;
     /**
     * The logical operator used to combine multiple conditions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#operator CcAutomationRuleV2#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#operator CcAutomationRuleV2#operator}
     */
     readonly operator?: string;
     /**
     * Enables filtering based on string field values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#string_filters CcAutomationRuleV2#string_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#string_filters CcAutomationRuleV2#string_filters}
     */
     readonly stringFilters?: OcsfStringFilterProperty[] | cdktn.IResolvable;
 }
@@ -2735,13 +2735,13 @@ export interface OcsfFindingFiltersProperty {
     /**
     * Enables the creation of complex filtering conditions by combining filter
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#composite_filters CcAutomationRuleV2#composite_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#composite_filters CcAutomationRuleV2#composite_filters}
     */
     readonly compositeFilters?: CompositeFilterProperty[] | cdktn.IResolvable;
     /**
     * The logical operator used to combine multiple conditions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#composite_operator CcAutomationRuleV2#composite_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#composite_operator CcAutomationRuleV2#composite_operator}
     */
     readonly compositeOperator?: string;
 }
@@ -2829,7 +2829,7 @@ export interface CriteriaProperty {
     /**
     * The filtering conditions that align with OCSF standards
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria CcAutomationRuleV2#ocsf_finding_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_automation_rule_v2#ocsf_finding_criteria CcAutomationRuleV2#ocsf_finding_criteria}
     */
     readonly ocsfFindingCriteria?: OcsfFindingFiltersProperty;
 }

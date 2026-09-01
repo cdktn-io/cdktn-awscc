@@ -1,73 +1,73 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#broker_node_group_info CcCluster#broker_node_group_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#broker_node_group_info CcCluster#broker_node_group_info}
     */
     readonly brokerNodeGroupInfo: CcCluster.BrokerNodeGroupInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#client_authentication CcCluster#client_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#client_authentication CcCluster#client_authentication}
     */
     readonly clientAuthentication?: CcCluster.ClientAuthenticationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#configuration_info CcCluster#configuration_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#configuration_info CcCluster#configuration_info}
     */
     readonly configurationInfo?: CcCluster.ConfigurationInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#encryption_info CcCluster#encryption_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#encryption_info CcCluster#encryption_info}
     */
     readonly encryptionInfo?: CcCluster.EncryptionInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enhanced_monitoring CcCluster#enhanced_monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enhanced_monitoring CcCluster#enhanced_monitoring}
     */
     readonly enhancedMonitoring?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#kafka_version CcCluster#kafka_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#kafka_version CcCluster#kafka_version}
     */
     readonly kafkaVersion: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#logging_info CcCluster#logging_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#logging_info CcCluster#logging_info}
     */
     readonly loggingInfo?: CcCluster.LoggingInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#number_of_broker_nodes CcCluster#number_of_broker_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#number_of_broker_nodes CcCluster#number_of_broker_nodes}
     */
     readonly numberOfBrokerNodes: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#open_monitoring CcCluster#open_monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#open_monitoring CcCluster#open_monitoring}
     */
     readonly openMonitoring?: CcCluster.OpenMonitoringProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#rebalancing CcCluster#rebalancing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#rebalancing CcCluster#rebalancing}
     */
     readonly rebalancing?: CcCluster.RebalancingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#storage_mode CcCluster#storage_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#storage_mode CcCluster#storage_mode}
     */
     readonly storageMode?: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#tags CcCluster#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#zookeeper_access CcCluster#zookeeper_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#zookeeper_access CcCluster#zookeeper_access}
     */
     readonly zookeeperAccess?: CcCluster.ZookeeperAccessProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster awscc_msk_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster awscc_msk_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -83,7 +83,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -95,7 +95,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster awscc_msk_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster awscc_msk_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +106,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_msk_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1816,7 +1816,7 @@ export function ccClusterZookeeperAccessPropertyToHclTerraform(struct?: CcCluste
 export namespace CcCluster {
 export interface PublicAccessProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#type CcCluster#type}
     */
     readonly type?: string;
 }
@@ -1880,7 +1880,7 @@ export class PublicAccessPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface VpcConnectivityIamProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1944,7 +1944,7 @@ export class VpcConnectivityIamPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface VpcConnectivityScramProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2008,11 +2008,11 @@ export class VpcConnectivityScramPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface VpcConnectivitySaslProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#iam CcCluster#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#iam CcCluster#iam}
     */
     readonly iam?: VpcConnectivityIamProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#scram CcCluster#scram}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#scram CcCluster#scram}
     */
     readonly scram?: VpcConnectivityScramProperty;
 }
@@ -2098,7 +2098,7 @@ export class VpcConnectivitySaslPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface VpcConnectivityTlsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2162,11 +2162,11 @@ export class VpcConnectivityTlsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface VpcConnectivityClientAuthenticationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#sasl CcCluster#sasl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#sasl CcCluster#sasl}
     */
     readonly sasl?: VpcConnectivitySaslProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#tls CcCluster#tls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#tls CcCluster#tls}
     */
     readonly tls?: VpcConnectivityTlsProperty;
 }
@@ -2252,7 +2252,7 @@ export class VpcConnectivityClientAuthenticationPropertyOutputReference extends 
 }
 export interface VpcConnectivityProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#client_authentication CcCluster#client_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#client_authentication CcCluster#client_authentication}
     */
     readonly clientAuthentication?: VpcConnectivityClientAuthenticationProperty;
 }
@@ -2316,15 +2316,15 @@ export class VpcConnectivityPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ConnectivityInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#network_type CcCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#network_type CcCluster#network_type}
     */
     readonly networkType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#public_access CcCluster#public_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#public_access CcCluster#public_access}
     */
     readonly publicAccess?: PublicAccessProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#vpc_connectivity CcCluster#vpc_connectivity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#vpc_connectivity CcCluster#vpc_connectivity}
     */
     readonly vpcConnectivity?: VpcConnectivityProperty;
 }
@@ -2432,11 +2432,11 @@ export class ConnectivityInfoPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ProvisionedThroughputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#volume_throughput CcCluster#volume_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#volume_throughput CcCluster#volume_throughput}
     */
     readonly volumeThroughput?: number;
 }
@@ -2522,11 +2522,11 @@ export class ProvisionedThroughputPropertyOutputReference extends cdktn.ComplexO
 }
 export interface EBSStorageInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#provisioned_throughput CcCluster#provisioned_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#provisioned_throughput CcCluster#provisioned_throughput}
     */
     readonly provisionedThroughput?: ProvisionedThroughputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#volume_size CcCluster#volume_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#volume_size CcCluster#volume_size}
     */
     readonly volumeSize?: number;
 }
@@ -2612,7 +2612,7 @@ export class EBSStorageInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface StorageInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#ebs_storage_info CcCluster#ebs_storage_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#ebs_storage_info CcCluster#ebs_storage_info}
     */
     readonly ebsStorageInfo?: EBSStorageInfoProperty;
 }
@@ -2676,27 +2676,27 @@ export class StorageInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface BrokerNodeGroupInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#broker_az_distribution CcCluster#broker_az_distribution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#broker_az_distribution CcCluster#broker_az_distribution}
     */
     readonly brokerAzDistribution?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#client_subnets CcCluster#client_subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#client_subnets CcCluster#client_subnets}
     */
     readonly clientSubnets: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#connectivity_info CcCluster#connectivity_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#connectivity_info CcCluster#connectivity_info}
     */
     readonly connectivityInfo?: ConnectivityInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#instance_type CcCluster#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#instance_type CcCluster#instance_type}
     */
     readonly instanceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#security_groups CcCluster#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#security_groups CcCluster#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#storage_info CcCluster#storage_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#storage_info CcCluster#storage_info}
     */
     readonly storageInfo?: StorageInfoProperty;
 }
@@ -2864,7 +2864,7 @@ export class BrokerNodeGroupInfoPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface IamProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2928,7 +2928,7 @@ export class IamPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScramProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2992,11 +2992,11 @@ export class ScramPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SaslProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#iam CcCluster#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#iam CcCluster#iam}
     */
     readonly iam?: IamProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#scram CcCluster#scram}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#scram CcCluster#scram}
     */
     readonly scram?: ScramProperty;
 }
@@ -3082,11 +3082,11 @@ export class SaslPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TlsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#certificate_authority_arn_list CcCluster#certificate_authority_arn_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#certificate_authority_arn_list CcCluster#certificate_authority_arn_list}
     */
     readonly certificateAuthorityArnList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3172,7 +3172,7 @@ export class TlsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface UnauthenticatedProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3236,15 +3236,15 @@ export class UnauthenticatedPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ClientAuthenticationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#sasl CcCluster#sasl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#sasl CcCluster#sasl}
     */
     readonly sasl?: SaslProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#tls CcCluster#tls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#tls CcCluster#tls}
     */
     readonly tls?: TlsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#unauthenticated CcCluster#unauthenticated}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#unauthenticated CcCluster#unauthenticated}
     */
     readonly unauthenticated?: UnauthenticatedProperty;
 }
@@ -3352,11 +3352,11 @@ export class ClientAuthenticationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ConfigurationInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#arn CcCluster#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#arn CcCluster#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#revision CcCluster#revision}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#revision CcCluster#revision}
     */
     readonly revision?: number;
 }
@@ -3442,7 +3442,7 @@ export class ConfigurationInfoPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface EncryptionAtRestProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#data_volume_kms_key_id CcCluster#data_volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#data_volume_kms_key_id CcCluster#data_volume_kms_key_id}
     */
     readonly dataVolumeKmsKeyId?: string;
 }
@@ -3506,11 +3506,11 @@ export class EncryptionAtRestPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface EncryptionInTransitProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#client_broker CcCluster#client_broker}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#client_broker CcCluster#client_broker}
     */
     readonly clientBroker?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#in_cluster CcCluster#in_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#in_cluster CcCluster#in_cluster}
     */
     readonly inCluster?: boolean | cdktn.IResolvable;
 }
@@ -3596,11 +3596,11 @@ export class EncryptionInTransitPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface EncryptionInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#encryption_at_rest CcCluster#encryption_at_rest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#encryption_at_rest CcCluster#encryption_at_rest}
     */
     readonly encryptionAtRest?: EncryptionAtRestProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#encryption_in_transit CcCluster#encryption_in_transit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#encryption_in_transit CcCluster#encryption_in_transit}
     */
     readonly encryptionInTransit?: EncryptionInTransitProperty;
 }
@@ -3686,11 +3686,11 @@ export class EncryptionInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CloudWatchLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#log_group CcCluster#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#log_group CcCluster#log_group}
     */
     readonly logGroup?: string;
 }
@@ -3776,11 +3776,11 @@ export class CloudWatchLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FirehoseProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#delivery_stream CcCluster#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#delivery_stream CcCluster#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -3866,15 +3866,15 @@ export class FirehosePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#bucket CcCluster#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#bucket CcCluster#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#prefix CcCluster#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#prefix CcCluster#prefix}
     */
     readonly prefix?: string;
 }
@@ -3982,15 +3982,15 @@ export class S3PropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AuthorizerLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#cloudwatch_logs CcCluster#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#cloudwatch_logs CcCluster#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#firehose CcCluster#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#firehose CcCluster#firehose}
     */
     readonly firehose?: FirehoseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#s3 CcCluster#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#s3 CcCluster#s3}
     */
     readonly s3?: S3Property;
 }
@@ -4098,11 +4098,11 @@ export class AuthorizerLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LoggingInfoBrokerLogsCloudwatchLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#log_group CcCluster#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#log_group CcCluster#log_group}
     */
     readonly logGroup?: string;
 }
@@ -4188,11 +4188,11 @@ export class LoggingInfoBrokerLogsCloudwatchLogsPropertyOutputReference extends 
 }
 export interface LoggingInfoBrokerLogsFirehoseProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#delivery_stream CcCluster#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#delivery_stream CcCluster#delivery_stream}
     */
     readonly deliveryStream?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -4278,15 +4278,15 @@ export class LoggingInfoBrokerLogsFirehosePropertyOutputReference extends cdktn.
 }
 export interface LoggingInfoBrokerLogsS3Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#bucket CcCluster#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#bucket CcCluster#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#prefix CcCluster#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#prefix CcCluster#prefix}
     */
     readonly prefix?: string;
 }
@@ -4394,15 +4394,15 @@ export class LoggingInfoBrokerLogsS3PropertyOutputReference extends cdktn.Comple
 }
 export interface BrokerLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#cloudwatch_logs CcCluster#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#cloudwatch_logs CcCluster#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: LoggingInfoBrokerLogsCloudwatchLogsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#firehose CcCluster#firehose}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#firehose CcCluster#firehose}
     */
     readonly firehose?: LoggingInfoBrokerLogsFirehoseProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#s3 CcCluster#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#s3 CcCluster#s3}
     */
     readonly s3?: LoggingInfoBrokerLogsS3Property;
 }
@@ -4510,11 +4510,11 @@ export class BrokerLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LoggingInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#authorizer_logs CcCluster#authorizer_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#authorizer_logs CcCluster#authorizer_logs}
     */
     readonly authorizerLogs?: AuthorizerLogsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#broker_logs CcCluster#broker_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#broker_logs CcCluster#broker_logs}
     */
     readonly brokerLogs?: BrokerLogsProperty;
 }
@@ -4600,7 +4600,7 @@ export class LoggingInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface JmxExporterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled_in_broker CcCluster#enabled_in_broker}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled_in_broker CcCluster#enabled_in_broker}
     */
     readonly enabledInBroker?: boolean | cdktn.IResolvable;
 }
@@ -4664,7 +4664,7 @@ export class JmxExporterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NodeExporterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled_in_broker CcCluster#enabled_in_broker}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled_in_broker CcCluster#enabled_in_broker}
     */
     readonly enabledInBroker?: boolean | cdktn.IResolvable;
 }
@@ -4728,11 +4728,11 @@ export class NodeExporterPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PrometheusProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#jmx_exporter CcCluster#jmx_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#jmx_exporter CcCluster#jmx_exporter}
     */
     readonly jmxExporter?: JmxExporterProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#node_exporter CcCluster#node_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#node_exporter CcCluster#node_exporter}
     */
     readonly nodeExporter?: NodeExporterProperty;
 }
@@ -4818,7 +4818,7 @@ export class PrometheusPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface OpenMonitoringProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#prometheus CcCluster#prometheus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#prometheus CcCluster#prometheus}
     */
     readonly prometheus?: PrometheusProperty;
 }
@@ -4882,7 +4882,7 @@ export class OpenMonitoringPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RebalancingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#status CcCluster#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#status CcCluster#status}
     */
     readonly status?: string;
 }
@@ -4946,7 +4946,7 @@ export class RebalancingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ZookeeperAccessProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/msk_cluster#enabled CcCluster#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }

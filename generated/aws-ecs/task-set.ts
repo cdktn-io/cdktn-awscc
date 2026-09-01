@@ -1,81 +1,81 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTaskSetProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#capacity_provider_strategy CcTaskSet#capacity_provider_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#capacity_provider_strategy CcTaskSet#capacity_provider_strategy}
     */
     readonly capacityProviderStrategy?: CcTaskSet.CapacityProviderStrategyItemProperty[] | cdktn.IResolvable;
     /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service to create the task set in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#cluster CcTaskSet#cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#cluster CcTaskSet#cluster}
     */
     readonly cluster: string;
     /**
     * An optional non-unique tag that identifies this task set in external systems. If the task set is associated with a service discovery registry, the tasks in this task set will have the ECS_TASK_SET_EXTERNAL_ID AWS Cloud Map attribute set to the provided value. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#external_id CcTaskSet#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#external_id CcTaskSet#external_id}
     */
     readonly externalId?: string;
     /**
     * The launch type that new tasks in the task set will use. For more information, see https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_types.html in the Amazon Elastic Container Service Developer Guide. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#launch_type CcTaskSet#launch_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#launch_type CcTaskSet#launch_type}
     */
     readonly launchType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#load_balancers CcTaskSet#load_balancers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#load_balancers CcTaskSet#load_balancers}
     */
     readonly loadBalancers?: CcTaskSet.LoadBalancerProperty[] | cdktn.IResolvable;
     /**
     * An object representing the network configuration for a task or service.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#network_configuration CcTaskSet#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#network_configuration CcTaskSet#network_configuration}
     */
     readonly networkConfiguration?: CcTaskSet.NetworkConfigurationProperty;
     /**
     * The platform version that the tasks in the task set should use. A platform version is specified only for tasks using the Fargate launch type. If one isn't specified, the LATEST platform version is used by default.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#platform_version CcTaskSet#platform_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#platform_version CcTaskSet#platform_version}
     */
     readonly platformVersion?: string;
     /**
     * A floating-point percentage of the desired number of tasks to place and keep running in the task set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#scale CcTaskSet#scale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#scale CcTaskSet#scale}
     */
     readonly scale?: CcTaskSet.ScaleProperty;
     /**
     * The short name or full Amazon Resource Name (ARN) of the service to create the task set in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#service CcTaskSet#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#service CcTaskSet#service}
     */
     readonly service: string;
     /**
     * The details of the service discovery registries to assign to this task set. For more information, see https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#service_registries CcTaskSet#service_registries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#service_registries CcTaskSet#service_registries}
     */
     readonly serviceRegistries?: CcTaskSet.ServiceRegistryProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#tags CcTaskSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#tags CcTaskSet#tags}
     */
     readonly tags?: CcTaskSet.TagProperty[] | cdktn.IResolvable;
     /**
     * The short name or full Amazon Resource Name (ARN) of the task definition for the tasks in the task set to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#task_definition CcTaskSet#task_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#task_definition CcTaskSet#task_definition}
     */
     readonly taskDefinition: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set awscc_ecs_task_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set awscc_ecs_task_set}
 */
 export class CcTaskSet extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcTaskSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTaskSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTaskSet to import
-    * @param importFromId The id of the existing CcTaskSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTaskSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTaskSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcTaskSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set awscc_ecs_task_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set awscc_ecs_task_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class CcTaskSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecs_task_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -727,15 +727,15 @@ export function ccTaskSetTagPropertyToHclTerraform(struct?: CcTaskSet.TagPropert
 export namespace CcTaskSet {
 export interface CapacityProviderStrategyItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#base CcTaskSet#base}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#base CcTaskSet#base}
     */
     readonly base?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#capacity_provider CcTaskSet#capacity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#capacity_provider CcTaskSet#capacity_provider}
     */
     readonly capacityProvider?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#weight CcTaskSet#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#weight CcTaskSet#weight}
     */
     readonly weight?: number;
 }
@@ -867,19 +867,19 @@ export interface LoadBalancerProperty {
     /**
     * The name of the container (as it appears in a container definition) to associate with the load balancer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#container_name CcTaskSet#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#container_name CcTaskSet#container_name}
     */
     readonly containerName?: string;
     /**
     * The port on the container to associate with the load balancer. This port must correspond to a containerPort in the task definition the tasks in the service are using. For tasks that use the EC2 launch type, the container instance they are launched on must allow ingress traffic on the hostPort of the port mapping.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#container_port CcTaskSet#container_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#container_port CcTaskSet#container_port}
     */
     readonly containerPort?: number;
     /**
     * The full Amazon Resource Name (ARN) of the Elastic Load Balancing target group or groups associated with a service or task set. A target group ARN is only specified when using an Application Load Balancer or Network Load Balancer. If you are using a Classic Load Balancer this should be omitted. For services using the ECS deployment controller, you can specify one or multiple target groups. For more information, see https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register-multiple-targetgroups.html in the Amazon Elastic Container Service Developer Guide. For services using the CODE_DEPLOY deployment controller, you are required to define two target groups for the load balancer. For more information, see https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html in the Amazon Elastic Container Service Developer Guide. If your service's task definition uses the awsvpc network mode (which is required for the Fargate launch type), you must choose ip as the target type, not instance, when creating your target groups because tasks that use the awsvpc network mode are associated with an elastic network interface, not an Amazon EC2 instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#target_group_arn CcTaskSet#target_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#target_group_arn CcTaskSet#target_group_arn}
     */
     readonly targetGroupArn?: string;
 }
@@ -1011,19 +1011,19 @@ export interface AwsVpcConfigurationProperty {
     /**
     * Whether the task's elastic network interface receives a public IP address. The default value is DISABLED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#assign_public_ip CcTaskSet#assign_public_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#assign_public_ip CcTaskSet#assign_public_ip}
     */
     readonly assignPublicIp?: string;
     /**
     * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used. There is a limit of 5 security groups that can be specified per AwsVpcConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#security_groups CcTaskSet#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#security_groups CcTaskSet#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * The subnets associated with the task or service. There is a limit of 16 subnets that can be specified per AwsVpcConfiguration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#subnets CcTaskSet#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#subnets CcTaskSet#subnets}
     */
     readonly subnets?: string[];
 }
@@ -1133,7 +1133,7 @@ export interface NetworkConfigurationProperty {
     /**
     * The VPC subnets and security groups associated with a task. All specified subnets and security groups must be from the same VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#aws_vpc_configuration CcTaskSet#aws_vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#aws_vpc_configuration CcTaskSet#aws_vpc_configuration}
     */
     readonly awsVpcConfiguration?: AwsVpcConfigurationProperty;
 }
@@ -1199,13 +1199,13 @@ export interface ScaleProperty {
     /**
     * The unit of measure for the scale value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#unit CcTaskSet#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#unit CcTaskSet#unit}
     */
     readonly unit?: string;
     /**
     * The value, specified as a percent total of a service's desiredCount, to scale the task set. Accepted values are numbers between 0 and 100.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#value CcTaskSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#value CcTaskSet#value}
     */
     readonly value?: number;
 }
@@ -1293,25 +1293,25 @@ export interface ServiceRegistryProperty {
     /**
     * The container name value, already specified in the task definition, to be used for your service discovery service. If the task definition that your service task specifies uses the bridge or host network mode, you must specify a containerName and containerPort combination from the task definition. If the task definition that your service task specifies uses the awsvpc network mode and a type SRV DNS record is used, you must specify either a containerName and containerPort combination or a port value, but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#container_name CcTaskSet#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#container_name CcTaskSet#container_name}
     */
     readonly containerName?: string;
     /**
     * The port value, already specified in the task definition, to be used for your service discovery service. If the task definition your service task specifies uses the bridge or host network mode, you must specify a containerName and containerPort combination from the task definition. If the task definition your service task specifies uses the awsvpc network mode and a type SRV DNS record is used, you must specify either a containerName and containerPort combination or a port value, but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#container_port CcTaskSet#container_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#container_port CcTaskSet#container_port}
     */
     readonly containerPort?: number;
     /**
     * The port value used if your service discovery service specified an SRV record. This field may be used if both the awsvpc network mode and SRV records are used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#port CcTaskSet#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#port CcTaskSet#port}
     */
     readonly port?: number;
     /**
     * The Amazon Resource Name (ARN) of the service registry. The currently supported service registry is AWS Cloud Map. For more information, see https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateService.html
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#registry_arn CcTaskSet#registry_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#registry_arn CcTaskSet#registry_arn}
     */
     readonly registryArn?: string;
 }
@@ -1463,11 +1463,11 @@ export class ServiceRegistryPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#key CcTaskSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#key CcTaskSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_task_set#value CcTaskSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_task_set#value CcTaskSet#value}
     */
     readonly value?: string;
 }

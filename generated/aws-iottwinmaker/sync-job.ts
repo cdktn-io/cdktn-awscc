@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSyncJobProps extends cdktn.TerraformMetaArguments {
     /**
     * The IAM Role that execute SyncJob.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job#sync_role CcSyncJob#sync_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job#sync_role CcSyncJob#sync_role}
     */
     readonly syncRole: string;
     /**
     * The source of the SyncJob.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job#sync_source CcSyncJob#sync_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job#sync_source CcSyncJob#sync_source}
     */
     readonly syncSource: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job#tags CcSyncJob#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job#tags CcSyncJob#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The ID of the workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job#workspace_id CcSyncJob#workspace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job#workspace_id CcSyncJob#workspace_id}
     */
     readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job awscc_iottwinmaker_sync_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job awscc_iottwinmaker_sync_job}
 */
 export class CcSyncJob extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSyncJob extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSyncJob resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSyncJob to import
-    * @param importFromId The id of the existing CcSyncJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSyncJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSyncJob to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSyncJob extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iottwinmaker_sync_job awscc_iottwinmaker_sync_job} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iottwinmaker_sync_job awscc_iottwinmaker_sync_job} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcSyncJob extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iottwinmaker_sync_job',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

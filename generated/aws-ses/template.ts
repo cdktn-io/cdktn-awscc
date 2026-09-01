@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * The tags (keys and values) associated with the email template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#tags CcTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#tags CcTemplate#tags}
     */
     readonly tags?: CcTemplate.TagProperty[] | cdktn.IResolvable;
     /**
     * The content of the email, composed of a subject line, an HTML part, and a text-only part
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#template CcTemplate#template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#template CcTemplate#template}
     */
     readonly template?: CcTemplate.TemplateProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template awscc_ses_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template awscc_ses_template}
 */
 export class CcTemplate extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTemplate to import
-    * @param importFromId The id of the existing CcTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template awscc_ses_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template awscc_ses_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -243,11 +243,11 @@ export function ccTemplateTemplatePropertyToHclTerraform(struct?: CcTemplate.Tem
 export namespace CcTemplate {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#key CcTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#key CcTemplate#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#value CcTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#value CcTemplate#value}
     */
     readonly value?: string;
 }
@@ -357,25 +357,25 @@ export interface TemplateProperty {
     /**
     * The HTML body of the email.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#html_part CcTemplate#html_part}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#html_part CcTemplate#html_part}
     */
     readonly htmlPart?: string;
     /**
     * The subject line of the email.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#subject_part CcTemplate#subject_part}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#subject_part CcTemplate#subject_part}
     */
     readonly subjectPart?: string;
     /**
     * The name of the template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#template_name CcTemplate#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#template_name CcTemplate#template_name}
     */
     readonly templateName?: string;
     /**
     * The email body that is visible to recipients whose email clients do not display HTML content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_template#text_part CcTemplate#text_part}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_template#text_part CcTemplate#text_part}
     */
     readonly textPart?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,23 +9,23 @@ export interface CcAutomatedReasoningPolicyVersionProps extends cdktn.TerraformM
     /**
     * The hash for this version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#last_updated_definition_hash CcAutomatedReasoningPolicyVersion#last_updated_definition_hash}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#last_updated_definition_hash CcAutomatedReasoningPolicyVersion#last_updated_definition_hash}
     */
     readonly lastUpdatedDefinitionHash?: string;
     /**
     * Arn of the policy 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#policy_arn CcAutomatedReasoningPolicyVersion#policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#policy_arn CcAutomatedReasoningPolicyVersion#policy_arn}
     */
     readonly policyArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#tags CcAutomatedReasoningPolicyVersion#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#tags CcAutomatedReasoningPolicyVersion#tags}
     */
     readonly tags?: CcAutomatedReasoningPolicyVersion.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version awscc_bedrock_automated_reasoning_policy_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version awscc_bedrock_automated_reasoning_policy_version}
 */
 export class CcAutomatedReasoningPolicyVersion extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcAutomatedReasoningPolicyVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAutomatedReasoningPolicyVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAutomatedReasoningPolicyVersion to import
-    * @param importFromId The id of the existing CcAutomatedReasoningPolicyVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAutomatedReasoningPolicyVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAutomatedReasoningPolicyVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcAutomatedReasoningPolicyVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version awscc_bedrock_automated_reasoning_policy_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version awscc_bedrock_automated_reasoning_policy_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcAutomatedReasoningPolicyVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_automated_reasoning_policy_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -249,13 +249,13 @@ export interface TagProperty {
     /**
     * Tag Key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#key CcAutomatedReasoningPolicyVersion#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#key CcAutomatedReasoningPolicyVersion#key}
     */
     readonly key?: string;
     /**
     * Tag Value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrock_automated_reasoning_policy_version#value CcAutomatedReasoningPolicyVersion#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_automated_reasoning_policy_version#value CcAutomatedReasoningPolicyVersion#value}
     */
     readonly value?: string;
 }

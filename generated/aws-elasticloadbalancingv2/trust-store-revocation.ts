@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcTrustStoreRevocationProps extends cdktn.TerraformMetaArgument
     /**
     * The attributes required to create a trust store revocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#revocation_contents CcTrustStoreRevocation#revocation_contents}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#revocation_contents CcTrustStoreRevocation#revocation_contents}
     */
     readonly revocationContents?: CcTrustStoreRevocation.RevocationContentProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the trust store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#trust_store_arn CcTrustStoreRevocation#trust_store_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#trust_store_arn CcTrustStoreRevocation#trust_store_arn}
     */
     readonly trustStoreArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation awscc_elasticloadbalancingv2_trust_store_revocation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation awscc_elasticloadbalancingv2_trust_store_revocation}
 */
 export class CcTrustStoreRevocation extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcTrustStoreRevocation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTrustStoreRevocation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTrustStoreRevocation to import
-    * @param importFromId The id of the existing CcTrustStoreRevocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTrustStoreRevocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTrustStoreRevocation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcTrustStoreRevocation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation awscc_elasticloadbalancingv2_trust_store_revocation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation awscc_elasticloadbalancingv2_trust_store_revocation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcTrustStoreRevocation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elasticloadbalancingv2_trust_store_revocation',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -233,19 +233,19 @@ export function ccTrustStoreRevocationTrustStoreRevocationsPropertyToHclTerrafor
 export namespace CcTrustStoreRevocation {
 export interface RevocationContentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#revocation_type CcTrustStoreRevocation#revocation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#revocation_type CcTrustStoreRevocation#revocation_type}
     */
     readonly revocationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_bucket CcTrustStoreRevocation#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_bucket CcTrustStoreRevocation#s3_bucket}
     */
     readonly s3Bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_key CcTrustStoreRevocation#s3_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_key CcTrustStoreRevocation#s3_key}
     */
     readonly s3Key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_object_version CcTrustStoreRevocation#s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticloadbalancingv2_trust_store_revocation#s3_object_version CcTrustStoreRevocation#s3_object_version}
     */
     readonly s3ObjectVersion?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEnvironmentActionsProps extends cdktn.TerraformMetaArguments 
     /**
     * The description of the Amazon DataZone environment action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#description CcEnvironmentActions#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#description CcEnvironmentActions#description}
     */
     readonly description?: string;
     /**
     * The identifier of the Amazon DataZone domain in which the environment would be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#domain_identifier CcEnvironmentActions#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#domain_identifier CcEnvironmentActions#domain_identifier}
     */
     readonly domainIdentifier?: string;
     /**
     * The identifier of the Amazon DataZone environment in which the action is taking place
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#environment_identifier CcEnvironmentActions#environment_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#environment_identifier CcEnvironmentActions#environment_identifier}
     */
     readonly environmentIdentifier?: string;
     /**
     * The ID of the Amazon DataZone environment action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#identifier CcEnvironmentActions#identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#identifier CcEnvironmentActions#identifier}
     */
     readonly identifier?: string;
     /**
     * The name of the environment action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#name CcEnvironmentActions#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#name CcEnvironmentActions#name}
     */
     readonly name: string;
     /**
     * The parameters of the environment action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#parameters CcEnvironmentActions#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#parameters CcEnvironmentActions#parameters}
     */
     readonly parameters?: CcEnvironmentActions.AwsConsoleLinkParametersProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions awscc_datazone_environment_actions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions awscc_datazone_environment_actions}
 */
 export class CcEnvironmentActions extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEnvironmentActions extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironmentActions resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironmentActions to import
-    * @param importFromId The id of the existing CcEnvironmentActions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironmentActions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironmentActions to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEnvironmentActions extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions awscc_datazone_environment_actions} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions awscc_datazone_environment_actions} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcEnvironmentActions extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datazone_environment_actions',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -314,7 +314,7 @@ export interface AwsConsoleLinkParametersProperty {
     /**
     * The URI of the console link specified as part of the environment action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_environment_actions#uri CcEnvironmentActions#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_environment_actions#uri CcEnvironmentActions#uri}
     */
     readonly uri?: string;
 }

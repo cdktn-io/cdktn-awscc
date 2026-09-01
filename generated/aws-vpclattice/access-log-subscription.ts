@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAccessLogSubscriptionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#destination_arn CcAccessLogSubscription#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#destination_arn CcAccessLogSubscription#destination_arn}
     */
     readonly destinationArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#resource_identifier CcAccessLogSubscription#resource_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#resource_identifier CcAccessLogSubscription#resource_identifier}
     */
     readonly resourceIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#service_network_log_type CcAccessLogSubscription#service_network_log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#service_network_log_type CcAccessLogSubscription#service_network_log_type}
     */
     readonly serviceNetworkLogType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#tags CcAccessLogSubscription#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#tags CcAccessLogSubscription#tags}
     */
     readonly tags?: CcAccessLogSubscription.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription awscc_vpclattice_access_log_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription awscc_vpclattice_access_log_subscription}
 */
 export class CcAccessLogSubscription extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcAccessLogSubscription extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessLogSubscription resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessLogSubscription to import
-    * @param importFromId The id of the existing CcAccessLogSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessLogSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessLogSubscription to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcAccessLogSubscription extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription awscc_vpclattice_access_log_subscription} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription awscc_vpclattice_access_log_subscription} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcAccessLogSubscription extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_vpclattice_access_log_subscription',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -256,11 +256,11 @@ export function ccAccessLogSubscriptionTagPropertyToHclTerraform(struct?: CcAcce
 export namespace CcAccessLogSubscription {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#key CcAccessLogSubscription#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#key CcAccessLogSubscription#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/vpclattice_access_log_subscription#value CcAccessLogSubscription#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_access_log_subscription#value CcAccessLogSubscription#value}
     */
     readonly value?: string;
 }

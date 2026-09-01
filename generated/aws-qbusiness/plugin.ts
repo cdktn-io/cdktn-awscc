@@ -1,47 +1,47 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPluginProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#application_id CcPlugin#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#application_id CcPlugin#application_id}
     */
     readonly applicationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#auth_configuration CcPlugin#auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#auth_configuration CcPlugin#auth_configuration}
     */
     readonly authConfiguration: CcPlugin.PluginAuthConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#custom_plugin_configuration CcPlugin#custom_plugin_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#custom_plugin_configuration CcPlugin#custom_plugin_configuration}
     */
     readonly customPluginConfiguration?: CcPlugin.CustomPluginConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#display_name CcPlugin#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#display_name CcPlugin#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#server_url CcPlugin#server_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#server_url CcPlugin#server_url}
     */
     readonly serverUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#state CcPlugin#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#state CcPlugin#state}
     */
     readonly state?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#tags CcPlugin#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#tags CcPlugin#tags}
     */
     readonly tags?: CcPlugin.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#type CcPlugin#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#type CcPlugin#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin awscc_qbusiness_plugin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin awscc_qbusiness_plugin}
 */
 export class CcPlugin extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcPlugin extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPlugin resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPlugin to import
-    * @param importFromId The id of the existing CcPlugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPlugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPlugin to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcPlugin extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin awscc_qbusiness_plugin} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin awscc_qbusiness_plugin} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcPlugin extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_qbusiness_plugin',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -617,11 +617,11 @@ export function ccPluginTagPropertyToHclTerraform(struct?: CcPlugin.TagProperty 
 export namespace CcPlugin {
 export interface BasicAuthConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#role_arn CcPlugin#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#role_arn CcPlugin#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#secret_arn CcPlugin#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#secret_arn CcPlugin#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -707,19 +707,19 @@ export class BasicAuthConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface OAuth2ClientCredentialConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#authorization_url CcPlugin#authorization_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#authorization_url CcPlugin#authorization_url}
     */
     readonly authorizationUrl?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#role_arn CcPlugin#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#role_arn CcPlugin#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#secret_arn CcPlugin#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#secret_arn CcPlugin#secret_arn}
     */
     readonly secretArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#token_url CcPlugin#token_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#token_url CcPlugin#token_url}
     */
     readonly tokenUrl?: string;
 }
@@ -849,15 +849,15 @@ export class OAuth2ClientCredentialConfigurationPropertyOutputReference extends 
 }
 export interface PluginAuthConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#basic_auth_configuration CcPlugin#basic_auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#basic_auth_configuration CcPlugin#basic_auth_configuration}
     */
     readonly basicAuthConfiguration?: BasicAuthConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#no_auth_configuration CcPlugin#no_auth_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#no_auth_configuration CcPlugin#no_auth_configuration}
     */
     readonly noAuthConfiguration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#o_auth_2_client_credential_configuration CcPlugin#o_auth_2_client_credential_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#o_auth_2_client_credential_configuration CcPlugin#o_auth_2_client_credential_configuration}
     */
     readonly oAuth2ClientCredentialConfiguration?: OAuth2ClientCredentialConfigurationProperty;
 }
@@ -965,11 +965,11 @@ export class PluginAuthConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface S3Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#bucket CcPlugin#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#bucket CcPlugin#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#key CcPlugin#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#key CcPlugin#key}
     */
     readonly key?: string;
 }
@@ -1055,11 +1055,11 @@ export class S3PropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface APISchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#payload CcPlugin#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#payload CcPlugin#payload}
     */
     readonly payload?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#s3 CcPlugin#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#s3 CcPlugin#s3}
     */
     readonly s3?: S3Property;
 }
@@ -1145,15 +1145,15 @@ export class APISchemaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CustomPluginConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#api_schema CcPlugin#api_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#api_schema CcPlugin#api_schema}
     */
     readonly apiSchema?: APISchemaProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#api_schema_type CcPlugin#api_schema_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#api_schema_type CcPlugin#api_schema_type}
     */
     readonly apiSchemaType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#description CcPlugin#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#description CcPlugin#description}
     */
     readonly description?: string;
 }
@@ -1261,11 +1261,11 @@ export class CustomPluginConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#key CcPlugin#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#key CcPlugin#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_plugin#value CcPlugin#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_plugin#value CcPlugin#value}
     */
     readonly value?: string;
 }

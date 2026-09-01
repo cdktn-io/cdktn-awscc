@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcSchemaVersionProps extends cdktn.TerraformMetaArguments {
     /**
     * Identifier for the schema where the schema version will be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#schema CcSchemaVersion#schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#schema CcSchemaVersion#schema}
     */
     readonly schema: CcSchemaVersion.SchemaProperty;
     /**
     * Complete definition of the schema in plain-text.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#schema_definition CcSchemaVersion#schema_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#schema_definition CcSchemaVersion#schema_definition}
     */
     readonly schemaDefinition: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version awscc_glue_schema_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version awscc_glue_schema_version}
 */
 export class CcSchemaVersion extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcSchemaVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSchemaVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSchemaVersion to import
-    * @param importFromId The id of the existing CcSchemaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSchemaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSchemaVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcSchemaVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version awscc_glue_schema_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version awscc_glue_schema_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcSchemaVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_schema_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -195,19 +195,19 @@ export interface SchemaProperty {
     /**
     * Name of the registry to identify where the Schema is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#registry_name CcSchemaVersion#registry_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#registry_name CcSchemaVersion#registry_name}
     */
     readonly registryName?: string;
     /**
     * Amazon Resource Name for the Schema. This attribute can be used to uniquely represent the Schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#schema_arn CcSchemaVersion#schema_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#schema_arn CcSchemaVersion#schema_arn}
     */
     readonly schemaArn?: string;
     /**
     * Name of the schema. This parameter requires RegistryName to be provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_schema_version#schema_name CcSchemaVersion#schema_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_schema_version#schema_name CcSchemaVersion#schema_name}
     */
     readonly schemaName?: string;
 }

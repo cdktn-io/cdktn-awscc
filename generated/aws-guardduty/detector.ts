@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDetectorProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#data_sources CcDetector#data_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#data_sources CcDetector#data_sources}
     */
     readonly dataSources?: CcDetector.CFNDataSourceConfigurationsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#enable CcDetector#enable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#enable CcDetector#enable}
     */
     readonly enable: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#features CcDetector#features}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#features CcDetector#features}
     */
     readonly features?: CcDetector.CFNFeatureConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#finding_publishing_frequency CcDetector#finding_publishing_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#finding_publishing_frequency CcDetector#finding_publishing_frequency}
     */
     readonly findingPublishingFrequency?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#tags CcDetector#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#tags CcDetector#tags}
     */
     readonly tags?: CcDetector.TagItemProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector awscc_guardduty_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector awscc_guardduty_detector}
 */
 export class CcDetector extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcDetector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDetector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDetector to import
-    * @param importFromId The id of the existing CcDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDetector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcDetector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector awscc_guardduty_detector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector awscc_guardduty_detector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcDetector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_guardduty_detector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -544,7 +544,7 @@ export function ccDetectorTagItemPropertyToHclTerraform(struct?: CcDetector.TagI
 export namespace CcDetector {
 export interface CFNKubernetesAuditLogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#enable CcDetector#enable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#enable CcDetector#enable}
     */
     readonly enable?: boolean | cdktn.IResolvable;
 }
@@ -608,7 +608,7 @@ export class CFNKubernetesAuditLogsConfigurationPropertyOutputReference extends 
 }
 export interface CFNKubernetesConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#audit_logs CcDetector#audit_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#audit_logs CcDetector#audit_logs}
     */
     readonly auditLogs?: CFNKubernetesAuditLogsConfigurationProperty;
 }
@@ -672,7 +672,7 @@ export class CFNKubernetesConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface CFNScanEc2InstanceWithFindingsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#ebs_volumes CcDetector#ebs_volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#ebs_volumes CcDetector#ebs_volumes}
     */
     readonly ebsVolumes?: boolean | cdktn.IResolvable;
 }
@@ -736,7 +736,7 @@ export class CFNScanEc2InstanceWithFindingsConfigurationPropertyOutputReference 
 }
 export interface CFNMalwareProtectionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#scan_ec_2_instance_with_findings CcDetector#scan_ec_2_instance_with_findings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#scan_ec_2_instance_with_findings CcDetector#scan_ec_2_instance_with_findings}
     */
     readonly scanEc2InstanceWithFindings?: CFNScanEc2InstanceWithFindingsConfigurationProperty;
 }
@@ -800,7 +800,7 @@ export class CFNMalwareProtectionConfigurationPropertyOutputReference extends cd
 }
 export interface CFNS3LogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#enable CcDetector#enable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#enable CcDetector#enable}
     */
     readonly enable?: boolean | cdktn.IResolvable;
 }
@@ -864,15 +864,15 @@ export class CFNS3LogsConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface CFNDataSourceConfigurationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#kubernetes CcDetector#kubernetes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#kubernetes CcDetector#kubernetes}
     */
     readonly kubernetes?: CFNKubernetesConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#malware_protection CcDetector#malware_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#malware_protection CcDetector#malware_protection}
     */
     readonly malwareProtection?: CFNMalwareProtectionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#s3_logs CcDetector#s3_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#s3_logs CcDetector#s3_logs}
     */
     readonly s3Logs?: CFNS3LogsConfigurationProperty;
 }
@@ -980,11 +980,11 @@ export class CFNDataSourceConfigurationsPropertyOutputReference extends cdktn.Co
 }
 export interface CFNFeatureAdditionalConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#name CcDetector#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#name CcDetector#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#status CcDetector#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#status CcDetector#status}
     */
     readonly status?: string;
 }
@@ -1092,15 +1092,15 @@ export class CFNFeatureAdditionalConfigurationPropertyList extends cdktn.Complex
 }
 export interface CFNFeatureConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#additional_configuration CcDetector#additional_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#additional_configuration CcDetector#additional_configuration}
     */
     readonly additionalConfiguration?: CFNFeatureAdditionalConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#name CcDetector#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#name CcDetector#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#status CcDetector#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#status CcDetector#status}
     */
     readonly status?: string;
 }
@@ -1230,11 +1230,11 @@ export class CFNFeatureConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface TagItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#key CcDetector#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#key CcDetector#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/guardduty_detector#value CcDetector#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_detector#value CcDetector#value}
     */
     readonly value?: string;
 }

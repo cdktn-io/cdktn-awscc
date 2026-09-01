@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCertificateProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#ca_certificate_pem CcCertificate#ca_certificate_pem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#ca_certificate_pem CcCertificate#ca_certificate_pem}
     */
     readonly caCertificatePem?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#certificate_mode CcCertificate#certificate_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#certificate_mode CcCertificate#certificate_mode}
     */
     readonly certificateMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#certificate_pem CcCertificate#certificate_pem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#certificate_pem CcCertificate#certificate_pem}
     */
     readonly certificatePem?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#certificate_signing_request CcCertificate#certificate_signing_request}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#certificate_signing_request CcCertificate#certificate_signing_request}
     */
     readonly certificateSigningRequest?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#status CcCertificate#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#status CcCertificate#status}
     */
     readonly status: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate awscc_iot_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate awscc_iot_certificate}
 */
 export class CcCertificate extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCertificate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCertificate to import
-    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCertificate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_certificate awscc_iot_certificate} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_certificate awscc_iot_certificate} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcCertificate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_certificate',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

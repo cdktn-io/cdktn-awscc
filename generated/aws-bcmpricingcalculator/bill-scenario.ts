@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcBillScenarioProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the cost category group sharing preference
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#cost_category_group_sharing_preference_arn CcBillScenario#cost_category_group_sharing_preference_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#cost_category_group_sharing_preference_arn CcBillScenario#cost_category_group_sharing_preference_arn}
     */
     readonly costCategoryGroupSharingPreferenceArn?: string;
     /**
     * The timestamp when the bill scenario expires
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#expires_at CcBillScenario#expires_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#expires_at CcBillScenario#expires_at}
     */
     readonly expiresAt?: string;
     /**
     * The group sharing preference for the bill scenario
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#group_sharing_preference CcBillScenario#group_sharing_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#group_sharing_preference CcBillScenario#group_sharing_preference}
     */
     readonly groupSharingPreference?: string;
     /**
     * The name of the bill scenario
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#name CcBillScenario#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#name CcBillScenario#name}
     */
     readonly name?: string;
     /**
     * An array of key-value pairs to apply to this resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#tags CcBillScenario#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#tags CcBillScenario#tags}
     */
     readonly tags?: CcBillScenario.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario awscc_bcmpricingcalculator_bill_scenario}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario awscc_bcmpricingcalculator_bill_scenario}
 */
 export class CcBillScenario extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcBillScenario extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBillScenario resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBillScenario to import
-    * @param importFromId The id of the existing CcBillScenario that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBillScenario that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBillScenario to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcBillScenario extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario awscc_bcmpricingcalculator_bill_scenario} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario awscc_bcmpricingcalculator_bill_scenario} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcBillScenario extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bcmpricingcalculator_bill_scenario',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -367,11 +367,11 @@ export class BillIntervalPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#key CcBillScenario#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#key CcBillScenario#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bcmpricingcalculator_bill_scenario#value CcBillScenario#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bcmpricingcalculator_bill_scenario#value CcBillScenario#value}
     */
     readonly value?: string;
 }

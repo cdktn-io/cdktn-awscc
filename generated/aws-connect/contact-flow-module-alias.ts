@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcContactFlowModuleAliasProps extends cdktn.TerraformMetaArgume
     /**
     * The identifier of the contact flow module (ARN) this alias is tied to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias#contact_flow_module_id CcContactFlowModuleAlias#contact_flow_module_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias#contact_flow_module_id CcContactFlowModuleAlias#contact_flow_module_id}
     */
     readonly contactFlowModuleId: string;
     /**
     * The version number of the contact flow module this alias points to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias#contact_flow_module_version CcContactFlowModuleAlias#contact_flow_module_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias#contact_flow_module_version CcContactFlowModuleAlias#contact_flow_module_version}
     */
     readonly contactFlowModuleVersion: number;
     /**
     * The description of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias#description CcContactFlowModuleAlias#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias#description CcContactFlowModuleAlias#description}
     */
     readonly description?: string;
     /**
     * The name of the alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias#name CcContactFlowModuleAlias#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias#name CcContactFlowModuleAlias#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias awscc_connect_contact_flow_module_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias awscc_connect_contact_flow_module_alias}
 */
 export class CcContactFlowModuleAlias extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcContactFlowModuleAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcContactFlowModuleAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcContactFlowModuleAlias to import
-    * @param importFromId The id of the existing CcContactFlowModuleAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcContactFlowModuleAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcContactFlowModuleAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcContactFlowModuleAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_contact_flow_module_alias awscc_connect_contact_flow_module_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_contact_flow_module_alias awscc_connect_contact_flow_module_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcContactFlowModuleAlias extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_contact_flow_module_alias',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

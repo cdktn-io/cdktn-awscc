@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcDataCatalogProps extends cdktn.TerraformMetaArguments {
     /**
     * The type of connection for a FEDERATED data catalog
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#connection_type CcDataCatalog#connection_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#connection_type CcDataCatalog#connection_type}
     */
     readonly connectionType?: string;
     /**
     * A description of the data catalog to be created. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#description CcDataCatalog#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#description CcDataCatalog#description}
     */
     readonly description?: string;
     /**
     * Text of the error that occurred during data catalog creation or deletion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#error CcDataCatalog#error}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#error CcDataCatalog#error}
     */
     readonly error?: string;
     /**
     * The name of the data catalog to create. The catalog name must be unique for the AWS account and can use a maximum of 128 alphanumeric, underscore, at sign, or hyphen characters. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#name CcDataCatalog#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#name CcDataCatalog#name}
     */
     readonly name: string;
     /**
     * Specifies the Lambda function or functions to use for creating the data catalog. This is a mapping whose values depend on the catalog type. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#parameters CcDataCatalog#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#parameters CcDataCatalog#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
     * The status of the creation or deletion of the data catalog. LAMBDA, GLUE, and HIVE data catalog types are created synchronously. Their status is either CREATE_COMPLETE or CREATE_FAILED. The FEDERATED data catalog type is created asynchronously.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#status CcDataCatalog#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#status CcDataCatalog#status}
     */
     readonly status?: string;
     /**
     * A list of comma separated tags to add to the data catalog that is created. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#tags CcDataCatalog#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#tags CcDataCatalog#tags}
     */
     readonly tags?: CcDataCatalog.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of data catalog to create: LAMBDA for a federated catalog, GLUE for AWS Glue Catalog, or HIVE for an external hive metastore. FEDERATED is a federated catalog for which Athena creates the connection and the Lambda function for you based on the parameters that you pass.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#type CcDataCatalog#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#type CcDataCatalog#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog awscc_athena_data_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog awscc_athena_data_catalog}
 */
 export class CcDataCatalog extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcDataCatalog extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataCatalog resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataCatalog to import
-    * @param importFromId The id of the existing CcDataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataCatalog to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcDataCatalog extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog awscc_athena_data_catalog} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog awscc_athena_data_catalog} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcDataCatalog extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_athena_data_catalog',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -361,11 +361,11 @@ export function ccDataCatalogTagPropertyToHclTerraform(struct?: CcDataCatalog.Ta
 export namespace CcDataCatalog {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#key CcDataCatalog#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#key CcDataCatalog#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/athena_data_catalog#value CcDataCatalog#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/athena_data_catalog#value CcDataCatalog#value}
     */
     readonly value?: string;
 }

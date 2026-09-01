@@ -1,41 +1,41 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRunGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#max_cpus CcRunGroup#max_cpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#max_cpus CcRunGroup#max_cpus}
     */
     readonly maxCpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#max_duration CcRunGroup#max_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#max_duration CcRunGroup#max_duration}
     */
     readonly maxDuration?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#max_gpus CcRunGroup#max_gpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#max_gpus CcRunGroup#max_gpus}
     */
     readonly maxGpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#max_runs CcRunGroup#max_runs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#max_runs CcRunGroup#max_runs}
     */
     readonly maxRuns?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#name CcRunGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#name CcRunGroup#name}
     */
     readonly name?: string;
     /**
     * A map of resource tags
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#tags CcRunGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#tags CcRunGroup#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group awscc_omics_run_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group awscc_omics_run_group}
 */
 export class CcRunGroup extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcRunGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRunGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRunGroup to import
-    * @param importFromId The id of the existing CcRunGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRunGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRunGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcRunGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/omics_run_group awscc_omics_run_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_group awscc_omics_run_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class CcRunGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_omics_run_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

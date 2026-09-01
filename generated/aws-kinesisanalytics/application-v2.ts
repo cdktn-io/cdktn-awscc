@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcApplicationV2Props extends cdktn.TerraformMetaArguments {
     /**
     * Use this parameter to configure the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_configuration CcApplicationV2#application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_configuration CcApplicationV2#application_configuration}
     */
     readonly applicationConfiguration?: CcApplicationV2.ApplicationConfigurationProperty;
     /**
     * The description of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_description CcApplicationV2#application_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_description CcApplicationV2#application_description}
     */
     readonly applicationDescription?: string;
     /**
     * Used to configure start of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_configuration CcApplicationV2#application_maintenance_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_configuration CcApplicationV2#application_maintenance_configuration}
     */
     readonly applicationMaintenanceConfiguration?: CcApplicationV2.ApplicationMaintenanceConfigurationProperty;
     /**
     * To create a Kinesis Data Analytics Studio notebook, you must set the mode to `INTERACTIVE`. However, for a Kinesis Data Analytics for Apache Flink application, the mode is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_mode CcApplicationV2#application_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_mode CcApplicationV2#application_mode}
     */
     readonly applicationMode?: string;
     /**
     * The name of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_name CcApplicationV2#application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_name CcApplicationV2#application_name}
     */
     readonly applicationName?: string;
     /**
     * Specifies run configuration (start parameters) of a Kinesis Data Analytics application. Evaluated on update for RUNNING applications an only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#run_configuration CcApplicationV2#run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#run_configuration CcApplicationV2#run_configuration}
     */
     readonly runConfiguration?: CcApplicationV2.RunConfigurationProperty;
     /**
     * The runtime environment for the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#runtime_environment CcApplicationV2#runtime_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#runtime_environment CcApplicationV2#runtime_environment}
     */
     readonly runtimeEnvironment: string;
     /**
     * Specifies the IAM role that the application uses to access external resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#service_execution_role CcApplicationV2#service_execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#service_execution_role CcApplicationV2#service_execution_role}
     */
     readonly serviceExecutionRole: string;
     /**
     * A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#tags CcApplicationV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#tags CcApplicationV2#tags}
     */
     readonly tags?: CcApplicationV2.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application}
 */
 export class CcApplicationV2 extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplicationV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplicationV2 to import
-    * @param importFromId The id of the existing CcApplicationV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplicationV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplicationV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_kinesisanalyticsv2_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1943,19 +1943,19 @@ export interface S3ContentLocationProperty {
     /**
     * The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The file key for the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
     */
     readonly fileKey?: string;
     /**
     * The version of the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
     */
     readonly objectVersion?: string;
 }
@@ -2065,19 +2065,19 @@ export interface CodeContentProperty {
     /**
     * Information about the Amazon S3 bucket that contains the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: S3ContentLocationProperty;
     /**
     * The text-format code for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#text_content CcApplicationV2#text_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#text_content CcApplicationV2#text_content}
     */
     readonly textContent?: string;
     /**
     * The zip-format code for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#zip_file_content CcApplicationV2#zip_file_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#zip_file_content CcApplicationV2#zip_file_content}
     */
     readonly zipFileContent?: string;
 }
@@ -2187,13 +2187,13 @@ export interface ApplicationCodeConfigurationProperty {
     /**
     * The location and type of the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#code_content CcApplicationV2#code_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#code_content CcApplicationV2#code_content}
     */
     readonly codeContent?: CodeContentProperty;
     /**
     * Specifies whether the code content is in text or zip format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#code_content_type CcApplicationV2#code_content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#code_content_type CcApplicationV2#code_content_type}
     */
     readonly codeContentType?: string;
 }
@@ -2281,13 +2281,13 @@ export interface ApplicationEncryptionConfigurationProperty {
     /**
     * KMS KeyId. Can be either key uuid or full key arn or key alias arn or short key alias
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#key_id CcApplicationV2#key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key_id CcApplicationV2#key_id}
     */
     readonly keyId?: string;
     /**
     * Specifies whether application data is encrypted using service key: AWS_OWNED_KEY or customer key: CUSTOMER_MANAGED_KEY
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#key_type CcApplicationV2#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key_type CcApplicationV2#key_type}
     */
     readonly keyType?: string;
 }
@@ -2375,7 +2375,7 @@ export interface ApplicationSnapshotConfigurationProperty {
     /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#snapshots_enabled CcApplicationV2#snapshots_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#snapshots_enabled CcApplicationV2#snapshots_enabled}
     */
     readonly snapshotsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2441,7 +2441,7 @@ export interface ApplicationSystemRollbackConfigurationProperty {
     /**
     * Describes whether system initiated rollbacks are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#rollback_enabled CcApplicationV2#rollback_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#rollback_enabled CcApplicationV2#rollback_enabled}
     */
     readonly rollbackEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2507,13 +2507,13 @@ export interface PropertyGroupProperty {
     /**
     * Describes the key of an application execution property key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#property_group_id CcApplicationV2#property_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_group_id CcApplicationV2#property_group_id}
     */
     readonly propertyGroupId?: string;
     /**
     * Describes the value of an application execution property key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#property_map CcApplicationV2#property_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_map CcApplicationV2#property_map}
     */
     readonly propertyMap?: { [key: string]: string };
 }
@@ -2623,7 +2623,7 @@ export interface EnvironmentPropertiesProperty {
     /**
     * Describes the execution property groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#property_groups CcApplicationV2#property_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_groups CcApplicationV2#property_groups}
     */
     readonly propertyGroups?: PropertyGroupProperty[] | cdktn.IResolvable;
 }
@@ -2689,25 +2689,25 @@ export interface CheckpointConfigurationProperty {
     /**
     * Describes the interval in milliseconds between checkpoint operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#checkpoint_interval CcApplicationV2#checkpoint_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpoint_interval CcApplicationV2#checkpoint_interval}
     */
     readonly checkpointInterval?: number;
     /**
     * Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#checkpointing_enabled CcApplicationV2#checkpointing_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpointing_enabled CcApplicationV2#checkpointing_enabled}
     */
     readonly checkpointingEnabled?: boolean | cdktn.IResolvable;
     /**
     * Describes whether the application uses Kinesis Data Analytics' default checkpointing behavior. You must set this property to `CUSTOM` in order to set the `CheckpointingEnabled`, `CheckpointInterval`, or `MinPauseBetweenCheckpoints` parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start. If a checkpoint operation takes longer than the CheckpointInterval, the application otherwise performs continual checkpoint operations. For more information, see Tuning Checkpointing in the Apache Flink Documentation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#min_pause_between_checkpoints CcApplicationV2#min_pause_between_checkpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#min_pause_between_checkpoints CcApplicationV2#min_pause_between_checkpoints}
     */
     readonly minPauseBetweenCheckpoints?: number;
 }
@@ -2839,19 +2839,19 @@ export interface MonitoringConfigurationProperty {
     /**
     * Describes whether to use the default CloudWatch logging configuration for an application. You must set this property to CUSTOM in order to set the LogLevel or MetricsLevel parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the verbosity of the CloudWatch Logs for an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
     */
     readonly logLevel?: string;
     /**
     * Describes the granularity of the CloudWatch Logs for an application. The Parallelism level is not recommended for applications with a Parallelism over 64 due to excessive costs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#metrics_level CcApplicationV2#metrics_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#metrics_level CcApplicationV2#metrics_level}
     */
     readonly metricsLevel?: string;
 }
@@ -2961,25 +2961,25 @@ export interface ParallelismConfigurationProperty {
     /**
     * Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#auto_scaling_enabled CcApplicationV2#auto_scaling_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#auto_scaling_enabled CcApplicationV2#auto_scaling_enabled}
     */
     readonly autoScalingEnabled?: boolean | cdktn.IResolvable;
     /**
     * Describes whether the application uses the default parallelism for the Kinesis Data Analytics service. You must set this property to `CUSTOM` in order to change your application's `AutoScalingEnabled`, `Parallelism`, or `ParallelismPerKPU` properties.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the initial number of parallel tasks that a Java-based Kinesis Data Analytics application can perform. The Kinesis Data Analytics service can increase this number automatically if ParallelismConfiguration:AutoScalingEnabled is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#parallelism CcApplicationV2#parallelism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism CcApplicationV2#parallelism}
     */
     readonly parallelism?: number;
     /**
     * Describes the number of parallel tasks that a Java-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application. For more information about KPUs, see Amazon Kinesis Data Analytics Pricing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#parallelism_per_kpu CcApplicationV2#parallelism_per_kpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism_per_kpu CcApplicationV2#parallelism_per_kpu}
     */
     readonly parallelismPerKpu?: number;
 }
@@ -3111,19 +3111,19 @@ export interface FlinkApplicationConfigurationProperty {
     /**
     * Describes an application's checkpointing configuration. Checkpointing is the process of persisting application state for fault tolerance. For more information, see Checkpoints for Fault Tolerance in the Apache Flink Documentation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#checkpoint_configuration CcApplicationV2#checkpoint_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpoint_configuration CcApplicationV2#checkpoint_configuration}
     */
     readonly checkpointConfiguration?: CheckpointConfigurationProperty;
     /**
     * Describes configuration parameters for Amazon CloudWatch logging for an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
     */
     readonly monitoringConfiguration?: MonitoringConfigurationProperty;
     /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#parallelism_configuration CcApplicationV2#parallelism_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism_configuration CcApplicationV2#parallelism_configuration}
     */
     readonly parallelismConfiguration?: ParallelismConfigurationProperty;
 }
@@ -3233,7 +3233,7 @@ export interface InputParallelismProperty {
     /**
     * The number of in-application streams to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#count CcApplicationV2#count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#count CcApplicationV2#count}
     */
     readonly count?: number;
 }
@@ -3299,7 +3299,7 @@ export interface InputLambdaProcessorProperty {
     /**
     * The ARN of the Amazon Lambda function that operates on records in the stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -3365,7 +3365,7 @@ export interface InputProcessingConfigurationProperty {
     /**
     * The InputLambdaProcessor that is used to preprocess the records in the stream before being processed by your application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#input_lambda_processor CcApplicationV2#input_lambda_processor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_lambda_processor CcApplicationV2#input_lambda_processor}
     */
     readonly inputLambdaProcessor?: InputLambdaProcessorProperty;
 }
@@ -3431,19 +3431,19 @@ export interface RecordColumnProperty {
     /**
     * A reference to the data element in the streaming input or the reference data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#mapping CcApplicationV2#mapping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#mapping CcApplicationV2#mapping}
     */
     readonly mapping?: string;
     /**
     * The name of the column that is created in the in-application input stream or reference table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#name CcApplicationV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#name CcApplicationV2#name}
     */
     readonly name?: string;
     /**
     * The type of column created in the in-application input stream or reference table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#sql_type CcApplicationV2#sql_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#sql_type CcApplicationV2#sql_type}
     */
     readonly sqlType?: string;
 }
@@ -3575,13 +3575,13 @@ export interface CSVMappingParametersProperty {
     /**
     * The column delimiter. For example, in a CSV format, a comma (",") is the typical column delimiter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_column_delimiter CcApplicationV2#record_column_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_column_delimiter CcApplicationV2#record_column_delimiter}
     */
     readonly recordColumnDelimiter?: string;
     /**
     * The row delimiter. For example, in a CSV format, '\n' is the typical row delimiter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_row_delimiter CcApplicationV2#record_row_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_row_delimiter CcApplicationV2#record_row_delimiter}
     */
     readonly recordRowDelimiter?: string;
 }
@@ -3669,7 +3669,7 @@ export interface JSONMappingParametersProperty {
     /**
     * The path to the top-level parent that contains the records.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_row_path CcApplicationV2#record_row_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_row_path CcApplicationV2#record_row_path}
     */
     readonly recordRowPath?: string;
 }
@@ -3735,13 +3735,13 @@ export interface MappingParametersProperty {
     /**
     * Provides additional mapping information when the record format uses delimiters (for example, CSV).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#csv_mapping_parameters CcApplicationV2#csv_mapping_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#csv_mapping_parameters CcApplicationV2#csv_mapping_parameters}
     */
     readonly csvMappingParameters?: CSVMappingParametersProperty;
     /**
     * Provides additional mapping information when JSON is the record format on the streaming source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#json_mapping_parameters CcApplicationV2#json_mapping_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#json_mapping_parameters CcApplicationV2#json_mapping_parameters}
     */
     readonly jsonMappingParameters?: JSONMappingParametersProperty;
 }
@@ -3829,13 +3829,13 @@ export interface RecordFormatProperty {
     /**
     * When you configure application input at the time of creating or updating an application, provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#mapping_parameters CcApplicationV2#mapping_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#mapping_parameters CcApplicationV2#mapping_parameters}
     */
     readonly mappingParameters?: MappingParametersProperty;
     /**
     * The type of record format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_format_type CcApplicationV2#record_format_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_format_type CcApplicationV2#record_format_type}
     */
     readonly recordFormatType?: string;
 }
@@ -3923,19 +3923,19 @@ export interface InputSchemaProperty {
     /**
     * A list of `RecordColumn` objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_columns CcApplicationV2#record_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_columns CcApplicationV2#record_columns}
     */
     readonly recordColumns?: RecordColumnProperty[] | cdktn.IResolvable;
     /**
     * Specifies the encoding of the records in the streaming source. For example, UTF-8.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_encoding CcApplicationV2#record_encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_encoding CcApplicationV2#record_encoding}
     */
     readonly recordEncoding?: string;
     /**
     * Specifies the format of the records on the streaming source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#record_format CcApplicationV2#record_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_format CcApplicationV2#record_format}
     */
     readonly recordFormat?: RecordFormatProperty;
 }
@@ -4045,7 +4045,7 @@ export interface KinesisFirehoseInputProperty {
     /**
     * The Amazon Resource Name (ARN) of the delivery stream.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -4111,7 +4111,7 @@ export interface KinesisStreamsInputProperty {
     /**
     * The ARN of the input Kinesis data stream to read.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -4177,37 +4177,37 @@ export interface InputProperty {
     /**
     * Describes the number of in-application streams to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#input_parallelism CcApplicationV2#input_parallelism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_parallelism CcApplicationV2#input_parallelism}
     */
     readonly inputParallelism?: InputParallelismProperty;
     /**
     * The InputProcessingConfiguration for the input. An input processor transforms records as they are received from the stream, before the application's SQL code executes. Currently, the only input processing configuration available is InputLambdaProcessor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#input_processing_configuration CcApplicationV2#input_processing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_processing_configuration CcApplicationV2#input_processing_configuration}
     */
     readonly inputProcessingConfiguration?: InputProcessingConfigurationProperty;
     /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#input_schema CcApplicationV2#input_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_schema CcApplicationV2#input_schema}
     */
     readonly inputSchema?: InputSchemaProperty;
     /**
     * If the streaming source is an Amazon Kinesis Data Firehose delivery stream, identifies the delivery stream's ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#kinesis_firehose_input CcApplicationV2#kinesis_firehose_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#kinesis_firehose_input CcApplicationV2#kinesis_firehose_input}
     */
     readonly kinesisFirehoseInput?: KinesisFirehoseInputProperty;
     /**
     * If the streaming source is an Amazon Kinesis data stream, identifies the stream's Amazon Resource Name (ARN).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#kinesis_streams_input CcApplicationV2#kinesis_streams_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#kinesis_streams_input CcApplicationV2#kinesis_streams_input}
     */
     readonly kinesisStreamsInput?: KinesisStreamsInputProperty;
     /**
     * The name prefix to use when creating an in-application stream. Suppose that you specify a prefix `"MyInApplicationStream"`. Kinesis Data Analytics then creates one or more (as per the InputParallelism count you specified) in-application streams with the names `"MyInApplicationStream_001"`, `"MyInApplicationStream_002"`, and so on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#name_prefix CcApplicationV2#name_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#name_prefix CcApplicationV2#name_prefix}
     */
     readonly namePrefix?: string;
 }
@@ -4405,7 +4405,7 @@ export interface SqlApplicationConfigurationProperty {
     /**
     * The array of Input objects describing the input streams used by the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#inputs CcApplicationV2#inputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#inputs CcApplicationV2#inputs}
     */
     readonly inputs?: InputProperty[] | cdktn.IResolvable;
 }
@@ -4471,13 +4471,13 @@ export interface VpcConfigurationProperty {
     /**
     * The array of SecurityGroup IDs used by the VPC configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#security_group_ids CcApplicationV2#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#security_group_ids CcApplicationV2#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The array of Subnet IDs used by the VPC configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#subnet_ids CcApplicationV2#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#subnet_ids CcApplicationV2#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -4587,7 +4587,7 @@ export interface GlueDataCatalogConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#database_arn CcApplicationV2#database_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#database_arn CcApplicationV2#database_arn}
     */
     readonly databaseArn?: string;
 }
@@ -4653,7 +4653,7 @@ export interface CatalogConfigurationProperty {
     /**
     * The configuration parameters for the default Amazon Glue database. You use this database for Apache Flink SQL queries and table API transforms that you write in a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#glue_data_catalog_configuration CcApplicationV2#glue_data_catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#glue_data_catalog_configuration CcApplicationV2#glue_data_catalog_configuration}
     */
     readonly glueDataCatalogConfiguration?: GlueDataCatalogConfigurationProperty;
 }
@@ -4719,19 +4719,19 @@ export interface MavenReferenceProperty {
     /**
     * The artifact ID of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#artifact_id CcApplicationV2#artifact_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#artifact_id CcApplicationV2#artifact_id}
     */
     readonly artifactId?: string;
     /**
     * The group ID of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#group_id CcApplicationV2#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#group_id CcApplicationV2#group_id}
     */
     readonly groupId?: string;
     /**
     * The version of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#version CcApplicationV2#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#version CcApplicationV2#version}
     */
     readonly version?: string;
 }
@@ -4841,19 +4841,19 @@ export interface ApplicationConfigurationZeppelinApplicationConfigurationCustomA
     /**
     * The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The file key for the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
     */
     readonly fileKey?: string;
     /**
     * The version of the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
     */
     readonly objectVersion?: string;
 }
@@ -4963,19 +4963,19 @@ export interface CustomArtifactConfigurationProperty {
     /**
     * Set this to either `UDF` or `DEPENDENCY_JAR`. `UDF` stands for user-defined functions. This type of artifact must be in an S3 bucket. A `DEPENDENCY_JAR` can be in either Maven or an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#artifact_type CcApplicationV2#artifact_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#artifact_type CcApplicationV2#artifact_type}
     */
     readonly artifactType?: string;
     /**
     * The parameters required to fully specify a Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#maven_reference CcApplicationV2#maven_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#maven_reference CcApplicationV2#maven_reference}
     */
     readonly mavenReference?: MavenReferenceProperty;
     /**
     * The location of the custom artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: ApplicationConfigurationZeppelinApplicationConfigurationCustomArtifactsConfigurationS3ContentLocationProperty;
 }
@@ -5107,13 +5107,13 @@ export interface S3ContentBaseLocationProperty {
     /**
     * The base path for the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#base_path CcApplicationV2#base_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#base_path CcApplicationV2#base_path}
     */
     readonly basePath?: string;
     /**
     * The Amazon Resource Name (ARN) of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
 }
@@ -5201,7 +5201,7 @@ export interface DeployAsApplicationConfigurationProperty {
     /**
     * The description of an Amazon S3 object that contains the Amazon Data Analytics application, including the Amazon Resource Name (ARN) of the S3 bucket, the name of the Amazon S3 object that contains the data, and the version number of the Amazon S3 object that contains the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: S3ContentBaseLocationProperty;
 }
@@ -5267,7 +5267,7 @@ export interface ZeppelinMonitoringConfigurationProperty {
     /**
     * The verbosity of the CloudWatch Logs for an application. You can set it to `INFO`, `WARN`, `ERROR`, or `DEBUG`.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
     */
     readonly logLevel?: string;
 }
@@ -5333,25 +5333,25 @@ export interface ZeppelinApplicationConfigurationProperty {
     /**
     * The Amazon Glue Data Catalog that you use in queries in a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#catalog_configuration CcApplicationV2#catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#catalog_configuration CcApplicationV2#catalog_configuration}
     */
     readonly catalogConfiguration?: CatalogConfigurationProperty;
     /**
     * A list of CustomArtifactConfiguration objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#custom_artifacts_configuration CcApplicationV2#custom_artifacts_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#custom_artifacts_configuration CcApplicationV2#custom_artifacts_configuration}
     */
     readonly customArtifactsConfiguration?: CustomArtifactConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The information required to deploy a Kinesis Data Analytics Studio notebook as an application with durable state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#deploy_as_application_configuration CcApplicationV2#deploy_as_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#deploy_as_application_configuration CcApplicationV2#deploy_as_application_configuration}
     */
     readonly deployAsApplicationConfiguration?: DeployAsApplicationConfigurationProperty;
     /**
     * The monitoring configuration of a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
     */
     readonly monitoringConfiguration?: ZeppelinMonitoringConfigurationProperty;
 }
@@ -5483,55 +5483,55 @@ export interface ApplicationConfigurationProperty {
     /**
     * The code location and type parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_code_configuration CcApplicationV2#application_code_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_code_configuration CcApplicationV2#application_code_configuration}
     */
     readonly applicationCodeConfiguration?: ApplicationCodeConfigurationProperty;
     /**
     * Describes whether customer managed key is enabled and key details for customer data encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_encryption_configuration CcApplicationV2#application_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_encryption_configuration CcApplicationV2#application_encryption_configuration}
     */
     readonly applicationEncryptionConfiguration?: ApplicationEncryptionConfigurationProperty;
     /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_snapshot_configuration CcApplicationV2#application_snapshot_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_snapshot_configuration CcApplicationV2#application_snapshot_configuration}
     */
     readonly applicationSnapshotConfiguration?: ApplicationSnapshotConfigurationProperty;
     /**
     * Describes whether system initiated rollbacks are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_system_rollback_configuration CcApplicationV2#application_system_rollback_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_system_rollback_configuration CcApplicationV2#application_system_rollback_configuration}
     */
     readonly applicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfigurationProperty;
     /**
     * Describes execution properties for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#environment_properties CcApplicationV2#environment_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#environment_properties CcApplicationV2#environment_properties}
     */
     readonly environmentProperties?: EnvironmentPropertiesProperty;
     /**
     * The creation and update parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#flink_application_configuration CcApplicationV2#flink_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#flink_application_configuration CcApplicationV2#flink_application_configuration}
     */
     readonly flinkApplicationConfiguration?: FlinkApplicationConfigurationProperty;
     /**
     * The creation and update parameters for a SQL-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#sql_application_configuration CcApplicationV2#sql_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#sql_application_configuration CcApplicationV2#sql_application_configuration}
     */
     readonly sqlApplicationConfiguration?: SqlApplicationConfigurationProperty;
     /**
     * The array of descriptions of VPC configurations available to the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#vpc_configurations CcApplicationV2#vpc_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#vpc_configurations CcApplicationV2#vpc_configurations}
     */
     readonly vpcConfigurations?: VpcConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The configuration parameters for a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#zeppelin_application_configuration CcApplicationV2#zeppelin_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#zeppelin_application_configuration CcApplicationV2#zeppelin_application_configuration}
     */
     readonly zeppelinApplicationConfiguration?: ZeppelinApplicationConfigurationProperty;
 }
@@ -5773,7 +5773,7 @@ export interface ApplicationMaintenanceConfigurationProperty {
     /**
     * The start time for the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_window_start_time CcApplicationV2#application_maintenance_window_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_window_start_time CcApplicationV2#application_maintenance_window_start_time}
     */
     readonly applicationMaintenanceWindowStartTime?: string;
 }
@@ -5839,13 +5839,13 @@ export interface ApplicationRestoreConfigurationProperty {
     /**
     * Specifies how the application should be restored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_restore_type CcApplicationV2#application_restore_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_restore_type CcApplicationV2#application_restore_type}
     */
     readonly applicationRestoreType?: string;
     /**
     * The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for the ApplicationRestoreType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#snapshot_name CcApplicationV2#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#snapshot_name CcApplicationV2#snapshot_name}
     */
     readonly snapshotName?: string;
 }
@@ -5933,7 +5933,7 @@ export interface FlinkRunConfigurationProperty {
     /**
     * When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. Defaults to false. If you update your application without specifying this parameter, AllowNonRestoredState will be set to false, even if it was previously set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#allow_non_restored_state CcApplicationV2#allow_non_restored_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#allow_non_restored_state CcApplicationV2#allow_non_restored_state}
     */
     readonly allowNonRestoredState?: boolean | cdktn.IResolvable;
 }
@@ -5999,13 +5999,13 @@ export interface RunConfigurationProperty {
     /**
     * Describes the restore behavior of a restarting application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#application_restore_configuration CcApplicationV2#application_restore_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_restore_configuration CcApplicationV2#application_restore_configuration}
     */
     readonly applicationRestoreConfiguration?: ApplicationRestoreConfigurationProperty;
     /**
     * Describes the starting parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#flink_run_configuration CcApplicationV2#flink_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#flink_run_configuration CcApplicationV2#flink_run_configuration}
     */
     readonly flinkRunConfiguration?: FlinkRunConfigurationProperty;
 }
@@ -6093,13 +6093,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#key CcApplicationV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key CcApplicationV2#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 0 to 256 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kinesisanalyticsv2_application#value CcApplicationV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#value CcApplicationV2#value}
     */
     readonly value?: string;
 }

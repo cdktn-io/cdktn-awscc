@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcDBProxyEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * The identifier for the DB proxy endpoint. This name must be unique for all DB proxy endpoints owned by your AWS account in the specified AWS Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#db_proxy_endpoint_name CcDBProxyEndpoint#db_proxy_endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#db_proxy_endpoint_name CcDBProxyEndpoint#db_proxy_endpoint_name}
     */
     readonly dbProxyEndpointName: string;
     /**
     * The identifier for the proxy. This name must be unique for all proxies owned by your AWS account in the specified AWS Region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#db_proxy_name CcDBProxyEndpoint#db_proxy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#db_proxy_name CcDBProxyEndpoint#db_proxy_name}
     */
     readonly dbProxyName: string;
     /**
     * The network type of the DB proxy endpoint. The network type determines the IP version that the proxy endpoint supports.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#endpoint_network_type CcDBProxyEndpoint#endpoint_network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#endpoint_network_type CcDBProxyEndpoint#endpoint_network_type}
     */
     readonly endpointNetworkType?: string;
     /**
     * An optional set of key-value pairs to associate arbitrary data of your choosing with the DB proxy endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#tags CcDBProxyEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#tags CcDBProxyEndpoint#tags}
     */
     readonly tags?: CcDBProxyEndpoint.TagFormatProperty[] | cdktn.IResolvable;
     /**
     * A value that indicates whether the DB proxy endpoint can be used for read/write or read-only operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#target_role CcDBProxyEndpoint#target_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#target_role CcDBProxyEndpoint#target_role}
     */
     readonly targetRole?: string;
     /**
     * VPC security group IDs to associate with the new DB proxy endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#vpc_security_group_ids CcDBProxyEndpoint#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#vpc_security_group_ids CcDBProxyEndpoint#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
     /**
     * VPC subnet IDs to associate with the new DB proxy endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#vpc_subnet_ids CcDBProxyEndpoint#vpc_subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#vpc_subnet_ids CcDBProxyEndpoint#vpc_subnet_ids}
     */
     readonly vpcSubnetIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint awscc_rds_db_proxy_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint awscc_rds_db_proxy_endpoint}
 */
 export class CcDBProxyEndpoint extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcDBProxyEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBProxyEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBProxyEndpoint to import
-    * @param importFromId The id of the existing CcDBProxyEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBProxyEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBProxyEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcDBProxyEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint awscc_rds_db_proxy_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint awscc_rds_db_proxy_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcDBProxyEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rds_db_proxy_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -348,11 +348,11 @@ export function ccDBProxyEndpointTagFormatPropertyToHclTerraform(struct?: CcDBPr
 export namespace CcDBProxyEndpoint {
 export interface TagFormatProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#key CcDBProxyEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#key CcDBProxyEndpoint#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rds_db_proxy_endpoint#value CcDBProxyEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_endpoint#value CcDBProxyEndpoint#value}
     */
     readonly value?: string;
 }

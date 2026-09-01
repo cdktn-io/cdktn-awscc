@@ -1,73 +1,73 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcResponderGatewayProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#acm_certificate_arn CcResponderGateway#acm_certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#acm_certificate_arn CcResponderGateway#acm_certificate_arn}
     */
     readonly acmCertificateArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#description CcResponderGateway#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#description CcResponderGateway#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#domain_name CcResponderGateway#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#domain_name CcResponderGateway#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#gateway_type CcResponderGateway#gateway_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#gateway_type CcResponderGateway#gateway_type}
     */
     readonly gatewayType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#listener_config CcResponderGateway#listener_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#listener_config CcResponderGateway#listener_config}
     */
     readonly listenerConfig?: CcResponderGateway.ListenerConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#managed_endpoint_configuration CcResponderGateway#managed_endpoint_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#managed_endpoint_configuration CcResponderGateway#managed_endpoint_configuration}
     */
     readonly managedEndpointConfiguration?: CcResponderGateway.ManagedEndpointConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#port CcResponderGateway#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#port CcResponderGateway#port}
     */
     readonly port: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#protocol CcResponderGateway#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#protocol CcResponderGateway#protocol}
     */
     readonly protocol: string;
     /**
     * The ID of one or more security groups in order to create a gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#security_group_ids CcResponderGateway#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#security_group_ids CcResponderGateway#security_group_ids}
     */
     readonly securityGroupIds: string[];
     /**
     * The ID of one or more subnets in order to create a gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#subnet_ids CcResponderGateway#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#subnet_ids CcResponderGateway#subnet_ids}
     */
     readonly subnetIds: string[];
     /**
     * Tags to assign to the Responder Gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#tags CcResponderGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#tags CcResponderGateway#tags}
     */
     readonly tags?: CcResponderGateway.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#trust_store_configuration CcResponderGateway#trust_store_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#trust_store_configuration CcResponderGateway#trust_store_configuration}
     */
     readonly trustStoreConfiguration?: CcResponderGateway.TrustStoreConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#vpc_id CcResponderGateway#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#vpc_id CcResponderGateway#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway awscc_rtbfabric_responder_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway awscc_rtbfabric_responder_gateway}
 */
 export class CcResponderGateway extends cdktn.TerraformResource {
 
@@ -83,7 +83,7 @@ export class CcResponderGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResponderGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResponderGateway to import
-    * @param importFromId The id of the existing CcResponderGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResponderGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResponderGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -95,7 +95,7 @@ export class CcResponderGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway awscc_rtbfabric_responder_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway awscc_rtbfabric_responder_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +106,7 @@ export class CcResponderGateway extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rtbfabric_responder_gateway',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -802,7 +802,7 @@ export function ccResponderGatewayTrustStoreConfigurationPropertyToHclTerraform(
 export namespace CcResponderGateway {
 export interface ListenerConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#protocols CcResponderGateway#protocols}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#protocols CcResponderGateway#protocols}
     */
     readonly protocols?: string[];
 }
@@ -866,35 +866,35 @@ export class ListenerConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HealthCheckConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#healthy_threshold_count CcResponderGateway#healthy_threshold_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#healthy_threshold_count CcResponderGateway#healthy_threshold_count}
     */
     readonly healthyThresholdCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#interval_seconds CcResponderGateway#interval_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#interval_seconds CcResponderGateway#interval_seconds}
     */
     readonly intervalSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#path CcResponderGateway#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#path CcResponderGateway#path}
     */
     readonly path?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#port CcResponderGateway#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#port CcResponderGateway#port}
     */
     readonly port?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#protocol CcResponderGateway#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#protocol CcResponderGateway#protocol}
     */
     readonly protocol?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#status_code_matcher CcResponderGateway#status_code_matcher}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#status_code_matcher CcResponderGateway#status_code_matcher}
     */
     readonly statusCodeMatcher?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#timeout_ms CcResponderGateway#timeout_ms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#timeout_ms CcResponderGateway#timeout_ms}
     */
     readonly timeoutMs?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#unhealthy_threshold_count CcResponderGateway#unhealthy_threshold_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#unhealthy_threshold_count CcResponderGateway#unhealthy_threshold_count}
     */
     readonly unhealthyThresholdCount?: number;
 }
@@ -1112,15 +1112,15 @@ export class HealthCheckConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface AutoScalingGroupsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#auto_scaling_group_name_list CcResponderGateway#auto_scaling_group_name_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#auto_scaling_group_name_list CcResponderGateway#auto_scaling_group_name_list}
     */
     readonly autoScalingGroupNameList?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#health_check_config CcResponderGateway#health_check_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#health_check_config CcResponderGateway#health_check_config}
     */
     readonly healthCheckConfig?: HealthCheckConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#role_arn CcResponderGateway#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#role_arn CcResponderGateway#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1228,27 +1228,27 @@ export class AutoScalingGroupsConfigurationPropertyOutputReference extends cdktn
 }
 export interface EksEndpointsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#cluster_api_server_ca_certificate_chain CcResponderGateway#cluster_api_server_ca_certificate_chain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#cluster_api_server_ca_certificate_chain CcResponderGateway#cluster_api_server_ca_certificate_chain}
     */
     readonly clusterApiServerCaCertificateChain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#cluster_api_server_endpoint_uri CcResponderGateway#cluster_api_server_endpoint_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#cluster_api_server_endpoint_uri CcResponderGateway#cluster_api_server_endpoint_uri}
     */
     readonly clusterApiServerEndpointUri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#cluster_name CcResponderGateway#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#cluster_name CcResponderGateway#cluster_name}
     */
     readonly clusterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#endpoints_resource_name CcResponderGateway#endpoints_resource_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#endpoints_resource_name CcResponderGateway#endpoints_resource_name}
     */
     readonly endpointsResourceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#endpoints_resource_namespace CcResponderGateway#endpoints_resource_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#endpoints_resource_namespace CcResponderGateway#endpoints_resource_namespace}
     */
     readonly endpointsResourceNamespace?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#role_arn CcResponderGateway#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#role_arn CcResponderGateway#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1422,11 +1422,11 @@ export class EksEndpointsConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface ManagedEndpointConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#auto_scaling_groups_configuration CcResponderGateway#auto_scaling_groups_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#auto_scaling_groups_configuration CcResponderGateway#auto_scaling_groups_configuration}
     */
     readonly autoScalingGroupsConfiguration?: AutoScalingGroupsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#eks_endpoints_configuration CcResponderGateway#eks_endpoints_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#eks_endpoints_configuration CcResponderGateway#eks_endpoints_configuration}
     */
     readonly eksEndpointsConfiguration?: EksEndpointsConfigurationProperty;
 }
@@ -1514,13 +1514,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#key CcResponderGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#key CcResponderGateway#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#value CcResponderGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#value CcResponderGateway#value}
     */
     readonly value?: string;
 }
@@ -1628,7 +1628,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TrustStoreConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/rtbfabric_responder_gateway#certificate_authority_certificates CcResponderGateway#certificate_authority_certificates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rtbfabric_responder_gateway#certificate_authority_certificates CcResponderGateway#certificate_authority_certificates}
     */
     readonly certificateAuthorityCertificates?: string[];
 }

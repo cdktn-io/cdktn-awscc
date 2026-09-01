@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDataProtectionSettingsProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#additional_encryption_context CcDataProtectionSettings#additional_encryption_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#additional_encryption_context CcDataProtectionSettings#additional_encryption_context}
     */
     readonly additionalEncryptionContext?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#customer_managed_key CcDataProtectionSettings#customer_managed_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#customer_managed_key CcDataProtectionSettings#customer_managed_key}
     */
     readonly customerManagedKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#description CcDataProtectionSettings#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#description CcDataProtectionSettings#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#display_name CcDataProtectionSettings#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#display_name CcDataProtectionSettings#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#inline_redaction_configuration CcDataProtectionSettings#inline_redaction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#inline_redaction_configuration CcDataProtectionSettings#inline_redaction_configuration}
     */
     readonly inlineRedactionConfiguration?: CcDataProtectionSettings.InlineRedactionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#tags CcDataProtectionSettings#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#tags CcDataProtectionSettings#tags}
     */
     readonly tags?: CcDataProtectionSettings.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings awscc_workspacesweb_data_protection_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings awscc_workspacesweb_data_protection_settings}
 */
 export class CcDataProtectionSettings extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcDataProtectionSettings extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataProtectionSettings resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataProtectionSettings to import
-    * @param importFromId The id of the existing CcDataProtectionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataProtectionSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataProtectionSettings to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcDataProtectionSettings extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings awscc_workspacesweb_data_protection_settings} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings awscc_workspacesweb_data_protection_settings} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcDataProtectionSettings extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_workspacesweb_data_protection_settings',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -514,19 +514,19 @@ export function ccDataProtectionSettingsTagPropertyToHclTerraform(struct?: CcDat
 export namespace CcDataProtectionSettings {
 export interface CustomPatternProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#keyword_regex CcDataProtectionSettings#keyword_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#keyword_regex CcDataProtectionSettings#keyword_regex}
     */
     readonly keywordRegex?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#pattern_description CcDataProtectionSettings#pattern_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#pattern_description CcDataProtectionSettings#pattern_description}
     */
     readonly patternDescription?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#pattern_name CcDataProtectionSettings#pattern_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#pattern_name CcDataProtectionSettings#pattern_name}
     */
     readonly patternName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#pattern_regex CcDataProtectionSettings#pattern_regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#pattern_regex CcDataProtectionSettings#pattern_regex}
     */
     readonly patternRegex?: string;
 }
@@ -656,11 +656,11 @@ export class CustomPatternPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RedactionPlaceHolderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder_text CcDataProtectionSettings#redaction_place_holder_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder_text CcDataProtectionSettings#redaction_place_holder_text}
     */
     readonly redactionPlaceHolderText?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder_type CcDataProtectionSettings#redaction_place_holder_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder_type CcDataProtectionSettings#redaction_place_holder_type}
     */
     readonly redactionPlaceHolderType?: string;
 }
@@ -746,27 +746,27 @@ export class RedactionPlaceHolderPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface InlineRedactionPatternProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#built_in_pattern_id CcDataProtectionSettings#built_in_pattern_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#built_in_pattern_id CcDataProtectionSettings#built_in_pattern_id}
     */
     readonly builtInPatternId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#confidence_level CcDataProtectionSettings#confidence_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#confidence_level CcDataProtectionSettings#confidence_level}
     */
     readonly confidenceLevel?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#custom_pattern CcDataProtectionSettings#custom_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#custom_pattern CcDataProtectionSettings#custom_pattern}
     */
     readonly customPattern?: CustomPatternProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#enforced_urls CcDataProtectionSettings#enforced_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#enforced_urls CcDataProtectionSettings#enforced_urls}
     */
     readonly enforcedUrls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#exempt_urls CcDataProtectionSettings#exempt_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#exempt_urls CcDataProtectionSettings#exempt_urls}
     */
     readonly exemptUrls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder CcDataProtectionSettings#redaction_place_holder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#redaction_place_holder CcDataProtectionSettings#redaction_place_holder}
     */
     readonly redactionPlaceHolder?: RedactionPlaceHolderProperty;
 }
@@ -962,19 +962,19 @@ export class InlineRedactionPatternPropertyList extends cdktn.ComplexList {
 }
 export interface InlineRedactionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#global_confidence_level CcDataProtectionSettings#global_confidence_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#global_confidence_level CcDataProtectionSettings#global_confidence_level}
     */
     readonly globalConfidenceLevel?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#global_enforced_urls CcDataProtectionSettings#global_enforced_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#global_enforced_urls CcDataProtectionSettings#global_enforced_urls}
     */
     readonly globalEnforcedUrls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#global_exempt_urls CcDataProtectionSettings#global_exempt_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#global_exempt_urls CcDataProtectionSettings#global_exempt_urls}
     */
     readonly globalExemptUrls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#inline_redaction_patterns CcDataProtectionSettings#inline_redaction_patterns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#inline_redaction_patterns CcDataProtectionSettings#inline_redaction_patterns}
     */
     readonly inlineRedactionPatterns?: InlineRedactionPatternProperty[] | cdktn.IResolvable;
 }
@@ -1104,11 +1104,11 @@ export class InlineRedactionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#key CcDataProtectionSettings#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#key CcDataProtectionSettings#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspacesweb_data_protection_settings#value CcDataProtectionSettings#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspacesweb_data_protection_settings#value CcDataProtectionSettings#value}
     */
     readonly value?: string;
 }

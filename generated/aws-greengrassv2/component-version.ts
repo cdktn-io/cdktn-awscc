@@ -1,27 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcComponentVersionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#inline_recipe CcComponentVersion#inline_recipe}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#inline_recipe CcComponentVersion#inline_recipe}
     */
     readonly inlineRecipe?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#lambda_function CcComponentVersion#lambda_function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#lambda_function CcComponentVersion#lambda_function}
     */
     readonly lambdaFunction?: CcComponentVersion.LambdaFunctionRecipeSourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#tags CcComponentVersion#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#tags CcComponentVersion#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version awscc_greengrassv2_component_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version awscc_greengrassv2_component_version}
 */
 export class CcComponentVersion extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcComponentVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcComponentVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcComponentVersion to import
-    * @param importFromId The id of the existing CcComponentVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcComponentVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcComponentVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcComponentVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version awscc_greengrassv2_component_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version awscc_greengrassv2_component_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcComponentVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_greengrassv2_component_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -648,11 +648,11 @@ export function ccComponentVersionLambdaFunctionRecipeSourcePropertyToHclTerrafo
 export namespace CcComponentVersion {
 export interface ComponentDependencyRequirementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#dependency_type CcComponentVersion#dependency_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#dependency_type CcComponentVersion#dependency_type}
     */
     readonly dependencyType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#version_requirement CcComponentVersion#version_requirement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#version_requirement CcComponentVersion#version_requirement}
     */
     readonly versionRequirement?: string;
 }
@@ -758,11 +758,11 @@ export class ComponentDependencyRequirementPropertyMap extends cdktn.ComplexMap 
 }
 export interface LambdaEventSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#topic CcComponentVersion#topic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#topic CcComponentVersion#topic}
     */
     readonly topic?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#type CcComponentVersion#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#type CcComponentVersion#type}
     */
     readonly type?: string;
 }
@@ -870,15 +870,15 @@ export class LambdaEventSourcePropertyList extends cdktn.ComplexList {
 }
 export interface LambdaDeviceMountProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#add_group_owner CcComponentVersion#add_group_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#add_group_owner CcComponentVersion#add_group_owner}
     */
     readonly addGroupOwner?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#path CcComponentVersion#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#path CcComponentVersion#path}
     */
     readonly path?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#permission CcComponentVersion#permission}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#permission CcComponentVersion#permission}
     */
     readonly permission?: string;
 }
@@ -1008,19 +1008,19 @@ export class LambdaDeviceMountPropertyList extends cdktn.ComplexList {
 }
 export interface LambdaVolumeMountProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#add_group_owner CcComponentVersion#add_group_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#add_group_owner CcComponentVersion#add_group_owner}
     */
     readonly addGroupOwner?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#destination_path CcComponentVersion#destination_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#destination_path CcComponentVersion#destination_path}
     */
     readonly destinationPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#permission CcComponentVersion#permission}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#permission CcComponentVersion#permission}
     */
     readonly permission?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#source_path CcComponentVersion#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#source_path CcComponentVersion#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -1172,19 +1172,19 @@ export class LambdaVolumeMountPropertyList extends cdktn.ComplexList {
 }
 export interface LambdaContainerParamsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#devices CcComponentVersion#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#devices CcComponentVersion#devices}
     */
     readonly devices?: LambdaDeviceMountProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#memory_size_in_kb CcComponentVersion#memory_size_in_kb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#memory_size_in_kb CcComponentVersion#memory_size_in_kb}
     */
     readonly memorySizeInKb?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#mount_ro_sysfs CcComponentVersion#mount_ro_sysfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#mount_ro_sysfs CcComponentVersion#mount_ro_sysfs}
     */
     readonly mountRoSysfs?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#volumes CcComponentVersion#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#volumes CcComponentVersion#volumes}
     */
     readonly volumes?: LambdaVolumeMountProperty[] | cdktn.IResolvable;
 }
@@ -1314,11 +1314,11 @@ export class LambdaContainerParamsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface LambdaLinuxProcessParamsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#container_params CcComponentVersion#container_params}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#container_params CcComponentVersion#container_params}
     */
     readonly containerParams?: LambdaContainerParamsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#isolation_mode CcComponentVersion#isolation_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#isolation_mode CcComponentVersion#isolation_mode}
     */
     readonly isolationMode?: string;
 }
@@ -1404,47 +1404,47 @@ export class LambdaLinuxProcessParamsPropertyOutputReference extends cdktn.Compl
 }
 export interface LambdaExecutionParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#environment_variables CcComponentVersion#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#environment_variables CcComponentVersion#environment_variables}
     */
     readonly environmentVariables?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#event_sources CcComponentVersion#event_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#event_sources CcComponentVersion#event_sources}
     */
     readonly eventSources?: LambdaEventSourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#exec_args CcComponentVersion#exec_args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#exec_args CcComponentVersion#exec_args}
     */
     readonly execArgs?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#input_payload_encoding_type CcComponentVersion#input_payload_encoding_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#input_payload_encoding_type CcComponentVersion#input_payload_encoding_type}
     */
     readonly inputPayloadEncodingType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#linux_process_params CcComponentVersion#linux_process_params}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#linux_process_params CcComponentVersion#linux_process_params}
     */
     readonly linuxProcessParams?: LambdaLinuxProcessParamsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#max_idle_time_in_seconds CcComponentVersion#max_idle_time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#max_idle_time_in_seconds CcComponentVersion#max_idle_time_in_seconds}
     */
     readonly maxIdleTimeInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#max_instances_count CcComponentVersion#max_instances_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#max_instances_count CcComponentVersion#max_instances_count}
     */
     readonly maxInstancesCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#max_queue_size CcComponentVersion#max_queue_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#max_queue_size CcComponentVersion#max_queue_size}
     */
     readonly maxQueueSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#pinned CcComponentVersion#pinned}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#pinned CcComponentVersion#pinned}
     */
     readonly pinned?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#status_timeout_in_seconds CcComponentVersion#status_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#status_timeout_in_seconds CcComponentVersion#status_timeout_in_seconds}
     */
     readonly statusTimeoutInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#timeout_in_seconds CcComponentVersion#timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#timeout_in_seconds CcComponentVersion#timeout_in_seconds}
     */
     readonly timeoutInSeconds?: number;
 }
@@ -1728,11 +1728,11 @@ export class LambdaExecutionParametersPropertyOutputReference extends cdktn.Comp
 }
 export interface ComponentPlatformProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#attributes CcComponentVersion#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#attributes CcComponentVersion#attributes}
     */
     readonly attributes?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#name CcComponentVersion#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#name CcComponentVersion#name}
     */
     readonly name?: string;
 }
@@ -1840,27 +1840,27 @@ export class ComponentPlatformPropertyList extends cdktn.ComplexList {
 }
 export interface LambdaFunctionRecipeSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#component_dependencies CcComponentVersion#component_dependencies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#component_dependencies CcComponentVersion#component_dependencies}
     */
     readonly componentDependencies?: { [key: string]: ComponentDependencyRequirementProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#component_lambda_parameters CcComponentVersion#component_lambda_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#component_lambda_parameters CcComponentVersion#component_lambda_parameters}
     */
     readonly componentLambdaParameters?: LambdaExecutionParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#component_name CcComponentVersion#component_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#component_name CcComponentVersion#component_name}
     */
     readonly componentName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#component_platforms CcComponentVersion#component_platforms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#component_platforms CcComponentVersion#component_platforms}
     */
     readonly componentPlatforms?: ComponentPlatformProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#component_version CcComponentVersion#component_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#component_version CcComponentVersion#component_version}
     */
     readonly componentVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/greengrassv2_component_version#lambda_arn CcComponentVersion#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/greengrassv2_component_version#lambda_arn CcComponentVersion#lambda_arn}
     */
     readonly lambdaArn?: string;
 }

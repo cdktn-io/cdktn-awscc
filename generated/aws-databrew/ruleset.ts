@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcRulesetProps extends cdktn.TerraformMetaArguments {
     /**
     * Description of the Ruleset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#description CcRuleset#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#description CcRuleset#description}
     */
     readonly description?: string;
     /**
     * Name of the Ruleset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#name CcRuleset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#name CcRuleset#name}
     */
     readonly name: string;
     /**
     * List of the data quality rules in the ruleset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#rules CcRuleset#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#rules CcRuleset#rules}
     */
     readonly rules: CcRuleset.RuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#tags CcRuleset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#tags CcRuleset#tags}
     */
     readonly tags?: CcRuleset.TagProperty[] | cdktn.IResolvable;
     /**
     * Arn of the target resource (dataset) to apply the ruleset to
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#target_arn CcRuleset#target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#target_arn CcRuleset#target_arn}
     */
     readonly targetArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset awscc_databrew_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset awscc_databrew_ruleset}
 */
 export class CcRuleset extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcRuleset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRuleset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRuleset to import
-    * @param importFromId The id of the existing CcRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRuleset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcRuleset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset awscc_databrew_ruleset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset awscc_databrew_ruleset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcRuleset extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_databrew_ruleset',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -451,13 +451,13 @@ export interface ColumnSelectorProperty {
     /**
     * The name of a column from a dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#name CcRuleset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#name CcRuleset#name}
     */
     readonly name?: string;
     /**
     * A regular expression for selecting a column from a dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#regex CcRuleset#regex}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#regex CcRuleset#regex}
     */
     readonly regex?: string;
 }
@@ -567,13 +567,13 @@ export interface SubstitutionValueProperty {
     /**
     * Value or column name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#value CcRuleset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#value CcRuleset#value}
     */
     readonly value?: string;
     /**
     * Variable name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#value_reference CcRuleset#value_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#value_reference CcRuleset#value_reference}
     */
     readonly valueReference?: string;
 }
@@ -683,19 +683,19 @@ export interface ThresholdProperty {
     /**
     * Threshold type for a rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#type CcRuleset#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#type CcRuleset#type}
     */
     readonly type?: string;
     /**
     * Threshold unit for a rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#unit CcRuleset#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#unit CcRuleset#unit}
     */
     readonly unit?: string;
     /**
     * Threshold value for a rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#value CcRuleset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#value CcRuleset#value}
     */
     readonly value?: number;
 }
@@ -805,31 +805,31 @@ export interface RuleProperty {
     /**
     * Expression with rule conditions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#check_expression CcRuleset#check_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#check_expression CcRuleset#check_expression}
     */
     readonly checkExpression: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#column_selectors CcRuleset#column_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#column_selectors CcRuleset#column_selectors}
     */
     readonly columnSelectors?: ColumnSelectorProperty[] | cdktn.IResolvable;
     /**
     * Boolean value to disable/enable a rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#disabled CcRuleset#disabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#disabled CcRuleset#disabled}
     */
     readonly disabled?: boolean | cdktn.IResolvable;
     /**
     * Name of the rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#name CcRuleset#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#name CcRuleset#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#substitution_map CcRuleset#substitution_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#substitution_map CcRuleset#substitution_map}
     */
     readonly substitutionMap?: SubstitutionValueProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#threshold CcRuleset#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#threshold CcRuleset#threshold}
     */
     readonly threshold?: ThresholdProperty;
 }
@@ -1019,11 +1019,11 @@ export class RulePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#key CcRuleset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#key CcRuleset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/databrew_ruleset#value CcRuleset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/databrew_ruleset#value CcRuleset#value}
     */
     readonly value?: string;
 }

@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConnectionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#auth_parameters CcConnection#auth_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#auth_parameters CcConnection#auth_parameters}
     */
     readonly authParameters?: CcConnection.AuthParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#authorization_type CcConnection#authorization_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#authorization_type CcConnection#authorization_type}
     */
     readonly authorizationType?: string;
     /**
     * Description of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#description CcConnection#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#description CcConnection#description}
     */
     readonly description?: string;
     /**
     * The private resource the HTTP request will be sent to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#invocation_connectivity_parameters CcConnection#invocation_connectivity_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#invocation_connectivity_parameters CcConnection#invocation_connectivity_parameters}
     */
     readonly invocationConnectivityParameters?: CcConnection.InvocationConnectivityParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#kms_key_identifier CcConnection#kms_key_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#kms_key_identifier CcConnection#kms_key_identifier}
     */
     readonly kmsKeyIdentifier?: string;
     /**
     * Name of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#name CcConnection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#name CcConnection#name}
     */
     readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection awscc_events_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection awscc_events_connection}
 */
 export class CcConnection extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnection to import
-    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection awscc_events_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection awscc_events_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcConnection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_events_connection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -971,11 +971,11 @@ export function ccConnectionInvocationConnectivityParametersPropertyToHclTerrafo
 export namespace CcConnection {
 export interface ApiKeyAuthParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#api_key_name CcConnection#api_key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#api_key_name CcConnection#api_key_name}
     */
     readonly apiKeyName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#api_key_value CcConnection#api_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#api_key_value CcConnection#api_key_value}
     */
     readonly apiKeyValue?: string;
 }
@@ -1061,11 +1061,11 @@ export class ApiKeyAuthParametersPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface BasicAuthParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#password CcConnection#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#password CcConnection#password}
     */
     readonly password?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#username CcConnection#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#username CcConnection#username}
     */
     readonly username?: string;
 }
@@ -1151,7 +1151,7 @@ export class BasicAuthParametersPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ResourceParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#resource_configuration_arn CcConnection#resource_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#resource_configuration_arn CcConnection#resource_configuration_arn}
     */
     readonly resourceConfigurationArn?: string;
 }
@@ -1220,7 +1220,7 @@ export class ResourceParametersPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface ConnectivityParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#resource_parameters CcConnection#resource_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#resource_parameters CcConnection#resource_parameters}
     */
     readonly resourceParameters?: ResourceParametersProperty;
 }
@@ -1284,15 +1284,15 @@ export class ConnectivityParametersPropertyOutputReference extends cdktn.Complex
 }
 export interface ParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -1422,15 +1422,15 @@ export class ParameterPropertyList extends cdktn.ComplexList {
 }
 export interface AuthParametersInvocationHttpParametersHeaderParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -1560,15 +1560,15 @@ export class AuthParametersInvocationHttpParametersHeaderParametersPropertyList 
 }
 export interface AuthParametersInvocationHttpParametersQueryStringParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -1698,15 +1698,15 @@ export class AuthParametersInvocationHttpParametersQueryStringParametersProperty
 }
 export interface ConnectionHttpParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#body_parameters CcConnection#body_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#body_parameters CcConnection#body_parameters}
     */
     readonly bodyParameters?: ParameterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#header_parameters CcConnection#header_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#header_parameters CcConnection#header_parameters}
     */
     readonly headerParameters?: AuthParametersInvocationHttpParametersHeaderParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#query_string_parameters CcConnection#query_string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#query_string_parameters CcConnection#query_string_parameters}
     */
     readonly queryStringParameters?: AuthParametersInvocationHttpParametersQueryStringParametersProperty[] | cdktn.IResolvable;
 }
@@ -1814,11 +1814,11 @@ export class ConnectionHttpParametersPropertyOutputReference extends cdktn.Compl
 }
 export interface ClientParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#client_id CcConnection#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#client_id CcConnection#client_id}
     */
     readonly clientId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#client_secret CcConnection#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#client_secret CcConnection#client_secret}
     */
     readonly clientSecret?: string;
 }
@@ -1904,15 +1904,15 @@ export class ClientParametersPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface BodyParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -2042,15 +2042,15 @@ export class BodyParametersPropertyList extends cdktn.ComplexList {
 }
 export interface AuthParametersOAuthParametersOAuthHttpParametersHeaderParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -2180,15 +2180,15 @@ export class AuthParametersOAuthParametersOAuthHttpParametersHeaderParametersPro
 }
 export interface AuthParametersOAuthParametersOAuthHttpParametersQueryStringParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#is_value_secret CcConnection#is_value_secret}
     */
     readonly isValueSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#key CcConnection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#key CcConnection#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#value CcConnection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#value CcConnection#value}
     */
     readonly value?: string;
 }
@@ -2318,15 +2318,15 @@ export class AuthParametersOAuthParametersOAuthHttpParametersQueryStringParamete
 }
 export interface OAuthHttpParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#body_parameters CcConnection#body_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#body_parameters CcConnection#body_parameters}
     */
     readonly bodyParameters?: BodyParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#header_parameters CcConnection#header_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#header_parameters CcConnection#header_parameters}
     */
     readonly headerParameters?: AuthParametersOAuthParametersOAuthHttpParametersHeaderParametersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#query_string_parameters CcConnection#query_string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#query_string_parameters CcConnection#query_string_parameters}
     */
     readonly queryStringParameters?: AuthParametersOAuthParametersOAuthHttpParametersQueryStringParametersProperty[] | cdktn.IResolvable;
 }
@@ -2434,19 +2434,19 @@ export class OAuthHttpParametersPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface OAuthParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#authorization_endpoint CcConnection#authorization_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#authorization_endpoint CcConnection#authorization_endpoint}
     */
     readonly authorizationEndpoint?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#client_parameters CcConnection#client_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#client_parameters CcConnection#client_parameters}
     */
     readonly clientParameters?: ClientParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#http_method CcConnection#http_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#http_method CcConnection#http_method}
     */
     readonly httpMethod?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#o_auth_http_parameters CcConnection#o_auth_http_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#o_auth_http_parameters CcConnection#o_auth_http_parameters}
     */
     readonly oAuthHttpParameters?: OAuthHttpParametersProperty;
 }
@@ -2576,23 +2576,23 @@ export class OAuthParametersPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface AuthParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#api_key_auth_parameters CcConnection#api_key_auth_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#api_key_auth_parameters CcConnection#api_key_auth_parameters}
     */
     readonly apiKeyAuthParameters?: ApiKeyAuthParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#basic_auth_parameters CcConnection#basic_auth_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#basic_auth_parameters CcConnection#basic_auth_parameters}
     */
     readonly basicAuthParameters?: BasicAuthParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#connectivity_parameters CcConnection#connectivity_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#connectivity_parameters CcConnection#connectivity_parameters}
     */
     readonly connectivityParameters?: ConnectivityParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#invocation_http_parameters CcConnection#invocation_http_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#invocation_http_parameters CcConnection#invocation_http_parameters}
     */
     readonly invocationHttpParameters?: ConnectionHttpParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#o_auth_parameters CcConnection#o_auth_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#o_auth_parameters CcConnection#o_auth_parameters}
     */
     readonly oAuthParameters?: OAuthParametersProperty;
 }
@@ -2744,7 +2744,7 @@ export class AuthParametersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InvocationConnectivityParametersResourceParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#resource_configuration_arn CcConnection#resource_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#resource_configuration_arn CcConnection#resource_configuration_arn}
     */
     readonly resourceConfigurationArn?: string;
 }
@@ -2813,7 +2813,7 @@ export class InvocationConnectivityParametersResourceParametersPropertyOutputRef
 }
 export interface InvocationConnectivityParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_connection#resource_parameters CcConnection#resource_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_connection#resource_parameters CcConnection#resource_parameters}
     */
     readonly resourceParameters?: InvocationConnectivityParametersResourceParametersProperty;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcChannelPlacementGroupProps extends cdktn.TerraformMetaArgumen
     /**
     * The ID of the cluster the node is on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#cluster_id CcChannelPlacementGroup#cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#cluster_id CcChannelPlacementGroup#cluster_id}
     */
     readonly clusterId?: string;
     /**
     * The name of the channel placement group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#name CcChannelPlacementGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#name CcChannelPlacementGroup#name}
     */
     readonly name?: string;
     /**
     * List of nodes added to the channel placement group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#nodes CcChannelPlacementGroup#nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#nodes CcChannelPlacementGroup#nodes}
     */
     readonly nodes?: string[];
     /**
     * A collection of key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#tags CcChannelPlacementGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#tags CcChannelPlacementGroup#tags}
     */
     readonly tags?: CcChannelPlacementGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group awscc_medialive_channel_placement_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group awscc_medialive_channel_placement_group}
 */
 export class CcChannelPlacementGroup extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcChannelPlacementGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannelPlacementGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannelPlacementGroup to import
-    * @param importFromId The id of the existing CcChannelPlacementGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannelPlacementGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannelPlacementGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcChannelPlacementGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group awscc_medialive_channel_placement_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group awscc_medialive_channel_placement_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcChannelPlacementGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_channel_placement_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -267,11 +267,11 @@ export function ccChannelPlacementGroupTagPropertyToHclTerraform(struct?: CcChan
 export namespace CcChannelPlacementGroup {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#key CcChannelPlacementGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#key CcChannelPlacementGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_channel_placement_group#value CcChannelPlacementGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_channel_placement_group#value CcChannelPlacementGroup#value}
     */
     readonly value?: string;
 }

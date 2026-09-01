@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLifecyclePolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy#description CcLifecyclePolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy#description CcLifecyclePolicy#description}
     */
     readonly description?: string;
     /**
     * The name of the policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy#name CcLifecyclePolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy#name CcLifecyclePolicy#name}
     */
     readonly name: string;
     /**
     * The JSON policy document that is the content for the policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy#policy CcLifecyclePolicy#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy#policy CcLifecyclePolicy#policy}
     */
     readonly policy: string;
     /**
     * The type of lifecycle policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy#type CcLifecyclePolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy#type CcLifecyclePolicy#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy awscc_opensearchserverless_lifecycle_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy awscc_opensearchserverless_lifecycle_policy}
 */
 export class CcLifecyclePolicy extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLifecyclePolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLifecyclePolicy to import
-    * @param importFromId The id of the existing CcLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLifecyclePolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_lifecycle_policy awscc_opensearchserverless_lifecycle_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_lifecycle_policy awscc_opensearchserverless_lifecycle_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_opensearchserverless_lifecycle_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

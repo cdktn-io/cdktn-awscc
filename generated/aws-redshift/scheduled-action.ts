@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcScheduledActionProps extends cdktn.TerraformMetaArguments {
     /**
     * If true, the schedule is enabled. If false, the scheduled action does not trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#enable CcScheduledAction#enable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#enable CcScheduledAction#enable}
     */
     readonly enable?: boolean | cdktn.IResolvable;
     /**
     * The end time in UTC of the scheduled action. After this time, the scheduled action does not trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#end_time CcScheduledAction#end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#end_time CcScheduledAction#end_time}
     */
     readonly endTime?: string;
     /**
     * The IAM role to assume to run the target action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#iam_role CcScheduledAction#iam_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#iam_role CcScheduledAction#iam_role}
     */
     readonly iamRole?: string;
     /**
     * The schedule in `at( )` or `cron( )` format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#schedule CcScheduledAction#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#schedule CcScheduledAction#schedule}
     */
     readonly schedule?: string;
     /**
     * The description of the scheduled action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#scheduled_action_description CcScheduledAction#scheduled_action_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#scheduled_action_description CcScheduledAction#scheduled_action_description}
     */
     readonly scheduledActionDescription?: string;
     /**
     * The name of the scheduled action. The name must be unique within an account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#scheduled_action_name CcScheduledAction#scheduled_action_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#scheduled_action_name CcScheduledAction#scheduled_action_name}
     */
     readonly scheduledActionName: string;
     /**
     * The start time in UTC of the scheduled action. Before this time, the scheduled action does not trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#start_time CcScheduledAction#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#start_time CcScheduledAction#start_time}
     */
     readonly startTime?: string;
     /**
     * A JSON format string of the Amazon Redshift API operation with input parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#target_action CcScheduledAction#target_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#target_action CcScheduledAction#target_action}
     */
     readonly targetAction?: CcScheduledAction.ScheduledActionTypeProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action awscc_redshift_scheduled_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action awscc_redshift_scheduled_action}
 */
 export class CcScheduledAction extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcScheduledAction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScheduledAction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScheduledAction to import
-    * @param importFromId The id of the existing CcScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScheduledAction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcScheduledAction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action awscc_redshift_scheduled_action} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action awscc_redshift_scheduled_action} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcScheduledAction extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_redshift_scheduled_action',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -499,7 +499,7 @@ export function ccScheduledActionScheduledActionTypePropertyToHclTerraform(struc
 export namespace CcScheduledAction {
 export interface PauseClusterMessageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
 }
@@ -563,23 +563,23 @@ export class PauseClusterMessagePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ResizeClusterMessageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#classic CcScheduledAction#classic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#classic CcScheduledAction#classic}
     */
     readonly classic?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#cluster_type CcScheduledAction#cluster_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#cluster_type CcScheduledAction#cluster_type}
     */
     readonly clusterType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#node_type CcScheduledAction#node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#node_type CcScheduledAction#node_type}
     */
     readonly nodeType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#number_of_nodes CcScheduledAction#number_of_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#number_of_nodes CcScheduledAction#number_of_nodes}
     */
     readonly numberOfNodes?: number;
 }
@@ -731,7 +731,7 @@ export class ResizeClusterMessagePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface ResumeClusterMessageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#cluster_identifier CcScheduledAction#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
 }
@@ -797,19 +797,19 @@ export interface ScheduledActionTypeProperty {
     /**
     * Describes a pause cluster operation. For example, a scheduled action to run the `PauseCluster` API operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#pause_cluster CcScheduledAction#pause_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#pause_cluster CcScheduledAction#pause_cluster}
     */
     readonly pauseCluster?: PauseClusterMessageProperty;
     /**
     * Describes a resize cluster operation. For example, a scheduled action to run the `ResizeCluster` API operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#resize_cluster CcScheduledAction#resize_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#resize_cluster CcScheduledAction#resize_cluster}
     */
     readonly resizeCluster?: ResizeClusterMessageProperty;
     /**
     * Describes a resume cluster operation. For example, a scheduled action to run the `ResumeCluster` API operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_scheduled_action#resume_cluster CcScheduledAction#resume_cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_scheduled_action#resume_cluster CcScheduledAction#resume_cluster}
     */
     readonly resumeCluster?: ResumeClusterMessageProperty;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAcmeEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * The authorization behavior for the ACME endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#authorization_behavior CcAcmeEndpoint#authorization_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#authorization_behavior CcAcmeEndpoint#authorization_behavior}
     */
     readonly authorizationBehavior: string;
     /**
     * The certificate authority configuration for the ACME endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#certificate_authority CcAcmeEndpoint#certificate_authority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#certificate_authority CcAcmeEndpoint#certificate_authority}
     */
     readonly certificateAuthority: CcAcmeEndpoint.CertificateAuthorityProperty;
     /**
     * Tags applied to certificates issued via this endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#certificate_tags CcAcmeEndpoint#certificate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#certificate_tags CcAcmeEndpoint#certificate_tags}
     */
     readonly certificateTags?: CcAcmeEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * Whether contact information is required for the ACME endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#contact CcAcmeEndpoint#contact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#contact CcAcmeEndpoint#contact}
     */
     readonly contact?: string;
     /**
     * Tags associated with the ACME endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#tags CcAcmeEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#tags CcAcmeEndpoint#tags}
     */
     readonly tags?: CcAcmeEndpoint.TagsItemsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint awscc_certificatemanager_acme_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint awscc_certificatemanager_acme_endpoint}
 */
 export class CcAcmeEndpoint extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAcmeEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAcmeEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAcmeEndpoint to import
-    * @param importFromId The id of the existing CcAcmeEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAcmeEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAcmeEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAcmeEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint awscc_certificatemanager_acme_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint awscc_certificatemanager_acme_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcAcmeEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_certificatemanager_acme_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -380,7 +380,7 @@ export interface PublicCertificateAuthorityProperty {
     /**
     * The allowed key algorithms for certificates issued via this endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#allowed_key_algorithms CcAcmeEndpoint#allowed_key_algorithms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#allowed_key_algorithms CcAcmeEndpoint#allowed_key_algorithms}
     */
     readonly allowedKeyAlgorithms?: string[];
 }
@@ -446,7 +446,7 @@ export interface CertificateAuthorityProperty {
     /**
     * Configuration for the public certificate authority.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#public_certificate_authority CcAcmeEndpoint#public_certificate_authority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#public_certificate_authority CcAcmeEndpoint#public_certificate_authority}
     */
     readonly publicCertificateAuthority: PublicCertificateAuthorityProperty;
 }
@@ -509,13 +509,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#key CcAcmeEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#key CcAcmeEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#value CcAcmeEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#value CcAcmeEndpoint#value}
     */
     readonly value?: string;
 }
@@ -625,13 +625,13 @@ export interface TagsItemsProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#key CcAcmeEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#key CcAcmeEndpoint#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_acme_endpoint#value CcAcmeEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_acme_endpoint#value CcAcmeEndpoint#value}
     */
     readonly value?: string;
 }

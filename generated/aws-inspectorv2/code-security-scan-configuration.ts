@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,35 +9,35 @@ export interface CcCodeSecurityScanConfigurationProps extends cdktn.TerraformMet
     /**
     * Code Security Scan Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#configuration CcCodeSecurityScanConfiguration#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#configuration CcCodeSecurityScanConfiguration#configuration}
     */
     readonly configuration?: CcCodeSecurityScanConfiguration.CodeSecurityScanConfigurationProperty;
     /**
     * Configuration Level
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#level CcCodeSecurityScanConfiguration#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#level CcCodeSecurityScanConfiguration#level}
     */
     readonly level?: string;
     /**
     * Code Security Scan Configuration name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#name CcCodeSecurityScanConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#name CcCodeSecurityScanConfiguration#name}
     */
     readonly name?: string;
     /**
     * Scope Settings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#scope_settings CcCodeSecurityScanConfiguration#scope_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#scope_settings CcCodeSecurityScanConfiguration#scope_settings}
     */
     readonly scopeSettings?: CcCodeSecurityScanConfiguration.ScopeSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#tags CcCodeSecurityScanConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#tags CcCodeSecurityScanConfiguration#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration awscc_inspectorv2_code_security_scan_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration awscc_inspectorv2_code_security_scan_configuration}
 */
 export class CcCodeSecurityScanConfiguration extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcCodeSecurityScanConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCodeSecurityScanConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCodeSecurityScanConfiguration to import
-    * @param importFromId The id of the existing CcCodeSecurityScanConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCodeSecurityScanConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCodeSecurityScanConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcCodeSecurityScanConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration awscc_inspectorv2_code_security_scan_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration awscc_inspectorv2_code_security_scan_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcCodeSecurityScanConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_inspectorv2_code_security_scan_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -384,7 +384,7 @@ export function ccCodeSecurityScanConfigurationScopeSettingsPropertyToHclTerrafo
 export namespace CcCodeSecurityScanConfiguration {
 export interface ContinuousIntegrationScanConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#supported_events CcCodeSecurityScanConfiguration#supported_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#supported_events CcCodeSecurityScanConfiguration#supported_events}
     */
     readonly supportedEvents?: string[];
 }
@@ -448,11 +448,11 @@ export class ContinuousIntegrationScanConfigurationPropertyOutputReference exten
 }
 export interface PeriodicScanConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#frequency CcCodeSecurityScanConfiguration#frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#frequency CcCodeSecurityScanConfiguration#frequency}
     */
     readonly frequency?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#frequency_expression CcCodeSecurityScanConfiguration#frequency_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#frequency_expression CcCodeSecurityScanConfiguration#frequency_expression}
     */
     readonly frequencyExpression?: string;
 }
@@ -538,15 +538,15 @@ export class PeriodicScanConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface CodeSecurityScanConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#continuous_integration_scan_configuration CcCodeSecurityScanConfiguration#continuous_integration_scan_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#continuous_integration_scan_configuration CcCodeSecurityScanConfiguration#continuous_integration_scan_configuration}
     */
     readonly continuousIntegrationScanConfiguration?: ContinuousIntegrationScanConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#periodic_scan_configuration CcCodeSecurityScanConfiguration#periodic_scan_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#periodic_scan_configuration CcCodeSecurityScanConfiguration#periodic_scan_configuration}
     */
     readonly periodicScanConfiguration?: PeriodicScanConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#rule_set_categories CcCodeSecurityScanConfiguration#rule_set_categories}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#rule_set_categories CcCodeSecurityScanConfiguration#rule_set_categories}
     */
     readonly ruleSetCategories?: string[];
 }
@@ -654,7 +654,7 @@ export class CodeSecurityScanConfigurationPropertyOutputReference extends cdktn.
 }
 export interface ScopeSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_code_security_scan_configuration#project_selection_scope CcCodeSecurityScanConfiguration#project_selection_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_code_security_scan_configuration#project_selection_scope CcCodeSecurityScanConfiguration#project_selection_scope}
     */
     readonly projectSelectionScope?: string;
 }

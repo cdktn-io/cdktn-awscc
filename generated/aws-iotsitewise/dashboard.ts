@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDashboardProps extends cdktn.TerraformMetaArguments {
     /**
     * The dashboard definition specified in a JSON literal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#dashboard_definition CcDashboard#dashboard_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#dashboard_definition CcDashboard#dashboard_definition}
     */
     readonly dashboardDefinition: string;
     /**
     * A description for the dashboard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#dashboard_description CcDashboard#dashboard_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#dashboard_description CcDashboard#dashboard_description}
     */
     readonly dashboardDescription: string;
     /**
     * A friendly name for the dashboard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#dashboard_name CcDashboard#dashboard_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#dashboard_name CcDashboard#dashboard_name}
     */
     readonly dashboardName: string;
     /**
     * The ID of the project in which to create the dashboard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#project_id CcDashboard#project_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#project_id CcDashboard#project_id}
     */
     readonly projectId?: string;
     /**
     * A list of key-value pairs that contain metadata for the dashboard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#tags CcDashboard#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#tags CcDashboard#tags}
     */
     readonly tags?: CcDashboard.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard awscc_iotsitewise_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard awscc_iotsitewise_dashboard}
 */
 export class CcDashboard extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDashboard extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDashboard resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDashboard to import
-    * @param importFromId The id of the existing CcDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDashboard to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDashboard extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard awscc_iotsitewise_dashboard} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard awscc_iotsitewise_dashboard} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcDashboard extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotsitewise_dashboard',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -278,11 +278,11 @@ export function ccDashboardTagPropertyToHclTerraform(struct?: CcDashboard.TagPro
 export namespace CcDashboard {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#key CcDashboard#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#key CcDashboard#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_dashboard#value CcDashboard#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_dashboard#value CcDashboard#value}
     */
     readonly value?: string;
 }

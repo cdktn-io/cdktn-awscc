@@ -1,55 +1,55 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTopicV2Props extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#aws_account_id CcTopicV2#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#aws_account_id CcTopicV2#aws_account_id}
     */
     readonly awsAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#custom_instructions CcTopicV2#custom_instructions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#custom_instructions CcTopicV2#custom_instructions}
     */
     readonly customInstructions?: CcTopicV2.CustomInstructionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_set_relations CcTopicV2#data_set_relations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_set_relations CcTopicV2#data_set_relations}
     */
     readonly dataSetRelations?: CcTopicV2.DataSetRelationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_sets CcTopicV2#data_sets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_sets CcTopicV2#data_sets}
     */
     readonly dataSets?: CcTopicV2.DataSetReferenceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#description CcTopicV2#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#description CcTopicV2#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#folder_arns CcTopicV2#folder_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#folder_arns CcTopicV2#folder_arns}
     */
     readonly folderArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#name CcTopicV2#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#name CcTopicV2#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#permissions CcTopicV2#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#permissions CcTopicV2#permissions}
     */
     readonly permissions?: CcTopicV2.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#tags CcTopicV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#tags CcTopicV2#tags}
     */
     readonly tags?: CcTopicV2.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#topic_id CcTopicV2#topic_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#topic_id CcTopicV2#topic_id}
     */
     readonly topicId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2 awscc_quicksight_topic_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2 awscc_quicksight_topic_v2}
 */
 export class CcTopicV2 extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcTopicV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTopicV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTopicV2 to import
-    * @param importFromId The id of the existing CcTopicV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTopicV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTopicV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcTopicV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2 awscc_quicksight_topic_v2} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2 awscc_quicksight_topic_v2} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CcTopicV2 extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_topic_v2',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -627,7 +627,7 @@ export function ccTopicV2TagPropertyToHclTerraform(struct?: CcTopicV2.TagPropert
 export namespace CcTopicV2 {
 export interface CustomInstructionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#custom_instructions_string CcTopicV2#custom_instructions_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#custom_instructions_string CcTopicV2#custom_instructions_string}
     */
     readonly customInstructionsString?: string;
 }
@@ -691,11 +691,11 @@ export class CustomInstructionsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface DataSetRelationEndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#column_names CcTopicV2#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#column_names CcTopicV2#column_names}
     */
     readonly columnNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
     */
     readonly dataSetArn?: string;
 }
@@ -781,11 +781,11 @@ export class DataSetRelationEndpointPropertyOutputReference extends cdktn.Comple
 }
 export interface RightProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#column_names CcTopicV2#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#column_names CcTopicV2#column_names}
     */
     readonly columnNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
     */
     readonly dataSetArn?: string;
 }
@@ -871,11 +871,11 @@ export class RightPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DataSetRelationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#left CcTopicV2#left}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#left CcTopicV2#left}
     */
     readonly left?: DataSetRelationEndpointProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#right CcTopicV2#right}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#right CcTopicV2#right}
     */
     readonly right?: RightProperty;
 }
@@ -983,11 +983,11 @@ export class DataSetRelationPropertyList extends cdktn.ComplexList {
 }
 export interface DataSetReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_set_arn CcTopicV2#data_set_arn}
     */
     readonly dataSetArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#data_set_name CcTopicV2#data_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#data_set_name CcTopicV2#data_set_name}
     */
     readonly dataSetName?: string;
 }
@@ -1095,11 +1095,11 @@ export class DataSetReferencePropertyList extends cdktn.ComplexList {
 }
 export interface ResourcePermissionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#actions CcTopicV2#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#actions CcTopicV2#actions}
     */
     readonly actions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#principal CcTopicV2#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#principal CcTopicV2#principal}
     */
     readonly principal?: string;
 }
@@ -1209,13 +1209,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#key CcTopicV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#key CcTopicV2#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_topic_v2#value CcTopicV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_topic_v2#value CcTopicV2#value}
     */
     readonly value?: string;
 }

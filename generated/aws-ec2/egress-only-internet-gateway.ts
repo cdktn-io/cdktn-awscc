@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcEgressOnlyInternetGatewayProps extends cdktn.TerraformMetaArg
     /**
     * Any tags assigned to the egress only internet gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway#tags CcEgressOnlyInternetGateway#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway#tags CcEgressOnlyInternetGateway#tags}
     */
     readonly tags?: CcEgressOnlyInternetGateway.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the VPC for which to create the egress-only internet gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway#vpc_id CcEgressOnlyInternetGateway#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway#vpc_id CcEgressOnlyInternetGateway#vpc_id}
     */
     readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway awscc_ec2_egress_only_internet_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway awscc_ec2_egress_only_internet_gateway}
 */
 export class CcEgressOnlyInternetGateway extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcEgressOnlyInternetGateway extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEgressOnlyInternetGateway resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEgressOnlyInternetGateway to import
-    * @param importFromId The id of the existing CcEgressOnlyInternetGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEgressOnlyInternetGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEgressOnlyInternetGateway to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcEgressOnlyInternetGateway extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway awscc_ec2_egress_only_internet_gateway} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway awscc_ec2_egress_only_internet_gateway} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcEgressOnlyInternetGateway extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_egress_only_internet_gateway',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -189,11 +189,11 @@ export function ccEgressOnlyInternetGatewayTagPropertyToHclTerraform(struct?: Cc
 export namespace CcEgressOnlyInternetGateway {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway#key CcEgressOnlyInternetGateway#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway#key CcEgressOnlyInternetGateway#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_egress_only_internet_gateway#value CcEgressOnlyInternetGateway#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_egress_only_internet_gateway#value CcEgressOnlyInternetGateway#value}
     */
     readonly value?: string;
 }

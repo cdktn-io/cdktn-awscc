@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,63 +9,63 @@ export interface CcInvestigationGroupProps extends cdktn.TerraformMetaArguments 
     /**
     * An array of key-value pairs of notification channels to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#chatbot_notification_channels CcInvestigationGroup#chatbot_notification_channels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#chatbot_notification_channels CcInvestigationGroup#chatbot_notification_channels}
     */
     readonly chatbotNotificationChannels?: CcInvestigationGroup.ChatbotNotificationChannelProperty[] | cdktn.IResolvable;
     /**
     * An array of cross account configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#cross_account_configurations CcInvestigationGroup#cross_account_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#cross_account_configurations CcInvestigationGroup#cross_account_configurations}
     */
     readonly crossAccountConfigurations?: CcInvestigationGroup.CrossAccountConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#encryption_config CcInvestigationGroup#encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#encryption_config CcInvestigationGroup#encryption_config}
     */
     readonly encryptionConfig?: CcInvestigationGroup.EncryptionConfigMapProperty;
     /**
     * Investigation Group policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#investigation_group_policy CcInvestigationGroup#investigation_group_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#investigation_group_policy CcInvestigationGroup#investigation_group_policy}
     */
     readonly investigationGroupPolicy?: string;
     /**
     * Flag to enable cloud trail history
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#is_cloud_trail_event_history_enabled CcInvestigationGroup#is_cloud_trail_event_history_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#is_cloud_trail_event_history_enabled CcInvestigationGroup#is_cloud_trail_event_history_enabled}
     */
     readonly isCloudTrailEventHistoryEnabled?: boolean | cdktn.IResolvable;
     /**
     * User friendly name for resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#name CcInvestigationGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#name CcInvestigationGroup#name}
     */
     readonly name: string;
     /**
     * The number of days to retain the investigation group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#retention_in_days CcInvestigationGroup#retention_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#retention_in_days CcInvestigationGroup#retention_in_days}
     */
     readonly retentionInDays?: number;
     /**
     * The Investigation Role's ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#role_arn CcInvestigationGroup#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#role_arn CcInvestigationGroup#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#tag_key_boundaries CcInvestigationGroup#tag_key_boundaries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#tag_key_boundaries CcInvestigationGroup#tag_key_boundaries}
     */
     readonly tagKeyBoundaries?: string[];
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#tags CcInvestigationGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#tags CcInvestigationGroup#tags}
     */
     readonly tags?: CcInvestigationGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group awscc_aiops_investigation_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group awscc_aiops_investigation_group}
 */
 export class CcInvestigationGroup extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcInvestigationGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInvestigationGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInvestigationGroup to import
-    * @param importFromId The id of the existing CcInvestigationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInvestigationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInvestigationGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcInvestigationGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group awscc_aiops_investigation_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group awscc_aiops_investigation_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcInvestigationGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_aiops_investigation_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -549,11 +549,11 @@ export function ccInvestigationGroupTagPropertyToHclTerraform(struct?: CcInvesti
 export namespace CcInvestigationGroup {
 export interface ChatbotNotificationChannelProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#chat_configuration_arns CcInvestigationGroup#chat_configuration_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#chat_configuration_arns CcInvestigationGroup#chat_configuration_arns}
     */
     readonly chatConfigurationArns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#sns_topic_arn CcInvestigationGroup#sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#sns_topic_arn CcInvestigationGroup#sns_topic_arn}
     */
     readonly snsTopicArn?: string;
 }
@@ -663,7 +663,7 @@ export interface CrossAccountConfigurationProperty {
     /**
     * The Investigation Role's ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#source_role_arn CcInvestigationGroup#source_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#source_role_arn CcInvestigationGroup#source_role_arn}
     */
     readonly sourceRoleArn?: string;
 }
@@ -749,11 +749,11 @@ export class CrossAccountConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface EncryptionConfigMapProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#encryption_configuration_type CcInvestigationGroup#encryption_configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#encryption_configuration_type CcInvestigationGroup#encryption_configuration_type}
     */
     readonly encryptionConfigurationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#kms_key_id CcInvestigationGroup#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#kms_key_id CcInvestigationGroup#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -839,11 +839,11 @@ export class EncryptionConfigMapPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#key CcInvestigationGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#key CcInvestigationGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aiops_investigation_group#value CcInvestigationGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aiops_investigation_group#value CcInvestigationGroup#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether the volume is auto-enabled for I/O operations. By default, EBS disables I/O to the volume from attached EC2 instances when it determines that a volume's data is potentially inconsistent. If the consistency of the volume is not a concern, and you prefer that the volume be made available immediately if it's impaired, you can configure the volume to automatically enable I/O.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#auto_enable_io CcVolume#auto_enable_io}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#auto_enable_io CcVolume#auto_enable_io}
     */
     readonly autoEnableIo?: boolean | cdktn.IResolvable;
     /**
@@ -17,7 +17,7 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *  Either ``AvailabilityZone`` or ``AvailabilityZoneId`` must be specified, but not both.
     *  If you are creating a volume copy, omit this parameter. The volume copy is created in the same Availability Zone as the source volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#availability_zone CcVolume#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#availability_zone CcVolume#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
@@ -25,14 +25,14 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *  Either ``AvailabilityZone`` or ``AvailabilityZoneId`` must be specified, but not both.
     *  If you are creating a volume copy, omit this parameter. The volume copy is created in the same Availability Zone as the source volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#availability_zone_id CcVolume#availability_zone_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#availability_zone_id CcVolume#availability_zone_id}
     */
     readonly availabilityZoneId?: string;
     /**
     * Indicates whether the volume should be encrypted. The effect of setting the encryption state to ``true`` depends on the volume origin (new, from a snapshot, or from an existing volume), starting encryption state, ownership, and whether encryption by default is enabled. For more information, see [Encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/work-with-ebs-encr.html#encryption-by-default) in the *Amazon EBS User Guide*.
     *  If you are creating a volume copy, omit this parameter. The volume is automatically encrypted with the same KMS key as the source volume. You can't copy unencrypted volumes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#encrypted CcVolume#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#encrypted CcVolume#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
@@ -44,7 +44,7 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *   
     *   [Instances built on the Nitro System](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) can support up to 256,000 IOPS. Other instances can support up to 32,000 IOPS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#iops CcVolume#iops}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#iops CcVolume#iops}
     */
     readonly iops?: number;
     /**
@@ -58,21 +58,21 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *   
     *  If you are creating a volume copy, omit this parameter. The volume is automatically encrypted with the same KMS key as the source volume. You can't copy unencrypted volumes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#kms_key_id CcVolume#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#kms_key_id CcVolume#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Indicates whether Amazon EBS Multi-Attach is enabled.
     *  CFNlong does not currently support updating a single-attach volume to be multi-attach enabled, updating a multi-attach enabled volume to be single-attach, or updating the size or number of I/O operations per second (IOPS) of a multi-attach enabled volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#multi_attach_enabled CcVolume#multi_attach_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#multi_attach_enabled CcVolume#multi_attach_enabled}
     */
     readonly multiAttachEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the Outpost on which to create the volume.
     *  If you intend to use a volume with an instance running on an outpost, then you must create the volume on the same outpost as the instance. You can't use a volume created in an AWS Region with an instance on an AWS outpost, or the other way around.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#outpost_arn CcVolume#outpost_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#outpost_arn CcVolume#outpost_arn}
     */
     readonly outpostArn?: string;
     /**
@@ -88,25 +88,25 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *   +  st1 and sc1: ``125 - 16,384`` GiB
     *   +  standard: ``1 - 1024`` GiB
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#size CcVolume#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#size CcVolume#size}
     */
     readonly size?: number;
     /**
     * The snapshot from which to create the volume. Only specify to create a volume from a snapshot. To create a new empty volume, omit this parameter and specify a value for ``Size`` instead. To create a volume copy, omit this parameter and specify ``SourceVolumeId`` instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#snapshot_id CcVolume#snapshot_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#snapshot_id CcVolume#snapshot_id}
     */
     readonly snapshotId?: string;
     /**
     * The ID of the source EBS volume to copy. When specified, the volume is created as an exact copy of the specified volume. Only specify to create a volume copy. To create a new empty volume or to create a volume from a snapshot, omit this parameter,
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#source_volume_id CcVolume#source_volume_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#source_volume_id CcVolume#source_volume_id}
     */
     readonly sourceVolumeId?: string;
     /**
     * The tags to apply to the volume during creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#tags CcVolume#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#tags CcVolume#tags}
     */
     readonly tags?: CcVolume.TagProperty[] | cdktn.IResolvable;
     /**
@@ -115,7 +115,7 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *  Valid Range: Minimum value of 125. Maximum value of 2000.
     *  The maximum ratio of throughput to IOPS is 0.25 MiB/s per IOPS. For example, a volume with 3,000 IOPS can have a maximum throughput of 750 MiB/s (3,000 x 0.25).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#throughput CcVolume#throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#throughput CcVolume#throughput}
     */
     readonly throughput?: number;
     /**
@@ -128,7 +128,7 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *  For more information, see [Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html) in the *Amazon EC2 User Guide*.
     *  Valid range: 100 - 300 MiB/s
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#volume_initialization_rate CcVolume#volume_initialization_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#volume_initialization_rate CcVolume#volume_initialization_rate}
     */
     readonly volumeInitializationRate?: number;
     /**
@@ -143,13 +143,13 @@ export interface CcVolumeProps extends cdktn.TerraformMetaArguments {
     *   For more information, see [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) in the *Amazon EBS User Guide*.
     *  Default: ``gp2``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#volume_type CcVolume#volume_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#volume_type CcVolume#volume_type}
     */
     readonly volumeType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume awscc_ec2_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume awscc_ec2_volume}
 */
 export class CcVolume extends cdktn.TerraformResource {
 
@@ -165,7 +165,7 @@ export class CcVolume extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVolume resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVolume to import
-    * @param importFromId The id of the existing CcVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVolume to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -177,7 +177,7 @@ export class CcVolume extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume awscc_ec2_volume} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume awscc_ec2_volume} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class CcVolume extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_volume',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -634,13 +634,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#key CcVolume#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#key CcVolume#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_volume#value CcVolume#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_volume#value CcVolume#value}
     */
     readonly value?: string;
 }

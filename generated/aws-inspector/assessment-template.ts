@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAssessmentTemplateProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#assessment_target_arn CcAssessmentTemplate#assessment_target_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#assessment_target_arn CcAssessmentTemplate#assessment_target_arn}
     */
     readonly assessmentTargetArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#assessment_template_name CcAssessmentTemplate#assessment_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#assessment_template_name CcAssessmentTemplate#assessment_template_name}
     */
     readonly assessmentTemplateName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#duration_in_seconds CcAssessmentTemplate#duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#duration_in_seconds CcAssessmentTemplate#duration_in_seconds}
     */
     readonly durationInSeconds: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#rules_package_arns CcAssessmentTemplate#rules_package_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#rules_package_arns CcAssessmentTemplate#rules_package_arns}
     */
     readonly rulesPackageArns: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#user_attributes_for_findings CcAssessmentTemplate#user_attributes_for_findings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#user_attributes_for_findings CcAssessmentTemplate#user_attributes_for_findings}
     */
     readonly userAttributesForFindings?: CcAssessmentTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template awscc_inspector_assessment_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template awscc_inspector_assessment_template}
 */
 export class CcAssessmentTemplate extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcAssessmentTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssessmentTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssessmentTemplate to import
-    * @param importFromId The id of the existing CcAssessmentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssessmentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssessmentTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcAssessmentTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template awscc_inspector_assessment_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template awscc_inspector_assessment_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcAssessmentTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_inspector_assessment_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -263,11 +263,11 @@ export function ccAssessmentTemplateTagPropertyToHclTerraform(struct?: CcAssessm
 export namespace CcAssessmentTemplate {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#key CcAssessmentTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#key CcAssessmentTemplate#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspector_assessment_template#value CcAssessmentTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspector_assessment_template#value CcAssessmentTemplate#value}
     */
     readonly value?: string;
 }

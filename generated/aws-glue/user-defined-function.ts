@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcUserDefinedFunctionProps extends cdktn.TerraformMetaArguments
     /**
     * The Java class that contains the function code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#class_name CcUserDefinedFunction#class_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#class_name CcUserDefinedFunction#class_name}
     */
     readonly className?: string;
     /**
     * The name of the catalog database in which the function is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#database_name CcUserDefinedFunction#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#database_name CcUserDefinedFunction#database_name}
     */
     readonly databaseName: string;
     /**
     * The name of the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#function_name CcUserDefinedFunction#function_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#function_name CcUserDefinedFunction#function_name}
     */
     readonly functionName: string;
     /**
     * The type of the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#function_type CcUserDefinedFunction#function_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#function_type CcUserDefinedFunction#function_type}
     */
     readonly functionType?: string;
     /**
     * The owner of the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#owner_name CcUserDefinedFunction#owner_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#owner_name CcUserDefinedFunction#owner_name}
     */
     readonly ownerName?: string;
     /**
     * The owner type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#owner_type CcUserDefinedFunction#owner_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#owner_type CcUserDefinedFunction#owner_type}
     */
     readonly ownerType?: string;
     /**
     * The resource URIs for the function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#resource_uris CcUserDefinedFunction#resource_uris}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#resource_uris CcUserDefinedFunction#resource_uris}
     */
     readonly resourceUris?: CcUserDefinedFunction.ResourceUriProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function awscc_glue_user_defined_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function awscc_glue_user_defined_function}
 */
 export class CcUserDefinedFunction extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcUserDefinedFunction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserDefinedFunction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserDefinedFunction to import
-    * @param importFromId The id of the existing CcUserDefinedFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserDefinedFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserDefinedFunction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcUserDefinedFunction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function awscc_glue_user_defined_function} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function awscc_glue_user_defined_function} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcUserDefinedFunction extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_user_defined_function',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -338,13 +338,13 @@ export interface ResourceUriProperty {
     /**
     * The type of the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#resource_type CcUserDefinedFunction#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#resource_type CcUserDefinedFunction#resource_type}
     */
     readonly resourceType?: string;
     /**
     * The URI for accessing the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_user_defined_function#uri CcUserDefinedFunction#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_user_defined_function#uri CcUserDefinedFunction#uri}
     */
     readonly uri?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcChannelFlowProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the app instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#app_instance_arn CcChannelFlow#app_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#app_instance_arn CcChannelFlow#app_instance_arn}
     */
     readonly appInstanceArn: string;
     /**
     * The name of the channel flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#name CcChannelFlow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#name CcChannelFlow#name}
     */
     readonly name: string;
     /**
     * Information about the processor Lambda functions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#processors CcChannelFlow#processors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#processors CcChannelFlow#processors}
     */
     readonly processors: CcChannelFlow.ProcessorProperty[] | cdktn.IResolvable;
     /**
     * The tags for the channel flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#tags CcChannelFlow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#tags CcChannelFlow#tags}
     */
     readonly tags?: CcChannelFlow.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow awscc_chime_channel_flow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow awscc_chime_channel_flow}
 */
 export class CcChannelFlow extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcChannelFlow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannelFlow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannelFlow to import
-    * @param importFromId The id of the existing CcChannelFlow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannelFlow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannelFlow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcChannelFlow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow awscc_chime_channel_flow} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow awscc_chime_channel_flow} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcChannelFlow extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_chime_channel_flow',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -383,13 +383,13 @@ export interface LambdaConfigurationProperty {
     /**
     * Controls how the Lambda function is invoked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#invocation_type CcChannelFlow#invocation_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#invocation_type CcChannelFlow#invocation_type}
     */
     readonly invocationType: string;
     /**
     * The ARN of the Lambda message processing function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#resource_arn CcChannelFlow#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#resource_arn CcChannelFlow#resource_arn}
     */
     readonly resourceArn: string;
 }
@@ -471,7 +471,7 @@ export interface ProcessorConfigurationProperty {
     /**
     * Stores metadata about a Lambda processor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#lambda CcChannelFlow#lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#lambda CcChannelFlow#lambda}
     */
     readonly lambda: LambdaConfigurationProperty;
 }
@@ -534,25 +534,25 @@ export interface ProcessorProperty {
     /**
     * A processor's metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#configuration CcChannelFlow#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#configuration CcChannelFlow#configuration}
     */
     readonly configuration: ProcessorConfigurationProperty;
     /**
     * The sequence in which processors run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#execution_order CcChannelFlow#execution_order}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#execution_order CcChannelFlow#execution_order}
     */
     readonly executionOrder: number;
     /**
     * Determines whether to continue or stop processing when communication with a processor fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#fallback_action CcChannelFlow#fallback_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#fallback_action CcChannelFlow#fallback_action}
     */
     readonly fallbackAction: string;
     /**
     * The name of the processor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#name CcChannelFlow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#name CcChannelFlow#name}
     */
     readonly name: string;
 }
@@ -694,13 +694,13 @@ export interface TagProperty {
     /**
     * The key in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#key CcChannelFlow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#key CcChannelFlow#key}
     */
     readonly key?: string;
     /**
     * The value in a tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/chime_channel_flow#value CcChannelFlow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_channel_flow#value CcChannelFlow#value}
     */
     readonly value?: string;
 }

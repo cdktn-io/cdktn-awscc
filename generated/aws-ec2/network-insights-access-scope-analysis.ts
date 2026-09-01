@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcNetworkInsightsAccessScopeAnalysisProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis#network_insights_access_scope_id CcNetworkInsightsAccessScopeAnalysis#network_insights_access_scope_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis#network_insights_access_scope_id CcNetworkInsightsAccessScopeAnalysis#network_insights_access_scope_id}
     */
     readonly networkInsightsAccessScopeId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis#tags CcNetworkInsightsAccessScopeAnalysis#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis#tags CcNetworkInsightsAccessScopeAnalysis#tags}
     */
     readonly tags?: CcNetworkInsightsAccessScopeAnalysis.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis awscc_ec2_network_insights_access_scope_analysis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis awscc_ec2_network_insights_access_scope_analysis}
 */
 export class CcNetworkInsightsAccessScopeAnalysis extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcNetworkInsightsAccessScopeAnalysis extends cdktn.TerraformResourc
     * Generates CDKTN code for importing a CcNetworkInsightsAccessScopeAnalysis resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkInsightsAccessScopeAnalysis to import
-    * @param importFromId The id of the existing CcNetworkInsightsAccessScopeAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkInsightsAccessScopeAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkInsightsAccessScopeAnalysis to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcNetworkInsightsAccessScopeAnalysis extends cdktn.TerraformResourc
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis awscc_ec2_network_insights_access_scope_analysis} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis awscc_ec2_network_insights_access_scope_analysis} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcNetworkInsightsAccessScopeAnalysis extends cdktn.TerraformResourc
             terraformResourceType: 'awscc_ec2_network_insights_access_scope_analysis',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -220,11 +220,11 @@ export function ccNetworkInsightsAccessScopeAnalysisTagPropertyToHclTerraform(st
 export namespace CcNetworkInsightsAccessScopeAnalysis {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis#key CcNetworkInsightsAccessScopeAnalysis#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis#key CcNetworkInsightsAccessScopeAnalysis#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_network_insights_access_scope_analysis#value CcNetworkInsightsAccessScopeAnalysis#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_network_insights_access_scope_analysis#value CcNetworkInsightsAccessScopeAnalysis#value}
     */
     readonly value?: string;
 }

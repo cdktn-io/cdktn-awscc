@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcSourceApiAssociationProps extends cdktn.TerraformMetaArgument
     /**
     * Description of the SourceApiAssociation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#description CcSourceApiAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#description CcSourceApiAssociation#description}
     */
     readonly description?: string;
     /**
     * Identifier of the Merged GraphQLApi to associate. It could be either GraphQLApi ApiId or ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#merged_api_identifier CcSourceApiAssociation#merged_api_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#merged_api_identifier CcSourceApiAssociation#merged_api_identifier}
     */
     readonly mergedApiIdentifier?: string;
     /**
     * Customized configuration for SourceApiAssociation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#source_api_association_config CcSourceApiAssociation#source_api_association_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#source_api_association_config CcSourceApiAssociation#source_api_association_config}
     */
     readonly sourceApiAssociationConfig?: CcSourceApiAssociation.SourceApiAssociationConfigProperty;
     /**
     * Identifier of the Source GraphQLApi to associate. It could be either GraphQLApi ApiId or ARN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#source_api_identifier CcSourceApiAssociation#source_api_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#source_api_identifier CcSourceApiAssociation#source_api_identifier}
     */
     readonly sourceApiIdentifier?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association awscc_appsync_source_api_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association awscc_appsync_source_api_association}
 */
 export class CcSourceApiAssociation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcSourceApiAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSourceApiAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSourceApiAssociation to import
-    * @param importFromId The id of the existing CcSourceApiAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSourceApiAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSourceApiAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcSourceApiAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association awscc_appsync_source_api_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association awscc_appsync_source_api_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcSourceApiAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appsync_source_api_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -287,7 +287,7 @@ export interface SourceApiAssociationConfigProperty {
     /**
     * Configuration of the merged behavior for the association. For example when it could be auto or has to be manual.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appsync_source_api_association#merge_type CcSourceApiAssociation#merge_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_source_api_association#merge_type CcSourceApiAssociation#merge_type}
     */
     readonly mergeType?: string;
 }

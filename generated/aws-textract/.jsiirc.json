@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_textract"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Textract"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.textract"
+    }
+  }
+}

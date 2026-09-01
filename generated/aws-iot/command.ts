@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,91 +9,91 @@ export interface CcCommandProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier for the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#command_id CcCommand#command_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#command_id CcCommand#command_id}
     */
     readonly commandId: string;
     /**
     * The date and time when the command was created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#created_at CcCommand#created_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#created_at CcCommand#created_at}
     */
     readonly createdAt?: string;
     /**
     * A flag indicating whether the command is deprecated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#deprecated CcCommand#deprecated}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#deprecated CcCommand#deprecated}
     */
     readonly deprecated?: boolean | cdktn.IResolvable;
     /**
     * The description of the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#description CcCommand#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#description CcCommand#description}
     */
     readonly description?: string;
     /**
     * The display name for the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#display_name CcCommand#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#display_name CcCommand#display_name}
     */
     readonly displayName?: string;
     /**
     * The date and time when the command was last updated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#last_updated_at CcCommand#last_updated_at}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#last_updated_at CcCommand#last_updated_at}
     */
     readonly lastUpdatedAt?: string;
     /**
     * The list of mandatory parameters for the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#mandatory_parameters CcCommand#mandatory_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#mandatory_parameters CcCommand#mandatory_parameters}
     */
     readonly mandatoryParameters?: CcCommand.CommandParameterProperty[] | cdktn.IResolvable;
     /**
     * The namespace to which the command belongs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#namespace CcCommand#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#namespace CcCommand#namespace}
     */
     readonly namespace?: string;
     /**
     * The payload associated with the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#payload CcCommand#payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#payload CcCommand#payload}
     */
     readonly payload?: CcCommand.CommandPayloadProperty;
     /**
     * The payload template associated with the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#payload_template CcCommand#payload_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#payload_template CcCommand#payload_template}
     */
     readonly payloadTemplate?: string;
     /**
     * A flag indicating whether the command is pending deletion.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#pending_deletion CcCommand#pending_deletion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#pending_deletion CcCommand#pending_deletion}
     */
     readonly pendingDeletion?: boolean | cdktn.IResolvable;
     /**
     * The command preprocessor configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#preprocessor CcCommand#preprocessor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#preprocessor CcCommand#preprocessor}
     */
     readonly preprocessor?: CcCommand.CommandPreprocessorProperty;
     /**
     * The customer role associated with the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#role_arn CcCommand#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#role_arn CcCommand#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The tags to be associated with the command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#tags CcCommand#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#tags CcCommand#tags}
     */
     readonly tags?: CcCommand.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command awscc_iot_command}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command awscc_iot_command}
 */
 export class CcCommand extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcCommand extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCommand resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCommand to import
-    * @param importFromId The id of the existing CcCommand that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCommand that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCommand to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcCommand extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command awscc_iot_command} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command awscc_iot_command} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class CcCommand extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_command',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -987,31 +987,31 @@ export function ccCommandTagPropertyToHclTerraform(struct?: CcCommand.TagPropert
 export namespace CcCommand {
 export interface CommandParameterValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#b CcCommand#b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#b CcCommand#b}
     */
     readonly b?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#bin CcCommand#bin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#bin CcCommand#bin}
     */
     readonly bin?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#d CcCommand#d}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#d CcCommand#d}
     */
     readonly d?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#i CcCommand#i}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#i CcCommand#i}
     */
     readonly i?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#l CcCommand#l}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#l CcCommand#l}
     */
     readonly l?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#s CcCommand#s}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#s CcCommand#s}
     */
     readonly s?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#ul CcCommand#ul}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#ul CcCommand#ul}
     */
     readonly ul?: string;
 }
@@ -1207,31 +1207,31 @@ export class CommandParameterValuePropertyOutputReference extends cdktn.ComplexO
 }
 export interface ValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#b CcCommand#b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#b CcCommand#b}
     */
     readonly b?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#bin CcCommand#bin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#bin CcCommand#bin}
     */
     readonly bin?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#d CcCommand#d}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#d CcCommand#d}
     */
     readonly d?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#i CcCommand#i}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#i CcCommand#i}
     */
     readonly i?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#l CcCommand#l}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#l CcCommand#l}
     */
     readonly l?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#s CcCommand#s}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#s CcCommand#s}
     */
     readonly s?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#ul CcCommand#ul}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#ul CcCommand#ul}
     */
     readonly ul?: string;
 }
@@ -1427,11 +1427,11 @@ export class ValuePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CommandParameterValueNumberRangeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#max CcCommand#max}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#max CcCommand#max}
     */
     readonly max?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#min CcCommand#min}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#min CcCommand#min}
     */
     readonly min?: string;
 }
@@ -1517,23 +1517,23 @@ export class CommandParameterValueNumberRangePropertyOutputReference extends cdk
 }
 export interface CommandParameterValueComparisonOperandProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#number CcCommand#number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#number CcCommand#number}
     */
     readonly number?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#number_range CcCommand#number_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#number_range CcCommand#number_range}
     */
     readonly numberRange?: CommandParameterValueNumberRangeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#numbers CcCommand#numbers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#numbers CcCommand#numbers}
     */
     readonly numbers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#string CcCommand#string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#string CcCommand#string}
     */
     readonly string?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#strings CcCommand#strings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#strings CcCommand#strings}
     */
     readonly strings?: string[];
 }
@@ -1685,11 +1685,11 @@ export class CommandParameterValueComparisonOperandPropertyOutputReference exten
 }
 export interface CommandParameterValueConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#comparison_operator CcCommand#comparison_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#comparison_operator CcCommand#comparison_operator}
     */
     readonly comparisonOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#operand CcCommand#operand}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#operand CcCommand#operand}
     */
     readonly operand?: CommandParameterValueComparisonOperandProperty;
 }
@@ -1797,27 +1797,27 @@ export class CommandParameterValueConditionPropertyList extends cdktn.ComplexLis
 }
 export interface CommandParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#default_value CcCommand#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#default_value CcCommand#default_value}
     */
     readonly defaultValue?: CommandParameterValueProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#description CcCommand#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#description CcCommand#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#name CcCommand#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#name CcCommand#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#type CcCommand#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#type CcCommand#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#value CcCommand#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#value CcCommand#value}
     */
     readonly value?: ValueProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#value_conditions CcCommand#value_conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#value_conditions CcCommand#value_conditions}
     */
     readonly valueConditions?: CommandParameterValueConditionProperty[] | cdktn.IResolvable;
 }
@@ -2013,11 +2013,11 @@ export class CommandParameterPropertyList extends cdktn.ComplexList {
 }
 export interface CommandPayloadProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#content CcCommand#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#content CcCommand#content}
     */
     readonly content?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#content_type CcCommand#content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#content_type CcCommand#content_type}
     */
     readonly contentType?: string;
 }
@@ -2103,7 +2103,7 @@ export class CommandPayloadPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AwsJsonSubstitutionCommandPreprocessorConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#output_format CcCommand#output_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#output_format CcCommand#output_format}
     */
     readonly outputFormat?: string;
 }
@@ -2167,7 +2167,7 @@ export class AwsJsonSubstitutionCommandPreprocessorConfigPropertyOutputReference
 }
 export interface CommandPreprocessorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#aws_json_substitution CcCommand#aws_json_substitution}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#aws_json_substitution CcCommand#aws_json_substitution}
     */
     readonly awsJsonSubstitution?: AwsJsonSubstitutionCommandPreprocessorConfigProperty;
 }
@@ -2233,13 +2233,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#key CcCommand#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#key CcCommand#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_command#value CcCommand#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_command#value CcCommand#value}
     */
     readonly value?: string;
 }

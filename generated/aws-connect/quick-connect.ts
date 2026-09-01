@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcQuickConnectProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the quick connect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#description CcQuickConnect#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#description CcQuickConnect#description}
     */
     readonly description?: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#instance_arn CcQuickConnect#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#instance_arn CcQuickConnect#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The name of the quick connect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#name CcQuickConnect#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#name CcQuickConnect#name}
     */
     readonly name: string;
     /**
     * Configuration settings for the quick connect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#quick_connect_config CcQuickConnect#quick_connect_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#quick_connect_config CcQuickConnect#quick_connect_config}
     */
     readonly quickConnectConfig: CcQuickConnect.QuickConnectConfigProperty;
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#tags CcQuickConnect#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#tags CcQuickConnect#tags}
     */
     readonly tags?: CcQuickConnect.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect awscc_connect_quick_connect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect awscc_connect_quick_connect}
 */
 export class CcQuickConnect extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcQuickConnect extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcQuickConnect resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcQuickConnect to import
-    * @param importFromId The id of the existing CcQuickConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcQuickConnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcQuickConnect to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcQuickConnect extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect awscc_connect_quick_connect} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect awscc_connect_quick_connect} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcQuickConnect extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_quick_connect',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -472,7 +472,7 @@ export interface FlowQuickConnectConfigProperty {
     /**
     * The identifier of the contact flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
     */
     readonly contactFlowArn?: string;
 }
@@ -538,7 +538,7 @@ export interface PhoneNumberQuickConnectConfigProperty {
     /**
     * The phone number in E.164 format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#phone_number CcQuickConnect#phone_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#phone_number CcQuickConnect#phone_number}
     */
     readonly phoneNumber?: string;
 }
@@ -604,13 +604,13 @@ export interface QueueQuickConnectConfigProperty {
     /**
     * The identifier of the contact flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
     */
     readonly contactFlowArn?: string;
     /**
     * The identifier for the queue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#queue_arn CcQuickConnect#queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#queue_arn CcQuickConnect#queue_arn}
     */
     readonly queueArn?: string;
 }
@@ -698,13 +698,13 @@ export interface UserQuickConnectConfigProperty {
     /**
     * The identifier of the contact flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#contact_flow_arn CcQuickConnect#contact_flow_arn}
     */
     readonly contactFlowArn?: string;
     /**
     * The identifier of the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#user_arn CcQuickConnect#user_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#user_arn CcQuickConnect#user_arn}
     */
     readonly userArn?: string;
 }
@@ -792,31 +792,31 @@ export interface QuickConnectConfigProperty {
     /**
     * The flow configuration. This is required only if QuickConnectType is FLOW.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#flow_config CcQuickConnect#flow_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#flow_config CcQuickConnect#flow_config}
     */
     readonly flowConfig?: FlowQuickConnectConfigProperty;
     /**
     * The phone configuration. This is required only if QuickConnectType is PHONE_NUMBER.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#phone_config CcQuickConnect#phone_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#phone_config CcQuickConnect#phone_config}
     */
     readonly phoneConfig?: PhoneNumberQuickConnectConfigProperty;
     /**
     * The queue configuration. This is required only if QuickConnectType is QUEUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#queue_config CcQuickConnect#queue_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#queue_config CcQuickConnect#queue_config}
     */
     readonly queueConfig?: QueueQuickConnectConfigProperty;
     /**
     * The type of quick connect. In the Amazon Connect console, when you create a quick connect, you are prompted to assign one of the following types: Agent (USER), External (PHONE_NUMBER), or Queue (QUEUE).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#quick_connect_type CcQuickConnect#quick_connect_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#quick_connect_type CcQuickConnect#quick_connect_type}
     */
     readonly quickConnectType: string;
     /**
     * The user configuration. This is required only if QuickConnectType is USER.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#user_config CcQuickConnect#user_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#user_config CcQuickConnect#user_config}
     */
     readonly userConfig?: UserQuickConnectConfigProperty;
 }
@@ -967,13 +967,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#key CcQuickConnect#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#key CcQuickConnect#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is maximum of 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_quick_connect#value CcQuickConnect#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_quick_connect#value CcQuickConnect#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcAcceptedPortfolioShareProps extends cdktn.TerraformMetaArgume
     /**
     * The language code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share#accept_language CcAcceptedPortfolioShare#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share#accept_language CcAcceptedPortfolioShare#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
     * The portfolio identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share#portfolio_id CcAcceptedPortfolioShare#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share#portfolio_id CcAcceptedPortfolioShare#portfolio_id}
     */
     readonly portfolioId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share awscc_servicecatalog_accepted_portfolio_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share awscc_servicecatalog_accepted_portfolio_share}
 */
 export class CcAcceptedPortfolioShare extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcAcceptedPortfolioShare extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAcceptedPortfolioShare resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAcceptedPortfolioShare to import
-    * @param importFromId The id of the existing CcAcceptedPortfolioShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAcceptedPortfolioShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAcceptedPortfolioShare to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcAcceptedPortfolioShare extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_accepted_portfolio_share awscc_servicecatalog_accepted_portfolio_share} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_accepted_portfolio_share awscc_servicecatalog_accepted_portfolio_share} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcAcceptedPortfolioShare extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_servicecatalog_accepted_portfolio_share',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

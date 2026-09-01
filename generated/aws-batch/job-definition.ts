@@ -1,77 +1,77 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcJobDefinitionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource_properties CcJobDefinition#consumable_resource_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource_properties CcJobDefinition#consumable_resource_properties}
     */
     readonly consumableResourceProperties?: CcJobDefinition.ConsumableResourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_properties CcJobDefinition#container_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_properties CcJobDefinition#container_properties}
     */
     readonly containerProperties?: CcJobDefinition.ContainerPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ecs_properties CcJobDefinition#ecs_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ecs_properties CcJobDefinition#ecs_properties}
     */
     readonly ecsProperties?: CcJobDefinition.EcsPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#eks_properties CcJobDefinition#eks_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#eks_properties CcJobDefinition#eks_properties}
     */
     readonly eksProperties?: CcJobDefinition.EksPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#job_definition_name CcJobDefinition#job_definition_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#job_definition_name CcJobDefinition#job_definition_name}
     */
     readonly jobDefinitionName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#node_properties CcJobDefinition#node_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#node_properties CcJobDefinition#node_properties}
     */
     readonly nodeProperties?: CcJobDefinition.NodePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#parameters CcJobDefinition#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#parameters CcJobDefinition#parameters}
     */
     readonly parameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#platform_capabilities CcJobDefinition#platform_capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#platform_capabilities CcJobDefinition#platform_capabilities}
     */
     readonly platformCapabilities?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#propagate_tags CcJobDefinition#propagate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#propagate_tags CcJobDefinition#propagate_tags}
     */
     readonly propagateTags?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resource_retention_policy CcJobDefinition#resource_retention_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resource_retention_policy CcJobDefinition#resource_retention_policy}
     */
     readonly resourceRetentionPolicy?: CcJobDefinition.ResourceRetentionPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#retry_strategy CcJobDefinition#retry_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#retry_strategy CcJobDefinition#retry_strategy}
     */
     readonly retryStrategy?: CcJobDefinition.RetryStrategyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#scheduling_priority CcJobDefinition#scheduling_priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#scheduling_priority CcJobDefinition#scheduling_priority}
     */
     readonly schedulingPriority?: number;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#tags CcJobDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#tags CcJobDefinition#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#timeout CcJobDefinition#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#timeout CcJobDefinition#timeout}
     */
     readonly timeout?: CcJobDefinition.JobTimeoutProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition awscc_batch_job_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition awscc_batch_job_definition}
 */
 export class CcJobDefinition extends cdktn.TerraformResource {
 
@@ -87,7 +87,7 @@ export class CcJobDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcJobDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcJobDefinition to import
-    * @param importFromId The id of the existing CcJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcJobDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -99,7 +99,7 @@ export class CcJobDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition awscc_batch_job_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition awscc_batch_job_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -110,7 +110,7 @@ export class CcJobDefinition extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_batch_job_definition',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -6900,11 +6900,11 @@ export interface ConsumableResourceRequirementProperty {
     /**
     * The ARN of the consumable resource the job definition should consume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource CcJobDefinition#consumable_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource CcJobDefinition#consumable_resource}
     */
     readonly consumableResource?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#quantity CcJobDefinition#quantity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#quantity CcJobDefinition#quantity}
     */
     readonly quantity?: number;
 }
@@ -7012,7 +7012,7 @@ export class ConsumableResourceRequirementPropertyList extends cdktn.ComplexList
 }
 export interface ConsumableResourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource_list CcJobDefinition#consumable_resource_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource_list CcJobDefinition#consumable_resource_list}
     */
     readonly consumableResourceList?: ConsumableResourceRequirementProperty[] | cdktn.IResolvable;
 }
@@ -7076,11 +7076,11 @@ export class ConsumableResourcePropertiesPropertyOutputReference extends cdktn.C
 }
 export interface EnvironmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -7188,7 +7188,7 @@ export class EnvironmentPropertyList extends cdktn.ComplexList {
 }
 export interface EphemeralStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -7252,7 +7252,7 @@ export class EphemeralStoragePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface FargatePlatformConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#platform_version CcJobDefinition#platform_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#platform_version CcJobDefinition#platform_version}
     */
     readonly platformVersion?: string;
 }
@@ -7316,15 +7316,15 @@ export class FargatePlatformConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface DeviceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
     */
     readonly permissions?: string[];
 }
@@ -7454,15 +7454,15 @@ export class DevicePropertyList extends cdktn.ComplexList {
 }
 export interface TmpfsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
     */
     readonly mountOptions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
     */
     readonly size?: number;
 }
@@ -7592,27 +7592,27 @@ export class TmpfsPropertyList extends cdktn.ComplexList {
 }
 export interface LinuxParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
     */
     readonly devices?: DeviceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
     */
     readonly initProcessEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
     */
     readonly maxSwap?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
     */
     readonly sharedMemorySize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
     */
     readonly swappiness?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
     */
     readonly tmpfs?: TmpfsProperty[] | cdktn.IResolvable;
 }
@@ -7786,11 +7786,11 @@ export class LinuxParametersPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface SecretProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -7898,15 +7898,15 @@ export class SecretPropertyList extends cdktn.ComplexList {
 }
 export interface LogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
     */
     readonly logDriver?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
     */
     readonly secretOptions?: SecretProperty[] | cdktn.IResolvable;
 }
@@ -8014,15 +8014,15 @@ export class LogConfigurationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface MountPointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
     */
     readonly sourceVolume?: string;
 }
@@ -8152,7 +8152,7 @@ export class MountPointPropertyList extends cdktn.ComplexList {
 }
 export interface NetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#assign_public_ip CcJobDefinition#assign_public_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#assign_public_ip CcJobDefinition#assign_public_ip}
     */
     readonly assignPublicIp?: string;
 }
@@ -8216,7 +8216,7 @@ export class NetworkConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface RepositoryCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -8280,11 +8280,11 @@ export class RepositoryCredentialsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface ResourceRequirementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -8392,11 +8392,11 @@ export class ResourceRequirementPropertyList extends cdktn.ComplexList {
 }
 export interface RuntimePlatformProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
     */
     readonly cpuArchitecture?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
     */
     readonly operatingSystemFamily?: string;
 }
@@ -8482,11 +8482,11 @@ export class RuntimePlatformPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ContainerPropertiesSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -8594,15 +8594,15 @@ export class ContainerPropertiesSecretsPropertyList extends cdktn.ComplexList {
 }
 export interface UlimitProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
     */
     readonly hardLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
     */
     readonly softLimit?: number;
 }
@@ -8732,11 +8732,11 @@ export class UlimitPropertyList extends cdktn.ComplexList {
 }
 export interface EFSAuthorizationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
     */
     readonly accessPointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
     */
     readonly iam?: string;
 }
@@ -8822,23 +8822,23 @@ export class EFSAuthorizationConfigPropertyOutputReference extends cdktn.Complex
 }
 export interface EfsVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
     */
     readonly authorizationConfig?: EFSAuthorizationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
     */
     readonly transitEncryption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -8990,7 +8990,7 @@ export class EfsVolumeConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface HostProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -9054,19 +9054,19 @@ export class HostPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface S3FilesVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
     */
     readonly fileSystemArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -9196,19 +9196,19 @@ export class S3FilesVolumeConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface VolumesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
     */
     readonly efsVolumeConfiguration?: EfsVolumeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
     */
     readonly host?: HostProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
     */
     readonly s3FilesVolumeConfiguration?: S3FilesVolumeConfigurationProperty;
 }
@@ -9360,95 +9360,95 @@ export class VolumesPropertyList extends cdktn.ComplexList {
 }
 export interface ContainerPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
     */
     readonly environment?: EnvironmentProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
     */
     readonly ephemeralStorage?: EphemeralStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#fargate_platform_configuration CcJobDefinition#fargate_platform_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#fargate_platform_configuration CcJobDefinition#fargate_platform_configuration}
     */
     readonly fargatePlatformConfiguration?: FargatePlatformConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#job_role_arn CcJobDefinition#job_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#job_role_arn CcJobDefinition#job_role_arn}
     */
     readonly jobRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
     */
     readonly linuxParameters?: LinuxParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
     */
     readonly logConfiguration?: LogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#memory CcJobDefinition#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#memory CcJobDefinition#memory}
     */
     readonly memory?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
     */
     readonly mountPoints?: MountPointProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#network_configuration CcJobDefinition#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#network_configuration CcJobDefinition#network_configuration}
     */
     readonly networkConfiguration?: NetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
     */
     readonly readonlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
     */
     readonly repositoryCredentials?: RepositoryCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
     */
     readonly resourceRequirements?: ResourceRequirementProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
     */
     readonly runtimePlatform?: RuntimePlatformProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
     */
     readonly secrets?: ContainerPropertiesSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
     */
     readonly ulimits?: UlimitProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
     */
     readonly user?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#vcpus CcJobDefinition#vcpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#vcpus CcJobDefinition#vcpus}
     */
     readonly vcpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: VolumesProperty[] | cdktn.IResolvable;
 }
@@ -9996,11 +9996,11 @@ export class ContainerPropertiesPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TaskContainerDependencyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#condition CcJobDefinition#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#condition CcJobDefinition#condition}
     */
     readonly condition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_name CcJobDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_name CcJobDefinition#container_name}
     */
     readonly containerName?: string;
 }
@@ -10108,11 +10108,11 @@ export class TaskContainerDependencyPropertyList extends cdktn.ComplexList {
 }
 export interface EcsPropertiesTaskPropertiesContainersEnvironmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -10220,11 +10220,11 @@ export class EcsPropertiesTaskPropertiesContainersEnvironmentPropertyList extend
 }
 export interface FirelensConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
 }
@@ -10310,15 +10310,15 @@ export class FirelensConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface EcsPropertiesTaskPropertiesContainersLinuxParametersDevicesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
     */
     readonly permissions?: string[];
 }
@@ -10448,15 +10448,15 @@ export class EcsPropertiesTaskPropertiesContainersLinuxParametersDevicesProperty
 }
 export interface EcsPropertiesTaskPropertiesContainersLinuxParametersTmpfsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
     */
     readonly mountOptions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
     */
     readonly size?: number;
 }
@@ -10586,27 +10586,27 @@ export class EcsPropertiesTaskPropertiesContainersLinuxParametersTmpfsPropertyLi
 }
 export interface EcsPropertiesTaskPropertiesContainersLinuxParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
     */
     readonly devices?: EcsPropertiesTaskPropertiesContainersLinuxParametersDevicesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
     */
     readonly initProcessEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
     */
     readonly maxSwap?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
     */
     readonly sharedMemorySize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
     */
     readonly swappiness?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
     */
     readonly tmpfs?: EcsPropertiesTaskPropertiesContainersLinuxParametersTmpfsProperty[] | cdktn.IResolvable;
 }
@@ -10780,11 +10780,11 @@ export class EcsPropertiesTaskPropertiesContainersLinuxParametersPropertyOutputR
 }
 export interface EcsPropertiesTaskPropertiesContainersLogConfigurationSecretOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -10892,15 +10892,15 @@ export class EcsPropertiesTaskPropertiesContainersLogConfigurationSecretOptionsP
 }
 export interface EcsPropertiesTaskPropertiesContainersLogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
     */
     readonly logDriver?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
     */
     readonly secretOptions?: EcsPropertiesTaskPropertiesContainersLogConfigurationSecretOptionsProperty[] | cdktn.IResolvable;
 }
@@ -11008,15 +11008,15 @@ export class EcsPropertiesTaskPropertiesContainersLogConfigurationPropertyOutput
 }
 export interface EcsPropertiesTaskPropertiesContainersMountPointsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
     */
     readonly sourceVolume?: string;
 }
@@ -11146,7 +11146,7 @@ export class EcsPropertiesTaskPropertiesContainersMountPointsPropertyList extend
 }
 export interface EcsPropertiesTaskPropertiesContainersRepositoryCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -11210,11 +11210,11 @@ export class EcsPropertiesTaskPropertiesContainersRepositoryCredentialsPropertyO
 }
 export interface EcsPropertiesTaskPropertiesContainersResourceRequirementsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -11322,11 +11322,11 @@ export class EcsPropertiesTaskPropertiesContainersResourceRequirementsPropertyLi
 }
 export interface EcsPropertiesTaskPropertiesContainersSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -11434,15 +11434,15 @@ export class EcsPropertiesTaskPropertiesContainersSecretsPropertyList extends cd
 }
 export interface EcsPropertiesTaskPropertiesContainersUlimitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
     */
     readonly hardLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
     */
     readonly softLimit?: number;
 }
@@ -11572,79 +11572,79 @@ export class EcsPropertiesTaskPropertiesContainersUlimitsPropertyList extends cd
 }
 export interface TaskContainerPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#depends_on CcJobDefinition#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#depends_on CcJobDefinition#depends_on}
     */
     readonly dependsOn?: TaskContainerDependencyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
     */
     readonly environment?: EcsPropertiesTaskPropertiesContainersEnvironmentProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#essential CcJobDefinition#essential}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#essential CcJobDefinition#essential}
     */
     readonly essential?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#firelens_configuration CcJobDefinition#firelens_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#firelens_configuration CcJobDefinition#firelens_configuration}
     */
     readonly firelensConfiguration?: FirelensConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
     */
     readonly linuxParameters?: EcsPropertiesTaskPropertiesContainersLinuxParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
     */
     readonly logConfiguration?: EcsPropertiesTaskPropertiesContainersLogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
     */
     readonly mountPoints?: EcsPropertiesTaskPropertiesContainersMountPointsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
     */
     readonly readonlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
     */
     readonly repositoryCredentials?: EcsPropertiesTaskPropertiesContainersRepositoryCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
     */
     readonly resourceRequirements?: EcsPropertiesTaskPropertiesContainersResourceRequirementsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
     */
     readonly secrets?: EcsPropertiesTaskPropertiesContainersSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#start_timeout CcJobDefinition#start_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#start_timeout CcJobDefinition#start_timeout}
     */
     readonly startTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#stop_timeout CcJobDefinition#stop_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#stop_timeout CcJobDefinition#stop_timeout}
     */
     readonly stopTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
     */
     readonly ulimits?: EcsPropertiesTaskPropertiesContainersUlimitsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
     */
     readonly user?: string;
 }
@@ -12126,7 +12126,7 @@ export class TaskContainerPropertiesPropertyList extends cdktn.ComplexList {
 }
 export interface EcsPropertiesTaskPropertiesEphemeralStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -12190,7 +12190,7 @@ export class EcsPropertiesTaskPropertiesEphemeralStoragePropertyOutputReference 
 }
 export interface EcsPropertiesTaskPropertiesNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#assign_public_ip CcJobDefinition#assign_public_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#assign_public_ip CcJobDefinition#assign_public_ip}
     */
     readonly assignPublicIp?: string;
 }
@@ -12254,11 +12254,11 @@ export class EcsPropertiesTaskPropertiesNetworkConfigurationPropertyOutputRefere
 }
 export interface EcsPropertiesTaskPropertiesRuntimePlatformProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
     */
     readonly cpuArchitecture?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
     */
     readonly operatingSystemFamily?: string;
 }
@@ -12344,11 +12344,11 @@ export class EcsPropertiesTaskPropertiesRuntimePlatformPropertyOutputReference e
 }
 export interface EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationAuthorizationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
     */
     readonly accessPointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
     */
     readonly iam?: string;
 }
@@ -12434,23 +12434,23 @@ export class EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationAuthorizati
 }
 export interface EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
     */
     readonly authorizationConfig?: EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationAuthorizationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
     */
     readonly transitEncryption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -12602,7 +12602,7 @@ export class EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationPropertyOut
 }
 export interface EcsPropertiesTaskPropertiesVolumesHostProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -12666,19 +12666,19 @@ export class EcsPropertiesTaskPropertiesVolumesHostPropertyOutputReference exten
 }
 export interface EcsPropertiesTaskPropertiesVolumesS3FilesVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
     */
     readonly fileSystemArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -12808,19 +12808,19 @@ export class EcsPropertiesTaskPropertiesVolumesS3FilesVolumeConfigurationPropert
 }
 export interface EcsPropertiesTaskPropertiesVolumesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
     */
     readonly efsVolumeConfiguration?: EcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
     */
     readonly host?: EcsPropertiesTaskPropertiesVolumesHostProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
     */
     readonly s3FilesVolumeConfiguration?: EcsPropertiesTaskPropertiesVolumesS3FilesVolumeConfigurationProperty;
 }
@@ -12972,51 +12972,51 @@ export class EcsPropertiesTaskPropertiesVolumesPropertyList extends cdktn.Comple
 }
 export interface EcsTaskPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
     */
     readonly containers?: TaskContainerPropertiesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
     */
     readonly ephemeralStorage?: EcsPropertiesTaskPropertiesEphemeralStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ipc_mode CcJobDefinition#ipc_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ipc_mode CcJobDefinition#ipc_mode}
     */
     readonly ipcMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#network_configuration CcJobDefinition#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#network_configuration CcJobDefinition#network_configuration}
     */
     readonly networkConfiguration?: EcsPropertiesTaskPropertiesNetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#network_mode CcJobDefinition#network_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#network_mode CcJobDefinition#network_mode}
     */
     readonly networkMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#pid_mode CcJobDefinition#pid_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#pid_mode CcJobDefinition#pid_mode}
     */
     readonly pidMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#platform_version CcJobDefinition#platform_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#platform_version CcJobDefinition#platform_version}
     */
     readonly platformVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
     */
     readonly runtimePlatform?: EcsPropertiesTaskPropertiesRuntimePlatformProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#task_role_arn CcJobDefinition#task_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#task_role_arn CcJobDefinition#task_role_arn}
     */
     readonly taskRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: EcsPropertiesTaskPropertiesVolumesProperty[] | cdktn.IResolvable;
 }
@@ -13344,7 +13344,7 @@ export class EcsTaskPropertiesPropertyList extends cdktn.ComplexList {
 }
 export interface EcsPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#task_properties CcJobDefinition#task_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#task_properties CcJobDefinition#task_properties}
     */
     readonly taskProperties?: EcsTaskPropertiesProperty[] | cdktn.IResolvable;
 }
@@ -13408,11 +13408,11 @@ export class EcsPropertiesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EksContainerEnvironmentVariableProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -13520,11 +13520,11 @@ export class EksContainerEnvironmentVariablePropertyList extends cdktn.ComplexLi
 }
 export interface ResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
     */
     readonly limits?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
     */
     readonly requests?: { [key: string]: string };
 }
@@ -13610,27 +13610,27 @@ export class ResourcesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SecurityContextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
     */
     readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
     */
     readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
     */
     readonly runAsGroup?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
     */
     readonly runAsNonRoot?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
     */
     readonly runAsUser?: number;
 }
@@ -13804,19 +13804,19 @@ export class SecurityContextPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface EksContainerVolumeMountProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
     */
     readonly mountPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
     */
     readonly subPath?: string;
 }
@@ -13968,39 +13968,39 @@ export class EksContainerVolumeMountPropertyList extends cdktn.ComplexList {
 }
 export interface EksContainerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
     */
     readonly args?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
     */
     readonly env?: EksContainerEnvironmentVariableProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
     */
     readonly imagePullPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
     */
     readonly resources?: ResourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
     */
     readonly securityContext?: SecurityContextProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
     */
     readonly volumeMounts?: EksContainerVolumeMountProperty[] | cdktn.IResolvable;
 }
@@ -14262,7 +14262,7 @@ export class EksContainerPropertyList extends cdktn.ComplexList {
 }
 export interface ImagePullSecretProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
 }
@@ -14348,11 +14348,11 @@ export class ImagePullSecretPropertyList extends cdktn.ComplexList {
 }
 export interface EksPropertiesPodPropertiesInitContainersEnvProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -14460,11 +14460,11 @@ export class EksPropertiesPodPropertiesInitContainersEnvPropertyList extends cdk
 }
 export interface EksPropertiesPodPropertiesInitContainersResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
     */
     readonly limits?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
     */
     readonly requests?: { [key: string]: string };
 }
@@ -14550,27 +14550,27 @@ export class EksPropertiesPodPropertiesInitContainersResourcesPropertyOutputRefe
 }
 export interface EksPropertiesPodPropertiesInitContainersSecurityContextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
     */
     readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
     */
     readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
     */
     readonly runAsGroup?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
     */
     readonly runAsNonRoot?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
     */
     readonly runAsUser?: number;
 }
@@ -14744,19 +14744,19 @@ export class EksPropertiesPodPropertiesInitContainersSecurityContextPropertyOutp
 }
 export interface EksPropertiesPodPropertiesInitContainersVolumeMountsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
     */
     readonly mountPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
     */
     readonly subPath?: string;
 }
@@ -14908,39 +14908,39 @@ export class EksPropertiesPodPropertiesInitContainersVolumeMountsPropertyList ex
 }
 export interface EksPropertiesPodPropertiesInitContainersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
     */
     readonly args?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
     */
     readonly env?: EksPropertiesPodPropertiesInitContainersEnvProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
     */
     readonly imagePullPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
     */
     readonly resources?: EksPropertiesPodPropertiesInitContainersResourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
     */
     readonly securityContext?: EksPropertiesPodPropertiesInitContainersSecurityContextProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
     */
     readonly volumeMounts?: EksPropertiesPodPropertiesInitContainersVolumeMountsProperty[] | cdktn.IResolvable;
 }
@@ -15202,15 +15202,15 @@ export class EksPropertiesPodPropertiesInitContainersPropertyList extends cdktn.
 }
 export interface EksMetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#annotations CcJobDefinition#annotations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#annotations CcJobDefinition#annotations}
     */
     readonly annotations?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#labels CcJobDefinition#labels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#labels CcJobDefinition#labels}
     */
     readonly labels?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#namespace CcJobDefinition#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#namespace CcJobDefinition#namespace}
     */
     readonly namespace?: string;
 }
@@ -15318,11 +15318,11 @@ export class EksMetadataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EmptyDirProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#medium CcJobDefinition#medium}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#medium CcJobDefinition#medium}
     */
     readonly medium?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size_limit CcJobDefinition#size_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size_limit CcJobDefinition#size_limit}
     */
     readonly sizeLimit?: string;
 }
@@ -15408,7 +15408,7 @@ export class EmptyDirPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HostPathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#path CcJobDefinition#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#path CcJobDefinition#path}
     */
     readonly path?: string;
 }
@@ -15472,11 +15472,11 @@ export class HostPathPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EksPersistentVolumeClaimProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#claim_name CcJobDefinition#claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#claim_name CcJobDefinition#claim_name}
     */
     readonly claimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
 }
@@ -15562,11 +15562,11 @@ export class EksPersistentVolumeClaimPropertyOutputReference extends cdktn.Compl
 }
 export interface EksSecretProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#optional CcJobDefinition#optional}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#optional CcJobDefinition#optional}
     */
     readonly optional?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_name CcJobDefinition#secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_name CcJobDefinition#secret_name}
     */
     readonly secretName?: string;
 }
@@ -15652,23 +15652,23 @@ export class EksSecretPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EksVolumeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#empty_dir CcJobDefinition#empty_dir}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#empty_dir CcJobDefinition#empty_dir}
     */
     readonly emptyDir?: EmptyDirProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: HostPathProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#persistent_volume_claim CcJobDefinition#persistent_volume_claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#persistent_volume_claim CcJobDefinition#persistent_volume_claim}
     */
     readonly persistentVolumeClaim?: EksPersistentVolumeClaimProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret CcJobDefinition#secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret CcJobDefinition#secret}
     */
     readonly secret?: EksSecretProperty;
 }
@@ -15842,39 +15842,39 @@ export class EksVolumePropertyList extends cdktn.ComplexList {
 }
 export interface PodPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
     */
     readonly containers?: EksContainerProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#dns_policy CcJobDefinition#dns_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#dns_policy CcJobDefinition#dns_policy}
     */
     readonly dnsPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_network CcJobDefinition#host_network}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_network CcJobDefinition#host_network}
     */
     readonly hostNetwork?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_secrets CcJobDefinition#image_pull_secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_secrets CcJobDefinition#image_pull_secrets}
     */
     readonly imagePullSecrets?: ImagePullSecretProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_containers CcJobDefinition#init_containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_containers CcJobDefinition#init_containers}
     */
     readonly initContainers?: EksPropertiesPodPropertiesInitContainersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#metadata CcJobDefinition#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#metadata CcJobDefinition#metadata}
     */
     readonly metadata?: EksMetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#service_account_name CcJobDefinition#service_account_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#service_account_name CcJobDefinition#service_account_name}
     */
     readonly serviceAccountName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#share_process_namespace CcJobDefinition#share_process_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#share_process_namespace CcJobDefinition#share_process_namespace}
     */
     readonly shareProcessNamespace?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: EksVolumeProperty[] | cdktn.IResolvable;
 }
@@ -16114,7 +16114,7 @@ export class PodPropertiesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EksPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#pod_properties CcJobDefinition#pod_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#pod_properties CcJobDefinition#pod_properties}
     */
     readonly podProperties?: PodPropertiesProperty;
 }
@@ -16180,11 +16180,11 @@ export interface ConsumableResourceListProperty {
     /**
     * The ARN of the consumable resource the job definition should consume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource CcJobDefinition#consumable_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource CcJobDefinition#consumable_resource}
     */
     readonly consumableResource?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#quantity CcJobDefinition#quantity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#quantity CcJobDefinition#quantity}
     */
     readonly quantity?: number;
 }
@@ -16292,7 +16292,7 @@ export class ConsumableResourceListPropertyList extends cdktn.ComplexList {
 }
 export interface NodePropertiesNodeRangePropertiesConsumableResourcePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource_list CcJobDefinition#consumable_resource_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource_list CcJobDefinition#consumable_resource_list}
     */
     readonly consumableResourceList?: ConsumableResourceListProperty[] | cdktn.IResolvable;
 }
@@ -16356,11 +16356,11 @@ export class NodePropertiesNodeRangePropertiesConsumableResourcePropertiesProper
 }
 export interface NodePropertiesNodeRangePropertiesContainerEnvironmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -16468,7 +16468,7 @@ export class NodePropertiesNodeRangePropertiesContainerEnvironmentPropertyList e
 }
 export interface NodePropertiesNodeRangePropertiesContainerEphemeralStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size_in_gi_b CcJobDefinition#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -16532,15 +16532,15 @@ export class NodePropertiesNodeRangePropertiesContainerEphemeralStoragePropertyO
 }
 export interface NodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
     */
     readonly permissions?: string[];
 }
@@ -16670,15 +16670,15 @@ export class NodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesPro
 }
 export interface NodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
     */
     readonly mountOptions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
     */
     readonly size?: number;
 }
@@ -16808,27 +16808,27 @@ export class NodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsPrope
 }
 export interface NodePropertiesNodeRangePropertiesContainerLinuxParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
     */
     readonly devices?: NodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
     */
     readonly initProcessEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
     */
     readonly maxSwap?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
     */
     readonly sharedMemorySize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
     */
     readonly swappiness?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
     */
     readonly tmpfs?: NodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsProperty[] | cdktn.IResolvable;
 }
@@ -17002,11 +17002,11 @@ export class NodePropertiesNodeRangePropertiesContainerLinuxParametersPropertyOu
 }
 export interface NodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -17114,15 +17114,15 @@ export class NodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOpt
 }
 export interface NodePropertiesNodeRangePropertiesContainerLogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
     */
     readonly logDriver?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
     */
     readonly secretOptions?: NodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsProperty[] | cdktn.IResolvable;
 }
@@ -17230,15 +17230,15 @@ export class NodePropertiesNodeRangePropertiesContainerLogConfigurationPropertyO
 }
 export interface NodePropertiesNodeRangePropertiesContainerMountPointsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
     */
     readonly sourceVolume?: string;
 }
@@ -17368,7 +17368,7 @@ export class NodePropertiesNodeRangePropertiesContainerMountPointsPropertyList e
 }
 export interface NodePropertiesNodeRangePropertiesContainerRepositoryCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -17432,11 +17432,11 @@ export class NodePropertiesNodeRangePropertiesContainerRepositoryCredentialsProp
 }
 export interface NodePropertiesNodeRangePropertiesContainerResourceRequirementsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -17544,11 +17544,11 @@ export class NodePropertiesNodeRangePropertiesContainerResourceRequirementsPrope
 }
 export interface NodePropertiesNodeRangePropertiesContainerRuntimePlatformProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#cpu_architecture CcJobDefinition#cpu_architecture}
     */
     readonly cpuArchitecture?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#operating_system_family CcJobDefinition#operating_system_family}
     */
     readonly operatingSystemFamily?: string;
 }
@@ -17634,11 +17634,11 @@ export class NodePropertiesNodeRangePropertiesContainerRuntimePlatformPropertyOu
 }
 export interface NodePropertiesNodeRangePropertiesContainerSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -17746,15 +17746,15 @@ export class NodePropertiesNodeRangePropertiesContainerSecretsPropertyList exten
 }
 export interface NodePropertiesNodeRangePropertiesContainerUlimitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
     */
     readonly hardLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
     */
     readonly softLimit?: number;
 }
@@ -17884,11 +17884,11 @@ export class NodePropertiesNodeRangePropertiesContainerUlimitsPropertyList exten
 }
 export interface NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
     */
     readonly accessPointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
     */
     readonly iam?: string;
 }
@@ -17974,23 +17974,23 @@ export class NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigura
 }
 export interface NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
     */
     readonly authorizationConfig?: NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
     */
     readonly transitEncryption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -18142,7 +18142,7 @@ export class NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigura
 }
 export interface NodePropertiesNodeRangePropertiesContainerVolumesHostProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -18206,19 +18206,19 @@ export class NodePropertiesNodeRangePropertiesContainerVolumesHostPropertyOutput
 }
 export interface NodePropertiesNodeRangePropertiesContainerVolumesS3FilesVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
     */
     readonly fileSystemArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -18348,19 +18348,19 @@ export class NodePropertiesNodeRangePropertiesContainerVolumesS3FilesVolumeConfi
 }
 export interface NodePropertiesNodeRangePropertiesContainerVolumesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
     */
     readonly efsVolumeConfiguration?: NodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
     */
     readonly host?: NodePropertiesNodeRangePropertiesContainerVolumesHostProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
     */
     readonly s3FilesVolumeConfiguration?: NodePropertiesNodeRangePropertiesContainerVolumesS3FilesVolumeConfigurationProperty;
 }
@@ -18512,91 +18512,91 @@ export class NodePropertiesNodeRangePropertiesContainerVolumesPropertyList exten
 }
 export interface MultiNodeContainerPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
     */
     readonly environment?: NodePropertiesNodeRangePropertiesContainerEnvironmentProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ephemeral_storage CcJobDefinition#ephemeral_storage}
     */
     readonly ephemeralStorage?: NodePropertiesNodeRangePropertiesContainerEphemeralStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#instance_type CcJobDefinition#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#instance_type CcJobDefinition#instance_type}
     */
     readonly instanceType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#job_role_arn CcJobDefinition#job_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#job_role_arn CcJobDefinition#job_role_arn}
     */
     readonly jobRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
     */
     readonly linuxParameters?: NodePropertiesNodeRangePropertiesContainerLinuxParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
     */
     readonly logConfiguration?: NodePropertiesNodeRangePropertiesContainerLogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#memory CcJobDefinition#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#memory CcJobDefinition#memory}
     */
     readonly memory?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
     */
     readonly mountPoints?: NodePropertiesNodeRangePropertiesContainerMountPointsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
     */
     readonly readonlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
     */
     readonly repositoryCredentials?: NodePropertiesNodeRangePropertiesContainerRepositoryCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
     */
     readonly resourceRequirements?: NodePropertiesNodeRangePropertiesContainerResourceRequirementsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#runtime_platform CcJobDefinition#runtime_platform}
     */
     readonly runtimePlatform?: NodePropertiesNodeRangePropertiesContainerRuntimePlatformProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
     */
     readonly secrets?: NodePropertiesNodeRangePropertiesContainerSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
     */
     readonly ulimits?: NodePropertiesNodeRangePropertiesContainerUlimitsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
     */
     readonly user?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#vcpus CcJobDefinition#vcpus}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#vcpus CcJobDefinition#vcpus}
     */
     readonly vcpus?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: NodePropertiesNodeRangePropertiesContainerVolumesProperty[] | cdktn.IResolvable;
 }
@@ -19122,11 +19122,11 @@ export class MultiNodeContainerPropertiesPropertyOutputReference extends cdktn.C
 }
 export interface DependsOnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#condition CcJobDefinition#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#condition CcJobDefinition#condition}
     */
     readonly condition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_name CcJobDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_name CcJobDefinition#container_name}
     */
     readonly containerName?: string;
 }
@@ -19234,11 +19234,11 @@ export class DependsOnPropertyList extends cdktn.ComplexList {
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersEnvironmentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -19346,11 +19346,11 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersFirelensConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
 }
@@ -19436,15 +19436,15 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersDevicesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#permissions CcJobDefinition#permissions}
     */
     readonly permissions?: string[];
 }
@@ -19574,15 +19574,15 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersTmpfsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_options CcJobDefinition#mount_options}
     */
     readonly mountOptions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size CcJobDefinition#size}
     */
     readonly size?: number;
 }
@@ -19712,27 +19712,27 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#devices CcJobDefinition#devices}
     */
     readonly devices?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersDevicesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_process_enabled CcJobDefinition#init_process_enabled}
     */
     readonly initProcessEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#max_swap CcJobDefinition#max_swap}
     */
     readonly maxSwap?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#shared_memory_size CcJobDefinition#shared_memory_size}
     */
     readonly sharedMemorySize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#swappiness CcJobDefinition#swappiness}
     */
     readonly swappiness?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#tmpfs CcJobDefinition#tmpfs}
     */
     readonly tmpfs?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersTmpfsProperty[] | cdktn.IResolvable;
 }
@@ -19906,11 +19906,11 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLogConfigurationSecretOptionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -20018,15 +20018,15 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLogConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_driver CcJobDefinition#log_driver}
     */
     readonly logDriver?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#options CcJobDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_options CcJobDefinition#secret_options}
     */
     readonly secretOptions?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLogConfigurationSecretOptionsProperty[] | cdktn.IResolvable;
 }
@@ -20134,15 +20134,15 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersMountPointsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container_path CcJobDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_volume CcJobDefinition#source_volume}
     */
     readonly sourceVolume?: string;
 }
@@ -20272,7 +20272,7 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersRepositoryCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#credentials_parameter CcJobDefinition#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -20336,11 +20336,11 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersResourceRequirementsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#type CcJobDefinition#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -20448,11 +20448,11 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value_from CcJobDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -20560,15 +20560,15 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersUlimitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#hard_limit CcJobDefinition#hard_limit}
     */
     readonly hardLimit?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#soft_limit CcJobDefinition#soft_limit}
     */
     readonly softLimit?: number;
 }
@@ -20698,79 +20698,79 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#depends_on CcJobDefinition#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#depends_on CcJobDefinition#depends_on}
     */
     readonly dependsOn?: DependsOnProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#environment CcJobDefinition#environment}
     */
     readonly environment?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersEnvironmentProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#essential CcJobDefinition#essential}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#essential CcJobDefinition#essential}
     */
     readonly essential?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#firelens_configuration CcJobDefinition#firelens_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#firelens_configuration CcJobDefinition#firelens_configuration}
     */
     readonly firelensConfiguration?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersFirelensConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#linux_parameters CcJobDefinition#linux_parameters}
     */
     readonly linuxParameters?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLinuxParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#log_configuration CcJobDefinition#log_configuration}
     */
     readonly logConfiguration?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersLogConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_points CcJobDefinition#mount_points}
     */
     readonly mountPoints?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersMountPointsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#readonly_root_filesystem CcJobDefinition#readonly_root_filesystem}
     */
     readonly readonlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#repository_credentials CcJobDefinition#repository_credentials}
     */
     readonly repositoryCredentials?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersRepositoryCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resource_requirements CcJobDefinition#resource_requirements}
     */
     readonly resourceRequirements?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersResourceRequirementsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secrets CcJobDefinition#secrets}
     */
     readonly secrets?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#start_timeout CcJobDefinition#start_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#start_timeout CcJobDefinition#start_timeout}
     */
     readonly startTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#stop_timeout CcJobDefinition#stop_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#stop_timeout CcJobDefinition#stop_timeout}
     */
     readonly stopTimeout?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ulimits CcJobDefinition#ulimits}
     */
     readonly ulimits?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersUlimitsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#user CcJobDefinition#user}
     */
     readonly user?: string;
 }
@@ -21252,11 +21252,11 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContain
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationAuthorizationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_id CcJobDefinition#access_point_id}
     */
     readonly accessPointId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#iam CcJobDefinition#iam}
     */
     readonly iam?: string;
 }
@@ -21342,23 +21342,23 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumes
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#authorization_config CcJobDefinition#authorization_config}
     */
     readonly authorizationConfig?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationAuthorizationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_id CcJobDefinition#file_system_id}
     */
     readonly fileSystemId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption CcJobDefinition#transit_encryption}
     */
     readonly transitEncryption?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -21510,7 +21510,7 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumes
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesHostProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#source_path CcJobDefinition#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -21574,19 +21574,19 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumes
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesS3FilesVolumeConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#access_point_arn CcJobDefinition#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#file_system_arn CcJobDefinition#file_system_arn}
     */
     readonly fileSystemArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#root_directory CcJobDefinition#root_directory}
     */
     readonly rootDirectory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#transit_encryption_port CcJobDefinition#transit_encryption_port}
     */
     readonly transitEncryptionPort?: number;
 }
@@ -21716,19 +21716,19 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumes
 }
 export interface NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#efs_volume_configuration CcJobDefinition#efs_volume_configuration}
     */
     readonly efsVolumeConfiguration?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesEfsVolumeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host CcJobDefinition#host}
     */
     readonly host?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesHostProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#s3_files_volume_configuration CcJobDefinition#s3_files_volume_configuration}
     */
     readonly s3FilesVolumeConfiguration?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesS3FilesVolumeConfigurationProperty;
 }
@@ -21880,31 +21880,31 @@ export class NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumes
 }
 export interface MultiNodeEcsTaskPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
     */
     readonly containers?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesContainersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#enable_execute_command CcJobDefinition#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#execution_role_arn CcJobDefinition#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ipc_mode CcJobDefinition#ipc_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ipc_mode CcJobDefinition#ipc_mode}
     */
     readonly ipcMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#pid_mode CcJobDefinition#pid_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#pid_mode CcJobDefinition#pid_mode}
     */
     readonly pidMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#task_role_arn CcJobDefinition#task_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#task_role_arn CcJobDefinition#task_role_arn}
     */
     readonly taskRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: NodePropertiesNodeRangePropertiesEcsPropertiesTaskPropertiesVolumesProperty[] | cdktn.IResolvable;
 }
@@ -22122,7 +22122,7 @@ export class MultiNodeEcsTaskPropertiesPropertyList extends cdktn.ComplexList {
 }
 export interface MultiNodeEcsPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#task_properties CcJobDefinition#task_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#task_properties CcJobDefinition#task_properties}
     */
     readonly taskProperties?: MultiNodeEcsTaskPropertiesProperty[] | cdktn.IResolvable;
 }
@@ -22186,11 +22186,11 @@ export class MultiNodeEcsPropertiesPropertyOutputReference extends cdktn.Complex
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersEnvProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -22298,11 +22298,11 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContaine
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
     */
     readonly limits?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
     */
     readonly requests?: { [key: string]: string };
 }
@@ -22388,27 +22388,27 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContaine
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersSecurityContextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
     */
     readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
     */
     readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
     */
     readonly runAsGroup?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
     */
     readonly runAsNonRoot?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
     */
     readonly runAsUser?: number;
 }
@@ -22582,19 +22582,19 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContaine
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersVolumeMountsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
     */
     readonly mountPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
     */
     readonly subPath?: string;
 }
@@ -22746,39 +22746,39 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContaine
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
     */
     readonly args?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
     */
     readonly env?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersEnvProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
     */
     readonly imagePullPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
     */
     readonly resources?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersResourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
     */
     readonly securityContext?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersSecurityContextProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
     */
     readonly volumeMounts?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersVolumeMountsProperty[] | cdktn.IResolvable;
 }
@@ -23040,7 +23040,7 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContaine
 }
 export interface ImagePullSecretsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
 }
@@ -23126,11 +23126,11 @@ export class ImagePullSecretsPropertyList extends cdktn.ComplexList {
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersEnvProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#value CcJobDefinition#value}
     */
     readonly value?: string;
 }
@@ -23238,11 +23238,11 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitCont
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersResourcesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#limits CcJobDefinition#limits}
     */
     readonly limits?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#requests CcJobDefinition#requests}
     */
     readonly requests?: { [key: string]: string };
 }
@@ -23328,27 +23328,27 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitCont
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersSecurityContextProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#allow_privilege_escalation CcJobDefinition#allow_privilege_escalation}
     */
     readonly allowPrivilegeEscalation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#privileged CcJobDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only_root_filesystem CcJobDefinition#read_only_root_filesystem}
     */
     readonly readOnlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_group CcJobDefinition#run_as_group}
     */
     readonly runAsGroup?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_non_root CcJobDefinition#run_as_non_root}
     */
     readonly runAsNonRoot?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#run_as_user CcJobDefinition#run_as_user}
     */
     readonly runAsUser?: number;
 }
@@ -23522,19 +23522,19 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitCont
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersVolumeMountsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#mount_path CcJobDefinition#mount_path}
     */
     readonly mountPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#sub_path CcJobDefinition#sub_path}
     */
     readonly subPath?: string;
 }
@@ -23686,39 +23686,39 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitCont
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#args CcJobDefinition#args}
     */
     readonly args?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#command CcJobDefinition#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#env CcJobDefinition#env}
     */
     readonly env?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersEnvProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image CcJobDefinition#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_policy CcJobDefinition#image_pull_policy}
     */
     readonly imagePullPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#resources CcJobDefinition#resources}
     */
     readonly resources?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersResourcesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#security_context CcJobDefinition#security_context}
     */
     readonly securityContext?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersSecurityContextProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volume_mounts CcJobDefinition#volume_mounts}
     */
     readonly volumeMounts?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersVolumeMountsProperty[] | cdktn.IResolvable;
 }
@@ -23980,15 +23980,15 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitCont
 }
 export interface MetadataProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#annotations CcJobDefinition#annotations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#annotations CcJobDefinition#annotations}
     */
     readonly annotations?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#labels CcJobDefinition#labels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#labels CcJobDefinition#labels}
     */
     readonly labels?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#namespace CcJobDefinition#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#namespace CcJobDefinition#namespace}
     */
     readonly namespace?: string;
 }
@@ -24096,11 +24096,11 @@ export class MetadataPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesEmptyDirProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#medium CcJobDefinition#medium}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#medium CcJobDefinition#medium}
     */
     readonly medium?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#size_limit CcJobDefinition#size_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#size_limit CcJobDefinition#size_limit}
     */
     readonly sizeLimit?: string;
 }
@@ -24186,7 +24186,7 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesE
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesHostPathProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#path CcJobDefinition#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#path CcJobDefinition#path}
     */
     readonly path?: string;
 }
@@ -24250,11 +24250,11 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesH
 }
 export interface PersistentVolumeClaimProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#claim_name CcJobDefinition#claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#claim_name CcJobDefinition#claim_name}
     */
     readonly claimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#read_only CcJobDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
 }
@@ -24340,11 +24340,11 @@ export class PersistentVolumeClaimPropertyOutputReference extends cdktn.ComplexO
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesSecretProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#optional CcJobDefinition#optional}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#optional CcJobDefinition#optional}
     */
     readonly optional?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret_name CcJobDefinition#secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret_name CcJobDefinition#secret_name}
     */
     readonly secretName?: string;
 }
@@ -24430,23 +24430,23 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesS
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#empty_dir CcJobDefinition#empty_dir}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#empty_dir CcJobDefinition#empty_dir}
     */
     readonly emptyDir?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesEmptyDirProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_path CcJobDefinition#host_path}
     */
     readonly hostPath?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesHostPathProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#name CcJobDefinition#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#persistent_volume_claim CcJobDefinition#persistent_volume_claim}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#persistent_volume_claim CcJobDefinition#persistent_volume_claim}
     */
     readonly persistentVolumeClaim?: PersistentVolumeClaimProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#secret CcJobDefinition#secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#secret CcJobDefinition#secret}
     */
     readonly secret?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesSecretProperty;
 }
@@ -24620,39 +24620,39 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesP
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#containers CcJobDefinition#containers}
     */
     readonly containers?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesContainersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#dns_policy CcJobDefinition#dns_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#dns_policy CcJobDefinition#dns_policy}
     */
     readonly dnsPolicy?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#host_network CcJobDefinition#host_network}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#host_network CcJobDefinition#host_network}
     */
     readonly hostNetwork?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#image_pull_secrets CcJobDefinition#image_pull_secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#image_pull_secrets CcJobDefinition#image_pull_secrets}
     */
     readonly imagePullSecrets?: ImagePullSecretsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#init_containers CcJobDefinition#init_containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#init_containers CcJobDefinition#init_containers}
     */
     readonly initContainers?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesInitContainersProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#metadata CcJobDefinition#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#metadata CcJobDefinition#metadata}
     */
     readonly metadata?: MetadataProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#service_account_name CcJobDefinition#service_account_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#service_account_name CcJobDefinition#service_account_name}
     */
     readonly serviceAccountName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#share_process_namespace CcJobDefinition#share_process_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#share_process_namespace CcJobDefinition#share_process_namespace}
     */
     readonly shareProcessNamespace?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#volumes CcJobDefinition#volumes}
     */
     readonly volumes?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesVolumesProperty[] | cdktn.IResolvable;
 }
@@ -24892,7 +24892,7 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesProperty
 }
 export interface NodePropertiesNodeRangePropertiesEksPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#pod_properties CcJobDefinition#pod_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#pod_properties CcJobDefinition#pod_properties}
     */
     readonly podProperties?: NodePropertiesNodeRangePropertiesEksPropertiesPodPropertiesProperty;
 }
@@ -24956,27 +24956,27 @@ export class NodePropertiesNodeRangePropertiesEksPropertiesPropertyOutputReferen
 }
 export interface NodeRangePropertyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#consumable_resource_properties CcJobDefinition#consumable_resource_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#consumable_resource_properties CcJobDefinition#consumable_resource_properties}
     */
     readonly consumableResourceProperties?: NodePropertiesNodeRangePropertiesConsumableResourcePropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#container CcJobDefinition#container}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#container CcJobDefinition#container}
     */
     readonly container?: MultiNodeContainerPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#ecs_properties CcJobDefinition#ecs_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#ecs_properties CcJobDefinition#ecs_properties}
     */
     readonly ecsProperties?: MultiNodeEcsPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#eks_properties CcJobDefinition#eks_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#eks_properties CcJobDefinition#eks_properties}
     */
     readonly eksProperties?: NodePropertiesNodeRangePropertiesEksPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#instance_types CcJobDefinition#instance_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#instance_types CcJobDefinition#instance_types}
     */
     readonly instanceTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#target_nodes CcJobDefinition#target_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#target_nodes CcJobDefinition#target_nodes}
     */
     readonly targetNodes?: string;
 }
@@ -25172,15 +25172,15 @@ export class NodeRangePropertyPropertyList extends cdktn.ComplexList {
 }
 export interface NodePropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#main_node CcJobDefinition#main_node}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#main_node CcJobDefinition#main_node}
     */
     readonly mainNode?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#node_range_properties CcJobDefinition#node_range_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#node_range_properties CcJobDefinition#node_range_properties}
     */
     readonly nodeRangeProperties?: NodeRangePropertyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#num_nodes CcJobDefinition#num_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#num_nodes CcJobDefinition#num_nodes}
     */
     readonly numNodes?: number;
 }
@@ -25288,7 +25288,7 @@ export class NodePropertiesPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ResourceRetentionPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#skip_deregister_on_update CcJobDefinition#skip_deregister_on_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#skip_deregister_on_update CcJobDefinition#skip_deregister_on_update}
     */
     readonly skipDeregisterOnUpdate?: boolean | cdktn.IResolvable;
 }
@@ -25352,19 +25352,19 @@ export class ResourceRetentionPolicyPropertyOutputReference extends cdktn.Comple
 }
 export interface EvaluateOnExitProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#action CcJobDefinition#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#action CcJobDefinition#action}
     */
     readonly action?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#on_exit_code CcJobDefinition#on_exit_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#on_exit_code CcJobDefinition#on_exit_code}
     */
     readonly onExitCode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#on_reason CcJobDefinition#on_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#on_reason CcJobDefinition#on_reason}
     */
     readonly onReason?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#on_status_reason CcJobDefinition#on_status_reason}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#on_status_reason CcJobDefinition#on_status_reason}
     */
     readonly onStatusReason?: string;
 }
@@ -25516,11 +25516,11 @@ export class EvaluateOnExitPropertyList extends cdktn.ComplexList {
 }
 export interface RetryStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#attempts CcJobDefinition#attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#attempts CcJobDefinition#attempts}
     */
     readonly attempts?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#evaluate_on_exit CcJobDefinition#evaluate_on_exit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#evaluate_on_exit CcJobDefinition#evaluate_on_exit}
     */
     readonly evaluateOnExit?: EvaluateOnExitProperty[] | cdktn.IResolvable;
 }
@@ -25606,7 +25606,7 @@ export class RetryStrategyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTimeoutProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/batch_job_definition#attempt_duration_seconds CcJobDefinition#attempt_duration_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/batch_job_definition#attempt_duration_seconds CcJobDefinition#attempt_duration_seconds}
     */
     readonly attemptDurationSeconds?: number;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,33 +9,33 @@ export interface CcSimulationProps extends cdktn.TerraformMetaArguments {
     /**
     * The maximum running time of the simulation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#maximum_duration CcSimulation#maximum_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#maximum_duration CcSimulation#maximum_duration}
     */
     readonly maximumDuration?: string;
     /**
     * The name of the simulation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#name CcSimulation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#name CcSimulation#name}
     */
     readonly name: string;
     /**
     * Role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#role_arn CcSimulation#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#role_arn CcSimulation#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#schema_s3_location CcSimulation#schema_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#schema_s3_location CcSimulation#schema_s3_location}
     */
     readonly schemaS3Location?: CcSimulation.S3LocationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#snapshot_s3_location CcSimulation#snapshot_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#snapshot_s3_location CcSimulation#snapshot_s3_location}
     */
     readonly snapshotS3Location?: CcSimulation.SnapshotS3LocationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation awscc_simspaceweaver_simulation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation awscc_simspaceweaver_simulation}
 */
 export class CcSimulation extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcSimulation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSimulation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSimulation to import
-    * @param importFromId The id of the existing CcSimulation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSimulation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSimulation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcSimulation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation awscc_simspaceweaver_simulation} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation awscc_simspaceweaver_simulation} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class CcSimulation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_simspaceweaver_simulation',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -311,13 +311,13 @@ export interface S3LocationProperty {
     /**
     * The Schema S3 bucket name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#bucket_name CcSimulation#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#bucket_name CcSimulation#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * This is the schema S3 object key, which includes the full path of "folders" from the bucket root to the schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#object_key CcSimulation#object_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#object_key CcSimulation#object_key}
     */
     readonly objectKey?: string;
 }
@@ -405,13 +405,13 @@ export interface SnapshotS3LocationProperty {
     /**
     * The Schema S3 bucket name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#bucket_name CcSimulation#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#bucket_name CcSimulation#bucket_name}
     */
     readonly bucketName?: string;
     /**
     * This is the schema S3 object key, which includes the full path of "folders" from the bucket root to the schema.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/simspaceweaver_simulation#object_key CcSimulation#object_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/simspaceweaver_simulation#object_key CcSimulation#object_key}
     */
     readonly objectKey?: string;
 }

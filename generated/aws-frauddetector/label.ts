@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcLabelProps extends cdktn.TerraformMetaArguments {
     /**
     * The label description.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#description CcLabel#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#description CcLabel#description}
     */
     readonly description?: string;
     /**
     * The name of the label.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#name CcLabel#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#name CcLabel#name}
     */
     readonly name: string;
     /**
     * Tags associated with this label.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#tags CcLabel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#tags CcLabel#tags}
     */
     readonly tags?: CcLabel.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label awscc_frauddetector_label}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label awscc_frauddetector_label}
 */
 export class CcLabel extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcLabel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLabel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLabel to import
-    * @param importFromId The id of the existing CcLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLabel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcLabel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label awscc_frauddetector_label} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label awscc_frauddetector_label} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcLabel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_frauddetector_label',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -229,11 +229,11 @@ export function ccLabelTagPropertyToHclTerraform(struct?: CcLabel.TagProperty | 
 export namespace CcLabel {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#key CcLabel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#key CcLabel#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/frauddetector_label#value CcLabel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/frauddetector_label#value CcLabel#value}
     */
     readonly value?: string;
 }

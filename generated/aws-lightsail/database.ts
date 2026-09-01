@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,97 +9,97 @@ export interface CcDatabaseProps extends cdktn.TerraformMetaArguments {
     /**
     * The Availability Zone in which to create your new database. Use the us-east-2a case-sensitive format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#availability_zone CcDatabase#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#availability_zone CcDatabase#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * When true, enables automated backup retention for your database. Updates are applied during the next maintenance window because this can result in an outage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#backup_retention CcDatabase#backup_retention}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#backup_retention CcDatabase#backup_retention}
     */
     readonly backupRetention?: boolean | cdktn.IResolvable;
     /**
     * Indicates the certificate that needs to be associated with the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#ca_certificate_identifier CcDatabase#ca_certificate_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#ca_certificate_identifier CcDatabase#ca_certificate_identifier}
     */
     readonly caCertificateIdentifier?: string;
     /**
     * The name of the database to create when the Lightsail database resource is created. For MySQL, if this parameter isn't specified, no database is created in the database resource. For PostgreSQL, if this parameter isn't specified, a database named postgres is created in the database resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#master_database_name CcDatabase#master_database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#master_database_name CcDatabase#master_database_name}
     */
     readonly masterDatabaseName: string;
     /**
     * The password for the master user. The password can include any printable ASCII character except "/", """, or "@". It cannot contain spaces.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#master_user_password CcDatabase#master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#master_user_password CcDatabase#master_user_password}
     */
     readonly masterUserPassword?: string;
     /**
     * The name for the master user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#master_username CcDatabase#master_username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#master_username CcDatabase#master_username}
     */
     readonly masterUsername: string;
     /**
     * The daily time range during which automated backups are created for your new database if automated backups are enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#preferred_backup_window CcDatabase#preferred_backup_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#preferred_backup_window CcDatabase#preferred_backup_window}
     */
     readonly preferredBackupWindow?: string;
     /**
     * The weekly time range during which system maintenance can occur on your new database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#preferred_maintenance_window CcDatabase#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#preferred_maintenance_window CcDatabase#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * Specifies the accessibility options for your new database. A value of true specifies a database that is available to resources outside of your Lightsail account. A value of false specifies a database that is available only to your Lightsail resources in the same region as your database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#publicly_accessible CcDatabase#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#publicly_accessible CcDatabase#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The blueprint ID for your new database. A blueprint describes the major engine version of a database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#relational_database_blueprint_id CcDatabase#relational_database_blueprint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#relational_database_blueprint_id CcDatabase#relational_database_blueprint_id}
     */
     readonly relationalDatabaseBlueprintId: string;
     /**
     * The bundle ID for your new database. A bundle describes the performance specifications for your database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#relational_database_bundle_id CcDatabase#relational_database_bundle_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#relational_database_bundle_id CcDatabase#relational_database_bundle_id}
     */
     readonly relationalDatabaseBundleId: string;
     /**
     * The name to use for your new Lightsail database resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#relational_database_name CcDatabase#relational_database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#relational_database_name CcDatabase#relational_database_name}
     */
     readonly relationalDatabaseName: string;
     /**
     * Update one or more parameters of the relational database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#relational_database_parameters CcDatabase#relational_database_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#relational_database_parameters CcDatabase#relational_database_parameters}
     */
     readonly relationalDatabaseParameters?: CcDatabase.RelationalDatabaseParameterProperty[] | cdktn.IResolvable;
     /**
     * When true, the master user password is changed to a new strong password generated by Lightsail. Use the get relational database master user password operation to get the new password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#rotate_master_user_password CcDatabase#rotate_master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#rotate_master_user_password CcDatabase#rotate_master_user_password}
     */
     readonly rotateMasterUserPassword?: boolean | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#tags CcDatabase#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#tags CcDatabase#tags}
     */
     readonly tags?: CcDatabase.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database awscc_lightsail_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database awscc_lightsail_database}
 */
 export class CcDatabase extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcDatabase extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDatabase resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDatabase to import
-    * @param importFromId The id of the existing CcDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDatabase to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcDatabase extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database awscc_lightsail_database} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database awscc_lightsail_database} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class CcDatabase extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lightsail_database',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -648,49 +648,49 @@ export interface RelationalDatabaseParameterProperty {
     /**
     * Specifies the valid range of values for the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#allowed_values CcDatabase#allowed_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#allowed_values CcDatabase#allowed_values}
     */
     readonly allowedValues?: string;
     /**
     * Indicates when parameter updates are applied. Can be immediate or pending-reboot.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#apply_method CcDatabase#apply_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#apply_method CcDatabase#apply_method}
     */
     readonly applyMethod?: string;
     /**
     * Specifies the engine-specific parameter type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#apply_type CcDatabase#apply_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#apply_type CcDatabase#apply_type}
     */
     readonly applyType?: string;
     /**
     * Specifies the valid data type for the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#data_type CcDatabase#data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#data_type CcDatabase#data_type}
     */
     readonly dataType?: string;
     /**
     * Provides a description of the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#description CcDatabase#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#description CcDatabase#description}
     */
     readonly description?: string;
     /**
     * A Boolean value indicating whether the parameter can be modified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#is_modifiable CcDatabase#is_modifiable}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#is_modifiable CcDatabase#is_modifiable}
     */
     readonly isModifiable?: boolean | cdktn.IResolvable;
     /**
     * Specifies the name of the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#parameter_name CcDatabase#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#parameter_name CcDatabase#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * Specifies the value of the parameter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#parameter_value CcDatabase#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#parameter_value CcDatabase#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -932,13 +932,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#key CcDatabase#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#key CcDatabase#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lightsail_database#value CcDatabase#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lightsail_database#value CcDatabase#value}
     */
     readonly value?: string;
 }

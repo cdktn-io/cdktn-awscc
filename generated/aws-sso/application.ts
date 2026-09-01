@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,47 +9,47 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the application provider under which the operation will run
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#application_provider_arn CcApplication#application_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#application_provider_arn CcApplication#application_provider_arn}
     */
     readonly applicationProviderArn: string;
     /**
     * The description information for the Identity Center (SSO) Application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#description CcApplication#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#description CcApplication#description}
     */
     readonly description?: string;
     /**
     * The ARN of the instance of IAM Identity Center under which the operation will run
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#instance_arn CcApplication#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#instance_arn CcApplication#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The name you want to assign to this Identity Center (SSO) Application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#name CcApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#name CcApplication#name}
     */
     readonly name: string;
     /**
     * A structure that describes the options for the portal associated with an application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#portal_options CcApplication#portal_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#portal_options CcApplication#portal_options}
     */
     readonly portalOptions?: CcApplication.PortalOptionsConfigurationProperty;
     /**
     * Specifies whether the application is enabled or disabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#status CcApplication#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#status CcApplication#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application awscc_sso_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application awscc_sso_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application awscc_sso_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application awscc_sso_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CcApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sso_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -412,13 +412,13 @@ export interface SignInOptionsProperty {
     /**
     * The URL that accepts authentication requests for an application, this is a required parameter if the Origin parameter is APPLICATION
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#application_url CcApplication#application_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#application_url CcApplication#application_url}
     */
     readonly applicationUrl?: string;
     /**
     * This determines how IAM Identity Center navigates the user to the target application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#origin CcApplication#origin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#origin CcApplication#origin}
     */
     readonly origin?: string;
 }
@@ -506,13 +506,13 @@ export interface PortalOptionsConfigurationProperty {
     /**
     * A structure that describes the sign-in options for the access portal
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#sign_in_options CcApplication#sign_in_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#sign_in_options CcApplication#sign_in_options}
     */
     readonly signInOptions?: SignInOptionsProperty;
     /**
     * Indicates whether this application is visible in the access portal
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#visibility CcApplication#visibility}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#visibility CcApplication#visibility}
     */
     readonly visibility?: string;
 }
@@ -598,11 +598,11 @@ export class PortalOptionsConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sso_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sso_application#value CcApplication#value}
     */
     readonly value?: string;
 }

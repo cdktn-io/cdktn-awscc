@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcVPCEncryptionControlProps extends cdktn.TerraformMetaArgument
     /**
     * Used to enable or disable EIGW exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#egress_only_internet_gateway_exclusion_input CcVPCEncryptionControl#egress_only_internet_gateway_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#egress_only_internet_gateway_exclusion_input CcVPCEncryptionControl#egress_only_internet_gateway_exclusion_input}
     */
     readonly egressOnlyInternetGatewayExclusionInput?: string;
     /**
     * Used to enable or disable EFS exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#elastic_file_system_exclusion_input CcVPCEncryptionControl#elastic_file_system_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#elastic_file_system_exclusion_input CcVPCEncryptionControl#elastic_file_system_exclusion_input}
     */
     readonly elasticFileSystemExclusionInput?: string;
     /**
     * Used to enable or disable IGW exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#internet_gateway_exclusion_input CcVPCEncryptionControl#internet_gateway_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#internet_gateway_exclusion_input CcVPCEncryptionControl#internet_gateway_exclusion_input}
     */
     readonly internetGatewayExclusionInput?: string;
     /**
     * Used to enable or disable Lambda exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#lambda_exclusion_input CcVPCEncryptionControl#lambda_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#lambda_exclusion_input CcVPCEncryptionControl#lambda_exclusion_input}
     */
     readonly lambdaExclusionInput?: string;
     /**
     * The VPC encryption control mode, either monitor or enforce.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#mode CcVPCEncryptionControl#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#mode CcVPCEncryptionControl#mode}
     */
     readonly mode?: string;
     /**
     * Used to enable or disable Nat gateway exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#nat_gateway_exclusion_input CcVPCEncryptionControl#nat_gateway_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#nat_gateway_exclusion_input CcVPCEncryptionControl#nat_gateway_exclusion_input}
     */
     readonly natGatewayExclusionInput?: string;
     /**
     * The tags to assign to the VPC encryption control.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#tags CcVPCEncryptionControl#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#tags CcVPCEncryptionControl#tags}
     */
     readonly tags?: CcVPCEncryptionControl.TagProperty[] | cdktn.IResolvable;
     /**
     * Used to enable or disable VGW exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#virtual_private_gateway_exclusion_input CcVPCEncryptionControl#virtual_private_gateway_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#virtual_private_gateway_exclusion_input CcVPCEncryptionControl#virtual_private_gateway_exclusion_input}
     */
     readonly virtualPrivateGatewayExclusionInput?: string;
     /**
     * The VPC on which this VPC encryption control is applied.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#vpc_id CcVPCEncryptionControl#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#vpc_id CcVPCEncryptionControl#vpc_id}
     */
     readonly vpcId?: string;
     /**
     * Used to enable or disable Vpc Lattice exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#vpc_lattice_exclusion_input CcVPCEncryptionControl#vpc_lattice_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#vpc_lattice_exclusion_input CcVPCEncryptionControl#vpc_lattice_exclusion_input}
     */
     readonly vpcLatticeExclusionInput?: string;
     /**
     * Used to enable or disable VPC peering exclusion
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#vpc_peering_exclusion_input CcVPCEncryptionControl#vpc_peering_exclusion_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#vpc_peering_exclusion_input CcVPCEncryptionControl#vpc_peering_exclusion_input}
     */
     readonly vpcPeeringExclusionInput?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control awscc_ec2_vpc_encryption_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control awscc_ec2_vpc_encryption_control}
 */
 export class CcVPCEncryptionControl extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcVPCEncryptionControl extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVPCEncryptionControl resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVPCEncryptionControl to import
-    * @param importFromId The id of the existing CcVPCEncryptionControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVPCEncryptionControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVPCEncryptionControl to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcVPCEncryptionControl extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control awscc_ec2_vpc_encryption_control} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control awscc_ec2_vpc_encryption_control} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class CcVPCEncryptionControl extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_vpc_encryption_control',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1049,13 +1049,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#key CcVPCEncryptionControl#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#key CcVPCEncryptionControl#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_vpc_encryption_control#value CcVPCEncryptionControl#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_vpc_encryption_control#value CcVPCEncryptionControl#value}
     */
     readonly value?: string;
 }

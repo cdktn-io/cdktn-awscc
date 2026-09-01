@@ -8,6 +8,7 @@ export * from './dashboard';
 export * from './data-set';
 export * from './data-source';
 export * from './dlp-setting';
+export * from './flow';
 export * from './folder';
 export * from './knowledge-base';
 export * from './limits-profile';

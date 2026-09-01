@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcEventBusProps extends cdktn.TerraformMetaArguments {
     /**
     * Dead Letter Queue for the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#dead_letter_config CcEventBus#dead_letter_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#dead_letter_config CcEventBus#dead_letter_config}
     */
     readonly deadLetterConfig?: CcEventBus.DeadLetterConfigProperty;
     /**
     * The description of the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#description CcEventBus#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#description CcEventBus#description}
     */
     readonly description?: string;
     /**
     * If you are creating a partner event bus, this specifies the partner event source that the new event bus will be matched with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#event_source_name CcEventBus#event_source_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#event_source_name CcEventBus#event_source_name}
     */
     readonly eventSourceName?: string;
     /**
     * Kms Key Identifier used to encrypt events at rest in the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#kms_key_identifier CcEventBus#kms_key_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#kms_key_identifier CcEventBus#kms_key_identifier}
     */
     readonly kmsKeyIdentifier?: string;
     /**
     * The logging configuration settings for vended logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#log_config CcEventBus#log_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#log_config CcEventBus#log_config}
     */
     readonly logConfig?: CcEventBus.LogConfigProperty;
     /**
     * The name of the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#name CcEventBus#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#name CcEventBus#name}
     */
     readonly name: string;
     /**
     * A JSON string that describes the permission policy statement for the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#policy CcEventBus#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#policy CcEventBus#policy}
     */
     readonly policy?: string;
     /**
     * Any tags assigned to the event bus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#tags CcEventBus#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#tags CcEventBus#tags}
     */
     readonly tags?: CcEventBus.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus awscc_events_event_bus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus awscc_events_event_bus}
 */
 export class CcEventBus extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcEventBus extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventBus resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventBus to import
-    * @param importFromId The id of the existing CcEventBus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventBus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventBus to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcEventBus extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus awscc_events_event_bus} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus awscc_events_event_bus} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcEventBus extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_events_event_bus',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -436,7 +436,7 @@ export function ccEventBusTagPropertyToHclTerraform(struct?: CcEventBus.TagPrope
 export namespace CcEventBus {
 export interface DeadLetterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#arn CcEventBus#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#arn CcEventBus#arn}
     */
     readonly arn?: string;
 }
@@ -502,13 +502,13 @@ export interface LogConfigProperty {
     /**
     * Configures whether or not to include event detail, input transformer details, target properties, and target input in the applicable log messages.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#include_detail CcEventBus#include_detail}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#include_detail CcEventBus#include_detail}
     */
     readonly includeDetail?: string;
     /**
     * Configures the log level of the EventBus and determines which log messages are sent to Ingestion Hub for delivery.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#level CcEventBus#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#level CcEventBus#level}
     */
     readonly level?: string;
 }
@@ -594,11 +594,11 @@ export class LogConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#key CcEventBus#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#key CcEventBus#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_event_bus#value CcEventBus#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_event_bus#value CcEventBus#value}
     */
     readonly value?: string;
 }

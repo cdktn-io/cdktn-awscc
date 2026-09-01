@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcFormTypeProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of this Amazon DataZone metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#description CcFormType#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#description CcFormType#description}
     */
     readonly description?: string;
     /**
     * The ID of the Amazon DataZone domain in which this metadata form type is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#domain_identifier CcFormType#domain_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#domain_identifier CcFormType#domain_identifier}
     */
     readonly domainIdentifier: string;
     /**
     * The model of this Amazon DataZone metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#model CcFormType#model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#model CcFormType#model}
     */
     readonly model: CcFormType.ModelProperty;
     /**
     * The name of this Amazon DataZone metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#name CcFormType#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#name CcFormType#name}
     */
     readonly name: string;
     /**
     * The ID of the Amazon DataZone project that owns this metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#owning_project_identifier CcFormType#owning_project_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#owning_project_identifier CcFormType#owning_project_identifier}
     */
     readonly owningProjectIdentifier: string;
     /**
     * The status of this Amazon DataZone metadata form type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#status CcFormType#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#status CcFormType#status}
     */
     readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type awscc_datazone_form_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type awscc_datazone_form_type}
 */
 export class CcFormType extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcFormType extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFormType resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFormType to import
-    * @param importFromId The id of the existing CcFormType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFormType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFormType to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcFormType extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type awscc_datazone_form_type} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type awscc_datazone_form_type} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcFormType extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_datazone_form_type',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -318,7 +318,7 @@ export function ccFormTypeModelPropertyToHclTerraform(struct?: CcFormType.ModelP
 export namespace CcFormType {
 export interface ModelProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/datazone_form_type#smithy CcFormType#smithy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/datazone_form_type#smithy CcFormType#smithy}
     */
     readonly smithy?: string;
 }

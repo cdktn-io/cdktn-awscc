@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcApplicationInstanceProps extends cdktn.TerraformMetaArguments
     /**
     * The ID of an application instance to replace with the new instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#application_instance_id_to_replace CcApplicationInstance#application_instance_id_to_replace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#application_instance_id_to_replace CcApplicationInstance#application_instance_id_to_replace}
     */
     readonly applicationInstanceIdToReplace?: string;
     /**
     * The device's ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#default_runtime_context_device CcApplicationInstance#default_runtime_context_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#default_runtime_context_device CcApplicationInstance#default_runtime_context_device}
     */
     readonly defaultRuntimeContextDevice: string;
     /**
     * A description for the application instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#description CcApplicationInstance#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#description CcApplicationInstance#description}
     */
     readonly description?: string;
     /**
     * Setting overrides for the application manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#manifest_overrides_payload CcApplicationInstance#manifest_overrides_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#manifest_overrides_payload CcApplicationInstance#manifest_overrides_payload}
     */
     readonly manifestOverridesPayload?: CcApplicationInstance.ManifestOverridesPayloadProperty;
     /**
     * The application's manifest document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#manifest_payload CcApplicationInstance#manifest_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#manifest_payload CcApplicationInstance#manifest_payload}
     */
     readonly manifestPayload: CcApplicationInstance.ManifestPayloadProperty;
     /**
     * A name for the application instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#name CcApplicationInstance#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#name CcApplicationInstance#name}
     */
     readonly name?: string;
     /**
     * The ARN of a runtime role for the application instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#runtime_role_arn CcApplicationInstance#runtime_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#runtime_role_arn CcApplicationInstance#runtime_role_arn}
     */
     readonly runtimeRoleArn?: string;
     /**
     * Tags for the application instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#tags CcApplicationInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#tags CcApplicationInstance#tags}
     */
     readonly tags?: CcApplicationInstance.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance awscc_panorama_application_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance awscc_panorama_application_instance}
 */
 export class CcApplicationInstance extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcApplicationInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplicationInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplicationInstance to import
-    * @param importFromId The id of the existing CcApplicationInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplicationInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplicationInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcApplicationInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance awscc_panorama_application_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance awscc_panorama_application_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcApplicationInstance extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_panorama_application_instance',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -463,7 +463,7 @@ export interface ManifestOverridesPayloadProperty {
     /**
     * The overrides document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#payload_data CcApplicationInstance#payload_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#payload_data CcApplicationInstance#payload_data}
     */
     readonly payloadData?: string;
 }
@@ -529,7 +529,7 @@ export interface ManifestPayloadProperty {
     /**
     * The application manifest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#payload_data CcApplicationInstance#payload_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#payload_data CcApplicationInstance#payload_data}
     */
     readonly payloadData?: string;
 }
@@ -593,11 +593,11 @@ export class ManifestPayloadPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#key CcApplicationInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#key CcApplicationInstance#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/panorama_application_instance#value CcApplicationInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/panorama_application_instance#value CcApplicationInstance#value}
     */
     readonly value?: string;
 }

@@ -9,3 +9,4 @@ export * from './function-configuration';
 export * from './graph-ql-api';
 export * from './resolver';
 export * from './source-api-association';
+export * from './type';

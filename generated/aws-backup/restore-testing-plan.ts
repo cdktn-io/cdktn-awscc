@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcRestoreTestingPlanProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#recovery_point_selection CcRestoreTestingPlan#recovery_point_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#recovery_point_selection CcRestoreTestingPlan#recovery_point_selection}
     */
     readonly recoveryPointSelection: CcRestoreTestingPlan.RestoreTestingRecoveryPointSelectionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#restore_testing_plan_name CcRestoreTestingPlan#restore_testing_plan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#restore_testing_plan_name CcRestoreTestingPlan#restore_testing_plan_name}
     */
     readonly restoreTestingPlanName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#schedule_expression CcRestoreTestingPlan#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#schedule_expression CcRestoreTestingPlan#schedule_expression}
     */
     readonly scheduleExpression: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#schedule_expression_timezone CcRestoreTestingPlan#schedule_expression_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#schedule_expression_timezone CcRestoreTestingPlan#schedule_expression_timezone}
     */
     readonly scheduleExpressionTimezone?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#start_window_hours CcRestoreTestingPlan#start_window_hours}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#start_window_hours CcRestoreTestingPlan#start_window_hours}
     */
     readonly startWindowHours?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#tags CcRestoreTestingPlan#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#tags CcRestoreTestingPlan#tags}
     */
     readonly tags?: CcRestoreTestingPlan.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan awscc_backup_restore_testing_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan awscc_backup_restore_testing_plan}
 */
 export class CcRestoreTestingPlan extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcRestoreTestingPlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRestoreTestingPlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRestoreTestingPlan to import
-    * @param importFromId The id of the existing CcRestoreTestingPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRestoreTestingPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRestoreTestingPlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcRestoreTestingPlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan awscc_backup_restore_testing_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan awscc_backup_restore_testing_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcRestoreTestingPlan extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_restore_testing_plan',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -349,23 +349,23 @@ export function ccRestoreTestingPlanTagPropertyToHclTerraform(struct?: CcRestore
 export namespace CcRestoreTestingPlan {
 export interface RestoreTestingRecoveryPointSelectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#algorithm CcRestoreTestingPlan#algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#algorithm CcRestoreTestingPlan#algorithm}
     */
     readonly algorithm: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#exclude_vaults CcRestoreTestingPlan#exclude_vaults}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#exclude_vaults CcRestoreTestingPlan#exclude_vaults}
     */
     readonly excludeVaults?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#include_vaults CcRestoreTestingPlan#include_vaults}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#include_vaults CcRestoreTestingPlan#include_vaults}
     */
     readonly includeVaults: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#recovery_point_types CcRestoreTestingPlan#recovery_point_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#recovery_point_types CcRestoreTestingPlan#recovery_point_types}
     */
     readonly recoveryPointTypes: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#selection_window_days CcRestoreTestingPlan#selection_window_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#selection_window_days CcRestoreTestingPlan#selection_window_days}
     */
     readonly selectionWindowDays?: number;
 }
@@ -510,13 +510,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#key CcRestoreTestingPlan#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#key CcRestoreTestingPlan#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_restore_testing_plan#value CcRestoreTestingPlan#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_restore_testing_plan#value CcRestoreTestingPlan#value}
     */
     readonly value?: string;
 }

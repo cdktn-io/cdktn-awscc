@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,39 +9,39 @@ export interface CcCostCategoryProps extends cdktn.TerraformMetaArguments {
     /**
     * The default value for the cost category
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#default_value CcCostCategory#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#default_value CcCostCategory#default_value}
     */
     readonly defaultValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#name CcCostCategory#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#name CcCostCategory#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#rule_version CcCostCategory#rule_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#rule_version CcCostCategory#rule_version}
     */
     readonly ruleVersion: string;
     /**
     * JSON array format of Expression in Billing and Cost Management API
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#rules CcCostCategory#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#rules CcCostCategory#rules}
     */
     readonly rules: string;
     /**
     * Json array format of CostCategorySplitChargeRule in Billing and Cost Management API
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#split_charge_rules CcCostCategory#split_charge_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#split_charge_rules CcCostCategory#split_charge_rules}
     */
     readonly splitChargeRules?: string;
     /**
     * Tags to assign to the cost category.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#tags CcCostCategory#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#tags CcCostCategory#tags}
     */
     readonly tags?: CcCostCategory.ResourceTagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category awscc_ce_cost_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category awscc_ce_cost_category}
 */
 export class CcCostCategory extends cdktn.TerraformResource {
 
@@ -57,7 +57,7 @@ export class CcCostCategory extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCostCategory resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCostCategory to import
-    * @param importFromId The id of the existing CcCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCostCategory to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -69,7 +69,7 @@ export class CcCostCategory extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category awscc_ce_cost_category} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category awscc_ce_cost_category} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class CcCostCategory extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ce_cost_category',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -306,13 +306,13 @@ export interface ResourceTagProperty {
     /**
     * The key name for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#key CcCostCategory#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#key CcCostCategory#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ce_cost_category#value CcCostCategory#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ce_cost_category#value CcCostCategory#value}
     */
     readonly value?: string;
 }

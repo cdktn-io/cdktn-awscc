@@ -1,67 +1,67 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcExpressGatewayServiceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#cluster CcExpressGatewayService#cluster}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#cluster CcExpressGatewayService#cluster}
     */
     readonly cluster?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#cpu CcExpressGatewayService#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#cpu CcExpressGatewayService#cpu}
     */
     readonly cpu?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#execution_role_arn CcExpressGatewayService#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#execution_role_arn CcExpressGatewayService#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#health_check_path CcExpressGatewayService#health_check_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#health_check_path CcExpressGatewayService#health_check_path}
     */
     readonly healthCheckPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#infrastructure_role_arn CcExpressGatewayService#infrastructure_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#infrastructure_role_arn CcExpressGatewayService#infrastructure_role_arn}
     */
     readonly infrastructureRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#memory CcExpressGatewayService#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#memory CcExpressGatewayService#memory}
     */
     readonly memory?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#network_configuration CcExpressGatewayService#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#network_configuration CcExpressGatewayService#network_configuration}
     */
     readonly networkConfiguration?: CcExpressGatewayService.ExpressGatewayServiceNetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#primary_container CcExpressGatewayService#primary_container}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#primary_container CcExpressGatewayService#primary_container}
     */
     readonly primaryContainer?: CcExpressGatewayService.ExpressGatewayContainerProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#scaling_target CcExpressGatewayService#scaling_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#scaling_target CcExpressGatewayService#scaling_target}
     */
     readonly scalingTarget?: CcExpressGatewayService.ExpressGatewayScalingTargetProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#service_name CcExpressGatewayService#service_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#service_name CcExpressGatewayService#service_name}
     */
     readonly serviceName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#tags CcExpressGatewayService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#tags CcExpressGatewayService#tags}
     */
     readonly tags?: CcExpressGatewayService.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#task_definition_arn CcExpressGatewayService#task_definition_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#task_definition_arn CcExpressGatewayService#task_definition_arn}
     */
     readonly taskDefinitionArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#task_role_arn CcExpressGatewayService#task_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#task_role_arn CcExpressGatewayService#task_role_arn}
     */
     readonly taskRoleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service awscc_ecs_express_gateway_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service awscc_ecs_express_gateway_service}
 */
 export class CcExpressGatewayService extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcExpressGatewayService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcExpressGatewayService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcExpressGatewayService to import
-    * @param importFromId The id of the existing CcExpressGatewayService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcExpressGatewayService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcExpressGatewayService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcExpressGatewayService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service awscc_ecs_express_gateway_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service awscc_ecs_express_gateway_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,7 +100,7 @@ export class CcExpressGatewayService extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecs_express_gateway_service',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1765,11 +1765,11 @@ export class EcsManagedResourceArnsPropertyOutputReference extends cdktn.Complex
 }
 export interface ExpressGatewayServiceNetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#security_groups CcExpressGatewayService#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#security_groups CcExpressGatewayService#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#subnets CcExpressGatewayService#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#subnets CcExpressGatewayService#subnets}
     */
     readonly subnets?: string[];
 }
@@ -1855,11 +1855,11 @@ export class ExpressGatewayServiceNetworkConfigurationPropertyOutputReference ex
 }
 export interface ExpressGatewayServiceAwsLogsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#log_group CcExpressGatewayService#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#log_group CcExpressGatewayService#log_group}
     */
     readonly logGroup?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#log_stream_prefix CcExpressGatewayService#log_stream_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#log_stream_prefix CcExpressGatewayService#log_stream_prefix}
     */
     readonly logStreamPrefix?: string;
 }
@@ -1945,11 +1945,11 @@ export class ExpressGatewayServiceAwsLogsConfigurationPropertyOutputReference ex
 }
 export interface KeyValuePairProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#name CcExpressGatewayService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#name CcExpressGatewayService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#value CcExpressGatewayService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#value CcExpressGatewayService#value}
     */
     readonly value?: string;
 }
@@ -2057,7 +2057,7 @@ export class KeyValuePairPropertyList extends cdktn.ComplexList {
 }
 export interface ExpressGatewayRepositoryCredentialsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#credentials_parameter CcExpressGatewayService#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#credentials_parameter CcExpressGatewayService#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -2121,11 +2121,11 @@ export class ExpressGatewayRepositoryCredentialsPropertyOutputReference extends 
 }
 export interface SecretProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#name CcExpressGatewayService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#name CcExpressGatewayService#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#value_from CcExpressGatewayService#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#value_from CcExpressGatewayService#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -2233,31 +2233,31 @@ export class SecretPropertyList extends cdktn.ComplexList {
 }
 export interface ExpressGatewayContainerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#aws_logs_configuration CcExpressGatewayService#aws_logs_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#aws_logs_configuration CcExpressGatewayService#aws_logs_configuration}
     */
     readonly awsLogsConfiguration?: ExpressGatewayServiceAwsLogsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#command CcExpressGatewayService#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#command CcExpressGatewayService#command}
     */
     readonly command?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#container_port CcExpressGatewayService#container_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#container_port CcExpressGatewayService#container_port}
     */
     readonly containerPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#environment CcExpressGatewayService#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#environment CcExpressGatewayService#environment}
     */
     readonly environment?: KeyValuePairProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#image CcExpressGatewayService#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#image CcExpressGatewayService#image}
     */
     readonly image?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#repository_credentials CcExpressGatewayService#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#repository_credentials CcExpressGatewayService#repository_credentials}
     */
     readonly repositoryCredentials?: ExpressGatewayRepositoryCredentialsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#secrets CcExpressGatewayService#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#secrets CcExpressGatewayService#secrets}
     */
     readonly secrets?: SecretProperty[] | cdktn.IResolvable;
 }
@@ -2453,19 +2453,19 @@ export class ExpressGatewayContainerPropertyOutputReference extends cdktn.Comple
 }
 export interface ExpressGatewayScalingTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#auto_scaling_metric CcExpressGatewayService#auto_scaling_metric}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#auto_scaling_metric CcExpressGatewayService#auto_scaling_metric}
     */
     readonly autoScalingMetric?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#auto_scaling_target_value CcExpressGatewayService#auto_scaling_target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#auto_scaling_target_value CcExpressGatewayService#auto_scaling_target_value}
     */
     readonly autoScalingTargetValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#max_task_count CcExpressGatewayService#max_task_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#max_task_count CcExpressGatewayService#max_task_count}
     */
     readonly maxTaskCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#min_task_count CcExpressGatewayService#min_task_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#min_task_count CcExpressGatewayService#min_task_count}
     */
     readonly minTaskCount?: number;
 }
@@ -2628,11 +2628,11 @@ export class StatusPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#key CcExpressGatewayService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#key CcExpressGatewayService#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ecs_express_gateway_service#value CcExpressGatewayService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_express_gateway_service#value CcExpressGatewayService#value}
     */
     readonly value?: string;
 }

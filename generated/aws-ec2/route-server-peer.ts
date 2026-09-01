@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcRouteServerPeerProps extends cdktn.TerraformMetaArguments {
     /**
     * BGP Options
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#bgp_options CcRouteServerPeer#bgp_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#bgp_options CcRouteServerPeer#bgp_options}
     */
     readonly bgpOptions: CcRouteServerPeer.BgpOptionsProperty;
     /**
     * IP address of the Route Server Peer
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#peer_address CcRouteServerPeer#peer_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#peer_address CcRouteServerPeer#peer_address}
     */
     readonly peerAddress: string;
     /**
     * Route Server Endpoint ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#route_server_endpoint_id CcRouteServerPeer#route_server_endpoint_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#route_server_endpoint_id CcRouteServerPeer#route_server_endpoint_id}
     */
     readonly routeServerEndpointId: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#tags CcRouteServerPeer#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#tags CcRouteServerPeer#tags}
     */
     readonly tags?: CcRouteServerPeer.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer awscc_ec2_route_server_peer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer awscc_ec2_route_server_peer}
 */
 export class CcRouteServerPeer extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcRouteServerPeer extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRouteServerPeer resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRouteServerPeer to import
-    * @param importFromId The id of the existing CcRouteServerPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRouteServerPeer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRouteServerPeer to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcRouteServerPeer extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer awscc_ec2_route_server_peer} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer awscc_ec2_route_server_peer} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcRouteServerPeer extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_route_server_peer',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -312,13 +312,13 @@ export interface BgpOptionsProperty {
     /**
     * BGP ASN of the Route Server Peer
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#peer_asn CcRouteServerPeer#peer_asn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#peer_asn CcRouteServerPeer#peer_asn}
     */
     readonly peerAsn?: number;
     /**
     * BGP Liveness Detection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#peer_liveness_detection CcRouteServerPeer#peer_liveness_detection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#peer_liveness_detection CcRouteServerPeer#peer_liveness_detection}
     */
     readonly peerLivenessDetection?: string;
 }
@@ -406,13 +406,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#key CcRouteServerPeer#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#key CcRouteServerPeer#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_route_server_peer#value CcRouteServerPeer#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_route_server_peer#value CcRouteServerPeer#value}
     */
     readonly value?: string;
 }

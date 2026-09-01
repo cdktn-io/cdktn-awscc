@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcLifecyclePolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#description CcLifecyclePolicy#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#description CcLifecyclePolicy#description}
     */
     readonly description?: string;
     /**
     * The execution role of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#execution_role CcLifecyclePolicy#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#execution_role CcLifecyclePolicy#execution_role}
     */
     readonly executionRole: string;
     /**
     * The name of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#name CcLifecyclePolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#name CcLifecyclePolicy#name}
     */
     readonly name: string;
     /**
     * The policy details of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#policy_details CcLifecyclePolicy#policy_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#policy_details CcLifecyclePolicy#policy_details}
     */
     readonly policyDetails: CcLifecyclePolicy.PolicyDetailProperty[] | cdktn.IResolvable;
     /**
     * The resource selection of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#resource_selection CcLifecyclePolicy#resource_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#resource_selection CcLifecyclePolicy#resource_selection}
     */
     readonly resourceSelection: CcLifecyclePolicy.ResourceSelectionProperty;
     /**
     * The resource type of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#resource_type CcLifecyclePolicy#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#resource_type CcLifecyclePolicy#resource_type}
     */
     readonly resourceType: string;
     /**
     * The status of the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#status CcLifecyclePolicy#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#status CcLifecyclePolicy#status}
     */
     readonly status?: string;
     /**
     * The tags associated with the lifecycle policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#tags CcLifecyclePolicy#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#tags CcLifecyclePolicy#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy awscc_imagebuilder_lifecycle_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy awscc_imagebuilder_lifecycle_policy}
 */
 export class CcLifecyclePolicy extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLifecyclePolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLifecyclePolicy to import
-    * @param importFromId The id of the existing CcLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLifecyclePolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy awscc_imagebuilder_lifecycle_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy awscc_imagebuilder_lifecycle_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcLifecyclePolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_imagebuilder_lifecycle_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -704,19 +704,19 @@ export interface IncludeResourcesProperty {
     /**
     * Use to configure lifecycle actions on AMIs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#amis CcLifecyclePolicy#amis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#amis CcLifecyclePolicy#amis}
     */
     readonly amis?: boolean | cdktn.IResolvable;
     /**
     * Use to configure lifecycle actions on containers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#containers CcLifecyclePolicy#containers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#containers CcLifecyclePolicy#containers}
     */
     readonly containers?: boolean | cdktn.IResolvable;
     /**
     * Use to configure lifecycle actions on snapshots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#snapshots CcLifecyclePolicy#snapshots}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#snapshots CcLifecyclePolicy#snapshots}
     */
     readonly snapshots?: boolean | cdktn.IResolvable;
 }
@@ -826,13 +826,13 @@ export interface ActionProperty {
     /**
     * The included resources of the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#include_resources CcLifecyclePolicy#include_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#include_resources CcLifecyclePolicy#include_resources}
     */
     readonly includeResources?: IncludeResourcesProperty;
     /**
     * The action type of the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#type CcLifecyclePolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#type CcLifecyclePolicy#type}
     */
     readonly type: string;
 }
@@ -917,13 +917,13 @@ export interface LastLaunchedProperty {
     /**
     * The value's time unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#unit CcLifecyclePolicy#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#unit CcLifecyclePolicy#unit}
     */
     readonly unit?: string;
     /**
     * The last launched value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#value CcLifecyclePolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#value CcLifecyclePolicy#value}
     */
     readonly value?: number;
 }
@@ -1011,31 +1011,31 @@ export interface AmiExclusionRulesProperty {
     /**
     * Use to apply lifecycle policy actions on whether the AMI is public.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#is_public CcLifecyclePolicy#is_public}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#is_public CcLifecyclePolicy#is_public}
     */
     readonly isPublic?: boolean | cdktn.IResolvable;
     /**
     * Use to apply lifecycle policy actions on AMIs launched before a certain time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#last_launched CcLifecyclePolicy#last_launched}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#last_launched CcLifecyclePolicy#last_launched}
     */
     readonly lastLaunched?: LastLaunchedProperty;
     /**
     * Use to apply lifecycle policy actions on AMIs distributed to a set of regions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#regions CcLifecyclePolicy#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#regions CcLifecyclePolicy#regions}
     */
     readonly regions?: string[];
     /**
     * Use to apply lifecycle policy actions on AMIs shared with a set of regions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#shared_accounts CcLifecyclePolicy#shared_accounts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#shared_accounts CcLifecyclePolicy#shared_accounts}
     */
     readonly sharedAccounts?: string[];
     /**
     * The AMIs to select by tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
     */
     readonly tagMap?: { [key: string]: string };
 }
@@ -1189,13 +1189,13 @@ export interface ExclusionRulesProperty {
     /**
     * The AMI exclusion rules for the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#amis CcLifecyclePolicy#amis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#amis CcLifecyclePolicy#amis}
     */
     readonly amis?: AmiExclusionRulesProperty;
     /**
     * The Image Builder tags to filter on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
     */
     readonly tagMap?: { [key: string]: string };
 }
@@ -1283,25 +1283,25 @@ export interface FilterProperty {
     /**
     * The minimum number of Image Builder resources to retain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#retain_at_least CcLifecyclePolicy#retain_at_least}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#retain_at_least CcLifecyclePolicy#retain_at_least}
     */
     readonly retainAtLeast?: number;
     /**
     * The filter type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#type CcLifecyclePolicy#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#type CcLifecyclePolicy#type}
     */
     readonly type: string;
     /**
     * The value's time unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#unit CcLifecyclePolicy#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#unit CcLifecyclePolicy#unit}
     */
     readonly unit?: string;
     /**
     * The filter value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#value CcLifecyclePolicy#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#value CcLifecyclePolicy#value}
     */
     readonly value: number;
 }
@@ -1427,19 +1427,19 @@ export interface PolicyDetailProperty {
     /**
     * The action of the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#action CcLifecyclePolicy#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#action CcLifecyclePolicy#action}
     */
     readonly action: ActionProperty;
     /**
     * The exclusion rules to apply of the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#exclusion_rules CcLifecyclePolicy#exclusion_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#exclusion_rules CcLifecyclePolicy#exclusion_rules}
     */
     readonly exclusionRules?: ExclusionRulesProperty;
     /**
     * The filters to apply of the policy detail.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#filter CcLifecyclePolicy#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#filter CcLifecyclePolicy#filter}
     */
     readonly filter: FilterProperty;
 }
@@ -1565,13 +1565,13 @@ export interface RecipeSelectionProperty {
     /**
     * The recipe name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#name CcLifecyclePolicy#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#name CcLifecyclePolicy#name}
     */
     readonly name?: string;
     /**
     * The recipe version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#semantic_version CcLifecyclePolicy#semantic_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#semantic_version CcLifecyclePolicy#semantic_version}
     */
     readonly semanticVersion?: string;
 }
@@ -1681,13 +1681,13 @@ export interface ResourceSelectionProperty {
     /**
     * The recipes to select.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#recipes CcLifecyclePolicy#recipes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#recipes CcLifecyclePolicy#recipes}
     */
     readonly recipes?: RecipeSelectionProperty[] | cdktn.IResolvable;
     /**
     * The Image Builder resources to select by tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_lifecycle_policy#tag_map CcLifecyclePolicy#tag_map}
     */
     readonly tagMap?: { [key: string]: string };
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcImageProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the container recipe that defines how images are configured and tested.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#container_recipe_arn CcImage#container_recipe_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#container_recipe_arn CcImage#container_recipe_arn}
     */
     readonly containerRecipeArn?: string;
     /**
     * The deletion settings of the image, indicating whether to delete the underlying resources in addition to the image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#deletion_settings CcImage#deletion_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#deletion_settings CcImage#deletion_settings}
     */
     readonly deletionSettings?: CcImage.DeletionSettingsProperty;
     /**
     * The Amazon Resource Name (ARN) of the distribution configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#distribution_configuration_arn CcImage#distribution_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#distribution_configuration_arn CcImage#distribution_configuration_arn}
     */
     readonly distributionConfigurationArn?: string;
     /**
     * Collects additional information about the image being created, including the operating system (OS) version and package list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled CcImage#enhanced_image_metadata_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled CcImage#enhanced_image_metadata_enabled}
     */
     readonly enhancedImageMetadataEnabled?: boolean | cdktn.IResolvable;
     /**
     * The execution role name/ARN for the image build, if provided
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#execution_role CcImage#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#execution_role CcImage#execution_role}
     */
     readonly executionRole?: string;
     /**
     * The image pipeline execution settings of the image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_pipeline_execution_settings CcImage#image_pipeline_execution_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_pipeline_execution_settings CcImage#image_pipeline_execution_settings}
     */
     readonly imagePipelineExecutionSettings?: CcImage.ImagePipelineExecutionSettingsProperty;
     /**
     * The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_recipe_arn CcImage#image_recipe_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_recipe_arn CcImage#image_recipe_arn}
     */
     readonly imageRecipeArn?: string;
     /**
     * Contains settings for vulnerability scans.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_scanning_configuration CcImage#image_scanning_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_scanning_configuration CcImage#image_scanning_configuration}
     */
     readonly imageScanningConfiguration?: CcImage.ImageScanningConfigurationProperty;
     /**
     * The image tests configuration used when creating this image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_tests_configuration CcImage#image_tests_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_tests_configuration CcImage#image_tests_configuration}
     */
     readonly imageTestsConfiguration?: CcImage.ImageTestsConfigurationProperty;
     /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn CcImage#infrastructure_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn CcImage#infrastructure_configuration_arn}
     */
     readonly infrastructureConfigurationArn?: string;
     /**
     * The logging configuration settings for the image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#logging_configuration CcImage#logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#logging_configuration CcImage#logging_configuration}
     */
     readonly loggingConfiguration?: CcImage.ImageLoggingConfigurationProperty;
     /**
     * The tags associated with the image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#tags CcImage#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#tags CcImage#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * Workflows to define the image build process
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#workflows CcImage#workflows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#workflows CcImage#workflows}
     */
     readonly workflows?: CcImage.WorkflowConfigurationProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image awscc_imagebuilder_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image awscc_imagebuilder_image}
 */
 export class CcImage extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcImage extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcImage resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcImage to import
-    * @param importFromId The id of the existing CcImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcImage to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcImage extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image awscc_imagebuilder_image} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image awscc_imagebuilder_image} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class CcImage extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_imagebuilder_image',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -825,7 +825,7 @@ export interface DeletionSettingsProperty {
     /**
     * The execution role to use for deleting the image, as well as underlying resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#execution_role CcImage#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#execution_role CcImage#execution_role}
     */
     readonly executionRole?: string;
 }
@@ -891,13 +891,13 @@ export interface ImagePipelineExecutionSettingsProperty {
     /**
     * The deployment ID of the pipeline, used to trigger new image pipeline executions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#deployment_id CcImage#deployment_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#deployment_id CcImage#deployment_id}
     */
     readonly deploymentId?: string;
     /**
     * Whether to trigger the image pipeline when the pipeline is updated. False by default.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#on_update CcImage#on_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#on_update CcImage#on_update}
     */
     readonly onUpdate?: boolean | cdktn.IResolvable;
 }
@@ -985,13 +985,13 @@ export interface EcrConfigurationProperty {
     /**
     * Tags for Image Builder to apply the output container image that is scanned. Tags can help you identify and manage your scanned images.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#container_tags CcImage#container_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#container_tags CcImage#container_tags}
     */
     readonly containerTags?: string[];
     /**
     * The name of the container repository that Amazon Inspector scans to identify findings for your container images. The name includes the path for the repository location. If you don’t provide this information, Image Builder creates a repository in your account named image-builder-image-scanning-repository to use for vulnerability scans for your output container images.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#repository_name CcImage#repository_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#repository_name CcImage#repository_name}
     */
     readonly repositoryName?: string;
 }
@@ -1079,13 +1079,13 @@ export interface ImageScanningConfigurationProperty {
     /**
     * Contains ECR settings for vulnerability scans.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#ecr_configuration CcImage#ecr_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#ecr_configuration CcImage#ecr_configuration}
     */
     readonly ecrConfiguration?: EcrConfigurationProperty;
     /**
     * This sets whether Image Builder keeps a snapshot of the vulnerability scans that Amazon Inspector runs against the build instance when you create a new image.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_scanning_enabled CcImage#image_scanning_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_scanning_enabled CcImage#image_scanning_enabled}
     */
     readonly imageScanningEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1173,13 +1173,13 @@ export interface ImageTestsConfigurationProperty {
     /**
     * ImageTestsEnabled
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#image_tests_enabled CcImage#image_tests_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#image_tests_enabled CcImage#image_tests_enabled}
     */
     readonly imageTestsEnabled?: boolean | cdktn.IResolvable;
     /**
     * TimeoutMinutes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#timeout_minutes CcImage#timeout_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#timeout_minutes CcImage#timeout_minutes}
     */
     readonly timeoutMinutes?: number;
 }
@@ -1315,7 +1315,7 @@ export interface ImageLoggingConfigurationProperty {
     /**
     * The name of the log group for image build logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#log_group_name CcImage#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#log_group_name CcImage#log_group_name}
     */
     readonly logGroupName?: string;
 }
@@ -1379,11 +1379,11 @@ export class ImageLoggingConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface WorkflowParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#name CcImage#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#name CcImage#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#value CcImage#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#value CcImage#value}
     */
     readonly value?: string[];
 }
@@ -1493,25 +1493,25 @@ export interface WorkflowConfigurationProperty {
     /**
     * Define execution decision in case of workflow failure
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#on_failure CcImage#on_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#on_failure CcImage#on_failure}
     */
     readonly onFailure?: string;
     /**
     * The parallel group name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#parallel_group CcImage#parallel_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#parallel_group CcImage#parallel_group}
     */
     readonly parallelGroup?: string;
     /**
     * The parameters associated with the workflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#parameters CcImage#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#parameters CcImage#parameters}
     */
     readonly parameters?: WorkflowParameterProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the workflow
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/imagebuilder_image#workflow_arn CcImage#workflow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/imagebuilder_image#workflow_arn CcImage#workflow_arn}
     */
     readonly workflowArn?: string;
 }

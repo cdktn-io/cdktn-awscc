@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcGameServerGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration settings to define a scaling policy for the Auto Scaling group that is optimized for game hosting. Updating this game server group property will not take effect for the created EC2 Auto Scaling group, please update the EC2 Auto Scaling group directly after creating the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#auto_scaling_policy CcGameServerGroup#auto_scaling_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#auto_scaling_policy CcGameServerGroup#auto_scaling_policy}
     */
     readonly autoScalingPolicy?: CcGameServerGroup.AutoScalingPolicyProperty;
     /**
     * The fallback balancing method to use for the game server group when Spot Instances in a Region become unavailable or are not viable for game hosting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#balancing_strategy CcGameServerGroup#balancing_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#balancing_strategy CcGameServerGroup#balancing_strategy}
     */
     readonly balancingStrategy?: string;
     /**
     * The type of delete to perform.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#delete_option CcGameServerGroup#delete_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#delete_option CcGameServerGroup#delete_option}
     */
     readonly deleteOption?: string;
     /**
     * An identifier for the new game server group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#game_server_group_name CcGameServerGroup#game_server_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#game_server_group_name CcGameServerGroup#game_server_group_name}
     */
     readonly gameServerGroupName: string;
     /**
     * A flag that indicates whether instances in the game server group are protected from early termination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#game_server_protection_policy CcGameServerGroup#game_server_protection_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#game_server_protection_policy CcGameServerGroup#game_server_protection_policy}
     */
     readonly gameServerProtectionPolicy?: string;
     /**
     * A set of EC2 instance types to use when creating instances in the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#instance_definitions CcGameServerGroup#instance_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#instance_definitions CcGameServerGroup#instance_definitions}
     */
     readonly instanceDefinitions: CcGameServerGroup.InstanceDefinitionProperty[] | cdktn.IResolvable;
     /**
     * The EC2 launch template that contains configuration settings and game server code to be deployed to all instances in the game server group. Updating this game server group property will not take effect for the created EC2 Auto Scaling group, please update the EC2 Auto Scaling group directly after creating the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#launch_template CcGameServerGroup#launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#launch_template CcGameServerGroup#launch_template}
     */
     readonly launchTemplate?: CcGameServerGroup.LaunchTemplateProperty;
     /**
     * The maximum number of instances allowed in the EC2 Auto Scaling group. Updating this game server group property will not take effect for the created EC2 Auto Scaling group, please update the EC2 Auto Scaling group directly after creating the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#max_size CcGameServerGroup#max_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#max_size CcGameServerGroup#max_size}
     */
     readonly maxSize?: number;
     /**
     * The minimum number of instances allowed in the EC2 Auto Scaling group. Updating this game server group property will not take effect for the created EC2 Auto Scaling group, please update the EC2 Auto Scaling group directly after creating the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#min_size CcGameServerGroup#min_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#min_size CcGameServerGroup#min_size}
     */
     readonly minSize?: number;
     /**
     * The Amazon Resource Name (ARN) for an IAM role that allows Amazon GameLift to access your EC2 Auto Scaling groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#role_arn CcGameServerGroup#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#role_arn CcGameServerGroup#role_arn}
     */
     readonly roleArn: string;
     /**
     * A list of labels to assign to the new game server group resource. Updating game server group tags with CloudFormation will not take effect. Please update this property using AWS GameLift APIs instead.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#tags CcGameServerGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#tags CcGameServerGroup#tags}
     */
     readonly tags?: CcGameServerGroup.TagProperty[] | cdktn.IResolvable;
     /**
     * A list of virtual private cloud (VPC) subnets to use with instances in the game server group. Updating this game server group property will not take effect for the created EC2 Auto Scaling group, please update the EC2 Auto Scaling group directly after creating the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#vpc_subnets CcGameServerGroup#vpc_subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#vpc_subnets CcGameServerGroup#vpc_subnets}
     */
     readonly vpcSubnets?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group awscc_gamelift_game_server_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group awscc_gamelift_game_server_group}
 */
 export class CcGameServerGroup extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcGameServerGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGameServerGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGameServerGroup to import
-    * @param importFromId The id of the existing CcGameServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGameServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGameServerGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcGameServerGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group awscc_gamelift_game_server_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group awscc_gamelift_game_server_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcGameServerGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_gamelift_game_server_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -638,7 +638,7 @@ export interface TargetTrackingConfigurationProperty {
     /**
     * Desired value to use with a game server group target-based scaling policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#target_value CcGameServerGroup#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#target_value CcGameServerGroup#target_value}
     */
     readonly targetValue?: number;
 }
@@ -704,13 +704,13 @@ export interface AutoScalingPolicyProperty {
     /**
     * Length of time, in seconds, it takes for a new instance to start new game server processes and register with GameLift FleetIQ.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#estimated_instance_warmup CcGameServerGroup#estimated_instance_warmup}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#estimated_instance_warmup CcGameServerGroup#estimated_instance_warmup}
     */
     readonly estimatedInstanceWarmup?: number;
     /**
     * Settings for a target-based scaling policy applied to Auto Scaling group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#target_tracking_configuration CcGameServerGroup#target_tracking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#target_tracking_configuration CcGameServerGroup#target_tracking_configuration}
     */
     readonly targetTrackingConfiguration?: TargetTrackingConfigurationProperty;
 }
@@ -798,13 +798,13 @@ export interface InstanceDefinitionProperty {
     /**
     * An EC2 instance type designation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#instance_type CcGameServerGroup#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#instance_type CcGameServerGroup#instance_type}
     */
     readonly instanceType: string;
     /**
     * Instance weighting that indicates how much this instance type contributes to the total capacity of a game server group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#weighted_capacity CcGameServerGroup#weighted_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#weighted_capacity CcGameServerGroup#weighted_capacity}
     */
     readonly weightedCapacity?: string;
 }
@@ -911,19 +911,19 @@ export interface LaunchTemplateProperty {
     /**
     * A unique identifier for an existing EC2 launch template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#launch_template_id CcGameServerGroup#launch_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#launch_template_id CcGameServerGroup#launch_template_id}
     */
     readonly launchTemplateId?: string;
     /**
     * A readable identifier for an existing EC2 launch template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#launch_template_name CcGameServerGroup#launch_template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#launch_template_name CcGameServerGroup#launch_template_name}
     */
     readonly launchTemplateName?: string;
     /**
     * The version of the EC2 launch template to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#version CcGameServerGroup#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#version CcGameServerGroup#version}
     */
     readonly version?: string;
 }
@@ -1033,13 +1033,13 @@ export interface TagProperty {
     /**
     * The key for a developer-defined key:value pair for tagging an AWS resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#key CcGameServerGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#key CcGameServerGroup#key}
     */
     readonly key?: string;
     /**
     * The value for a developer-defined key:value pair for tagging an AWS resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/gamelift_game_server_group#value CcGameServerGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/gamelift_game_server_group#value CcGameServerGroup#value}
     */
     readonly value?: string;
 }

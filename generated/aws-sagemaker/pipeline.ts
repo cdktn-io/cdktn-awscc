@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcPipelineProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#parallelism_configuration CcPipeline#parallelism_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#parallelism_configuration CcPipeline#parallelism_configuration}
     */
     readonly parallelismConfiguration?: CcPipeline.ParallelismConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_definition CcPipeline#pipeline_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_definition CcPipeline#pipeline_definition}
     */
     readonly pipelineDefinition: CcPipeline.PipelineDefinitionProperty;
     /**
     * The description of the Pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_description CcPipeline#pipeline_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_description CcPipeline#pipeline_description}
     */
     readonly pipelineDescription?: string;
     /**
     * The display name of the Pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_display_name CcPipeline#pipeline_display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_display_name CcPipeline#pipeline_display_name}
     */
     readonly pipelineDisplayName?: string;
     /**
     * The name of the Pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_name CcPipeline#pipeline_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_name CcPipeline#pipeline_name}
     */
     readonly pipelineName: string;
     /**
     * Role Arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#role_arn CcPipeline#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#role_arn CcPipeline#role_arn}
     */
     readonly roleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#tags CcPipeline#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#tags CcPipeline#tags}
     */
     readonly tags?: CcPipeline.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline awscc_sagemaker_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline awscc_sagemaker_pipeline}
 */
 export class CcPipeline extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPipeline resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPipeline to import
-    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPipeline to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcPipeline extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline awscc_sagemaker_pipeline} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline awscc_sagemaker_pipeline} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcPipeline extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_pipeline',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -442,7 +442,7 @@ export interface ParallelismConfigurationProperty {
     /**
     * Maximum parallel execution steps
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps CcPipeline#max_parallel_execution_steps}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps CcPipeline#max_parallel_execution_steps}
     */
     readonly maxParallelExecutionSteps?: number;
 }
@@ -508,25 +508,25 @@ export interface S3LocationProperty {
     /**
     * The name of the S3 bucket where the PipelineDefinition file is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#bucket CcPipeline#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#bucket CcPipeline#bucket}
     */
     readonly bucket?: string;
     /**
     * The Amazon S3 ETag (a file checksum) of the PipelineDefinition file. If you don't specify a value, SageMaker skips ETag validation of your PipelineDefinition file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#e_tag CcPipeline#e_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#e_tag CcPipeline#e_tag}
     */
     readonly eTag?: string;
     /**
     * The file name of the PipelineDefinition file (Amazon S3 object name).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
     * For versioning-enabled buckets, a specific version of the PipelineDefinition file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#version CcPipeline#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#version CcPipeline#version}
     */
     readonly version?: string;
 }
@@ -658,11 +658,11 @@ export interface PipelineDefinitionProperty {
     /**
     * A specification that defines the pipeline in JSON format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_definition_body CcPipeline#pipeline_definition_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_definition_body CcPipeline#pipeline_definition_body}
     */
     readonly pipelineDefinitionBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location CcPipeline#pipeline_definition_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location CcPipeline#pipeline_definition_s3_location}
     */
     readonly pipelineDefinitionS3Location?: S3LocationProperty;
 }
@@ -748,11 +748,11 @@ export class PipelineDefinitionPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#key CcPipeline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#key CcPipeline#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_pipeline#value CcPipeline#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_pipeline#value CcPipeline#value}
     */
     readonly value?: string;
 }

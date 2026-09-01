@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcLoggingConfigurationProps extends cdktn.TerraformMetaArgument
     /**
     * The Amazon Resource Names (ARNs) of the logging destinations that you want to associate with the web ACL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#log_destination_configs CcLoggingConfiguration#log_destination_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#log_destination_configs CcLoggingConfiguration#log_destination_configs}
     */
     readonly logDestinationConfigs: string[];
     /**
     * Filtering that specifies which web requests are kept in the logs and which are dropped. You can filter on the rule action and on the web request labels that were applied by matching rules during web ACL evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#logging_filter CcLoggingConfiguration#logging_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#logging_filter CcLoggingConfiguration#logging_filter}
     */
     readonly loggingFilter?: CcLoggingConfiguration.LoggingFilterProperty;
     /**
     * The parts of the request that you want to keep out of the logs. For example, if you redact the HEADER field, the HEADER field in the firehose will be xxx.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#redacted_fields CcLoggingConfiguration#redacted_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#redacted_fields CcLoggingConfiguration#redacted_fields}
     */
     readonly redactedFields?: CcLoggingConfiguration.FieldToMatchProperty[] | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the web ACL that you want to associate with LogDestinationConfigs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#resource_arn CcLoggingConfiguration#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#resource_arn CcLoggingConfiguration#resource_arn}
     */
     readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration awscc_wafv2_logging_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration awscc_wafv2_logging_configuration}
 */
 export class CcLoggingConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLoggingConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLoggingConfiguration to import
-    * @param importFromId The id of the existing CcLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLoggingConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration awscc_wafv2_logging_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration awscc_wafv2_logging_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcLoggingConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wafv2_logging_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -470,7 +470,7 @@ export interface ActionConditionProperty {
     /**
     * Logic to apply to the filtering conditions. You can specify that, in order to satisfy the filter, a log must match all conditions or must match at least one condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#action CcLoggingConfiguration#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#action CcLoggingConfiguration#action}
     */
     readonly action?: string;
 }
@@ -536,7 +536,7 @@ export interface LabelNameConditionProperty {
     /**
     * The label name that a log record must contain in order to meet the condition. This must be a fully qualified label name. Fully qualified labels have a prefix, optional namespaces, and label name. The prefix identifies the rule group or web ACL context of the rule that added the label. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#label_name CcLoggingConfiguration#label_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#label_name CcLoggingConfiguration#label_name}
     */
     readonly labelName?: string;
 }
@@ -602,13 +602,13 @@ export interface ConditionProperty {
     /**
     * A single action condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#action_condition CcLoggingConfiguration#action_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#action_condition CcLoggingConfiguration#action_condition}
     */
     readonly actionCondition?: ActionConditionProperty;
     /**
     * A single label name condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#label_name_condition CcLoggingConfiguration#label_name_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#label_name_condition CcLoggingConfiguration#label_name_condition}
     */
     readonly labelNameCondition?: LabelNameConditionProperty;
 }
@@ -718,19 +718,19 @@ export interface FilterProperty {
     /**
     * How to handle logs that satisfy the filter's conditions and requirement. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#behavior CcLoggingConfiguration#behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#behavior CcLoggingConfiguration#behavior}
     */
     readonly behavior?: string;
     /**
     * Match conditions for the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#conditions CcLoggingConfiguration#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#conditions CcLoggingConfiguration#conditions}
     */
     readonly conditions?: ConditionProperty[] | cdktn.IResolvable;
     /**
     * Logic to apply to the filtering conditions. You can specify that, in order to satisfy the filter, a log must match all conditions or must match at least one condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#requirement CcLoggingConfiguration#requirement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#requirement CcLoggingConfiguration#requirement}
     */
     readonly requirement?: string;
 }
@@ -862,13 +862,13 @@ export interface LoggingFilterProperty {
     /**
     * Default handling for logs that don't match any of the specified filtering conditions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#default_behavior CcLoggingConfiguration#default_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#default_behavior CcLoggingConfiguration#default_behavior}
     */
     readonly defaultBehavior?: string;
     /**
     * The filters that you want to apply to the logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#filters CcLoggingConfiguration#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#filters CcLoggingConfiguration#filters}
     */
     readonly filters?: FilterProperty[] | cdktn.IResolvable;
 }
@@ -956,7 +956,7 @@ export interface SingleHeaderProperty {
     /**
     * The name of the query header to inspect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#name CcLoggingConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#name CcLoggingConfiguration#name}
     */
     readonly name?: string;
 }
@@ -1022,25 +1022,25 @@ export interface FieldToMatchProperty {
     /**
     * Inspect the HTTP method. The method indicates the type of operation that the request is asking the origin to perform. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#method CcLoggingConfiguration#method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#method CcLoggingConfiguration#method}
     */
     readonly method?: string;
     /**
     * Inspect the query string. This is the part of a URL that appears after a ? character, if any. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#query_string CcLoggingConfiguration#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#query_string CcLoggingConfiguration#query_string}
     */
     readonly queryString?: string;
     /**
     * Inspect a single header. Provide the name of the header to inspect, for example, User-Agent or Referer. This setting isn't case sensitive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#single_header CcLoggingConfiguration#single_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#single_header CcLoggingConfiguration#single_header}
     */
     readonly singleHeader?: SingleHeaderProperty;
     /**
     * Inspect the request URI path. This is the part of a web request that identifies a resource, for example, /images/daily-ad.jpg. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wafv2_logging_configuration#uri_path CcLoggingConfiguration#uri_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wafv2_logging_configuration#uri_path CcLoggingConfiguration#uri_path}
     */
     readonly uriPath?: string;
 }

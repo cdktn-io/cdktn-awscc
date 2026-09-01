@@ -1,71 +1,71 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#attachments_configuration CcApplication#attachments_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#attachments_configuration CcApplication#attachments_configuration}
     */
     readonly attachmentsConfiguration?: CcApplication.AttachmentsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#auto_subscription_configuration CcApplication#auto_subscription_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#auto_subscription_configuration CcApplication#auto_subscription_configuration}
     */
     readonly autoSubscriptionConfiguration?: CcApplication.AutoSubscriptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#client_ids_for_oidc CcApplication#client_ids_for_oidc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#client_ids_for_oidc CcApplication#client_ids_for_oidc}
     */
     readonly clientIdsForOidc?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#description CcApplication#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#description CcApplication#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#display_name CcApplication#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#display_name CcApplication#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#encryption_configuration CcApplication#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#encryption_configuration CcApplication#encryption_configuration}
     */
     readonly encryptionConfiguration?: CcApplication.EncryptionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#iam_identity_provider_arn CcApplication#iam_identity_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#iam_identity_provider_arn CcApplication#iam_identity_provider_arn}
     */
     readonly iamIdentityProviderArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#identity_center_instance_arn CcApplication#identity_center_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#identity_center_instance_arn CcApplication#identity_center_instance_arn}
     */
     readonly identityCenterInstanceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#identity_type CcApplication#identity_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#identity_type CcApplication#identity_type}
     */
     readonly identityType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#personalization_configuration CcApplication#personalization_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#personalization_configuration CcApplication#personalization_configuration}
     */
     readonly personalizationConfiguration?: CcApplication.PersonalizationConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#q_apps_configuration CcApplication#q_apps_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#q_apps_configuration CcApplication#q_apps_configuration}
     */
     readonly qAppsConfiguration?: CcApplication.QAppsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#quick_sight_configuration CcApplication#quick_sight_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#quick_sight_configuration CcApplication#quick_sight_configuration}
     */
     readonly quickSightConfiguration?: CcApplication.QuickSightConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#role_arn CcApplication#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#role_arn CcApplication#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application awscc_qbusiness_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application awscc_qbusiness_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application awscc_qbusiness_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application awscc_qbusiness_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_qbusiness_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -733,7 +733,7 @@ export function ccApplicationTagPropertyToHclTerraform(struct?: CcApplication.Ta
 export namespace CcApplication {
 export interface AttachmentsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#attachments_control_mode CcApplication#attachments_control_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#attachments_control_mode CcApplication#attachments_control_mode}
     */
     readonly attachmentsControlMode?: string;
 }
@@ -797,11 +797,11 @@ export class AttachmentsConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface AutoSubscriptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#auto_subscribe CcApplication#auto_subscribe}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#auto_subscribe CcApplication#auto_subscribe}
     */
     readonly autoSubscribe?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#default_subscription_type CcApplication#default_subscription_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#default_subscription_type CcApplication#default_subscription_type}
     */
     readonly defaultSubscriptionType?: string;
 }
@@ -887,7 +887,7 @@ export class AutoSubscriptionConfigurationPropertyOutputReference extends cdktn.
 }
 export interface EncryptionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#kms_key_id CcApplication#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#kms_key_id CcApplication#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -951,7 +951,7 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface PersonalizationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#personalization_control_mode CcApplication#personalization_control_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#personalization_control_mode CcApplication#personalization_control_mode}
     */
     readonly personalizationControlMode?: string;
 }
@@ -1015,7 +1015,7 @@ export class PersonalizationConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface QAppsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#q_apps_control_mode CcApplication#q_apps_control_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#q_apps_control_mode CcApplication#q_apps_control_mode}
     */
     readonly qAppsControlMode?: string;
 }
@@ -1079,7 +1079,7 @@ export class QAppsConfigurationPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface QuickSightConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#client_namespace CcApplication#client_namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#client_namespace CcApplication#client_namespace}
     */
     readonly clientNamespace?: string;
 }
@@ -1143,11 +1143,11 @@ export class QuickSightConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_application#value CcApplication#value}
     */
     readonly value?: string;
 }

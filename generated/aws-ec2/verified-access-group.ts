@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcVerifiedAccessGroupProps extends cdktn.TerraformMetaArguments
     /**
     * A description for the AWS Verified Access group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#description CcVerifiedAccessGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#description CcVerifiedAccessGroup#description}
     */
     readonly description?: string;
     /**
     * The AWS Verified Access policy document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#policy_document CcVerifiedAccessGroup#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#policy_document CcVerifiedAccessGroup#policy_document}
     */
     readonly policyDocument?: string;
     /**
     * The status of the Verified Access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#policy_enabled CcVerifiedAccessGroup#policy_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#policy_enabled CcVerifiedAccessGroup#policy_enabled}
     */
     readonly policyEnabled?: boolean | cdktn.IResolvable;
     /**
     * The configuration options for customer provided KMS encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#sse_specification CcVerifiedAccessGroup#sse_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#sse_specification CcVerifiedAccessGroup#sse_specification}
     */
     readonly sseSpecification?: CcVerifiedAccessGroup.SseSpecificationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#tags CcVerifiedAccessGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#tags CcVerifiedAccessGroup#tags}
     */
     readonly tags?: CcVerifiedAccessGroup.TagProperty[] | cdktn.IResolvable;
     /**
     * The ID of the AWS Verified Access instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#verified_access_instance_id CcVerifiedAccessGroup#verified_access_instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#verified_access_instance_id CcVerifiedAccessGroup#verified_access_instance_id}
     */
     readonly verifiedAccessInstanceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group awscc_ec2_verified_access_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group awscc_ec2_verified_access_group}
 */
 export class CcVerifiedAccessGroup extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcVerifiedAccessGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcVerifiedAccessGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcVerifiedAccessGroup to import
-    * @param importFromId The id of the existing CcVerifiedAccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcVerifiedAccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcVerifiedAccessGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcVerifiedAccessGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group awscc_ec2_verified_access_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group awscc_ec2_verified_access_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcVerifiedAccessGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_verified_access_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -368,13 +368,13 @@ export interface SseSpecificationProperty {
     /**
     * Whether to encrypt the policy with the provided key or disable encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#customer_managed_key_enabled CcVerifiedAccessGroup#customer_managed_key_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#customer_managed_key_enabled CcVerifiedAccessGroup#customer_managed_key_enabled}
     */
     readonly customerManagedKeyEnabled?: boolean | cdktn.IResolvable;
     /**
     * KMS Key Arn used to encrypt the group policy
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#kms_key_arn CcVerifiedAccessGroup#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#kms_key_arn CcVerifiedAccessGroup#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -462,13 +462,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#key CcVerifiedAccessGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#key CcVerifiedAccessGroup#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_verified_access_group#value CcVerifiedAccessGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_verified_access_group#value CcVerifiedAccessGroup#value}
     */
     readonly value?: string;
 }

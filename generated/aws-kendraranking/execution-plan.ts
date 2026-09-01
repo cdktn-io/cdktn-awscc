@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcExecutionPlanProps extends cdktn.TerraformMetaArguments {
     /**
     * Capacity units
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#capacity_units CcExecutionPlan#capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#capacity_units CcExecutionPlan#capacity_units}
     */
     readonly capacityUnits?: CcExecutionPlan.CapacityUnitsConfigurationProperty;
     /**
     * A description for the execution plan
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#description CcExecutionPlan#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#description CcExecutionPlan#description}
     */
     readonly description?: string;
     /**
     * Name of kendra ranking rescore execution plan
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#name CcExecutionPlan#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#name CcExecutionPlan#name}
     */
     readonly name: string;
     /**
     * Tags for labeling the execution plan
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#tags CcExecutionPlan#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#tags CcExecutionPlan#tags}
     */
     readonly tags?: CcExecutionPlan.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan awscc_kendraranking_execution_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan awscc_kendraranking_execution_plan}
 */
 export class CcExecutionPlan extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcExecutionPlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcExecutionPlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcExecutionPlan to import
-    * @param importFromId The id of the existing CcExecutionPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcExecutionPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcExecutionPlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcExecutionPlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan awscc_kendraranking_execution_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan awscc_kendraranking_execution_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcExecutionPlan extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_kendraranking_execution_plan',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -284,7 +284,7 @@ export function ccExecutionPlanTagPropertyToHclTerraform(struct?: CcExecutionPla
 export namespace CcExecutionPlan {
 export interface CapacityUnitsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#rescore_capacity_units CcExecutionPlan#rescore_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#rescore_capacity_units CcExecutionPlan#rescore_capacity_units}
     */
     readonly rescoreCapacityUnits?: number;
 }
@@ -350,13 +350,13 @@ export interface TagProperty {
     /**
     * A string used to identify this tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#key CcExecutionPlan#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#key CcExecutionPlan#key}
     */
     readonly key?: string;
     /**
     * A string containing the value for the tag
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/kendraranking_execution_plan#value CcExecutionPlan#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendraranking_execution_plan#value CcExecutionPlan#value}
     */
     readonly value?: string;
 }

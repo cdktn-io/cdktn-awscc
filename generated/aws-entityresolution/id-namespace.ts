@@ -1,43 +1,43 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcIdNamespaceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#description CcIdNamespace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#description CcIdNamespace#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#id_mapping_workflow_properties CcIdNamespace#id_mapping_workflow_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#id_mapping_workflow_properties CcIdNamespace#id_mapping_workflow_properties}
     */
     readonly idMappingWorkflowProperties?: CcIdNamespace.IdNamespaceIdMappingWorkflowPropertiesProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#id_namespace_name CcIdNamespace#id_namespace_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#id_namespace_name CcIdNamespace#id_namespace_name}
     */
     readonly idNamespaceName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#input_source_config CcIdNamespace#input_source_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#input_source_config CcIdNamespace#input_source_config}
     */
     readonly inputSourceConfig?: CcIdNamespace.IdNamespaceInputSourceProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#role_arn CcIdNamespace#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#role_arn CcIdNamespace#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#tags CcIdNamespace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#tags CcIdNamespace#tags}
     */
     readonly tags?: CcIdNamespace.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#type CcIdNamespace#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#type CcIdNamespace#type}
     */
     readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace awscc_entityresolution_id_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace awscc_entityresolution_id_namespace}
 */
 export class CcIdNamespace extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class CcIdNamespace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcIdNamespace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcIdNamespace to import
-    * @param importFromId The id of the existing CcIdNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcIdNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcIdNamespace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class CcIdNamespace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace awscc_entityresolution_id_namespace} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace awscc_entityresolution_id_namespace} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class CcIdNamespace extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_entityresolution_id_namespace',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -540,11 +540,11 @@ export interface NamespaceProviderPropertiesProperty {
     /**
     * Additional Provider configuration that would be required for the provider service. The Configuration must be in JSON string format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#provider_configuration CcIdNamespace#provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#provider_configuration CcIdNamespace#provider_configuration}
     */
     readonly providerConfiguration?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#provider_service_arn CcIdNamespace#provider_service_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#provider_service_arn CcIdNamespace#provider_service_arn}
     */
     readonly providerServiceArn?: string;
 }
@@ -630,11 +630,11 @@ export class NamespaceProviderPropertiesPropertyOutputReference extends cdktn.Co
 }
 export interface RuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#matching_keys CcIdNamespace#matching_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#matching_keys CcIdNamespace#matching_keys}
     */
     readonly matchingKeys?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#rule_name CcIdNamespace#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#rule_name CcIdNamespace#rule_name}
     */
     readonly ruleName?: string;
 }
@@ -742,19 +742,19 @@ export class RulePropertyList extends cdktn.ComplexList {
 }
 export interface NamespaceRuleBasedPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#attribute_matching_model CcIdNamespace#attribute_matching_model}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#attribute_matching_model CcIdNamespace#attribute_matching_model}
     */
     readonly attributeMatchingModel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#record_matching_models CcIdNamespace#record_matching_models}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#record_matching_models CcIdNamespace#record_matching_models}
     */
     readonly recordMatchingModels?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#rule_definition_types CcIdNamespace#rule_definition_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#rule_definition_types CcIdNamespace#rule_definition_types}
     */
     readonly ruleDefinitionTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#rules CcIdNamespace#rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#rules CcIdNamespace#rules}
     */
     readonly rules?: RuleProperty[] | cdktn.IResolvable;
 }
@@ -884,15 +884,15 @@ export class NamespaceRuleBasedPropertiesPropertyOutputReference extends cdktn.C
 }
 export interface IdNamespaceIdMappingWorkflowPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#id_mapping_type CcIdNamespace#id_mapping_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#id_mapping_type CcIdNamespace#id_mapping_type}
     */
     readonly idMappingType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#provider_properties CcIdNamespace#provider_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#provider_properties CcIdNamespace#provider_properties}
     */
     readonly providerProperties?: NamespaceProviderPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#rule_based_properties CcIdNamespace#rule_based_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#rule_based_properties CcIdNamespace#rule_based_properties}
     */
     readonly ruleBasedProperties?: NamespaceRuleBasedPropertiesProperty;
 }
@@ -1022,11 +1022,11 @@ export class IdNamespaceIdMappingWorkflowPropertiesPropertyList extends cdktn.Co
 }
 export interface IdNamespaceInputSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#input_source_arn CcIdNamespace#input_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#input_source_arn CcIdNamespace#input_source_arn}
     */
     readonly inputSourceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#schema_name CcIdNamespace#schema_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#schema_name CcIdNamespace#schema_name}
     */
     readonly schemaName?: string;
 }
@@ -1136,13 +1136,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#key CcIdNamespace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#key CcIdNamespace#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/entityresolution_id_namespace#value CcIdNamespace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/entityresolution_id_namespace#value CcIdNamespace#value}
     */
     readonly value?: string;
 }

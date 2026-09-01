@@ -1,45 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGlobalResolverProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#client_token CcGlobalResolver#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#client_token CcGlobalResolver#client_token}
     */
     readonly clientToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#description CcGlobalResolver#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#description CcGlobalResolver#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#ip_address_type CcGlobalResolver#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#ip_address_type CcGlobalResolver#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#name CcGlobalResolver#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#name CcGlobalResolver#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#observability_region CcGlobalResolver#observability_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#observability_region CcGlobalResolver#observability_region}
     */
     readonly observabilityRegion?: string;
     /**
-    * A list of regions the Global Resolver will exist in. This list cannot be updated and will stay fixed for the duration of the Global Resolver.
+    * The list of regions the Global Resolver exists in. Regions can be added or removed on update; the order of this list is not significant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#regions CcGlobalResolver#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#regions CcGlobalResolver#regions}
     */
     readonly regions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#tags CcGlobalResolver#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#tags CcGlobalResolver#tags}
     */
     readonly tags?: CcGlobalResolver.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver awscc_route53globalresolver_global_resolver}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver awscc_route53globalresolver_global_resolver}
 */
 export class CcGlobalResolver extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcGlobalResolver extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGlobalResolver resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGlobalResolver to import
-    * @param importFromId The id of the existing CcGlobalResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGlobalResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGlobalResolver to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcGlobalResolver extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver awscc_route53globalresolver_global_resolver} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver awscc_route53globalresolver_global_resolver} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcGlobalResolver extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53globalresolver_global_resolver',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -359,11 +359,11 @@ export function ccGlobalResolverTagPropertyToHclTerraform(struct?: CcGlobalResol
 export namespace CcGlobalResolver {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#key CcGlobalResolver#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#key CcGlobalResolver#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53globalresolver_global_resolver#value CcGlobalResolver#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53globalresolver_global_resolver#value CcGlobalResolver#value}
     */
     readonly value?: string;
 }

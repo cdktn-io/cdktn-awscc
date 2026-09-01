@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcHealthCheckProps extends cdktn.TerraformMetaArguments {
     /**
     * A complex type that contains information about the health check.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#health_check_config CcHealthCheck#health_check_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#health_check_config CcHealthCheck#health_check_config}
     */
     readonly healthCheckConfig: CcHealthCheck.HealthCheckConfigProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#health_check_tags CcHealthCheck#health_check_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#health_check_tags CcHealthCheck#health_check_tags}
     */
     readonly healthCheckTags?: CcHealthCheck.HealthCheckTagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check awscc_route53_health_check}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check awscc_route53_health_check}
 */
 export class CcHealthCheck extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcHealthCheck extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHealthCheck resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHealthCheck to import
-    * @param importFromId The id of the existing CcHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHealthCheck to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcHealthCheck extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check awscc_route53_health_check} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check awscc_route53_health_check} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcHealthCheck extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_route53_health_check',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -370,13 +370,13 @@ export interface AlarmIdentifierProperty {
     /**
     * The name of the CloudWatch alarm that you want Amazon Route 53 health checkers to use to determine whether this health check is healthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#name CcHealthCheck#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#name CcHealthCheck#name}
     */
     readonly name?: string;
     /**
     * For the CloudWatch alarm that you want Route 53 health checkers to use to determine whether this health check is healthy, the region that the alarm was created in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#region CcHealthCheck#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#region CcHealthCheck#region}
     */
     readonly region?: string;
 }
@@ -464,71 +464,71 @@ export interface HealthCheckConfigProperty {
     /**
     * A complex type that identifies the CloudWatch alarm that you want Amazon Route 53 health checkers to use to determine whether the specified health check is healthy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#alarm_identifier CcHealthCheck#alarm_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#alarm_identifier CcHealthCheck#alarm_identifier}
     */
     readonly alarmIdentifier?: AlarmIdentifierProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#child_health_checks CcHealthCheck#child_health_checks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#child_health_checks CcHealthCheck#child_health_checks}
     */
     readonly childHealthChecks?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#enable_sni CcHealthCheck#enable_sni}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#enable_sni CcHealthCheck#enable_sni}
     */
     readonly enableSni?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#failure_threshold CcHealthCheck#failure_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#failure_threshold CcHealthCheck#failure_threshold}
     */
     readonly failureThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#fully_qualified_domain_name CcHealthCheck#fully_qualified_domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#fully_qualified_domain_name CcHealthCheck#fully_qualified_domain_name}
     */
     readonly fullyQualifiedDomainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#health_threshold CcHealthCheck#health_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#health_threshold CcHealthCheck#health_threshold}
     */
     readonly healthThreshold?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#insufficient_data_health_status CcHealthCheck#insufficient_data_health_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#insufficient_data_health_status CcHealthCheck#insufficient_data_health_status}
     */
     readonly insufficientDataHealthStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#inverted CcHealthCheck#inverted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#inverted CcHealthCheck#inverted}
     */
     readonly inverted?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#ip_address CcHealthCheck#ip_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#ip_address CcHealthCheck#ip_address}
     */
     readonly ipAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#measure_latency CcHealthCheck#measure_latency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#measure_latency CcHealthCheck#measure_latency}
     */
     readonly measureLatency?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#port CcHealthCheck#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#port CcHealthCheck#port}
     */
     readonly port?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#regions CcHealthCheck#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#regions CcHealthCheck#regions}
     */
     readonly regions?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#request_interval CcHealthCheck#request_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#request_interval CcHealthCheck#request_interval}
     */
     readonly requestInterval?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#resource_path CcHealthCheck#resource_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#resource_path CcHealthCheck#resource_path}
     */
     readonly resourcePath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#routing_control_arn CcHealthCheck#routing_control_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#routing_control_arn CcHealthCheck#routing_control_arn}
     */
     readonly routingControlArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#search_string CcHealthCheck#search_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#search_string CcHealthCheck#search_string}
     */
     readonly searchString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#type CcHealthCheck#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#type CcHealthCheck#type}
     */
     readonly type: string;
 }
@@ -943,13 +943,13 @@ export interface HealthCheckTagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#key CcHealthCheck#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#key CcHealthCheck#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/route53_health_check#value CcHealthCheck#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/route53_health_check#value CcHealthCheck#value}
     */
     readonly value?: string;
 }

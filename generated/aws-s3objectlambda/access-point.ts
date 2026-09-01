@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcAccessPointProps extends cdktn.TerraformMetaArguments {
     /**
     * The name you want to assign to this Object lambda Access Point.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#name CcAccessPoint#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#name CcAccessPoint#name}
     */
     readonly name?: string;
     /**
     * The Object lambda Access Point Configuration that configures transformations to be applied on the objects on specified S3 Actions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#object_lambda_configuration CcAccessPoint#object_lambda_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#object_lambda_configuration CcAccessPoint#object_lambda_configuration}
     */
     readonly objectLambdaConfiguration: CcAccessPoint.ObjectLambdaConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point awscc_s3objectlambda_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point awscc_s3objectlambda_access_point}
 */
 export class CcAccessPoint extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcAccessPoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessPoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessPoint to import
-    * @param importFromId The id of the existing CcAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessPoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcAccessPoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point awscc_s3objectlambda_access_point} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point awscc_s3objectlambda_access_point} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcAccessPoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3objectlambda_access_point',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -431,11 +431,11 @@ export class AliasPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AwsLambdaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#function_arn CcAccessPoint#function_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#function_arn CcAccessPoint#function_arn}
     */
     readonly functionArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#function_payload CcAccessPoint#function_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#function_payload CcAccessPoint#function_payload}
     */
     readonly functionPayload?: string;
 }
@@ -521,7 +521,7 @@ export class AwsLambdaPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ContentTransformationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#aws_lambda CcAccessPoint#aws_lambda}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#aws_lambda CcAccessPoint#aws_lambda}
     */
     readonly awsLambda?: AwsLambdaProperty;
 }
@@ -585,11 +585,11 @@ export class ContentTransformationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface TransformationConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#actions CcAccessPoint#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#actions CcAccessPoint#actions}
     */
     readonly actions: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#content_transformation CcAccessPoint#content_transformation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#content_transformation CcAccessPoint#content_transformation}
     */
     readonly contentTransformation: ContentTransformationProperty;
 }
@@ -691,19 +691,19 @@ export class TransformationConfigurationPropertyList extends cdktn.ComplexList {
 }
 export interface ObjectLambdaConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#allowed_features CcAccessPoint#allowed_features}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#allowed_features CcAccessPoint#allowed_features}
     */
     readonly allowedFeatures?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#cloudwatch_metrics_enabled CcAccessPoint#cloudwatch_metrics_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#cloudwatch_metrics_enabled CcAccessPoint#cloudwatch_metrics_enabled}
     */
     readonly cloudwatchMetricsEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#supporting_access_point CcAccessPoint#supporting_access_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#supporting_access_point CcAccessPoint#supporting_access_point}
     */
     readonly supportingAccessPoint: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3objectlambda_access_point#transformation_configurations CcAccessPoint#transformation_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3objectlambda_access_point#transformation_configurations CcAccessPoint#transformation_configurations}
     */
     readonly transformationConfigurations: TransformationConfigurationProperty[] | cdktn.IResolvable;
 }

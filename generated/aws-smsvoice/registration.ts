@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcRegistrationProps extends cdktn.TerraformMetaArguments {
     /**
     * The type of registration form to create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration#registration_type CcRegistration#registration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration#registration_type CcRegistration#registration_type}
     */
     readonly registrationType: string;
     /**
     * An array of tags (key and value pairs) to associate with the registration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration#tags CcRegistration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration#tags CcRegistration#tags}
     */
     readonly tags?: CcRegistration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration awscc_smsvoice_registration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration awscc_smsvoice_registration}
 */
 export class CcRegistration extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcRegistration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRegistration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRegistration to import
-    * @param importFromId The id of the existing CcRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRegistration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcRegistration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration awscc_smsvoice_registration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration awscc_smsvoice_registration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcRegistration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_smsvoice_registration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -211,13 +211,13 @@ export interface TagProperty {
     /**
     * The key identifier, or name, of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration#key CcRegistration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration#key CcRegistration#key}
     */
     readonly key?: string;
     /**
     * The string value associated with the key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/smsvoice_registration#value CcRegistration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/smsvoice_registration#value CcRegistration#value}
     */
     readonly value?: string;
 }

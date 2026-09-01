@@ -1,79 +1,79 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcImageBuilderProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#access_endpoints CcImageBuilder#access_endpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#access_endpoints CcImageBuilder#access_endpoints}
     */
     readonly accessEndpoints?: CcImageBuilder.AccessEndpointProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#appstream_agent_version CcImageBuilder#appstream_agent_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#appstream_agent_version CcImageBuilder#appstream_agent_version}
     */
     readonly appstreamAgentVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#description CcImageBuilder#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#description CcImageBuilder#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#display_name CcImageBuilder#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#display_name CcImageBuilder#display_name}
     */
     readonly displayName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#domain_join_info CcImageBuilder#domain_join_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#domain_join_info CcImageBuilder#domain_join_info}
     */
     readonly domainJoinInfo?: CcImageBuilder.DomainJoinInfoProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#enable_default_internet_access CcImageBuilder#enable_default_internet_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#enable_default_internet_access CcImageBuilder#enable_default_internet_access}
     */
     readonly enableDefaultInternetAccess?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#iam_role_arn CcImageBuilder#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#iam_role_arn CcImageBuilder#iam_role_arn}
     */
     readonly iamRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#image_arn CcImageBuilder#image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#image_arn CcImageBuilder#image_arn}
     */
     readonly imageArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#image_name CcImageBuilder#image_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#image_name CcImageBuilder#image_name}
     */
     readonly imageName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#instance_type CcImageBuilder#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#instance_type CcImageBuilder#instance_type}
     */
     readonly instanceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#name CcImageBuilder#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#name CcImageBuilder#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#root_volume_config CcImageBuilder#root_volume_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#root_volume_config CcImageBuilder#root_volume_config}
     */
     readonly rootVolumeConfig?: CcImageBuilder.VolumeConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#softwares_to_install CcImageBuilder#softwares_to_install}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#softwares_to_install CcImageBuilder#softwares_to_install}
     */
     readonly softwaresToInstall?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#softwares_to_uninstall CcImageBuilder#softwares_to_uninstall}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#softwares_to_uninstall CcImageBuilder#softwares_to_uninstall}
     */
     readonly softwaresToUninstall?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#tags CcImageBuilder#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#tags CcImageBuilder#tags}
     */
     readonly tags?: CcImageBuilder.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#vpc_config CcImageBuilder#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#vpc_config CcImageBuilder#vpc_config}
     */
     readonly vpcConfig?: CcImageBuilder.VpcConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder awscc_appstream_image_builder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder awscc_appstream_image_builder}
 */
 export class CcImageBuilder extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcImageBuilder extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcImageBuilder resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcImageBuilder to import
-    * @param importFromId The id of the existing CcImageBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcImageBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcImageBuilder to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcImageBuilder extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder awscc_appstream_image_builder} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder awscc_appstream_image_builder} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -112,7 +112,7 @@ export class CcImageBuilder extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appstream_image_builder',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -715,11 +715,11 @@ export function ccImageBuilderVpcConfigPropertyToHclTerraform(struct?: CcImageBu
 export namespace CcImageBuilder {
 export interface AccessEndpointProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#endpoint_type CcImageBuilder#endpoint_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#endpoint_type CcImageBuilder#endpoint_type}
     */
     readonly endpointType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#vpce_id CcImageBuilder#vpce_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#vpce_id CcImageBuilder#vpce_id}
     */
     readonly vpceId?: string;
 }
@@ -827,11 +827,11 @@ export class AccessEndpointPropertyList extends cdktn.ComplexList {
 }
 export interface DomainJoinInfoProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#directory_name CcImageBuilder#directory_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#directory_name CcImageBuilder#directory_name}
     */
     readonly directoryName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#organizational_unit_distinguished_name CcImageBuilder#organizational_unit_distinguished_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#organizational_unit_distinguished_name CcImageBuilder#organizational_unit_distinguished_name}
     */
     readonly organizationalUnitDistinguishedName?: string;
 }
@@ -917,7 +917,7 @@ export class DomainJoinInfoPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface VolumeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#volume_size_in_gb CcImageBuilder#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#volume_size_in_gb CcImageBuilder#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -981,11 +981,11 @@ export class VolumeConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#key CcImageBuilder#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#key CcImageBuilder#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#value CcImageBuilder#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#value CcImageBuilder#value}
     */
     readonly value?: string;
 }
@@ -1093,11 +1093,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#security_group_ids CcImageBuilder#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#security_group_ids CcImageBuilder#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appstream_image_builder#subnet_ids CcImageBuilder#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_image_builder#subnet_ids CcImageBuilder#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

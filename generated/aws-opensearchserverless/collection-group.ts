@@ -1,49 +1,49 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCollectionGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#capacity_limits CcCollectionGroup#capacity_limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#capacity_limits CcCollectionGroup#capacity_limits}
     */
     readonly capacityLimits?: CcCollectionGroup.CapacityLimitsProperty;
     /**
     * The description of the collection group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#description CcCollectionGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#description CcCollectionGroup#description}
     */
     readonly description?: string;
     /**
     * The generation of Amazon OpenSearch Serverless for the collection group. Valid values are CLASSIC and NEXTGEN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#generation CcCollectionGroup#generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#generation CcCollectionGroup#generation}
     */
     readonly generation?: string;
     /**
     * The name of the collection group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#name CcCollectionGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#name CcCollectionGroup#name}
     */
     readonly name: string;
     /**
     * Indicates whether standby replicas are used for the collection group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#standby_replicas CcCollectionGroup#standby_replicas}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#standby_replicas CcCollectionGroup#standby_replicas}
     */
     readonly standbyReplicas: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#tags CcCollectionGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#tags CcCollectionGroup#tags}
     */
     readonly tags?: CcCollectionGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group awscc_opensearchserverless_collection_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group awscc_opensearchserverless_collection_group}
 */
 export class CcCollectionGroup extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcCollectionGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCollectionGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCollectionGroup to import
-    * @param importFromId The id of the existing CcCollectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCollectionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCollectionGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcCollectionGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group awscc_opensearchserverless_collection_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group awscc_opensearchserverless_collection_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class CcCollectionGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_opensearchserverless_collection_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -362,25 +362,25 @@ export interface CapacityLimitsProperty {
     /**
     * The maximum indexing capacity for collections in the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#max_indexing_capacity_in_ocu CcCollectionGroup#max_indexing_capacity_in_ocu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#max_indexing_capacity_in_ocu CcCollectionGroup#max_indexing_capacity_in_ocu}
     */
     readonly maxIndexingCapacityInOcu?: number;
     /**
     * The maximum search capacity for collections in the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#max_search_capacity_in_ocu CcCollectionGroup#max_search_capacity_in_ocu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#max_search_capacity_in_ocu CcCollectionGroup#max_search_capacity_in_ocu}
     */
     readonly maxSearchCapacityInOcu?: number;
     /**
     * The minimum indexing capacity for collections in the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#min_indexing_capacity_in_ocu CcCollectionGroup#min_indexing_capacity_in_ocu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#min_indexing_capacity_in_ocu CcCollectionGroup#min_indexing_capacity_in_ocu}
     */
     readonly minIndexingCapacityInOcu?: number;
     /**
     * The minimum search capacity for collections in the group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#min_search_capacity_in_ocu CcCollectionGroup#min_search_capacity_in_ocu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#min_search_capacity_in_ocu CcCollectionGroup#min_search_capacity_in_ocu}
     */
     readonly minSearchCapacityInOcu?: number;
 }
@@ -512,13 +512,13 @@ export interface TagProperty {
     /**
     * The key in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#key CcCollectionGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#key CcCollectionGroup#key}
     */
     readonly key?: string;
     /**
     * The value in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection_group#value CcCollectionGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection_group#value CcCollectionGroup#value}
     */
     readonly value?: string;
 }

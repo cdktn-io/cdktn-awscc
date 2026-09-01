@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLaunchNotificationConstraintProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#accept_language CcLaunchNotificationConstraint#accept_language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#accept_language CcLaunchNotificationConstraint#accept_language}
     */
     readonly acceptLanguage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#description CcLaunchNotificationConstraint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#description CcLaunchNotificationConstraint#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#notification_arns CcLaunchNotificationConstraint#notification_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#notification_arns CcLaunchNotificationConstraint#notification_arns}
     */
     readonly notificationArns: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#portfolio_id CcLaunchNotificationConstraint#portfolio_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#portfolio_id CcLaunchNotificationConstraint#portfolio_id}
     */
     readonly portfolioId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#product_id CcLaunchNotificationConstraint#product_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#product_id CcLaunchNotificationConstraint#product_id}
     */
     readonly productId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint awscc_servicecatalog_launch_notification_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint awscc_servicecatalog_launch_notification_constraint}
 */
 export class CcLaunchNotificationConstraint extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcLaunchNotificationConstraint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLaunchNotificationConstraint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLaunchNotificationConstraint to import
-    * @param importFromId The id of the existing CcLaunchNotificationConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLaunchNotificationConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLaunchNotificationConstraint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcLaunchNotificationConstraint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/servicecatalog_launch_notification_constraint awscc_servicecatalog_launch_notification_constraint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/servicecatalog_launch_notification_constraint awscc_servicecatalog_launch_notification_constraint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcLaunchNotificationConstraint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_servicecatalog_launch_notification_constraint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

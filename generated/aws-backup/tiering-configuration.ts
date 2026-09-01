@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcTieringConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#backup_vault_name CcTieringConfiguration#backup_vault_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#backup_vault_name CcTieringConfiguration#backup_vault_name}
     */
     readonly backupVaultName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#resource_selection CcTieringConfiguration#resource_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#resource_selection CcTieringConfiguration#resource_selection}
     */
     readonly resourceSelection: CcTieringConfiguration.ResourceSelectionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#tiering_configuration_name CcTieringConfiguration#tiering_configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#tiering_configuration_name CcTieringConfiguration#tiering_configuration_name}
     */
     readonly tieringConfigurationName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#tiering_configuration_tags CcTieringConfiguration#tiering_configuration_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#tiering_configuration_tags CcTieringConfiguration#tiering_configuration_tags}
     */
     readonly tieringConfigurationTags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration awscc_backup_tiering_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration awscc_backup_tiering_configuration}
 */
 export class CcTieringConfiguration extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcTieringConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTieringConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTieringConfiguration to import
-    * @param importFromId The id of the existing CcTieringConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTieringConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTieringConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcTieringConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration awscc_backup_tiering_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration awscc_backup_tiering_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcTieringConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_tiering_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -252,15 +252,15 @@ export function ccTieringConfigurationResourceSelectionPropertyToHclTerraform(st
 export namespace CcTieringConfiguration {
 export interface ResourceSelectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#resource_type CcTieringConfiguration#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#resource_type CcTieringConfiguration#resource_type}
     */
     readonly resourceType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#resources CcTieringConfiguration#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#resources CcTieringConfiguration#resources}
     */
     readonly resources: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_tiering_configuration#tiering_down_settings_in_days CcTieringConfiguration#tiering_down_settings_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_tiering_configuration#tiering_down_settings_in_days CcTieringConfiguration#tiering_down_settings_in_days}
     */
     readonly tieringDownSettingsInDays: number;
 }

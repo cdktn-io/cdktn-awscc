@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcAccessPolicyProps extends cdktn.TerraformMetaArguments {
     /**
     * The identity for this access policy. Choose either a user or a group but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#access_policy_identity CcAccessPolicy#access_policy_identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#access_policy_identity CcAccessPolicy#access_policy_identity}
     */
     readonly accessPolicyIdentity: CcAccessPolicy.AccessPolicyIdentityProperty;
     /**
     * The permission level for this access policy. Valid values are ADMINISTRATOR or VIEWER.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#access_policy_permission CcAccessPolicy#access_policy_permission}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#access_policy_permission CcAccessPolicy#access_policy_permission}
     */
     readonly accessPolicyPermission: string;
     /**
     * The AWS IoT SiteWise Monitor resource for this access policy. Choose either portal or project but not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#access_policy_resource CcAccessPolicy#access_policy_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#access_policy_resource CcAccessPolicy#access_policy_resource}
     */
     readonly accessPolicyResource: CcAccessPolicy.AccessPolicyResourceProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy awscc_iotsitewise_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy awscc_iotsitewise_access_policy}
 */
 export class CcAccessPolicy extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcAccessPolicy extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessPolicy resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessPolicy to import
-    * @param importFromId The id of the existing CcAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessPolicy to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcAccessPolicy extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy awscc_iotsitewise_access_policy} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy awscc_iotsitewise_access_policy} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcAccessPolicy extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotsitewise_access_policy',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -414,7 +414,7 @@ export interface IamRoleProperty {
     /**
     * The ARN of the IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#arn CcAccessPolicy#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#arn CcAccessPolicy#arn}
     */
     readonly arn?: string;
 }
@@ -480,7 +480,7 @@ export interface IamUserProperty {
     /**
     * The ARN of the IAM user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#arn CcAccessPolicy#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#arn CcAccessPolicy#arn}
     */
     readonly arn?: string;
 }
@@ -546,7 +546,7 @@ export interface UserProperty {
     /**
     * The AWS SSO ID of the user.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -615,19 +615,19 @@ export interface AccessPolicyIdentityProperty {
     /**
     * Contains information for an IAM role identity in an access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#iam_role CcAccessPolicy#iam_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#iam_role CcAccessPolicy#iam_role}
     */
     readonly iamRole?: IamRoleProperty;
     /**
     * Contains information for an IAM user identity in an access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#iam_user CcAccessPolicy#iam_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#iam_user CcAccessPolicy#iam_user}
     */
     readonly iamUser?: IamUserProperty;
     /**
     * Contains information for a user identity in an access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#user CcAccessPolicy#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#user CcAccessPolicy#user}
     */
     readonly user?: UserProperty;
 }
@@ -737,7 +737,7 @@ export interface PortalProperty {
     /**
     * The ID of the portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ export interface ProjectProperty {
     /**
     * The ID of the project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#id CcAccessPolicy#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -875,13 +875,13 @@ export interface AccessPolicyResourceProperty {
     /**
     * A portal resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#portal CcAccessPolicy#portal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#portal CcAccessPolicy#portal}
     */
     readonly portal?: PortalProperty;
     /**
     * A project resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_access_policy#project CcAccessPolicy#project}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_access_policy#project CcAccessPolicy#project}
     */
     readonly project?: ProjectProperty;
 }

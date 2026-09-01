@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,17 +9,17 @@ export interface CcGraphProps extends cdktn.TerraformMetaArguments {
     /**
     * Indicates whether to automatically enable new organization accounts as member accounts in the organization behavior graph.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph#auto_enable_members CcGraph#auto_enable_members}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph#auto_enable_members CcGraph#auto_enable_members}
     */
     readonly autoEnableMembers?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph#tags CcGraph#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph#tags CcGraph#tags}
     */
     readonly tags?: CcGraph.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph awscc_detective_graph}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph awscc_detective_graph}
 */
 export class CcGraph extends cdktn.TerraformResource {
 
@@ -35,7 +35,7 @@ export class CcGraph extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGraph resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGraph to import
-    * @param importFromId The id of the existing CcGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGraph to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class CcGraph extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph awscc_detective_graph} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph awscc_detective_graph} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class CcGraph extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_detective_graph',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -192,13 +192,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. Valid characters are Unicode letters, digits, white space, and any of the following symbols: _ . : / = + - @ 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph#key CcGraph#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph#key CcGraph#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. Valid characters are Unicode letters, digits, white space, and any of the following symbols: _ . : / = + - @ 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/detective_graph#value CcGraph#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/detective_graph#value CcGraph#value}
     */
     readonly value?: string;
 }

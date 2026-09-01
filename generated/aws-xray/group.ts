@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The filter expression defining criteria by which to group traces.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#filter_expression CcGroup#filter_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#filter_expression CcGroup#filter_expression}
     */
     readonly filterExpression?: string;
     /**
     * The case-sensitive name of the new group. Names must be unique.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#group_name CcGroup#group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#group_name CcGroup#group_name}
     */
     readonly groupName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#insights_configuration CcGroup#insights_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#insights_configuration CcGroup#insights_configuration}
     */
     readonly insightsConfiguration?: CcGroup.InsightsConfigurationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#tags CcGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#tags CcGroup#tags}
     */
     readonly tags?: CcGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group awscc_xray_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group awscc_xray_group}
 */
 export class CcGroup extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGroup to import
-    * @param importFromId The id of the existing CcGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group awscc_xray_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group awscc_xray_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_xray_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -286,13 +286,13 @@ export interface InsightsConfigurationProperty {
     /**
     * Set the InsightsEnabled value to true to enable insights or false to disable insights.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#insights_enabled CcGroup#insights_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#insights_enabled CcGroup#insights_enabled}
     */
     readonly insightsEnabled?: boolean | cdktn.IResolvable;
     /**
     * Set the NotificationsEnabled value to true to enable insights notifications. Notifications can only be enabled on a group with InsightsEnabled set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#notifications_enabled CcGroup#notifications_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#notifications_enabled CcGroup#notifications_enabled}
     */
     readonly notificationsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -380,13 +380,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#key CcGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#key CcGroup#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/xray_group#value CcGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/xray_group#value CcGroup#value}
     */
     readonly value?: string;
 }

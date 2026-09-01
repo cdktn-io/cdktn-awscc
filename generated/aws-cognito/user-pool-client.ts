@@ -1,107 +1,107 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcUserPoolClientProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#access_token_validity CcUserPoolClient#access_token_validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#access_token_validity CcUserPoolClient#access_token_validity}
     */
     readonly accessTokenValidity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#allowed_o_auth_flows CcUserPoolClient#allowed_o_auth_flows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#allowed_o_auth_flows CcUserPoolClient#allowed_o_auth_flows}
     */
     readonly allowedOAuthFlows?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#allowed_o_auth_flows_user_pool_client CcUserPoolClient#allowed_o_auth_flows_user_pool_client}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#allowed_o_auth_flows_user_pool_client CcUserPoolClient#allowed_o_auth_flows_user_pool_client}
     */
     readonly allowedOAuthFlowsUserPoolClient?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#allowed_o_auth_scopes CcUserPoolClient#allowed_o_auth_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#allowed_o_auth_scopes CcUserPoolClient#allowed_o_auth_scopes}
     */
     readonly allowedOAuthScopes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#analytics_configuration CcUserPoolClient#analytics_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#analytics_configuration CcUserPoolClient#analytics_configuration}
     */
     readonly analyticsConfiguration?: CcUserPoolClient.AnalyticsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#auth_session_validity CcUserPoolClient#auth_session_validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#auth_session_validity CcUserPoolClient#auth_session_validity}
     */
     readonly authSessionValidity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#callback_ur_ls CcUserPoolClient#callback_ur_ls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#callback_ur_ls CcUserPoolClient#callback_ur_ls}
     */
     readonly callbackUrLs?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#client_name CcUserPoolClient#client_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#client_name CcUserPoolClient#client_name}
     */
     readonly clientName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#default_redirect_uri CcUserPoolClient#default_redirect_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#default_redirect_uri CcUserPoolClient#default_redirect_uri}
     */
     readonly defaultRedirectUri?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#enable_propagate_additional_user_context_data CcUserPoolClient#enable_propagate_additional_user_context_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#enable_propagate_additional_user_context_data CcUserPoolClient#enable_propagate_additional_user_context_data}
     */
     readonly enablePropagateAdditionalUserContextData?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#enable_token_revocation CcUserPoolClient#enable_token_revocation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#enable_token_revocation CcUserPoolClient#enable_token_revocation}
     */
     readonly enableTokenRevocation?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#explicit_auth_flows CcUserPoolClient#explicit_auth_flows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#explicit_auth_flows CcUserPoolClient#explicit_auth_flows}
     */
     readonly explicitAuthFlows?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#generate_secret CcUserPoolClient#generate_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#generate_secret CcUserPoolClient#generate_secret}
     */
     readonly generateSecret?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#id_token_validity CcUserPoolClient#id_token_validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#id_token_validity CcUserPoolClient#id_token_validity}
     */
     readonly idTokenValidity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#logout_ur_ls CcUserPoolClient#logout_ur_ls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#logout_ur_ls CcUserPoolClient#logout_ur_ls}
     */
     readonly logoutUrLs?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#prevent_user_existence_errors CcUserPoolClient#prevent_user_existence_errors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#prevent_user_existence_errors CcUserPoolClient#prevent_user_existence_errors}
     */
     readonly preventUserExistenceErrors?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#read_attributes CcUserPoolClient#read_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#read_attributes CcUserPoolClient#read_attributes}
     */
     readonly readAttributes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#refresh_token_rotation CcUserPoolClient#refresh_token_rotation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#refresh_token_rotation CcUserPoolClient#refresh_token_rotation}
     */
     readonly refreshTokenRotation?: CcUserPoolClient.RefreshTokenRotationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#refresh_token_validity CcUserPoolClient#refresh_token_validity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#refresh_token_validity CcUserPoolClient#refresh_token_validity}
     */
     readonly refreshTokenValidity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#supported_identity_providers CcUserPoolClient#supported_identity_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#supported_identity_providers CcUserPoolClient#supported_identity_providers}
     */
     readonly supportedIdentityProviders?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#token_validity_units CcUserPoolClient#token_validity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#token_validity_units CcUserPoolClient#token_validity_units}
     */
     readonly tokenValidityUnits?: CcUserPoolClient.TokenValidityUnitsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#user_pool_id CcUserPoolClient#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#user_pool_id CcUserPoolClient#user_pool_id}
     */
     readonly userPoolId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#write_attributes CcUserPoolClient#write_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#write_attributes CcUserPoolClient#write_attributes}
     */
     readonly writeAttributes?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client awscc_cognito_user_pool_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client awscc_cognito_user_pool_client}
 */
 export class CcUserPoolClient extends cdktn.TerraformResource {
 
@@ -117,7 +117,7 @@ export class CcUserPoolClient extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserPoolClient resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserPoolClient to import
-    * @param importFromId The id of the existing CcUserPoolClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserPoolClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserPoolClient to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -129,7 +129,7 @@ export class CcUserPoolClient extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client awscc_cognito_user_pool_client} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client awscc_cognito_user_pool_client} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +140,7 @@ export class CcUserPoolClient extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cognito_user_pool_client',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -885,23 +885,23 @@ export function ccUserPoolClientTokenValidityUnitsPropertyToHclTerraform(struct?
 export namespace CcUserPoolClient {
 export interface AnalyticsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#application_arn CcUserPoolClient#application_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#application_arn CcUserPoolClient#application_arn}
     */
     readonly applicationArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#application_id CcUserPoolClient#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#application_id CcUserPoolClient#application_id}
     */
     readonly applicationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#external_id CcUserPoolClient#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#external_id CcUserPoolClient#external_id}
     */
     readonly externalId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#role_arn CcUserPoolClient#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#role_arn CcUserPoolClient#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#user_data_shared CcUserPoolClient#user_data_shared}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#user_data_shared CcUserPoolClient#user_data_shared}
     */
     readonly userDataShared?: boolean | cdktn.IResolvable;
 }
@@ -1053,11 +1053,11 @@ export class AnalyticsConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface RefreshTokenRotationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#feature CcUserPoolClient#feature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#feature CcUserPoolClient#feature}
     */
     readonly feature?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#retry_grace_period_seconds CcUserPoolClient#retry_grace_period_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#retry_grace_period_seconds CcUserPoolClient#retry_grace_period_seconds}
     */
     readonly retryGracePeriodSeconds?: number;
 }
@@ -1143,15 +1143,15 @@ export class RefreshTokenRotationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface TokenValidityUnitsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#access_token CcUserPoolClient#access_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#access_token CcUserPoolClient#access_token}
     */
     readonly accessToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#id_token CcUserPoolClient#id_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#id_token CcUserPoolClient#id_token}
     */
     readonly idToken?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_client#refresh_token CcUserPoolClient#refresh_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_client#refresh_token CcUserPoolClient#refresh_token}
     */
     readonly refreshToken?: string;
 }

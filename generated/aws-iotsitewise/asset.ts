@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,45 +9,45 @@ export interface CcAssetProps extends cdktn.TerraformMetaArguments {
     /**
     * A description for the asset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_description CcAsset#asset_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_description CcAsset#asset_description}
     */
     readonly assetDescription?: string;
     /**
     * The External ID of the asset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_external_id CcAsset#asset_external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_external_id CcAsset#asset_external_id}
     */
     readonly assetExternalId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_hierarchies CcAsset#asset_hierarchies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_hierarchies CcAsset#asset_hierarchies}
     */
     readonly assetHierarchies?: CcAsset.AssetHierarchyProperty[] | cdktn.IResolvable;
     /**
     * The ID of the asset model from which to create the asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_model_id CcAsset#asset_model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_model_id CcAsset#asset_model_id}
     */
     readonly assetModelId: string;
     /**
     * A unique, friendly name for the asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_name CcAsset#asset_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_name CcAsset#asset_name}
     */
     readonly assetName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#asset_properties CcAsset#asset_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#asset_properties CcAsset#asset_properties}
     */
     readonly assetProperties?: CcAsset.AssetPropertyProperty[] | cdktn.IResolvable;
     /**
     * A list of key-value pairs that contain metadata for the asset.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#tags CcAsset#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#tags CcAsset#tags}
     */
     readonly tags?: CcAsset.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset awscc_iotsitewise_asset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset awscc_iotsitewise_asset}
 */
 export class CcAsset extends cdktn.TerraformResource {
 
@@ -63,7 +63,7 @@ export class CcAsset extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAsset resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAsset to import
-    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAsset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAsset to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +75,7 @@ export class CcAsset extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset awscc_iotsitewise_asset} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset awscc_iotsitewise_asset} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class CcAsset extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotsitewise_asset',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -455,19 +455,19 @@ export interface AssetHierarchyProperty {
     /**
     * The ID of the child asset to be associated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#child_asset_id CcAsset#child_asset_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#child_asset_id CcAsset#child_asset_id}
     */
     readonly childAssetId?: string;
     /**
     * String-friendly customer provided external ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#external_id CcAsset#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#external_id CcAsset#external_id}
     */
     readonly externalId?: string;
     /**
     * Customer provided actual UUID for property
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#id CcAsset#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#id CcAsset#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -476,7 +476,7 @@ export interface AssetHierarchyProperty {
     /**
     * The LogicalID of a hierarchy in the parent asset's model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#logical_id CcAsset#logical_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#logical_id CcAsset#logical_id}
     */
     readonly logicalId?: string;
 }
@@ -630,19 +630,19 @@ export interface AssetPropertyProperty {
     /**
     * The property alias that identifies the property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#alias CcAsset#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#alias CcAsset#alias}
     */
     readonly alias?: string;
     /**
     * String-friendly customer provided external ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#external_id CcAsset#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#external_id CcAsset#external_id}
     */
     readonly externalId?: string;
     /**
     * Customer provided actual UUID for property
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#id CcAsset#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#id CcAsset#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -651,19 +651,19 @@ export interface AssetPropertyProperty {
     /**
     * Customer provided ID for property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#logical_id CcAsset#logical_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#logical_id CcAsset#logical_id}
     */
     readonly logicalId?: string;
     /**
     * The MQTT notification state (ENABLED or DISABLED) for this asset property.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#notification_state CcAsset#notification_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#notification_state CcAsset#notification_state}
     */
     readonly notificationState?: string;
     /**
     * The unit of measure (such as Newtons or RPM) of the asset property. If you don't specify a value for this parameter, the service uses the value of the assetModelProperty in the asset model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#unit CcAsset#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#unit CcAsset#unit}
     */
     readonly unit?: string;
 }
@@ -859,11 +859,11 @@ export class AssetPropertyPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#key CcAsset#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#key CcAsset#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_asset#value CcAsset#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_asset#value CcAsset#value}
     */
     readonly value?: string;
 }

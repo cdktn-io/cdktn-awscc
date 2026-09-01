@@ -1,51 +1,51 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcCACertificateProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#auto_registration_status CcCACertificate#auto_registration_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#auto_registration_status CcCACertificate#auto_registration_status}
     */
     readonly autoRegistrationStatus?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#ca_certificate_pem CcCACertificate#ca_certificate_pem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#ca_certificate_pem CcCACertificate#ca_certificate_pem}
     */
     readonly caCertificatePem: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#certificate_mode CcCACertificate#certificate_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#certificate_mode CcCACertificate#certificate_mode}
     */
     readonly certificateMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#registration_config CcCACertificate#registration_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#registration_config CcCACertificate#registration_config}
     */
     readonly registrationConfig?: CcCACertificate.RegistrationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#remove_auto_registration CcCACertificate#remove_auto_registration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#remove_auto_registration CcCACertificate#remove_auto_registration}
     */
     readonly removeAutoRegistration?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#status CcCACertificate#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#status CcCACertificate#status}
     */
     readonly status: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#tags CcCACertificate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#tags CcCACertificate#tags}
     */
     readonly tags?: CcCACertificate.TagProperty[] | cdktn.IResolvable;
     /**
     * The private key verification certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#verification_certificate_pem CcCACertificate#verification_certificate_pem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#verification_certificate_pem CcCACertificate#verification_certificate_pem}
     */
     readonly verificationCertificatePem?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate awscc_iot_ca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate awscc_iot_ca_certificate}
 */
 export class CcCACertificate extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcCACertificate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCACertificate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCACertificate to import
-    * @param importFromId The id of the existing CcCACertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCACertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCACertificate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcCACertificate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate awscc_iot_ca_certificate} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate awscc_iot_ca_certificate} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcCACertificate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_ca_certificate',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -403,15 +403,15 @@ export function ccCACertificateTagPropertyToHclTerraform(struct?: CcCACertificat
 export namespace CcCACertificate {
 export interface RegistrationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#role_arn CcCACertificate#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#role_arn CcCACertificate#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#template_body CcCACertificate#template_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#template_body CcCACertificate#template_body}
     */
     readonly templateBody?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#template_name CcCACertificate#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#template_name CcCACertificate#template_name}
     */
     readonly templateName?: string;
 }
@@ -521,13 +521,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#key CcCACertificate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#key CcCACertificate#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_ca_certificate#value CcCACertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_ca_certificate#value CcCACertificate#value}
     */
     readonly value?: string;
 }

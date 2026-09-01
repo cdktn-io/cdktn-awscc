@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcContactChannelProps extends cdktn.TerraformMetaArguments {
     /**
     * The details that SSM Incident Manager uses when trying to engage the contact channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#channel_address CcContactChannel#channel_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#channel_address CcContactChannel#channel_address}
     */
     readonly channelAddress?: string;
     /**
     * The device name. String of 6 to 50 alphabetical, numeric, dash, and underscore characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#channel_name CcContactChannel#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#channel_name CcContactChannel#channel_name}
     */
     readonly channelName?: string;
     /**
     * Device type, which specify notification channel. Currently supported values: ?SMS?, ?VOICE?, ?EMAIL?, ?CHATBOT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#channel_type CcContactChannel#channel_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#channel_type CcContactChannel#channel_type}
     */
     readonly channelType?: string;
     /**
     * ARN of the contact resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#contact_id CcContactChannel#contact_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#contact_id CcContactChannel#contact_id}
     */
     readonly contactId?: string;
     /**
     * If you want to activate the channel at a later time, you can choose to defer activation. SSM Incident Manager can't engage your contact channel until it has been activated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#defer_activation CcContactChannel#defer_activation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#defer_activation CcContactChannel#defer_activation}
     */
     readonly deferActivation?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel awscc_ssmcontacts_contact_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel awscc_ssmcontacts_contact_channel}
 */
 export class CcContactChannel extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcContactChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcContactChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcContactChannel to import
-    * @param importFromId The id of the existing CcContactChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcContactChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcContactChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcContactChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_contact_channel awscc_ssmcontacts_contact_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_contact_channel awscc_ssmcontacts_contact_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcContactChannel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssmcontacts_contact_channel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

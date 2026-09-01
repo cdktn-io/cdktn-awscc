@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,23 +9,23 @@ export interface CcAccessGrantsLocationProps extends cdktn.TerraformMetaArgument
     /**
     * The Amazon Resource Name (ARN) of the access grant location's associated IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#iam_role_arn CcAccessGrantsLocation#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#iam_role_arn CcAccessGrantsLocation#iam_role_arn}
     */
     readonly iamRoleArn: string;
     /**
     * Descriptor for where the location actually points
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#location_scope CcAccessGrantsLocation#location_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#location_scope CcAccessGrantsLocation#location_scope}
     */
     readonly locationScope: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#tags CcAccessGrantsLocation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#tags CcAccessGrantsLocation#tags}
     */
     readonly tags?: CcAccessGrantsLocation.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location awscc_s3_access_grants_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location awscc_s3_access_grants_location}
 */
 export class CcAccessGrantsLocation extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcAccessGrantsLocation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessGrantsLocation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessGrantsLocation to import
-    * @param importFromId The id of the existing CcAccessGrantsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessGrantsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessGrantsLocation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcAccessGrantsLocation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location awscc_s3_access_grants_location} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location awscc_s3_access_grants_location} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcAccessGrantsLocation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_s3_access_grants_location',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -219,11 +219,11 @@ export function ccAccessGrantsLocationTagPropertyToHclTerraform(struct?: CcAcces
 export namespace CcAccessGrantsLocation {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#key CcAccessGrantsLocation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#key CcAccessGrantsLocation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/s3_access_grants_location#value CcAccessGrantsLocation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/s3_access_grants_location#value CcAccessGrantsLocation#value}
     */
     readonly value?: string;
 }

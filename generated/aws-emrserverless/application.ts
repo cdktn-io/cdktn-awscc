@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * The cpu architecture of an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#architecture CcApplication#architecture}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#architecture CcApplication#architecture}
     */
     readonly architecture?: string;
     /**
     * Configuration for Auto Start of Application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#auto_start_configuration CcApplication#auto_start_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#auto_start_configuration CcApplication#auto_start_configuration}
     */
     readonly autoStartConfiguration?: CcApplication.AutoStartConfigurationProperty;
     /**
     * Configuration for Auto Stop of Application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#auto_stop_configuration CcApplication#auto_stop_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#auto_stop_configuration CcApplication#auto_stop_configuration}
     */
     readonly autoStopConfiguration?: CcApplication.AutoStopConfigurationProperty;
     /**
     * The image configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#image_configuration CcApplication#image_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#image_configuration CcApplication#image_configuration}
     */
     readonly imageConfiguration?: CcApplication.ImageConfigurationInputProperty;
     /**
     * Initial capacity initialized when an Application is started.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#initial_capacity CcApplication#initial_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#initial_capacity CcApplication#initial_capacity}
     */
     readonly initialCapacity?: CcApplication.InitialCapacityConfigKeyValuePairProperty[] | cdktn.IResolvable;
     /**
     * Maximum allowed cumulative resources for an Application. No new resources will be created once the limit is hit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#maximum_capacity CcApplication#maximum_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#maximum_capacity CcApplication#maximum_capacity}
     */
     readonly maximumCapacity?: CcApplication.MaximumAllowedResourcesProperty;
     /**
     * User friendly Application name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#name CcApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#name CcApplication#name}
     */
     readonly name?: string;
     /**
     * Network Configuration for customer VPC connectivity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#network_configuration CcApplication#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#network_configuration CcApplication#network_configuration}
     */
     readonly networkConfiguration?: CcApplication.NetworkConfigurationProperty;
     /**
     * EMR release label.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#release_label CcApplication#release_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#release_label CcApplication#release_label}
     */
     readonly releaseLabel: string;
     /**
     * Tag map with key and value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of the application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#type CcApplication#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#type CcApplication#type}
     */
     readonly type: string;
     /**
     * The key-value pairs that specify worker type to WorkerTypeSpecificationInput. This parameter must contain all valid worker types for a Spark or Hive application. Valid worker types include Driver and Executor for Spark applications and HiveDriver and TezTask for Hive applications. You can either set image details in this parameter for each worker type, or in imageConfiguration for all worker types.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#worker_type_specifications CcApplication#worker_type_specifications}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#worker_type_specifications CcApplication#worker_type_specifications}
     */
     readonly workerTypeSpecifications?: { [key: string]: CcApplication.WorkerTypeSpecificationInputProperty } | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application awscc_emrserverless_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application awscc_emrserverless_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application awscc_emrserverless_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application awscc_emrserverless_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_emrserverless_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -849,7 +849,7 @@ export interface AutoStartConfigurationProperty {
     /**
     * If set to true, the Application will automatically start. Defaults to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#enabled CcApplication#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#enabled CcApplication#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -915,13 +915,13 @@ export interface AutoStopConfigurationProperty {
     /**
     * If set to true, the Application will automatically stop after being idle. Defaults to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#enabled CcApplication#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#enabled CcApplication#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The amount of time [in minutes] to wait before auto stopping the Application when idle. Defaults to 15 minutes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#idle_timeout_minutes CcApplication#idle_timeout_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#idle_timeout_minutes CcApplication#idle_timeout_minutes}
     */
     readonly idleTimeoutMinutes?: number;
 }
@@ -1009,7 +1009,7 @@ export interface ImageConfigurationInputProperty {
     /**
     * The URI of an image in the Amazon ECR registry. This field is required when you create a new application. If you leave this field blank in an update, Amazon EMR will remove the image configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#image_uri CcApplication#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#image_uri CcApplication#image_uri}
     */
     readonly imageUri?: string;
 }
@@ -1075,19 +1075,19 @@ export interface WorkerConfigurationProperty {
     /**
     * Per worker CPU resource. vCPU is the only supported unit and specifying vCPU is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#cpu CcApplication#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#cpu CcApplication#cpu}
     */
     readonly cpu?: string;
     /**
     * Per worker Disk resource. GB is the only supported unit and specifying GB is optional
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#disk CcApplication#disk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#disk CcApplication#disk}
     */
     readonly disk?: string;
     /**
     * Per worker memory resource. GB is the only supported unit and specifying GB is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#memory CcApplication#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#memory CcApplication#memory}
     */
     readonly memory?: string;
 }
@@ -1195,13 +1195,13 @@ export class WorkerConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface InitialCapacityConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#worker_configuration CcApplication#worker_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#worker_configuration CcApplication#worker_configuration}
     */
     readonly workerConfiguration?: WorkerConfigurationProperty;
     /**
     * Initial count of workers to be initialized when an Application is started. This count will be continued to be maintained until the Application is stopped
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#worker_count CcApplication#worker_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#worker_count CcApplication#worker_count}
     */
     readonly workerCount?: number;
 }
@@ -1289,11 +1289,11 @@ export interface InitialCapacityConfigKeyValuePairProperty {
     /**
     * Worker type for an analytics framework.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#value CcApplication#value}
     */
     readonly value?: InitialCapacityConfigProperty;
 }
@@ -1403,19 +1403,19 @@ export interface MaximumAllowedResourcesProperty {
     /**
     * Per worker CPU resource. vCPU is the only supported unit and specifying vCPU is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#cpu CcApplication#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#cpu CcApplication#cpu}
     */
     readonly cpu?: string;
     /**
     * Per worker Disk resource. GB is the only supported unit and specifying GB is optional
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#disk CcApplication#disk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#disk CcApplication#disk}
     */
     readonly disk?: string;
     /**
     * Per worker memory resource. GB is the only supported unit and specifying GB is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#memory CcApplication#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#memory CcApplication#memory}
     */
     readonly memory?: string;
 }
@@ -1525,13 +1525,13 @@ export interface NetworkConfigurationProperty {
     /**
     * The ID of the security groups in the VPC to which you want to connect your job or application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#security_group_ids CcApplication#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#security_group_ids CcApplication#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your job or application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#subnet_ids CcApplication#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#subnet_ids CcApplication#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1619,13 +1619,13 @@ export interface TagProperty {
     /**
     * The value for the tag. You can specify a value that is 1 to 128 Unicode characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#value CcApplication#value}
     */
     readonly value?: string;
 }
@@ -1735,7 +1735,7 @@ export interface ImageConfigurationProperty {
     /**
     * The URI of an image in the Amazon ECR registry. This field is required when you create a new application. If you leave this field blank in an update, Amazon EMR will remove the image configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#image_uri CcApplication#image_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#image_uri CcApplication#image_uri}
     */
     readonly imageUri?: string;
 }
@@ -1801,7 +1801,7 @@ export interface WorkerTypeSpecificationInputProperty {
     /**
     * The image configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/emrserverless_application#image_configuration CcApplication#image_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/emrserverless_application#image_configuration CcApplication#image_configuration}
     */
     readonly imageConfiguration?: ImageConfigurationProperty;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcMigrationProjectProps extends cdktn.TerraformMetaArguments {
     /**
     * The optional description of the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#description CcMigrationProject#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#description CcMigrationProject#description}
     */
     readonly description?: string;
     /**
     * The property describes an instance profile arn for the migration project. For read
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#instance_profile_arn CcMigrationProject#instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#instance_profile_arn CcMigrationProject#instance_profile_arn}
     */
     readonly instanceProfileArn?: string;
     /**
     * The property describes an instance profile identifier for the migration project. For create
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#instance_profile_identifier CcMigrationProject#instance_profile_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#instance_profile_identifier CcMigrationProject#instance_profile_identifier}
     */
     readonly instanceProfileIdentifier?: string;
     /**
     * The property describes an instance profile name for the migration project. For read
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#instance_profile_name CcMigrationProject#instance_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#instance_profile_name CcMigrationProject#instance_profile_name}
     */
     readonly instanceProfileName?: string;
     /**
     * The property describes a creating time of the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#migration_project_creation_time CcMigrationProject#migration_project_creation_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#migration_project_creation_time CcMigrationProject#migration_project_creation_time}
     */
     readonly migrationProjectCreationTime?: string;
     /**
     * The property describes an identifier for the migration project. It is used for describing/deleting/modifying can be name/arn
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#migration_project_identifier CcMigrationProject#migration_project_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#migration_project_identifier CcMigrationProject#migration_project_identifier}
     */
     readonly migrationProjectIdentifier?: string;
     /**
     * The property describes a name to identify the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#migration_project_name CcMigrationProject#migration_project_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#migration_project_name CcMigrationProject#migration_project_name}
     */
     readonly migrationProjectName?: string;
     /**
     * The property describes schema conversion application attributes for the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#schema_conversion_application_attributes CcMigrationProject#schema_conversion_application_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#schema_conversion_application_attributes CcMigrationProject#schema_conversion_application_attributes}
     */
     readonly schemaConversionApplicationAttributes?: CcMigrationProject.SchemaConversionApplicationAttributesProperty;
     /**
     * The property describes source data provider descriptors for the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#source_data_provider_descriptors CcMigrationProject#source_data_provider_descriptors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#source_data_provider_descriptors CcMigrationProject#source_data_provider_descriptors}
     */
     readonly sourceDataProviderDescriptors?: CcMigrationProject.DataProviderDescriptorProperty[] | cdktn.IResolvable;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#tags CcMigrationProject#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#tags CcMigrationProject#tags}
     */
     readonly tags?: CcMigrationProject.TagProperty[] | cdktn.IResolvable;
     /**
     * The property describes target data provider descriptors for the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#target_data_provider_descriptors CcMigrationProject#target_data_provider_descriptors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#target_data_provider_descriptors CcMigrationProject#target_data_provider_descriptors}
     */
     readonly targetDataProviderDescriptors?: CcMigrationProject.TargetDataProviderDescriptorsProperty[] | cdktn.IResolvable;
     /**
     * The property describes transformation rules for the migration project.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#transformation_rules CcMigrationProject#transformation_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#transformation_rules CcMigrationProject#transformation_rules}
     */
     readonly transformationRules?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project awscc_dms_migration_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project awscc_dms_migration_project}
 */
 export class CcMigrationProject extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcMigrationProject extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMigrationProject resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMigrationProject to import
-    * @param importFromId The id of the existing CcMigrationProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMigrationProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMigrationProject to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcMigrationProject extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project awscc_dms_migration_project} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project awscc_dms_migration_project} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcMigrationProject extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_dms_migration_project',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -645,11 +645,11 @@ export function ccMigrationProjectTargetDataProviderDescriptorsPropertyToHclTerr
 export namespace CcMigrationProject {
 export interface SchemaConversionApplicationAttributesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#s3_bucket_path CcMigrationProject#s3_bucket_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#s3_bucket_path CcMigrationProject#s3_bucket_path}
     */
     readonly s3BucketPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#s3_bucket_role_arn CcMigrationProject#s3_bucket_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#s3_bucket_role_arn CcMigrationProject#s3_bucket_role_arn}
     */
     readonly s3BucketRoleArn?: string;
 }
@@ -735,23 +735,23 @@ export class SchemaConversionApplicationAttributesPropertyOutputReference extend
 }
 export interface DataProviderDescriptorProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_arn CcMigrationProject#data_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_arn CcMigrationProject#data_provider_arn}
     */
     readonly dataProviderArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_identifier CcMigrationProject#data_provider_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_identifier CcMigrationProject#data_provider_identifier}
     */
     readonly dataProviderIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_name CcMigrationProject#data_provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_name CcMigrationProject#data_provider_name}
     */
     readonly dataProviderName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#secrets_manager_access_role_arn CcMigrationProject#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#secrets_manager_access_role_arn CcMigrationProject#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#secrets_manager_secret_id CcMigrationProject#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#secrets_manager_secret_id CcMigrationProject#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
 }
@@ -927,13 +927,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, , and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#key CcMigrationProject#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#key CcMigrationProject#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, , and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#value CcMigrationProject#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#value CcMigrationProject#value}
     */
     readonly value?: string;
 }
@@ -1041,23 +1041,23 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TargetDataProviderDescriptorsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_arn CcMigrationProject#data_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_arn CcMigrationProject#data_provider_arn}
     */
     readonly dataProviderArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_identifier CcMigrationProject#data_provider_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_identifier CcMigrationProject#data_provider_identifier}
     */
     readonly dataProviderIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#data_provider_name CcMigrationProject#data_provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#data_provider_name CcMigrationProject#data_provider_name}
     */
     readonly dataProviderName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#secrets_manager_access_role_arn CcMigrationProject#secrets_manager_access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#secrets_manager_access_role_arn CcMigrationProject#secrets_manager_access_role_arn}
     */
     readonly secretsManagerAccessRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dms_migration_project#secrets_manager_secret_id CcMigrationProject#secrets_manager_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dms_migration_project#secrets_manager_secret_id CcMigrationProject#secrets_manager_secret_id}
     */
     readonly secretsManagerSecretId?: string;
 }

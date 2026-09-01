@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGatewayResponseProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#response_parameters CcGatewayResponse#response_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#response_parameters CcGatewayResponse#response_parameters}
     */
     readonly responseParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#response_templates CcGatewayResponse#response_templates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#response_templates CcGatewayResponse#response_templates}
     */
     readonly responseTemplates?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#response_type CcGatewayResponse#response_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#response_type CcGatewayResponse#response_type}
     */
     readonly responseType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#rest_api_id CcGatewayResponse#rest_api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#rest_api_id CcGatewayResponse#rest_api_id}
     */
     readonly restApiId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#status_code CcGatewayResponse#status_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#status_code CcGatewayResponse#status_code}
     */
     readonly statusCode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response awscc_apigateway_gateway_response}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response awscc_apigateway_gateway_response}
 */
 export class CcGatewayResponse extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcGatewayResponse extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGatewayResponse resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGatewayResponse to import
-    * @param importFromId The id of the existing CcGatewayResponse that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGatewayResponse that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGatewayResponse to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcGatewayResponse extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apigateway_gateway_response awscc_apigateway_gateway_response} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apigateway_gateway_response awscc_apigateway_gateway_response} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcGatewayResponse extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apigateway_gateway_response',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

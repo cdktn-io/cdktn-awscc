@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcUserPoolDomainProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#custom_domain_config CcUserPoolDomain#custom_domain_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#custom_domain_config CcUserPoolDomain#custom_domain_config}
     */
     readonly customDomainConfig?: CcUserPoolDomain.CustomDomainConfigTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#domain CcUserPoolDomain#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#domain CcUserPoolDomain#domain}
     */
     readonly domain: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#managed_login_version CcUserPoolDomain#managed_login_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#managed_login_version CcUserPoolDomain#managed_login_version}
     */
     readonly managedLoginVersion?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#routing CcUserPoolDomain#routing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#routing CcUserPoolDomain#routing}
     */
     readonly routing?: CcUserPoolDomain.RoutingTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#user_pool_id CcUserPoolDomain#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#user_pool_id CcUserPoolDomain#user_pool_id}
     */
     readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain awscc_cognito_user_pool_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain awscc_cognito_user_pool_domain}
 */
 export class CcUserPoolDomain extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcUserPoolDomain extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcUserPoolDomain resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserPoolDomain to import
-    * @param importFromId The id of the existing CcUserPoolDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserPoolDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserPoolDomain to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcUserPoolDomain extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain awscc_cognito_user_pool_domain} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain awscc_cognito_user_pool_domain} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcUserPoolDomain extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cognito_user_pool_domain',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -333,11 +333,11 @@ export function ccUserPoolDomainRoutingTypePropertyToHclTerraform(struct?: CcUse
 export namespace CcUserPoolDomain {
 export interface CustomDomainConfigTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#certificate_arn CcUserPoolDomain#certificate_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#certificate_arn CcUserPoolDomain#certificate_arn}
     */
     readonly certificateArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#security_policy CcUserPoolDomain#security_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#security_policy CcUserPoolDomain#security_policy}
     */
     readonly securityPolicy?: string;
 }
@@ -423,11 +423,11 @@ export class CustomDomainConfigTypePropertyOutputReference extends cdktn.Complex
 }
 export interface FailoverTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#primary_route_53_health_check_id CcUserPoolDomain#primary_route_53_health_check_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#primary_route_53_health_check_id CcUserPoolDomain#primary_route_53_health_check_id}
     */
     readonly primaryRoute53HealthCheckId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#secondary_region CcUserPoolDomain#secondary_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#secondary_region CcUserPoolDomain#secondary_region}
     */
     readonly secondaryRegion?: string;
 }
@@ -513,7 +513,7 @@ export class FailoverTypePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RoutingTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_domain#failover CcUserPoolDomain#failover}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_domain#failover CcUserPoolDomain#failover}
     */
     readonly failover?: FailoverTypeProperty;
 }

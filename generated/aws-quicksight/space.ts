@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcSpaceProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the Amazon Web Services account where the space is being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#aws_account_id CcSpace#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#aws_account_id CcSpace#aws_account_id}
     */
     readonly awsAccountId: string;
     /**
     * A description of the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#description CcSpace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#description CcSpace#description}
     */
     readonly description?: string;
     /**
     * The display name of the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#name CcSpace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#name CcSpace#name}
     */
     readonly name: string;
     /**
     * A list of permissions granted on the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#permissions CcSpace#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#permissions CcSpace#permissions}
     */
     readonly permissions?: CcSpace.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
     * A list of QuickSight resources attached to the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#resources CcSpace#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#resources CcSpace#resources}
     */
     readonly resources?: CcSpace.SpaceResourceProperty[] | cdktn.IResolvable;
     /**
     * The unique identifier for the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#space_id CcSpace#space_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#space_id CcSpace#space_id}
     */
     readonly spaceId: string;
     /**
     * A list of key-value pairs to associate with the space resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#tags CcSpace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#tags CcSpace#tags}
     */
     readonly tags?: CcSpace.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space awscc_quicksight_space}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space awscc_quicksight_space}
 */
 export class CcSpace extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcSpace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSpace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSpace to import
-    * @param importFromId The id of the existing CcSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSpace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcSpace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space awscc_quicksight_space} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space awscc_quicksight_space} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcSpace extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_space',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -424,13 +424,13 @@ export interface ResourcePermissionProperty {
     /**
     * The list of actions granted to the principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#actions CcSpace#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#actions CcSpace#actions}
     */
     readonly actions?: string[];
     /**
     * The ARN of the principal (user or group) receiving the permission.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#principal CcSpace#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#principal CcSpace#principal}
     */
     readonly principal?: string;
 }
@@ -540,13 +540,13 @@ export interface SpaceResourceProperty {
     /**
     * The ARN of the QuickSight resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#resource_arn CcSpace#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#resource_arn CcSpace#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * The type of QuickSight resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#resource_type CcSpace#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#resource_type CcSpace#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -656,13 +656,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#key CcSpace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#key CcSpace#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_space#value CcSpace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_space#value CcSpace#value}
     */
     readonly value?: string;
 }

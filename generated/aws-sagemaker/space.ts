@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcSpaceProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the associated Domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#domain_id CcSpace#domain_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#domain_id CcSpace#domain_id}
     */
     readonly domainId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#ownership_settings CcSpace#ownership_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#ownership_settings CcSpace#ownership_settings}
     */
     readonly ownershipSettings?: CcSpace.OwnershipSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_display_name CcSpace#space_display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_display_name CcSpace#space_display_name}
     */
     readonly spaceDisplayName?: string;
     /**
     * A name for the Space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_name CcSpace#space_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_name CcSpace#space_name}
     */
     readonly spaceName: string;
     /**
     * A collection of settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_settings CcSpace#space_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_settings CcSpace#space_settings}
     */
     readonly spaceSettings?: CcSpace.SpaceSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_sharing_settings CcSpace#space_sharing_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_sharing_settings CcSpace#space_sharing_settings}
     */
     readonly spaceSharingSettings?: CcSpace.SpaceSharingSettingsProperty;
     /**
     * A list of tags to apply to the space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#tags CcSpace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#tags CcSpace#tags}
     */
     readonly tags?: CcSpace.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space awscc_sagemaker_space}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space awscc_sagemaker_space}
 */
 export class CcSpace extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcSpace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSpace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSpace to import
-    * @param importFromId The id of the existing CcSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSpace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcSpace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space awscc_sagemaker_space} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space awscc_sagemaker_space} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcSpace extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_space',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1235,7 +1235,7 @@ export function ccSpaceTagPropertyToHclTerraform(struct?: CcSpace.TagProperty | 
 export namespace CcSpace {
 export interface OwnershipSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#owner_user_profile_name CcSpace#owner_user_profile_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#owner_user_profile_name CcSpace#owner_user_profile_name}
     */
     readonly ownerUserProfileName?: string;
 }
@@ -1301,7 +1301,7 @@ export interface SpaceIdleSettingsProperty {
     /**
     * The space idle timeout value set in minutes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#idle_timeout_in_minutes CcSpace#idle_timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#idle_timeout_in_minutes CcSpace#idle_timeout_in_minutes}
     */
     readonly idleTimeoutInMinutes?: number;
 }
@@ -1365,7 +1365,7 @@ export class SpaceIdleSettingsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface SpaceAppLifecycleManagementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#idle_settings CcSpace#idle_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#idle_settings CcSpace#idle_settings}
     */
     readonly idleSettings?: SpaceIdleSettingsProperty;
 }
@@ -1431,25 +1431,25 @@ export interface ResourceSpecProperty {
     /**
     * The instance type that the image version runs on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lifecycle Configuration to attach to the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
     */
     readonly lifecycleConfigArn?: string;
     /**
     * The ARN of the SageMaker image that the image version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
     */
     readonly sageMakerImageArn?: string;
     /**
     * The ARN of the image version created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
     */
     readonly sageMakerImageVersionArn?: string;
 }
@@ -1579,11 +1579,11 @@ export class ResourceSpecPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SpaceCodeEditorAppSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#app_lifecycle_management CcSpace#app_lifecycle_management}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#app_lifecycle_management CcSpace#app_lifecycle_management}
     */
     readonly appLifecycleManagement?: SpaceAppLifecycleManagementProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
     */
     readonly defaultResourceSpec?: ResourceSpecProperty;
 }
@@ -1669,7 +1669,7 @@ export class SpaceCodeEditorAppSettingsPropertyOutputReference extends cdktn.Com
 }
 export interface EFSFileSystemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#file_system_id CcSpace#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#file_system_id CcSpace#file_system_id}
     */
     readonly fileSystemId?: string;
 }
@@ -1733,7 +1733,7 @@ export class EFSFileSystemPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FSxLustreFileSystemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#file_system_id CcSpace#file_system_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#file_system_id CcSpace#file_system_id}
     */
     readonly fileSystemId?: string;
 }
@@ -1797,7 +1797,7 @@ export class FSxLustreFileSystemPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface S3FileSystemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#s3_uri CcSpace#s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#s3_uri CcSpace#s3_uri}
     */
     readonly s3Uri?: string;
 }
@@ -1861,15 +1861,15 @@ export class S3FileSystemPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CustomFileSystemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#efs_file_system CcSpace#efs_file_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#efs_file_system CcSpace#efs_file_system}
     */
     readonly efsFileSystem?: EFSFileSystemProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#fsx_lustre_file_system CcSpace#fsx_lustre_file_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#fsx_lustre_file_system CcSpace#fsx_lustre_file_system}
     */
     readonly fsxLustreFileSystem?: FSxLustreFileSystemProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#s3_file_system CcSpace#s3_file_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#s3_file_system CcSpace#s3_file_system}
     */
     readonly s3FileSystem?: S3FileSystemProperty;
 }
@@ -2001,7 +2001,7 @@ export interface IdleSettingsProperty {
     /**
     * The space idle timeout value set in minutes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#idle_timeout_in_minutes CcSpace#idle_timeout_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#idle_timeout_in_minutes CcSpace#idle_timeout_in_minutes}
     */
     readonly idleTimeoutInMinutes?: number;
 }
@@ -2065,7 +2065,7 @@ export class IdleSettingsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AppLifecycleManagementProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#idle_settings CcSpace#idle_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#idle_settings CcSpace#idle_settings}
     */
     readonly idleSettings?: IdleSettingsProperty;
 }
@@ -2131,7 +2131,7 @@ export interface CodeRepositoryProperty {
     /**
     * A CodeRepository (valid URL) to be used within Jupyter's Git extension.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#repository_url CcSpace#repository_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#repository_url CcSpace#repository_url}
     */
     readonly repositoryUrl?: string;
 }
@@ -2219,25 +2219,25 @@ export interface SpaceSettingsJupyterLabAppSettingsDefaultResourceSpecProperty {
     /**
     * The instance type that the image version runs on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lifecycle Configuration to attach to the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
     */
     readonly lifecycleConfigArn?: string;
     /**
     * The ARN of the SageMaker image that the image version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
     */
     readonly sageMakerImageArn?: string;
     /**
     * The ARN of the image version created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
     */
     readonly sageMakerImageVersionArn?: string;
 }
@@ -2367,17 +2367,17 @@ export class SpaceSettingsJupyterLabAppSettingsDefaultResourceSpecPropertyOutput
 }
 export interface SpaceJupyterLabAppSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#app_lifecycle_management CcSpace#app_lifecycle_management}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#app_lifecycle_management CcSpace#app_lifecycle_management}
     */
     readonly appLifecycleManagement?: AppLifecycleManagementProperty;
     /**
     * A list of CodeRepositories available for use with JupyterLab apps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#code_repositories CcSpace#code_repositories}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#code_repositories CcSpace#code_repositories}
     */
     readonly codeRepositories?: CodeRepositoryProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
     */
     readonly defaultResourceSpec?: SpaceSettingsJupyterLabAppSettingsDefaultResourceSpecProperty;
 }
@@ -2487,25 +2487,25 @@ export interface SpaceSettingsJupyterServerAppSettingsDefaultResourceSpecPropert
     /**
     * The instance type that the image version runs on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lifecycle Configuration to attach to the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
     */
     readonly lifecycleConfigArn?: string;
     /**
     * The ARN of the SageMaker image that the image version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
     */
     readonly sageMakerImageArn?: string;
     /**
     * The ARN of the image version created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
     */
     readonly sageMakerImageVersionArn?: string;
 }
@@ -2635,13 +2635,13 @@ export class SpaceSettingsJupyterServerAppSettingsDefaultResourceSpecPropertyOut
 }
 export interface JupyterServerAppSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
     */
     readonly defaultResourceSpec?: SpaceSettingsJupyterServerAppSettingsDefaultResourceSpecProperty;
     /**
     * A list of LifecycleConfigArns available for use with JupyterServer apps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arns CcSpace#lifecycle_config_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arns CcSpace#lifecycle_config_arns}
     */
     readonly lifecycleConfigArns?: string[];
 }
@@ -2729,19 +2729,19 @@ export interface CustomImageProperty {
     /**
     * The Name of the AppImageConfig.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#app_image_config_name CcSpace#app_image_config_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#app_image_config_name CcSpace#app_image_config_name}
     */
     readonly appImageConfigName?: string;
     /**
     * The name of the CustomImage. Must be unique to your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#image_name CcSpace#image_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#image_name CcSpace#image_name}
     */
     readonly imageName?: string;
     /**
     * The version number of the CustomImage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#image_version_number CcSpace#image_version_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#image_version_number CcSpace#image_version_number}
     */
     readonly imageVersionNumber?: number;
 }
@@ -2873,25 +2873,25 @@ export interface SpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecPropert
     /**
     * The instance type that the image version runs on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#instance_type CcSpace#instance_type}
     */
     readonly instanceType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Lifecycle Configuration to attach to the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arn CcSpace#lifecycle_config_arn}
     */
     readonly lifecycleConfigArn?: string;
     /**
     * The ARN of the SageMaker image that the image version belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_arn CcSpace#sage_maker_image_arn}
     */
     readonly sageMakerImageArn?: string;
     /**
     * The ARN of the image version created on the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sage_maker_image_version_arn CcSpace#sage_maker_image_version_arn}
     */
     readonly sageMakerImageVersionArn?: string;
 }
@@ -3023,19 +3023,19 @@ export interface KernelGatewayAppSettingsProperty {
     /**
     * A list of custom SageMaker images that are configured to run as a KernelGateway app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#custom_images CcSpace#custom_images}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#custom_images CcSpace#custom_images}
     */
     readonly customImages?: CustomImageProperty[] | cdktn.IResolvable;
     /**
     * The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the KernelGateway app.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#default_resource_spec CcSpace#default_resource_spec}
     */
     readonly defaultResourceSpec?: SpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecProperty;
     /**
     * A list of LifecycleConfigArns available for use with KernelGateway apps.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#lifecycle_config_arns CcSpace#lifecycle_config_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#lifecycle_config_arns CcSpace#lifecycle_config_arns}
     */
     readonly lifecycleConfigArns?: string[];
 }
@@ -3145,7 +3145,7 @@ export interface EbsStorageSettingsProperty {
     /**
     * Size of the Amazon EBS volume in Gb
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#ebs_volume_size_in_gb CcSpace#ebs_volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#ebs_volume_size_in_gb CcSpace#ebs_volume_size_in_gb}
     */
     readonly ebsVolumeSizeInGb?: number;
 }
@@ -3211,7 +3211,7 @@ export interface SpaceStorageSettingsProperty {
     /**
     * Properties related to the space's Amazon Elastic Block Store volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#ebs_storage_settings CcSpace#ebs_storage_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#ebs_storage_settings CcSpace#ebs_storage_settings}
     */
     readonly ebsStorageSettings?: EbsStorageSettingsProperty;
 }
@@ -3275,53 +3275,53 @@ export class SpaceStorageSettingsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SpaceSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#app_type CcSpace#app_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#app_type CcSpace#app_type}
     */
     readonly appType?: string;
     /**
     * The CodeEditor app settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#code_editor_app_settings CcSpace#code_editor_app_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#code_editor_app_settings CcSpace#code_editor_app_settings}
     */
     readonly codeEditorAppSettings?: SpaceCodeEditorAppSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#custom_file_systems CcSpace#custom_file_systems}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#custom_file_systems CcSpace#custom_file_systems}
     */
     readonly customFileSystems?: CustomFileSystemProperty[] | cdktn.IResolvable;
     /**
     * The JupyterLab app settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#jupyter_lab_app_settings CcSpace#jupyter_lab_app_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#jupyter_lab_app_settings CcSpace#jupyter_lab_app_settings}
     */
     readonly jupyterLabAppSettings?: SpaceJupyterLabAppSettingsProperty;
     /**
     * The Jupyter server's app settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#jupyter_server_app_settings CcSpace#jupyter_server_app_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#jupyter_server_app_settings CcSpace#jupyter_server_app_settings}
     */
     readonly jupyterServerAppSettings?: JupyterServerAppSettingsProperty;
     /**
     * The kernel gateway app settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#kernel_gateway_app_settings CcSpace#kernel_gateway_app_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#kernel_gateway_app_settings CcSpace#kernel_gateway_app_settings}
     */
     readonly kernelGatewayAppSettings?: KernelGatewayAppSettingsProperty;
     /**
     * This is a flag used to indicate if remote access is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#remote_access CcSpace#remote_access}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#remote_access CcSpace#remote_access}
     */
     readonly remoteAccess?: string;
     /**
     * This is a flag used to indicate if space managed resources needs to be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_managed_resources CcSpace#space_managed_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_managed_resources CcSpace#space_managed_resources}
     */
     readonly spaceManagedResources?: string;
     /**
     * Default storage settings for a space.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#space_storage_settings CcSpace#space_storage_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#space_storage_settings CcSpace#space_storage_settings}
     */
     readonly spaceStorageSettings?: SpaceStorageSettingsProperty;
 }
@@ -3561,7 +3561,7 @@ export class SpaceSettingsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SpaceSharingSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#sharing_type CcSpace#sharing_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#sharing_type CcSpace#sharing_type}
     */
     readonly sharingType?: string;
 }
@@ -3625,11 +3625,11 @@ export class SpaceSharingSettingsPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#key CcSpace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#key CcSpace#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/sagemaker_space#value CcSpace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_space#value CcSpace#value}
     */
     readonly value?: string;
 }

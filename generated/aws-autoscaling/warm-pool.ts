@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcWarmPoolProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#auto_scaling_group_name CcWarmPool#auto_scaling_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#auto_scaling_group_name CcWarmPool#auto_scaling_group_name}
     */
     readonly autoScalingGroupName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#instance_reuse_policy CcWarmPool#instance_reuse_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#instance_reuse_policy CcWarmPool#instance_reuse_policy}
     */
     readonly instanceReusePolicy?: CcWarmPool.InstanceReusePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#max_group_prepared_capacity CcWarmPool#max_group_prepared_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#max_group_prepared_capacity CcWarmPool#max_group_prepared_capacity}
     */
     readonly maxGroupPreparedCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#min_size CcWarmPool#min_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#min_size CcWarmPool#min_size}
     */
     readonly minSize?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#pool_state CcWarmPool#pool_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#pool_state CcWarmPool#pool_state}
     */
     readonly poolState?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool awscc_autoscaling_warm_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool awscc_autoscaling_warm_pool}
 */
 export class CcWarmPool extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcWarmPool extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWarmPool resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWarmPool to import
-    * @param importFromId The id of the existing CcWarmPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWarmPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWarmPool to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcWarmPool extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool awscc_autoscaling_warm_pool} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool awscc_autoscaling_warm_pool} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcWarmPool extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_autoscaling_warm_pool',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -257,7 +257,7 @@ export function ccWarmPoolInstanceReusePolicyPropertyToHclTerraform(struct?: CcW
 export namespace CcWarmPool {
 export interface InstanceReusePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/autoscaling_warm_pool#reuse_on_scale_in CcWarmPool#reuse_on_scale_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/autoscaling_warm_pool#reuse_on_scale_in CcWarmPool#reuse_on_scale_in}
     */
     readonly reuseOnScaleIn?: boolean | cdktn.IResolvable;
 }

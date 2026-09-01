@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,41 +9,41 @@ export interface CcFHIRDatastoreProps extends cdktn.TerraformMetaArguments {
     /**
     * The user-generated name for the Data Store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#datastore_name CcFHIRDatastore#datastore_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#datastore_name CcFHIRDatastore#datastore_name}
     */
     readonly datastoreName?: string;
     /**
     * The FHIR version. Only R4 version data is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#datastore_type_version CcFHIRDatastore#datastore_type_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#datastore_type_version CcFHIRDatastore#datastore_type_version}
     */
     readonly datastoreTypeVersion: string;
     /**
     * The identity provider configuration for the datastore
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#identity_provider_configuration CcFHIRDatastore#identity_provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#identity_provider_configuration CcFHIRDatastore#identity_provider_configuration}
     */
     readonly identityProviderConfiguration?: CcFHIRDatastore.IdentityProviderConfigurationProperty;
     /**
     * The preloaded data configuration for the Data Store. Only data preloaded from Synthea is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#preload_data_config CcFHIRDatastore#preload_data_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#preload_data_config CcFHIRDatastore#preload_data_config}
     */
     readonly preloadDataConfig?: CcFHIRDatastore.PreloadDataConfigProperty;
     /**
     * The server-side encryption key configuration for a customer provided encryption key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#sse_configuration CcFHIRDatastore#sse_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#sse_configuration CcFHIRDatastore#sse_configuration}
     */
     readonly sseConfiguration?: CcFHIRDatastore.SseConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#tags CcFHIRDatastore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#tags CcFHIRDatastore#tags}
     */
     readonly tags?: CcFHIRDatastore.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore}
 */
 export class CcFHIRDatastore extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFHIRDatastore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFHIRDatastore to import
-    * @param importFromId The id of the existing CcFHIRDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFHIRDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFHIRDatastore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_healthlake_fhir_datastore',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -537,25 +537,25 @@ export interface IdentityProviderConfigurationProperty {
     /**
     * Type of Authorization Strategy. The two types of supported Authorization strategies are SMART_ON_FHIR_V1 and AWS_AUTH.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#authorization_strategy CcFHIRDatastore#authorization_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#authorization_strategy CcFHIRDatastore#authorization_strategy}
     */
     readonly authorizationStrategy?: string;
     /**
     * Flag to indicate if fine-grained authorization will be enabled for the datastore
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#fine_grained_authorization_enabled CcFHIRDatastore#fine_grained_authorization_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#fine_grained_authorization_enabled CcFHIRDatastore#fine_grained_authorization_enabled}
     */
     readonly fineGrainedAuthorizationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the Lambda function that will be used to decode the access token created by the authorization server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#idp_lambda_arn CcFHIRDatastore#idp_lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#idp_lambda_arn CcFHIRDatastore#idp_lambda_arn}
     */
     readonly idpLambdaArn?: string;
     /**
     * The JSON metadata elements for identity provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#metadata CcFHIRDatastore#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#metadata CcFHIRDatastore#metadata}
     */
     readonly metadata?: string;
 }
@@ -687,7 +687,7 @@ export interface PreloadDataConfigProperty {
     /**
     * The type of preloaded data. Only Synthea preloaded data is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#preload_data_type CcFHIRDatastore#preload_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#preload_data_type CcFHIRDatastore#preload_data_type}
     */
     readonly preloadDataType?: string;
 }
@@ -753,13 +753,13 @@ export interface KmsEncryptionConfigProperty {
     /**
     * The type of customer-managed-key (CMK) used for encryption. The two types of supported CMKs are customer owned CMKs and AWS owned CMKs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#cmk_type CcFHIRDatastore#cmk_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#cmk_type CcFHIRDatastore#cmk_type}
     */
     readonly cmkType?: string;
     /**
     * The KMS encryption key id/alias used to encrypt the Data Store contents at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#kms_key_id CcFHIRDatastore#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#kms_key_id CcFHIRDatastore#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -847,7 +847,7 @@ export interface SseConfigurationProperty {
     /**
     * The customer-managed-key (CMK) used when creating a Data Store. If a customer owned key is not specified, an AWS owned key will be used for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#kms_encryption_config CcFHIRDatastore#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#kms_encryption_config CcFHIRDatastore#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: KmsEncryptionConfigProperty;
 }
@@ -913,13 +913,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#key CcFHIRDatastore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#key CcFHIRDatastore#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/healthlake_fhir_datastore#value CcFHIRDatastore#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#value CcFHIRDatastore#value}
     */
     readonly value?: string;
 }

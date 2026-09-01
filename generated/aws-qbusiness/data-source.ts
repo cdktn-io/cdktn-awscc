@@ -1,59 +1,59 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#application_id CcDataSource#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#application_id CcDataSource#application_id}
     */
     readonly applicationId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#configuration CcDataSource#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#configuration CcDataSource#configuration}
     */
     readonly configuration: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#description CcDataSource#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#description CcDataSource#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#display_name CcDataSource#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#display_name CcDataSource#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#document_enrichment_configuration CcDataSource#document_enrichment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#document_enrichment_configuration CcDataSource#document_enrichment_configuration}
     */
     readonly documentEnrichmentConfiguration?: CcDataSource.DocumentEnrichmentConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#index_id CcDataSource#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#index_id CcDataSource#index_id}
     */
     readonly indexId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#media_extraction_configuration CcDataSource#media_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#media_extraction_configuration CcDataSource#media_extraction_configuration}
     */
     readonly mediaExtractionConfiguration?: CcDataSource.MediaExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#sync_schedule CcDataSource#sync_schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#sync_schedule CcDataSource#sync_schedule}
     */
     readonly syncSchedule?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#tags CcDataSource#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#tags CcDataSource#tags}
     */
     readonly tags?: CcDataSource.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#vpc_configuration CcDataSource#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#vpc_configuration CcDataSource#vpc_configuration}
     */
     readonly vpcConfiguration?: CcDataSource.DataSourceVpcConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source awscc_qbusiness_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source awscc_qbusiness_data_source}
 */
 export class CcDataSource extends cdktn.TerraformResource {
 
@@ -69,7 +69,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataSource to import
-    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -81,7 +81,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source awscc_qbusiness_data_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source awscc_qbusiness_data_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -92,7 +92,7 @@ export class CcDataSource extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_qbusiness_data_source',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1194,19 +1194,19 @@ export function ccDataSourceDataSourceVpcConfigurationPropertyToHclTerraform(str
 export namespace CcDataSource {
 export interface DocumentAttributeValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
     */
     readonly dateValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
     */
     readonly longValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
     */
     readonly stringListValue?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1336,15 +1336,15 @@ export class DocumentAttributeValuePropertyOutputReference extends cdktn.Complex
 }
 export interface DocumentAttributeConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
     */
     readonly value?: DocumentAttributeValueProperty;
 }
@@ -1452,19 +1452,19 @@ export class DocumentAttributeConditionPropertyOutputReference extends cdktn.Com
 }
 export interface DocumentEnrichmentConfigurationInlineConfigurationsTargetValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
     */
     readonly dateValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
     */
     readonly longValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
     */
     readonly stringListValue?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1594,15 +1594,15 @@ export class DocumentEnrichmentConfigurationInlineConfigurationsTargetValuePrope
 }
 export interface DocumentAttributeTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#attribute_value_operator CcDataSource#attribute_value_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#attribute_value_operator CcDataSource#attribute_value_operator}
     */
     readonly attributeValueOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
     */
     readonly value?: DocumentEnrichmentConfigurationInlineConfigurationsTargetValueProperty;
 }
@@ -1710,15 +1710,15 @@ export class DocumentAttributeTargetPropertyOutputReference extends cdktn.Comple
 }
 export interface InlineDocumentEnrichmentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#condition CcDataSource#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#condition CcDataSource#condition}
     */
     readonly condition?: DocumentAttributeConditionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#document_content_operator CcDataSource#document_content_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#document_content_operator CcDataSource#document_content_operator}
     */
     readonly documentContentOperator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#target CcDataSource#target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#target CcDataSource#target}
     */
     readonly target?: DocumentAttributeTargetProperty;
 }
@@ -1848,19 +1848,19 @@ export class InlineDocumentEnrichmentConfigurationPropertyList extends cdktn.Com
 }
 export interface DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
     */
     readonly dateValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
     */
     readonly longValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
     */
     readonly stringListValue?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1990,15 +1990,15 @@ export class DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvoc
 }
 export interface DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
     */
     readonly value?: DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionValueProperty;
 }
@@ -2106,19 +2106,19 @@ export class DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvoc
 }
 export interface HookConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#invocation_condition CcDataSource#invocation_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#invocation_condition CcDataSource#invocation_condition}
     */
     readonly invocationCondition?: DocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#lambda_arn CcDataSource#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#lambda_arn CcDataSource#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#s3_bucket_name CcDataSource#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#s3_bucket_name CcDataSource#s3_bucket_name}
     */
     readonly s3BucketName?: string;
 }
@@ -2248,19 +2248,19 @@ export class HookConfigurationPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionValueProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#date_value CcDataSource#date_value}
     */
     readonly dateValue?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#long_value CcDataSource#long_value}
     */
     readonly longValue?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_list_value CcDataSource#string_list_value}
     */
     readonly stringListValue?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#string_value CcDataSource#string_value}
     */
     readonly stringValue?: string;
 }
@@ -2390,15 +2390,15 @@ export class DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvoca
 }
 export interface DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#operator CcDataSource#operator}
     */
     readonly operator?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
     */
     readonly value?: DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionValueProperty;
 }
@@ -2506,19 +2506,19 @@ export class DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvoca
 }
 export interface PreExtractionHookConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#invocation_condition CcDataSource#invocation_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#invocation_condition CcDataSource#invocation_condition}
     */
     readonly invocationCondition?: DocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#lambda_arn CcDataSource#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#lambda_arn CcDataSource#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#role_arn CcDataSource#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#s3_bucket_name CcDataSource#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#s3_bucket_name CcDataSource#s3_bucket_name}
     */
     readonly s3BucketName?: string;
 }
@@ -2648,15 +2648,15 @@ export class PreExtractionHookConfigurationPropertyOutputReference extends cdktn
 }
 export interface DocumentEnrichmentConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#inline_configurations CcDataSource#inline_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#inline_configurations CcDataSource#inline_configurations}
     */
     readonly inlineConfigurations?: InlineDocumentEnrichmentConfigurationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#post_extraction_hook_configuration CcDataSource#post_extraction_hook_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#post_extraction_hook_configuration CcDataSource#post_extraction_hook_configuration}
     */
     readonly postExtractionHookConfiguration?: HookConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#pre_extraction_hook_configuration CcDataSource#pre_extraction_hook_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#pre_extraction_hook_configuration CcDataSource#pre_extraction_hook_configuration}
     */
     readonly preExtractionHookConfiguration?: PreExtractionHookConfigurationProperty;
 }
@@ -2764,7 +2764,7 @@ export class DocumentEnrichmentConfigurationPropertyOutputReference extends cdkt
 }
 export interface AudioExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#audio_extraction_status CcDataSource#audio_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#audio_extraction_status CcDataSource#audio_extraction_status}
     */
     readonly audioExtractionStatus?: string;
 }
@@ -2828,7 +2828,7 @@ export class AudioExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface ImageExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#image_extraction_status CcDataSource#image_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#image_extraction_status CcDataSource#image_extraction_status}
     */
     readonly imageExtractionStatus?: string;
 }
@@ -2892,7 +2892,7 @@ export class ImageExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface VideoExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#video_extraction_status CcDataSource#video_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#video_extraction_status CcDataSource#video_extraction_status}
     */
     readonly videoExtractionStatus?: string;
 }
@@ -2956,15 +2956,15 @@ export class VideoExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface MediaExtractionConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#audio_extraction_configuration CcDataSource#audio_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#audio_extraction_configuration CcDataSource#audio_extraction_configuration}
     */
     readonly audioExtractionConfiguration?: AudioExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#image_extraction_configuration CcDataSource#image_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#image_extraction_configuration CcDataSource#image_extraction_configuration}
     */
     readonly imageExtractionConfiguration?: ImageExtractionConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#video_extraction_configuration CcDataSource#video_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#video_extraction_configuration CcDataSource#video_extraction_configuration}
     */
     readonly videoExtractionConfiguration?: VideoExtractionConfigurationProperty;
 }
@@ -3072,11 +3072,11 @@ export class MediaExtractionConfigurationPropertyOutputReference extends cdktn.C
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#key CcDataSource#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#value CcDataSource#value}
     */
     readonly value?: string;
 }
@@ -3184,11 +3184,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface DataSourceVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#security_group_ids CcDataSource#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#security_group_ids CcDataSource#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/qbusiness_data_source#subnet_ids CcDataSource#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/qbusiness_data_source#subnet_ids CcDataSource#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

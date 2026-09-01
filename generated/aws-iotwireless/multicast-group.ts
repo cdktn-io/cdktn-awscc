@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcMulticastGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * Wireless device to associate. Only for update request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#associate_wireless_device CcMulticastGroup#associate_wireless_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#associate_wireless_device CcMulticastGroup#associate_wireless_device}
     */
     readonly associateWirelessDevice?: string;
     /**
     * Multicast group description
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#description CcMulticastGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#description CcMulticastGroup#description}
     */
     readonly description?: string;
     /**
     * Wireless device to disassociate. Only for update request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#disassociate_wireless_device CcMulticastGroup#disassociate_wireless_device}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#disassociate_wireless_device CcMulticastGroup#disassociate_wireless_device}
     */
     readonly disassociateWirelessDevice?: string;
     /**
     * Multicast group LoRaWAN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#lo_ra_wan CcMulticastGroup#lo_ra_wan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#lo_ra_wan CcMulticastGroup#lo_ra_wan}
     */
     readonly loRaWan: CcMulticastGroup.LoRaWANProperty;
     /**
     * Name of Multicast group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#name CcMulticastGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#name CcMulticastGroup#name}
     */
     readonly name?: string;
     /**
     * A list of key-value pairs that contain metadata for the Multicast group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#tags CcMulticastGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#tags CcMulticastGroup#tags}
     */
     readonly tags?: CcMulticastGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group awscc_iotwireless_multicast_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group awscc_iotwireless_multicast_group}
 */
 export class CcMulticastGroup extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcMulticastGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMulticastGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMulticastGroup to import
-    * @param importFromId The id of the existing CcMulticastGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMulticastGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMulticastGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcMulticastGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group awscc_iotwireless_multicast_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group awscc_iotwireless_multicast_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcMulticastGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotwireless_multicast_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -358,13 +358,13 @@ export interface LoRaWANProperty {
     /**
     * Multicast group LoRaWAN DL Class
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#dl_class CcMulticastGroup#dl_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#dl_class CcMulticastGroup#dl_class}
     */
     readonly dlClass: string;
     /**
     * Multicast group LoRaWAN RF region
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#rf_region CcMulticastGroup#rf_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#rf_region CcMulticastGroup#rf_region}
     */
     readonly rfRegion: string;
 }
@@ -454,11 +454,11 @@ export class LoRaWANPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#key CcMulticastGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#key CcMulticastGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotwireless_multicast_group#value CcMulticastGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotwireless_multicast_group#value CcMulticastGroup#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcScraperProps extends cdktn.TerraformMetaArguments {
     /**
     * Scraper alias.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#alias CcScraper#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#alias CcScraper#alias}
     */
     readonly alias?: string;
     /**
     * Scraper metrics destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#destination CcScraper#destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#destination CcScraper#destination}
     */
     readonly destination: CcScraper.DestinationProperty;
     /**
     * Role configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#role_configuration CcScraper#role_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#role_configuration CcScraper#role_configuration}
     */
     readonly roleConfiguration?: CcScraper.RoleConfigurationProperty;
     /**
     * Scraper configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#scrape_configuration CcScraper#scrape_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#scrape_configuration CcScraper#scrape_configuration}
     */
     readonly scrapeConfiguration: CcScraper.ScrapeConfigurationProperty;
     /**
     * Configuration for scraper logging
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#scraper_logging_configuration CcScraper#scraper_logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#scraper_logging_configuration CcScraper#scraper_logging_configuration}
     */
     readonly scraperLoggingConfiguration?: CcScraper.ScraperLoggingConfigurationProperty;
     /**
     * Scraper metrics source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#source CcScraper#source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#source CcScraper#source}
     */
     readonly source: CcScraper.SourceProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#tags CcScraper#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#tags CcScraper#tags}
     */
     readonly tags?: CcScraper.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper awscc_aps_scraper}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper awscc_aps_scraper}
 */
 export class CcScraper extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcScraper extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcScraper resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcScraper to import
-    * @param importFromId The id of the existing CcScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcScraper to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcScraper extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper awscc_aps_scraper} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper awscc_aps_scraper} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcScraper extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_aps_scraper',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -791,7 +791,7 @@ export interface AmpConfigurationProperty {
     /**
     * ARN of an Amazon Managed Prometheus workspace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#workspace_arn CcScraper#workspace_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#workspace_arn CcScraper#workspace_arn}
     */
     readonly workspaceArn?: string;
 }
@@ -857,7 +857,7 @@ export interface CloudWatchConfigurationProperty {
     /**
     * ARN of a CloudWatch dataset
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#dataset_arn CcScraper#dataset_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#dataset_arn CcScraper#dataset_arn}
     */
     readonly datasetArn?: string;
 }
@@ -923,13 +923,13 @@ export interface DestinationProperty {
     /**
     * Configuration for Amazon Managed Prometheus metrics destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#amp_configuration CcScraper#amp_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#amp_configuration CcScraper#amp_configuration}
     */
     readonly ampConfiguration?: AmpConfigurationProperty;
     /**
     * Configuration for CloudWatch metrics destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#cloudwatch_configuration CcScraper#cloudwatch_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#cloudwatch_configuration CcScraper#cloudwatch_configuration}
     */
     readonly cloudwatchConfiguration?: CloudWatchConfigurationProperty;
 }
@@ -1017,13 +1017,13 @@ export interface RoleConfigurationProperty {
     /**
     * IAM Role in source account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#source_role_arn CcScraper#source_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#source_role_arn CcScraper#source_role_arn}
     */
     readonly sourceRoleArn?: string;
     /**
     * IAM Role in the target account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#target_role_arn CcScraper#target_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#target_role_arn CcScraper#target_role_arn}
     */
     readonly targetRoleArn?: string;
 }
@@ -1111,7 +1111,7 @@ export interface ScrapeConfigurationProperty {
     /**
     * Prometheus compatible scrape configuration in base64 encoded blob format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#configuration_blob CcScraper#configuration_blob}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#configuration_blob CcScraper#configuration_blob}
     */
     readonly configurationBlob?: string;
 }
@@ -1177,7 +1177,7 @@ export interface CloudWatchLogDestinationProperty {
     /**
     * ARN of the CloudWatch log group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#log_group_arn CcScraper#log_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#log_group_arn CcScraper#log_group_arn}
     */
     readonly logGroupArn?: string;
 }
@@ -1243,7 +1243,7 @@ export interface ScraperLoggingDestinationProperty {
     /**
     * Represents a cloudwatch logs destination for scraper logging
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#cloudwatch_logs CcScraper#cloudwatch_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#cloudwatch_logs CcScraper#cloudwatch_logs}
     */
     readonly cloudwatchLogs?: CloudWatchLogDestinationProperty;
 }
@@ -1307,7 +1307,7 @@ export class ScraperLoggingDestinationPropertyOutputReference extends cdktn.Comp
 }
 export interface ComponentConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#options CcScraper#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#options CcScraper#options}
     */
     readonly options?: { [key: string]: string };
 }
@@ -1371,13 +1371,13 @@ export class ComponentConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ScraperComponentProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#config CcScraper#config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#config CcScraper#config}
     */
     readonly config?: ComponentConfigProperty;
     /**
     * Type of scraper component
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#type CcScraper#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#type CcScraper#type}
     */
     readonly type?: string;
 }
@@ -1487,11 +1487,11 @@ export interface ScraperLoggingConfigurationProperty {
     /**
     * Destination for scraper logging
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#logging_destination CcScraper#logging_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#logging_destination CcScraper#logging_destination}
     */
     readonly loggingDestination?: ScraperLoggingDestinationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#scraper_components CcScraper#scraper_components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#scraper_components CcScraper#scraper_components}
     */
     readonly scraperComponents?: ScraperComponentProperty[] | cdktn.IResolvable;
 }
@@ -1579,19 +1579,19 @@ export interface EksConfigurationProperty {
     /**
     * ARN of an EKS cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#cluster_arn CcScraper#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#cluster_arn CcScraper#cluster_arn}
     */
     readonly clusterArn?: string;
     /**
     * List of security group IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#security_group_ids CcScraper#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#security_group_ids CcScraper#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * List of subnet IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#subnet_ids CcScraper#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#subnet_ids CcScraper#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1701,13 +1701,13 @@ export interface VpcConfigurationProperty {
     /**
     * List of security group IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#security_group_ids CcScraper#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#security_group_ids CcScraper#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * List of subnet IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#subnet_ids CcScraper#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#subnet_ids CcScraper#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -1795,13 +1795,13 @@ export interface SourceProperty {
     /**
     * Configuration for EKS metrics source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#eks_configuration CcScraper#eks_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#eks_configuration CcScraper#eks_configuration}
     */
     readonly eksConfiguration?: EksConfigurationProperty;
     /**
     * Configuration for VPC metrics source
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#vpc_configuration CcScraper#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#vpc_configuration CcScraper#vpc_configuration}
     */
     readonly vpcConfiguration?: VpcConfigurationProperty;
 }
@@ -1889,13 +1889,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#key CcScraper#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#key CcScraper#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/aps_scraper#value CcScraper#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/aps_scraper#value CcScraper#value}
     */
     readonly value?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,19 +9,19 @@ export interface CcNetworkProps extends cdktn.TerraformMetaArguments {
     /**
     * The access level of the network, which determines available features and capabilities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network#access_level CcNetwork#access_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network#access_level CcNetwork#access_level}
     */
     readonly accessLevel: string;
     /**
     * The name of the network. Must be between 1 and 20 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network#network_name CcNetwork#network_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network#network_name CcNetwork#network_name}
     */
     readonly networkName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network awscc_wickr_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network awscc_wickr_network}
 */
 export class CcNetwork extends cdktn.TerraformResource {
 
@@ -37,7 +37,7 @@ export class CcNetwork extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetwork resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetwork to import
-    * @param importFromId The id of the existing CcNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetwork to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class CcNetwork extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/wickr_network awscc_wickr_network} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/wickr_network awscc_wickr_network} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class CcNetwork extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_wickr_network',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

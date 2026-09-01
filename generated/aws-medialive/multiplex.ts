@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcMultiplexProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of availability zones for the multiplex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#availability_zones CcMultiplex#availability_zones}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#availability_zones CcMultiplex#availability_zones}
     */
     readonly availabilityZones: string[];
     /**
     * A list of the multiplex output destinations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#destinations CcMultiplex#destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#destinations CcMultiplex#destinations}
     */
     readonly destinations?: CcMultiplex.MultiplexOutputDestinationProperty[] | cdktn.IResolvable;
     /**
     * Configuration for a multiplex event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#multiplex_settings CcMultiplex#multiplex_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#multiplex_settings CcMultiplex#multiplex_settings}
     */
     readonly multiplexSettings: CcMultiplex.MultiplexSettingsProperty;
     /**
     * Name of multiplex.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#name CcMultiplex#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#name CcMultiplex#name}
     */
     readonly name: string;
     /**
     * A collection of key-value pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#tags CcMultiplex#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#tags CcMultiplex#tags}
     */
     readonly tags?: CcMultiplex.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex awscc_medialive_multiplex}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex awscc_medialive_multiplex}
 */
 export class CcMultiplex extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcMultiplex extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMultiplex resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMultiplex to import
-    * @param importFromId The id of the existing CcMultiplex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMultiplex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMultiplex to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcMultiplex extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex awscc_medialive_multiplex} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex awscc_medialive_multiplex} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcMultiplex extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_medialive_multiplex',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -406,7 +406,7 @@ export interface MultiplexMediaConnectOutputDestinationSettingsProperty {
     /**
     * The MediaConnect entitlement ARN available as a Flow source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#entitlement_arn CcMultiplex#entitlement_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#entitlement_arn CcMultiplex#entitlement_arn}
     */
     readonly entitlementArn?: string;
 }
@@ -472,7 +472,7 @@ export interface MultiplexOutputDestinationProperty {
     /**
     * Multiplex MediaConnect output destination settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#multiplex_media_connect_output_destination_settings CcMultiplex#multiplex_media_connect_output_destination_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#multiplex_media_connect_output_destination_settings CcMultiplex#multiplex_media_connect_output_destination_settings}
     */
     readonly multiplexMediaConnectOutputDestinationSettings?: MultiplexMediaConnectOutputDestinationSettingsProperty;
 }
@@ -560,25 +560,25 @@ export interface MultiplexSettingsProperty {
     /**
     * Maximum video buffer delay in milliseconds.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds CcMultiplex#maximum_video_buffer_delay_milliseconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds CcMultiplex#maximum_video_buffer_delay_milliseconds}
     */
     readonly maximumVideoBufferDelayMilliseconds?: number;
     /**
     * Transport stream bit rate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#transport_stream_bitrate CcMultiplex#transport_stream_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#transport_stream_bitrate CcMultiplex#transport_stream_bitrate}
     */
     readonly transportStreamBitrate: number;
     /**
     * Transport stream ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#transport_stream_id CcMultiplex#transport_stream_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#transport_stream_id CcMultiplex#transport_stream_id}
     */
     readonly transportStreamId: number;
     /**
     * Transport stream reserved bit rate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate CcMultiplex#transport_stream_reserved_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate CcMultiplex#transport_stream_reserved_bitrate}
     */
     readonly transportStreamReservedBitrate?: number;
 }
@@ -702,11 +702,11 @@ export class MultiplexSettingsPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#key CcMultiplex#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#key CcMultiplex#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/medialive_multiplex#value CcMultiplex#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/medialive_multiplex#value CcMultiplex#value}
     */
     readonly value?: string;
 }

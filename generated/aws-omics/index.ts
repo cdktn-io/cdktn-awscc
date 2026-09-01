@@ -3,6 +3,7 @@
 export * from './annotation-store';
 export * from './configuration';
 export * from './reference-store';
+export * from './run-cache';
 export * from './run-group';
 export * from './sequence-store';
 export * from './variant-store';

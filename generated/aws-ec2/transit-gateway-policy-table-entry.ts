@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcTransitGatewayPolicyTableEntryProps extends cdktn.TerraformMe
     /**
     * The policy rule associated with the entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#policy_rule CcTransitGatewayPolicyTableEntry#policy_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#policy_rule CcTransitGatewayPolicyTableEntry#policy_rule}
     */
     readonly policyRule: CcTransitGatewayPolicyTableEntry.TransitGatewayPolicyRuleProperty;
     /**
     * The rule number for the policy table entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#policy_rule_number CcTransitGatewayPolicyTableEntry#policy_rule_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#policy_rule_number CcTransitGatewayPolicyTableEntry#policy_rule_number}
     */
     readonly policyRuleNumber: string;
     /**
     * The ID of the target route table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#target_route_table_id CcTransitGatewayPolicyTableEntry#target_route_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#target_route_table_id CcTransitGatewayPolicyTableEntry#target_route_table_id}
     */
     readonly targetRouteTableId: string;
     /**
     * The ID of the transit gateway policy table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#transit_gateway_policy_table_id CcTransitGatewayPolicyTableEntry#transit_gateway_policy_table_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#transit_gateway_policy_table_id CcTransitGatewayPolicyTableEntry#transit_gateway_policy_table_id}
     */
     readonly transitGatewayPolicyTableId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry awscc_ec2_transit_gateway_policy_table_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry awscc_ec2_transit_gateway_policy_table_entry}
 */
 export class CcTransitGatewayPolicyTableEntry extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcTransitGatewayPolicyTableEntry extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransitGatewayPolicyTableEntry resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayPolicyTableEntry to import
-    * @param importFromId The id of the existing CcTransitGatewayPolicyTableEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayPolicyTableEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayPolicyTableEntry to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcTransitGatewayPolicyTableEntry extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry awscc_ec2_transit_gateway_policy_table_entry} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry awscc_ec2_transit_gateway_policy_table_entry} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcTransitGatewayPolicyTableEntry extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ec2_transit_gateway_policy_table_entry',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -263,31 +263,31 @@ export interface TransitGatewayPolicyRuleProperty {
     /**
     * The destination CIDR block for the transit gateway policy rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#destination_cidr_block CcTransitGatewayPolicyTableEntry#destination_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#destination_cidr_block CcTransitGatewayPolicyTableEntry#destination_cidr_block}
     */
     readonly destinationCidrBlock?: string;
     /**
     * The destination port range for the transit gateway policy rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#destination_port_range CcTransitGatewayPolicyTableEntry#destination_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#destination_port_range CcTransitGatewayPolicyTableEntry#destination_port_range}
     */
     readonly destinationPortRange?: string;
     /**
     * The protocol for the transit gateway policy rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#protocol CcTransitGatewayPolicyTableEntry#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#protocol CcTransitGatewayPolicyTableEntry#protocol}
     */
     readonly protocol?: string;
     /**
     * The source CIDR block for the transit gateway policy rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#source_cidr_block CcTransitGatewayPolicyTableEntry#source_cidr_block}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#source_cidr_block CcTransitGatewayPolicyTableEntry#source_cidr_block}
     */
     readonly sourceCidrBlock?: string;
     /**
     * The source port range for the transit gateway policy rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ec2_transit_gateway_policy_table_entry#source_port_range CcTransitGatewayPolicyTableEntry#source_port_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ec2_transit_gateway_policy_table_entry#source_port_range CcTransitGatewayPolicyTableEntry#source_port_range}
     */
     readonly sourcePortRange?: string;
 }

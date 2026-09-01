@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,47 +9,47 @@ export interface CcSoftwarePackageVersionProps extends cdktn.TerraformMetaArgume
     /**
     * The artifact location of the package version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#artifact CcSoftwarePackageVersion#artifact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#artifact CcSoftwarePackageVersion#artifact}
     */
     readonly artifact?: CcSoftwarePackageVersion.PackageVersionArtifactProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#attributes CcSoftwarePackageVersion#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#attributes CcSoftwarePackageVersion#attributes}
     */
     readonly attributes?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#description CcSoftwarePackageVersion#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#description CcSoftwarePackageVersion#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#package_name CcSoftwarePackageVersion#package_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#package_name CcSoftwarePackageVersion#package_name}
     */
     readonly packageName: string;
     /**
     * The inline json job document associated with a software package version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#recipe CcSoftwarePackageVersion#recipe}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#recipe CcSoftwarePackageVersion#recipe}
     */
     readonly recipe?: string;
     /**
     * The sbom zip archive location of the package version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#sbom CcSoftwarePackageVersion#sbom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#sbom CcSoftwarePackageVersion#sbom}
     */
     readonly sbom?: CcSoftwarePackageVersion.SbomProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#tags CcSoftwarePackageVersion#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#tags CcSoftwarePackageVersion#tags}
     */
     readonly tags?: CcSoftwarePackageVersion.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#version_name CcSoftwarePackageVersion#version_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#version_name CcSoftwarePackageVersion#version_name}
     */
     readonly versionName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version awscc_iot_software_package_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version awscc_iot_software_package_version}
 */
 export class CcSoftwarePackageVersion extends cdktn.TerraformResource {
 
@@ -65,7 +65,7 @@ export class CcSoftwarePackageVersion extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSoftwarePackageVersion resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSoftwarePackageVersion to import
-    * @param importFromId The id of the existing CcSoftwarePackageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSoftwarePackageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSoftwarePackageVersion to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -77,7 +77,7 @@ export class CcSoftwarePackageVersion extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version awscc_iot_software_package_version} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version awscc_iot_software_package_version} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CcSoftwarePackageVersion extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_software_package_version',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -526,19 +526,19 @@ export interface S3LocationProperty {
     /**
     * The S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#bucket CcSoftwarePackageVersion#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#bucket CcSoftwarePackageVersion#bucket}
     */
     readonly bucket?: string;
     /**
     * The S3 key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
     */
     readonly key?: string;
     /**
     * The S3 version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#version CcSoftwarePackageVersion#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#version CcSoftwarePackageVersion#version}
     */
     readonly version?: string;
 }
@@ -648,7 +648,7 @@ export interface PackageVersionArtifactProperty {
     /**
     * The Amazon S3 location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#s3_location CcSoftwarePackageVersion#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#s3_location CcSoftwarePackageVersion#s3_location}
     */
     readonly s3Location?: S3LocationProperty;
 }
@@ -714,19 +714,19 @@ export interface SbomS3LocationProperty {
     /**
     * The S3 bucket
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#bucket CcSoftwarePackageVersion#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#bucket CcSoftwarePackageVersion#bucket}
     */
     readonly bucket?: string;
     /**
     * The S3 key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
     */
     readonly key?: string;
     /**
     * The S3 version
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#version CcSoftwarePackageVersion#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#version CcSoftwarePackageVersion#version}
     */
     readonly version?: string;
 }
@@ -836,7 +836,7 @@ export interface SbomProperty {
     /**
     * The Amazon S3 location
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#s3_location CcSoftwarePackageVersion#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#s3_location CcSoftwarePackageVersion#s3_location}
     */
     readonly s3Location?: SbomS3LocationProperty;
 }
@@ -902,13 +902,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#key CcSoftwarePackageVersion#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_software_package_version#value CcSoftwarePackageVersion#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_software_package_version#value CcSoftwarePackageVersion#value}
     */
     readonly value?: string;
 }

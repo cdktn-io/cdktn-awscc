@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcTransitGatewayRouteTableAttachmentProps extends cdktn.Terrafo
     /**
     * The name of the network function group attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
     */
     readonly networkFunctionGroupName?: string;
     /**
     * The Id of peering between transit gateway and core network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#peering_id CcTransitGatewayRouteTableAttachment#peering_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#peering_id CcTransitGatewayRouteTableAttachment#peering_id}
     */
     readonly peeringId: string;
     /**
     * The attachment to move from one network function group to another.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_network_function_group_change CcTransitGatewayRouteTableAttachment#proposed_network_function_group_change}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_network_function_group_change CcTransitGatewayRouteTableAttachment#proposed_network_function_group_change}
     */
     readonly proposedNetworkFunctionGroupChange?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty;
     /**
     * The attachment to move from one segment to another.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_segment_change CcTransitGatewayRouteTableAttachment#proposed_segment_change}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_segment_change CcTransitGatewayRouteTableAttachment#proposed_segment_change}
     */
     readonly proposedSegmentChange?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty;
     /**
     * Routing policy label
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#routing_policy_label CcTransitGatewayRouteTableAttachment#routing_policy_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#routing_policy_label CcTransitGatewayRouteTableAttachment#routing_policy_label}
     */
     readonly routingPolicyLabel?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
     */
     readonly tags?: CcTransitGatewayRouteTableAttachment.TagsProperty[] | cdktn.IResolvable;
     /**
     * The Arn of transit gateway route table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#transit_gateway_route_table_arn CcTransitGatewayRouteTableAttachment#transit_gateway_route_table_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#transit_gateway_route_table_arn CcTransitGatewayRouteTableAttachment#transit_gateway_route_table_arn}
     */
     readonly transitGatewayRouteTableArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment}
 */
 export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
     * Generates CDKTN code for importing a CcTransitGatewayRouteTableAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayRouteTableAttachment to import
-    * @param importFromId The id of the existing CcTransitGatewayRouteTableAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayRouteTableAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayRouteTableAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
             terraformResourceType: 'awscc_networkmanager_transit_gateway_route_table_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -560,13 +560,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
     */
     readonly value?: string;
 }
@@ -676,19 +676,19 @@ export interface ProposedNetworkFunctionGroupChangeProperty {
     /**
     * The rule number in the policy document that applies to this change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
     */
     readonly attachmentPolicyRuleNumber?: number;
     /**
     * The name of the network function group to change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
     */
     readonly networkFunctionGroupName?: string;
     /**
     * The key-value tags that changed for the network function group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
@@ -798,13 +798,13 @@ export interface ProposedSegmentChangeTagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
     */
     readonly value?: string;
 }
@@ -914,19 +914,19 @@ export interface ProposedSegmentChangeProperty {
     /**
     * The rule number in the policy document that applies to this change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
     */
     readonly attachmentPolicyRuleNumber?: number;
     /**
     * The name of the segment to change.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#segment_name CcTransitGatewayRouteTableAttachment#segment_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#segment_name CcTransitGatewayRouteTableAttachment#segment_name}
     */
     readonly segmentName?: string;
     /**
     * The key-value tags that changed for the segment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
     */
     readonly tags?: ProposedSegmentChangeTagsProperty[] | cdktn.IResolvable;
 }
@@ -1036,13 +1036,13 @@ export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
     */
     readonly value?: string;
 }

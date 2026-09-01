@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcCisScanConfigurationProps extends cdktn.TerraformMetaArgument
     /**
     * Name of the scan
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#scan_name CcCisScanConfiguration#scan_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#scan_name CcCisScanConfiguration#scan_name}
     */
     readonly scanName: string;
     /**
     * Choose a Schedule cadence
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#schedule CcCisScanConfiguration#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#schedule CcCisScanConfiguration#schedule}
     */
     readonly schedule: CcCisScanConfiguration.ScheduleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#security_level CcCisScanConfiguration#security_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#security_level CcCisScanConfiguration#security_level}
     */
     readonly securityLevel: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#tags CcCisScanConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#tags CcCisScanConfiguration#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#targets CcCisScanConfiguration#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#targets CcCisScanConfiguration#targets}
     */
     readonly targets: CcCisScanConfiguration.CisTargetsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration awscc_inspectorv2_cis_scan_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration awscc_inspectorv2_cis_scan_configuration}
 */
 export class CcCisScanConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcCisScanConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCisScanConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCisScanConfiguration to import
-    * @param importFromId The id of the existing CcCisScanConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCisScanConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCisScanConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcCisScanConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration awscc_inspectorv2_cis_scan_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration awscc_inspectorv2_cis_scan_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcCisScanConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_inspectorv2_cis_scan_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -530,11 +530,11 @@ export function ccCisScanConfigurationCisTargetsPropertyToHclTerraform(struct?: 
 export namespace CcCisScanConfiguration {
 export interface TimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
     */
     readonly timeOfDay?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
     */
     readonly timeZone?: string;
 }
@@ -620,7 +620,7 @@ export class TimePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface DailyScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
     */
     readonly startTime?: TimeProperty;
 }
@@ -684,11 +684,11 @@ export class DailySchedulePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScheduleMonthlyStartTimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
     */
     readonly timeOfDay?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
     */
     readonly timeZone?: string;
 }
@@ -774,11 +774,11 @@ export class ScheduleMonthlyStartTimePropertyOutputReference extends cdktn.Compl
 }
 export interface MonthlyScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#day CcCisScanConfiguration#day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#day CcCisScanConfiguration#day}
     */
     readonly day?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
     */
     readonly startTime?: ScheduleMonthlyStartTimeProperty;
 }
@@ -864,11 +864,11 @@ export class MonthlySchedulePropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ScheduleWeeklyStartTimeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_of_day CcCisScanConfiguration#time_of_day}
     */
     readonly timeOfDay?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#time_zone CcCisScanConfiguration#time_zone}
     */
     readonly timeZone?: string;
 }
@@ -954,11 +954,11 @@ export class ScheduleWeeklyStartTimePropertyOutputReference extends cdktn.Comple
 }
 export interface WeeklyScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#days CcCisScanConfiguration#days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#days CcCisScanConfiguration#days}
     */
     readonly days?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#start_time CcCisScanConfiguration#start_time}
     */
     readonly startTime?: ScheduleWeeklyStartTimeProperty;
 }
@@ -1044,19 +1044,19 @@ export class WeeklySchedulePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ScheduleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#daily CcCisScanConfiguration#daily}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#daily CcCisScanConfiguration#daily}
     */
     readonly daily?: DailyScheduleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#monthly CcCisScanConfiguration#monthly}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#monthly CcCisScanConfiguration#monthly}
     */
     readonly monthly?: MonthlyScheduleProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#one_time CcCisScanConfiguration#one_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#one_time CcCisScanConfiguration#one_time}
     */
     readonly oneTime?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#weekly CcCisScanConfiguration#weekly}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#weekly CcCisScanConfiguration#weekly}
     */
     readonly weekly?: WeeklyScheduleProperty;
 }
@@ -1186,11 +1186,11 @@ export class SchedulePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface CisTargetsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#account_ids CcCisScanConfiguration#account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#account_ids CcCisScanConfiguration#account_ids}
     */
     readonly accountIds: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/inspectorv2_cis_scan_configuration#target_resource_tags CcCisScanConfiguration#target_resource_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/inspectorv2_cis_scan_configuration#target_resource_tags CcCisScanConfiguration#target_resource_tags}
     */
     readonly targetResourceTags: { [key: string]: string[] } | cdktn.IResolvable;
 }

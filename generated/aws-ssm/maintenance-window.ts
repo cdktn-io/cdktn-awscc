@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,73 @@ export interface CcMaintenanceWindowProps extends cdktn.TerraformMetaArguments {
     /**
     * Enables a maintenance window task to run on managed instances, even if you have not registered those instances as targets. If enabled, then you must specify the unregistered instances (by instance ID) when you register a task with the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets CcMaintenanceWindow#allow_unassociated_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets CcMaintenanceWindow#allow_unassociated_targets}
     */
     readonly allowUnassociatedTargets: boolean | cdktn.IResolvable;
     /**
     * The number of hours before the end of the maintenance window that AWS Systems Manager stops scheduling new tasks for execution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#cutoff CcMaintenanceWindow#cutoff}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#cutoff CcMaintenanceWindow#cutoff}
     */
     readonly cutoff: number;
     /**
     * A description of the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#description CcMaintenanceWindow#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#description CcMaintenanceWindow#description}
     */
     readonly description?: string;
     /**
     * The duration of the maintenance window in hours.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#duration CcMaintenanceWindow#duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#duration CcMaintenanceWindow#duration}
     */
     readonly duration: number;
     /**
     * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become inactive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#end_date CcMaintenanceWindow#end_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#end_date CcMaintenanceWindow#end_date}
     */
     readonly endDate?: string;
     /**
     * The name of the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#name CcMaintenanceWindow#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#name CcMaintenanceWindow#name}
     */
     readonly name: string;
     /**
     * The schedule of the maintenance window in the form of a cron or rate expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#schedule CcMaintenanceWindow#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#schedule CcMaintenanceWindow#schedule}
     */
     readonly schedule: string;
     /**
     * The number of days to wait to run a maintenance window after the scheduled cron expression date and time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#schedule_offset CcMaintenanceWindow#schedule_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#schedule_offset CcMaintenanceWindow#schedule_offset}
     */
     readonly scheduleOffset?: number;
     /**
     * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#schedule_timezone CcMaintenanceWindow#schedule_timezone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#schedule_timezone CcMaintenanceWindow#schedule_timezone}
     */
     readonly scheduleTimezone?: string;
     /**
     * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become active. StartDate allows you to delay activation of the maintenance window until the specified future date.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#start_date CcMaintenanceWindow#start_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#start_date CcMaintenanceWindow#start_date}
     */
     readonly startDate?: string;
     /**
     * Optional metadata that you assign to a resource in the form of an arbitrary set of tags (key-value pairs). Tags enable you to categorize a resource in different ways, such as by purpose, owner, or environment. For example, you might want to tag a maintenance window to identify the type of tasks it will run, the types of targets, and the environment it will run in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#tags CcMaintenanceWindow#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#tags CcMaintenanceWindow#tags}
     */
     readonly tags?: CcMaintenanceWindow.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window awscc_ssm_maintenance_window}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window awscc_ssm_maintenance_window}
 */
 export class CcMaintenanceWindow extends cdktn.TerraformResource {
 
@@ -91,7 +91,7 @@ export class CcMaintenanceWindow extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMaintenanceWindow resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMaintenanceWindow to import
-    * @param importFromId The id of the existing CcMaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMaintenanceWindow to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +103,7 @@ export class CcMaintenanceWindow extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window awscc_ssm_maintenance_window} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window awscc_ssm_maintenance_window} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class CcMaintenanceWindow extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssm_maintenance_window',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -449,13 +449,13 @@ export interface TagProperty {
     /**
     * The name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#key CcMaintenanceWindow#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#key CcMaintenanceWindow#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_maintenance_window#value CcMaintenanceWindow#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_maintenance_window#value CcMaintenanceWindow#value}
     */
     readonly value?: string;
 }

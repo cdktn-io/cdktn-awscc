@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcDataCellsFilterProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of columns to be included in this Data Cells Filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#column_names CcDataCellsFilter#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#column_names CcDataCellsFilter#column_names}
     */
     readonly columnNames?: string[];
     /**
     * An object representing the Data Cells Filter's Columns. Either Column Names or a Wildcard is required
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#column_wildcard CcDataCellsFilter#column_wildcard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#column_wildcard CcDataCellsFilter#column_wildcard}
     */
     readonly columnWildcard?: CcDataCellsFilter.ColumnWildcardProperty;
     /**
     * The name of the Database that the Table resides in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#database_name CcDataCellsFilter#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#database_name CcDataCellsFilter#database_name}
     */
     readonly databaseName: string;
     /**
     * The desired name of the Data Cells Filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#name CcDataCellsFilter#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#name CcDataCellsFilter#name}
     */
     readonly name: string;
     /**
     * An object representing the Data Cells Filter's Row Filter. Either a Filter Expression or a Wildcard is required
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#row_filter CcDataCellsFilter#row_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#row_filter CcDataCellsFilter#row_filter}
     */
     readonly rowFilter?: CcDataCellsFilter.RowFilterProperty;
     /**
     * The Catalog Id of the Table on which to create a Data Cells Filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id CcDataCellsFilter#table_catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id CcDataCellsFilter#table_catalog_id}
     */
     readonly tableCatalogId: string;
     /**
     * The name of the Table to create a Data Cells Filter for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#table_name CcDataCellsFilter#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#table_name CcDataCellsFilter#table_name}
     */
     readonly tableName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter awscc_lakeformation_data_cells_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter awscc_lakeformation_data_cells_filter}
 */
 export class CcDataCellsFilter extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcDataCellsFilter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataCellsFilter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataCellsFilter to import
-    * @param importFromId The id of the existing CcDataCellsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataCellsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataCellsFilter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcDataCellsFilter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter awscc_lakeformation_data_cells_filter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter awscc_lakeformation_data_cells_filter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcDataCellsFilter extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lakeformation_data_cells_filter',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -357,7 +357,7 @@ export interface ColumnWildcardProperty {
     /**
     * A list of column names to be excluded from the Data Cells Filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names CcDataCellsFilter#excluded_column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names CcDataCellsFilter#excluded_column_names}
     */
     readonly excludedColumnNames?: string[];
 }
@@ -423,13 +423,13 @@ export interface RowFilterProperty {
     /**
     * An empty object representing a row wildcard.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#all_rows_wildcard CcDataCellsFilter#all_rows_wildcard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#all_rows_wildcard CcDataCellsFilter#all_rows_wildcard}
     */
     readonly allRowsWildcard?: string;
     /**
     * A PartiQL predicate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lakeformation_data_cells_filter#filter_expression CcDataCellsFilter#filter_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_data_cells_filter#filter_expression CcDataCellsFilter#filter_expression}
     */
     readonly filterExpression?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,7 +9,7 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Major version upgrades can be applied during the maintenance window to the Amazon Redshift engine that is running on the cluster. Default value is True
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#allow_version_upgrade CcCluster#allow_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#allow_version_upgrade CcCluster#allow_version_upgrade}
     */
     readonly allowVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
@@ -20,125 +20,125 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * auto - Amazon Redshift determines whether to use AQUA.
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#aqua_configuration_status CcCluster#aqua_configuration_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#aqua_configuration_status CcCluster#aqua_configuration_status}
     */
     readonly aquaConfigurationStatus?: string;
     /**
     * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Default value is 1
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#automated_snapshot_retention_period CcCluster#automated_snapshot_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#automated_snapshot_retention_period CcCluster#automated_snapshot_retention_period}
     */
     readonly automatedSnapshotRetentionPeriod?: number;
     /**
     * The EC2 Availability Zone (AZ) in which you want Amazon Redshift to provision the cluster. Default: A random, system-chosen Availability Zone in the region that is specified by the endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#availability_zone CcCluster#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#availability_zone CcCluster#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The option to enable relocation for an Amazon Redshift cluster between Availability Zones after the cluster modification is complete.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#availability_zone_relocation CcCluster#availability_zone_relocation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#availability_zone_relocation CcCluster#availability_zone_relocation}
     */
     readonly availabilityZoneRelocation?: boolean | cdktn.IResolvable;
     /**
     * The availability zone relocation status of the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#availability_zone_relocation_status CcCluster#availability_zone_relocation_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#availability_zone_relocation_status CcCluster#availability_zone_relocation_status}
     */
     readonly availabilityZoneRelocationStatus?: string;
     /**
     * A boolean value indicating whether the resize operation is using the classic resize process. If you don't provide this parameter or set the value to false , the resize type is elastic.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#classic CcCluster#classic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#classic CcCluster#classic}
     */
     readonly classic?: boolean | cdktn.IResolvable;
     /**
     * A unique identifier for the cluster. You use this identifier to refer to the cluster for any subsequent cluster operations such as deleting or modifying. All alphabetical characters must be lower case, no hypens at the end, no two consecutive hyphens. Cluster name should be unique for all clusters within an AWS account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_identifier CcCluster#cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_identifier CcCluster#cluster_identifier}
     */
     readonly clusterIdentifier?: string;
     /**
     * The name of the parameter group to be associated with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_parameter_group_name CcCluster#cluster_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_parameter_group_name CcCluster#cluster_parameter_group_name}
     */
     readonly clusterParameterGroupName?: string;
     /**
     * A list of security groups to be associated with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_security_groups CcCluster#cluster_security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_security_groups CcCluster#cluster_security_groups}
     */
     readonly clusterSecurityGroups?: string[];
     /**
     * The name of a cluster subnet group to be associated with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_subnet_group_name CcCluster#cluster_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_subnet_group_name CcCluster#cluster_subnet_group_name}
     */
     readonly clusterSubnetGroupName?: string;
     /**
     * The type of the cluster. When cluster type is specified as single-node, the NumberOfNodes parameter is not required and if multi-node, the NumberOfNodes parameter is required
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_type CcCluster#cluster_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_type CcCluster#cluster_type}
     */
     readonly clusterType: string;
     /**
     * The version of the Amazon Redshift engine software that you want to deploy on the cluster.The version selected runs on all the nodes in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#cluster_version CcCluster#cluster_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#cluster_version CcCluster#cluster_version}
     */
     readonly clusterVersion?: string;
     /**
     * The name of the first database to be created when the cluster is created. To create additional databases after the cluster is created, connect to the cluster with a SQL client and use SQL commands to create a database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#db_name CcCluster#db_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#db_name CcCluster#db_name}
     */
     readonly dbName: string;
     /**
     * A boolean indicating whether to enable the deferred maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#defer_maintenance CcCluster#defer_maintenance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#defer_maintenance CcCluster#defer_maintenance}
     */
     readonly deferMaintenance?: boolean | cdktn.IResolvable;
     /**
     * An integer indicating the duration of the maintenance window in days. If you specify a duration, you can't specify an end time. The duration must be 60 days or less.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#defer_maintenance_duration CcCluster#defer_maintenance_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#defer_maintenance_duration CcCluster#defer_maintenance_duration}
     */
     readonly deferMaintenanceDuration?: number;
     /**
     * A timestamp indicating end time for the deferred maintenance window. If you specify an end time, you can't specify a duration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#defer_maintenance_end_time CcCluster#defer_maintenance_end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#defer_maintenance_end_time CcCluster#defer_maintenance_end_time}
     */
     readonly deferMaintenanceEndTime?: string;
     /**
     * A timestamp indicating the start time for the deferred maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#defer_maintenance_start_time CcCluster#defer_maintenance_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#defer_maintenance_start_time CcCluster#defer_maintenance_start_time}
     */
     readonly deferMaintenanceStartTime?: string;
     /**
     * The destination AWS Region that you want to copy snapshots to. Constraints: Must be the name of a valid AWS Region. For more information, see Regions and Endpoints in the Amazon Web Services [https://docs.aws.amazon.com/general/latest/gr/rande.html#redshift_region] General Reference
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#destination_region CcCluster#destination_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#destination_region CcCluster#destination_region}
     */
     readonly destinationRegion?: string;
     /**
     * The Elastic IP (EIP) address for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#elastic_ip CcCluster#elastic_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#elastic_ip CcCluster#elastic_ip}
     */
     readonly elasticIp?: string;
     /**
     * If true, the data in the cluster is encrypted at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#encrypted CcCluster#encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#encrypted CcCluster#encrypted}
     */
     readonly encrypted?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#endpoint CcCluster#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#endpoint CcCluster#endpoint}
     */
     readonly endpoint?: CcCluster.EndpointProperty;
     /**
@@ -148,47 +148,47 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * Default: false
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#enhanced_vpc_routing CcCluster#enhanced_vpc_routing}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#enhanced_vpc_routing CcCluster#enhanced_vpc_routing}
     */
     readonly enhancedVpcRouting?: boolean | cdktn.IResolvable;
     /**
     * Specifies the name of the HSM client certificate the Amazon Redshift cluster uses to retrieve the data encryption keys stored in an HSM
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#hsm_client_certificate_identifier CcCluster#hsm_client_certificate_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#hsm_client_certificate_identifier CcCluster#hsm_client_certificate_identifier}
     */
     readonly hsmClientCertificateIdentifier?: string;
     /**
     * Specifies the name of the HSM configuration that contains the information the Amazon Redshift cluster can use to retrieve and store keys in an HSM.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#hsm_configuration_identifier CcCluster#hsm_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#hsm_configuration_identifier CcCluster#hsm_configuration_identifier}
     */
     readonly hsmConfigurationIdentifier?: string;
     /**
     * A list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. You must supply the IAM roles in their Amazon Resource Name (ARN) format. You can supply up to 50 IAM roles in a single request
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#iam_roles CcCluster#iam_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#iam_roles CcCluster#iam_roles}
     */
     readonly iamRoles?: string[];
     /**
     * The AWS Key Management Service (KMS) key ID of the encryption key that you want to use to encrypt data in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#kms_key_id CcCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#kms_key_id CcCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#logging_properties CcCluster#logging_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#logging_properties CcCluster#logging_properties}
     */
     readonly loggingProperties?: CcCluster.LoggingPropertiesProperty;
     /**
     * The name for the maintenance track that you want to assign for the cluster. This name change is asynchronous. The new track name stays in the PendingModifiedValues for the cluster until the next maintenance window. When the maintenance track changes, the cluster is switched to the latest cluster release available for the maintenance track. At this point, the maintenance track name is applied.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#maintenance_track_name CcCluster#maintenance_track_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#maintenance_track_name CcCluster#maintenance_track_name}
     */
     readonly maintenanceTrackName?: string;
     /**
     * A boolean indicating if the redshift cluster's admin user credentials is managed by Redshift or not. You can't use MasterUserPassword if ManageMasterPassword is true. If ManageMasterPassword is false or not set, Amazon Redshift uses MasterUserPassword for the admin user account's password.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#manage_master_password CcCluster#manage_master_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#manage_master_password CcCluster#manage_master_password}
     */
     readonly manageMasterPassword?: boolean | cdktn.IResolvable;
     /**
@@ -196,107 +196,107 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * The value must be either -1 or an integer between 1 and 3,653.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#manual_snapshot_retention_period CcCluster#manual_snapshot_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#manual_snapshot_retention_period CcCluster#manual_snapshot_retention_period}
     */
     readonly manualSnapshotRetentionPeriod?: number;
     /**
     * The ID of the Key Management Service (KMS) key used to encrypt and store the cluster's admin user credentials secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id CcCluster#master_password_secret_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id CcCluster#master_password_secret_kms_key_id}
     */
     readonly masterPasswordSecretKmsKeyId?: string;
     /**
     * The password associated with the master user account for the cluster that is being created. You can't use MasterUserPassword if ManageMasterPassword is true. Password must be between 8 and 64 characters in length, should have at least one uppercase letter.Must contain at least one lowercase letter.Must contain one number.Can be any printable ASCII character.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#master_user_password CcCluster#master_user_password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#master_user_password CcCluster#master_user_password}
     */
     readonly masterUserPassword?: string;
     /**
     * The user name associated with the master user account for the cluster that is being created. The user name can't be PUBLIC and first character must be a letter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#master_username CcCluster#master_username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#master_username CcCluster#master_username}
     */
     readonly masterUsername: string;
     /**
     * A boolean indicating if the redshift cluster is multi-az or not. If you don't provide this parameter or set the value to false, the redshift cluster will be single-az.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#multi_az CcCluster#multi_az}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#multi_az CcCluster#multi_az}
     */
     readonly multiAz?: boolean | cdktn.IResolvable;
     /**
     * The namespace resource policy document that will be attached to a Redshift cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#namespace_resource_policy CcCluster#namespace_resource_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#namespace_resource_policy CcCluster#namespace_resource_policy}
     */
     readonly namespaceResourcePolicy?: string;
     /**
     * The node type to be provisioned for the cluster.Valid Values: ds2.xlarge | ds2.8xlarge | dc1.large | dc1.8xlarge | dc2.large | dc2.8xlarge | ra3.large | ra3.4xlarge | ra3.16xlarge | rg.large | rg.xlarge | rg.4xlarge | rg.12xlarge
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#node_type CcCluster#node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#node_type CcCluster#node_type}
     */
     readonly nodeType: string;
     /**
     * The number of compute nodes in the cluster. This parameter is required when the ClusterType parameter is specified as multi-node.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#number_of_nodes CcCluster#number_of_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#number_of_nodes CcCluster#number_of_nodes}
     */
     readonly numberOfNodes?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#owner_account CcCluster#owner_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#owner_account CcCluster#owner_account}
     */
     readonly ownerAccount?: string;
     /**
     * The port number on which the cluster accepts incoming connections. The cluster is accessible only via the JDBC and ODBC connection strings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#port CcCluster#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#port CcCluster#port}
     */
     readonly port?: number;
     /**
     * The weekly time range (in UTC) during which automated cluster maintenance can occur.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#preferred_maintenance_window CcCluster#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#preferred_maintenance_window CcCluster#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * If true, the cluster can be accessed from a public network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#publicly_accessible CcCluster#publicly_accessible}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#publicly_accessible CcCluster#publicly_accessible}
     */
     readonly publiclyAccessible?: boolean | cdktn.IResolvable;
     /**
     * The Redshift operation to be performed. Resource Action supports pause-cluster, resume-cluster, failover-primary-compute APIs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#resource_action CcCluster#resource_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#resource_action CcCluster#resource_action}
     */
     readonly resourceAction?: string;
     /**
     * The identifier of the database revision. You can retrieve this value from the response to the DescribeClusterDbRevisions request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#revision_target CcCluster#revision_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#revision_target CcCluster#revision_target}
     */
     readonly revisionTarget?: string;
     /**
     * A boolean indicating if we want to rotate Encryption Keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#rotate_encryption_key CcCluster#rotate_encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#rotate_encryption_key CcCluster#rotate_encryption_key}
     */
     readonly rotateEncryptionKey?: boolean | cdktn.IResolvable;
     /**
     * The name of the cluster the source snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#snapshot_cluster_identifier CcCluster#snapshot_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#snapshot_cluster_identifier CcCluster#snapshot_cluster_identifier}
     */
     readonly snapshotClusterIdentifier?: string;
     /**
     * The name of the snapshot copy grant to use when snapshots of an AWS KMS-encrypted cluster are copied to the destination region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#snapshot_copy_grant_name CcCluster#snapshot_copy_grant_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#snapshot_copy_grant_name CcCluster#snapshot_copy_grant_name}
     */
     readonly snapshotCopyGrantName?: string;
     /**
     * Indicates whether to apply the snapshot retention period to newly copied manual snapshots instead of automated snapshots.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#snapshot_copy_manual CcCluster#snapshot_copy_manual}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#snapshot_copy_manual CcCluster#snapshot_copy_manual}
     */
     readonly snapshotCopyManual?: boolean | cdktn.IResolvable;
     /**
@@ -306,31 +306,31 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     * 
     *  Constraints: Must be at least 1 and no more than 35.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#snapshot_copy_retention_period CcCluster#snapshot_copy_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#snapshot_copy_retention_period CcCluster#snapshot_copy_retention_period}
     */
     readonly snapshotCopyRetentionPeriod?: number;
     /**
     * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#snapshot_identifier CcCluster#snapshot_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#snapshot_identifier CcCluster#snapshot_identifier}
     */
     readonly snapshotIdentifier?: string;
     /**
     * The list of tags for the cluster parameter group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#vpc_security_group_ids CcCluster#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#vpc_security_group_ids CcCluster#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster awscc_redshift_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster awscc_redshift_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -346,7 +346,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -358,7 +358,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster awscc_redshift_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster awscc_redshift_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -369,7 +369,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_redshift_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1819,19 +1819,19 @@ export class EndpointPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface LoggingPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#bucket_name CcCluster#bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#bucket_name CcCluster#bucket_name}
     */
     readonly bucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#log_destination_type CcCluster#log_destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#log_destination_type CcCluster#log_destination_type}
     */
     readonly logDestinationType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#log_exports CcCluster#log_exports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#log_exports CcCluster#log_exports}
     */
     readonly logExports?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#s3_key_prefix CcCluster#s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#s3_key_prefix CcCluster#s3_key_prefix}
     */
     readonly s3KeyPrefix?: string;
 }
@@ -1963,13 +1963,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/redshift_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/redshift_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }

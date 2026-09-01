@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * If set to true, the managed policies for SSM and CW will be attached to the instance roles if they are missing
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#attach_missing_permission CcApplication#attach_missing_permission}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#attach_missing_permission CcApplication#attach_missing_permission}
     */
     readonly attachMissingPermission?: boolean | cdktn.IResolvable;
     /**
     * If set to true, application will be configured with recommended monitoring configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#auto_configuration_enabled CcApplication#auto_configuration_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#auto_configuration_enabled CcApplication#auto_configuration_enabled}
     */
     readonly autoConfigurationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The monitoring settings of the components.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#component_monitoring_settings CcApplication#component_monitoring_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#component_monitoring_settings CcApplication#component_monitoring_settings}
     */
     readonly componentMonitoringSettings?: CcApplication.ComponentMonitoringSettingProperty[] | cdktn.IResolvable;
     /**
     * The custom grouped components.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#custom_components CcApplication#custom_components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#custom_components CcApplication#custom_components}
     */
     readonly customComponents?: CcApplication.CustomComponentProperty[] | cdktn.IResolvable;
     /**
     * Indicates whether Application Insights can listen to CloudWatch events for the application resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#cwe_monitor_enabled CcApplication#cwe_monitor_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#cwe_monitor_enabled CcApplication#cwe_monitor_enabled}
     */
     readonly cweMonitorEnabled?: boolean | cdktn.IResolvable;
     /**
     * The grouping type of the application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#grouping_type CcApplication#grouping_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#grouping_type CcApplication#grouping_type}
     */
     readonly groupingType?: string;
     /**
     * The log pattern sets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_pattern_sets CcApplication#log_pattern_sets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_pattern_sets CcApplication#log_pattern_sets}
     */
     readonly logPatternSets?: CcApplication.LogPatternSetProperty[] | cdktn.IResolvable;
     /**
     * When set to true, creates opsItems for any problems detected on an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#ops_center_enabled CcApplication#ops_center_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#ops_center_enabled CcApplication#ops_center_enabled}
     */
     readonly opsCenterEnabled?: boolean | cdktn.IResolvable;
     /**
     * The SNS topic provided to Application Insights that is associated to the created opsItem.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#ops_item_sns_topic_arn CcApplication#ops_item_sns_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#ops_item_sns_topic_arn CcApplication#ops_item_sns_topic_arn}
     */
     readonly opsItemSnsTopicArn?: string;
     /**
     * The name of the resource group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#resource_group_name CcApplication#resource_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#resource_group_name CcApplication#resource_group_name}
     */
     readonly resourceGroupName: string;
     /**
     * Application Insights sends notifications to this SNS topic whenever there is a problem update in the associated application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sns_notification_arn CcApplication#sns_notification_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sns_notification_arn CcApplication#sns_notification_arn}
     */
     readonly snsNotificationArn?: string;
     /**
     * The tags of Application Insights application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application awscc_applicationinsights_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application awscc_applicationinsights_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application awscc_applicationinsights_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application awscc_applicationinsights_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_applicationinsights_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2434,7 +2434,7 @@ export interface AlarmMetricProperty {
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -2522,13 +2522,13 @@ export interface AlarmProperty {
     /**
     * The name of the CloudWatch alarm to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_name CcApplication#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_name CcApplication#alarm_name}
     */
     readonly alarmName?: string;
     /**
     * Indicates the degree of outage when the alarm goes off.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#severity CcApplication#severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#severity CcApplication#severity}
     */
     readonly severity?: string;
 }
@@ -2638,7 +2638,7 @@ export interface HAClusterPrometheusExporterProperty {
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -2704,13 +2704,13 @@ export interface HANAPrometheusExporterProperty {
     /**
     * A flag which indicates agreeing to install SAP HANA DB client.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#agree_to_install_hanadb_client CcApplication#agree_to_install_hanadb_client}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#agree_to_install_hanadb_client CcApplication#agree_to_install_hanadb_client}
     */
     readonly agreeToInstallHanadbClient?: boolean | cdktn.IResolvable;
     /**
     * The HANA DB port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_port CcApplication#hana_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_port CcApplication#hana_port}
     */
     readonly hanaPort?: string;
     /**
@@ -2719,19 +2719,19 @@ export interface HANAPrometheusExporterProperty {
     *   "password": "<>"
     * }.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_secret_name CcApplication#hana_secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_secret_name CcApplication#hana_secret_name}
     */
     readonly hanaSecretName?: string;
     /**
     * HANA DB SID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hanasid CcApplication#hanasid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hanasid CcApplication#hanasid}
     */
     readonly hanasid?: string;
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -2885,19 +2885,19 @@ export interface JMXPrometheusExporterProperty {
     /**
     * Java agent host port
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#host_port CcApplication#host_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#host_port CcApplication#host_port}
     */
     readonly hostPort?: string;
     /**
     * JMX service URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#jmxurl CcApplication#jmxurl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#jmxurl CcApplication#jmxurl}
     */
     readonly jmxurl?: string;
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -3007,31 +3007,31 @@ export interface LogProperty {
     /**
     * The type of encoding of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
     */
     readonly encoding?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The path of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
     */
     readonly logPath?: string;
     /**
     * The log type decides the log patterns against which Application Insights analyzes the log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
     */
     readonly logType?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -3207,19 +3207,19 @@ export interface NetWeaverPrometheusExporterProperty {
     /**
     * SAP instance numbers for ASCS, ERS, and App Servers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#instance_numbers CcApplication#instance_numbers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#instance_numbers CcApplication#instance_numbers}
     */
     readonly instanceNumbers?: string[];
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
     /**
     * SAP NetWeaver SID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sapsid CcApplication#sapsid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sapsid CcApplication#sapsid}
     */
     readonly sapsid?: string;
 }
@@ -3329,7 +3329,7 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationConfigur
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -3417,13 +3417,13 @@ export interface ProcessProperty {
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsCustomComponentConfigurationConfigurationDetailsProcessesAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * The name of the process to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
     */
     readonly processName?: string;
 }
@@ -3533,13 +3533,13 @@ export interface SQLServerPrometheusExporterProperty {
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
     /**
     * Secret name which managers SQL exporter connection. e.g. {"data_source_name": "sqlserver://<USERNAME>:<PASSWORD>@localhost:1433"}
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sql_secret_name CcApplication#sql_secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sql_secret_name CcApplication#sql_secret_name}
     */
     readonly sqlSecretName?: string;
 }
@@ -3627,25 +3627,25 @@ export interface WindowsEventProperty {
     /**
     * The levels of event to log. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
     */
     readonly eventLevels?: string[];
     /**
     * The type of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
     */
     readonly eventName?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -3799,61 +3799,61 @@ export interface ConfigurationDetailsProperty {
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: AlarmMetricProperty[] | cdktn.IResolvable;
     /**
     * A list of alarms to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarms CcApplication#alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarms CcApplication#alarms}
     */
     readonly alarms?: AlarmProperty[] | cdktn.IResolvable;
     /**
     * The HA cluster Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#ha_cluster_prometheus_exporter CcApplication#ha_cluster_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#ha_cluster_prometheus_exporter CcApplication#ha_cluster_prometheus_exporter}
     */
     readonly haClusterPrometheusExporter?: HAClusterPrometheusExporterProperty;
     /**
     * The HANA DB Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_prometheus_exporter CcApplication#hana_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_prometheus_exporter CcApplication#hana_prometheus_exporter}
     */
     readonly hanaPrometheusExporter?: HANAPrometheusExporterProperty;
     /**
     * The JMX Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#jmx_prometheus_exporter CcApplication#jmx_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#jmx_prometheus_exporter CcApplication#jmx_prometheus_exporter}
     */
     readonly jmxPrometheusExporter?: JMXPrometheusExporterProperty;
     /**
     * A list of logs to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
     */
     readonly logs?: LogProperty[] | cdktn.IResolvable;
     /**
     * The NetWeaver Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#net_weaver_prometheus_exporter CcApplication#net_weaver_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#net_weaver_prometheus_exporter CcApplication#net_weaver_prometheus_exporter}
     */
     readonly netWeaverPrometheusExporter?: NetWeaverPrometheusExporterProperty;
     /**
     * A list of processes to monitor for the component. Only Windows EC2 instances can have a processes section.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
     */
     readonly processes?: ProcessProperty[] | cdktn.IResolvable;
     /**
     * The SQL Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sql_server_prometheus_exporter CcApplication#sql_server_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sql_server_prometheus_exporter CcApplication#sql_server_prometheus_exporter}
     */
     readonly sqlServerPrometheusExporter?: SQLServerPrometheusExporterProperty;
     /**
     * A list of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
     */
     readonly windowsEvents?: WindowsEventProperty[] | cdktn.IResolvable;
 }
@@ -4117,7 +4117,7 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationSubCompo
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -4205,31 +4205,31 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationSubCompo
     /**
     * The type of encoding of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
     */
     readonly encoding?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The path of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
     */
     readonly logPath?: string;
     /**
     * The log type decides the log patterns against which Application Insights analyzes the log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
     */
     readonly logType?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -4405,7 +4405,7 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationSubCompo
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -4493,13 +4493,13 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationSubCompo
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsCustomComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsProcessesAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * The name of the process to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
     */
     readonly processName?: string;
 }
@@ -4609,25 +4609,25 @@ export interface ComponentMonitoringSettingsCustomComponentConfigurationSubCompo
     /**
     * The levels of event to log. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
     */
     readonly eventLevels?: string[];
     /**
     * The type of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
     */
     readonly eventName?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -4781,25 +4781,25 @@ export interface SubComponentConfigurationDetailsProperty {
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsCustomComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * A list of logs to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
     */
     readonly logs?: ComponentMonitoringSettingsCustomComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsLogsProperty[] | cdktn.IResolvable;
     /**
     * A list of processes to monitor for the component. Only Windows EC2 instances can have a processes section.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
     */
     readonly processes?: ComponentMonitoringSettingsCustomComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsProcessesProperty[] | cdktn.IResolvable;
     /**
     * A list of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
     */
     readonly windowsEvents?: ComponentMonitoringSettingsCustomComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsWindowsEventsProperty[] | cdktn.IResolvable;
 }
@@ -4931,13 +4931,13 @@ export interface SubComponentTypeConfigurationProperty {
     /**
     * The configuration settings of sub components.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_configuration_details CcApplication#sub_component_configuration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_configuration_details CcApplication#sub_component_configuration_details}
     */
     readonly subComponentConfigurationDetails?: SubComponentConfigurationDetailsProperty;
     /**
     * The sub component type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_type CcApplication#sub_component_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_type CcApplication#sub_component_type}
     */
     readonly subComponentType?: string;
 }
@@ -5047,13 +5047,13 @@ export interface ComponentConfigurationProperty {
     /**
     * The configuration settings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#configuration_details CcApplication#configuration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#configuration_details CcApplication#configuration_details}
     */
     readonly configurationDetails?: ConfigurationDetailsProperty;
     /**
     * Sub component configurations of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_type_configurations CcApplication#sub_component_type_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_type_configurations CcApplication#sub_component_type_configurations}
     */
     readonly subComponentTypeConfigurations?: SubComponentTypeConfigurationProperty[] | cdktn.IResolvable;
 }
@@ -5141,7 +5141,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -5229,13 +5229,13 @@ export interface AlarmsProperty {
     /**
     * The name of the CloudWatch alarm to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_name CcApplication#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_name CcApplication#alarm_name}
     */
     readonly alarmName?: string;
     /**
     * Indicates the degree of outage when the alarm goes off.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#severity CcApplication#severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#severity CcApplication#severity}
     */
     readonly severity?: string;
 }
@@ -5345,7 +5345,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -5411,13 +5411,13 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * A flag which indicates agreeing to install SAP HANA DB client.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#agree_to_install_hanadb_client CcApplication#agree_to_install_hanadb_client}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#agree_to_install_hanadb_client CcApplication#agree_to_install_hanadb_client}
     */
     readonly agreeToInstallHanadbClient?: boolean | cdktn.IResolvable;
     /**
     * The HANA DB port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_port CcApplication#hana_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_port CcApplication#hana_port}
     */
     readonly hanaPort?: string;
     /**
@@ -5426,19 +5426,19 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     *   "password": "<>"
     * }.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_secret_name CcApplication#hana_secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_secret_name CcApplication#hana_secret_name}
     */
     readonly hanaSecretName?: string;
     /**
     * HANA DB SID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hanasid CcApplication#hanasid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hanasid CcApplication#hanasid}
     */
     readonly hanasid?: string;
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -5592,19 +5592,19 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * Java agent host port
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#host_port CcApplication#host_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#host_port CcApplication#host_port}
     */
     readonly hostPort?: string;
     /**
     * JMX service URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#jmxurl CcApplication#jmxurl}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#jmxurl CcApplication#jmxurl}
     */
     readonly jmxurl?: string;
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
 }
@@ -5714,31 +5714,31 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The type of encoding of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
     */
     readonly encoding?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The path of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
     */
     readonly logPath?: string;
     /**
     * The log type decides the log patterns against which Application Insights analyzes the log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
     */
     readonly logType?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -5914,19 +5914,19 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * SAP instance numbers for ASCS, ERS, and App Servers.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#instance_numbers CcApplication#instance_numbers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#instance_numbers CcApplication#instance_numbers}
     */
     readonly instanceNumbers?: string[];
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
     /**
     * SAP NetWeaver SID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sapsid CcApplication#sapsid}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sapsid CcApplication#sapsid}
     */
     readonly sapsid?: string;
 }
@@ -6036,7 +6036,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -6124,13 +6124,13 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProcessesAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * The name of the process to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
     */
     readonly processName?: string;
 }
@@ -6240,13 +6240,13 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * Prometheus exporter port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#prometheus_port CcApplication#prometheus_port}
     */
     readonly prometheusPort?: string;
     /**
     * Secret name which managers SQL exporter connection. e.g. {"data_source_name": "sqlserver://<USERNAME>:<PASSWORD>@localhost:1433"}
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sql_secret_name CcApplication#sql_secret_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sql_secret_name CcApplication#sql_secret_name}
     */
     readonly sqlSecretName?: string;
 }
@@ -6334,25 +6334,25 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The levels of event to log. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
     */
     readonly eventLevels?: string[];
     /**
     * The type of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
     */
     readonly eventName?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -6506,61 +6506,61 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * A list of alarms to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarms CcApplication#alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarms CcApplication#alarms}
     */
     readonly alarms?: AlarmsProperty[] | cdktn.IResolvable;
     /**
     * The HA cluster Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#ha_cluster_prometheus_exporter CcApplication#ha_cluster_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#ha_cluster_prometheus_exporter CcApplication#ha_cluster_prometheus_exporter}
     */
     readonly haClusterPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHaClusterPrometheusExporterProperty;
     /**
     * The HANA DB Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#hana_prometheus_exporter CcApplication#hana_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#hana_prometheus_exporter CcApplication#hana_prometheus_exporter}
     */
     readonly hanaPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsHanaPrometheusExporterProperty;
     /**
     * The JMX Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#jmx_prometheus_exporter CcApplication#jmx_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#jmx_prometheus_exporter CcApplication#jmx_prometheus_exporter}
     */
     readonly jmxPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsJmxPrometheusExporterProperty;
     /**
     * A list of logs to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
     */
     readonly logs?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsLogsProperty[] | cdktn.IResolvable;
     /**
     * The NetWeaver Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#net_weaver_prometheus_exporter CcApplication#net_weaver_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#net_weaver_prometheus_exporter CcApplication#net_weaver_prometheus_exporter}
     */
     readonly netWeaverPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsNetWeaverPrometheusExporterProperty;
     /**
     * A list of processes to monitor for the component. Only Windows EC2 instances can have a processes section.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
     */
     readonly processes?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProcessesProperty[] | cdktn.IResolvable;
     /**
     * The SQL Prometheus Exporter settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sql_server_prometheus_exporter CcApplication#sql_server_prometheus_exporter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sql_server_prometheus_exporter CcApplication#sql_server_prometheus_exporter}
     */
     readonly sqlServerPrometheusExporter?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsSqlServerPrometheusExporterProperty;
     /**
     * A list of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
     */
     readonly windowsEvents?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsWindowsEventsProperty[] | cdktn.IResolvable;
 }
@@ -6824,7 +6824,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -6912,31 +6912,31 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The type of encoding of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#encoding CcApplication#encoding}
     */
     readonly encoding?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The path of the logs to be monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_path CcApplication#log_path}
     */
     readonly logPath?: string;
     /**
     * The log type decides the log patterns against which Application Insights analyzes the log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_type CcApplication#log_type}
     */
     readonly logType?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -7112,7 +7112,7 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The name of the metric to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metric_name CcApplication#alarm_metric_name}
     */
     readonly alarmMetricName?: string;
 }
@@ -7200,13 +7200,13 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsProcessesAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * The name of the process to be monitored for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#process_name CcApplication#process_name}
     */
     readonly processName?: string;
 }
@@ -7316,25 +7316,25 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * The levels of event to log. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_levels CcApplication#event_levels}
     */
     readonly eventLevels?: string[];
     /**
     * The type of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#event_name CcApplication#event_name}
     */
     readonly eventName?: string;
     /**
     * The CloudWatch log group name to be associated to the monitored log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_group_name CcApplication#log_group_name}
     */
     readonly logGroupName?: string;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set CcApplication#pattern_set}
     */
     readonly patternSet?: string;
 }
@@ -7488,25 +7488,25 @@ export interface ComponentMonitoringSettingsDefaultOverwriteComponentConfigurati
     /**
     * A list of metrics to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#alarm_metrics CcApplication#alarm_metrics}
     */
     readonly alarmMetrics?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsAlarmMetricsProperty[] | cdktn.IResolvable;
     /**
     * A list of logs to monitor for the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#logs CcApplication#logs}
     */
     readonly logs?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsLogsProperty[] | cdktn.IResolvable;
     /**
     * A list of processes to monitor for the component. Only Windows EC2 instances can have a processes section.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#processes CcApplication#processes}
     */
     readonly processes?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsProcessesProperty[] | cdktn.IResolvable;
     /**
     * A list of Windows Events to log.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#windows_events CcApplication#windows_events}
     */
     readonly windowsEvents?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsWindowsEventsProperty[] | cdktn.IResolvable;
 }
@@ -7638,13 +7638,13 @@ export interface SubComponentTypeConfigurationsProperty {
     /**
     * The configuration settings of sub components.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_configuration_details CcApplication#sub_component_configuration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_configuration_details CcApplication#sub_component_configuration_details}
     */
     readonly subComponentConfigurationDetails?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationSubComponentTypeConfigurationsSubComponentConfigurationDetailsProperty;
     /**
     * The sub component type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_type CcApplication#sub_component_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_type CcApplication#sub_component_type}
     */
     readonly subComponentType?: string;
 }
@@ -7754,13 +7754,13 @@ export interface DefaultOverwriteComponentConfigurationProperty {
     /**
     * The configuration settings
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#configuration_details CcApplication#configuration_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#configuration_details CcApplication#configuration_details}
     */
     readonly configurationDetails?: ComponentMonitoringSettingsDefaultOverwriteComponentConfigurationConfigurationDetailsProperty;
     /**
     * Sub component configurations of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#sub_component_type_configurations CcApplication#sub_component_type_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#sub_component_type_configurations CcApplication#sub_component_type_configurations}
     */
     readonly subComponentTypeConfigurations?: SubComponentTypeConfigurationsProperty[] | cdktn.IResolvable;
 }
@@ -7848,37 +7848,37 @@ export interface ComponentMonitoringSettingProperty {
     /**
     * The ARN of the compnonent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#component_arn CcApplication#component_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#component_arn CcApplication#component_arn}
     */
     readonly componentArn?: string;
     /**
     * The component monitoring configuration mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#component_configuration_mode CcApplication#component_configuration_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#component_configuration_mode CcApplication#component_configuration_mode}
     */
     readonly componentConfigurationMode?: string;
     /**
     * The name of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#component_name CcApplication#component_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#component_name CcApplication#component_name}
     */
     readonly componentName?: string;
     /**
     * The monitoring configuration of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#custom_component_configuration CcApplication#custom_component_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#custom_component_configuration CcApplication#custom_component_configuration}
     */
     readonly customComponentConfiguration?: ComponentConfigurationProperty;
     /**
     * The overwritten settings on default component monitoring configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#default_overwrite_component_configuration CcApplication#default_overwrite_component_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#default_overwrite_component_configuration CcApplication#default_overwrite_component_configuration}
     */
     readonly defaultOverwriteComponentConfiguration?: DefaultOverwriteComponentConfigurationProperty;
     /**
     * The tier of the application component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#tier CcApplication#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#tier CcApplication#tier}
     */
     readonly tier?: string;
 }
@@ -8076,13 +8076,13 @@ export interface CustomComponentProperty {
     /**
     * The name of the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#component_name CcApplication#component_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#component_name CcApplication#component_name}
     */
     readonly componentName?: string;
     /**
     * The list of resource ARNs that belong to the component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#resource_list CcApplication#resource_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#resource_list CcApplication#resource_list}
     */
     readonly resourceList?: string[];
 }
@@ -8192,19 +8192,19 @@ export interface LogPatternProperty {
     /**
     * The log pattern.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern CcApplication#pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern CcApplication#pattern}
     */
     readonly pattern?: string;
     /**
     * The name of the log pattern.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_name CcApplication#pattern_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_name CcApplication#pattern_name}
     */
     readonly patternName?: string;
     /**
     * Rank of the log pattern.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#rank CcApplication#rank}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#rank CcApplication#rank}
     */
     readonly rank?: number;
 }
@@ -8336,13 +8336,13 @@ export interface LogPatternSetProperty {
     /**
     * The log patterns of a set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#log_patterns CcApplication#log_patterns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#log_patterns CcApplication#log_patterns}
     */
     readonly logPatterns?: LogPatternProperty[] | cdktn.IResolvable;
     /**
     * The name of the log pattern set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#pattern_set_name CcApplication#pattern_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#pattern_set_name CcApplication#pattern_set_name}
     */
     readonly patternSetName?: string;
 }
@@ -8452,13 +8452,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/applicationinsights_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/applicationinsights_application#value CcApplication#value}
     */
     readonly value?: string;
 }

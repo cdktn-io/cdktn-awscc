@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcConformancePackProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of ConformancePackInputParameter objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#conformance_pack_input_parameters CcConformancePack#conformance_pack_input_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#conformance_pack_input_parameters CcConformancePack#conformance_pack_input_parameters}
     */
     readonly conformancePackInputParameters?: CcConformancePack.ConformancePackInputParameterProperty[] | cdktn.IResolvable;
     /**
     * Name of the conformance pack which will be assigned as the unique identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#conformance_pack_name CcConformancePack#conformance_pack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#conformance_pack_name CcConformancePack#conformance_pack_name}
     */
     readonly conformancePackName: string;
     /**
     * AWS Config stores intermediate files while processing conformance pack template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#delivery_s3_bucket CcConformancePack#delivery_s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#delivery_s3_bucket CcConformancePack#delivery_s3_bucket}
     */
     readonly deliveryS3Bucket?: string;
     /**
     * The prefix for delivery S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#delivery_s3_key_prefix CcConformancePack#delivery_s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#delivery_s3_key_prefix CcConformancePack#delivery_s3_key_prefix}
     */
     readonly deliveryS3KeyPrefix?: string;
     /**
     * The tags for the conformance pack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#tags CcConformancePack#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#tags CcConformancePack#tags}
     */
     readonly tags?: CcConformancePack.TagProperty[] | cdktn.IResolvable;
     /**
     * A string containing full conformance pack template body. You can only specify one of the template body or template S3Uri fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#template_body CcConformancePack#template_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#template_body CcConformancePack#template_body}
     */
     readonly templateBody?: string;
     /**
     * Location of file containing the template body which points to the conformance pack template that is located in an Amazon S3 bucket. You can only specify one of the template body or template S3Uri fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#template_s3_uri CcConformancePack#template_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#template_s3_uri CcConformancePack#template_s3_uri}
     */
     readonly templateS3Uri?: string;
     /**
     * The TemplateSSMDocumentDetails object contains the name of the SSM document and the version of the SSM document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#template_ssm_document_details CcConformancePack#template_ssm_document_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#template_ssm_document_details CcConformancePack#template_ssm_document_details}
     */
     readonly templateSsmDocumentDetails?: CcConformancePack.TemplateSSMDocumentDetailsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack awscc_config_conformance_pack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack awscc_config_conformance_pack}
 */
 export class CcConformancePack extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcConformancePack extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConformancePack resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConformancePack to import
-    * @param importFromId The id of the existing CcConformancePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConformancePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConformancePack to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcConformancePack extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack awscc_config_conformance_pack} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack awscc_config_conformance_pack} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcConformancePack extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_config_conformance_pack',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -445,13 +445,13 @@ export interface ConformancePackInputParameterProperty {
     /**
     * Key part of key-value pair with value being parameter value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#parameter_name CcConformancePack#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#parameter_name CcConformancePack#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * Value part of key-value pair with key being parameter Name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#parameter_value CcConformancePack#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#parameter_value CcConformancePack#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -561,13 +561,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#key CcConformancePack#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#key CcConformancePack#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#value CcConformancePack#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#value CcConformancePack#value}
     */
     readonly value?: string;
 }
@@ -675,11 +675,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TemplateSSMDocumentDetailsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#document_name CcConformancePack#document_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#document_name CcConformancePack#document_name}
     */
     readonly documentName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/config_conformance_pack#document_version CcConformancePack#document_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/config_conformance_pack#document_version CcConformancePack#document_version}
     */
     readonly documentVersion?: string;
 }

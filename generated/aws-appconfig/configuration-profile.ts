@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcConfigurationProfileProps extends cdktn.TerraformMetaArgument
     /**
     * The application ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#application_id CcConfigurationProfile#application_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#application_id CcConfigurationProfile#application_id}
     */
     readonly applicationId: string;
     /**
     * On resource deletion this controls whether the Deletion Protection check should be applied, bypassed, or (the default) whether the behavior should be controlled by the account-level Deletion Protection setting. See https://docs.aws.amazon.com/appconfig/latest/userguide/deletion-protection.html
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#deletion_protection_check CcConfigurationProfile#deletion_protection_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#deletion_protection_check CcConfigurationProfile#deletion_protection_check}
     */
     readonly deletionProtectionCheck?: string;
     /**
     * A description of the configuration profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#description CcConfigurationProfile#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#description CcConfigurationProfile#description}
     */
     readonly description?: string;
     /**
     * The AWS Key Management Service key identifier (key ID, key alias, or key ARN) provided when the resource was created or updated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#kms_key_identifier CcConfigurationProfile#kms_key_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#kms_key_identifier CcConfigurationProfile#kms_key_identifier}
     */
     readonly kmsKeyIdentifier?: string;
     /**
     * A URI to locate the configuration. You can specify the AWS AppConfig hosted configuration store, Systems Manager (SSM) document, an SSM Parameter Store parameter, or an Amazon S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#location_uri CcConfigurationProfile#location_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#location_uri CcConfigurationProfile#location_uri}
     */
     readonly locationUri: string;
     /**
     * A name for the configuration profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#name CcConfigurationProfile#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#name CcConfigurationProfile#name}
     */
     readonly name: string;
     /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#retrieval_role_arn CcConfigurationProfile#retrieval_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#retrieval_role_arn CcConfigurationProfile#retrieval_role_arn}
     */
     readonly retrievalRoleArn?: string;
     /**
     * Metadata to assign to the configuration profile. Tags help organize and categorize your AWS AppConfig resources. Each tag consists of a key and an optional value, both of which you define.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#tags CcConfigurationProfile#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#tags CcConfigurationProfile#tags}
     */
     readonly tags?: CcConfigurationProfile.TagProperty[] | cdktn.IResolvable;
     /**
     * The type of configurations contained in the profile. When calling this API, enter one of the following values for Type: AWS.AppConfig.FeatureFlags, AWS.Freeform
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#type CcConfigurationProfile#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#type CcConfigurationProfile#type}
     */
     readonly type?: string;
     /**
     * A list of methods for validating the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#validators CcConfigurationProfile#validators}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#validators CcConfigurationProfile#validators}
     */
     readonly validators?: CcConfigurationProfile.ValidatorsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile awscc_appconfig_configuration_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile awscc_appconfig_configuration_profile}
 */
 export class CcConfigurationProfile extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcConfigurationProfile extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationProfile resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationProfile to import
-    * @param importFromId The id of the existing CcConfigurationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationProfile to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcConfigurationProfile extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile awscc_appconfig_configuration_profile} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile awscc_appconfig_configuration_profile} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcConfigurationProfile extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appconfig_configuration_profile',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -467,13 +467,13 @@ export interface TagProperty {
     /**
     * The key-value string map. The tag key can be up to 128 characters and must not start with aws:.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#key CcConfigurationProfile#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#key CcConfigurationProfile#key}
     */
     readonly key?: string;
     /**
     * The tag value can be up to 256 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#value CcConfigurationProfile#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#value CcConfigurationProfile#value}
     */
     readonly value?: string;
 }
@@ -583,13 +583,13 @@ export interface ValidatorsProperty {
     /**
     * Either the JSON Schema content or the Amazon Resource Name (ARN) of an Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#content CcConfigurationProfile#content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#content CcConfigurationProfile#content}
     */
     readonly content?: string;
     /**
     * AWS AppConfig supports validators of type JSON_SCHEMA and LAMBDA.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_configuration_profile#type CcConfigurationProfile#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_configuration_profile#type CcConfigurationProfile#type}
     */
     readonly type?: string;
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcTransitVirtualInterfaceProps extends cdktn.TerraformMetaArgum
     /**
     * The Amazon Resource Name (ARN) of the role to allocate the TransitVifAllocation. Needs directconnect:AllocateTransitVirtualInterface permissions and tag permissions if applicable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#allocate_transit_virtual_interface_role_arn CcTransitVirtualInterface#allocate_transit_virtual_interface_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#allocate_transit_virtual_interface_role_arn CcTransitVirtualInterface#allocate_transit_virtual_interface_role_arn}
     */
     readonly allocateTransitVirtualInterfaceRoleArn?: string;
     /**
     * The BGP peers configured on this virtual interface..
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#bgp_peers CcTransitVirtualInterface#bgp_peers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#bgp_peers CcTransitVirtualInterface#bgp_peers}
     */
     readonly bgpPeers: CcTransitVirtualInterface.BgpPeerProperty[] | cdktn.IResolvable;
     /**
     * The ID or ARN of the connection or LAG.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#connection_id CcTransitVirtualInterface#connection_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#connection_id CcTransitVirtualInterface#connection_id}
     */
     readonly connectionId: string;
     /**
     * The ID or ARN of the Direct Connect gateway.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#direct_connect_gateway_id CcTransitVirtualInterface#direct_connect_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#direct_connect_gateway_id CcTransitVirtualInterface#direct_connect_gateway_id}
     */
     readonly directConnectGatewayId: string;
     /**
     * Indicates whether to enable or disable SiteLink.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#enable_site_link CcTransitVirtualInterface#enable_site_link}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#enable_site_link CcTransitVirtualInterface#enable_site_link}
     */
     readonly enableSiteLink?: boolean | cdktn.IResolvable;
     /**
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#mtu CcTransitVirtualInterface#mtu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#mtu CcTransitVirtualInterface#mtu}
     */
     readonly mtu?: number;
     /**
     * The rate limit (bandwidth allocation) for the virtual interface. The value must be one of the supported bandwidth values (e.g., 50Mbps, 1Gbps, 10Gbps) and cannot exceed the bandwidth of the parent connection or LAG.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#rate_limit CcTransitVirtualInterface#rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#rate_limit CcTransitVirtualInterface#rate_limit}
     */
     readonly rateLimit?: string;
     /**
     * The tags associated with the private virtual interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#tags CcTransitVirtualInterface#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#tags CcTransitVirtualInterface#tags}
     */
     readonly tags?: CcTransitVirtualInterface.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the virtual interface assigned by the customer network. The name has a maximum of 100 characters. The following are valid characters: a-z, 0-9 and a hyphen (-).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#virtual_interface_name CcTransitVirtualInterface#virtual_interface_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#virtual_interface_name CcTransitVirtualInterface#virtual_interface_name}
     */
     readonly virtualInterfaceName: string;
     /**
     * The ID of the VLAN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#vlan CcTransitVirtualInterface#vlan}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#vlan CcTransitVirtualInterface#vlan}
     */
     readonly vlan: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface awscc_directconnect_transit_virtual_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface awscc_directconnect_transit_virtual_interface}
 */
 export class CcTransitVirtualInterface extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcTransitVirtualInterface extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTransitVirtualInterface resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitVirtualInterface to import
-    * @param importFromId The id of the existing CcTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitVirtualInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitVirtualInterface to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcTransitVirtualInterface extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface awscc_directconnect_transit_virtual_interface} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface awscc_directconnect_transit_virtual_interface} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcTransitVirtualInterface extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_directconnect_transit_virtual_interface',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -489,35 +489,35 @@ export interface BgpPeerProperty {
     /**
     * The address family for the BGP peer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#address_family CcTransitVirtualInterface#address_family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#address_family CcTransitVirtualInterface#address_family}
     */
     readonly addressFamily: string;
     /**
     * The IP address assigned to the Amazon interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#amazon_address CcTransitVirtualInterface#amazon_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#amazon_address CcTransitVirtualInterface#amazon_address}
     */
     readonly amazonAddress?: string;
     /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#asn CcTransitVirtualInterface#asn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#asn CcTransitVirtualInterface#asn}
     */
     readonly asn: string;
     /**
     * The authentication key for BGP configuration. This string has a minimum length of 6 characters and and a maximum length of 80 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#auth_key CcTransitVirtualInterface#auth_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#auth_key CcTransitVirtualInterface#auth_key}
     */
     readonly authKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#bgp_peer_id CcTransitVirtualInterface#bgp_peer_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#bgp_peer_id CcTransitVirtualInterface#bgp_peer_id}
     */
     readonly bgpPeerId?: string;
     /**
     * The IP address assigned to the customer interface.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#customer_address CcTransitVirtualInterface#customer_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#customer_address CcTransitVirtualInterface#customer_address}
     */
     readonly customerAddress?: string;
 }
@@ -709,13 +709,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#key CcTransitVirtualInterface#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#key CcTransitVirtualInterface#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/directconnect_transit_virtual_interface#value CcTransitVirtualInterface#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/directconnect_transit_virtual_interface#value CcTransitVirtualInterface#value}
     */
     readonly value?: string;
 }

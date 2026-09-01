@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcApplicationProps extends cdktn.TerraformMetaArguments {
     /**
     * List of application configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#app_configs CcApplication#app_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#app_configs CcApplication#app_configs}
     */
     readonly appConfigs?: CcApplication.AppConfigProperty[] | cdktn.IResolvable;
     /**
     * List of data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#data_sources CcApplication#data_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#data_sources CcApplication#data_sources}
     */
     readonly dataSources?: CcApplication.DataSourceProperty[] | cdktn.IResolvable;
     /**
     * The endpoint for the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#endpoint CcApplication#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#endpoint CcApplication#endpoint}
     */
     readonly endpoint?: string;
     /**
     * Options for configuring IAM Identity Center
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#iam_identity_center_options CcApplication#iam_identity_center_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#iam_identity_center_options CcApplication#iam_identity_center_options}
     */
     readonly iamIdentityCenterOptions?: CcApplication.IamIdentityCenterOptionsProperty;
     /**
     * The ARN of the KMS key used to encrypt the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#kms_key_arn CcApplication#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#kms_key_arn CcApplication#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The name of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#name CcApplication#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#name CcApplication#name}
     */
     readonly name: string;
     /**
     * An arbitrary set of tags (key-value pairs) for this application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#tags CcApplication#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#tags CcApplication#tags}
     */
     readonly tags?: CcApplication.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application awscc_opensearchservice_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application awscc_opensearchservice_application}
 */
 export class CcApplication extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcApplication extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplication resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplication to import
-    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplication to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcApplication extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application awscc_opensearchservice_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application awscc_opensearchservice_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcApplication extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_opensearchservice_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -464,13 +464,13 @@ export interface AppConfigProperty {
     /**
     * The configuration key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
     * The configuration value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#value CcApplication#value}
     */
     readonly value?: string;
 }
@@ -580,13 +580,13 @@ export interface DataSourceProperty {
     /**
     * The ARN of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#data_source_arn CcApplication#data_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#data_source_arn CcApplication#data_source_arn}
     */
     readonly dataSourceArn?: string;
     /**
     * Description of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#data_source_description CcApplication#data_source_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#data_source_description CcApplication#data_source_description}
     */
     readonly dataSourceDescription?: string;
 }
@@ -696,19 +696,19 @@ export interface IamIdentityCenterOptionsProperty {
     /**
     * Whether IAM Identity Center is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#enabled CcApplication#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#enabled CcApplication#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
     * The ARN of the IAM Identity Center instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#iam_identity_center_instance_arn CcApplication#iam_identity_center_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#iam_identity_center_instance_arn CcApplication#iam_identity_center_instance_arn}
     */
     readonly iamIdentityCenterInstanceArn?: string;
     /**
     * The ARN of the IAM role for Identity Center application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#iam_role_for_identity_center_application_arn CcApplication#iam_role_for_identity_center_application_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#iam_role_for_identity_center_application_arn CcApplication#iam_role_for_identity_center_application_arn}
     */
     readonly iamRoleForIdentityCenterApplicationArn?: string;
 }
@@ -818,13 +818,13 @@ export interface TagProperty {
     /**
     * The key in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#key CcApplication#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#key CcApplication#key}
     */
     readonly key?: string;
     /**
     * The value in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchservice_application#value CcApplication#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchservice_application#value CcApplication#value}
     */
     readonly value?: string;
 }

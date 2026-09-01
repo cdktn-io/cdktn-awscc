@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,62 +9,62 @@ export interface CcRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#description CcRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#description CcRule#description}
     */
     readonly description?: string;
     /**
     * The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#event_bus_name CcRule#event_bus_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#event_bus_name CcRule#event_bus_name}
     */
     readonly eventBusName?: string;
     /**
     * The event pattern of the rule. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#event_pattern CcRule#event_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#event_pattern CcRule#event_pattern}
     */
     readonly eventPattern?: string;
     /**
     * The name of the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#name CcRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#name CcRule#name}
     */
     readonly name?: string;
     /**
     * The Amazon Resource Name (ARN) of the role that is used for target invocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#role_arn CcRule#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#role_arn CcRule#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)". For more information, see Creating an Amazon EventBridge rule that runs on a schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#schedule_expression CcRule#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#schedule_expression CcRule#schedule_expression}
     */
     readonly scheduleExpression?: string;
     /**
     * The state of the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#state CcRule#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#state CcRule#state}
     */
     readonly state?: string;
     /**
     * Any tags assigned to the event rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#tags CcRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#tags CcRule#tags}
     */
     readonly tags?: CcRule.TagProperty[] | cdktn.IResolvable;
     /**
     * Adds the specified targets to the specified rule, or updates the targets if they are already associated with the rule.
     * Targets are the resources that are invoked when a rule is triggered.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#targets CcRule#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#targets CcRule#targets}
     */
     readonly targets?: CcRule.TargetProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule awscc_events_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule awscc_events_rule}
 */
 export class CcRule extends cdktn.TerraformResource {
 
@@ -80,7 +80,7 @@ export class CcRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRule to import
-    * @param importFromId The id of the existing CcRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -92,7 +92,7 @@ export class CcRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule awscc_events_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule awscc_events_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class CcRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_events_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -216,6 +216,11 @@ export class CcRule extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get roleArnInput() {
         return this._roleArn;
+    }
+
+    // rule_name - computed: true, optional: false, required: false
+    public get ruleName() {
+        return this.getStringAttribute('rule_name');
     }
 
     // schedule_expression - computed: true, optional: true, required: false
@@ -1450,11 +1455,11 @@ export function ccRuleTargetPropertyToHclTerraform(struct?: CcRule.TargetPropert
 export namespace CcRule {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#key CcRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#key CcRule#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#value CcRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#value CcRule#value}
     */
     readonly value?: string;
 }
@@ -1562,7 +1567,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface AppSyncParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#graph_ql_operation CcRule#graph_ql_operation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#graph_ql_operation CcRule#graph_ql_operation}
     */
     readonly graphQlOperation?: string;
 }
@@ -1626,7 +1631,7 @@ export class AppSyncParametersPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface BatchArrayPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#size CcRule#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#size CcRule#size}
     */
     readonly size?: number;
 }
@@ -1690,7 +1695,7 @@ export class BatchArrayPropertiesPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface BatchRetryStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#attempts CcRule#attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#attempts CcRule#attempts}
     */
     readonly attempts?: number;
 }
@@ -1754,19 +1759,19 @@ export class BatchRetryStrategyPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface BatchParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#array_properties CcRule#array_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#array_properties CcRule#array_properties}
     */
     readonly arrayProperties?: BatchArrayPropertiesProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#job_definition CcRule#job_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#job_definition CcRule#job_definition}
     */
     readonly jobDefinition?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#job_name CcRule#job_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#job_name CcRule#job_name}
     */
     readonly jobName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#retry_strategy CcRule#retry_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#retry_strategy CcRule#retry_strategy}
     */
     readonly retryStrategy?: BatchRetryStrategyProperty;
 }
@@ -1896,7 +1901,7 @@ export class BatchParametersPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface DeadLetterConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#arn CcRule#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#arn CcRule#arn}
     */
     readonly arn?: string;
 }
@@ -1960,15 +1965,15 @@ export class DeadLetterConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface CapacityProviderStrategyItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#base CcRule#base}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#base CcRule#base}
     */
     readonly base?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#capacity_provider CcRule#capacity_provider}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#capacity_provider CcRule#capacity_provider}
     */
     readonly capacityProvider?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#weight CcRule#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#weight CcRule#weight}
     */
     readonly weight?: number;
 }
@@ -2098,15 +2103,15 @@ export class CapacityProviderStrategyItemPropertyList extends cdktn.ComplexList 
 }
 export interface AwsVpcConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#assign_public_ip CcRule#assign_public_ip}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#assign_public_ip CcRule#assign_public_ip}
     */
     readonly assignPublicIp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#security_groups CcRule#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#security_groups CcRule#security_groups}
     */
     readonly securityGroups?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#subnets CcRule#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#subnets CcRule#subnets}
     */
     readonly subnets?: string[];
 }
@@ -2214,7 +2219,7 @@ export class AwsVpcConfigurationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface NetworkConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#aws_vpc_configuration CcRule#aws_vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#aws_vpc_configuration CcRule#aws_vpc_configuration}
     */
     readonly awsVpcConfiguration?: AwsVpcConfigurationProperty;
 }
@@ -2278,11 +2283,11 @@ export class NetworkConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface PlacementConstraintProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#expression CcRule#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#expression CcRule#expression}
     */
     readonly expression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#type CcRule#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#type CcRule#type}
     */
     readonly type?: string;
 }
@@ -2390,11 +2395,11 @@ export class PlacementConstraintPropertyList extends cdktn.ComplexList {
 }
 export interface PlacementStrategyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#field CcRule#field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#field CcRule#field}
     */
     readonly field?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#type CcRule#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#type CcRule#type}
     */
     readonly type?: string;
 }
@@ -2502,11 +2507,11 @@ export class PlacementStrategyPropertyList extends cdktn.ComplexList {
 }
 export interface TagListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#key CcRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#key CcRule#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#value CcRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#value CcRule#value}
     */
     readonly value?: string;
 }
@@ -2614,59 +2619,59 @@ export class TagListPropertyList extends cdktn.ComplexList {
 }
 export interface EcsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#capacity_provider_strategy CcRule#capacity_provider_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#capacity_provider_strategy CcRule#capacity_provider_strategy}
     */
     readonly capacityProviderStrategy?: CapacityProviderStrategyItemProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#enable_ecs_managed_tags CcRule#enable_ecs_managed_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#enable_ecs_managed_tags CcRule#enable_ecs_managed_tags}
     */
     readonly enableEcsManagedTags?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#enable_execute_command CcRule#enable_execute_command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#enable_execute_command CcRule#enable_execute_command}
     */
     readonly enableExecuteCommand?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#group CcRule#group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#group CcRule#group}
     */
     readonly group?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#launch_type CcRule#launch_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#launch_type CcRule#launch_type}
     */
     readonly launchType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#network_configuration CcRule#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#network_configuration CcRule#network_configuration}
     */
     readonly networkConfiguration?: NetworkConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#placement_constraints CcRule#placement_constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#placement_constraints CcRule#placement_constraints}
     */
     readonly placementConstraints?: PlacementConstraintProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#placement_strategies CcRule#placement_strategies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#placement_strategies CcRule#placement_strategies}
     */
     readonly placementStrategies?: PlacementStrategyProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#platform_version CcRule#platform_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#platform_version CcRule#platform_version}
     */
     readonly platformVersion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#propagate_tags CcRule#propagate_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#propagate_tags CcRule#propagate_tags}
     */
     readonly propagateTags?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#reference_id CcRule#reference_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#reference_id CcRule#reference_id}
     */
     readonly referenceId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#tag_list CcRule#tag_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#tag_list CcRule#tag_list}
     */
     readonly tagList?: TagListProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#task_count CcRule#task_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#task_count CcRule#task_count}
     */
     readonly taskCount?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#task_definition_arn CcRule#task_definition_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#task_definition_arn CcRule#task_definition_arn}
     */
     readonly taskDefinitionArn?: string;
 }
@@ -3016,15 +3021,15 @@ export class EcsParametersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface HttpParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#header_parameters CcRule#header_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#header_parameters CcRule#header_parameters}
     */
     readonly headerParameters?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#path_parameter_values CcRule#path_parameter_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#path_parameter_values CcRule#path_parameter_values}
     */
     readonly pathParameterValues?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#query_string_parameters CcRule#query_string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#query_string_parameters CcRule#query_string_parameters}
     */
     readonly queryStringParameters?: { [key: string]: string };
 }
@@ -3132,11 +3137,11 @@ export class HttpParametersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface InputTransformerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#input_paths_map CcRule#input_paths_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#input_paths_map CcRule#input_paths_map}
     */
     readonly inputPathsMap?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#input_template CcRule#input_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#input_template CcRule#input_template}
     */
     readonly inputTemplate?: string;
 }
@@ -3222,7 +3227,7 @@ export class InputTransformerPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface KinesisParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#partition_key_path CcRule#partition_key_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#partition_key_path CcRule#partition_key_path}
     */
     readonly partitionKeyPath?: string;
 }
@@ -3286,31 +3291,31 @@ export class KinesisParametersPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface RedshiftDataParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#database CcRule#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#database CcRule#database}
     */
     readonly database?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#db_user CcRule#db_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#db_user CcRule#db_user}
     */
     readonly dbUser?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#secret_manager_arn CcRule#secret_manager_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#secret_manager_arn CcRule#secret_manager_arn}
     */
     readonly secretManagerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#sql CcRule#sql}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#sql CcRule#sql}
     */
     readonly sql?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#sqls CcRule#sqls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#sqls CcRule#sqls}
     */
     readonly sqls?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#statement_name CcRule#statement_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#statement_name CcRule#statement_name}
     */
     readonly statementName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#with_event CcRule#with_event}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#with_event CcRule#with_event}
     */
     readonly withEvent?: boolean | cdktn.IResolvable;
 }
@@ -3506,11 +3511,11 @@ export class RedshiftDataParametersPropertyOutputReference extends cdktn.Complex
 }
 export interface RetryPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#maximum_event_age_in_seconds CcRule#maximum_event_age_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#maximum_event_age_in_seconds CcRule#maximum_event_age_in_seconds}
     */
     readonly maximumEventAgeInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#maximum_retry_attempts CcRule#maximum_retry_attempts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#maximum_retry_attempts CcRule#maximum_retry_attempts}
     */
     readonly maximumRetryAttempts?: number;
 }
@@ -3596,11 +3601,11 @@ export class RetryPolicyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RunCommandTargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#key CcRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#key CcRule#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#values CcRule#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#values CcRule#values}
     */
     readonly values?: string[];
 }
@@ -3708,7 +3713,7 @@ export class RunCommandTargetPropertyList extends cdktn.ComplexList {
 }
 export interface RunCommandParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#run_command_targets CcRule#run_command_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#run_command_targets CcRule#run_command_targets}
     */
     readonly runCommandTargets?: RunCommandTargetProperty[] | cdktn.IResolvable;
 }
@@ -3772,11 +3777,11 @@ export class RunCommandParametersPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SageMakerPipelineParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#name CcRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#name CcRule#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#value CcRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#value CcRule#value}
     */
     readonly value?: string;
 }
@@ -3884,7 +3889,7 @@ export class SageMakerPipelineParameterPropertyList extends cdktn.ComplexList {
 }
 export interface SageMakerPipelineParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#pipeline_parameter_list CcRule#pipeline_parameter_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#pipeline_parameter_list CcRule#pipeline_parameter_list}
     */
     readonly pipelineParameterList?: SageMakerPipelineParameterProperty[] | cdktn.IResolvable;
 }
@@ -3948,7 +3953,7 @@ export class SageMakerPipelineParametersPropertyOutputReference extends cdktn.Co
 }
 export interface SqsParametersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#message_group_id CcRule#message_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#message_group_id CcRule#message_group_id}
     */
     readonly messageGroupId?: string;
 }
@@ -4012,74 +4017,74 @@ export class SqsParametersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#app_sync_parameters CcRule#app_sync_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#app_sync_parameters CcRule#app_sync_parameters}
     */
     readonly appSyncParameters?: AppSyncParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#arn CcRule#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#arn CcRule#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#batch_parameters CcRule#batch_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#batch_parameters CcRule#batch_parameters}
     */
     readonly batchParameters?: BatchParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#dead_letter_config CcRule#dead_letter_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#dead_letter_config CcRule#dead_letter_config}
     */
     readonly deadLetterConfig?: DeadLetterConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#ecs_parameters CcRule#ecs_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#ecs_parameters CcRule#ecs_parameters}
     */
     readonly ecsParameters?: EcsParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#http_parameters CcRule#http_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#http_parameters CcRule#http_parameters}
     */
     readonly httpParameters?: HttpParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#id CcRule#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#id CcRule#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
     */
     readonly id?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#input CcRule#input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#input CcRule#input}
     */
     readonly input?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#input_path CcRule#input_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#input_path CcRule#input_path}
     */
     readonly inputPath?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#input_transformer CcRule#input_transformer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#input_transformer CcRule#input_transformer}
     */
     readonly inputTransformer?: InputTransformerProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#kinesis_parameters CcRule#kinesis_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#kinesis_parameters CcRule#kinesis_parameters}
     */
     readonly kinesisParameters?: KinesisParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#redshift_data_parameters CcRule#redshift_data_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#redshift_data_parameters CcRule#redshift_data_parameters}
     */
     readonly redshiftDataParameters?: RedshiftDataParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#retry_policy CcRule#retry_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#retry_policy CcRule#retry_policy}
     */
     readonly retryPolicy?: RetryPolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#role_arn CcRule#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#role_arn CcRule#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#run_command_parameters CcRule#run_command_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#run_command_parameters CcRule#run_command_parameters}
     */
     readonly runCommandParameters?: RunCommandParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#sage_maker_pipeline_parameters CcRule#sage_maker_pipeline_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#sage_maker_pipeline_parameters CcRule#sage_maker_pipeline_parameters}
     */
     readonly sageMakerPipelineParameters?: SageMakerPipelineParametersProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_rule#sqs_parameters CcRule#sqs_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_rule#sqs_parameters CcRule#sqs_parameters}
     */
     readonly sqsParameters?: SqsParametersProperty;
 }

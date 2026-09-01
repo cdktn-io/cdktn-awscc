@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcDeploymentConfigProps extends cdktn.TerraformMetaArguments {
     /**
     * The destination platform type for the deployment (Lambda, Server, or ECS).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#compute_platform CcDeploymentConfig#compute_platform}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#compute_platform CcDeploymentConfig#compute_platform}
     */
     readonly computePlatform?: string;
     /**
     * A name for the deployment configuration. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the deployment configuration name. For more information, see Name Type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#deployment_config_name CcDeploymentConfig#deployment_config_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#deployment_config_name CcDeploymentConfig#deployment_config_name}
     */
     readonly deploymentConfigName?: string;
     /**
     * The minimum number of healthy instances that should be available at any time during the deployment. There are two parameters expected in the input: type and value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts CcDeploymentConfig#minimum_healthy_hosts}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts CcDeploymentConfig#minimum_healthy_hosts}
     */
     readonly minimumHealthyHosts?: CcDeploymentConfig.MinimumHealthyHostsProperty;
     /**
     * The configuration that specifies how the deployment traffic is routed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#traffic_routing_config CcDeploymentConfig#traffic_routing_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#traffic_routing_config CcDeploymentConfig#traffic_routing_config}
     */
     readonly trafficRoutingConfig?: CcDeploymentConfig.TrafficRoutingConfigProperty;
     /**
     * The zonal deployment config that specifies how the zonal deployment behaves
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#zonal_config CcDeploymentConfig#zonal_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#zonal_config CcDeploymentConfig#zonal_config}
     */
     readonly zonalConfig?: CcDeploymentConfig.ZonalConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config awscc_codedeploy_deployment_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config awscc_codedeploy_deployment_config}
 */
 export class CcDeploymentConfig extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcDeploymentConfig extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDeploymentConfig resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDeploymentConfig to import
-    * @param importFromId The id of the existing CcDeploymentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDeploymentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDeploymentConfig to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcDeploymentConfig extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config awscc_codedeploy_deployment_config} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config awscc_codedeploy_deployment_config} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcDeploymentConfig extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_codedeploy_deployment_config',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -476,11 +476,11 @@ export function ccDeploymentConfigZonalConfigPropertyToHclTerraform(struct?: CcD
 export namespace CcDeploymentConfig {
 export interface MinimumHealthyHostsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#value CcDeploymentConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#value CcDeploymentConfig#value}
     */
     readonly value?: number;
 }
@@ -566,11 +566,11 @@ export class MinimumHealthyHostsPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TimeBasedCanaryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#canary_interval CcDeploymentConfig#canary_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#canary_interval CcDeploymentConfig#canary_interval}
     */
     readonly canaryInterval?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#canary_percentage CcDeploymentConfig#canary_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#canary_percentage CcDeploymentConfig#canary_percentage}
     */
     readonly canaryPercentage?: number;
 }
@@ -656,11 +656,11 @@ export class TimeBasedCanaryPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TimeBasedLinearProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#linear_interval CcDeploymentConfig#linear_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#linear_interval CcDeploymentConfig#linear_interval}
     */
     readonly linearInterval?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#linear_percentage CcDeploymentConfig#linear_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#linear_percentage CcDeploymentConfig#linear_percentage}
     */
     readonly linearPercentage?: number;
 }
@@ -746,15 +746,15 @@ export class TimeBasedLinearPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TrafficRoutingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#time_based_canary CcDeploymentConfig#time_based_canary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#time_based_canary CcDeploymentConfig#time_based_canary}
     */
     readonly timeBasedCanary?: TimeBasedCanaryProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#time_based_linear CcDeploymentConfig#time_based_linear}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#time_based_linear CcDeploymentConfig#time_based_linear}
     */
     readonly timeBasedLinear?: TimeBasedLinearProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
     */
     readonly type?: string;
 }
@@ -862,11 +862,11 @@ export class TrafficRoutingConfigPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface MinimumHealthyHostsPerZoneProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#type CcDeploymentConfig#type}
     */
     readonly type?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#value CcDeploymentConfig#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#value CcDeploymentConfig#value}
     */
     readonly value?: number;
 }
@@ -952,15 +952,15 @@ export class MinimumHealthyHostsPerZonePropertyOutputReference extends cdktn.Com
 }
 export interface ZonalConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#first_zone_monitor_duration_in_seconds CcDeploymentConfig#first_zone_monitor_duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#first_zone_monitor_duration_in_seconds CcDeploymentConfig#first_zone_monitor_duration_in_seconds}
     */
     readonly firstZoneMonitorDurationInSeconds?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts_per_zone CcDeploymentConfig#minimum_healthy_hosts_per_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts_per_zone CcDeploymentConfig#minimum_healthy_hosts_per_zone}
     */
     readonly minimumHealthyHostsPerZone?: MinimumHealthyHostsPerZoneProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/codedeploy_deployment_config#monitor_duration_in_seconds CcDeploymentConfig#monitor_duration_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codedeploy_deployment_config#monitor_duration_in_seconds CcDeploymentConfig#monitor_duration_in_seconds}
     */
     readonly monitorDurationInSeconds?: number;
 }

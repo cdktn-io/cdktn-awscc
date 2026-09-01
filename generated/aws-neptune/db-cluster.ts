@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#associated_roles CcDBCluster#associated_roles}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#associated_roles CcDBCluster#associated_roles}
     */
     readonly associatedRoles?: CcDBCluster.DBClusterRoleProperty[] | cdktn.IResolvable;
     /**
     * Provides the list of EC2 Availability Zones that instances in the DB cluster can be created in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#availability_zones CcDBCluster#availability_zones}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#availability_zones CcDBCluster#availability_zones}
     */
     readonly availabilityZones?: string[];
     /**
     * Specifies the number of days for which automatic DB snapshots are retained.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#backup_retention_period CcDBCluster#backup_retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#backup_retention_period CcDBCluster#backup_retention_period}
     */
     readonly backupRetentionPeriod?: number;
     /**
     * A value that indicates whether to copy all tags from the DB cluster to snapshots of the DB cluster. The default behaviour is not to copy them.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#copy_tags_to_snapshot CcDBCluster#copy_tags_to_snapshot}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#copy_tags_to_snapshot CcDBCluster#copy_tags_to_snapshot}
     */
     readonly copyTagsToSnapshot?: boolean | cdktn.IResolvable;
     /**
     * The DB cluster identifier. Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster stored as a lowercase string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#db_cluster_identifier CcDBCluster#db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#db_cluster_identifier CcDBCluster#db_cluster_identifier}
     */
     readonly dbClusterIdentifier?: string;
     /**
     * Provides the name of the DB cluster parameter group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#db_cluster_parameter_group_name CcDBCluster#db_cluster_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#db_cluster_parameter_group_name CcDBCluster#db_cluster_parameter_group_name}
     */
     readonly dbClusterParameterGroupName?: string;
     /**
     * The name of the DB parameter group to apply to all instances of the DB cluster. Used only in case of a major EngineVersion upgrade request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#db_instance_parameter_group_name CcDBCluster#db_instance_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#db_instance_parameter_group_name CcDBCluster#db_instance_parameter_group_name}
     */
     readonly dbInstanceParameterGroupName?: string;
     /**
@@ -55,67 +55,67 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * Note: `Port` property will soon be deprecated from this resource. Please update existing templates to rename it with new property `DBPort` having same functionalities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#db_port CcDBCluster#db_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#db_port CcDBCluster#db_port}
     */
     readonly dbPort?: number;
     /**
     * Specifies information on the subnet group associated with the DB cluster, including the name, description, and subnets in the subnet group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#db_subnet_group_name CcDBCluster#db_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#db_subnet_group_name CcDBCluster#db_subnet_group_name}
     */
     readonly dbSubnetGroupName?: string;
     /**
     * Indicates whether or not the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#deletion_protection CcDBCluster#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#deletion_protection CcDBCluster#deletion_protection}
     */
     readonly deletionProtection?: boolean | cdktn.IResolvable;
     /**
     * Specifies a list of log types that are enabled for export to CloudWatch Logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#enable_cloudwatch_logs_exports CcDBCluster#enable_cloudwatch_logs_exports}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#enable_cloudwatch_logs_exports CcDBCluster#enable_cloudwatch_logs_exports}
     */
     readonly enableCloudwatchLogsExports?: string[];
     /**
     * Indicates the database engine version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#engine_version CcDBCluster#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#engine_version CcDBCluster#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * The ID of the Neptune global database to which this new DB cluster should be added.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#global_cluster_identifier CcDBCluster#global_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#global_cluster_identifier CcDBCluster#global_cluster_identifier}
     */
     readonly globalClusterIdentifier?: string;
     /**
     * True if mapping of Amazon Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#iam_auth_enabled CcDBCluster#iam_auth_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#iam_auth_enabled CcDBCluster#iam_auth_enabled}
     */
     readonly iamAuthEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the AWS KMS key that is used to encrypt the database instances in the DB cluster, such as arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef. If you enable the StorageEncrypted property but don't specify this property, the default KMS key is used. If you specify this property, you must set the StorageEncrypted property to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#kms_key_id CcDBCluster#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#kms_key_id CcDBCluster#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * The network type of the DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#network_type CcDBCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#network_type CcDBCluster#network_type}
     */
     readonly networkType?: string;
     /**
     * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#preferred_backup_window CcDBCluster#preferred_backup_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#preferred_backup_window CcDBCluster#preferred_backup_window}
     */
     readonly preferredBackupWindow?: string;
     /**
     * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#preferred_maintenance_window CcDBCluster#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#preferred_maintenance_window CcDBCluster#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
@@ -125,7 +125,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#restore_to_time CcDBCluster#restore_to_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#restore_to_time CcDBCluster#restore_to_time}
     */
     readonly restoreToTime?: string;
     /**
@@ -135,13 +135,13 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#restore_type CcDBCluster#restore_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#restore_type CcDBCluster#restore_type}
     */
     readonly restoreType?: string;
     /**
     * Contains the scaling configuration used by the Neptune Serverless Instances within this DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#serverless_scaling_configuration CcDBCluster#serverless_scaling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#serverless_scaling_configuration CcDBCluster#serverless_scaling_configuration}
     */
     readonly serverlessScalingConfiguration?: CcDBCluster.ServerlessScalingConfigurationProperty;
     /**
@@ -151,7 +151,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * However, if you don't specify the SnapshotIdentifier, an empty DB cluster is created, and the original DB cluster is deleted. If you specify a property that is different from the previous snapshot restore property, the DB cluster is restored from the snapshot specified by the SnapshotIdentifier, and the original DB cluster is deleted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#snapshot_identifier CcDBCluster#snapshot_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#snapshot_identifier CcDBCluster#snapshot_identifier}
     */
     readonly snapshotIdentifier?: string;
     /**
@@ -161,7 +161,7 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#source_db_cluster_identifier CcDBCluster#source_db_cluster_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#source_db_cluster_identifier CcDBCluster#source_db_cluster_identifier}
     */
     readonly sourceDbClusterIdentifier?: string;
     /**
@@ -175,13 +175,13 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * If you specify the DBSnapshotIdentifier and don't specify this property or disable it. The value is inherited from the snapshot, and the specified KmsKeyId property from the snapshot is used.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#storage_encrypted CcDBCluster#storage_encrypted}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#storage_encrypted CcDBCluster#storage_encrypted}
     */
     readonly storageEncrypted?: boolean | cdktn.IResolvable;
     /**
     * The tags assigned to this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#tags CcDBCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#tags CcDBCluster#tags}
     */
     readonly tags?: CcDBCluster.TagProperty[] | cdktn.IResolvable;
     /**
@@ -191,19 +191,19 @@ export interface CcDBClusterProps extends cdktn.TerraformMetaArguments {
     * 
     * If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#use_latest_restorable_time CcDBCluster#use_latest_restorable_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#use_latest_restorable_time CcDBCluster#use_latest_restorable_time}
     */
     readonly useLatestRestorableTime?: boolean | cdktn.IResolvable;
     /**
     * Provides a list of VPC security groups that the DB cluster belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#vpc_security_group_ids CcDBCluster#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#vpc_security_group_ids CcDBCluster#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster awscc_neptune_db_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster awscc_neptune_db_cluster}
 */
 export class CcDBCluster extends cdktn.TerraformResource {
 
@@ -219,7 +219,7 @@ export class CcDBCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBCluster to import
-    * @param importFromId The id of the existing CcDBCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -231,7 +231,7 @@ export class CcDBCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster awscc_neptune_db_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster awscc_neptune_db_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +242,7 @@ export class CcDBCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_neptune_db_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1065,13 +1065,13 @@ export interface DBClusterRoleProperty {
     /**
     * The name of the feature associated with the AWS Identity and Access Management (IAM) role. For the list of supported feature names, see DBEngineVersion in the Amazon Neptune API Reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#feature_name CcDBCluster#feature_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#feature_name CcDBCluster#feature_name}
     */
     readonly featureName?: string;
     /**
     * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#role_arn CcDBCluster#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#role_arn CcDBCluster#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -1181,13 +1181,13 @@ export interface ServerlessScalingConfigurationProperty {
     /**
     * The maximum number of Neptune capacity units (NCUs) for a DB instance in an Neptune Serverless cluster. You can specify NCU values in half-step increments, such as 40, 40.5, 41, and so on. The smallest value you can use is 2.5, whereas the largest is 128.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#max_capacity CcDBCluster#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#max_capacity CcDBCluster#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The minimum number of Neptune capacity units (NCUs) for a DB instance in an Neptune Serverless cluster. You can specify NCU values in half-step increments, such as 8, 8.5, 9, and so on. The smallest value you can use is 1, whereas the largest is 128.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#min_capacity CcDBCluster#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#min_capacity CcDBCluster#min_capacity}
     */
     readonly minCapacity?: number;
 }
@@ -1275,13 +1275,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#key CcDBCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#key CcDBCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/neptune_db_cluster#value CcDBCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/neptune_db_cluster#value CcDBCluster#value}
     */
     readonly value?: string;
 }

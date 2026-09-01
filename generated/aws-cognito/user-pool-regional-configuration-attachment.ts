@@ -1,41 +1,41 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcUserPoolRegionalConfigurationAttachmentProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#email_configuration CcUserPoolRegionalConfigurationAttachment#email_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#email_configuration CcUserPoolRegionalConfigurationAttachment#email_configuration}
     */
     readonly emailConfiguration?: CcUserPoolRegionalConfigurationAttachment.EmailConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_config CcUserPoolRegionalConfigurationAttachment#lambda_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_config CcUserPoolRegionalConfigurationAttachment#lambda_config}
     */
     readonly lambdaConfig?: CcUserPoolRegionalConfigurationAttachment.LambdaConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sms_configuration CcUserPoolRegionalConfigurationAttachment#sms_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sms_configuration CcUserPoolRegionalConfigurationAttachment#sms_configuration}
     */
     readonly smsConfiguration?: CcUserPoolRegionalConfigurationAttachment.SmsConfigurationProperty;
     /**
     * The status of the replica. Set to ACTIVE or INACTIVE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#status CcUserPoolRegionalConfigurationAttachment#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#status CcUserPoolRegionalConfigurationAttachment#status}
     */
     readonly status?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_pool_id CcUserPoolRegionalConfigurationAttachment#user_pool_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_pool_id CcUserPoolRegionalConfigurationAttachment#user_pool_id}
     */
     readonly userPoolId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_pool_tags CcUserPoolRegionalConfigurationAttachment#user_pool_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_pool_tags CcUserPoolRegionalConfigurationAttachment#user_pool_tags}
     */
     readonly userPoolTags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment awscc_cognito_user_pool_regional_configuration_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment awscc_cognito_user_pool_regional_configuration_attachment}
 */
 export class CcUserPoolRegionalConfigurationAttachment extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcUserPoolRegionalConfigurationAttachment extends cdktn.TerraformRe
     * Generates CDKTN code for importing a CcUserPoolRegionalConfigurationAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcUserPoolRegionalConfigurationAttachment to import
-    * @param importFromId The id of the existing CcUserPoolRegionalConfigurationAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcUserPoolRegionalConfigurationAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcUserPoolRegionalConfigurationAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcUserPoolRegionalConfigurationAttachment extends cdktn.TerraformRe
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment awscc_cognito_user_pool_regional_configuration_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment awscc_cognito_user_pool_regional_configuration_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class CcUserPoolRegionalConfigurationAttachment extends cdktn.TerraformRe
             terraformResourceType: 'awscc_cognito_user_pool_regional_configuration_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -714,23 +714,23 @@ export function ccUserPoolRegionalConfigurationAttachmentSmsConfigurationPropert
 export namespace CcUserPoolRegionalConfigurationAttachment {
 export interface EmailConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#configuration_set CcUserPoolRegionalConfigurationAttachment#configuration_set}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#configuration_set CcUserPoolRegionalConfigurationAttachment#configuration_set}
     */
     readonly configurationSet?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#email_sending_account CcUserPoolRegionalConfigurationAttachment#email_sending_account}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#email_sending_account CcUserPoolRegionalConfigurationAttachment#email_sending_account}
     */
     readonly emailSendingAccount?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#from CcUserPoolRegionalConfigurationAttachment#from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#from CcUserPoolRegionalConfigurationAttachment#from}
     */
     readonly from?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#reply_to_email_address CcUserPoolRegionalConfigurationAttachment#reply_to_email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#reply_to_email_address CcUserPoolRegionalConfigurationAttachment#reply_to_email_address}
     */
     readonly replyToEmailAddress?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#source_arn CcUserPoolRegionalConfigurationAttachment#source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#source_arn CcUserPoolRegionalConfigurationAttachment#source_arn}
     */
     readonly sourceArn?: string;
 }
@@ -882,11 +882,11 @@ export class EmailConfigurationPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface CustomEmailSenderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
     */
     readonly lambdaVersion?: string;
 }
@@ -972,11 +972,11 @@ export class CustomEmailSenderPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface CustomSMSSenderProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
     */
     readonly lambdaVersion?: string;
 }
@@ -1062,11 +1062,11 @@ export class CustomSMSSenderPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface InboundFederationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
     */
     readonly lambdaVersion?: string;
 }
@@ -1152,11 +1152,11 @@ export class InboundFederationPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface PreTokenGenerationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_arn CcUserPoolRegionalConfigurationAttachment#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#lambda_version CcUserPoolRegionalConfigurationAttachment#lambda_version}
     */
     readonly lambdaVersion?: string;
 }
@@ -1242,63 +1242,63 @@ export class PreTokenGenerationConfigPropertyOutputReference extends cdktn.Compl
 }
 export interface LambdaConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#create_auth_challenge CcUserPoolRegionalConfigurationAttachment#create_auth_challenge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#create_auth_challenge CcUserPoolRegionalConfigurationAttachment#create_auth_challenge}
     */
     readonly createAuthChallenge?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_email_sender CcUserPoolRegionalConfigurationAttachment#custom_email_sender}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_email_sender CcUserPoolRegionalConfigurationAttachment#custom_email_sender}
     */
     readonly customEmailSender?: CustomEmailSenderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_message CcUserPoolRegionalConfigurationAttachment#custom_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_message CcUserPoolRegionalConfigurationAttachment#custom_message}
     */
     readonly customMessage?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_sms_sender CcUserPoolRegionalConfigurationAttachment#custom_sms_sender}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#custom_sms_sender CcUserPoolRegionalConfigurationAttachment#custom_sms_sender}
     */
     readonly customSmsSender?: CustomSMSSenderProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#define_auth_challenge CcUserPoolRegionalConfigurationAttachment#define_auth_challenge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#define_auth_challenge CcUserPoolRegionalConfigurationAttachment#define_auth_challenge}
     */
     readonly defineAuthChallenge?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#inbound_federation CcUserPoolRegionalConfigurationAttachment#inbound_federation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#inbound_federation CcUserPoolRegionalConfigurationAttachment#inbound_federation}
     */
     readonly inboundFederation?: InboundFederationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#kms_key_id CcUserPoolRegionalConfigurationAttachment#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#kms_key_id CcUserPoolRegionalConfigurationAttachment#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#post_authentication CcUserPoolRegionalConfigurationAttachment#post_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#post_authentication CcUserPoolRegionalConfigurationAttachment#post_authentication}
     */
     readonly postAuthentication?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#post_confirmation CcUserPoolRegionalConfigurationAttachment#post_confirmation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#post_confirmation CcUserPoolRegionalConfigurationAttachment#post_confirmation}
     */
     readonly postConfirmation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_authentication CcUserPoolRegionalConfigurationAttachment#pre_authentication}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_authentication CcUserPoolRegionalConfigurationAttachment#pre_authentication}
     */
     readonly preAuthentication?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_sign_up CcUserPoolRegionalConfigurationAttachment#pre_sign_up}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_sign_up CcUserPoolRegionalConfigurationAttachment#pre_sign_up}
     */
     readonly preSignUp?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_token_generation CcUserPoolRegionalConfigurationAttachment#pre_token_generation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_token_generation CcUserPoolRegionalConfigurationAttachment#pre_token_generation}
     */
     readonly preTokenGeneration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_token_generation_config CcUserPoolRegionalConfigurationAttachment#pre_token_generation_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#pre_token_generation_config CcUserPoolRegionalConfigurationAttachment#pre_token_generation_config}
     */
     readonly preTokenGenerationConfig?: PreTokenGenerationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_migration CcUserPoolRegionalConfigurationAttachment#user_migration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#user_migration CcUserPoolRegionalConfigurationAttachment#user_migration}
     */
     readonly userMigration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#verify_auth_challenge_response CcUserPoolRegionalConfigurationAttachment#verify_auth_challenge_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#verify_auth_challenge_response CcUserPoolRegionalConfigurationAttachment#verify_auth_challenge_response}
     */
     readonly verifyAuthChallengeResponse?: string;
 }
@@ -1670,31 +1670,31 @@ export class LambdaConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface EumsSmsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#caller_arn CcUserPoolRegionalConfigurationAttachment#caller_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#caller_arn CcUserPoolRegionalConfigurationAttachment#caller_arn}
     */
     readonly callerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#configuration_set_name CcUserPoolRegionalConfigurationAttachment#configuration_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#configuration_set_name CcUserPoolRegionalConfigurationAttachment#configuration_set_name}
     */
     readonly configurationSetName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#external_id CcUserPoolRegionalConfigurationAttachment#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#external_id CcUserPoolRegionalConfigurationAttachment#external_id}
     */
     readonly externalId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#in_entity_id CcUserPoolRegionalConfigurationAttachment#in_entity_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#in_entity_id CcUserPoolRegionalConfigurationAttachment#in_entity_id}
     */
     readonly inEntityId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#in_template_id CcUserPoolRegionalConfigurationAttachment#in_template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#in_template_id CcUserPoolRegionalConfigurationAttachment#in_template_id}
     */
     readonly inTemplateId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#origination_identity CcUserPoolRegionalConfigurationAttachment#origination_identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#origination_identity CcUserPoolRegionalConfigurationAttachment#origination_identity}
     */
     readonly originationIdentity?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#region CcUserPoolRegionalConfigurationAttachment#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#region CcUserPoolRegionalConfigurationAttachment#region}
     */
     readonly region?: string;
 }
@@ -1890,19 +1890,19 @@ export class EumsSmsConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SmsConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#eums_sms CcUserPoolRegionalConfigurationAttachment#eums_sms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#eums_sms CcUserPoolRegionalConfigurationAttachment#eums_sms}
     */
     readonly eumsSms?: EumsSmsConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#external_id CcUserPoolRegionalConfigurationAttachment#external_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#external_id CcUserPoolRegionalConfigurationAttachment#external_id}
     */
     readonly externalId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sns_caller_arn CcUserPoolRegionalConfigurationAttachment#sns_caller_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sns_caller_arn CcUserPoolRegionalConfigurationAttachment#sns_caller_arn}
     */
     readonly snsCallerArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sns_region CcUserPoolRegionalConfigurationAttachment#sns_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cognito_user_pool_regional_configuration_attachment#sns_region CcUserPoolRegionalConfigurationAttachment#sns_region}
     */
     readonly snsRegion?: string;
 }

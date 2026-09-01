@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcCustomVerificationEmailTemplateProps extends cdktn.TerraformM
     /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#failure_redirection_url CcCustomVerificationEmailTemplate#failure_redirection_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#failure_redirection_url CcCustomVerificationEmailTemplate#failure_redirection_url}
     */
     readonly failureRedirectionUrl: string;
     /**
     * The email address that the custom verification email is sent from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#from_email_address CcCustomVerificationEmailTemplate#from_email_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#from_email_address CcCustomVerificationEmailTemplate#from_email_address}
     */
     readonly fromEmailAddress: string;
     /**
     * The URL that the recipient of the verification email is sent to if his or her address is successfully verified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#success_redirection_url CcCustomVerificationEmailTemplate#success_redirection_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#success_redirection_url CcCustomVerificationEmailTemplate#success_redirection_url}
     */
     readonly successRedirectionUrl: string;
     /**
     * The tags (keys and values) associated with the tenant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#tags CcCustomVerificationEmailTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#tags CcCustomVerificationEmailTemplate#tags}
     */
     readonly tags?: CcCustomVerificationEmailTemplate.TagProperty[] | cdktn.IResolvable;
     /**
     * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#template_content CcCustomVerificationEmailTemplate#template_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#template_content CcCustomVerificationEmailTemplate#template_content}
     */
     readonly templateContent: string;
     /**
     * The name of the custom verification email template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#template_name CcCustomVerificationEmailTemplate#template_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#template_name CcCustomVerificationEmailTemplate#template_name}
     */
     readonly templateName: string;
     /**
     * The subject line of the custom verification email.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#template_subject CcCustomVerificationEmailTemplate#template_subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#template_subject CcCustomVerificationEmailTemplate#template_subject}
     */
     readonly templateSubject: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template awscc_ses_custom_verification_email_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template awscc_ses_custom_verification_email_template}
 */
 export class CcCustomVerificationEmailTemplate extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcCustomVerificationEmailTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomVerificationEmailTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomVerificationEmailTemplate to import
-    * @param importFromId The id of the existing CcCustomVerificationEmailTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomVerificationEmailTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomVerificationEmailTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcCustomVerificationEmailTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template awscc_ses_custom_verification_email_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template awscc_ses_custom_verification_email_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcCustomVerificationEmailTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ses_custom_verification_email_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -321,13 +321,13 @@ export interface TagProperty {
     /**
     * The key of the key-value tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#key CcCustomVerificationEmailTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#key CcCustomVerificationEmailTemplate#key}
     */
     readonly key?: string;
     /**
     * The value of the key-value tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ses_custom_verification_email_template#value CcCustomVerificationEmailTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ses_custom_verification_email_template#value CcCustomVerificationEmailTemplate#value}
     */
     readonly value?: string;
 }

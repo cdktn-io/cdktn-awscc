@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,91 +9,91 @@ export interface CcCrawlerProps extends cdktn.TerraformMetaArguments {
     /**
     * A list of UTF-8 strings that specify the names of custom classifiers that are associated with the crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#classifiers CcCrawler#classifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#classifiers CcCrawler#classifiers}
     */
     readonly classifiers?: string[];
     /**
     * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#configuration CcCrawler#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#configuration CcCrawler#configuration}
     */
     readonly configuration?: string;
     /**
     * The name of the SecurityConfiguration structure to be used by this crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#crawler_security_configuration CcCrawler#crawler_security_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#crawler_security_configuration CcCrawler#crawler_security_configuration}
     */
     readonly crawlerSecurityConfiguration?: string;
     /**
     * The name of the database in which the crawler's output is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#database_name CcCrawler#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#database_name CcCrawler#database_name}
     */
     readonly databaseName?: string;
     /**
     * A description of the crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#description CcCrawler#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#description CcCrawler#description}
     */
     readonly description?: string;
     /**
     * Specifies AWS Lake Formation configuration settings for the crawler
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#lake_formation_configuration CcCrawler#lake_formation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#lake_formation_configuration CcCrawler#lake_formation_configuration}
     */
     readonly lakeFormationConfiguration?: CcCrawler.LakeFormationConfigurationProperty;
     /**
     * The name of the crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#name CcCrawler#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#name CcCrawler#name}
     */
     readonly name?: string;
     /**
     * When crawling an Amazon S3 data source after the first crawl is complete, specifies whether to crawl the entire dataset again or to crawl only folders that were added since the last crawler run. For more information, see Incremental Crawls in AWS Glue in the developer guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#recrawl_policy CcCrawler#recrawl_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#recrawl_policy CcCrawler#recrawl_policy}
     */
     readonly recrawlPolicy?: CcCrawler.RecrawlPolicyProperty;
     /**
     * The Amazon Resource Name (ARN) of an IAM role that's used to access customer resources, such as Amazon Simple Storage Service (Amazon S3) data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#role CcCrawler#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#role CcCrawler#role}
     */
     readonly role: string;
     /**
     * A scheduling object using a cron statement to schedule an event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#schedule CcCrawler#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#schedule CcCrawler#schedule}
     */
     readonly schedule?: CcCrawler.ScheduleProperty;
     /**
     * The policy that specifies update and delete behaviors for the crawler. The policy tells the crawler what to do in the event that it detects a change in a table that already exists in the customer's database at the time of the crawl. The SchemaChangePolicy does not affect whether or how new tables and partitions are added. New tables and partitions are always created regardless of the SchemaChangePolicy on a crawler. The SchemaChangePolicy consists of two components, UpdateBehavior and DeleteBehavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#schema_change_policy CcCrawler#schema_change_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#schema_change_policy CcCrawler#schema_change_policy}
     */
     readonly schemaChangePolicy?: CcCrawler.SchemaChangePolicyProperty;
     /**
     * The prefix added to the names of tables that are created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#table_prefix CcCrawler#table_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#table_prefix CcCrawler#table_prefix}
     */
     readonly tablePrefix?: string;
     /**
     * The tags to use with this crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#tags CcCrawler#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#tags CcCrawler#tags}
     */
     readonly tags?: string;
     /**
     * Specifies data stores to crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#targets CcCrawler#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#targets CcCrawler#targets}
     */
     readonly targets: CcCrawler.TargetsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler awscc_glue_crawler}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler awscc_glue_crawler}
 */
 export class CcCrawler extends cdktn.TerraformResource {
 
@@ -109,7 +109,7 @@ export class CcCrawler extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCrawler resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCrawler to import
-    * @param importFromId The id of the existing CcCrawler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCrawler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCrawler to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -121,7 +121,7 @@ export class CcCrawler extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler awscc_glue_crawler} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler awscc_glue_crawler} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class CcCrawler extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_crawler',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1127,13 +1127,13 @@ export interface LakeFormationConfigurationProperty {
     /**
     * Required for cross account crawls. For same account crawls as the target data, this can be left as null.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#account_id CcCrawler#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#account_id CcCrawler#account_id}
     */
     readonly accountId?: string;
     /**
     * Specifies whether to use AWS Lake Formation credentials for the crawler instead of the IAM role credentials.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#use_lake_formation_credentials CcCrawler#use_lake_formation_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#use_lake_formation_credentials CcCrawler#use_lake_formation_credentials}
     */
     readonly useLakeFormationCredentials?: boolean | cdktn.IResolvable;
 }
@@ -1221,7 +1221,7 @@ export interface RecrawlPolicyProperty {
     /**
     * Specifies whether to crawl the entire dataset again or to crawl only folders that were added since the last crawler run. A value of CRAWL_EVERYTHING specifies crawling the entire dataset again. A value of CRAWL_NEW_FOLDERS_ONLY specifies crawling only folders that were added since the last crawler run. A value of CRAWL_EVENT_MODE specifies crawling only the changes identified by Amazon S3 events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#recrawl_behavior CcCrawler#recrawl_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#recrawl_behavior CcCrawler#recrawl_behavior}
     */
     readonly recrawlBehavior?: string;
 }
@@ -1287,7 +1287,7 @@ export interface ScheduleProperty {
     /**
     * A cron expression used to specify the schedule. For more information, see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, specify cron(15 12 * * ? *).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#schedule_expression CcCrawler#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#schedule_expression CcCrawler#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -1353,13 +1353,13 @@ export interface SchemaChangePolicyProperty {
     /**
     * The deletion behavior when the crawler finds a deleted object. A value of LOG specifies that if a table or partition is found to no longer exist, do not delete it, only log that it was found to no longer exist. A value of DELETE_FROM_DATABASE specifies that if a table or partition is found to have been removed, delete it from the database. A value of DEPRECATE_IN_DATABASE specifies that if a table has been found to no longer exist, to add a property to the table that says 'DEPRECATED' and includes a timestamp with the time of deprecation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#delete_behavior CcCrawler#delete_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#delete_behavior CcCrawler#delete_behavior}
     */
     readonly deleteBehavior?: string;
     /**
     * The update behavior when the crawler finds a changed schema. A value of LOG specifies that if a table or a partition already exists, and a change is detected, do not update it, only log that a change was detected. Add new tables and new partitions (including on existing tables). A value of UPDATE_IN_DATABASE specifies that if a table or partition already exists, and a change is detected, update it. Add new tables and partitions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#update_behavior CcCrawler#update_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#update_behavior CcCrawler#update_behavior}
     */
     readonly updateBehavior?: string;
 }
@@ -1447,31 +1447,31 @@ export interface CatalogTargetProperty {
     /**
     * The name of the connection for an Amazon S3-backed Data Catalog table to be a target of the crawl when using a Catalog connection type paired with a NETWORK Connection type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * The name of the database to be synchronized.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#database_name CcCrawler#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#database_name CcCrawler#database_name}
     */
     readonly databaseName?: string;
     /**
     * A valid Amazon dead-letter SQS ARN. For example, arn:aws:sqs:region:account:deadLetterQueue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#dlq_event_queue_arn CcCrawler#dlq_event_queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#dlq_event_queue_arn CcCrawler#dlq_event_queue_arn}
     */
     readonly dlqEventQueueArn?: string;
     /**
     * A valid Amazon SQS ARN. For example, arn:aws:sqs:region:account:sqs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#event_queue_arn CcCrawler#event_queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#event_queue_arn CcCrawler#event_queue_arn}
     */
     readonly eventQueueArn?: string;
     /**
     * A list of the tables to be synchronized.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#tables CcCrawler#tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#tables CcCrawler#tables}
     */
     readonly tables?: string[];
 }
@@ -1647,23 +1647,23 @@ export interface DeltaTargetProperty {
     /**
     * The name of the connection to use to connect to the Delta table target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * Specifies whether the crawler will create native tables, to allow integration with query engines that support querying of the Delta transaction log directly.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#create_native_delta_table CcCrawler#create_native_delta_table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#create_native_delta_table CcCrawler#create_native_delta_table}
     */
     readonly createNativeDeltaTable?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#delta_tables CcCrawler#delta_tables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#delta_tables CcCrawler#delta_tables}
     */
     readonly deltaTables?: string[];
     /**
     * Specifies whether to write the manifest files to the Delta table path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#write_manifest CcCrawler#write_manifest}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#write_manifest CcCrawler#write_manifest}
     */
     readonly writeManifest?: boolean | cdktn.IResolvable;
 }
@@ -1817,13 +1817,13 @@ export interface DynamoDBTargetProperty {
     /**
     * The name of the DynamoDB table to crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#path CcCrawler#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#path CcCrawler#path}
     */
     readonly path?: string;
     /**
     * Indicates whether to scan all the records, or to sample rows from the table. Scanning all the records can take a long time when the table is not a high throughput table. A value of true means to scan all records, while a value of false means to sample the records. If no value is specified, the value defaults to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#scan_all CcCrawler#scan_all}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#scan_all CcCrawler#scan_all}
     */
     readonly scanAll?: boolean | cdktn.IResolvable;
     /**
@@ -1831,7 +1831,7 @@ export interface DynamoDBTargetProperty {
     * 
     * The valid values are null or a value between 0.1 to 1.5. A null value is used when user does not provide a value, and defaults to 0.5 of the configured Read Capacity Unit (for provisioned tables), or 0.25 of the max configured Read Capacity Unit (for tables using on-demand mode).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#scan_rate CcCrawler#scan_rate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#scan_rate CcCrawler#scan_rate}
     */
     readonly scanRate?: number;
 }
@@ -1963,25 +1963,25 @@ export interface HudiTargetProperty {
     /**
     * The name of the connection to use to connect to the Hudi target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * A list of global patterns used to exclude from the crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
     */
     readonly exclusions?: string[];
     /**
     * The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Hudi metadata folder in your Amazon S3 path. Used to limit the crawler run time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#maximum_traversal_depth CcCrawler#maximum_traversal_depth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#maximum_traversal_depth CcCrawler#maximum_traversal_depth}
     */
     readonly maximumTraversalDepth?: number;
     /**
     * One or more Amazon S3 paths that contains Hudi metadata folders as s3://bucket/prefix .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#paths CcCrawler#paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#paths CcCrawler#paths}
     */
     readonly paths?: string[];
 }
@@ -2135,25 +2135,25 @@ export interface IcebergTargetProperty {
     /**
     * The name of the connection to use to connect to the Iceberg target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * A list of global patterns used to exclude from the crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
     */
     readonly exclusions?: string[];
     /**
     * The maximum depth of Amazon S3 paths that the crawler can traverse to discover the Iceberg metadata folder in your Amazon S3 path. Used to limit the crawler run time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#maximum_traversal_depth CcCrawler#maximum_traversal_depth}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#maximum_traversal_depth CcCrawler#maximum_traversal_depth}
     */
     readonly maximumTraversalDepth?: number;
     /**
     * One or more Amazon S3 paths that contains Iceberg metadata folders as s3://bucket/prefix .
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#paths CcCrawler#paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#paths CcCrawler#paths}
     */
     readonly paths?: string[];
 }
@@ -2307,7 +2307,7 @@ export interface JdbcTargetProperty {
     /**
     * The name of the connection to use to connect to the JDBC target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
@@ -2315,19 +2315,19 @@ export interface JdbcTargetProperty {
     * 
     * If you do not need additional metadata, keep the field empty.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#enable_additional_metadata CcCrawler#enable_additional_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#enable_additional_metadata CcCrawler#enable_additional_metadata}
     */
     readonly enableAdditionalMetadata?: string[];
     /**
     * A list of glob patterns used to exclude from the crawl. For more information, see Catalog Tables with a Crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
     */
     readonly exclusions?: string[];
     /**
     * The path of the JDBC target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#path CcCrawler#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#path CcCrawler#path}
     */
     readonly path?: string;
 }
@@ -2481,13 +2481,13 @@ export interface MongoDBTargetProperty {
     /**
     * The name of the connection to use to connect to the Amazon DocumentDB or MongoDB target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * The path of the Amazon DocumentDB or MongoDB target (database/collection).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#path CcCrawler#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#path CcCrawler#path}
     */
     readonly path?: string;
 }
@@ -2597,37 +2597,37 @@ export interface S3TargetProperty {
     /**
     * The name of a connection which allows a job or crawler to access data in Amazon S3 within an Amazon Virtual Private Cloud environment (Amazon VPC).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#connection_name CcCrawler#connection_name}
     */
     readonly connectionName?: string;
     /**
     * A valid Amazon dead-letter SQS ARN. For example, arn:aws:sqs:region:account:deadLetterQueue.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#dlq_event_queue_arn CcCrawler#dlq_event_queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#dlq_event_queue_arn CcCrawler#dlq_event_queue_arn}
     */
     readonly dlqEventQueueArn?: string;
     /**
     * A valid Amazon SQS ARN. For example, arn:aws:sqs:region:account:sqs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#event_queue_arn CcCrawler#event_queue_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#event_queue_arn CcCrawler#event_queue_arn}
     */
     readonly eventQueueArn?: string;
     /**
     * A list of glob patterns used to exclude from the crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#exclusions CcCrawler#exclusions}
     */
     readonly exclusions?: string[];
     /**
     * The path to the Amazon S3 target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#path CcCrawler#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#path CcCrawler#path}
     */
     readonly path?: string;
     /**
     * Sets the number of files in each leaf folder to be crawled when crawling sample files in a dataset. If not set, all the files are crawled. A valid value is an integer between 1 and 249.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#sample_size CcCrawler#sample_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#sample_size CcCrawler#sample_size}
     */
     readonly sampleSize?: number;
 }
@@ -2825,49 +2825,49 @@ export interface TargetsProperty {
     /**
     * Specifies AWS Glue Data Catalog targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#catalog_targets CcCrawler#catalog_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#catalog_targets CcCrawler#catalog_targets}
     */
     readonly catalogTargets?: CatalogTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies an array of Delta data store targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#delta_targets CcCrawler#delta_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#delta_targets CcCrawler#delta_targets}
     */
     readonly deltaTargets?: DeltaTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies Amazon DynamoDB targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#dynamo_db_targets CcCrawler#dynamo_db_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#dynamo_db_targets CcCrawler#dynamo_db_targets}
     */
     readonly dynamoDbTargets?: DynamoDBTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies Apache Hudi data store targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#hudi_targets CcCrawler#hudi_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#hudi_targets CcCrawler#hudi_targets}
     */
     readonly hudiTargets?: HudiTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies Apache Iceberg data store targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#iceberg_targets CcCrawler#iceberg_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#iceberg_targets CcCrawler#iceberg_targets}
     */
     readonly icebergTargets?: IcebergTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies JDBC targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#jdbc_targets CcCrawler#jdbc_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#jdbc_targets CcCrawler#jdbc_targets}
     */
     readonly jdbcTargets?: JdbcTargetProperty[] | cdktn.IResolvable;
     /**
     * A list of Mongo DB targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#mongo_db_targets CcCrawler#mongo_db_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#mongo_db_targets CcCrawler#mongo_db_targets}
     */
     readonly mongoDbTargets?: MongoDBTargetProperty[] | cdktn.IResolvable;
     /**
     * Specifies Amazon Simple Storage Service (Amazon S3) targets.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/glue_crawler#s3_targets CcCrawler#s3_targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_crawler#s3_targets CcCrawler#s3_targets}
     */
     readonly s3Targets?: S3TargetProperty[] | cdktn.IResolvable;
 }

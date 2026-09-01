@@ -1,37 +1,37 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcThingGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#parent_group_name CcThingGroup#parent_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#parent_group_name CcThingGroup#parent_group_name}
     */
     readonly parentGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#query_string CcThingGroup#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#query_string CcThingGroup#query_string}
     */
     readonly queryString?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#tags CcThingGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#tags CcThingGroup#tags}
     */
     readonly tags?: CcThingGroup.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#thing_group_name CcThingGroup#thing_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#thing_group_name CcThingGroup#thing_group_name}
     */
     readonly thingGroupName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#thing_group_properties CcThingGroup#thing_group_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#thing_group_properties CcThingGroup#thing_group_properties}
     */
     readonly thingGroupProperties?: CcThingGroup.ThingGroupPropertiesProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group awscc_iot_thing_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group awscc_iot_thing_group}
 */
 export class CcThingGroup extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcThingGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcThingGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcThingGroup to import
-    * @param importFromId The id of the existing CcThingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcThingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcThingGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcThingGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group awscc_iot_thing_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group awscc_iot_thing_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcThingGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iot_thing_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -348,13 +348,13 @@ export interface TagProperty {
     /**
     * Tag key (1-128 chars). No 'aws:' prefix. Allows: [A-Za-z0-9 _.:/=+-]
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#key CcThingGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#key CcThingGroup#key}
     */
     readonly key?: string;
     /**
     * Tag value (1-256 chars). No 'aws:' prefix. Allows: [A-Za-z0-9 _.:/=+-]
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#value CcThingGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#value CcThingGroup#value}
     */
     readonly value?: string;
 }
@@ -462,7 +462,7 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface AttributePayloadProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#attributes CcThingGroup#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#attributes CcThingGroup#attributes}
     */
     readonly attributes?: { [key: string]: string };
 }
@@ -526,11 +526,11 @@ export class AttributePayloadPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ThingGroupPropertiesProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#attribute_payload CcThingGroup#attribute_payload}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#attribute_payload CcThingGroup#attribute_payload}
     */
     readonly attributePayload?: AttributePayloadProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iot_thing_group#thing_group_description CcThingGroup#thing_group_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iot_thing_group#thing_group_description CcThingGroup#thing_group_description}
     */
     readonly thingGroupDescription?: string;
 }

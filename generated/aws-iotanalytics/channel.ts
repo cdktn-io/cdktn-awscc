@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcChannelProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#channel_name CcChannel#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#channel_name CcChannel#channel_name}
     */
     readonly channelName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#channel_storage CcChannel#channel_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#channel_storage CcChannel#channel_storage}
     */
     readonly channelStorage?: CcChannel.ChannelStorageProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#retention_period CcChannel#retention_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#retention_period CcChannel#retention_period}
     */
     readonly retentionPeriod?: CcChannel.RetentionPeriodProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#tags CcChannel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#tags CcChannel#tags}
     */
     readonly tags?: CcChannel.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel awscc_iotanalytics_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel awscc_iotanalytics_channel}
 */
 export class CcChannel extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannel to import
-    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel awscc_iotanalytics_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel awscc_iotanalytics_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcChannel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotanalytics_channel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -362,15 +362,15 @@ export function ccChannelTagPropertyToHclTerraform(struct?: CcChannel.TagPropert
 export namespace CcChannel {
 export interface CustomerManagedS3Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#bucket CcChannel#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#bucket CcChannel#bucket}
     */
     readonly bucket?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#key_prefix CcChannel#key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#key_prefix CcChannel#key_prefix}
     */
     readonly keyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#role_arn CcChannel#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#role_arn CcChannel#role_arn}
     */
     readonly roleArn?: string;
 }
@@ -478,11 +478,11 @@ export class CustomerManagedS3PropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface ChannelStorageProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#customer_managed_s3 CcChannel#customer_managed_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#customer_managed_s3 CcChannel#customer_managed_s3}
     */
     readonly customerManagedS3?: CustomerManagedS3Property;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#service_managed_s3 CcChannel#service_managed_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#service_managed_s3 CcChannel#service_managed_s3}
     */
     readonly serviceManagedS3?: string;
 }
@@ -568,11 +568,11 @@ export class ChannelStoragePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RetentionPeriodProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#number_of_days CcChannel#number_of_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#number_of_days CcChannel#number_of_days}
     */
     readonly numberOfDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#unlimited CcChannel#unlimited}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#unlimited CcChannel#unlimited}
     */
     readonly unlimited?: boolean | cdktn.IResolvable;
 }
@@ -658,11 +658,11 @@ export class RetentionPeriodPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#key CcChannel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#key CcChannel#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotanalytics_channel#value CcChannel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotanalytics_channel#value CcChannel#value}
     */
     readonly value?: string;
 }

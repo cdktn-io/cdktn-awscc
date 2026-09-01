@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,157 +9,157 @@ export interface CcCacheClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next minor version upgrade campaign.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#auto_minor_version_upgrade CcCacheCluster#auto_minor_version_upgrade}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#auto_minor_version_upgrade CcCacheCluster#auto_minor_version_upgrade}
     */
     readonly autoMinorVersionUpgrade?: boolean | cdktn.IResolvable;
     /**
     * Specifies whether the nodes in this Memcached cluster are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#az_mode CcCacheCluster#az_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#az_mode CcCacheCluster#az_mode}
     */
     readonly azMode?: string;
     /**
     * The compute and memory capacity of the nodes in the node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cache_node_type CcCacheCluster#cache_node_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cache_node_type CcCacheCluster#cache_node_type}
     */
     readonly cacheNodeType: string;
     /**
     * The name of the parameter group to associate with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cache_parameter_group_name CcCacheCluster#cache_parameter_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cache_parameter_group_name CcCacheCluster#cache_parameter_group_name}
     */
     readonly cacheParameterGroupName?: string;
     /**
     * A list of security group names to associate with this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cache_security_group_names CcCacheCluster#cache_security_group_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cache_security_group_names CcCacheCluster#cache_security_group_names}
     */
     readonly cacheSecurityGroupNames?: string[];
     /**
     * The name of the subnet group to be used for the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cache_subnet_group_name CcCacheCluster#cache_subnet_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cache_subnet_group_name CcCacheCluster#cache_subnet_group_name}
     */
     readonly cacheSubnetGroupName?: string;
     /**
     * A name for the cache cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cluster_name CcCacheCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cluster_name CcCacheCluster#cluster_name}
     */
     readonly clusterName?: string;
     /**
     * The name of the cache engine to be used for this cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#engine CcCacheCluster#engine}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#engine CcCacheCluster#engine}
     */
     readonly engine: string;
     /**
     * The version number of the cache engine to be used for this cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#engine_version CcCacheCluster#engine_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#engine_version CcCacheCluster#engine_version}
     */
     readonly engineVersion?: string;
     /**
     * The Ip Discovery parameter for cachecluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#ip_discovery CcCacheCluster#ip_discovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#ip_discovery CcCacheCluster#ip_discovery}
     */
     readonly ipDiscovery?: string;
     /**
     * Specifies the destination, format and type of the logs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#log_delivery_configurations CcCacheCluster#log_delivery_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#log_delivery_configurations CcCacheCluster#log_delivery_configurations}
     */
     readonly logDeliveryConfigurations?: CcCacheCluster.LogDeliveryConfigurationRequestProperty[] | cdktn.IResolvable;
     /**
     * The network type parameter for cachecluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#network_type CcCacheCluster#network_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#network_type CcCacheCluster#network_type}
     */
     readonly networkType?: string;
     /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#notification_topic_arn CcCacheCluster#notification_topic_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#notification_topic_arn CcCacheCluster#notification_topic_arn}
     */
     readonly notificationTopicArn?: string;
     /**
     * The number of cache nodes that the cache cluster should have.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#num_cache_nodes CcCacheCluster#num_cache_nodes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#num_cache_nodes CcCacheCluster#num_cache_nodes}
     */
     readonly numCacheNodes: number;
     /**
     * The port number on which each of the cache nodes accepts connections.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#port CcCacheCluster#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#port CcCacheCluster#port}
     */
     readonly port?: number;
     /**
     * The EC2 Availability Zone in which the cluster is created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#preferred_availability_zone CcCacheCluster#preferred_availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#preferred_availability_zone CcCacheCluster#preferred_availability_zone}
     */
     readonly preferredAvailabilityZone?: string;
     /**
     * A list of the Availability Zones in which cache nodes are created. The order of the zones in the list is not important.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#preferred_availability_zones CcCacheCluster#preferred_availability_zones}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#preferred_availability_zones CcCacheCluster#preferred_availability_zones}
     */
     readonly preferredAvailabilityZones?: string[];
     /**
     * Specifies the weekly time range during which maintenance on the cluster is performed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#preferred_maintenance_window CcCacheCluster#preferred_maintenance_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#preferred_maintenance_window CcCacheCluster#preferred_maintenance_window}
     */
     readonly preferredMaintenanceWindow?: string;
     /**
     * A single-element string list containing an Amazon Resource Name (ARN) that uniquely identifies a Redis RDB snapshot file stored in Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#snapshot_arns CcCacheCluster#snapshot_arns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#snapshot_arns CcCacheCluster#snapshot_arns}
     */
     readonly snapshotArns?: string[];
     /**
     * The name of a Redis snapshot from which to restore data into the new node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#snapshot_name CcCacheCluster#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#snapshot_name CcCacheCluster#snapshot_name}
     */
     readonly snapshotName?: string;
     /**
     * The number of days for which ElastiCache retains automatic snapshots before deleting them.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#snapshot_retention_limit CcCacheCluster#snapshot_retention_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#snapshot_retention_limit CcCacheCluster#snapshot_retention_limit}
     */
     readonly snapshotRetentionLimit?: number;
     /**
     * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#snapshot_window CcCacheCluster#snapshot_window}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#snapshot_window CcCacheCluster#snapshot_window}
     */
     readonly snapshotWindow?: string;
     /**
     * A list of tags to be added to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#tags CcCacheCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#tags CcCacheCluster#tags}
     */
     readonly tags?: CcCacheCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#transit_encryption_enabled CcCacheCluster#transit_encryption_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#transit_encryption_enabled CcCacheCluster#transit_encryption_enabled}
     */
     readonly transitEncryptionEnabled?: boolean | cdktn.IResolvable;
     /**
     * One or more VPC security groups associated with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#vpc_security_group_ids CcCacheCluster#vpc_security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#vpc_security_group_ids CcCacheCluster#vpc_security_group_ids}
     */
     readonly vpcSecurityGroupIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster awscc_elasticache_cache_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster awscc_elasticache_cache_cluster}
 */
 export class CcCacheCluster extends cdktn.TerraformResource {
 
@@ -175,7 +175,7 @@ export class CcCacheCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCacheCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCacheCluster to import
-    * @param importFromId The id of the existing CcCacheCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCacheCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCacheCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -187,7 +187,7 @@ export class CcCacheCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster awscc_elasticache_cache_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster awscc_elasticache_cache_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +198,7 @@ export class CcCacheCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elasticache_cache_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1110,7 +1110,7 @@ export interface CloudWatchLogsDestinationDetailsProperty {
     /**
     * The name of the CloudWatch Logs log group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#log_group CcCacheCluster#log_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#log_group CcCacheCluster#log_group}
     */
     readonly logGroup?: string;
 }
@@ -1176,7 +1176,7 @@ export interface KinesisFirehoseDestinationDetailsProperty {
     /**
     * The name of the Kinesis Data Firehose delivery stream
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#delivery_stream CcCacheCluster#delivery_stream}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#delivery_stream CcCacheCluster#delivery_stream}
     */
     readonly deliveryStream?: string;
 }
@@ -1242,13 +1242,13 @@ export interface DestinationDetailsProperty {
     /**
     * The configuration details of the CloudWatch Logs destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#cloudwatch_logs_details CcCacheCluster#cloudwatch_logs_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#cloudwatch_logs_details CcCacheCluster#cloudwatch_logs_details}
     */
     readonly cloudwatchLogsDetails?: CloudWatchLogsDestinationDetailsProperty;
     /**
     * The configuration details of the Kinesis Data Firehose destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#kinesis_firehose_details CcCacheCluster#kinesis_firehose_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#kinesis_firehose_details CcCacheCluster#kinesis_firehose_details}
     */
     readonly kinesisFirehoseDetails?: KinesisFirehoseDestinationDetailsProperty;
 }
@@ -1336,25 +1336,25 @@ export interface LogDeliveryConfigurationRequestProperty {
     /**
     * Configuration details of either a CloudWatch Logs destination or Kinesis Data Firehose destination.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#destination_details CcCacheCluster#destination_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#destination_details CcCacheCluster#destination_details}
     */
     readonly destinationDetails?: DestinationDetailsProperty;
     /**
     * Specify either CloudWatch Logs or Kinesis Data Firehose as the destination type. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#destination_type CcCacheCluster#destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#destination_type CcCacheCluster#destination_type}
     */
     readonly destinationType?: string;
     /**
     * Valid values are either json or text
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#log_format CcCacheCluster#log_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#log_format CcCacheCluster#log_format}
     */
     readonly logFormat?: string;
     /**
     * Valid value is either slow-log, which refers to slow-log or engine-log
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#log_type CcCacheCluster#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#log_type CcCacheCluster#log_type}
     */
     readonly logType?: string;
 }
@@ -1544,11 +1544,11 @@ export class RedisEndpointPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#key CcCacheCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#key CcCacheCluster#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/elasticache_cache_cluster#value CcCacheCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elasticache_cache_cluster#value CcCacheCluster#value}
     */
     readonly value?: string;
 }

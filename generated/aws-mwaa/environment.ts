@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -17,37 +17,37 @@ export interface CcEnvironmentProps extends cdktn.TerraformMetaArguments {
     * 
     *     "core.dags_folder": "{AIRFLOW_HOME}/dags"
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#airflow_configuration_options CcEnvironment#airflow_configuration_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#airflow_configuration_options CcEnvironment#airflow_configuration_options}
     */
     readonly airflowConfigurationOptions?: string;
     /**
     * Version of airflow to deploy to the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#airflow_version CcEnvironment#airflow_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#airflow_version CcEnvironment#airflow_version}
     */
     readonly airflowVersion?: string;
     /**
     * Represents an S3 prefix relative to the root of an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#dag_s3_path CcEnvironment#dag_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#dag_s3_path CcEnvironment#dag_s3_path}
     */
     readonly dagS3Path?: string;
     /**
     * Defines whether the VPC endpoints configured for the environment are created, and managed, by the customer or by Amazon MWAA.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#endpoint_management CcEnvironment#endpoint_management}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#endpoint_management CcEnvironment#endpoint_management}
     */
     readonly endpointManagement?: string;
     /**
     * Templated configuration for airflow processes and backing infrastructure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#environment_class CcEnvironment#environment_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#environment_class CcEnvironment#environment_class}
     */
     readonly environmentClass?: string;
     /**
     * IAM role to be used by tasks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#execution_role_arn CcEnvironment#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#execution_role_arn CcEnvironment#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
@@ -65,127 +65,127 @@ export interface CcEnvironmentProps extends cdktn.TerraformMetaArguments {
     * 
     *     AWS authenticates the CMK asynchronously. Therefore, if you specify an ID, alias, or ARN that is not valid, the action can appear to complete, but eventually fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#kms_key CcEnvironment#kms_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#kms_key CcEnvironment#kms_key}
     */
     readonly kmsKey?: string;
     /**
     * Logging configuration for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#logging_configuration CcEnvironment#logging_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#logging_configuration CcEnvironment#logging_configuration}
     */
     readonly loggingConfiguration?: CcEnvironment.LoggingConfigurationProperty;
     /**
     * Maximum webserver compute units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#max_webservers CcEnvironment#max_webservers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#max_webservers CcEnvironment#max_webservers}
     */
     readonly maxWebservers?: number;
     /**
     * Maximum worker compute units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#max_workers CcEnvironment#max_workers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#max_workers CcEnvironment#max_workers}
     */
     readonly maxWorkers?: number;
     /**
     * Minimum webserver compute units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#min_webservers CcEnvironment#min_webservers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#min_webservers CcEnvironment#min_webservers}
     */
     readonly minWebservers?: number;
     /**
     * Minimum worker compute units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#min_workers CcEnvironment#min_workers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#min_workers CcEnvironment#min_workers}
     */
     readonly minWorkers?: number;
     /**
     * Customer-defined identifier for the environment, unique per customer region.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#name CcEnvironment#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#name CcEnvironment#name}
     */
     readonly name: string;
     /**
     * Configures the network resources of the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#network_configuration CcEnvironment#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#network_configuration CcEnvironment#network_configuration}
     */
     readonly networkConfiguration?: CcEnvironment.NetworkConfigurationProperty;
     /**
     * Represents an version ID for an S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#plugins_s3_object_version CcEnvironment#plugins_s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#plugins_s3_object_version CcEnvironment#plugins_s3_object_version}
     */
     readonly pluginsS3ObjectVersion?: string;
     /**
     * Represents an S3 prefix relative to the root of an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#plugins_s3_path CcEnvironment#plugins_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#plugins_s3_path CcEnvironment#plugins_s3_path}
     */
     readonly pluginsS3Path?: string;
     /**
     * Represents an version ID for an S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#requirements_s3_object_version CcEnvironment#requirements_s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#requirements_s3_object_version CcEnvironment#requirements_s3_object_version}
     */
     readonly requirementsS3ObjectVersion?: string;
     /**
     * Represents an S3 prefix relative to the root of an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#requirements_s3_path CcEnvironment#requirements_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#requirements_s3_path CcEnvironment#requirements_s3_path}
     */
     readonly requirementsS3Path?: string;
     /**
     * Scheduler compute units.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#schedulers CcEnvironment#schedulers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#schedulers CcEnvironment#schedulers}
     */
     readonly schedulers?: number;
     /**
     * ARN for the AWS S3 bucket to use as the source of DAGs and plugins for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#source_bucket_arn CcEnvironment#source_bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#source_bucket_arn CcEnvironment#source_bucket_arn}
     */
     readonly sourceBucketArn?: string;
     /**
     * Represents an version ID for an S3 object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#startup_script_s3_object_version CcEnvironment#startup_script_s3_object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#startup_script_s3_object_version CcEnvironment#startup_script_s3_object_version}
     */
     readonly startupScriptS3ObjectVersion?: string;
     /**
     * Represents an S3 prefix relative to the root of an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#startup_script_s3_path CcEnvironment#startup_script_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#startup_script_s3_path CcEnvironment#startup_script_s3_path}
     */
     readonly startupScriptS3Path?: string;
     /**
     * A map of tags for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#tags CcEnvironment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#tags CcEnvironment#tags}
     */
     readonly tags?: string;
     /**
     * Choice for mode of webserver access including over public internet or via private VPC endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#webserver_access_mode CcEnvironment#webserver_access_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#webserver_access_mode CcEnvironment#webserver_access_mode}
     */
     readonly webserverAccessMode?: string;
     /**
     * Start time for the weekly maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#weekly_maintenance_window_start CcEnvironment#weekly_maintenance_window_start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#weekly_maintenance_window_start CcEnvironment#weekly_maintenance_window_start}
     */
     readonly weeklyMaintenanceWindowStart?: string;
     /**
     * The worker replacement strategy to use when updating the environment. Valid values: `FORCED`, `GRACEFUL`. FORCED means Apache Airflow workers will be stopped and replaced without waiting for tasks to complete before an update. GRACEFUL means Apache Airflow workers will be able to complete running tasks for up to 12 hours during an update before being stopped and replaced.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#worker_replacement_strategy CcEnvironment#worker_replacement_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#worker_replacement_strategy CcEnvironment#worker_replacement_strategy}
     */
     readonly workerReplacementStrategy?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment awscc_mwaa_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment awscc_mwaa_environment}
 */
 export class CcEnvironment extends cdktn.TerraformResource {
 
@@ -201,7 +201,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEnvironment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEnvironment to import
-    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEnvironment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,7 +213,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment awscc_mwaa_environment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment awscc_mwaa_environment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class CcEnvironment extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_mwaa_environment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1192,11 +1192,11 @@ export function ccEnvironmentNetworkConfigurationPropertyToHclTerraform(struct?:
 export namespace CcEnvironment {
 export interface ModuleLoggingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1287,11 +1287,11 @@ export class ModuleLoggingConfigurationPropertyOutputReference extends cdktn.Com
 }
 export interface SchedulerLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1382,11 +1382,11 @@ export class SchedulerLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TaskLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1477,11 +1477,11 @@ export class TaskLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WebserverLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1572,11 +1572,11 @@ export class WebserverLogsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkerLogsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#enabled CcEnvironment#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#log_level CcEnvironment#log_level}
     */
     readonly logLevel?: string;
 }
@@ -1669,31 +1669,31 @@ export interface LoggingConfigurationProperty {
     /**
     * Logging configuration for a specific airflow component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#dag_processing_logs CcEnvironment#dag_processing_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#dag_processing_logs CcEnvironment#dag_processing_logs}
     */
     readonly dagProcessingLogs?: ModuleLoggingConfigurationProperty;
     /**
     * Logging configuration for a specific airflow component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#scheduler_logs CcEnvironment#scheduler_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#scheduler_logs CcEnvironment#scheduler_logs}
     */
     readonly schedulerLogs?: SchedulerLogsProperty;
     /**
     * Logging configuration for a specific airflow component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#task_logs CcEnvironment#task_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#task_logs CcEnvironment#task_logs}
     */
     readonly taskLogs?: TaskLogsProperty;
     /**
     * Logging configuration for a specific airflow component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#webserver_logs CcEnvironment#webserver_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#webserver_logs CcEnvironment#webserver_logs}
     */
     readonly webserverLogs?: WebserverLogsProperty;
     /**
     * Logging configuration for a specific airflow component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#worker_logs CcEnvironment#worker_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#worker_logs CcEnvironment#worker_logs}
     */
     readonly workerLogs?: WorkerLogsProperty;
 }
@@ -1847,13 +1847,13 @@ export interface NetworkConfigurationProperty {
     /**
     * A list of security groups to use for the environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#security_group_ids CcEnvironment#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#security_group_ids CcEnvironment#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * A list of subnets to use for the environment. These must be private subnets, in the same VPC, in two different availability zones.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/mwaa_environment#subnet_ids CcEnvironment#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mwaa_environment#subnet_ids CcEnvironment#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

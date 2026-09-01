@@ -1,87 +1,87 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGlobalTableProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_definitions CcGlobalTable#attribute_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_definitions CcGlobalTable#attribute_definitions}
     */
     readonly attributeDefinitions?: CcGlobalTable.AttributeDefinitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#billing_mode CcGlobalTable#billing_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#billing_mode CcGlobalTable#billing_mode}
     */
     readonly billingMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#global_secondary_indexes CcGlobalTable#global_secondary_indexes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#global_secondary_indexes CcGlobalTable#global_secondary_indexes}
     */
     readonly globalSecondaryIndexes?: CcGlobalTable.GlobalSecondaryIndexProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#global_table_source_arn CcGlobalTable#global_table_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#global_table_source_arn CcGlobalTable#global_table_source_arn}
     */
     readonly globalTableSourceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#global_table_witnesses CcGlobalTable#global_table_witnesses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#global_table_witnesses CcGlobalTable#global_table_witnesses}
     */
     readonly globalTableWitnesses?: CcGlobalTable.GlobalTableWitnessProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
     */
     readonly keySchema?: CcGlobalTable.KeySchemaProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#local_secondary_indexes CcGlobalTable#local_secondary_indexes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#local_secondary_indexes CcGlobalTable#local_secondary_indexes}
     */
     readonly localSecondaryIndexes?: CcGlobalTable.LocalSecondaryIndexProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#multi_region_consistency CcGlobalTable#multi_region_consistency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#multi_region_consistency CcGlobalTable#multi_region_consistency}
     */
     readonly multiRegionConsistency?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
     readonly readOnDemandThroughputSettings?: CcGlobalTable.ReadOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
     readonly readProvisionedThroughputSettings?: CcGlobalTable.GlobalReadProvisionedThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#replicas CcGlobalTable#replicas}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#replicas CcGlobalTable#replicas}
     */
     readonly replicas: CcGlobalTable.ReplicaSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#sse_specification CcGlobalTable#sse_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#sse_specification CcGlobalTable#sse_specification}
     */
     readonly sseSpecification?: CcGlobalTable.SSESpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#stream_specification CcGlobalTable#stream_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#stream_specification CcGlobalTable#stream_specification}
     */
     readonly streamSpecification?: CcGlobalTable.StreamSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#table_name CcGlobalTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#table_name CcGlobalTable#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#time_to_live_specification CcGlobalTable#time_to_live_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#time_to_live_specification CcGlobalTable#time_to_live_specification}
     */
     readonly timeToLiveSpecification?: CcGlobalTable.TimeToLiveSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
     */
     readonly warmThroughput?: CcGlobalTable.WarmThroughputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
     */
     readonly writeOnDemandThroughputSettings?: CcGlobalTable.WriteOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
     */
     readonly writeProvisionedThroughputSettings?: CcGlobalTable.WriteProvisionedThroughputSettingsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table awscc_dynamodb_global_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table awscc_dynamodb_global_table}
 */
 export class CcGlobalTable extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGlobalTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGlobalTable to import
-    * @param importFromId The id of the existing CcGlobalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGlobalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGlobalTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcGlobalTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table awscc_dynamodb_global_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table awscc_dynamodb_global_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcGlobalTable extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_dynamodb_global_table',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -2462,11 +2462,11 @@ export function ccGlobalTableWriteProvisionedThroughputSettingsPropertyToHclTerr
 export namespace CcGlobalTable {
 export interface AttributeDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_type CcGlobalTable#attribute_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_type CcGlobalTable#attribute_type}
     */
     readonly attributeType?: string;
 }
@@ -2574,11 +2574,11 @@ export class AttributeDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface GlobalSecondaryIndexesKeySchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
     */
     readonly keyType?: string;
 }
@@ -2686,11 +2686,11 @@ export class GlobalSecondaryIndexesKeySchemaPropertyList extends cdktn.ComplexLi
 }
 export interface ProjectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#non_key_attributes CcGlobalTable#non_key_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#non_key_attributes CcGlobalTable#non_key_attributes}
     */
     readonly nonKeyAttributes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#projection_type CcGlobalTable#projection_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#projection_type CcGlobalTable#projection_type}
     */
     readonly projectionType?: string;
 }
@@ -2776,7 +2776,7 @@ export class ProjectionPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
@@ -2840,7 +2840,7 @@ export class GlobalSecondaryIndexesReadOnDemandThroughputSettingsPropertyOutputR
 }
 export interface GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
@@ -2904,11 +2904,11 @@ export class GlobalSecondaryIndexesReadProvisionedThroughputSettingsPropertyOutp
 }
 export interface GlobalSecondaryIndexesWarmThroughputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
     */
     readonly readUnitsPerSecond?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_units_per_second CcGlobalTable#write_units_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_units_per_second CcGlobalTable#write_units_per_second}
     */
     readonly writeUnitsPerSecond?: number;
 }
@@ -2994,7 +2994,7 @@ export class GlobalSecondaryIndexesWarmThroughputPropertyOutputReference extends
 }
 export interface GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
     */
     readonly maxWriteRequestUnits?: number;
 }
@@ -3058,19 +3058,19 @@ export class GlobalSecondaryIndexesWriteOnDemandThroughputSettingsPropertyOutput
 }
 export interface TargetTrackingScalingPolicyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
     */
     readonly disableScaleIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
     */
     readonly scaleInCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
     */
     readonly scaleOutCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
     */
     readonly targetValue?: number;
 }
@@ -3200,19 +3200,19 @@ export class TargetTrackingScalingPolicyConfigurationPropertyOutputReference ext
 }
 export interface CapacityAutoScalingSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
     */
     readonly minCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
     */
     readonly seedCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
     */
     readonly targetTrackingScalingPolicyConfiguration?: TargetTrackingScalingPolicyConfigurationProperty;
 }
@@ -3342,7 +3342,7 @@ export class CapacityAutoScalingSettingsPropertyOutputReference extends cdktn.Co
 }
 export interface GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
     */
     readonly writeCapacityAutoScalingSettings?: CapacityAutoScalingSettingsProperty;
 }
@@ -3406,35 +3406,35 @@ export class GlobalSecondaryIndexesWriteProvisionedThroughputSettingsPropertyOut
 }
 export interface GlobalSecondaryIndexProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
     */
     readonly keySchema?: GlobalSecondaryIndexesKeySchemaProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#projection CcGlobalTable#projection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#projection CcGlobalTable#projection}
     */
     readonly projection?: ProjectionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
     readonly readOnDemandThroughputSettings?: GlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
     readonly readProvisionedThroughputSettings?: GlobalSecondaryIndexesReadProvisionedThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#warm_throughput CcGlobalTable#warm_throughput}
     */
     readonly warmThroughput?: GlobalSecondaryIndexesWarmThroughputProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_on_demand_throughput_settings CcGlobalTable#write_on_demand_throughput_settings}
     */
     readonly writeOnDemandThroughputSettings?: GlobalSecondaryIndexesWriteOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_provisioned_throughput_settings CcGlobalTable#write_provisioned_throughput_settings}
     */
     readonly writeProvisionedThroughputSettings?: GlobalSecondaryIndexesWriteProvisionedThroughputSettingsProperty;
 }
@@ -3674,7 +3674,7 @@ export class GlobalSecondaryIndexPropertyList extends cdktn.ComplexList {
 }
 export interface GlobalTableWitnessProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#region CcGlobalTable#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#region CcGlobalTable#region}
     */
     readonly region?: string;
 }
@@ -3760,11 +3760,11 @@ export class GlobalTableWitnessPropertyList extends cdktn.ComplexList {
 }
 export interface KeySchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
     */
     readonly keyType?: string;
 }
@@ -3872,11 +3872,11 @@ export class KeySchemaPropertyList extends cdktn.ComplexList {
 }
 export interface LocalSecondaryIndexesKeySchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_type CcGlobalTable#key_type}
     */
     readonly keyType?: string;
 }
@@ -3984,11 +3984,11 @@ export class LocalSecondaryIndexesKeySchemaPropertyList extends cdktn.ComplexLis
 }
 export interface LocalSecondaryIndexesProjectionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#non_key_attributes CcGlobalTable#non_key_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#non_key_attributes CcGlobalTable#non_key_attributes}
     */
     readonly nonKeyAttributes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#projection_type CcGlobalTable#projection_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#projection_type CcGlobalTable#projection_type}
     */
     readonly projectionType?: string;
 }
@@ -4074,15 +4074,15 @@ export class LocalSecondaryIndexesProjectionPropertyOutputReference extends cdkt
 }
 export interface LocalSecondaryIndexProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key_schema CcGlobalTable#key_schema}
     */
     readonly keySchema?: LocalSecondaryIndexesKeySchemaProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#projection CcGlobalTable#projection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#projection CcGlobalTable#projection}
     */
     readonly projection?: LocalSecondaryIndexesProjectionProperty;
 }
@@ -4212,7 +4212,7 @@ export class LocalSecondaryIndexPropertyList extends cdktn.ComplexList {
 }
 export interface ReadOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
@@ -4276,7 +4276,7 @@ export class ReadOnDemandThroughputSettingsPropertyOutputReference extends cdktn
 }
 export interface GlobalReadProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
@@ -4340,11 +4340,11 @@ export class GlobalReadProvisionedThroughputSettingsPropertyOutputReference exte
 }
 export interface ContributorInsightsSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#mode CcGlobalTable#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#mode CcGlobalTable#mode}
     */
     readonly mode?: string;
 }
@@ -4430,11 +4430,11 @@ export class ContributorInsightsSpecificationPropertyOutputReference extends cdk
 }
 export interface ReplicasGlobalSecondaryIndexesContributorInsightsSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#mode CcGlobalTable#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#mode CcGlobalTable#mode}
     */
     readonly mode?: string;
 }
@@ -4520,7 +4520,7 @@ export class ReplicasGlobalSecondaryIndexesContributorInsightsSpecificationPrope
 }
 export interface ReplicasGlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
@@ -4584,19 +4584,19 @@ export class ReplicasGlobalSecondaryIndexesReadOnDemandThroughputSettingsPropert
 }
 export interface ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
     */
     readonly disableScaleIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
     */
     readonly scaleInCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
     */
     readonly scaleOutCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
     */
     readonly targetValue?: number;
 }
@@ -4726,19 +4726,19 @@ export class ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsRead
 }
 export interface ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
     */
     readonly minCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
     */
     readonly seedCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
     */
     readonly targetTrackingScalingPolicyConfiguration?: ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty;
 }
@@ -4868,11 +4868,11 @@ export class ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsRead
 }
 export interface ReadProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_auto_scaling_settings CcGlobalTable#read_capacity_auto_scaling_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_auto_scaling_settings CcGlobalTable#read_capacity_auto_scaling_settings}
     */
     readonly readCapacityAutoScalingSettings?: ReplicasGlobalSecondaryIndexesReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
@@ -4958,19 +4958,19 @@ export class ReadProvisionedThroughputSettingsPropertyOutputReference extends cd
 }
 export interface ReplicaGlobalSecondaryIndexSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#contributor_insights_specification CcGlobalTable#contributor_insights_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#contributor_insights_specification CcGlobalTable#contributor_insights_specification}
     */
     readonly contributorInsightsSpecification?: ReplicasGlobalSecondaryIndexesContributorInsightsSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#index_name CcGlobalTable#index_name}
     */
     readonly indexName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
     readonly readOnDemandThroughputSettings?: ReplicasGlobalSecondaryIndexesReadOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
     readonly readProvisionedThroughputSettings?: ReadProvisionedThroughputSettingsProperty;
 }
@@ -5122,11 +5122,11 @@ export class ReplicaGlobalSecondaryIndexSpecificationPropertyList extends cdktn.
 }
 export interface KinesisStreamSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#approximate_creation_date_time_precision CcGlobalTable#approximate_creation_date_time_precision}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#approximate_creation_date_time_precision CcGlobalTable#approximate_creation_date_time_precision}
     */
     readonly approximateCreationDateTimePrecision?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#stream_arn CcGlobalTable#stream_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#stream_arn CcGlobalTable#stream_arn}
     */
     readonly streamArn?: string;
 }
@@ -5212,11 +5212,11 @@ export class KinesisStreamSpecificationPropertyOutputReference extends cdktn.Com
 }
 export interface PointInTimeRecoverySpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#point_in_time_recovery_enabled CcGlobalTable#point_in_time_recovery_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#point_in_time_recovery_enabled CcGlobalTable#point_in_time_recovery_enabled}
     */
     readonly pointInTimeRecoveryEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#recovery_period_in_days CcGlobalTable#recovery_period_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#recovery_period_in_days CcGlobalTable#recovery_period_in_days}
     */
     readonly recoveryPeriodInDays?: number;
 }
@@ -5302,7 +5302,7 @@ export class PointInTimeRecoverySpecificationPropertyOutputReference extends cdk
 }
 export interface ReplicasReadOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_read_request_units CcGlobalTable#max_read_request_units}
     */
     readonly maxReadRequestUnits?: number;
 }
@@ -5366,19 +5366,19 @@ export class ReplicasReadOnDemandThroughputSettingsPropertyOutputReference exten
 }
 export interface ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
     */
     readonly disableScaleIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
     */
     readonly scaleInCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
     */
     readonly scaleOutCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
     */
     readonly targetValue?: number;
 }
@@ -5508,19 +5508,19 @@ export class ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSet
 }
 export interface ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
     */
     readonly minCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
     */
     readonly seedCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
     */
     readonly targetTrackingScalingPolicyConfiguration?: ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty;
 }
@@ -5650,11 +5650,11 @@ export class ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSet
 }
 export interface ReplicasReadProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_auto_scaling_settings CcGlobalTable#read_capacity_auto_scaling_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_auto_scaling_settings CcGlobalTable#read_capacity_auto_scaling_settings}
     */
     readonly readCapacityAutoScalingSettings?: ReplicasReadProvisionedThroughputSettingsReadCapacityAutoScalingSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_capacity_units CcGlobalTable#read_capacity_units}
     */
     readonly readCapacityUnits?: number;
 }
@@ -5740,7 +5740,7 @@ export class ReplicasReadProvisionedThroughputSettingsPropertyOutputReference ex
 }
 export interface ResourcePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#policy_document CcGlobalTable#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#policy_document CcGlobalTable#policy_document}
     */
     readonly policyDocument?: string;
 }
@@ -5804,11 +5804,11 @@ export class ResourcePolicyPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key CcGlobalTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key CcGlobalTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#value CcGlobalTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#value CcGlobalTable#value}
     */
     readonly value?: string;
 }
@@ -5916,11 +5916,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface ReplicaStreamSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#resource_policy CcGlobalTable#resource_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#resource_policy CcGlobalTable#resource_policy}
     */
     readonly resourcePolicy?: ResourcePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#tags CcGlobalTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#tags CcGlobalTable#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
@@ -6006,7 +6006,7 @@ export class ReplicaStreamSpecificationPropertyOutputReference extends cdktn.Com
 }
 export interface ReplicasResourcePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#policy_document CcGlobalTable#policy_document}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#policy_document CcGlobalTable#policy_document}
     */
     readonly policyDocument?: string;
 }
@@ -6070,7 +6070,7 @@ export class ReplicasResourcePolicyPropertyOutputReference extends cdktn.Complex
 }
 export interface ReplicaSSESpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#kms_master_key_id CcGlobalTable#kms_master_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#kms_master_key_id CcGlobalTable#kms_master_key_id}
     */
     readonly kmsMasterKeyId?: string;
 }
@@ -6134,11 +6134,11 @@ export class ReplicaSSESpecificationPropertyOutputReference extends cdktn.Comple
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#key CcGlobalTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#key CcGlobalTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#value CcGlobalTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#value CcGlobalTable#value}
     */
     readonly value?: string;
 }
@@ -6246,59 +6246,59 @@ export class TagsPropertyList extends cdktn.ComplexList {
 }
 export interface ReplicaSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#contributor_insights_specification CcGlobalTable#contributor_insights_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#contributor_insights_specification CcGlobalTable#contributor_insights_specification}
     */
     readonly contributorInsightsSpecification?: ContributorInsightsSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#deletion_protection_enabled CcGlobalTable#deletion_protection_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#deletion_protection_enabled CcGlobalTable#deletion_protection_enabled}
     */
     readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#global_secondary_indexes CcGlobalTable#global_secondary_indexes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#global_secondary_indexes CcGlobalTable#global_secondary_indexes}
     */
     readonly globalSecondaryIndexes?: ReplicaGlobalSecondaryIndexSpecificationProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#global_table_settings_replication_mode CcGlobalTable#global_table_settings_replication_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#global_table_settings_replication_mode CcGlobalTable#global_table_settings_replication_mode}
     */
     readonly globalTableSettingsReplicationMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#kinesis_stream_specification CcGlobalTable#kinesis_stream_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#kinesis_stream_specification CcGlobalTable#kinesis_stream_specification}
     */
     readonly kinesisStreamSpecification?: KinesisStreamSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#point_in_time_recovery_specification CcGlobalTable#point_in_time_recovery_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#point_in_time_recovery_specification CcGlobalTable#point_in_time_recovery_specification}
     */
     readonly pointInTimeRecoverySpecification?: PointInTimeRecoverySpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_on_demand_throughput_settings CcGlobalTable#read_on_demand_throughput_settings}
     */
     readonly readOnDemandThroughputSettings?: ReplicasReadOnDemandThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_provisioned_throughput_settings CcGlobalTable#read_provisioned_throughput_settings}
     */
     readonly readProvisionedThroughputSettings?: ReplicasReadProvisionedThroughputSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#region CcGlobalTable#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#region CcGlobalTable#region}
     */
     readonly region: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#replica_stream_specification CcGlobalTable#replica_stream_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#replica_stream_specification CcGlobalTable#replica_stream_specification}
     */
     readonly replicaStreamSpecification?: ReplicaStreamSpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#resource_policy CcGlobalTable#resource_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#resource_policy CcGlobalTable#resource_policy}
     */
     readonly resourcePolicy?: ReplicasResourcePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#sse_specification CcGlobalTable#sse_specification}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#sse_specification CcGlobalTable#sse_specification}
     */
     readonly sseSpecification?: ReplicaSSESpecificationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#table_class CcGlobalTable#table_class}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#table_class CcGlobalTable#table_class}
     */
     readonly tableClass?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#tags CcGlobalTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#tags CcGlobalTable#tags}
     */
     readonly tags?: TagsProperty[] | cdktn.IResolvable;
 }
@@ -6667,11 +6667,11 @@ export class ReplicaSpecificationPropertyList extends cdktn.ComplexList {
 }
 export interface SSESpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#sse_enabled CcGlobalTable#sse_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#sse_enabled CcGlobalTable#sse_enabled}
     */
     readonly sseEnabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#sse_type CcGlobalTable#sse_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#sse_type CcGlobalTable#sse_type}
     */
     readonly sseType?: string;
 }
@@ -6757,7 +6757,7 @@ export class SSESpecificationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface StreamSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#stream_view_type CcGlobalTable#stream_view_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#stream_view_type CcGlobalTable#stream_view_type}
     */
     readonly streamViewType?: string;
 }
@@ -6821,11 +6821,11 @@ export class StreamSpecificationPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface TimeToLiveSpecificationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#attribute_name CcGlobalTable#attribute_name}
     */
     readonly attributeName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#enabled CcGlobalTable#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -6911,11 +6911,11 @@ export class TimeToLiveSpecificationPropertyOutputReference extends cdktn.Comple
 }
 export interface WarmThroughputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#read_units_per_second CcGlobalTable#read_units_per_second}
     */
     readonly readUnitsPerSecond?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_units_per_second CcGlobalTable#write_units_per_second}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_units_per_second CcGlobalTable#write_units_per_second}
     */
     readonly writeUnitsPerSecond?: number;
 }
@@ -7001,7 +7001,7 @@ export class WarmThroughputPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WriteOnDemandThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_write_request_units CcGlobalTable#max_write_request_units}
     */
     readonly maxWriteRequestUnits?: number;
 }
@@ -7065,19 +7065,19 @@ export class WriteOnDemandThroughputSettingsPropertyOutputReference extends cdkt
 }
 export interface WriteProvisionedThroughputSettingsWriteCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#disable_scale_in CcGlobalTable#disable_scale_in}
     */
     readonly disableScaleIn?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_in_cooldown CcGlobalTable#scale_in_cooldown}
     */
     readonly scaleInCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#scale_out_cooldown CcGlobalTable#scale_out_cooldown}
     */
     readonly scaleOutCooldown?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_value CcGlobalTable#target_value}
     */
     readonly targetValue?: number;
 }
@@ -7207,19 +7207,19 @@ export class WriteProvisionedThroughputSettingsWriteCapacityAutoScalingSettingsT
 }
 export interface WriteCapacityAutoScalingSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#max_capacity CcGlobalTable#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#min_capacity CcGlobalTable#min_capacity}
     */
     readonly minCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#seed_capacity CcGlobalTable#seed_capacity}
     */
     readonly seedCapacity?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#target_tracking_scaling_policy_configuration CcGlobalTable#target_tracking_scaling_policy_configuration}
     */
     readonly targetTrackingScalingPolicyConfiguration?: WriteProvisionedThroughputSettingsWriteCapacityAutoScalingSettingsTargetTrackingScalingPolicyConfigurationProperty;
 }
@@ -7349,7 +7349,7 @@ export class WriteCapacityAutoScalingSettingsPropertyOutputReference extends cdk
 }
 export interface WriteProvisionedThroughputSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dynamodb_global_table#write_capacity_auto_scaling_settings CcGlobalTable#write_capacity_auto_scaling_settings}
     */
     readonly writeCapacityAutoScalingSettings?: WriteCapacityAutoScalingSettingsProperty;
 }

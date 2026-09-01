@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcArchiveRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the analyzer for the archive rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#analyzer_name CcArchiveRule#analyzer_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#analyzer_name CcArchiveRule#analyzer_name}
     */
     readonly analyzerName: string;
     /**
     * The criteria for the archive rule. A map of filter criteria property names to their criterion values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#filter CcArchiveRule#filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#filter CcArchiveRule#filter}
     */
     readonly filter: { [key: string]: CcArchiveRule.FilterItemsProperty } | cdktn.IResolvable;
     /**
     * The name of the archive rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#rule_name CcArchiveRule#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#rule_name CcArchiveRule#rule_name}
     */
     readonly ruleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule awscc_accessanalyzer_archive_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule awscc_accessanalyzer_archive_rule}
 */
 export class CcArchiveRule extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcArchiveRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcArchiveRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcArchiveRule to import
-    * @param importFromId The id of the existing CcArchiveRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcArchiveRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcArchiveRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcArchiveRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule awscc_accessanalyzer_archive_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule awscc_accessanalyzer_archive_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcArchiveRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_accessanalyzer_archive_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -237,19 +237,19 @@ export function ccArchiveRuleFilterItemsPropertyToHclTerraform(struct?: CcArchiv
 export namespace CcArchiveRule {
 export interface FilterItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#contains CcArchiveRule#contains}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#contains CcArchiveRule#contains}
     */
     readonly contains?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#eq CcArchiveRule#eq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#eq CcArchiveRule#eq}
     */
     readonly eq?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#exists CcArchiveRule#exists}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#exists CcArchiveRule#exists}
     */
     readonly exists?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/accessanalyzer_archive_rule#neq CcArchiveRule#neq}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/accessanalyzer_archive_rule#neq CcArchiveRule#neq}
     */
     readonly neq?: string[];
 }

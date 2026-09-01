@@ -1,41 +1,41 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBillingGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#account_grouping CcBillingGroup#account_grouping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#account_grouping CcBillingGroup#account_grouping}
     */
     readonly accountGrouping: CcBillingGroup.AccountGroupingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#computation_preference CcBillingGroup#computation_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#computation_preference CcBillingGroup#computation_preference}
     */
     readonly computationPreference: CcBillingGroup.ComputationPreferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#description CcBillingGroup#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#description CcBillingGroup#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#name CcBillingGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#name CcBillingGroup#name}
     */
     readonly name: string;
     /**
     * This account will act as a virtual payer account of the billing group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#primary_account_id CcBillingGroup#primary_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#primary_account_id CcBillingGroup#primary_account_id}
     */
     readonly primaryAccountId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#tags CcBillingGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#tags CcBillingGroup#tags}
     */
     readonly tags?: CcBillingGroup.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group awscc_billingconductor_billing_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group awscc_billingconductor_billing_group}
 */
 export class CcBillingGroup extends cdktn.TerraformResource {
 
@@ -51,7 +51,7 @@ export class CcBillingGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBillingGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBillingGroup to import
-    * @param importFromId The id of the existing CcBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBillingGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -63,7 +63,7 @@ export class CcBillingGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group awscc_billingconductor_billing_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group awscc_billingconductor_billing_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class CcBillingGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_billingconductor_billing_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -392,15 +392,15 @@ export function ccBillingGroupTagPropertyToHclTerraform(struct?: CcBillingGroup.
 export namespace CcBillingGroup {
 export interface AccountGroupingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#auto_associate CcBillingGroup#auto_associate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#auto_associate CcBillingGroup#auto_associate}
     */
     readonly autoAssociate?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#linked_account_ids CcBillingGroup#linked_account_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#linked_account_ids CcBillingGroup#linked_account_ids}
     */
     readonly linkedAccountIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#responsibility_transfer_arn CcBillingGroup#responsibility_transfer_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#responsibility_transfer_arn CcBillingGroup#responsibility_transfer_arn}
     */
     readonly responsibilityTransferArn?: string;
 }
@@ -510,7 +510,7 @@ export interface ComputationPreferenceProperty {
     /**
     * ARN of the attached pricing plan
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#pricing_plan_arn CcBillingGroup#pricing_plan_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#pricing_plan_arn CcBillingGroup#pricing_plan_arn}
     */
     readonly pricingPlanArn: string;
 }
@@ -571,11 +571,11 @@ export class ComputationPreferencePropertyOutputReference extends cdktn.ComplexO
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#key CcBillingGroup#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#key CcBillingGroup#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/billingconductor_billing_group#value CcBillingGroup#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/billingconductor_billing_group#value CcBillingGroup#value}
     */
     readonly value?: string;
 }

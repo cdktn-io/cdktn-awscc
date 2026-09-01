@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcHarnessEndpointProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#description CcHarnessEndpoint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#description CcHarnessEndpoint#description}
     */
     readonly description?: string;
     /**
     * The name of the endpoint. Must start with a letter and contain only alphanumeric characters and underscores.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#endpoint_name CcHarnessEndpoint#endpoint_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#endpoint_name CcHarnessEndpoint#endpoint_name}
     */
     readonly endpointName: string;
     /**
     * The ID of the harness that the endpoint belongs to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#harness_id CcHarnessEndpoint#harness_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#harness_id CcHarnessEndpoint#harness_id}
     */
     readonly harnessId: string;
     /**
     * Tags to apply to the harness endpoint resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#tags CcHarnessEndpoint#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#tags CcHarnessEndpoint#tags}
     */
     readonly tags?: CcHarnessEndpoint.TagProperty[] | cdktn.IResolvable;
     /**
     * The harness version that the endpoint points to and serves invocations from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#target_version CcHarnessEndpoint#target_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#target_version CcHarnessEndpoint#target_version}
     */
     readonly targetVersion?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint awscc_bedrockagentcore_harness_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint awscc_bedrockagentcore_harness_endpoint}
 */
 export class CcHarnessEndpoint extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcHarnessEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHarnessEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHarnessEndpoint to import
-    * @param importFromId The id of the existing CcHarnessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHarnessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHarnessEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcHarnessEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint awscc_bedrockagentcore_harness_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint awscc_bedrockagentcore_harness_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcHarnessEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_harness_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -301,11 +301,11 @@ export function ccHarnessEndpointTagPropertyToHclTerraform(struct?: CcHarnessEnd
 export namespace CcHarnessEndpoint {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#key CcHarnessEndpoint#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#key CcHarnessEndpoint#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_harness_endpoint#value CcHarnessEndpoint#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_harness_endpoint#value CcHarnessEndpoint#value}
     */
     readonly value?: string;
 }

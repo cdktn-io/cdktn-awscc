@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcPortalProps extends cdktn.TerraformMetaArguments {
     /**
     * Contains the configuration information of an alarm created in an AWS IoT SiteWise Monitor portal. You can use the alarm to monitor an asset property and get notified when the asset property value is outside a specified range.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#alarms CcPortal#alarms}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#alarms CcPortal#alarms}
     */
     readonly alarms?: CcPortal.AlarmsProperty;
     /**
     * The email address that sends alarm notifications.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#notification_sender_email CcPortal#notification_sender_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#notification_sender_email CcPortal#notification_sender_email}
     */
     readonly notificationSenderEmail?: string;
     /**
     * The service to use to authenticate users to the portal. Choose from SSO or IAM. You can't change this value after you create a portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_auth_mode CcPortal#portal_auth_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_auth_mode CcPortal#portal_auth_mode}
     */
     readonly portalAuthMode?: string;
     /**
     * The AWS administrator's contact email address.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_contact_email CcPortal#portal_contact_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_contact_email CcPortal#portal_contact_email}
     */
     readonly portalContactEmail: string;
     /**
     * A description for the portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_description CcPortal#portal_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_description CcPortal#portal_description}
     */
     readonly portalDescription?: string;
     /**
     * A friendly name for the portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_name CcPortal#portal_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_name CcPortal#portal_name}
     */
     readonly portalName: string;
     /**
     * The type of portal
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_type CcPortal#portal_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_type CcPortal#portal_type}
     */
     readonly portalType?: string;
     /**
     * Map to associate detail of configuration related with a PortalType.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_type_configuration CcPortal#portal_type_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_type_configuration CcPortal#portal_type_configuration}
     */
     readonly portalTypeConfiguration?: { [key: string]: CcPortal.PortalTypeEntryProperty } | cdktn.IResolvable;
     /**
     * The ARN of a service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#role_arn CcPortal#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#role_arn CcPortal#role_arn}
     */
     readonly roleArn: string;
     /**
     * A list of key-value pairs that contain metadata for the portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#tags CcPortal#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#tags CcPortal#tags}
     */
     readonly tags?: CcPortal.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal awscc_iotsitewise_portal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal awscc_iotsitewise_portal}
 */
 export class CcPortal extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcPortal extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPortal resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPortal to import
-    * @param importFromId The id of the existing CcPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPortal to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcPortal extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal awscc_iotsitewise_portal} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal awscc_iotsitewise_portal} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcPortal extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_iotsitewise_portal',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -507,13 +507,13 @@ export interface AlarmsProperty {
     /**
     * The ARN of the IAM role that allows the alarm to perform actions and access AWS resources and services, such as AWS IoT Events.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#alarm_role_arn CcPortal#alarm_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#alarm_role_arn CcPortal#alarm_role_arn}
     */
     readonly alarmRoleArn?: string;
     /**
     * The ARN of the AWS Lambda function that manages alarm notifications. For more information, see Managing alarm notifications in the AWS IoT Events Developer Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#notification_lambda_arn CcPortal#notification_lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#notification_lambda_arn CcPortal#notification_lambda_arn}
     */
     readonly notificationLambdaArn?: string;
 }
@@ -601,7 +601,7 @@ export interface PortalTypeEntryProperty {
     /**
     * List of enabled Tools for a certain portal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#portal_tools CcPortal#portal_tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#portal_tools CcPortal#portal_tools}
     */
     readonly portalTools?: string[];
 }
@@ -685,11 +685,11 @@ export class PortalTypeEntryPropertyMap extends cdktn.ComplexMap {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#key CcPortal#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#key CcPortal#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/iotsitewise_portal#value CcPortal#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/iotsitewise_portal#value CcPortal#value}
     */
     readonly value?: string;
 }

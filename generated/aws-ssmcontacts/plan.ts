@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcPlanProps extends cdktn.TerraformMetaArguments {
     /**
     * Contact ID for the AWS SSM Incident Manager Contact to associate the plan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#contact_id CcPlan#contact_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#contact_id CcPlan#contact_id}
     */
     readonly contactId?: string;
     /**
     * Rotation Ids to associate with Oncall Contact for engagement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#rotation_ids CcPlan#rotation_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#rotation_ids CcPlan#rotation_ids}
     */
     readonly rotationIds?: string[];
     /**
     * The stages that an escalation plan or engagement plan engages contacts and contact methods in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#stages CcPlan#stages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#stages CcPlan#stages}
     */
     readonly stages?: CcPlan.StageProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan awscc_ssmcontacts_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan awscc_ssmcontacts_plan}
 */
 export class CcPlan extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcPlan extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPlan resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPlan to import
-    * @param importFromId The id of the existing CcPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPlan to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcPlan extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan awscc_ssmcontacts_plan} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan awscc_ssmcontacts_plan} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcPlan extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssmcontacts_plan',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -335,13 +335,13 @@ export interface ChannelTargetInfoProperty {
     /**
     * The Amazon Resource Name (ARN) of the contact channel.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#channel_id CcPlan#channel_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#channel_id CcPlan#channel_id}
     */
     readonly channelId?: string;
     /**
     * The number of minutes to wait to retry sending engagement in the case the engagement initially fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes CcPlan#retry_interval_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes CcPlan#retry_interval_in_minutes}
     */
     readonly retryIntervalInMinutes?: number;
 }
@@ -429,13 +429,13 @@ export interface ContactTargetInfoProperty {
     /**
     * The Amazon Resource Name (ARN) of the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#contact_id CcPlan#contact_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#contact_id CcPlan#contact_id}
     */
     readonly contactId?: string;
     /**
     * A Boolean value determining if the contact's acknowledgement stops the progress of stages in the plan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#is_essential CcPlan#is_essential}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#is_essential CcPlan#is_essential}
     */
     readonly isEssential?: boolean | cdktn.IResolvable;
 }
@@ -523,13 +523,13 @@ export interface TargetsProperty {
     /**
     * Information about the contact channel that SSM Incident Manager uses to engage the contact.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#channel_target_info CcPlan#channel_target_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#channel_target_info CcPlan#channel_target_info}
     */
     readonly channelTargetInfo?: ChannelTargetInfoProperty;
     /**
     * The contact that SSM Incident Manager is engaging during an incident.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#contact_target_info CcPlan#contact_target_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#contact_target_info CcPlan#contact_target_info}
     */
     readonly contactTargetInfo?: ContactTargetInfoProperty;
 }
@@ -639,13 +639,13 @@ export interface StageProperty {
     /**
     * The time to wait until beginning the next stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#duration_in_minutes CcPlan#duration_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#duration_in_minutes CcPlan#duration_in_minutes}
     */
     readonly durationInMinutes?: number;
     /**
     * The contacts or contact methods that the escalation plan or engagement plan is engaging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssmcontacts_plan#targets CcPlan#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssmcontacts_plan#targets CcPlan#targets}
     */
     readonly targets?: TargetsProperty[] | cdktn.IResolvable;
 }

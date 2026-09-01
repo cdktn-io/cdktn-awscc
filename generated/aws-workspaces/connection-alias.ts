@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConnectionAliasProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias#connection_string CcConnectionAlias#connection_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias#connection_string CcConnectionAlias#connection_string}
     */
     readonly connectionString: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias#tags CcConnectionAlias#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias#tags CcConnectionAlias#tags}
     */
     readonly tags?: CcConnectionAlias.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias awscc_workspaces_connection_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias awscc_workspaces_connection_alias}
 */
 export class CcConnectionAlias extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcConnectionAlias extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnectionAlias resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnectionAlias to import
-    * @param importFromId The id of the existing CcConnectionAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnectionAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnectionAlias to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcConnectionAlias extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias awscc_workspaces_connection_alias} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias awscc_workspaces_connection_alias} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcConnectionAlias extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_workspaces_connection_alias',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -286,11 +286,11 @@ export class AssociationsPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias#key CcConnectionAlias#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias#key CcConnectionAlias#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/workspaces_connection_alias#value CcConnectionAlias#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/workspaces_connection_alias#value CcConnectionAlias#value}
     */
     readonly value?: string;
 }

@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcEndpointProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#description CcEndpoint#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#description CcEndpoint#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#event_buses CcEndpoint#event_buses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#event_buses CcEndpoint#event_buses}
     */
     readonly eventBuses: CcEndpoint.EndpointEventBusProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#name CcEndpoint#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#name CcEndpoint#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#replication_config CcEndpoint#replication_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#replication_config CcEndpoint#replication_config}
     */
     readonly replicationConfig?: CcEndpoint.ReplicationConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#role_arn CcEndpoint#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#role_arn CcEndpoint#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#routing_config CcEndpoint#routing_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#routing_config CcEndpoint#routing_config}
     */
     readonly routingConfig: CcEndpoint.RoutingConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint awscc_events_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint awscc_events_endpoint}
 */
 export class CcEndpoint extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEndpoint resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEndpoint to import
-    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEndpoint to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint awscc_events_endpoint} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint awscc_events_endpoint} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcEndpoint extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_events_endpoint',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -464,7 +464,7 @@ export function ccEndpointRoutingConfigPropertyToHclTerraform(struct?: CcEndpoin
 export namespace CcEndpoint {
 export interface EndpointEventBusProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#event_bus_arn CcEndpoint#event_bus_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#event_bus_arn CcEndpoint#event_bus_arn}
     */
     readonly eventBusArn: string;
 }
@@ -547,7 +547,7 @@ export class EndpointEventBusPropertyList extends cdktn.ComplexList {
 }
 export interface ReplicationConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#state CcEndpoint#state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#state CcEndpoint#state}
     */
     readonly state?: string;
 }
@@ -611,7 +611,7 @@ export class ReplicationConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface PrimaryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#health_check CcEndpoint#health_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#health_check CcEndpoint#health_check}
     */
     readonly healthCheck: string;
 }
@@ -672,7 +672,7 @@ export class PrimaryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SecondaryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#route CcEndpoint#route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#route CcEndpoint#route}
     */
     readonly route: string;
 }
@@ -733,11 +733,11 @@ export class SecondaryPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface FailoverConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#primary CcEndpoint#primary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#primary CcEndpoint#primary}
     */
     readonly primary: PrimaryProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#secondary CcEndpoint#secondary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#secondary CcEndpoint#secondary}
     */
     readonly secondary: SecondaryProperty;
 }
@@ -817,7 +817,7 @@ export class FailoverConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RoutingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/events_endpoint#failover_config CcEndpoint#failover_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/events_endpoint#failover_config CcEndpoint#failover_config}
     */
     readonly failoverConfig: FailoverConfigProperty;
 }

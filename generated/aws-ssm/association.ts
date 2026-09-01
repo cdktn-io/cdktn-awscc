@@ -1,109 +1,109 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#apply_only_at_cron_interval CcAssociation#apply_only_at_cron_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#apply_only_at_cron_interval CcAssociation#apply_only_at_cron_interval}
     */
     readonly applyOnlyAtCronInterval?: boolean | cdktn.IResolvable;
     /**
     * A role used by association to take actions on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#association_dispatch_assume_role CcAssociation#association_dispatch_assume_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#association_dispatch_assume_role CcAssociation#association_dispatch_assume_role}
     */
     readonly associationDispatchAssumeRole?: string;
     /**
     * The name of the association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#association_name CcAssociation#association_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#association_name CcAssociation#association_name}
     */
     readonly associationName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#automation_target_parameter_name CcAssociation#automation_target_parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#automation_target_parameter_name CcAssociation#automation_target_parameter_name}
     */
     readonly automationTargetParameterName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#calendar_names CcAssociation#calendar_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#calendar_names CcAssociation#calendar_names}
     */
     readonly calendarNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#compliance_severity CcAssociation#compliance_severity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#compliance_severity CcAssociation#compliance_severity}
     */
     readonly complianceSeverity?: string;
     /**
     * The version of the SSM document to associate with the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#document_version CcAssociation#document_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#document_version CcAssociation#document_version}
     */
     readonly documentVersion?: string;
     /**
     * The ID of the instance that the SSM document is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#instance_id CcAssociation#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#instance_id CcAssociation#instance_id}
     */
     readonly instanceId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#max_concurrency CcAssociation#max_concurrency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#max_concurrency CcAssociation#max_concurrency}
     */
     readonly maxConcurrency?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#max_errors CcAssociation#max_errors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#max_errors CcAssociation#max_errors}
     */
     readonly maxErrors?: string;
     /**
     * The name of the SSM document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#name CcAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#name CcAssociation#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#output_location CcAssociation#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#output_location CcAssociation#output_location}
     */
     readonly outputLocation?: CcAssociation.InstanceAssociationOutputLocationProperty;
     /**
     * Parameter values that the SSM document uses at runtime.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#parameters CcAssociation#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#parameters CcAssociation#parameters}
     */
     readonly parameters?: { [key: string]: string[] } | cdktn.IResolvable;
     /**
     * A Cron or Rate expression that specifies when the association is applied to the target.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#schedule_expression CcAssociation#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#schedule_expression CcAssociation#schedule_expression}
     */
     readonly scheduleExpression?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#schedule_offset CcAssociation#schedule_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#schedule_offset CcAssociation#schedule_offset}
     */
     readonly scheduleOffset?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#sync_compliance CcAssociation#sync_compliance}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#sync_compliance CcAssociation#sync_compliance}
     */
     readonly syncCompliance?: string;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#tags CcAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#tags CcAssociation#tags}
     */
     readonly tags?: CcAssociation.TagProperty[] | cdktn.IResolvable;
     /**
     * The targets that the SSM document sends commands to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#targets CcAssociation#targets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#targets CcAssociation#targets}
     */
     readonly targets?: CcAssociation.TargetProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#wait_for_success_timeout_seconds CcAssociation#wait_for_success_timeout_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#wait_for_success_timeout_seconds CcAssociation#wait_for_success_timeout_seconds}
     */
     readonly waitForSuccessTimeoutSeconds?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association awscc_ssm_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association awscc_ssm_association}
 */
 export class CcAssociation extends cdktn.TerraformResource {
 
@@ -119,7 +119,7 @@ export class CcAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssociation to import
-    * @param importFromId The id of the existing CcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -131,7 +131,7 @@ export class CcAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association awscc_ssm_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association awscc_ssm_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +142,7 @@ export class CcAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssm_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -790,15 +790,15 @@ export function ccAssociationTargetPropertyToHclTerraform(struct?: CcAssociation
 export namespace CcAssociation {
 export interface S3OutputLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#output_s3_bucket_name CcAssociation#output_s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#output_s3_bucket_name CcAssociation#output_s3_bucket_name}
     */
     readonly outputS3BucketName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#output_s3_key_prefix CcAssociation#output_s3_key_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#output_s3_key_prefix CcAssociation#output_s3_key_prefix}
     */
     readonly outputS3KeyPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#output_s3_region CcAssociation#output_s3_region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#output_s3_region CcAssociation#output_s3_region}
     */
     readonly outputS3Region?: string;
 }
@@ -906,7 +906,7 @@ export class S3OutputLocationPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface InstanceAssociationOutputLocationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#s3_location CcAssociation#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#s3_location CcAssociation#s3_location}
     */
     readonly s3Location?: S3OutputLocationProperty;
 }
@@ -972,13 +972,13 @@ export interface TagProperty {
     /**
     * The name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#key CcAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#key CcAssociation#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#value CcAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#value CcAssociation#value}
     */
     readonly value?: string;
 }
@@ -1086,11 +1086,11 @@ export class TagPropertyList extends cdktn.ComplexList {
 }
 export interface TargetProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#key CcAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#key CcAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_association#values CcAssociation#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_association#values CcAssociation#values}
     */
     readonly values?: string[];
 }

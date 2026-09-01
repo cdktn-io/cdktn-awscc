@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcCertificateProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the private certificate authority (CA) that will be used to issue the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#certificate_authority_arn CcCertificate#certificate_authority_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#certificate_authority_arn CcCertificate#certificate_authority_arn}
     */
     readonly certificateAuthorityArn?: string;
     /**
     * Specifies whether the certificate can be exported. ENABLED allows the certificate to be exported, DISABLED prevents export.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#certificate_export CcCertificate#certificate_export}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#certificate_export CcCertificate#certificate_export}
     */
     readonly certificateExport?: string;
     /**
     * You can opt out of certificate transparency logging by specifying the DISABLED option. Opt in by specifying ENABLED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#certificate_transparency_logging_preference CcCertificate#certificate_transparency_logging_preference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#certificate_transparency_logging_preference CcCertificate#certificate_transparency_logging_preference}
     */
     readonly certificateTransparencyLoggingPreference?: string;
     /**
     * The fully qualified domain name (FQDN), such as www.example.com, with which you want to secure an ACM certificate
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#domain_name CcCertificate#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#domain_name CcCertificate#domain_name}
     */
     readonly domainName: string;
     /**
     * Domain information that domain name registrars use to verify your identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#domain_validation_options CcCertificate#domain_validation_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#domain_validation_options CcCertificate#domain_validation_options}
     */
     readonly domainValidationOptions?: CcCertificate.DomainValidationOptionProperty[] | cdktn.IResolvable;
     /**
     * Specifies the algorithm of the public and private key pair that your certificate uses to encrypt data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#key_algorithm CcCertificate#key_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#key_algorithm CcCertificate#key_algorithm}
     */
     readonly keyAlgorithm?: string;
     /**
     * Additional FQDNs to be included in the Subject Alternative Name extension of the ACM certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#subject_alternative_names CcCertificate#subject_alternative_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#subject_alternative_names CcCertificate#subject_alternative_names}
     */
     readonly subjectAlternativeNames?: string[];
     /**
     * Key-value pairs that can identify the certificate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#tags CcCertificate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#tags CcCertificate#tags}
     */
     readonly tags?: CcCertificate.TagProperty[] | cdktn.IResolvable;
     /**
     * The method you want to use to validate that you own or control the domain associated with a public certificate. Valid values are DNS, EMAIL or HTTP
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#validation_method CcCertificate#validation_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#validation_method CcCertificate#validation_method}
     */
     readonly validationMethod?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate awscc_certificatemanager_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate awscc_certificatemanager_certificate}
 */
 export class CcCertificate extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCertificate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCertificate to import
-    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCertificate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcCertificate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate awscc_certificatemanager_certificate} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate awscc_certificatemanager_certificate} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcCertificate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_certificatemanager_certificate',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -443,15 +443,15 @@ export function ccCertificateTagPropertyToHclTerraform(struct?: CcCertificate.Ta
 export namespace CcCertificate {
 export interface DomainValidationOptionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#domain_name CcCertificate#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#domain_name CcCertificate#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#hosted_zone_id CcCertificate#hosted_zone_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#hosted_zone_id CcCertificate#hosted_zone_id}
     */
     readonly hostedZoneId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#validation_domain CcCertificate#validation_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#validation_domain CcCertificate#validation_domain}
     */
     readonly validationDomain?: string;
 }
@@ -583,13 +583,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#key CcCertificate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#key CcCertificate#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/certificatemanager_certificate#value CcCertificate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/certificatemanager_certificate#value CcCertificate#value}
     */
     readonly value?: string;
 }

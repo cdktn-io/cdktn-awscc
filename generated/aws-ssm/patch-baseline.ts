@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,97 +9,97 @@ export interface CcPatchBaselineProps extends cdktn.TerraformMetaArguments {
     /**
     * A set of rules defining the approval rules for a patch baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approval_rules CcPatchBaseline#approval_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approval_rules CcPatchBaseline#approval_rules}
     */
     readonly approvalRules?: CcPatchBaseline.RuleGroupProperty;
     /**
     * A list of explicitly approved patches for the baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approved_patches CcPatchBaseline#approved_patches}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approved_patches CcPatchBaseline#approved_patches}
     */
     readonly approvedPatches?: string[];
     /**
     * Defines the compliance level for approved patches. This means that if an approved patch is reported as missing, this is the severity of the compliance violation. The default value is UNSPECIFIED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approved_patches_compliance_level CcPatchBaseline#approved_patches_compliance_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approved_patches_compliance_level CcPatchBaseline#approved_patches_compliance_level}
     */
     readonly approvedPatchesComplianceLevel?: string;
     /**
     * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approved_patches_enable_non_security CcPatchBaseline#approved_patches_enable_non_security}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approved_patches_enable_non_security CcPatchBaseline#approved_patches_enable_non_security}
     */
     readonly approvedPatchesEnableNonSecurity?: boolean | cdktn.IResolvable;
     /**
     * The compliance status for vendor recommended security updates that are not approved by this patch baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#available_security_updates_compliance_status CcPatchBaseline#available_security_updates_compliance_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#available_security_updates_compliance_status CcPatchBaseline#available_security_updates_compliance_status}
     */
     readonly availableSecurityUpdatesComplianceStatus?: string;
     /**
     * Set the baseline as default baseline. Only registering to default patch baseline is allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#default_baseline CcPatchBaseline#default_baseline}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#default_baseline CcPatchBaseline#default_baseline}
     */
     readonly defaultBaseline?: boolean | cdktn.IResolvable;
     /**
     * The description of the patch baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#description CcPatchBaseline#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#description CcPatchBaseline#description}
     */
     readonly description?: string;
     /**
     * A set of global filters used to include patches in the baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#global_filters CcPatchBaseline#global_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#global_filters CcPatchBaseline#global_filters}
     */
     readonly globalFilters?: CcPatchBaseline.GlobalFiltersProperty;
     /**
     * The name of the patch baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#name CcPatchBaseline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#name CcPatchBaseline#name}
     */
     readonly name: string;
     /**
     * Defines the operating system the patch baseline applies to. The Default value is WINDOWS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#operating_system CcPatchBaseline#operating_system}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#operating_system CcPatchBaseline#operating_system}
     */
     readonly operatingSystem?: string;
     /**
     * PatchGroups is used to associate instances with a specific patch baseline
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#patch_groups CcPatchBaseline#patch_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#patch_groups CcPatchBaseline#patch_groups}
     */
     readonly patchGroups?: string[];
     /**
     * A list of explicitly rejected patches for the baseline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#rejected_patches CcPatchBaseline#rejected_patches}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#rejected_patches CcPatchBaseline#rejected_patches}
     */
     readonly rejectedPatches?: string[];
     /**
     * The action for Patch Manager to take on patches included in the RejectedPackages list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#rejected_patches_action CcPatchBaseline#rejected_patches_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#rejected_patches_action CcPatchBaseline#rejected_patches_action}
     */
     readonly rejectedPatchesAction?: string;
     /**
     * Information about the patches to use to update the instances, including target operating systems and source repository. Applies to Linux instances only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#sources CcPatchBaseline#sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#sources CcPatchBaseline#sources}
     */
     readonly sources?: CcPatchBaseline.PatchSourceProperty[] | cdktn.IResolvable;
     /**
     * Optional metadata that you assign to a resource. Tags enable you to categorize a resource in different ways.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#tags CcPatchBaseline#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#tags CcPatchBaseline#tags}
     */
     readonly tags?: CcPatchBaseline.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline awscc_ssm_patch_baseline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline awscc_ssm_patch_baseline}
 */
 export class CcPatchBaseline extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcPatchBaseline extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPatchBaseline resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPatchBaseline to import
-    * @param importFromId The id of the existing CcPatchBaseline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPatchBaseline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPatchBaseline to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcPatchBaseline extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline awscc_ssm_patch_baseline} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline awscc_ssm_patch_baseline} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class CcPatchBaseline extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ssm_patch_baseline',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -845,11 +845,11 @@ export function ccPatchBaselineTagPropertyToHclTerraform(struct?: CcPatchBaselin
 export namespace CcPatchBaseline {
 export interface PatchFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#values CcPatchBaseline#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#values CcPatchBaseline#values}
     */
     readonly values?: string[];
 }
@@ -957,7 +957,7 @@ export class PatchFilterPropertyList extends cdktn.ComplexList {
 }
 export interface PatchFilterGroupProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#patch_filters CcPatchBaseline#patch_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#patch_filters CcPatchBaseline#patch_filters}
     */
     readonly patchFilters?: PatchFilterProperty[] | cdktn.IResolvable;
 }
@@ -1021,25 +1021,25 @@ export class PatchFilterGroupPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface RuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approve_after_days CcPatchBaseline#approve_after_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approve_after_days CcPatchBaseline#approve_after_days}
     */
     readonly approveAfterDays?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#approve_until_date CcPatchBaseline#approve_until_date}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#approve_until_date CcPatchBaseline#approve_until_date}
     */
     readonly approveUntilDate?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#compliance_level CcPatchBaseline#compliance_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#compliance_level CcPatchBaseline#compliance_level}
     */
     readonly complianceLevel?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#enable_non_security CcPatchBaseline#enable_non_security}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#enable_non_security CcPatchBaseline#enable_non_security}
     */
     readonly enableNonSecurity?: boolean | cdktn.IResolvable;
     /**
     * The patch filter group that defines the criteria for the rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#patch_filter_group CcPatchBaseline#patch_filter_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#patch_filter_group CcPatchBaseline#patch_filter_group}
     */
     readonly patchFilterGroup?: PatchFilterGroupProperty;
 }
@@ -1213,7 +1213,7 @@ export class RulePropertyList extends cdktn.ComplexList {
 }
 export interface RuleGroupProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#patch_rules CcPatchBaseline#patch_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#patch_rules CcPatchBaseline#patch_rules}
     */
     readonly patchRules?: RuleProperty[] | cdktn.IResolvable;
 }
@@ -1277,11 +1277,11 @@ export class RuleGroupPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PatchFiltersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#values CcPatchBaseline#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#values CcPatchBaseline#values}
     */
     readonly values?: string[];
 }
@@ -1389,7 +1389,7 @@ export class PatchFiltersPropertyList extends cdktn.ComplexList {
 }
 export interface GlobalFiltersProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#patch_filters CcPatchBaseline#patch_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#patch_filters CcPatchBaseline#patch_filters}
     */
     readonly patchFilters?: PatchFiltersProperty[] | cdktn.IResolvable;
 }
@@ -1453,15 +1453,15 @@ export class GlobalFiltersPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PatchSourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#configuration CcPatchBaseline#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#configuration CcPatchBaseline#configuration}
     */
     readonly configuration?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#name CcPatchBaseline#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#name CcPatchBaseline#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#products CcPatchBaseline#products}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#products CcPatchBaseline#products}
     */
     readonly products?: string[];
 }
@@ -1591,11 +1591,11 @@ export class PatchSourcePropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#key CcPatchBaseline#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/ssm_patch_baseline#value CcPatchBaseline#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ssm_patch_baseline#value CcPatchBaseline#value}
     */
     readonly value?: string;
 }

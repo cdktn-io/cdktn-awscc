@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcInferenceSchedulerProps extends cdktn.TerraformMetaArguments 
     /**
     * A period of time (in minutes) by which inference on the data is delayed after the data starts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#data_delay_offset_in_minutes CcInferenceScheduler#data_delay_offset_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#data_delay_offset_in_minutes CcInferenceScheduler#data_delay_offset_in_minutes}
     */
     readonly dataDelayOffsetInMinutes?: number;
     /**
     * Specifies configuration information for the input data for the inference scheduler, including delimiter, format, and dataset location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#data_input_configuration CcInferenceScheduler#data_input_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#data_input_configuration CcInferenceScheduler#data_input_configuration}
     */
     readonly dataInputConfiguration: CcInferenceScheduler.DataInputConfigurationProperty;
     /**
     * Specifies configuration information for the output results for the inference scheduler, including the S3 location for the output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#data_output_configuration CcInferenceScheduler#data_output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#data_output_configuration CcInferenceScheduler#data_output_configuration}
     */
     readonly dataOutputConfiguration: CcInferenceScheduler.DataOutputConfigurationProperty;
     /**
     * How often data is uploaded to the source S3 bucket for the input data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#data_upload_frequency CcInferenceScheduler#data_upload_frequency}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#data_upload_frequency CcInferenceScheduler#data_upload_frequency}
     */
     readonly dataUploadFrequency: string;
     /**
     * The name of the inference scheduler being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#inference_scheduler_name CcInferenceScheduler#inference_scheduler_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#inference_scheduler_name CcInferenceScheduler#inference_scheduler_name}
     */
     readonly inferenceSchedulerName?: string;
     /**
     * The name of the previously trained ML model being used to create the inference scheduler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#model_name CcInferenceScheduler#model_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#model_name CcInferenceScheduler#model_name}
     */
     readonly modelName: string;
     /**
     * The Amazon Resource Name (ARN) of a role with permission to access the data source being used for the inference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#role_arn CcInferenceScheduler#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#role_arn CcInferenceScheduler#role_arn}
     */
     readonly roleArn: string;
     /**
     * Provides the identifier of the AWS KMS customer master key (CMK) used to encrypt inference scheduler data by Amazon Lookout for Equipment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#server_side_kms_key_id CcInferenceScheduler#server_side_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#server_side_kms_key_id CcInferenceScheduler#server_side_kms_key_id}
     */
     readonly serverSideKmsKeyId?: string;
     /**
     * Any tags associated with the inference scheduler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#tags CcInferenceScheduler#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#tags CcInferenceScheduler#tags}
     */
     readonly tags?: CcInferenceScheduler.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler awscc_lookoutequipment_inference_scheduler}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler awscc_lookoutequipment_inference_scheduler}
 */
 export class CcInferenceScheduler extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcInferenceScheduler extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInferenceScheduler resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInferenceScheduler to import
-    * @param importFromId The id of the existing CcInferenceScheduler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInferenceScheduler that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInferenceScheduler to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcInferenceScheduler extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler awscc_lookoutequipment_inference_scheduler} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler awscc_lookoutequipment_inference_scheduler} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcInferenceScheduler extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lookoutequipment_inference_scheduler',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -581,13 +581,13 @@ export interface InputNameConfigurationProperty {
     /**
     * Indicates the delimiter character used between items in the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#component_timestamp_delimiter CcInferenceScheduler#component_timestamp_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#component_timestamp_delimiter CcInferenceScheduler#component_timestamp_delimiter}
     */
     readonly componentTimestampDelimiter?: string;
     /**
     * The format of the timestamp, whether Epoch time, or standard, with or without hyphens (-).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#timestamp_format CcInferenceScheduler#timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#timestamp_format CcInferenceScheduler#timestamp_format}
     */
     readonly timestampFormat?: string;
 }
@@ -673,11 +673,11 @@ export class InputNameConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface S3InputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#bucket CcInferenceScheduler#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#bucket CcInferenceScheduler#bucket}
     */
     readonly bucket: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#prefix CcInferenceScheduler#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#prefix CcInferenceScheduler#prefix}
     */
     readonly prefix?: string;
 }
@@ -762,19 +762,19 @@ export interface DataInputConfigurationProperty {
     /**
     * Specifies configuration information for the input data for the inference, including timestamp format and delimiter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#inference_input_name_configuration CcInferenceScheduler#inference_input_name_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#inference_input_name_configuration CcInferenceScheduler#inference_input_name_configuration}
     */
     readonly inferenceInputNameConfiguration?: InputNameConfigurationProperty;
     /**
     * Indicates the difference between your time zone and Greenwich Mean Time (GMT).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#input_time_zone_offset CcInferenceScheduler#input_time_zone_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#input_time_zone_offset CcInferenceScheduler#input_time_zone_offset}
     */
     readonly inputTimeZoneOffset?: string;
     /**
     * Specifies configuration information for the input data for the inference, including input data S3 location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#s3_input_configuration CcInferenceScheduler#s3_input_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#s3_input_configuration CcInferenceScheduler#s3_input_configuration}
     */
     readonly s3InputConfiguration: S3InputConfigurationProperty;
 }
@@ -879,11 +879,11 @@ export class DataInputConfigurationPropertyOutputReference extends cdktn.Complex
 }
 export interface S3OutputConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#bucket CcInferenceScheduler#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#bucket CcInferenceScheduler#bucket}
     */
     readonly bucket: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#prefix CcInferenceScheduler#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#prefix CcInferenceScheduler#prefix}
     */
     readonly prefix?: string;
 }
@@ -968,13 +968,13 @@ export interface DataOutputConfigurationProperty {
     /**
     * The ID number for the AWS KMS key used to encrypt the inference output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#kms_key_id CcInferenceScheduler#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#kms_key_id CcInferenceScheduler#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * Specifies configuration information for the output results from the inference, including output S3 location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#s3_output_configuration CcInferenceScheduler#s3_output_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#s3_output_configuration CcInferenceScheduler#s3_output_configuration}
     */
     readonly s3OutputConfiguration: S3OutputConfigurationProperty;
 }
@@ -1059,13 +1059,13 @@ export interface TagProperty {
     /**
     * The key for the specified tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#key CcInferenceScheduler#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#key CcInferenceScheduler#key}
     */
     readonly key?: string;
     /**
     * The value for the specified tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/lookoutequipment_inference_scheduler#value CcInferenceScheduler#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lookoutequipment_inference_scheduler#value CcInferenceScheduler#value}
     */
     readonly value?: string;
 }

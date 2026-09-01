@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,13 +9,13 @@ export interface CcCloudFrontOriginAccessIdentityProps extends cdktn.TerraformMe
     /**
     * The current configuration information for the identity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity#cloudfront_origin_access_identity_config CcCloudFrontOriginAccessIdentity#cloudfront_origin_access_identity_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity#cloudfront_origin_access_identity_config CcCloudFrontOriginAccessIdentity#cloudfront_origin_access_identity_config}
     */
     readonly cloudfrontOriginAccessIdentityConfig: CcCloudFrontOriginAccessIdentity.CloudFrontOriginAccessIdentityConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity awscc_cloudfront_cloudfront_origin_access_identity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity awscc_cloudfront_cloudfront_origin_access_identity}
 */
 export class CcCloudFrontOriginAccessIdentity extends cdktn.TerraformResource {
 
@@ -31,7 +31,7 @@ export class CcCloudFrontOriginAccessIdentity extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCloudFrontOriginAccessIdentity resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCloudFrontOriginAccessIdentity to import
-    * @param importFromId The id of the existing CcCloudFrontOriginAccessIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCloudFrontOriginAccessIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCloudFrontOriginAccessIdentity to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class CcCloudFrontOriginAccessIdentity extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity awscc_cloudfront_cloudfront_origin_access_identity} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity awscc_cloudfront_cloudfront_origin_access_identity} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class CcCloudFrontOriginAccessIdentity extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cloudfront_cloudfront_origin_access_identity',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -159,7 +159,7 @@ export interface CloudFrontOriginAccessIdentityConfigProperty {
     /**
     * A comment to describe the origin access identity. The comment cannot be longer than 128 characters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/cloudfront_cloudfront_origin_access_identity#comment CcCloudFrontOriginAccessIdentity#comment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudfront_cloudfront_origin_access_identity#comment CcCloudFrontOriginAccessIdentity#comment}
     */
     readonly comment: string;
 }

@@ -1,61 +1,61 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcQueueProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#allowed_storage_profile_ids CcQueue#allowed_storage_profile_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#allowed_storage_profile_ids CcQueue#allowed_storage_profile_ids}
     */
     readonly allowedStorageProfileIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#default_budget_action CcQueue#default_budget_action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#default_budget_action CcQueue#default_budget_action}
     */
     readonly defaultBudgetAction?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#description CcQueue#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#description CcQueue#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#display_name CcQueue#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#display_name CcQueue#display_name}
     */
     readonly displayName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#farm_id CcQueue#farm_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#farm_id CcQueue#farm_id}
     */
     readonly farmId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#job_attachment_settings CcQueue#job_attachment_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#job_attachment_settings CcQueue#job_attachment_settings}
     */
     readonly jobAttachmentSettings?: CcQueue.JobAttachmentSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#job_run_as_user CcQueue#job_run_as_user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#job_run_as_user CcQueue#job_run_as_user}
     */
     readonly jobRunAsUser?: CcQueue.JobRunAsUserProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#required_file_system_location_names CcQueue#required_file_system_location_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#required_file_system_location_names CcQueue#required_file_system_location_names}
     */
     readonly requiredFileSystemLocationNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#role_arn CcQueue#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#role_arn CcQueue#role_arn}
     */
     readonly roleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#scheduling_configuration CcQueue#scheduling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#scheduling_configuration CcQueue#scheduling_configuration}
     */
     readonly schedulingConfiguration?: CcQueue.SchedulingConfigurationProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#tags CcQueue#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#tags CcQueue#tags}
     */
     readonly tags?: CcQueue.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue awscc_deadline_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue awscc_deadline_queue}
 */
 export class CcQueue extends cdktn.TerraformResource {
 
@@ -71,7 +71,7 @@ export class CcQueue extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcQueue resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcQueue to import
-    * @param importFromId The id of the existing CcQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcQueue to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -83,7 +83,7 @@ export class CcQueue extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue awscc_deadline_queue} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue awscc_deadline_queue} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -94,7 +94,7 @@ export class CcQueue extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_deadline_queue',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -802,11 +802,11 @@ export function ccQueueTagPropertyToHclTerraform(struct?: CcQueue.TagProperty | 
 export namespace CcQueue {
 export interface JobAttachmentSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#root_prefix CcQueue#root_prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#root_prefix CcQueue#root_prefix}
     */
     readonly rootPrefix?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#s3_bucket_name CcQueue#s3_bucket_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#s3_bucket_name CcQueue#s3_bucket_name}
     */
     readonly s3BucketName?: string;
 }
@@ -892,11 +892,11 @@ export class JobAttachmentSettingsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface PosixUserProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#group CcQueue#group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#group CcQueue#group}
     */
     readonly group?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#user CcQueue#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#user CcQueue#user}
     */
     readonly user?: string;
 }
@@ -982,11 +982,11 @@ export class PosixUserPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface WindowsUserProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#password_arn CcQueue#password_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#password_arn CcQueue#password_arn}
     */
     readonly passwordArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#user CcQueue#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#user CcQueue#user}
     */
     readonly user?: string;
 }
@@ -1072,15 +1072,15 @@ export class WindowsUserPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface JobRunAsUserProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#posix CcQueue#posix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#posix CcQueue#posix}
     */
     readonly posix?: PosixUserProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#run_as CcQueue#run_as}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#run_as CcQueue#run_as}
     */
     readonly runAs?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#windows CcQueue#windows}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#windows CcQueue#windows}
     */
     readonly windows?: WindowsUserProperty;
 }
@@ -1188,7 +1188,7 @@ export class JobRunAsUserPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface PriorityBalancedSchedulingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#rendering_task_buffer CcQueue#rendering_task_buffer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#rendering_task_buffer CcQueue#rendering_task_buffer}
     */
     readonly renderingTaskBuffer?: number;
 }
@@ -1252,7 +1252,7 @@ export class PriorityBalancedSchedulingConfigurationPropertyOutputReference exte
 }
 export interface SchedulingMaxPriorityOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#always_schedule_first CcQueue#always_schedule_first}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#always_schedule_first CcQueue#always_schedule_first}
     */
     readonly alwaysScheduleFirst?: string;
 }
@@ -1316,7 +1316,7 @@ export class SchedulingMaxPriorityOverridePropertyOutputReference extends cdktn.
 }
 export interface SchedulingMinPriorityOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#always_schedule_last CcQueue#always_schedule_last}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#always_schedule_last CcQueue#always_schedule_last}
     */
     readonly alwaysScheduleLast?: string;
 }
@@ -1380,31 +1380,31 @@ export class SchedulingMinPriorityOverridePropertyOutputReference extends cdktn.
 }
 export interface WeightedBalancedSchedulingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#error_weight CcQueue#error_weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#error_weight CcQueue#error_weight}
     */
     readonly errorWeight?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#max_priority_override CcQueue#max_priority_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#max_priority_override CcQueue#max_priority_override}
     */
     readonly maxPriorityOverride?: SchedulingMaxPriorityOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#min_priority_override CcQueue#min_priority_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#min_priority_override CcQueue#min_priority_override}
     */
     readonly minPriorityOverride?: SchedulingMinPriorityOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#priority_weight CcQueue#priority_weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#priority_weight CcQueue#priority_weight}
     */
     readonly priorityWeight?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#rendering_task_buffer CcQueue#rendering_task_buffer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#rendering_task_buffer CcQueue#rendering_task_buffer}
     */
     readonly renderingTaskBuffer?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#rendering_task_weight CcQueue#rendering_task_weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#rendering_task_weight CcQueue#rendering_task_weight}
     */
     readonly renderingTaskWeight?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#submission_time_weight CcQueue#submission_time_weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#submission_time_weight CcQueue#submission_time_weight}
     */
     readonly submissionTimeWeight?: number;
 }
@@ -1600,15 +1600,15 @@ export class WeightedBalancedSchedulingConfigurationPropertyOutputReference exte
 }
 export interface SchedulingConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#priority_balanced CcQueue#priority_balanced}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#priority_balanced CcQueue#priority_balanced}
     */
     readonly priorityBalanced?: PriorityBalancedSchedulingConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#priority_fifo CcQueue#priority_fifo}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#priority_fifo CcQueue#priority_fifo}
     */
     readonly priorityFifo?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#weighted_balanced CcQueue#weighted_balanced}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#weighted_balanced CcQueue#weighted_balanced}
     */
     readonly weightedBalanced?: WeightedBalancedSchedulingConfigurationProperty;
 }
@@ -1718,13 +1718,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 127 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#key CcQueue#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#key CcQueue#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 1 to 255 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/deadline_queue#value CcQueue#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_queue#value CcQueue#value}
     */
     readonly value?: string;
 }

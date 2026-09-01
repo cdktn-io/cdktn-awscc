@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcCollectionProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the collection group to associate with the collection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#collection_group_name CcCollection#collection_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#collection_group_name CcCollection#collection_group_name}
     */
     readonly collectionGroupName?: string;
     /**
     * The deletion protection state of the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#deletion_protection CcCollection#deletion_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#deletion_protection CcCollection#deletion_protection}
     */
     readonly deletionProtection?: string;
     /**
     * The description of the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#description CcCollection#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#description CcCollection#description}
     */
     readonly description?: string;
     /**
     * Encryption settings for the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#encryption_config CcCollection#encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#encryption_config CcCollection#encryption_config}
     */
     readonly encryptionConfig?: CcCollection.EncryptionConfigProperty;
     /**
@@ -40,37 +40,37 @@ export interface CcCollectionProps extends cdktn.TerraformMetaArguments {
     * Contains between 3 and 64 characters
     * 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#name CcCollection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#name CcCollection#name}
     */
     readonly name: string;
     /**
     * The possible standby replicas for the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#standby_replicas CcCollection#standby_replicas}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#standby_replicas CcCollection#standby_replicas}
     */
     readonly standbyReplicas?: string;
     /**
     * List of tags to be added to the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#tags CcCollection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#tags CcCollection#tags}
     */
     readonly tags?: CcCollection.TagProperty[] | cdktn.IResolvable;
     /**
     * The possible types for the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#type CcCollection#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#type CcCollection#type}
     */
     readonly type?: string;
     /**
     * Vector search configuration options for the collection
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#vector_options CcCollection#vector_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#vector_options CcCollection#vector_options}
     */
     readonly vectorOptions?: CcCollection.VectorOptionsProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection awscc_opensearchserverless_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection awscc_opensearchserverless_collection}
 */
 export class CcCollection extends cdktn.TerraformResource {
 
@@ -86,7 +86,7 @@ export class CcCollection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCollection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCollection to import
-    * @param importFromId The id of the existing CcCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCollection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -98,7 +98,7 @@ export class CcCollection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection awscc_opensearchserverless_collection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection awscc_opensearchserverless_collection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class CcCollection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_opensearchserverless_collection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -522,13 +522,13 @@ export interface EncryptionConfigProperty {
     /**
     * Indicates whether to use an AWS owned key for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#aws_owned_key CcCollection#aws_owned_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#aws_owned_key CcCollection#aws_owned_key}
     */
     readonly awsOwnedKey?: boolean | cdktn.IResolvable;
     /**
     * Key Management Service key used to encrypt the collection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#kms_key_arn CcCollection#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#kms_key_arn CcCollection#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -654,13 +654,13 @@ export interface TagProperty {
     /**
     * The key in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#key CcCollection#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#key CcCollection#key}
     */
     readonly key?: string;
     /**
     * The value in the key-value pair
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#value CcCollection#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#value CcCollection#value}
     */
     readonly value?: string;
 }
@@ -770,7 +770,7 @@ export interface VectorOptionsProperty {
     /**
     * Indicates whether GPU acceleration is enabled for vector indexing
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/opensearchserverless_collection#serverless_vector_acceleration CcCollection#serverless_vector_acceleration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/opensearchserverless_collection#serverless_vector_acceleration CcCollection#serverless_vector_acceleration}
     */
     readonly serverlessVectorAcceleration?: string;
 }

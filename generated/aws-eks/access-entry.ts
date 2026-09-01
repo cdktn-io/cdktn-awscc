@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcAccessEntryProps extends cdktn.TerraformMetaArguments {
     /**
     * An array of access policies that are associated with the access entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#access_policies CcAccessEntry#access_policies}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#access_policies CcAccessEntry#access_policies}
     */
     readonly accessPolicies?: CcAccessEntry.AccessPolicyProperty[] | cdktn.IResolvable;
     /**
     * The cluster that the access entry is created for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#cluster_name CcAccessEntry#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#cluster_name CcAccessEntry#cluster_name}
     */
     readonly clusterName: string;
     /**
     * The Kubernetes groups that the access entry is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#kubernetes_groups CcAccessEntry#kubernetes_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#kubernetes_groups CcAccessEntry#kubernetes_groups}
     */
     readonly kubernetesGroups?: string[];
     /**
     * The principal ARN that the access entry is created for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#principal_arn CcAccessEntry#principal_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#principal_arn CcAccessEntry#principal_arn}
     */
     readonly principalArn: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#tags CcAccessEntry#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#tags CcAccessEntry#tags}
     */
     readonly tags?: CcAccessEntry.TagProperty[] | cdktn.IResolvable;
     /**
     * The node type to associate with the access entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#type CcAccessEntry#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#type CcAccessEntry#type}
     */
     readonly type?: string;
     /**
     * The Kubernetes user that the access entry is associated with.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#username CcAccessEntry#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#username CcAccessEntry#username}
     */
     readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry awscc_eks_access_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry awscc_eks_access_entry}
 */
 export class CcAccessEntry extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcAccessEntry extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAccessEntry resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAccessEntry to import
-    * @param importFromId The id of the existing CcAccessEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAccessEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAccessEntry to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcAccessEntry extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry awscc_eks_access_entry} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry awscc_eks_access_entry} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcAccessEntry extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_eks_access_entry',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -412,13 +412,13 @@ export interface AccessScopeProperty {
     /**
     * The namespaces to associate with the access scope. Only specify if Type is set to 'namespace'.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#namespaces CcAccessEntry#namespaces}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#namespaces CcAccessEntry#namespaces}
     */
     readonly namespaces?: string[];
     /**
     * The type of the access scope.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#type CcAccessEntry#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#type CcAccessEntry#type}
     */
     readonly type?: string;
 }
@@ -506,13 +506,13 @@ export interface AccessPolicyProperty {
     /**
     * The access scope of the access policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#access_scope CcAccessEntry#access_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#access_scope CcAccessEntry#access_scope}
     */
     readonly accessScope?: AccessScopeProperty;
     /**
     * The ARN of the access policy to add to the access entry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#policy_arn CcAccessEntry#policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#policy_arn CcAccessEntry#policy_arn}
     */
     readonly policyArn?: string;
 }
@@ -622,13 +622,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#key CcAccessEntry#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#key CcAccessEntry#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/eks_access_entry#value CcAccessEntry#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/eks_access_entry#value CcAccessEntry#value}
     */
     readonly value?: string;
 }

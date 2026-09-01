@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcObservabilityConfigurationProps extends cdktn.TerraformMetaAr
     /**
     * A name for the observability configuration. When you use it for the first time in an AWS Region, App Runner creates revision number 1 of this name. When you use the same name in subsequent calls, App Runner creates incremental revisions of the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#observability_configuration_name CcObservabilityConfiguration#observability_configuration_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#observability_configuration_name CcObservabilityConfiguration#observability_configuration_name}
     */
     readonly observabilityConfigurationName?: string;
     /**
     * A list of metadata items that you can associate with your observability configuration resource. A tag is a key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#tags CcObservabilityConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#tags CcObservabilityConfiguration#tags}
     */
     readonly tags?: CcObservabilityConfiguration.TagProperty[] | cdktn.IResolvable;
     /**
     * The configuration of the tracing feature within this observability configuration. If you don't specify it, App Runner doesn't enable tracing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#trace_configuration CcObservabilityConfiguration#trace_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#trace_configuration CcObservabilityConfiguration#trace_configuration}
     */
     readonly traceConfiguration?: CcObservabilityConfiguration.TraceConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration awscc_apprunner_observability_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration awscc_apprunner_observability_configuration}
 */
 export class CcObservabilityConfiguration extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcObservabilityConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcObservabilityConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcObservabilityConfiguration to import
-    * @param importFromId The id of the existing CcObservabilityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcObservabilityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcObservabilityConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcObservabilityConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration awscc_apprunner_observability_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration awscc_apprunner_observability_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcObservabilityConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_apprunner_observability_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -262,11 +262,11 @@ export function ccObservabilityConfigurationTraceConfigurationPropertyToHclTerra
 export namespace CcObservabilityConfiguration {
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#key CcObservabilityConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#key CcObservabilityConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#value CcObservabilityConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#value CcObservabilityConfiguration#value}
     */
     readonly value?: string;
 }
@@ -376,7 +376,7 @@ export interface TraceConfigurationProperty {
     /**
     * The implementation provider chosen for tracing App Runner services.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/apprunner_observability_configuration#vendor CcObservabilityConfiguration#vendor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/apprunner_observability_configuration#vendor CcObservabilityConfiguration#vendor}
     */
     readonly vendor?: string;
 }

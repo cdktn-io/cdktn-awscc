@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,71 +9,71 @@ export interface CcTaskTemplateProps extends cdktn.TerraformMetaArguments {
     /**
     * the client token string in uuid format
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#client_token CcTaskTemplate#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#client_token CcTaskTemplate#client_token}
     */
     readonly clientToken?: string;
     /**
     * The constraints for the task template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#constraints CcTaskTemplate#constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#constraints CcTaskTemplate#constraints}
     */
     readonly constraints?: CcTaskTemplate.ConstraintsProperty;
     /**
     * The identifier of the contact flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#contact_flow_arn CcTaskTemplate#contact_flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#contact_flow_arn CcTaskTemplate#contact_flow_arn}
     */
     readonly contactFlowArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#defaults CcTaskTemplate#defaults}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#defaults CcTaskTemplate#defaults}
     */
     readonly defaults?: CcTaskTemplate.DefaultFieldValueProperty[] | cdktn.IResolvable;
     /**
     * The description of the task template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#description CcTaskTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#description CcTaskTemplate#description}
     */
     readonly description?: string;
     /**
     * The list of task template's fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#fields CcTaskTemplate#fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#fields CcTaskTemplate#fields}
     */
     readonly fields?: CcTaskTemplate.FieldProperty[] | cdktn.IResolvable;
     /**
     * The identifier (arn) of the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#instance_arn CcTaskTemplate#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#instance_arn CcTaskTemplate#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The name of the task template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
     /**
     * The identifier of the contact flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#self_assign_contact_flow_arn CcTaskTemplate#self_assign_contact_flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#self_assign_contact_flow_arn CcTaskTemplate#self_assign_contact_flow_arn}
     */
     readonly selfAssignContactFlowArn?: string;
     /**
     * The status of the task template
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#status CcTaskTemplate#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#status CcTaskTemplate#status}
     */
     readonly status?: string;
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#tags CcTaskTemplate#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#tags CcTaskTemplate#tags}
     */
     readonly tags?: CcTaskTemplate.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template awscc_connect_task_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template awscc_connect_task_template}
 */
 export class CcTaskTemplate extends cdktn.TerraformResource {
 
@@ -89,7 +89,7 @@ export class CcTaskTemplate extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTaskTemplate resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTaskTemplate to import
-    * @param importFromId The id of the existing CcTaskTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTaskTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTaskTemplate to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -101,7 +101,7 @@ export class CcTaskTemplate extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template awscc_connect_task_template} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template awscc_connect_task_template} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -112,7 +112,7 @@ export class CcTaskTemplate extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_task_template',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -831,7 +831,7 @@ export interface FieldIdentifierProperty {
     /**
     * The name of the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
 }
@@ -897,7 +897,7 @@ export interface InvisibleFieldInfoProperty {
     /**
     * the identifier (name) for the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ export interface ConstraintsReadOnlyFieldsIdProperty {
     /**
     * The name of the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
 }
@@ -1054,7 +1054,7 @@ export interface ReadOnlyFieldInfoProperty {
     /**
     * the identifier (name) for the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1145,7 @@ export interface ConstraintsRequiredFieldsIdProperty {
     /**
     * The name of the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
 }
@@ -1211,7 +1211,7 @@ export interface RequiredFieldInfoProperty {
     /**
     * the identifier (name) for the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,19 +1302,19 @@ export interface ConstraintsProperty {
     /**
     * The list of the task template's invisible fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#invisible_fields CcTaskTemplate#invisible_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#invisible_fields CcTaskTemplate#invisible_fields}
     */
     readonly invisibleFields?: InvisibleFieldInfoProperty[] | cdktn.IResolvable;
     /**
     * The list of the task template's read only fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#read_only_fields CcTaskTemplate#read_only_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#read_only_fields CcTaskTemplate#read_only_fields}
     */
     readonly readOnlyFields?: ReadOnlyFieldInfoProperty[] | cdktn.IResolvable;
     /**
     * The list of the task template's required fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#required_fields CcTaskTemplate#required_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#required_fields CcTaskTemplate#required_fields}
     */
     readonly requiredFields?: RequiredFieldInfoProperty[] | cdktn.IResolvable;
 }
@@ -1424,7 +1424,7 @@ export interface DefaultsIdProperty {
     /**
     * The name of the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
 }
@@ -1490,13 +1490,13 @@ export interface DefaultFieldValueProperty {
     /**
     * the default value for the task template's field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#default_value CcTaskTemplate#default_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#default_value CcTaskTemplate#default_value}
     */
     readonly defaultValue?: string;
     /**
     * the identifier (name) for the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1609,7 +1609,7 @@ export interface FieldsIdProperty {
     /**
     * The name of the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#name CcTaskTemplate#name}
     */
     readonly name?: string;
 }
@@ -1675,13 +1675,13 @@ export interface FieldProperty {
     /**
     * The description of the task template's field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#description CcTaskTemplate#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#description CcTaskTemplate#description}
     */
     readonly description?: string;
     /**
     * the identifier (name) for the task template field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#id CcTaskTemplate#id}
     *
     * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
     * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1690,13 +1690,13 @@ export interface FieldProperty {
     /**
     * list of field options to be used with single select
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#single_select_options CcTaskTemplate#single_select_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#single_select_options CcTaskTemplate#single_select_options}
     */
     readonly singleSelectOptions?: string[];
     /**
     * The type of the task template's field
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#type CcTaskTemplate#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#type CcTaskTemplate#type}
     */
     readonly type?: string;
 }
@@ -1850,13 +1850,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#key CcTaskTemplate#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#key CcTaskTemplate#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. . You can specify a value that is maximum of 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/connect_task_template#value CcTaskTemplate#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_task_template#value CcTaskTemplate#value}
     */
     readonly value?: string;
 }

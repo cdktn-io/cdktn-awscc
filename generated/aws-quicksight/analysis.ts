@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAnalysisProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#analysis_id CcAnalysis#analysis_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#analysis_id CcAnalysis#analysis_id}
     */
     readonly analysisId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#aws_account_id CcAnalysis#aws_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#aws_account_id CcAnalysis#aws_account_id}
     */
     readonly awsAccountId: string;
     /**
     * <p>Errors associated with the analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#errors CcAnalysis#errors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#errors CcAnalysis#errors}
     */
     readonly errors?: CcAnalysis.AnalysisErrorProperty[] | cdktn.IResolvable;
     /**
     * <p>The descriptive name of the analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
     */
     readonly name?: string;
     /**
     * <p>A list of QuickSight parameters and the list's override values.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#parameters CcAnalysis#parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#parameters CcAnalysis#parameters}
     */
     readonly parameters?: CcAnalysis.ParametersProperty;
     /**
@@ -40,32 +40,32 @@ export interface CcAnalysisProps extends cdktn.TerraformMetaArguments {
     * 
     *         <p>To specify no permissions, omit <code>Permissions</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#permissions CcAnalysis#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#permissions CcAnalysis#permissions}
     */
     readonly permissions?: CcAnalysis.ResourcePermissionProperty[] | cdktn.IResolvable;
     /**
     * <p>The source entity of an analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#source_entity CcAnalysis#source_entity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#source_entity CcAnalysis#source_entity}
     */
     readonly sourceEntity: CcAnalysis.AnalysisSourceEntityProperty;
     /**
     * <p>Contains a map of the key-value pairs for the resource tag or tags assigned to the
     *             analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#tags CcAnalysis#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#tags CcAnalysis#tags}
     */
     readonly tags?: CcAnalysis.TagProperty[] | cdktn.IResolvable;
     /**
     * <p>The ARN of the theme of the analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#theme_arn CcAnalysis#theme_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#theme_arn CcAnalysis#theme_arn}
     */
     readonly themeArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis awscc_quicksight_analysis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis awscc_quicksight_analysis}
 */
 export class CcAnalysis extends cdktn.TerraformResource {
 
@@ -81,7 +81,7 @@ export class CcAnalysis extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAnalysis resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAnalysis to import
-    * @param importFromId The id of the existing CcAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAnalysis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAnalysis to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +93,7 @@ export class CcAnalysis extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis awscc_quicksight_analysis} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis awscc_quicksight_analysis} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +104,7 @@ export class CcAnalysis extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_quicksight_analysis',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -821,11 +821,11 @@ export interface AnalysisErrorProperty {
     /**
     * <p>The message associated with the analysis error.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#message CcAnalysis#message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#message CcAnalysis#message}
     */
     readonly message?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#type CcAnalysis#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#type CcAnalysis#type}
     */
     readonly type?: string;
 }
@@ -935,13 +935,13 @@ export interface DateTimeParameterProperty {
     /**
     * <p>A display name for the date-time parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the date-time parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
     */
     readonly values?: string[];
 }
@@ -1051,13 +1051,13 @@ export interface DecimalParameterProperty {
     /**
     * <p>A display name for the decimal parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the decimal parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
     */
     readonly values?: number[];
 }
@@ -1167,13 +1167,13 @@ export interface IntegerParameterProperty {
     /**
     * <p>The name of the integer parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
     */
     readonly name?: string;
     /**
     * <p>The values for the integer parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
     */
     readonly values?: number[];
 }
@@ -1283,13 +1283,13 @@ export interface StringParameterProperty {
     /**
     * <p>A display name for a string parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#name CcAnalysis#name}
     */
     readonly name?: string;
     /**
     * <p>The values of a string parameter.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#values CcAnalysis#values}
     */
     readonly values?: string[];
 }
@@ -1399,25 +1399,25 @@ export interface ParametersProperty {
     /**
     * <p>Date-time parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#date_time_parameters CcAnalysis#date_time_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#date_time_parameters CcAnalysis#date_time_parameters}
     */
     readonly dateTimeParameters?: DateTimeParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>Decimal parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#decimal_parameters CcAnalysis#decimal_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#decimal_parameters CcAnalysis#decimal_parameters}
     */
     readonly decimalParameters?: DecimalParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>Integer parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#integer_parameters CcAnalysis#integer_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#integer_parameters CcAnalysis#integer_parameters}
     */
     readonly integerParameters?: IntegerParameterProperty[] | cdktn.IResolvable;
     /**
     * <p>String parameters.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#string_parameters CcAnalysis#string_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#string_parameters CcAnalysis#string_parameters}
     */
     readonly stringParameters?: StringParameterProperty[] | cdktn.IResolvable;
 }
@@ -1549,7 +1549,7 @@ export interface ResourcePermissionProperty {
     /**
     * <p>The IAM action to grant or revoke permissions on.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#actions CcAnalysis#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#actions CcAnalysis#actions}
     */
     readonly actions?: string[];
     /**
@@ -1569,7 +1569,7 @@ export interface ResourcePermissionProperty {
     *             </li>
     *          </ul>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#principal CcAnalysis#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#principal CcAnalysis#principal}
     */
     readonly principal?: string;
 }
@@ -1738,13 +1738,13 @@ export interface DataSetReferenceProperty {
     /**
     * <p>Dataset Amazon Resource Name (ARN).</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#data_set_arn CcAnalysis#data_set_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#data_set_arn CcAnalysis#data_set_arn}
     */
     readonly dataSetArn?: string;
     /**
     * <p>Dataset placeholder.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#data_set_placeholder CcAnalysis#data_set_placeholder}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#data_set_placeholder CcAnalysis#data_set_placeholder}
     */
     readonly dataSetPlaceholder?: string;
 }
@@ -1854,13 +1854,13 @@ export interface AnalysisSourceTemplateProperty {
     /**
     * <p>The Amazon Resource Name (ARN) of the source template of an analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#arn CcAnalysis#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#arn CcAnalysis#arn}
     */
     readonly arn?: string;
     /**
     * <p>The dataset references of the source template of an analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#data_set_references CcAnalysis#data_set_references}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#data_set_references CcAnalysis#data_set_references}
     */
     readonly dataSetReferences?: DataSetReferenceProperty[] | cdktn.IResolvable;
 }
@@ -1948,7 +1948,7 @@ export interface AnalysisSourceEntityProperty {
     /**
     * <p>The source template of an analysis.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#source_template CcAnalysis#source_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#source_template CcAnalysis#source_template}
     */
     readonly sourceTemplate?: AnalysisSourceTemplateProperty;
 }
@@ -2014,13 +2014,13 @@ export interface TagProperty {
     /**
     * <p>Tag key.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#key CcAnalysis#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#key CcAnalysis#key}
     */
     readonly key?: string;
     /**
     * <p>Tag value.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/quicksight_analysis#value CcAnalysis#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/quicksight_analysis#value CcAnalysis#value}
     */
     readonly value?: string;
 }

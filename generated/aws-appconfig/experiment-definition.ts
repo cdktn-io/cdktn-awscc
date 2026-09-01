@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,79 +9,79 @@ export interface CcExperimentDefinitionProps extends cdktn.TerraformMetaArgument
     /**
     * The application ID, name, or ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#application_identifier CcExperimentDefinition#application_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#application_identifier CcExperimentDefinition#application_identifier}
     */
     readonly applicationIdentifier: string;
     /**
     * Human-readable description of the audience.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#audience_description CcExperimentDefinition#audience_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#audience_description CcExperimentDefinition#audience_description}
     */
     readonly audienceDescription?: string;
     /**
     * Rule expression defining the experiment audience.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#audience_rule CcExperimentDefinition#audience_rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#audience_rule CcExperimentDefinition#audience_rule}
     */
     readonly audienceRule: string;
     /**
     * The configuration profile ID, name, or ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#configuration_profile_identifier CcExperimentDefinition#configuration_profile_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#configuration_profile_identifier CcExperimentDefinition#configuration_profile_identifier}
     */
     readonly configurationProfileIdentifier: string;
     /**
     * The control (baseline) variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#control CcExperimentDefinition#control}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#control CcExperimentDefinition#control}
     */
     readonly control: CcExperimentDefinition.TreatmentProperty;
     /**
     * The environment ID, name, or ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#environment_identifier CcExperimentDefinition#environment_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#environment_identifier CcExperimentDefinition#environment_identifier}
     */
     readonly environmentIdentifier: string;
     /**
     * The key of the existing flag in the configuration profile to experiment on.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#flag_key CcExperimentDefinition#flag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#flag_key CcExperimentDefinition#flag_key}
     */
     readonly flagKey: string;
     /**
     * The hypothesis of the experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#hypothesis CcExperimentDefinition#hypothesis}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#hypothesis CcExperimentDefinition#hypothesis}
     */
     readonly hypothesis?: string;
     /**
     * Criteria for launching the experiment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#launch_criteria CcExperimentDefinition#launch_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#launch_criteria CcExperimentDefinition#launch_criteria}
     */
     readonly launchCriteria?: string;
     /**
     * A name for the experiment definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#name CcExperimentDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#name CcExperimentDefinition#name}
     */
     readonly name: string;
     /**
     * Tags to associate with the experiment definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#tags CcExperimentDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#tags CcExperimentDefinition#tags}
     */
     readonly tags?: CcExperimentDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * Treatment variants (1-5).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#treatments CcExperimentDefinition#treatments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#treatments CcExperimentDefinition#treatments}
     */
     readonly treatments: CcExperimentDefinition.TreatmentsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition awscc_appconfig_experiment_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition awscc_appconfig_experiment_definition}
 */
 export class CcExperimentDefinition extends cdktn.TerraformResource {
 
@@ -97,7 +97,7 @@ export class CcExperimentDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcExperimentDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcExperimentDefinition to import
-    * @param importFromId The id of the existing CcExperimentDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcExperimentDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcExperimentDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -109,7 +109,7 @@ export class CcExperimentDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition awscc_appconfig_experiment_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition awscc_appconfig_experiment_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class CcExperimentDefinition extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appconfig_experiment_definition',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -715,31 +715,31 @@ export interface AttributeValueProperty {
     /**
     * A boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#boolean_value CcExperimentDefinition#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#boolean_value CcExperimentDefinition#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * An array of numeric values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#number_array CcExperimentDefinition#number_array}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#number_array CcExperimentDefinition#number_array}
     */
     readonly numberArray?: number[];
     /**
     * A numeric value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#number_value CcExperimentDefinition#number_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#number_value CcExperimentDefinition#number_value}
     */
     readonly numberValue?: number;
     /**
     * An array of string values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#string_array CcExperimentDefinition#string_array}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#string_array CcExperimentDefinition#string_array}
     */
     readonly stringArray?: string[];
     /**
     * A string value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#string_value CcExperimentDefinition#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#string_value CcExperimentDefinition#string_value}
     */
     readonly stringValue?: string;
 }
@@ -913,23 +913,23 @@ export interface TreatmentProperty {
     /**
     * Map of attribute name to attribute value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#attribute_values CcExperimentDefinition#attribute_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#attribute_values CcExperimentDefinition#attribute_values}
     */
     readonly attributeValues?: { [key: string]: AttributeValueProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#description CcExperimentDefinition#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#description CcExperimentDefinition#description}
     */
     readonly description?: string;
     /**
     * Whether the flag is enabled for this variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#enabled CcExperimentDefinition#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#enabled CcExperimentDefinition#enabled}
     */
     readonly enabled: boolean | cdktn.IResolvable;
     /**
     * Traffic weight percentage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#weight CcExperimentDefinition#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#weight CcExperimentDefinition#weight}
     */
     readonly weight: number;
 }
@@ -1060,13 +1060,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#key CcExperimentDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#key CcExperimentDefinition#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#value CcExperimentDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#value CcExperimentDefinition#value}
     */
     readonly value?: string;
 }
@@ -1176,31 +1176,31 @@ export interface AttributeValuesProperty {
     /**
     * A boolean value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#boolean_value CcExperimentDefinition#boolean_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#boolean_value CcExperimentDefinition#boolean_value}
     */
     readonly booleanValue?: boolean | cdktn.IResolvable;
     /**
     * An array of numeric values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#number_array CcExperimentDefinition#number_array}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#number_array CcExperimentDefinition#number_array}
     */
     readonly numberArray?: number[];
     /**
     * A numeric value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#number_value CcExperimentDefinition#number_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#number_value CcExperimentDefinition#number_value}
     */
     readonly numberValue?: number;
     /**
     * An array of string values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#string_array CcExperimentDefinition#string_array}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#string_array CcExperimentDefinition#string_array}
     */
     readonly stringArray?: string[];
     /**
     * A string value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#string_value CcExperimentDefinition#string_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#string_value CcExperimentDefinition#string_value}
     */
     readonly stringValue?: string;
 }
@@ -1374,29 +1374,29 @@ export interface TreatmentsProperty {
     /**
     * Map of attribute name to attribute value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#attribute_values CcExperimentDefinition#attribute_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#attribute_values CcExperimentDefinition#attribute_values}
     */
     readonly attributeValues?: { [key: string]: AttributeValuesProperty } | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#description CcExperimentDefinition#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#description CcExperimentDefinition#description}
     */
     readonly description?: string;
     /**
     * Whether the flag is enabled for this variant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#enabled CcExperimentDefinition#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#enabled CcExperimentDefinition#enabled}
     */
     readonly enabled: boolean | cdktn.IResolvable;
     /**
     * The treatment key (read-only, auto-generated by service).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#key CcExperimentDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#key CcExperimentDefinition#key}
     */
     readonly key?: string;
     /**
     * Traffic weight percentage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/appconfig_experiment_definition#weight CcExperimentDefinition#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appconfig_experiment_definition#weight CcExperimentDefinition#weight}
     */
     readonly weight: number;
 }

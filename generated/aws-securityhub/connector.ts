@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,29 +9,29 @@ export interface CcConnectorProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#description CcConnector#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#description CcConnector#description}
     */
     readonly description?: string;
     /**
     * The name of the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#name CcConnector#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#name CcConnector#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#provider_name CcConnector#provider_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#provider_name CcConnector#provider_name}
     */
     readonly providerName: CcConnector.ProviderNameProperty;
     /**
     * A key-value pair to associate with a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#tags CcConnector#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#tags CcConnector#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector awscc_securityhub_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector awscc_securityhub_connector}
 */
 export class CcConnector extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CcConnector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnector to import
-    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CcConnector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector awscc_securityhub_connector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector awscc_securityhub_connector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CcConnector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_securityhub_connector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -446,13 +446,13 @@ export interface ScopeConfigurationProperty {
     /**
     * The type of scope. Valid values are ``tenant`` and ``subscription``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#scope_type CcConnector#scope_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#scope_type CcConnector#scope_type}
     */
     readonly scopeType: string;
     /**
     * The list of scope values, such as subscription IDs, when the scope type is ``subscription``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#scope_values CcConnector#scope_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#scope_values CcConnector#scope_values}
     */
     readonly scopeValues?: string[];
 }
@@ -537,19 +537,19 @@ export interface AzureProperty {
     /**
     * The ARN of the multi-cloud configuration connector used to establish the connection to Azure.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#aws_config_connector_arn CcConnector#aws_config_connector_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#aws_config_connector_arn CcConnector#aws_config_connector_arn}
     */
     readonly awsConfigConnectorArn: string;
     /**
     * The list of Azure regions to monitor.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#azure_regions CcConnector#azure_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#azure_regions CcConnector#azure_regions}
     */
     readonly azureRegions: string[];
     /**
     * The scope configuration that defines which Azure resources are monitored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#scope_configuration CcConnector#scope_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#scope_configuration CcConnector#scope_configuration}
     */
     readonly scopeConfiguration: ScopeConfigurationProperty;
 }
@@ -650,7 +650,7 @@ export interface ProviderNameProperty {
     /**
     * The configuration for connecting to an Azure environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/securityhub_connector#azure CcConnector#azure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/securityhub_connector#azure CcConnector#azure}
     */
     readonly azure: AzureProperty;
 }

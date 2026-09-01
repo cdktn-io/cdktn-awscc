@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,115 +9,115 @@ export interface CcWorkspaceProps extends cdktn.TerraformMetaArguments {
     /**
     * These enums represent valid account access types. Specifically these enums determine whether the workspace can access AWS resources in the AWS account only, or whether it can also access resources in other accounts in the same organization. If the value CURRENT_ACCOUNT is used, a workspace role ARN must be provided. If the value is ORGANIZATION, a list of organizational units must be provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#account_access_type CcWorkspace#account_access_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#account_access_type CcWorkspace#account_access_type}
     */
     readonly accountAccessType: string;
     /**
     * List of authentication providers to enable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#authentication_providers CcWorkspace#authentication_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#authentication_providers CcWorkspace#authentication_providers}
     */
     readonly authenticationProviders: string[];
     /**
     * A unique, case-sensitive, user-provided identifier to ensure the idempotency of the request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#client_token CcWorkspace#client_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#client_token CcWorkspace#client_token}
     */
     readonly clientToken?: string;
     /**
     * List of data sources on the service managed IAM role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#data_sources CcWorkspace#data_sources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#data_sources CcWorkspace#data_sources}
     */
     readonly dataSources?: string[];
     /**
     * Description of a workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#description CcWorkspace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#description CcWorkspace#description}
     */
     readonly description?: string;
     /**
     * The version of Grafana to support in your workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#grafana_version CcWorkspace#grafana_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#grafana_version CcWorkspace#grafana_version}
     */
     readonly grafanaVersion?: string;
     /**
     * The user friendly name of a workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#name CcWorkspace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#name CcWorkspace#name}
     */
     readonly name?: string;
     /**
     * The configuration settings for Network Access Control.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#network_access_control CcWorkspace#network_access_control}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#network_access_control CcWorkspace#network_access_control}
     */
     readonly networkAccessControl?: CcWorkspace.NetworkAccessControlProperty;
     /**
     * List of notification destinations on the customers service managed IAM role that the Grafana workspace can query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#notification_destinations CcWorkspace#notification_destinations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#notification_destinations CcWorkspace#notification_destinations}
     */
     readonly notificationDestinations?: string[];
     /**
     * The name of an IAM role that already exists to use with AWS Organizations to access AWS data sources and notification channels in other accounts in an organization.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#organization_role_name CcWorkspace#organization_role_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#organization_role_name CcWorkspace#organization_role_name}
     */
     readonly organizationRoleName?: string;
     /**
     * List of Organizational Units containing AWS accounts the Grafana workspace can pull data from.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#organizational_units CcWorkspace#organizational_units}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#organizational_units CcWorkspace#organizational_units}
     */
     readonly organizationalUnits?: string[];
     /**
     * These enums represent valid permission types to use when creating or configuring a Grafana workspace. The SERVICE_MANAGED permission type means the Managed Grafana service will create a workspace IAM role on your behalf. The CUSTOMER_MANAGED permission type means that the customer is expected to provide an IAM role that the Grafana workspace can use to query data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#permission_type CcWorkspace#permission_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#permission_type CcWorkspace#permission_type}
     */
     readonly permissionType: string;
     /**
     * Allow workspace admins to install plugins
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#plugin_admin_enabled CcWorkspace#plugin_admin_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#plugin_admin_enabled CcWorkspace#plugin_admin_enabled}
     */
     readonly pluginAdminEnabled?: boolean | cdktn.IResolvable;
     /**
     * IAM Role that will be used to grant the Grafana workspace access to a customers AWS resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#role_arn CcWorkspace#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#role_arn CcWorkspace#role_arn}
     */
     readonly roleArn?: string;
     /**
     * SAML configuration data associated with an AMG workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#saml_configuration CcWorkspace#saml_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#saml_configuration CcWorkspace#saml_configuration}
     */
     readonly samlConfiguration?: CcWorkspace.SamlConfigurationProperty;
     /**
     * The name of the AWS CloudFormation stack set to use to generate IAM roles to be used for this workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#stack_set_name CcWorkspace#stack_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#stack_set_name CcWorkspace#stack_set_name}
     */
     readonly stackSetName?: string;
     /**
     * The list of tags associated with the workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#tags CcWorkspace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#tags CcWorkspace#tags}
     */
     readonly tags?: CcWorkspace.TagsItemsProperty[] | cdktn.IResolvable;
     /**
     * The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#vpc_configuration CcWorkspace#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#vpc_configuration CcWorkspace#vpc_configuration}
     */
     readonly vpcConfiguration?: CcWorkspace.VpcConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace awscc_grafana_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace awscc_grafana_workspace}
 */
 export class CcWorkspace extends cdktn.TerraformResource {
 
@@ -133,7 +133,7 @@ export class CcWorkspace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorkspace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorkspace to import
-    * @param importFromId The id of the existing CcWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorkspace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class CcWorkspace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace awscc_grafana_workspace} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace awscc_grafana_workspace} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class CcWorkspace extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_grafana_workspace',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -966,13 +966,13 @@ export interface NetworkAccessControlProperty {
     /**
     * The list of prefix list IDs. A prefix list is a list of CIDR ranges of IP addresses. The IP addresses specified are allowed to access your workspace. If the list is not included in the configuration then no IP addresses will be allowed to access the workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#prefix_list_ids CcWorkspace#prefix_list_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#prefix_list_ids CcWorkspace#prefix_list_ids}
     */
     readonly prefixListIds?: string[];
     /**
     * The list of Amazon VPC endpoint IDs for the workspace. If a NetworkAccessConfiguration is specified then only VPC endpoints specified here will be allowed to access the workspace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#vpce_ids CcWorkspace#vpce_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#vpce_ids CcWorkspace#vpce_ids}
     */
     readonly vpceIds?: string[];
 }
@@ -1060,37 +1060,37 @@ export interface AssertionAttributesProperty {
     /**
     * Name of the attribute within the SAML assert to use as the users email in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#email CcWorkspace#email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#email CcWorkspace#email}
     */
     readonly email?: string;
     /**
     * Name of the attribute within the SAML assert to use as the users groups in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#groups CcWorkspace#groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#groups CcWorkspace#groups}
     */
     readonly groups?: string;
     /**
     * Name of the attribute within the SAML assert to use as the users login handle in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#login CcWorkspace#login}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#login CcWorkspace#login}
     */
     readonly login?: string;
     /**
     * Name of the attribute within the SAML assert to use as the users name in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#name CcWorkspace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#name CcWorkspace#name}
     */
     readonly name?: string;
     /**
     * Name of the attribute within the SAML assert to use as the users organizations in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#org CcWorkspace#org}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#org CcWorkspace#org}
     */
     readonly org?: string;
     /**
     * Name of the attribute within the SAML assert to use as the users roles in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#role CcWorkspace#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#role CcWorkspace#role}
     */
     readonly role?: string;
 }
@@ -1266,13 +1266,13 @@ export interface IdpMetadataProperty {
     /**
     * URL that vends the IdPs metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#url CcWorkspace#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#url CcWorkspace#url}
     */
     readonly url?: string;
     /**
     * XML blob of the IdPs metadata.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#xml CcWorkspace#xml}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#xml CcWorkspace#xml}
     */
     readonly xml?: string;
 }
@@ -1360,13 +1360,13 @@ export interface RoleValuesProperty {
     /**
     * List of SAML roles which will be mapped into the Grafana Admin role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#admin CcWorkspace#admin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#admin CcWorkspace#admin}
     */
     readonly admin?: string[];
     /**
     * List of SAML roles which will be mapped into the Grafana Editor role.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#editor CcWorkspace#editor}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#editor CcWorkspace#editor}
     */
     readonly editor?: string[];
 }
@@ -1454,31 +1454,31 @@ export interface SamlConfigurationProperty {
     /**
     * List of SAML organizations allowed to access Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#allowed_organizations CcWorkspace#allowed_organizations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#allowed_organizations CcWorkspace#allowed_organizations}
     */
     readonly allowedOrganizations?: string[];
     /**
     * Maps Grafana friendly names to the IdPs SAML attributes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#assertion_attributes CcWorkspace#assertion_attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#assertion_attributes CcWorkspace#assertion_attributes}
     */
     readonly assertionAttributes?: AssertionAttributesProperty;
     /**
     * IdP Metadata used to configure SAML authentication in Grafana.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#idp_metadata CcWorkspace#idp_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#idp_metadata CcWorkspace#idp_metadata}
     */
     readonly idpMetadata?: IdpMetadataProperty;
     /**
     * The maximum lifetime an authenticated user can be logged in (in minutes) before being required to re-authenticate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#login_validity_duration CcWorkspace#login_validity_duration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#login_validity_duration CcWorkspace#login_validity_duration}
     */
     readonly loginValidityDuration?: number;
     /**
     * Maps SAML roles to the Grafana Editor and Admin roles.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#role_values CcWorkspace#role_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#role_values CcWorkspace#role_values}
     */
     readonly roleValues?: RoleValuesProperty;
 }
@@ -1630,11 +1630,11 @@ export class SamlConfigurationPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#key CcWorkspace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#key CcWorkspace#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#value CcWorkspace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#value CcWorkspace#value}
     */
     readonly value?: string;
 }
@@ -1744,13 +1744,13 @@ export interface VpcConfigurationProperty {
     /**
     * The list of Amazon EC2 security group IDs attached to the Amazon VPC for your Grafana workspace to connect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#security_group_ids CcWorkspace#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#security_group_ids CcWorkspace#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The list of Amazon EC2 subnet IDs created in the Amazon VPC for your Grafana workspace to connect.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/grafana_workspace#subnet_ids CcWorkspace#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/grafana_workspace#subnet_ids CcWorkspace#subnet_ids}
     */
     readonly subnetIds?: string[];
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcConfigurationBundleProps extends cdktn.TerraformMetaArguments
     /**
     * The branch name for version tracking.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#branch_name CcConfigurationBundle#branch_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#branch_name CcConfigurationBundle#branch_name}
     */
     readonly branchName?: string;
     /**
     * The name for the configuration bundle. Names must be unique within your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#bundle_name CcConfigurationBundle#bundle_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#bundle_name CcConfigurationBundle#bundle_name}
     */
     readonly bundleName: string;
     /**
     * A commit message describing the version of the configuration bundle.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#commit_message CcConfigurationBundle#commit_message}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#commit_message CcConfigurationBundle#commit_message}
     */
     readonly commitMessage?: string;
     /**
     * A map of component identifiers to their configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#components CcConfigurationBundle#components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#components CcConfigurationBundle#components}
     */
     readonly components: { [key: string]: CcConfigurationBundle.ComponentConfigurationProperty } | cdktn.IResolvable;
     /**
     * The source that created a configuration bundle version.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#created_by CcConfigurationBundle#created_by}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#created_by CcConfigurationBundle#created_by}
     */
     readonly createdBy?: CcConfigurationBundle.VersionCreatedBySourceProperty;
     /**
     * The description for the configuration bundle.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#description CcConfigurationBundle#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#description CcConfigurationBundle#description}
     */
     readonly description?: string;
     /**
     * The ARN of the KMS key used to encrypt component configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#kms_key_arn CcConfigurationBundle#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#kms_key_arn CcConfigurationBundle#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * Tags to assign to the configuration bundle.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#tags CcConfigurationBundle#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#tags CcConfigurationBundle#tags}
     */
     readonly tags?: CcConfigurationBundle.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle awscc_bedrockagentcore_configuration_bundle}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle awscc_bedrockagentcore_configuration_bundle}
 */
 export class CcConfigurationBundle extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcConfigurationBundle extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfigurationBundle resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfigurationBundle to import
-    * @param importFromId The id of the existing CcConfigurationBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfigurationBundle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfigurationBundle to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcConfigurationBundle extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle awscc_bedrockagentcore_configuration_bundle} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle awscc_bedrockagentcore_configuration_bundle} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcConfigurationBundle extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_configuration_bundle',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -503,7 +503,7 @@ export interface ComponentConfigurationProperty {
     /**
     * The configuration values as a flexible JSON document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#configuration CcConfigurationBundle#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#configuration CcConfigurationBundle#configuration}
     */
     readonly configuration?: string;
 }
@@ -589,13 +589,13 @@ export interface VersionCreatedBySourceProperty {
     /**
     * The Amazon Resource Name (ARN) of the source, if applicable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#arn CcConfigurationBundle#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#arn CcConfigurationBundle#arn}
     */
     readonly arn?: string;
     /**
     * The name of the source (for example, user, optimization-job, or system).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#name CcConfigurationBundle#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#name CcConfigurationBundle#name}
     */
     readonly name?: string;
 }
@@ -768,11 +768,11 @@ export class LineageMetadataPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#key CcConfigurationBundle#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#key CcConfigurationBundle#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/bedrockagentcore_configuration_bundle#value CcConfigurationBundle#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_configuration_bundle#value CcConfigurationBundle#value}
     */
     readonly value?: string;
 }

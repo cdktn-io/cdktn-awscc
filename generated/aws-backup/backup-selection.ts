@@ -1,23 +1,23 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcBackupSelectionProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#backup_plan_id CcBackupSelection#backup_plan_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#backup_plan_id CcBackupSelection#backup_plan_id}
     */
     readonly backupPlanId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#backup_selection CcBackupSelection#backup_selection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#backup_selection CcBackupSelection#backup_selection}
     */
     readonly backupSelection: CcBackupSelection.BackupSelectionResourceTypeProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection awscc_backup_backup_selection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection awscc_backup_backup_selection}
 */
 export class CcBackupSelection extends cdktn.TerraformResource {
 
@@ -33,7 +33,7 @@ export class CcBackupSelection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBackupSelection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBackupSelection to import
-    * @param importFromId The id of the existing CcBackupSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBackupSelection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBackupSelection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +45,7 @@ export class CcBackupSelection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection awscc_backup_backup_selection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection awscc_backup_backup_selection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class CcBackupSelection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_backup_backup_selection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.98.0'
+                providerVersion: '1.99.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -458,11 +458,11 @@ export function ccBackupSelectionBackupSelectionResourceTypePropertyToHclTerrafo
 export namespace CcBackupSelection {
 export interface ConditionParameterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
     */
     readonly conditionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
     */
     readonly conditionValue?: string;
 }
@@ -570,11 +570,11 @@ export class ConditionParameterPropertyList extends cdktn.ComplexList {
 }
 export interface StringLikeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
     */
     readonly conditionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
     */
     readonly conditionValue?: string;
 }
@@ -682,11 +682,11 @@ export class StringLikePropertyList extends cdktn.ComplexList {
 }
 export interface StringNotEqualsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
     */
     readonly conditionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
     */
     readonly conditionValue?: string;
 }
@@ -794,11 +794,11 @@ export class StringNotEqualsPropertyList extends cdktn.ComplexList {
 }
 export interface StringNotLikeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
     */
     readonly conditionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
     */
     readonly conditionValue?: string;
 }
@@ -906,19 +906,19 @@ export class StringNotLikePropertyList extends cdktn.ComplexList {
 }
 export interface ConditionsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#string_equals CcBackupSelection#string_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#string_equals CcBackupSelection#string_equals}
     */
     readonly stringEquals?: ConditionParameterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#string_like CcBackupSelection#string_like}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#string_like CcBackupSelection#string_like}
     */
     readonly stringLike?: StringLikeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#string_not_equals CcBackupSelection#string_not_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#string_not_equals CcBackupSelection#string_not_equals}
     */
     readonly stringNotEquals?: StringNotEqualsProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#string_not_like CcBackupSelection#string_not_like}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#string_not_like CcBackupSelection#string_not_like}
     */
     readonly stringNotLike?: StringNotLikeProperty[] | cdktn.IResolvable;
 }
@@ -1048,15 +1048,15 @@ export class ConditionsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ConditionResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_key CcBackupSelection#condition_key}
     */
     readonly conditionKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_type CcBackupSelection#condition_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_type CcBackupSelection#condition_type}
     */
     readonly conditionType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#condition_value CcBackupSelection#condition_value}
     */
     readonly conditionValue?: string;
 }
@@ -1186,27 +1186,27 @@ export class ConditionResourceTypePropertyList extends cdktn.ComplexList {
 }
 export interface BackupSelectionResourceTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#conditions CcBackupSelection#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#conditions CcBackupSelection#conditions}
     */
     readonly conditions?: ConditionsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#iam_role_arn CcBackupSelection#iam_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#iam_role_arn CcBackupSelection#iam_role_arn}
     */
     readonly iamRoleArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#list_of_tags CcBackupSelection#list_of_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#list_of_tags CcBackupSelection#list_of_tags}
     */
     readonly listOfTags?: ConditionResourceTypeProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#not_resources CcBackupSelection#not_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#not_resources CcBackupSelection#not_resources}
     */
     readonly notResources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#resources CcBackupSelection#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#resources CcBackupSelection#resources}
     */
     readonly resources?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.98.0/docs/resources/backup_backup_selection#selection_name CcBackupSelection#selection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/backup_backup_selection#selection_name CcBackupSelection#selection_name}
     */
     readonly selectionName: string;
 }
