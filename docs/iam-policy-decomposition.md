@@ -1,7 +1,7 @@
 # AWS::IAM::Policy 1:N decomposition — what it is and where the knowledge lives
 
 2026-08-31. Referenced by `docs/bridge-gap-categories.md` §2 and cfncompat RFC 002 (§3 renderer
-row, open question 6). Explains the one place the bridge's renderer must emit *more than one*
+row, open question 6). Vocabulary: [`glossary.md`](glossary.md). Explains the one place the bridge's renderer must emit *more than one*
 Terraform resource for a single CFN resource.
 
 ## The problem
