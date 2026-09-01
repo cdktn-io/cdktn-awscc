@@ -35,9 +35,10 @@ const ADDED_SINCE_a9e6639d = [
 ];
 
 /**
- * The CFN namespaces awscc 1.98.0 uses that the refreshed aws-cdk-lib scope map does not list, with
- * the module `modulePartsFromNamespace(namespace)` derives for each. Eight, not seven: the refresh
- * *removed* `aws-dataexchange` from the map, so AWS::DataExchange now needs auto-extending too.
+ * The CFN namespaces awscc 1.99.0 uses that the refreshed aws-cdk-lib scope map does not list, with
+ * the module `modulePartsFromNamespace(namespace)` derives for each. Eight under 1.98.0 (not seven:
+ * the refresh *removed* `aws-dataexchange` from the map, so AWS::DataExchange needs auto-extending
+ * too); 1.99.0 adds four more — AWS::IoTSecureTunneling, AWS::MGN, AWS::Textract, AWS::Translate.
  */
 const AUTO_EXTENDED: Record<string, string> = {
   "AWS::AccountAccess": "aws-accountaccess",
@@ -45,8 +46,12 @@ const AUTO_EXTENDED: Record<string, string> = {
   "AWS::CloudHSM": "aws-cloudhsm",
   "AWS::DRS": "aws-drs",
   "AWS::DataExchange": "aws-dataexchange",
+  "AWS::IoTSecureTunneling": "aws-iotsecuretunneling",
+  "AWS::MGN": "aws-mgn",
   "AWS::OpenSearch": "aws-opensearch",
   "AWS::ServerlessRepo": "aws-serverlessrepo",
+  "AWS::Textract": "aws-textract",
+  "AWS::Translate": "aws-translate",
   "AWS::Wickr": "aws-wickr",
 };
 
@@ -154,7 +159,7 @@ full("over the full awscc schema (RUN_FULL=1)", () => {
     expect(moduleLess).toEqual([]);
   });
 
-  it("needs auto-extending for exactly the 8 namespaces above", () => {
+  it("needs auto-extending for exactly the 12 namespaces above", () => {
     const namespaces = report.matched.map((e: any) => e.cfnType.split("::").slice(0, 2).join("::"));
     expect(scopeMapModule.autoExtendedNamespaces(report.matched.map((e: any) => e.cfnType)).sort()).toEqual(
       Object.keys(AUTO_EXTENDED).sort(),
@@ -162,7 +167,15 @@ full("over the full awscc schema (RUN_FULL=1)", () => {
     expect(new Set(namespaces).size).toBeGreaterThan(200);
   });
 
-  it("still has exactly one unmatched awscc resource", () => {
-    expect(report.unmatched).toEqual(["awscc_datasync_storage_system"]);
+  // The pinned aws-service-spec (0.1.206) lags awscc: 1.99.0 adds four resources it does not know
+  // yet. They still emit, from their awscc names, but carry no CFN property/attribute map.
+  it("still has exactly five unmatched awscc resources", () => {
+    expect(report.unmatched).toEqual([
+      "awscc_datasync_storage_system",
+      "awscc_ec2_fpga_image",
+      "awscc_identitystore_user",
+      "awscc_lightsail_contact_method",
+      "awscc_supportauthz_support_permit",
+    ]);
   });
 });

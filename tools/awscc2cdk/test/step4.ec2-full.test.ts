@@ -18,8 +18,8 @@ import {
 } from "./helpers/emit";
 import { AWSCC_FQPN, outDir, toolRoot } from "./helpers/paths";
 
-/** every awscc_ec2_* resource in awscc 1.98.0 */
-const EC2_RESOURCES = 109;
+/** every awscc_ec2_* resource in awscc 1.99.0 (1.98.0 had 109; awscc_ec2_fpga_image is new) */
+const EC2_RESOURCES = 110;
 /** provisional (CONTRACT.md): at least this share of nested types must get a CFN definition name */
 const MIN_RECOVERED_RATIO = 0.6;
 
