@@ -148,7 +148,13 @@ holding it open for a second design discussion delays the naming fix (PR #2) und
   `Fn::ImportValue`, §5). CFN *dynamic* parameter types (`AWS::SSM::Parameter::Value<String>`)
   are a CFN-engine feature resolved at deploy time — exactly cfncompat's vehicle (§6): **spike a
   `cfncompat_ssm_parameter_value`-style data-source polyfill** (plan-time read matching CFN's
-  resolution semantics) rather than hard-failing. `Mappings` has no Terraform section: the
+  resolution semantics) rather than hard-failing. The spike must first map aws-cdk's **two**
+  SSM mechanisms, which resolve at different times: `valueFromLookup` is a synth-time context
+  lookup (CLI invokes the SSM context provider, caches in `cdk.context.json`, value is concrete
+  before any template exists — cfncompat is never involved, but this path only works if the
+  cdktn CLI implements the aws-cdk context-provider protocol), while `valueForStringParameter`
+  emits a `CfnParameter` with the dynamic type — the deploy-time flavor that is this polyfill's
+  actual scope. `Mappings` has no Terraform section: the
   renderer emits the mapping as a synth-time `locals` map (evaluated by Terraform at plan), or
   folds `Fn::FindInMap` entirely when keys are literal; `provider::cfncompat::find_in_map`
   (RFC 004 §3.3) is the accessor for token-valued keys. cfncompat owns the *accessor function*,
@@ -199,13 +205,25 @@ code; 28 of those in maintained L2s are the real drop-in blockers. Proposal, spl
   plan/apply time only, and only for stacks that actually hit a fallback resource** — the provider
   block is emitted per-stack on first use (singleton per stack), so apps fully inside awscc
   coverage never pay it. Registry download caching makes the penalty once-per-machine-per-version.
-- **Small, stable policy/attachment types route to `terraform-provider-aws` too** (decided
-  2026-09-01): `SQS::QueuePolicy`, `SNS::TopicPolicy`, and IAM attachment types not covered by
-  decomposition are absent from awscc (QueuePolicy is the canonical known-missing test). The
-  earlier idea of implementing them as cfncompat resources is **dropped** — once the fallback
-  provider is already a dependency for the big types above, splitting the gap surface across two
-  providers buys nothing. They become `aws-provider` OVERRIDE entries (`aws_sqs_queue_policy`,
-  `aws_sns_topic_policy`, `aws_iam_*` attachments).
+- **Small, stable policy/attachment types: default to `terraform-provider-aws` overrides, with
+  one spike-worthy tension** (2026-09-02, refining the 2026-09-01 call). `SQS::QueuePolicy`,
+  `SNS::TopicPolicy`, and IAM attachment types not covered by decomposition are absent from awscc
+  (QueuePolicy is the canonical known-missing test; verified against 1.99.0 —
+  `awscc_iam_{role,user,group}_policy` exist, `awscc_iam_policy`/queue/topic policies do not).
+  Default routing: `aws-provider` OVERRIDE entries (`aws_sqs_queue_policy`, `aws_sns_topic_policy`)
+  — no splitting the gap surface once the fallback provider is a dependency anyway. **The honest
+  cost the default carries: an `aws-provider` override is never just a routing entry.** The aws
+  provider's schemas are hand-authored and diverge from CFN, so every override target needs its
+  own curated CFN→`aws_*` property/attribute/`Ref` translation (TerraConstructs is the prior art
+  of exactly that per-resource cost — large for `CloudFront::Distribution`-class resources). A
+  cfncompat-native resource could instead declare a **CFN-shaped schema** (PascalCase-derived
+  keys, zero translation — the natural fit with `CFN_PROPERTY_NAME_MAP`'s world) at the cost of
+  implementing real CRUD in Go. **The spike question — the only open tension in this section**:
+  per gap type, weigh CRUD complexity × translation-table size × churn. Single-API-call policy
+  types: trivial CRUD, CFN-shaped cfncompat resource attractive. CloudFront/Cognito-class: CRUD
+  is prohibitive (reimplementing the aws provider), so curated `aws_*` translation — or accepting
+  the CFN backend for stacks that hit them — are the real options. Also decide *where* the
+  override translation tables live (cdktn-awscc codegen output vs backend-owned curated files).
 
 ## 4. Curated tables (not codegen — do not masquerade as generated truth)
 
@@ -223,7 +241,15 @@ code; 28 of those in maintained L2s are the real drop-in blockers. Proposal, spl
   bridge can't assume) or **synth-time resolution via AWS CDK context providers/lookups** (a lookup
   that reads the producing stack's outputs/state and bakes the value, cached in `cdk.context.json`);
   (c) same-app cross-stack refs are not ImportValue at all — they take RFC 002 §7's cross-stack
-  path. Spike deliverable: pick per topology and decide whether cfncompat grows the data source.
+  path. **Timing clarification (2026-09-02): aws-cdk context/lookup machinery is exclusively
+  synth-time** — the CLI runs providers between synth passes and bakes concrete values, so
+  wherever a lookup applies, tokens are resolved before rendering and cfncompat is never invoked;
+  the CLI-context path and the cfncompat data-source path are complementary (different
+  topologies), not competing designs. Two consequences: the lookup option for topology (b) moves
+  the work to the **cdktn CLI** (context-provider protocol support — which is a prerequisite for
+  *any* `fromLookup` in bridged apps, a dependency bigger than ImportValue itself and worth its
+  own line in the CLI plan), and the cfncompat data source remains scoped to topology (a) only.
+  Spike deliverable: pick per topology and decide whether cfncompat grows the data source.
 - **`Fn::Transform`** — synth-time error stands. cfncompat *could* invoke a customer macro Lambda
   (custom-resource-polyfill shape) but can never polyfill the server-side transforms
   (`AWS::Serverless`, `AWS::LanguageExtensions`) — no invokable endpoint — and those are the ones
