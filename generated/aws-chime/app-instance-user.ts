@@ -1,39 +1,39 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcAppInstanceUserProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#app_instance_arn CcAppInstanceUser#app_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#app_instance_arn CcAppInstanceUser#app_instance_arn}
     */
     readonly appInstanceArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#app_instance_user_id CcAppInstanceUser#app_instance_user_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#app_instance_user_id CcAppInstanceUser#app_instance_user_id}
     */
     readonly appInstanceUserId: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#expiration_settings CcAppInstanceUser#expiration_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#expiration_settings CcAppInstanceUser#expiration_settings}
     */
     readonly expirationSettings?: CcAppInstanceUser.ExpirationSettingsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#metadata CcAppInstanceUser#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#metadata CcAppInstanceUser#metadata}
     */
     readonly metadata?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#name CcAppInstanceUser#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#name CcAppInstanceUser#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#tags CcAppInstanceUser#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#tags CcAppInstanceUser#tags}
     */
     readonly tags?: CcAppInstanceUser.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user awscc_chime_app_instance_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user awscc_chime_app_instance_user}
 */
 export class CcAppInstanceUser extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAppInstanceUser extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAppInstanceUser resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAppInstanceUser to import
-    * @param importFromId The id of the existing CcAppInstanceUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAppInstanceUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAppInstanceUser to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAppInstanceUser extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user awscc_chime_app_instance_user} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user awscc_chime_app_instance_user} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcAppInstanceUser extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_chime_app_instance_user',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -331,11 +331,11 @@ export function ccAppInstanceUserTagPropertyToHclTerraform(struct?: CcAppInstanc
 export namespace CcAppInstanceUser {
 export interface ExpirationSettingsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#expiration_criterion CcAppInstanceUser#expiration_criterion}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#expiration_criterion CcAppInstanceUser#expiration_criterion}
     */
     readonly expirationCriterion?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#expiration_days CcAppInstanceUser#expiration_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#expiration_days CcAppInstanceUser#expiration_days}
     */
     readonly expirationDays?: number;
 }
@@ -421,11 +421,11 @@ export class ExpirationSettingsPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#key CcAppInstanceUser#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#key CcAppInstanceUser#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/chime_app_instance_user#value CcAppInstanceUser#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/chime_app_instance_user#value CcAppInstanceUser#value}
     */
     readonly value?: string;
 }

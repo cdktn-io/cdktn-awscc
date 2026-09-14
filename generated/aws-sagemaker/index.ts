@@ -12,6 +12,7 @@ export * from './device';
 export * from './device-fleet';
 export * from './domain';
 export * from './endpoint';
+export * from './endpoint-config';
 export * from './experiment';
 export * from './experiment-trial-component';
 export * from './feature-group';

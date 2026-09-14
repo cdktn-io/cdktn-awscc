@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRepositoryProps extends cdktn.TerraformMetaArguments {
     /**
     * Information about code to be committed to a repository after it is created in an AWS CloudFormation stack. Information about code is only used in resource creation. Updates to a stack will not reflect changes made to code properties after initial resource creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#code CcRepository#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#code CcRepository#code}
     */
     readonly code?: CcRepository.CodeProperty;
     /**
     * The ID of the AWS Key Management Service encryption key used to encrypt and decrypt the repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#kms_key_id CcRepository#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#kms_key_id CcRepository#kms_key_id}
     */
     readonly kmsKeyId?: string;
     /**
     * A comment or description about the new repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#repository_description CcRepository#repository_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#repository_description CcRepository#repository_description}
     */
     readonly repositoryDescription?: string;
     /**
     * The name of the new repository to be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#repository_name CcRepository#repository_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#repository_name CcRepository#repository_name}
     */
     readonly repositoryName: string;
     /**
     * One or more tag key-value pairs to use when tagging this repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#tags CcRepository#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#tags CcRepository#tags}
     */
     readonly tags?: CcRepository.TagProperty[] | cdktn.IResolvable;
     /**
     * Information about a trigger for a repository.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#triggers CcRepository#triggers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#triggers CcRepository#triggers}
     */
     readonly triggers?: CcRepository.RepositoryTriggerProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository awscc_codecommit_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository awscc_codecommit_repository}
 */
 export class CcRepository extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRepository extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRepository resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRepository to import
-    * @param importFromId The id of the existing CcRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRepository to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRepository extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository awscc_codecommit_repository} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository awscc_codecommit_repository} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRepository extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_codecommit_repository',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -470,19 +470,19 @@ export interface S3Property {
     /**
     * The name of the Amazon S3 bucket that contains the ZIP file with the content that will be committed to the new repository. This can be specified using the name of the bucket in the AWS account. Changes to this property are ignored after initial resource creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#bucket CcRepository#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#bucket CcRepository#bucket}
     */
     readonly bucket?: string;
     /**
     * The key to use for accessing the Amazon S3 bucket. Changes to this property are ignored after initial resource creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#key CcRepository#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#key CcRepository#key}
     */
     readonly key?: string;
     /**
     * The object version of the ZIP file, if versioning is enabled for the Amazon S3 bucket. Changes to this property are ignored after initial resource creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#object_version CcRepository#object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#object_version CcRepository#object_version}
     */
     readonly objectVersion?: string;
 }
@@ -592,13 +592,13 @@ export interface CodeProperty {
     /**
     * Optional. Specifies a branch name to be used as the default branch when importing code into a repository on initial creation. If this property is not set, the name main will be used for the default branch for the repository. Changes to this property are ignored after initial resource creation. We recommend using this parameter to set the name to main to align with the default behavior of CodeCommit unless another name is needed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#branch_name CcRepository#branch_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#branch_name CcRepository#branch_name}
     */
     readonly branchName?: string;
     /**
     * Information about the Amazon S3 bucket that contains a ZIP file of code to be committed to the repository. Changes to this property are ignored after initial resource creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#s3 CcRepository#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#s3 CcRepository#s3}
     */
     readonly s3?: S3Property;
 }
@@ -686,13 +686,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#key CcRepository#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#key CcRepository#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#value CcRepository#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#value CcRepository#value}
     */
     readonly value?: string;
 }
@@ -802,31 +802,31 @@ export interface RepositoryTriggerProperty {
     /**
     * The branches to be included in the trigger configuration. If you specify an empty array, the trigger applies to all branches.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#branches CcRepository#branches}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#branches CcRepository#branches}
     */
     readonly branches?: string[];
     /**
     * Any custom data associated with the trigger to be included in the information sent to the target of the trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#custom_data CcRepository#custom_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#custom_data CcRepository#custom_data}
     */
     readonly customData?: string;
     /**
     * The ARN of the resource that is the target for a trigger (for example, the ARN of a topic in Amazon SNS).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#destination_arn CcRepository#destination_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#destination_arn CcRepository#destination_arn}
     */
     readonly destinationArn?: string;
     /**
     * The repository events that cause the trigger to run actions in another service, such as sending a notification through Amazon SNS.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#events CcRepository#events}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#events CcRepository#events}
     */
     readonly events?: string[];
     /**
     * The name of the trigger.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codecommit_repository#name CcRepository#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codecommit_repository#name CcRepository#name}
     */
     readonly name?: string;
 }

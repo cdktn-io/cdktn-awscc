@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcConnectionProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the data catalog to create the catalog object in. Currently, this should be the AWS account ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#catalog_id CcConnection#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#catalog_id CcConnection#catalog_id}
     */
     readonly catalogId: string;
     /**
     * The connection properties used for this connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#connection_input CcConnection#connection_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#connection_input CcConnection#connection_input}
     */
     readonly connectionInput: CcConnection.ConnectionInputProperty;
     /**
     * The collection of tags. Each tag element is associated with a given resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#tags CcConnection#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#tags CcConnection#tags}
     */
     readonly tags?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection awscc_glue_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection awscc_glue_connection}
 */
 export class CcConnection extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcConnection extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnection resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnection to import
-    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnection to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcConnection extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection awscc_glue_connection} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection awscc_glue_connection} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcConnection extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_connection',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -624,13 +624,13 @@ export interface BasicAuthenticationCredentialsProperty {
     /**
     * The password used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#password CcConnection#password}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#password CcConnection#password}
     */
     readonly password?: string;
     /**
     * The username used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#username CcConnection#username}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#username CcConnection#username}
     */
     readonly username?: string;
 }
@@ -718,13 +718,13 @@ export interface AuthorizationCodePropertiesProperty {
     /**
     * The authorization code used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#authorization_code CcConnection#authorization_code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#authorization_code CcConnection#authorization_code}
     */
     readonly authorizationCode?: string;
     /**
     * The redirect URI where the user gets redirected to by authorization server when issuing an authorization code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#redirect_uri CcConnection#redirect_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#redirect_uri CcConnection#redirect_uri}
     */
     readonly redirectUri?: string;
 }
@@ -812,13 +812,13 @@ export interface OAuth2ClientApplicationProperty {
     /**
     * The reference to the SaaS-side client app that is AWS managed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#aws_managed_client_application_reference CcConnection#aws_managed_client_application_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#aws_managed_client_application_reference CcConnection#aws_managed_client_application_reference}
     */
     readonly awsManagedClientApplicationReference?: string;
     /**
     * The client application clientID if the ClientAppType is USER_MANAGED.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#user_managed_client_application_client_id CcConnection#user_managed_client_application_client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#user_managed_client_application_client_id CcConnection#user_managed_client_application_client_id}
     */
     readonly userManagedClientApplicationClientId?: string;
 }
@@ -906,25 +906,25 @@ export interface OAuth2CredentialsProperty {
     /**
     * The access token used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#access_token CcConnection#access_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#access_token CcConnection#access_token}
     */
     readonly accessToken?: string;
     /**
     * The JSON Web Token (JWT) used when the authentication type is OAuth2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#jwt_token CcConnection#jwt_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#jwt_token CcConnection#jwt_token}
     */
     readonly jwtToken?: string;
     /**
     * The refresh token used when the authentication type is OAuth2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#refresh_token CcConnection#refresh_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#refresh_token CcConnection#refresh_token}
     */
     readonly refreshToken?: string;
     /**
     * The client application client secret if the client application is user managed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#user_managed_client_application_client_secret CcConnection#user_managed_client_application_client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#user_managed_client_application_client_secret CcConnection#user_managed_client_application_client_secret}
     */
     readonly userManagedClientApplicationClientSecret?: string;
 }
@@ -1056,37 +1056,37 @@ export interface OAuth2PropertiesInputProperty {
     /**
     * The set of properties required for the the OAuth2 AUTHORIZATION_CODE grant type workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#authorization_code_properties CcConnection#authorization_code_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#authorization_code_properties CcConnection#authorization_code_properties}
     */
     readonly authorizationCodeProperties?: AuthorizationCodePropertiesProperty;
     /**
     * The OAuth2 client app used for the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#o_auth_2_client_application CcConnection#o_auth_2_client_application}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#o_auth_2_client_application CcConnection#o_auth_2_client_application}
     */
     readonly oAuth2ClientApplication?: OAuth2ClientApplicationProperty;
     /**
     * A structure containing the OAuth2 credentials used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#o_auth_2_credentials CcConnection#o_auth_2_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#o_auth_2_credentials CcConnection#o_auth_2_credentials}
     */
     readonly oAuth2Credentials?: OAuth2CredentialsProperty;
     /**
     * The grant type used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#o_auth_2_grant_type CcConnection#o_auth_2_grant_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#o_auth_2_grant_type CcConnection#o_auth_2_grant_type}
     */
     readonly oAuth2GrantType?: string;
     /**
     * The URL used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#token_url CcConnection#token_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#token_url CcConnection#token_url}
     */
     readonly tokenUrl?: string;
     /**
     * A map of key-value pairs used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#token_url_parameters_map CcConnection#token_url_parameters_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#token_url_parameters_map CcConnection#token_url_parameters_map}
     */
     readonly tokenUrlParametersMap?: string;
 }
@@ -1262,37 +1262,37 @@ export interface AuthenticationConfigurationInputProperty {
     /**
     * A structure containing the authentication configuration in the CreateConnection request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#authentication_type CcConnection#authentication_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#authentication_type CcConnection#authentication_type}
     */
     readonly authenticationType?: string;
     /**
     * For supplying basic auth credentials when not providing a SecretArn value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#basic_authentication_credentials CcConnection#basic_authentication_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#basic_authentication_credentials CcConnection#basic_authentication_credentials}
     */
     readonly basicAuthenticationCredentials?: BasicAuthenticationCredentialsProperty;
     /**
     * A structure containing the authentication credentials in the CreateConnection request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#custom_authentication_credentials CcConnection#custom_authentication_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#custom_authentication_credentials CcConnection#custom_authentication_credentials}
     */
     readonly customAuthenticationCredentials?: string;
     /**
     * The Amazon Resource Name (ARN) of the KMS key used in the authentication configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#kms_key_arn CcConnection#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#kms_key_arn CcConnection#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * A structure containing properties for OAuth2 in the CreateConnection request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#o_auth_2_properties CcConnection#o_auth_2_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#o_auth_2_properties CcConnection#o_auth_2_properties}
     */
     readonly oAuth2Properties?: OAuth2PropertiesInputProperty;
     /**
     * The secret manager ARN to store credentials in the CreateConnection request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#secret_arn CcConnection#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#secret_arn CcConnection#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1468,19 +1468,19 @@ export interface PhysicalConnectionRequirementsProperty {
     /**
     * The availability zone where the connection is located.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#availability_zone CcConnection#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#availability_zone CcConnection#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The security group ID list used by the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#security_group_id_list CcConnection#security_group_id_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#security_group_id_list CcConnection#security_group_id_list}
     */
     readonly securityGroupIdList?: string[];
     /**
     * The subnet ID used by the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#subnet_id CcConnection#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#subnet_id CcConnection#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -1590,71 +1590,71 @@ export interface ConnectionInputProperty {
     /**
     * Connection properties specific to the Athena compute environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#athena_properties CcConnection#athena_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#athena_properties CcConnection#athena_properties}
     */
     readonly athenaProperties?: string;
     /**
     * The authentication configuration used to connect to the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#authentication_configuration CcConnection#authentication_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#authentication_configuration CcConnection#authentication_configuration}
     */
     readonly authenticationConfiguration?: AuthenticationConfigurationInputProperty;
     /**
     * A map of key-value pairs used as parameters for this connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#connection_properties CcConnection#connection_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#connection_properties CcConnection#connection_properties}
     */
     readonly connectionProperties?: string;
     /**
     * The type of the connection that needs to be created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#connection_type CcConnection#connection_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#connection_type CcConnection#connection_type}
     */
     readonly connectionType: string;
     /**
     * A description of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#description CcConnection#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#description CcConnection#description}
     */
     readonly description?: string;
     /**
     * A list of criteria that can be used in selecting this connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#match_criteria CcConnection#match_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#match_criteria CcConnection#match_criteria}
     */
     readonly matchCriteria?: string[];
     /**
     * The name of the connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#name CcConnection#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#name CcConnection#name}
     */
     readonly name?: string;
     /**
     * The physical connection requirements.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#physical_connection_requirements CcConnection#physical_connection_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#physical_connection_requirements CcConnection#physical_connection_requirements}
     */
     readonly physicalConnectionRequirements?: PhysicalConnectionRequirementsProperty;
     /**
     * Connection properties specific to the Python compute environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#python_properties CcConnection#python_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#python_properties CcConnection#python_properties}
     */
     readonly pythonProperties?: string;
     /**
     * Connection properties specific to the Spark compute environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#spark_properties CcConnection#spark_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#spark_properties CcConnection#spark_properties}
     */
     readonly sparkProperties?: string;
     /**
     * A flag to validate the credentials during create connection. Default is true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#validate_credentials CcConnection#validate_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#validate_credentials CcConnection#validate_credentials}
     */
     readonly validateCredentials?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_connection#validate_for_compute_environments CcConnection#validate_for_compute_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/glue_connection#validate_for_compute_environments CcConnection#validate_for_compute_environments}
     */
     readonly validateForComputeEnvironments?: string[];
 }

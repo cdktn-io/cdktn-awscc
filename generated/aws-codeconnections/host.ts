@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcHostProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#name CcHost#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#name CcHost#name}
     */
     readonly name: string;
     /**
     * The endpoint of the infrastructure where your provider type is installed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#provider_endpoint CcHost#provider_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#provider_endpoint CcHost#provider_endpoint}
     */
     readonly providerEndpoint: string;
     /**
     * The name of the installed provider to be associated with your connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#provider_type CcHost#provider_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#provider_type CcHost#provider_type}
     */
     readonly providerType: string;
     /**
     * Tags to apply to the host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#tags CcHost#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#tags CcHost#tags}
     */
     readonly tags?: CcHost.TagProperty[] | cdktn.IResolvable;
     /**
     * The VPC configuration provisioned for the host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#vpc_configuration CcHost#vpc_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#vpc_configuration CcHost#vpc_configuration}
     */
     readonly vpcConfiguration?: CcHost.VpcConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host awscc_codeconnections_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host awscc_codeconnections_host}
 */
 export class CcHost extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcHost extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcHost resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcHost to import
-    * @param importFromId The id of the existing CcHost that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcHost that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcHost to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcHost extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host awscc_codeconnections_host} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host awscc_codeconnections_host} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcHost extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_codeconnections_host',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -336,13 +336,13 @@ export interface TagProperty {
     /**
     * The tag's key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#key CcHost#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#key CcHost#key}
     */
     readonly key?: string;
     /**
     * The tag's value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#value CcHost#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#value CcHost#value}
     */
     readonly value?: string;
 }
@@ -452,25 +452,25 @@ export interface VpcConfigurationProperty {
     /**
     * The ID of the security group or security groups associated with the Amazon VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#security_group_ids CcHost#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#security_group_ids CcHost#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnet or subnets associated with the Amazon VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#subnet_ids CcHost#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#subnet_ids CcHost#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * The value of the Transport Layer Security (TLS) certificate associated with the infrastructure where your provider type is installed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#tls_certificate CcHost#tls_certificate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#tls_certificate CcHost#tls_certificate}
     */
     readonly tlsCertificate?: string;
     /**
     * The ID of the Amazon VPC connected to the infrastructure where your provider type is installed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/codeconnections_host#vpc_id CcHost#vpc_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/codeconnections_host#vpc_id CcHost#vpc_id}
     */
     readonly vpcId?: string;
 }
