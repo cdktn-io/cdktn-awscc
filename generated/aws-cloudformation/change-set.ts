@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,97 +9,97 @@ export interface CcChangeSetProps extends cdktn.TerraformMetaArguments {
     /**
     * The capabilities that are allowed in the stack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#capabilities CcChangeSet#capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#capabilities CcChangeSet#capabilities}
     */
     readonly capabilities?: string[];
     /**
     * The name of the change set. Must be unique among all change sets associated with the specified stack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#change_set_name CcChangeSet#change_set_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#change_set_name CcChangeSet#change_set_name}
     */
     readonly changeSetName: string;
     /**
     * The type of change set operation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#change_set_type CcChangeSet#change_set_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#change_set_type CcChangeSet#change_set_type}
     */
     readonly changeSetType?: string;
     /**
     * Determines how CloudFormation handles configuration drift during deployment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#deployment_mode CcChangeSet#deployment_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#deployment_mode CcChangeSet#deployment_mode}
     */
     readonly deploymentMode?: string;
     /**
     * A description to help you identify this change set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#description CcChangeSet#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#description CcChangeSet#description}
     */
     readonly description?: string;
     /**
     * Indicates if the change set imports resources that already exist.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#import_existing_resources CcChangeSet#import_existing_resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#import_existing_resources CcChangeSet#import_existing_resources}
     */
     readonly importExistingResources?: boolean | cdktn.IResolvable;
     /**
     * Creates a change set for all nested stacks specified in the template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#include_nested_stacks CcChangeSet#include_nested_stacks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#include_nested_stacks CcChangeSet#include_nested_stacks}
     */
     readonly includeNestedStacks?: boolean | cdktn.IResolvable;
     /**
     * The ARNs of Amazon SNS topics that CloudFormation associates with the stack.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#notification_ar_ns CcChangeSet#notification_ar_ns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#notification_ar_ns CcChangeSet#notification_ar_ns}
     */
     readonly notificationArNs?: string[];
     /**
     * Determines what action will be taken if stack creation fails.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#on_stack_failure CcChangeSet#on_stack_failure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#on_stack_failure CcChangeSet#on_stack_failure}
     */
     readonly onStackFailure?: string;
     /**
     * The ARN of an IAM role that CloudFormation assumes when executing the change set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#role_arn CcChangeSet#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#role_arn CcChangeSet#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The name or unique ID of the stack for which you are creating a change set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#stack_name CcChangeSet#stack_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#stack_name CcChangeSet#stack_name}
     */
     readonly stackName: string;
     /**
     * Key-value pairs to associate with the change set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#tags CcChangeSet#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#tags CcChangeSet#tags}
     */
     readonly tags?: CcChangeSet.TagsItemsProperty[] | cdktn.IResolvable;
     /**
     * A structure that contains the body of the revised template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#template_body CcChangeSet#template_body}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#template_body CcChangeSet#template_body}
     */
     readonly templateBody?: string;
     /**
     * The URL of the file that contains the revised template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#template_url CcChangeSet#template_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#template_url CcChangeSet#template_url}
     */
     readonly templateUrl?: string;
     /**
     * Whether to reuse the template associated with the stack to create the change set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#use_previous_template CcChangeSet#use_previous_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#use_previous_template CcChangeSet#use_previous_template}
     */
     readonly usePreviousTemplate?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set awscc_cloudformation_change_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set awscc_cloudformation_change_set}
 */
 export class CcChangeSet extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcChangeSet extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChangeSet resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChangeSet to import
-    * @param importFromId The id of the existing CcChangeSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChangeSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChangeSet to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcChangeSet extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set awscc_cloudformation_change_set} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set awscc_cloudformation_change_set} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class CcChangeSet extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cloudformation_change_set',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -586,11 +586,11 @@ export function ccChangeSetTagsItemsPropertyToHclTerraform(struct?: CcChangeSet.
 export namespace CcChangeSet {
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#key CcChangeSet#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#key CcChangeSet#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudformation_change_set#value CcChangeSet#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cloudformation_change_set#value CcChangeSet#value}
     */
     readonly value?: string;
 }

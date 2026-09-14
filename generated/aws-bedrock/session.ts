@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcSessionProps extends cdktn.TerraformMetaArguments {
     /**
     * The Amazon Resource Name (ARN) of the KMS key to use to encrypt the session data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#encryption_key_arn CcSession#encryption_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#encryption_key_arn CcSession#encryption_key_arn}
     */
     readonly encryptionKeyArn?: string;
     /**
     * A map of key-value pairs containing attributes to be persisted across the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#session_metadata CcSession#session_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#session_metadata CcSession#session_metadata}
     */
     readonly sessionMetadata?: { [key: string]: string };
     /**
     * A list of tags associated with the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#tags CcSession#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#tags CcSession#tags}
     */
     readonly tags?: CcSession.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session awscc_bedrock_session}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session awscc_bedrock_session}
 */
 export class CcSession extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcSession extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSession resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSession to import
-    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSession to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcSession extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session awscc_bedrock_session} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session awscc_bedrock_session} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcSession extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_session',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -244,13 +244,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#key CcSession#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#key CcSession#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_session#value CcSession#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrock_session#value CcSession#value}
     */
     readonly value?: string;
 }

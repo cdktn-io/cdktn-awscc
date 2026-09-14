@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcQuerySuggestionsBlockListProps extends cdktn.TerraformMetaArg
     /**
     * A description for the block list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#description CcQuerySuggestionsBlockList#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#description CcQuerySuggestionsBlockList#description}
     */
     readonly description?: string;
     /**
     * The identifier of the index for the block list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#index_id CcQuerySuggestionsBlockList#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#index_id CcQuerySuggestionsBlockList#index_id}
     */
     readonly indexId: string;
     /**
     * The name of the block list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#name CcQuerySuggestionsBlockList#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#name CcQuerySuggestionsBlockList#name}
     */
     readonly name: string;
     /**
     * The Amazon Resource Name (ARN) of an IAM role with permission to access the S3 bucket that contains the block list text file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#role_arn CcQuerySuggestionsBlockList#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#role_arn CcQuerySuggestionsBlockList#role_arn}
     */
     readonly roleArn: string;
     /**
     * Information required to find a specific file in an Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#source_s3_path CcQuerySuggestionsBlockList#source_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#source_s3_path CcQuerySuggestionsBlockList#source_s3_path}
     */
     readonly sourceS3Path: CcQuerySuggestionsBlockList.S3PathProperty;
     /**
     * A list of key-value pairs that identify or categorize the block list.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#tags CcQuerySuggestionsBlockList#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#tags CcQuerySuggestionsBlockList#tags}
     */
     readonly tags?: CcQuerySuggestionsBlockList.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list awscc_kendra_query_suggestions_block_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list awscc_kendra_query_suggestions_block_list}
 */
 export class CcQuerySuggestionsBlockList extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcQuerySuggestionsBlockList extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcQuerySuggestionsBlockList resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcQuerySuggestionsBlockList to import
-    * @param importFromId The id of the existing CcQuerySuggestionsBlockList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcQuerySuggestionsBlockList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcQuerySuggestionsBlockList to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcQuerySuggestionsBlockList extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list awscc_kendra_query_suggestions_block_list} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list awscc_kendra_query_suggestions_block_list} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcQuerySuggestionsBlockList extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_kendra_query_suggestions_block_list',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -344,13 +344,13 @@ export interface S3PathProperty {
     /**
     * The name of the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#bucket CcQuerySuggestionsBlockList#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#bucket CcQuerySuggestionsBlockList#bucket}
     */
     readonly bucket: string;
     /**
     * The name of the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#key CcQuerySuggestionsBlockList#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#key CcQuerySuggestionsBlockList#key}
     */
     readonly key: string;
 }
@@ -432,13 +432,13 @@ export interface TagProperty {
     /**
     * The key for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#key CcQuerySuggestionsBlockList#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#key CcQuerySuggestionsBlockList#key}
     */
     readonly key?: string;
     /**
     * The value associated with the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_query_suggestions_block_list#value CcQuerySuggestionsBlockList#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/kendra_query_suggestions_block_list#value CcQuerySuggestionsBlockList#value}
     */
     readonly value?: string;
 }

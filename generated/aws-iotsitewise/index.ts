@@ -6,5 +6,8 @@ export * from './asset-model';
 export * from './dashboard';
 export * from './dataset';
 export * from './gateway';
+export * from './pipeline';
 export * from './portal';
 export * from './project';
+export * from './task';
+export * from './workspace';

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcBudgetProps extends cdktn.TerraformMetaArguments {
     /**
     * The budget actions to specify what happens when the budget runs out.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#actions CcBudget#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#actions CcBudget#actions}
     */
     readonly actions: CcBudget.BudgetActionToAddProperty[] | cdktn.IResolvable;
     /**
     * The dollar limit based on consumed usage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#approximate_dollar_limit CcBudget#approximate_dollar_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#approximate_dollar_limit CcBudget#approximate_dollar_limit}
     */
     readonly approximateDollarLimit: number;
     /**
     * The description of the budget.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#description CcBudget#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#description CcBudget#description}
     */
     readonly description?: string;
     /**
     * The display name of the budget.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#display_name CcBudget#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#display_name CcBudget#display_name}
     */
     readonly displayName: string;
     /**
     * The farm ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#farm_id CcBudget#farm_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#farm_id CcBudget#farm_id}
     */
     readonly farmId: string;
     /**
     * The start and end time of the budget.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#schedule CcBudget#schedule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#schedule CcBudget#schedule}
     */
     readonly schedule: CcBudget.BudgetScheduleProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#tags CcBudget#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#tags CcBudget#tags}
     */
     readonly tags?: CcBudget.TagProperty[] | cdktn.IResolvable;
     /**
     * The usage details of the allotted budget.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#usage_tracking_resource CcBudget#usage_tracking_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#usage_tracking_resource CcBudget#usage_tracking_resource}
     */
     readonly usageTrackingResource: CcBudget.UsageTrackingResourceProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget awscc_deadline_budget}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget awscc_deadline_budget}
 */
 export class CcBudget extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcBudget extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcBudget resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcBudget to import
-    * @param importFromId The id of the existing CcBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcBudget to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcBudget extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget awscc_deadline_budget} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget awscc_deadline_budget} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcBudget extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_deadline_budget',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -507,19 +507,19 @@ export interface BudgetActionToAddProperty {
     /**
     * A description for the budget action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#description CcBudget#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#description CcBudget#description}
     */
     readonly description?: string;
     /**
     * The percentage threshold for the budget action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#threshold_percentage CcBudget#threshold_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#threshold_percentage CcBudget#threshold_percentage}
     */
     readonly thresholdPercentage: number;
     /**
     * The type of budget action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#type CcBudget#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#type CcBudget#type}
     */
     readonly type: string;
 }
@@ -645,13 +645,13 @@ export interface FixedBudgetScheduleProperty {
     /**
     * When the budget ends.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#end_time CcBudget#end_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#end_time CcBudget#end_time}
     */
     readonly endTime: string;
     /**
     * When the budget starts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#start_time CcBudget#start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#start_time CcBudget#start_time}
     */
     readonly startTime: string;
 }
@@ -733,7 +733,7 @@ export interface BudgetScheduleProperty {
     /**
     * The details of a fixed budget schedule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#fixed CcBudget#fixed}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#fixed CcBudget#fixed}
     */
     readonly fixed: FixedBudgetScheduleProperty;
 }
@@ -796,13 +796,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#key CcBudget#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#key CcBudget#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#value CcBudget#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#value CcBudget#value}
     */
     readonly value?: string;
 }
@@ -912,7 +912,7 @@ export interface UsageTrackingResourceProperty {
     /**
     * The queue ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_budget#queue_id CcBudget#queue_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_budget#queue_id CcBudget#queue_id}
     */
     readonly queueId: string;
 }

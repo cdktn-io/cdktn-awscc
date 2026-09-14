@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './application-status-check';
 export * from './capacity-manager-data-export';
 export * from './capacity-reservation';
 export * from './capacity-reservation-fleet';
@@ -21,6 +22,7 @@ export * from './internet-gateway';
 export * from './ip-pool-route-table-association';
 export * from './ipam';
 export * from './ipam-allocation';
+export * from './ipam-external-resource-verification-token';
 export * from './ipam-pool';
 export * from './ipam-pool-cidr';
 export * from './ipam-prefix-list-resolver';

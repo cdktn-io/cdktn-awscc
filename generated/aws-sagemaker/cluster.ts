@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,73 +9,79 @@ export interface CcClusterProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration for cluster auto-scaling
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#auto_scaling CcCluster#auto_scaling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#auto_scaling CcCluster#auto_scaling}
     */
     readonly autoScaling?: CcCluster.ClusterAutoScalingConfigProperty;
     /**
     * The name of the HyperPod Cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#cluster_name CcCluster#cluster_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#cluster_name CcCluster#cluster_name}
     */
     readonly clusterName?: string;
     /**
     * The cluster role for the autoscaler to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#cluster_role CcCluster#cluster_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#cluster_role CcCluster#cluster_role}
     */
     readonly clusterRole?: string;
     /**
     * The instance groups of the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_groups CcCluster#instance_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_groups CcCluster#instance_groups}
     */
     readonly instanceGroups?: CcCluster.ClusterInstanceGroupProperty[] | cdktn.IResolvable;
     /**
     * Determines the scaling strategy for the SageMaker HyperPod cluster. When set to 'Continuous', enables continuous scaling which dynamically manages node provisioning. If the parameter is omitted, uses the standard scaling approach in previous release.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#node_provisioning_mode CcCluster#node_provisioning_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#node_provisioning_mode CcCluster#node_provisioning_mode}
     */
     readonly nodeProvisioningMode?: string;
     /**
     * If node auto-recovery is set to true, faulty nodes will be replaced or rebooted when a failure is detected. If set to false, nodes will be labelled when a fault is detected.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#node_recovery CcCluster#node_recovery}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#node_recovery CcCluster#node_recovery}
     */
     readonly nodeRecovery?: string;
     /**
-    * Specifies parameter(s) specific to the orchestrator, e.g. specify the EKS cluster.
+    * Specifies parameter(s) specific to the orchestrator, e.g. specify the EKS cluster or Slurm configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#orchestrator CcCluster#orchestrator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#orchestrator CcCluster#orchestrator}
     */
     readonly orchestrator?: CcCluster.OrchestratorProperty;
     /**
     * The restricted instance groups of the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#restricted_instance_groups CcCluster#restricted_instance_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#restricted_instance_groups CcCluster#restricted_instance_groups}
     */
     readonly restrictedInstanceGroups?: CcCluster.ClusterRestrictedInstanceGroupProperty[] | cdktn.IResolvable;
     /**
+    * The cluster-level configuration for restricted instance groups, including shared environment settings for inter-RIG communication and FSx Lustre sharing.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#restricted_instance_groups_config CcCluster#restricted_instance_groups_config}
+    */
+    readonly restrictedInstanceGroupsConfig?: CcCluster.RestrictedInstanceGroupsConfigProperty;
+    /**
     * Custom tags for managing the SageMaker HyperPod cluster as an AWS resource. You can add tags to your cluster in the same way you add them in other AWS services that support tagging.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#tags CcCluster#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#tags CcCluster#tags}
     */
     readonly tags?: CcCluster.TagProperty[] | cdktn.IResolvable;
     /**
     * Configuration for tiered storage in the SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#tiered_storage_config CcCluster#tiered_storage_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#tiered_storage_config CcCluster#tiered_storage_config}
     */
     readonly tieredStorageConfig?: CcCluster.TieredStorageConfigProperty;
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#vpc_config CcCluster#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#vpc_config CcCluster#vpc_config}
     */
     readonly vpcConfig?: CcCluster.VpcConfigProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster}
 */
 export class CcCluster extends cdktn.TerraformResource {
 
@@ -91,7 +97,7 @@ export class CcCluster extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCluster resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCluster to import
-    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCluster to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +109,7 @@ export class CcCluster extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster awscc_sagemaker_cluster} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +120,7 @@ export class CcCluster extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_sagemaker_cluster',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -132,6 +138,7 @@ export class CcCluster extends cdktn.TerraformResource {
         this._nodeRecovery = config.nodeRecovery;
         this._orchestrator.internalValue = config.orchestrator;
         this._restrictedInstanceGroups.internalValue = config.restrictedInstanceGroups;
+        this._restrictedInstanceGroupsConfig.internalValue = config.restrictedInstanceGroupsConfig;
         this._tags.internalValue = config.tags;
         this._tieredStorageConfig.internalValue = config.tieredStorageConfig;
         this._vpcConfig.internalValue = config.vpcConfig;
@@ -294,6 +301,22 @@ export class CcCluster extends cdktn.TerraformResource {
         return this._restrictedInstanceGroups.internalValue;
     }
 
+    // restricted_instance_groups_config - computed: true, optional: true, required: false
+    private _restrictedInstanceGroupsConfig = new CcCluster.RestrictedInstanceGroupsConfigPropertyOutputReference(this, "restricted_instance_groups_config");
+    public get restrictedInstanceGroupsConfig() {
+        return this._restrictedInstanceGroupsConfig;
+    }
+    public putRestrictedInstanceGroupsConfig(value: CcCluster.RestrictedInstanceGroupsConfigProperty) {
+        this._restrictedInstanceGroupsConfig.internalValue = value;
+    }
+    public resetRestrictedInstanceGroupsConfig() {
+        this._restrictedInstanceGroupsConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get restrictedInstanceGroupsConfigInput() {
+        return this._restrictedInstanceGroupsConfig.internalValue;
+    }
+
     // tags - computed: true, optional: true, required: false
     private _tags = new CcCluster.TagPropertyList(this, "tags", true);
     public get tags() {
@@ -356,6 +379,7 @@ export class CcCluster extends cdktn.TerraformResource {
             node_recovery: cdktn.stringToTerraform(this._nodeRecovery),
             orchestrator: ccClusterOrchestratorPropertyToTerraform(this._orchestrator.internalValue),
             restricted_instance_groups: cdktn.listMapper(ccClusterClusterRestrictedInstanceGroupPropertyToTerraform, false)(this._restrictedInstanceGroups.internalValue),
+            restricted_instance_groups_config: ccClusterRestrictedInstanceGroupsConfigPropertyToTerraform(this._restrictedInstanceGroupsConfig.internalValue),
             tags: cdktn.listMapper(ccClusterTagPropertyToTerraform, false)(this._tags.internalValue),
             tiered_storage_config: ccClusterTieredStorageConfigPropertyToTerraform(this._tieredStorageConfig.internalValue),
             vpc_config: ccClusterVpcConfigPropertyToTerraform(this._vpcConfig.internalValue),
@@ -411,6 +435,12 @@ export class CcCluster extends cdktn.TerraformResource {
                 isBlock: true,
                 type: "list",
                 storageClassType: "CcCluster.ClusterRestrictedInstanceGroupPropertyList",
+            },
+            restricted_instance_groups_config: {
+                value: ccClusterRestrictedInstanceGroupsConfigPropertyToHclTerraform(this._restrictedInstanceGroupsConfig.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcCluster.RestrictedInstanceGroupsConfigProperty",
             },
             tags: {
                 value: cdktn.listMapperHcl(ccClusterTagPropertyToHclTerraform, false)(this._tags.internalValue),
@@ -474,6 +504,265 @@ export function ccClusterClusterAutoScalingConfigPropertyToHclTerraform(struct?:
 }
 
 
+export function ccClusterAlarmDetailsPropertyToTerraform(struct?: CcCluster.AlarmDetailsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        alarm_name: cdktn.stringToTerraform(struct!.alarmName),
+    }
+}
+
+
+export function ccClusterAlarmDetailsPropertyToHclTerraform(struct?: CcCluster.AlarmDetailsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        alarm_name: {
+            value: cdktn.stringToHclTerraform(struct!.alarmName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterCapacitySizeConfigPropertyToTerraform(struct?: CcCluster.CapacitySizeConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        type: cdktn.stringToTerraform(struct!.type),
+        value: cdktn.numberToTerraform(struct!.value),
+    }
+}
+
+
+export function ccClusterCapacitySizeConfigPropertyToHclTerraform(struct?: CcCluster.CapacitySizeConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        type: {
+            value: cdktn.stringToHclTerraform(struct!.type),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.numberToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterInstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToTerraform(struct?: CcCluster.InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        type: cdktn.stringToTerraform(struct!.type),
+        value: cdktn.numberToTerraform(struct!.value),
+    }
+}
+
+
+export function ccClusterInstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToHclTerraform(struct?: CcCluster.InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        type: {
+            value: cdktn.stringToHclTerraform(struct!.type),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.numberToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterRollingUpdatePolicyPropertyToTerraform(struct?: CcCluster.RollingUpdatePolicyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        maximum_batch_size: ccClusterCapacitySizeConfigPropertyToTerraform(struct!.maximumBatchSize),
+        rollback_maximum_batch_size: ccClusterInstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToTerraform(struct!.rollbackMaximumBatchSize),
+    }
+}
+
+
+export function ccClusterRollingUpdatePolicyPropertyToHclTerraform(struct?: CcCluster.RollingUpdatePolicyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        maximum_batch_size: {
+            value: ccClusterCapacitySizeConfigPropertyToHclTerraform(struct!.maximumBatchSize),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "CapacitySizeConfigProperty",
+        },
+        rollback_maximum_batch_size: {
+            value: ccClusterInstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToHclTerraform(struct!.rollbackMaximumBatchSize),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterDeploymentConfigPropertyToTerraform(struct?: CcCluster.DeploymentConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        auto_rollback_configuration: cdktn.listMapper(ccClusterAlarmDetailsPropertyToTerraform, false)(struct!.autoRollbackConfiguration),
+        rolling_update_policy: ccClusterRollingUpdatePolicyPropertyToTerraform(struct!.rollingUpdatePolicy),
+        wait_interval_in_seconds: cdktn.numberToTerraform(struct!.waitIntervalInSeconds),
+    }
+}
+
+
+export function ccClusterDeploymentConfigPropertyToHclTerraform(struct?: CcCluster.DeploymentConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        auto_rollback_configuration: {
+            value: cdktn.listMapperHcl(ccClusterAlarmDetailsPropertyToHclTerraform, false)(struct!.autoRollbackConfiguration),
+            isBlock: true,
+            type: "list",
+            storageClassType: "AlarmDetailsPropertyList",
+        },
+        rolling_update_policy: {
+            value: ccClusterRollingUpdatePolicyPropertyToHclTerraform(struct!.rollingUpdatePolicy),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "RollingUpdatePolicyProperty",
+        },
+        wait_interval_in_seconds: {
+            value: cdktn.numberToHclTerraform(struct!.waitIntervalInSeconds),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterPatchSchedulePropertyToTerraform(struct?: CcCluster.PatchScheduleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        next_patch_date: cdktn.stringToTerraform(struct!.nextPatchDate),
+    }
+}
+
+
+export function ccClusterPatchSchedulePropertyToHclTerraform(struct?: CcCluster.PatchScheduleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        next_patch_date: {
+            value: cdktn.stringToHclTerraform(struct!.nextPatchDate),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterAutoPatchConfigPropertyToTerraform(struct?: CcCluster.AutoPatchConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        deployment_config: ccClusterDeploymentConfigPropertyToTerraform(struct!.deploymentConfig),
+        patch_schedule: ccClusterPatchSchedulePropertyToTerraform(struct!.patchSchedule),
+        patching_strategy: cdktn.stringToTerraform(struct!.patchingStrategy),
+    }
+}
+
+
+export function ccClusterAutoPatchConfigPropertyToHclTerraform(struct?: CcCluster.AutoPatchConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        deployment_config: {
+            value: ccClusterDeploymentConfigPropertyToHclTerraform(struct!.deploymentConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DeploymentConfigProperty",
+        },
+        patch_schedule: {
+            value: ccClusterPatchSchedulePropertyToHclTerraform(struct!.patchSchedule),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "PatchScheduleProperty",
+        },
+        patching_strategy: {
+            value: cdktn.stringToHclTerraform(struct!.patchingStrategy),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterClusterCapacityRequirementsPropertyToTerraform(struct?: CcCluster.ClusterCapacityRequirementsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -503,6 +792,36 @@ export function ccClusterClusterCapacityRequirementsPropertyToHclTerraform(struc
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterInstanceRequirementsPropertyToTerraform(struct?: CcCluster.InstanceRequirementsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        instance_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.instanceTypes),
+    }
+}
+
+
+export function ccClusterInstanceRequirementsPropertyToHclTerraform(struct?: CcCluster.InstanceRequirementsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        instance_types: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.instanceTypes),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
     };
 
@@ -555,6 +874,87 @@ export function ccClusterClusterEbsVolumeConfigPropertyToHclTerraform(struct?: C
 }
 
 
+export function ccClusterClusterFsxLustreConfigPropertyToTerraform(struct?: CcCluster.ClusterFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dns_name: cdktn.stringToTerraform(struct!.dnsName),
+        mount_name: cdktn.stringToTerraform(struct!.mountName),
+        mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    }
+}
+
+
+export function ccClusterClusterFsxLustreConfigPropertyToHclTerraform(struct?: CcCluster.ClusterFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dns_name: {
+            value: cdktn.stringToHclTerraform(struct!.dnsName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_name: {
+            value: cdktn.stringToHclTerraform(struct!.mountName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_path: {
+            value: cdktn.stringToHclTerraform(struct!.mountPath),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterClusterFsxOpenZfsConfigPropertyToTerraform(struct?: CcCluster.ClusterFsxOpenZfsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dns_name: cdktn.stringToTerraform(struct!.dnsName),
+        mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    }
+}
+
+
+export function ccClusterClusterFsxOpenZfsConfigPropertyToHclTerraform(struct?: CcCluster.ClusterFsxOpenZfsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dns_name: {
+            value: cdktn.stringToHclTerraform(struct!.dnsName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_path: {
+            value: cdktn.stringToHclTerraform(struct!.mountPath),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterClusterInstanceStorageConfigPropertyToTerraform(struct?: CcCluster.ClusterInstanceStorageConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -562,6 +962,8 @@ export function ccClusterClusterInstanceStorageConfigPropertyToTerraform(struct?
     }
     return {
         ebs_volume_config: ccClusterClusterEbsVolumeConfigPropertyToTerraform(struct!.ebsVolumeConfig),
+        fsx_lustre_config: ccClusterClusterFsxLustreConfigPropertyToTerraform(struct!.fsxLustreConfig),
+        fsx_open_zfs_config: ccClusterClusterFsxOpenZfsConfigPropertyToTerraform(struct!.fsxOpenZfsConfig),
     }
 }
 
@@ -577,6 +979,18 @@ export function ccClusterClusterInstanceStorageConfigPropertyToHclTerraform(stru
             isBlock: true,
             type: "struct",
             storageClassType: "ClusterEbsVolumeConfigProperty",
+        },
+        fsx_lustre_config: {
+            value: ccClusterClusterFsxLustreConfigPropertyToHclTerraform(struct!.fsxLustreConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ClusterFsxLustreConfigProperty",
+        },
+        fsx_open_zfs_config: {
+            value: ccClusterClusterFsxOpenZfsConfigPropertyToHclTerraform(struct!.fsxOpenZfsConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ClusterFsxOpenZfsConfigProperty",
         },
     };
 
@@ -673,6 +1087,7 @@ export function ccClusterClusterLifeCycleConfigPropertyToTerraform(struct?: CcCl
     }
     return {
         on_create: cdktn.stringToTerraform(struct!.onCreate),
+        on_init_complete: cdktn.stringToTerraform(struct!.onInitComplete),
         source_s3_uri: cdktn.stringToTerraform(struct!.sourceS3Uri),
     }
 }
@@ -690,8 +1105,44 @@ export function ccClusterClusterLifeCycleConfigPropertyToHclTerraform(struct?: C
             type: "simple",
             storageClassType: "string",
         },
+        on_init_complete: {
+            value: cdktn.stringToHclTerraform(struct!.onInitComplete),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
         source_s3_uri: {
             value: cdktn.stringToHclTerraform(struct!.sourceS3Uri),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterClusterNetworkInterfacePropertyToTerraform(struct?: CcCluster.ClusterNetworkInterfaceProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        interface_type: cdktn.stringToTerraform(struct!.interfaceType),
+    }
+}
+
+
+export function ccClusterClusterNetworkInterfacePropertyToHclTerraform(struct?: CcCluster.ClusterNetworkInterfaceProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        interface_type: {
+            value: cdktn.stringToHclTerraform(struct!.interfaceType),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
@@ -740,7 +1191,7 @@ export function ccClusterInstanceGroupsOverrideVpcConfigPropertyToHclTerraform(s
 }
 
 
-export function ccClusterAlarmDetailsPropertyToTerraform(struct?: CcCluster.AlarmDetailsProperty | cdktn.IResolvable): any {
+export function ccClusterAutoRollbackConfigurationPropertyToTerraform(struct?: CcCluster.AutoRollbackConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -751,7 +1202,7 @@ export function ccClusterAlarmDetailsPropertyToTerraform(struct?: CcCluster.Alar
 }
 
 
-export function ccClusterAlarmDetailsPropertyToHclTerraform(struct?: CcCluster.AlarmDetailsProperty | cdktn.IResolvable): any {
+export function ccClusterAutoRollbackConfigurationPropertyToHclTerraform(struct?: CcCluster.AutoRollbackConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -770,7 +1221,7 @@ export function ccClusterAlarmDetailsPropertyToHclTerraform(struct?: CcCluster.A
 }
 
 
-export function ccClusterCapacitySizeConfigPropertyToTerraform(struct?: CcCluster.CapacitySizeConfigProperty | cdktn.IResolvable): any {
+export function ccClusterMaximumBatchSizePropertyToTerraform(struct?: CcCluster.MaximumBatchSizeProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -782,7 +1233,7 @@ export function ccClusterCapacitySizeConfigPropertyToTerraform(struct?: CcCluste
 }
 
 
-export function ccClusterCapacitySizeConfigPropertyToHclTerraform(struct?: CcCluster.CapacitySizeConfigProperty | cdktn.IResolvable): any {
+export function ccClusterMaximumBatchSizePropertyToHclTerraform(struct?: CcCluster.MaximumBatchSizeProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -807,7 +1258,7 @@ export function ccClusterCapacitySizeConfigPropertyToHclTerraform(struct?: CcClu
 }
 
 
-export function ccClusterRollbackMaximumBatchSizePropertyToTerraform(struct?: CcCluster.RollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -819,7 +1270,7 @@ export function ccClusterRollbackMaximumBatchSizePropertyToTerraform(struct?: Cc
 }
 
 
-export function ccClusterRollbackMaximumBatchSizePropertyToHclTerraform(struct?: CcCluster.RollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToHclTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -844,35 +1295,35 @@ export function ccClusterRollbackMaximumBatchSizePropertyToHclTerraform(struct?:
 }
 
 
-export function ccClusterRollingUpdatePolicyPropertyToTerraform(struct?: CcCluster.RollingUpdatePolicyProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyToTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        maximum_batch_size: ccClusterCapacitySizeConfigPropertyToTerraform(struct!.maximumBatchSize),
-        rollback_maximum_batch_size: ccClusterRollbackMaximumBatchSizePropertyToTerraform(struct!.rollbackMaximumBatchSize),
+        maximum_batch_size: ccClusterMaximumBatchSizePropertyToTerraform(struct!.maximumBatchSize),
+        rollback_maximum_batch_size: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToTerraform(struct!.rollbackMaximumBatchSize),
     }
 }
 
 
-export function ccClusterRollingUpdatePolicyPropertyToHclTerraform(struct?: CcCluster.RollingUpdatePolicyProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyToHclTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
         maximum_batch_size: {
-            value: ccClusterCapacitySizeConfigPropertyToHclTerraform(struct!.maximumBatchSize),
+            value: ccClusterMaximumBatchSizePropertyToHclTerraform(struct!.maximumBatchSize),
             isBlock: true,
             type: "struct",
-            storageClassType: "CapacitySizeConfigProperty",
+            storageClassType: "MaximumBatchSizeProperty",
         },
         rollback_maximum_batch_size: {
-            value: ccClusterRollbackMaximumBatchSizePropertyToHclTerraform(struct!.rollbackMaximumBatchSize),
+            value: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyToHclTerraform(struct!.rollbackMaximumBatchSize),
             isBlock: true,
             type: "struct",
-            storageClassType: "RollbackMaximumBatchSizeProperty",
+            storageClassType: "InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty",
         },
     };
 
@@ -881,36 +1332,36 @@ export function ccClusterRollingUpdatePolicyPropertyToHclTerraform(struct?: CcCl
 }
 
 
-export function ccClusterDeploymentConfigPropertyToTerraform(struct?: CcCluster.DeploymentConfigProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyToTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        auto_rollback_configuration: cdktn.listMapper(ccClusterAlarmDetailsPropertyToTerraform, false)(struct!.autoRollbackConfiguration),
-        rolling_update_policy: ccClusterRollingUpdatePolicyPropertyToTerraform(struct!.rollingUpdatePolicy),
+        auto_rollback_configuration: cdktn.listMapper(ccClusterAutoRollbackConfigurationPropertyToTerraform, false)(struct!.autoRollbackConfiguration),
+        rolling_update_policy: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyToTerraform(struct!.rollingUpdatePolicy),
         wait_interval_in_seconds: cdktn.numberToTerraform(struct!.waitIntervalInSeconds),
     }
 }
 
 
-export function ccClusterDeploymentConfigPropertyToHclTerraform(struct?: CcCluster.DeploymentConfigProperty | cdktn.IResolvable): any {
+export function ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyToHclTerraform(struct?: CcCluster.InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
         auto_rollback_configuration: {
-            value: cdktn.listMapperHcl(ccClusterAlarmDetailsPropertyToHclTerraform, false)(struct!.autoRollbackConfiguration),
+            value: cdktn.listMapperHcl(ccClusterAutoRollbackConfigurationPropertyToHclTerraform, false)(struct!.autoRollbackConfiguration),
             isBlock: true,
             type: "list",
-            storageClassType: "AlarmDetailsPropertyList",
+            storageClassType: "AutoRollbackConfigurationPropertyList",
         },
         rolling_update_policy: {
-            value: ccClusterRollingUpdatePolicyPropertyToHclTerraform(struct!.rollingUpdatePolicy),
+            value: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyToHclTerraform(struct!.rollingUpdatePolicy),
             isBlock: true,
             type: "struct",
-            storageClassType: "RollingUpdatePolicyProperty",
+            storageClassType: "InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty",
         },
         wait_interval_in_seconds: {
             value: cdktn.numberToHclTerraform(struct!.waitIntervalInSeconds),
@@ -931,7 +1382,7 @@ export function ccClusterScheduledUpdateConfigPropertyToTerraform(struct?: CcClu
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        deployment_config: ccClusterDeploymentConfigPropertyToTerraform(struct!.deploymentConfig),
+        deployment_config: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyToTerraform(struct!.deploymentConfig),
         schedule_expression: cdktn.stringToTerraform(struct!.scheduleExpression),
     }
 }
@@ -944,10 +1395,10 @@ export function ccClusterScheduledUpdateConfigPropertyToHclTerraform(struct?: Cc
     }
     const attrs = {
         deployment_config: {
-            value: ccClusterDeploymentConfigPropertyToHclTerraform(struct!.deploymentConfig),
+            value: ccClusterInstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyToHclTerraform(struct!.deploymentConfig),
             isBlock: true,
             type: "struct",
-            storageClassType: "DeploymentConfigProperty",
+            storageClassType: "InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty",
         },
         schedule_expression: {
             value: cdktn.stringToHclTerraform(struct!.scheduleExpression),
@@ -962,26 +1413,67 @@ export function ccClusterScheduledUpdateConfigPropertyToHclTerraform(struct?: Cc
 }
 
 
+export function ccClusterClusterSlurmConfigPropertyToTerraform(struct?: CcCluster.ClusterSlurmConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        node_type: cdktn.stringToTerraform(struct!.nodeType),
+        partition_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.partitionNames),
+    }
+}
+
+
+export function ccClusterClusterSlurmConfigPropertyToHclTerraform(struct?: CcCluster.ClusterSlurmConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        node_type: {
+            value: cdktn.stringToHclTerraform(struct!.nodeType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        partition_names: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.partitionNames),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterClusterInstanceGroupPropertyToTerraform(struct?: CcCluster.ClusterInstanceGroupProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        auto_patch_config: ccClusterAutoPatchConfigPropertyToTerraform(struct!.autoPatchConfig),
         capacity_requirements: ccClusterClusterCapacityRequirementsPropertyToTerraform(struct!.capacityRequirements),
         current_count: cdktn.numberToTerraform(struct!.currentCount),
         execution_role: cdktn.stringToTerraform(struct!.executionRole),
         image_id: cdktn.stringToTerraform(struct!.imageId),
         instance_count: cdktn.numberToTerraform(struct!.instanceCount),
         instance_group_name: cdktn.stringToTerraform(struct!.instanceGroupName),
+        instance_requirements: ccClusterInstanceRequirementsPropertyToTerraform(struct!.instanceRequirements),
         instance_storage_configs: cdktn.listMapper(ccClusterClusterInstanceStorageConfigPropertyToTerraform, false)(struct!.instanceStorageConfigs),
         instance_type: cdktn.stringToTerraform(struct!.instanceType),
         kubernetes_config: ccClusterClusterKubernetesConfigPropertyToTerraform(struct!.kubernetesConfig),
         life_cycle_config: ccClusterClusterLifeCycleConfigPropertyToTerraform(struct!.lifeCycleConfig),
         min_instance_count: cdktn.numberToTerraform(struct!.minInstanceCount),
+        network_interface: ccClusterClusterNetworkInterfacePropertyToTerraform(struct!.networkInterface),
         on_start_deep_health_checks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.onStartDeepHealthChecks),
         override_vpc_config: ccClusterInstanceGroupsOverrideVpcConfigPropertyToTerraform(struct!.overrideVpcConfig),
         scheduled_update_config: ccClusterScheduledUpdateConfigPropertyToTerraform(struct!.scheduledUpdateConfig),
+        slurm_config: ccClusterClusterSlurmConfigPropertyToTerraform(struct!.slurmConfig),
         threads_per_core: cdktn.numberToTerraform(struct!.threadsPerCore),
         training_plan_arn: cdktn.stringToTerraform(struct!.trainingPlanArn),
     }
@@ -994,6 +1486,12 @@ export function ccClusterClusterInstanceGroupPropertyToHclTerraform(struct?: CcC
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        auto_patch_config: {
+            value: ccClusterAutoPatchConfigPropertyToHclTerraform(struct!.autoPatchConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "AutoPatchConfigProperty",
+        },
         capacity_requirements: {
             value: ccClusterClusterCapacityRequirementsPropertyToHclTerraform(struct!.capacityRequirements),
             isBlock: true,
@@ -1030,6 +1528,12 @@ export function ccClusterClusterInstanceGroupPropertyToHclTerraform(struct?: CcC
             type: "simple",
             storageClassType: "string",
         },
+        instance_requirements: {
+            value: ccClusterInstanceRequirementsPropertyToHclTerraform(struct!.instanceRequirements),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "InstanceRequirementsProperty",
+        },
         instance_storage_configs: {
             value: cdktn.listMapperHcl(ccClusterClusterInstanceStorageConfigPropertyToHclTerraform, false)(struct!.instanceStorageConfigs),
             isBlock: true,
@@ -1060,6 +1564,12 @@ export function ccClusterClusterInstanceGroupPropertyToHclTerraform(struct?: CcC
             type: "simple",
             storageClassType: "number",
         },
+        network_interface: {
+            value: ccClusterClusterNetworkInterfacePropertyToHclTerraform(struct!.networkInterface),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ClusterNetworkInterfaceProperty",
+        },
         on_start_deep_health_checks: {
             value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.onStartDeepHealthChecks),
             isBlock: false,
@@ -1077,6 +1587,12 @@ export function ccClusterClusterInstanceGroupPropertyToHclTerraform(struct?: CcC
             isBlock: true,
             type: "struct",
             storageClassType: "ScheduledUpdateConfigProperty",
+        },
+        slurm_config: {
+            value: ccClusterClusterSlurmConfigPropertyToHclTerraform(struct!.slurmConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ClusterSlurmConfigProperty",
         },
         threads_per_core: {
             value: cdktn.numberToHclTerraform(struct!.threadsPerCore),
@@ -1127,6 +1643,94 @@ export function ccClusterClusterOrchestratorEksConfigPropertyToHclTerraform(stru
 }
 
 
+export function ccClusterAccountingDatabasePropertyToTerraform(struct?: CcCluster.AccountingDatabaseProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        endpoint: cdktn.stringToTerraform(struct!.endpoint),
+        name: cdktn.stringToTerraform(struct!.name),
+        port: cdktn.numberToTerraform(struct!.port),
+        secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+    }
+}
+
+
+export function ccClusterAccountingDatabasePropertyToHclTerraform(struct?: CcCluster.AccountingDatabaseProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        endpoint: {
+            value: cdktn.stringToHclTerraform(struct!.endpoint),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        name: {
+            value: cdktn.stringToHclTerraform(struct!.name),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        port: {
+            value: cdktn.numberToHclTerraform(struct!.port),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        secret_arn: {
+            value: cdktn.stringToHclTerraform(struct!.secretArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterClusterOrchestratorSlurmConfigPropertyToTerraform(struct?: CcCluster.ClusterOrchestratorSlurmConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        accounting_database: ccClusterAccountingDatabasePropertyToTerraform(struct!.accountingDatabase),
+        slurm_config_strategy: cdktn.stringToTerraform(struct!.slurmConfigStrategy),
+    }
+}
+
+
+export function ccClusterClusterOrchestratorSlurmConfigPropertyToHclTerraform(struct?: CcCluster.ClusterOrchestratorSlurmConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        accounting_database: {
+            value: ccClusterAccountingDatabasePropertyToHclTerraform(struct!.accountingDatabase),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "AccountingDatabaseProperty",
+        },
+        slurm_config_strategy: {
+            value: cdktn.stringToHclTerraform(struct!.slurmConfigStrategy),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterOrchestratorPropertyToTerraform(struct?: CcCluster.OrchestratorProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -1134,6 +1738,7 @@ export function ccClusterOrchestratorPropertyToTerraform(struct?: CcCluster.Orch
     }
     return {
         eks: ccClusterClusterOrchestratorEksConfigPropertyToTerraform(struct!.eks),
+        slurm: ccClusterClusterOrchestratorSlurmConfigPropertyToTerraform(struct!.slurm),
     }
 }
 
@@ -1149,6 +1754,12 @@ export function ccClusterOrchestratorPropertyToHclTerraform(struct?: CcCluster.O
             isBlock: true,
             type: "struct",
             storageClassType: "ClusterOrchestratorEksConfigProperty",
+        },
+        slurm: {
+            value: ccClusterClusterOrchestratorSlurmConfigPropertyToHclTerraform(struct!.slurm),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ClusterOrchestratorSlurmConfigProperty",
         },
     };
 
@@ -1268,6 +1879,87 @@ export function ccClusterEbsVolumeConfigPropertyToHclTerraform(struct?: CcCluste
 }
 
 
+export function ccClusterRestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyToTerraform(struct?: CcCluster.RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dns_name: cdktn.stringToTerraform(struct!.dnsName),
+        mount_name: cdktn.stringToTerraform(struct!.mountName),
+        mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    }
+}
+
+
+export function ccClusterRestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyToHclTerraform(struct?: CcCluster.RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dns_name: {
+            value: cdktn.stringToHclTerraform(struct!.dnsName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_name: {
+            value: cdktn.stringToHclTerraform(struct!.mountName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_path: {
+            value: cdktn.stringToHclTerraform(struct!.mountPath),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterFsxOpenZfsConfigPropertyToTerraform(struct?: CcCluster.FsxOpenZfsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dns_name: cdktn.stringToTerraform(struct!.dnsName),
+        mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    }
+}
+
+
+export function ccClusterFsxOpenZfsConfigPropertyToHclTerraform(struct?: CcCluster.FsxOpenZfsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dns_name: {
+            value: cdktn.stringToHclTerraform(struct!.dnsName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        mount_path: {
+            value: cdktn.stringToHclTerraform(struct!.mountPath),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterInstanceStorageConfigsPropertyToTerraform(struct?: CcCluster.InstanceStorageConfigsProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -1275,6 +1967,8 @@ export function ccClusterInstanceStorageConfigsPropertyToTerraform(struct?: CcCl
     }
     return {
         ebs_volume_config: ccClusterEbsVolumeConfigPropertyToTerraform(struct!.ebsVolumeConfig),
+        fsx_lustre_config: ccClusterRestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyToTerraform(struct!.fsxLustreConfig),
+        fsx_open_zfs_config: ccClusterFsxOpenZfsConfigPropertyToTerraform(struct!.fsxOpenZfsConfig),
     }
 }
 
@@ -1290,6 +1984,18 @@ export function ccClusterInstanceStorageConfigsPropertyToHclTerraform(struct?: C
             isBlock: true,
             type: "struct",
             storageClassType: "EbsVolumeConfigProperty",
+        },
+        fsx_lustre_config: {
+            value: ccClusterRestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyToHclTerraform(struct!.fsxLustreConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty",
+        },
+        fsx_open_zfs_config: {
+            value: ccClusterFsxOpenZfsConfigPropertyToHclTerraform(struct!.fsxOpenZfsConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "FsxOpenZfsConfigProperty",
         },
     };
 
@@ -1435,6 +2141,110 @@ export function ccClusterClusterRestrictedInstanceGroupPropertyToHclTerraform(st
 }
 
 
+export function ccClusterRestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyToTerraform(struct?: CcCluster.RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        per_unit_storage_throughput: cdktn.numberToTerraform(struct!.perUnitStorageThroughput),
+        size_in_gi_b: cdktn.numberToTerraform(struct!.sizeInGiB),
+    }
+}
+
+
+export function ccClusterRestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyToHclTerraform(struct?: CcCluster.RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        per_unit_storage_throughput: {
+            value: cdktn.numberToHclTerraform(struct!.perUnitStorageThroughput),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        size_in_gi_b: {
+            value: cdktn.numberToHclTerraform(struct!.sizeInGiB),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterSharedEnvironmentConfigPropertyToTerraform(struct?: CcCluster.SharedEnvironmentConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        fsx_lustre_config: ccClusterRestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyToTerraform(struct!.fsxLustreConfig),
+        fsx_lustre_deletion_policy: cdktn.stringToTerraform(struct!.fsxLustreDeletionPolicy),
+    }
+}
+
+
+export function ccClusterSharedEnvironmentConfigPropertyToHclTerraform(struct?: CcCluster.SharedEnvironmentConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        fsx_lustre_config: {
+            value: ccClusterRestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyToHclTerraform(struct!.fsxLustreConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty",
+        },
+        fsx_lustre_deletion_policy: {
+            value: cdktn.stringToHclTerraform(struct!.fsxLustreDeletionPolicy),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccClusterRestrictedInstanceGroupsConfigPropertyToTerraform(struct?: CcCluster.RestrictedInstanceGroupsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        shared_environment_config: ccClusterSharedEnvironmentConfigPropertyToTerraform(struct!.sharedEnvironmentConfig),
+    }
+}
+
+
+export function ccClusterRestrictedInstanceGroupsConfigPropertyToHclTerraform(struct?: CcCluster.RestrictedInstanceGroupsConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        shared_environment_config: {
+            value: ccClusterSharedEnvironmentConfigPropertyToHclTerraform(struct!.sharedEnvironmentConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "SharedEnvironmentConfigProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccClusterTagPropertyToTerraform(struct?: CcCluster.TagProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -1551,13 +2361,13 @@ export interface ClusterAutoScalingConfigProperty {
     /**
     * The type of auto-scaler to use
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#auto_scaler_type CcCluster#auto_scaler_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#auto_scaler_type CcCluster#auto_scaler_type}
     */
     readonly autoScalerType?: string;
     /**
     * The auto-scaling mode for the cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -1641,17 +2451,697 @@ export class ClusterAutoScalingConfigPropertyOutputReference extends cdktn.Compl
         return this._mode;
     }
 }
+export interface AlarmDetailsProperty {
+    /**
+    * The name of the alarm.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#alarm_name CcCluster#alarm_name}
+    */
+    readonly alarmName?: string;
+}
+export class AlarmDetailsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): AlarmDetailsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._alarmName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.alarmName = this._alarmName;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AlarmDetailsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._alarmName = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._alarmName = value.alarmName;
+        }
+    }
+
+    // alarm_name - computed: true, optional: true, required: false
+    private _alarmName?: string; 
+    public get alarmName() {
+        return this.getStringAttribute('alarm_name');
+    }
+    public set alarmName(value: string) {
+        this._alarmName = value;
+    }
+    public resetAlarmName() {
+        this._alarmName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get alarmNameInput() {
+        return this._alarmName;
+    }
+}
+
+export class AlarmDetailsPropertyList extends cdktn.ComplexList {
+    public internalValue? : AlarmDetailsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): AlarmDetailsPropertyOutputReference {
+        return new AlarmDetailsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface CapacitySizeConfigProperty {
+    /**
+    * Specifies whether SageMaker should process the update by amount or percentage of instances.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#type CcCluster#type}
+    */
+    readonly type?: string;
+    /**
+    * Specifies the amount or percentage of instances SageMaker updates at a time.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    */
+    readonly value?: number;
+}
+export class CapacitySizeConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): CapacitySizeConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._type !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.type = this._type;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: CapacitySizeConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._type = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._type = value.type;
+            this._value = value.value;
+        }
+    }
+
+    // type - computed: true, optional: true, required: false
+    private _type?: string; 
+    public get type() {
+        return this.getStringAttribute('type');
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+    public resetType() {
+        this._type = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get typeInput() {
+        return this._type;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: number; 
+    public get value() {
+        return this.getNumberAttribute('value');
+    }
+    public set value(value: number) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+export interface InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty {
+    /**
+    * Specifies whether SageMaker should process the update by amount or percentage of instances.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#type CcCluster#type}
+    */
+    readonly type?: string;
+    /**
+    * Specifies the amount or percentage of instances SageMaker updates at a time.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    */
+    readonly value?: number;
+}
+export class InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._type !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.type = this._type;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._type = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._type = value.type;
+            this._value = value.value;
+        }
+    }
+
+    // type - computed: true, optional: true, required: false
+    private _type?: string; 
+    public get type() {
+        return this.getStringAttribute('type');
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+    public resetType() {
+        this._type = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get typeInput() {
+        return this._type;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: number; 
+    public get value() {
+        return this.getNumberAttribute('value');
+    }
+    public set value(value: number) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+export interface RollingUpdatePolicyProperty {
+    /**
+    * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#maximum_batch_size CcCluster#maximum_batch_size}
+    */
+    readonly maximumBatchSize?: CapacitySizeConfigProperty;
+    /**
+    * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#rollback_maximum_batch_size CcCluster#rollback_maximum_batch_size}
+    */
+    readonly rollbackMaximumBatchSize?: InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty;
+}
+export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): RollingUpdatePolicyProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._maximumBatchSize?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.maximumBatchSize = this._maximumBatchSize?.internalValue;
+        }
+        if (this._rollbackMaximumBatchSize?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.rollbackMaximumBatchSize = this._rollbackMaximumBatchSize?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RollingUpdatePolicyProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._maximumBatchSize.internalValue = undefined;
+            this._rollbackMaximumBatchSize.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._maximumBatchSize.internalValue = value.maximumBatchSize;
+            this._rollbackMaximumBatchSize.internalValue = value.rollbackMaximumBatchSize;
+        }
+    }
+
+    // maximum_batch_size - computed: true, optional: true, required: false
+    private _maximumBatchSize = new CapacitySizeConfigPropertyOutputReference(this, "maximum_batch_size");
+    public get maximumBatchSize() {
+        return this._maximumBatchSize;
+    }
+    public putMaximumBatchSize(value: CapacitySizeConfigProperty) {
+        this._maximumBatchSize.internalValue = value;
+    }
+    public resetMaximumBatchSize() {
+        this._maximumBatchSize.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get maximumBatchSizeInput() {
+        return this._maximumBatchSize.internalValue;
+    }
+
+    // rollback_maximum_batch_size - computed: true, optional: true, required: false
+    private _rollbackMaximumBatchSize = new InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyOutputReference(this, "rollback_maximum_batch_size");
+    public get rollbackMaximumBatchSize() {
+        return this._rollbackMaximumBatchSize;
+    }
+    public putRollbackMaximumBatchSize(value: InstanceGroupsAutoPatchConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty) {
+        this._rollbackMaximumBatchSize.internalValue = value;
+    }
+    public resetRollbackMaximumBatchSize() {
+        this._rollbackMaximumBatchSize.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get rollbackMaximumBatchSizeInput() {
+        return this._rollbackMaximumBatchSize.internalValue;
+    }
+}
+export interface DeploymentConfigProperty {
+    /**
+    * An array that contains the alarms that SageMaker monitors to know whether to roll back the AMI update.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#auto_rollback_configuration CcCluster#auto_rollback_configuration}
+    */
+    readonly autoRollbackConfiguration?: AlarmDetailsProperty[] | cdktn.IResolvable;
+    /**
+    * The policy that SageMaker uses when updating the AMI versions of the cluster.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#rolling_update_policy CcCluster#rolling_update_policy}
+    */
+    readonly rollingUpdatePolicy?: RollingUpdatePolicyProperty;
+    /**
+    * The duration in seconds that SageMaker waits before updating more instances in the cluster.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#wait_interval_in_seconds CcCluster#wait_interval_in_seconds}
+    */
+    readonly waitIntervalInSeconds?: number;
+}
+export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DeploymentConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._autoRollbackConfiguration?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.autoRollbackConfiguration = this._autoRollbackConfiguration?.internalValue;
+        }
+        if (this._rollingUpdatePolicy?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.rollingUpdatePolicy = this._rollingUpdatePolicy?.internalValue;
+        }
+        if (this._waitIntervalInSeconds !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.waitIntervalInSeconds = this._waitIntervalInSeconds;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DeploymentConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._autoRollbackConfiguration.internalValue = undefined;
+            this._rollingUpdatePolicy.internalValue = undefined;
+            this._waitIntervalInSeconds = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._autoRollbackConfiguration.internalValue = value.autoRollbackConfiguration;
+            this._rollingUpdatePolicy.internalValue = value.rollingUpdatePolicy;
+            this._waitIntervalInSeconds = value.waitIntervalInSeconds;
+        }
+    }
+
+    // auto_rollback_configuration - computed: true, optional: true, required: false
+    private _autoRollbackConfiguration = new AlarmDetailsPropertyList(this, "auto_rollback_configuration", false);
+    public get autoRollbackConfiguration() {
+        return this._autoRollbackConfiguration;
+    }
+    public putAutoRollbackConfiguration(value: AlarmDetailsProperty[] | cdktn.IResolvable) {
+        this._autoRollbackConfiguration.internalValue = value;
+    }
+    public resetAutoRollbackConfiguration() {
+        this._autoRollbackConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoRollbackConfigurationInput() {
+        return this._autoRollbackConfiguration.internalValue;
+    }
+
+    // rolling_update_policy - computed: true, optional: true, required: false
+    private _rollingUpdatePolicy = new RollingUpdatePolicyPropertyOutputReference(this, "rolling_update_policy");
+    public get rollingUpdatePolicy() {
+        return this._rollingUpdatePolicy;
+    }
+    public putRollingUpdatePolicy(value: RollingUpdatePolicyProperty) {
+        this._rollingUpdatePolicy.internalValue = value;
+    }
+    public resetRollingUpdatePolicy() {
+        this._rollingUpdatePolicy.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get rollingUpdatePolicyInput() {
+        return this._rollingUpdatePolicy.internalValue;
+    }
+
+    // wait_interval_in_seconds - computed: true, optional: true, required: false
+    private _waitIntervalInSeconds?: number; 
+    public get waitIntervalInSeconds() {
+        return this.getNumberAttribute('wait_interval_in_seconds');
+    }
+    public set waitIntervalInSeconds(value: number) {
+        this._waitIntervalInSeconds = value;
+    }
+    public resetWaitIntervalInSeconds() {
+        this._waitIntervalInSeconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get waitIntervalInSecondsInput() {
+        return this._waitIntervalInSeconds;
+    }
+}
+export interface PatchScheduleProperty {
+    /**
+    * The date and time of the next scheduled patch, set by the system when a patch AMI is detected.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#next_patch_date CcCluster#next_patch_date}
+    */
+    readonly nextPatchDate?: string;
+}
+export class PatchSchedulePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): PatchScheduleProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._nextPatchDate !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.nextPatchDate = this._nextPatchDate;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: PatchScheduleProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._nextPatchDate = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._nextPatchDate = value.nextPatchDate;
+        }
+    }
+
+    // next_patch_date - computed: true, optional: true, required: false
+    private _nextPatchDate?: string; 
+    public get nextPatchDate() {
+        return this.getStringAttribute('next_patch_date');
+    }
+    public set nextPatchDate(value: string) {
+        this._nextPatchDate = value;
+    }
+    public resetNextPatchDate() {
+        this._nextPatchDate = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nextPatchDateInput() {
+        return this._nextPatchDate;
+    }
+}
+export interface AutoPatchConfigProperty {
+    /**
+    * The configuration to use when updating the AMI versions.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#deployment_config CcCluster#deployment_config}
+    */
+    readonly deploymentConfig?: DeploymentConfigProperty;
+    /**
+    * The schedule configuration for automatic patching.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#patch_schedule CcCluster#patch_schedule}
+    */
+    readonly patchSchedule?: PatchScheduleProperty;
+    /**
+    * The patching strategy that determines when and how instances are patched. WhenIdle patches instances as they become idle. WhenAllIdle patches all instances when they are all idle.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#patching_strategy CcCluster#patching_strategy}
+    */
+    readonly patchingStrategy?: string;
+}
+export class AutoPatchConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AutoPatchConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._deploymentConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.deploymentConfig = this._deploymentConfig?.internalValue;
+        }
+        if (this._patchSchedule?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.patchSchedule = this._patchSchedule?.internalValue;
+        }
+        if (this._patchingStrategy !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.patchingStrategy = this._patchingStrategy;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AutoPatchConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._deploymentConfig.internalValue = undefined;
+            this._patchSchedule.internalValue = undefined;
+            this._patchingStrategy = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._deploymentConfig.internalValue = value.deploymentConfig;
+            this._patchSchedule.internalValue = value.patchSchedule;
+            this._patchingStrategy = value.patchingStrategy;
+        }
+    }
+
+    // deployment_config - computed: true, optional: true, required: false
+    private _deploymentConfig = new DeploymentConfigPropertyOutputReference(this, "deployment_config");
+    public get deploymentConfig() {
+        return this._deploymentConfig;
+    }
+    public putDeploymentConfig(value: DeploymentConfigProperty) {
+        this._deploymentConfig.internalValue = value;
+    }
+    public resetDeploymentConfig() {
+        this._deploymentConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get deploymentConfigInput() {
+        return this._deploymentConfig.internalValue;
+    }
+
+    // patch_schedule - computed: true, optional: true, required: false
+    private _patchSchedule = new PatchSchedulePropertyOutputReference(this, "patch_schedule");
+    public get patchSchedule() {
+        return this._patchSchedule;
+    }
+    public putPatchSchedule(value: PatchScheduleProperty) {
+        this._patchSchedule.internalValue = value;
+    }
+    public resetPatchSchedule() {
+        this._patchSchedule.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get patchScheduleInput() {
+        return this._patchSchedule.internalValue;
+    }
+
+    // patching_strategy - computed: true, optional: true, required: false
+    private _patchingStrategy?: string; 
+    public get patchingStrategy() {
+        return this.getStringAttribute('patching_strategy');
+    }
+    public set patchingStrategy(value: string) {
+        this._patchingStrategy = value;
+    }
+    public resetPatchingStrategy() {
+        this._patchingStrategy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get patchingStrategyInput() {
+        return this._patchingStrategy;
+    }
+}
 export interface ClusterCapacityRequirementsProperty {
     /**
     * Options for OnDemand capacity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#on_demand CcCluster#on_demand}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#on_demand CcCluster#on_demand}
     */
     readonly onDemand?: string;
     /**
     * Options for Spot capacity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#spot CcCluster#spot}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#spot CcCluster#spot}
     */
     readonly spot?: string;
 }
@@ -1735,19 +3225,85 @@ export class ClusterCapacityRequirementsPropertyOutputReference extends cdktn.Co
         return this._spot;
     }
 }
+export interface InstanceRequirementsProperty {
+    /**
+    * A list of instance types that can be used for this instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_types CcCluster#instance_types}
+    */
+    readonly instanceTypes?: string[];
+}
+export class InstanceRequirementsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): InstanceRequirementsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._instanceTypes !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.instanceTypes = this._instanceTypes;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: InstanceRequirementsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._instanceTypes = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._instanceTypes = value.instanceTypes;
+        }
+    }
+
+    // instance_types - computed: true, optional: true, required: false
+    private _instanceTypes?: string[]; 
+    public get instanceTypes() {
+        return this.getListAttribute('instance_types');
+    }
+    public set instanceTypes(value: string[]) {
+        this._instanceTypes = value;
+    }
+    public resetInstanceTypes() {
+        this._instanceTypes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get instanceTypesInput() {
+        return this._instanceTypes;
+    }
+}
 export interface ClusterEbsVolumeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
     */
     readonly rootVolume?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
     * The size in gigabytes (GB) of the additional EBS volume to be attached to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -1853,13 +3409,241 @@ export class ClusterEbsVolumeConfigPropertyOutputReference extends cdktn.Complex
         return this._volumeSizeInGb;
     }
 }
+export interface ClusterFsxLustreConfigProperty {
+    /**
+    * The DNS name of the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#dns_name CcCluster#dns_name}
+    */
+    readonly dnsName?: string;
+    /**
+    * The mount name of the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_name CcCluster#mount_name}
+    */
+    readonly mountName?: string;
+    /**
+    * The mount path for the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_path CcCluster#mount_path}
+    */
+    readonly mountPath?: string;
+}
+export class ClusterFsxLustreConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ClusterFsxLustreConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dnsName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dnsName = this._dnsName;
+        }
+        if (this._mountName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountName = this._mountName;
+        }
+        if (this._mountPath !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountPath = this._mountPath;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ClusterFsxLustreConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dnsName = undefined;
+            this._mountName = undefined;
+            this._mountPath = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dnsName = value.dnsName;
+            this._mountName = value.mountName;
+            this._mountPath = value.mountPath;
+        }
+    }
+
+    // dns_name - computed: true, optional: true, required: false
+    private _dnsName?: string; 
+    public get dnsName() {
+        return this.getStringAttribute('dns_name');
+    }
+    public set dnsName(value: string) {
+        this._dnsName = value;
+    }
+    public resetDnsName() {
+        this._dnsName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dnsNameInput() {
+        return this._dnsName;
+    }
+
+    // mount_name - computed: true, optional: true, required: false
+    private _mountName?: string; 
+    public get mountName() {
+        return this.getStringAttribute('mount_name');
+    }
+    public set mountName(value: string) {
+        this._mountName = value;
+    }
+    public resetMountName() {
+        this._mountName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountNameInput() {
+        return this._mountName;
+    }
+
+    // mount_path - computed: true, optional: true, required: false
+    private _mountPath?: string; 
+    public get mountPath() {
+        return this.getStringAttribute('mount_path');
+    }
+    public set mountPath(value: string) {
+        this._mountPath = value;
+    }
+    public resetMountPath() {
+        this._mountPath = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountPathInput() {
+        return this._mountPath;
+    }
+}
+export interface ClusterFsxOpenZfsConfigProperty {
+    /**
+    * The DNS name of the FSx for OpenZFS file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#dns_name CcCluster#dns_name}
+    */
+    readonly dnsName?: string;
+    /**
+    * The mount path for the FSx for OpenZFS file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_path CcCluster#mount_path}
+    */
+    readonly mountPath?: string;
+}
+export class ClusterFsxOpenZfsConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ClusterFsxOpenZfsConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dnsName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dnsName = this._dnsName;
+        }
+        if (this._mountPath !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountPath = this._mountPath;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ClusterFsxOpenZfsConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dnsName = undefined;
+            this._mountPath = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dnsName = value.dnsName;
+            this._mountPath = value.mountPath;
+        }
+    }
+
+    // dns_name - computed: true, optional: true, required: false
+    private _dnsName?: string; 
+    public get dnsName() {
+        return this.getStringAttribute('dns_name');
+    }
+    public set dnsName(value: string) {
+        this._dnsName = value;
+    }
+    public resetDnsName() {
+        this._dnsName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dnsNameInput() {
+        return this._dnsName;
+    }
+
+    // mount_path - computed: true, optional: true, required: false
+    private _mountPath?: string; 
+    public get mountPath() {
+        return this.getStringAttribute('mount_path');
+    }
+    public set mountPath(value: string) {
+        this._mountPath = value;
+    }
+    public resetMountPath() {
+        this._mountPath = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountPathInput() {
+        return this._mountPath;
+    }
+}
 export interface ClusterInstanceStorageConfigProperty {
     /**
     * Defines the configuration for attaching additional Amazon Elastic Block Store (EBS) volumes to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
     */
     readonly ebsVolumeConfig?: ClusterEbsVolumeConfigProperty;
+    /**
+    * Configuration for mounting an Amazon FSx Lustre file system to the instances in the SageMaker HyperPod cluster instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
+    */
+    readonly fsxLustreConfig?: ClusterFsxLustreConfigProperty;
+    /**
+    * Configuration for mounting an Amazon FSx OpenZFS file system to the instances in the SageMaker HyperPod cluster instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_open_zfs_config CcCluster#fsx_open_zfs_config}
+    */
+    readonly fsxOpenZfsConfig?: ClusterFsxOpenZfsConfigProperty;
 }
 export class ClusterInstanceStorageConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -1885,6 +3669,14 @@ export class ClusterInstanceStorageConfigPropertyOutputReference extends cdktn.C
             hasAnyValues = true;
             internalValueResult.ebsVolumeConfig = this._ebsVolumeConfig?.internalValue;
         }
+        if (this._fsxLustreConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxLustreConfig = this._fsxLustreConfig?.internalValue;
+        }
+        if (this._fsxOpenZfsConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxOpenZfsConfig = this._fsxOpenZfsConfig?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -1893,6 +3685,8 @@ export class ClusterInstanceStorageConfigPropertyOutputReference extends cdktn.C
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._ebsVolumeConfig.internalValue = undefined;
+            this._fsxLustreConfig.internalValue = undefined;
+            this._fsxOpenZfsConfig.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -1902,6 +3696,8 @@ export class ClusterInstanceStorageConfigPropertyOutputReference extends cdktn.C
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._ebsVolumeConfig.internalValue = value.ebsVolumeConfig;
+            this._fsxLustreConfig.internalValue = value.fsxLustreConfig;
+            this._fsxOpenZfsConfig.internalValue = value.fsxOpenZfsConfig;
         }
     }
 
@@ -1919,6 +3715,38 @@ export class ClusterInstanceStorageConfigPropertyOutputReference extends cdktn.C
     // Temporarily expose input value. Use with caution.
     public get ebsVolumeConfigInput() {
         return this._ebsVolumeConfig.internalValue;
+    }
+
+    // fsx_lustre_config - computed: true, optional: true, required: false
+    private _fsxLustreConfig = new ClusterFsxLustreConfigPropertyOutputReference(this, "fsx_lustre_config");
+    public get fsxLustreConfig() {
+        return this._fsxLustreConfig;
+    }
+    public putFsxLustreConfig(value: ClusterFsxLustreConfigProperty) {
+        this._fsxLustreConfig.internalValue = value;
+    }
+    public resetFsxLustreConfig() {
+        this._fsxLustreConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxLustreConfigInput() {
+        return this._fsxLustreConfig.internalValue;
+    }
+
+    // fsx_open_zfs_config - computed: true, optional: true, required: false
+    private _fsxOpenZfsConfig = new ClusterFsxOpenZfsConfigPropertyOutputReference(this, "fsx_open_zfs_config");
+    public get fsxOpenZfsConfig() {
+        return this._fsxOpenZfsConfig;
+    }
+    public putFsxOpenZfsConfig(value: ClusterFsxOpenZfsConfigProperty) {
+        this._fsxOpenZfsConfig.internalValue = value;
+    }
+    public resetFsxOpenZfsConfig() {
+        this._fsxOpenZfsConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxOpenZfsConfigInput() {
+        return this._fsxOpenZfsConfig.internalValue;
     }
 }
 
@@ -1945,19 +3773,19 @@ export interface ClusterKubernetesTaintProperty {
     /**
     * The effect of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#effect CcCluster#effect}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#effect CcCluster#effect}
     */
     readonly effect?: string;
     /**
     * The key of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value of the taint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -2089,13 +3917,13 @@ export interface ClusterKubernetesConfigProperty {
     /**
     * A map of Kubernetes labels to apply to cluster nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#labels CcCluster#labels}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#labels CcCluster#labels}
     */
     readonly labels?: { [key: string]: string };
     /**
     * A list of Kubernetes taints to apply to cluster nodes. Maximum of 50 taints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#taints CcCluster#taints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#taints CcCluster#taints}
     */
     readonly taints?: ClusterKubernetesTaintProperty[] | cdktn.IResolvable;
 }
@@ -2181,15 +4009,21 @@ export class ClusterKubernetesConfigPropertyOutputReference extends cdktn.Comple
 }
 export interface ClusterLifeCycleConfigProperty {
     /**
-    * The file name of the entrypoint script of lifecycle scripts under SourceS3Uri. This entrypoint script runs during cluster creation.
+    * The file name of the entrypoint script of lifecycle scripts under SourceS3Uri. This entrypoint script runs during cluster creation. Mutually exclusive with OnInitComplete.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#on_create CcCluster#on_create}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#on_create CcCluster#on_create}
     */
     readonly onCreate?: string;
     /**
+    * The file name of the extension script under SourceS3Uri. This script runs after HyperPod configures the default software on the instance. Mutually exclusive with OnCreate.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#on_init_complete CcCluster#on_init_complete}
+    */
+    readonly onInitComplete?: string;
+    /**
     * An Amazon S3 bucket path where your lifecycle scripts are stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#source_s3_uri CcCluster#source_s3_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#source_s3_uri CcCluster#source_s3_uri}
     */
     readonly sourceS3Uri?: string;
 }
@@ -2215,6 +4049,10 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
             hasAnyValues = true;
             internalValueResult.onCreate = this._onCreate;
         }
+        if (this._onInitComplete !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.onInitComplete = this._onInitComplete;
+        }
         if (this._sourceS3Uri !== undefined) {
             hasAnyValues = true;
             internalValueResult.sourceS3Uri = this._sourceS3Uri;
@@ -2227,6 +4065,7 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._onCreate = undefined;
+            this._onInitComplete = undefined;
             this._sourceS3Uri = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -2237,6 +4076,7 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._onCreate = value.onCreate;
+            this._onInitComplete = value.onInitComplete;
             this._sourceS3Uri = value.sourceS3Uri;
         }
     }
@@ -2257,6 +4097,22 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
         return this._onCreate;
     }
 
+    // on_init_complete - computed: true, optional: true, required: false
+    private _onInitComplete?: string; 
+    public get onInitComplete() {
+        return this.getStringAttribute('on_init_complete');
+    }
+    public set onInitComplete(value: string) {
+        this._onInitComplete = value;
+    }
+    public resetOnInitComplete() {
+        this._onInitComplete = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get onInitCompleteInput() {
+        return this._onInitComplete;
+    }
+
     // source_s3_uri - computed: true, optional: true, required: false
     private _sourceS3Uri?: string; 
     public get sourceS3Uri() {
@@ -2273,17 +4129,83 @@ export class ClusterLifeCycleConfigPropertyOutputReference extends cdktn.Complex
         return this._sourceS3Uri;
     }
 }
+export interface ClusterNetworkInterfaceProperty {
+    /**
+    * The type of network interface.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#interface_type CcCluster#interface_type}
+    */
+    readonly interfaceType?: string;
+}
+export class ClusterNetworkInterfacePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ClusterNetworkInterfaceProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._interfaceType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.interfaceType = this._interfaceType;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ClusterNetworkInterfaceProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._interfaceType = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._interfaceType = value.interfaceType;
+        }
+    }
+
+    // interface_type - computed: true, optional: true, required: false
+    private _interfaceType?: string; 
+    public get interfaceType() {
+        return this.getStringAttribute('interface_type');
+    }
+    public set interfaceType(value: string) {
+        this._interfaceType = value;
+    }
+    public resetInterfaceType() {
+        this._interfaceType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get interfaceTypeInput() {
+        return this._interfaceType;
+    }
+}
 export interface InstanceGroupsOverrideVpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }
@@ -2367,15 +4289,15 @@ export class InstanceGroupsOverrideVpcConfigPropertyOutputReference extends cdkt
         return this._subnets;
     }
 }
-export interface AlarmDetailsProperty {
+export interface AutoRollbackConfigurationProperty {
     /**
     * The name of the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#alarm_name CcCluster#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#alarm_name CcCluster#alarm_name}
     */
     readonly alarmName?: string;
 }
-export class AlarmDetailsPropertyOutputReference extends cdktn.ComplexObject {
+export class AutoRollbackConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2389,7 +4311,7 @@ export class AlarmDetailsPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): AlarmDetailsProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): AutoRollbackConfigurationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2402,7 +4324,7 @@ export class AlarmDetailsPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: AlarmDetailsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: AutoRollbackConfigurationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2436,8 +4358,8 @@ export class AlarmDetailsPropertyOutputReference extends cdktn.ComplexObject {
     }
 }
 
-export class AlarmDetailsPropertyList extends cdktn.ComplexList {
-    public internalValue? : AlarmDetailsProperty[] | cdktn.IResolvable
+export class AutoRollbackConfigurationPropertyList extends cdktn.ComplexList {
+    public internalValue? : AutoRollbackConfigurationProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -2451,25 +4373,25 @@ export class AlarmDetailsPropertyList extends cdktn.ComplexList {
     /**
     * @param index the index of the item to return
     */
-    public get(index: number): AlarmDetailsPropertyOutputReference {
-        return new AlarmDetailsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    public get(index: number): AutoRollbackConfigurationPropertyOutputReference {
+        return new AutoRollbackConfigurationPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface CapacitySizeConfigProperty {
+export interface MaximumBatchSizeProperty {
     /**
     * Specifies whether SageMaker should process the update by amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#type CcCluster#type}
     */
     readonly type?: string;
     /**
     * Specifies the amount or percentage of instances SageMaker updates at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: number;
 }
-export class CapacitySizeConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class MaximumBatchSizePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2481,7 +4403,7 @@ export class CapacitySizeConfigPropertyOutputReference extends cdktn.ComplexObje
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): CapacitySizeConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): MaximumBatchSizeProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2498,7 +4420,7 @@ export class CapacitySizeConfigPropertyOutputReference extends cdktn.ComplexObje
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: CapacitySizeConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: MaximumBatchSizeProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2549,21 +4471,21 @@ export class CapacitySizeConfigPropertyOutputReference extends cdktn.ComplexObje
         return this._value;
     }
 }
-export interface RollbackMaximumBatchSizeProperty {
+export interface InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty {
     /**
     * Specifies whether SageMaker should process the update by amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#type CcCluster#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#type CcCluster#type}
     */
     readonly type?: string;
     /**
     * Specifies the amount or percentage of instances SageMaker updates at a time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: number;
 }
-export class RollbackMaximumBatchSizePropertyOutputReference extends cdktn.ComplexObject {
+export class InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2575,7 +4497,7 @@ export class RollbackMaximumBatchSizePropertyOutputReference extends cdktn.Compl
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): RollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2592,7 +4514,7 @@ export class RollbackMaximumBatchSizePropertyOutputReference extends cdktn.Compl
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: RollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2643,21 +4565,21 @@ export class RollbackMaximumBatchSizePropertyOutputReference extends cdktn.Compl
         return this._value;
     }
 }
-export interface RollingUpdatePolicyProperty {
+export interface InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty {
     /**
     * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#maximum_batch_size CcCluster#maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#maximum_batch_size CcCluster#maximum_batch_size}
     */
-    readonly maximumBatchSize?: CapacitySizeConfigProperty;
+    readonly maximumBatchSize?: MaximumBatchSizeProperty;
     /**
     * The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#rollback_maximum_batch_size CcCluster#rollback_maximum_batch_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#rollback_maximum_batch_size CcCluster#rollback_maximum_batch_size}
     */
-    readonly rollbackMaximumBatchSize?: RollbackMaximumBatchSizeProperty;
+    readonly rollbackMaximumBatchSize?: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty;
 }
-export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObject {
+export class InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2669,7 +4591,7 @@ export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObj
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): RollingUpdatePolicyProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2686,7 +4608,7 @@ export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObj
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: RollingUpdatePolicyProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2706,11 +4628,11 @@ export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObj
     }
 
     // maximum_batch_size - computed: true, optional: true, required: false
-    private _maximumBatchSize = new CapacitySizeConfigPropertyOutputReference(this, "maximum_batch_size");
+    private _maximumBatchSize = new MaximumBatchSizePropertyOutputReference(this, "maximum_batch_size");
     public get maximumBatchSize() {
         return this._maximumBatchSize;
     }
-    public putMaximumBatchSize(value: CapacitySizeConfigProperty) {
+    public putMaximumBatchSize(value: MaximumBatchSizeProperty) {
         this._maximumBatchSize.internalValue = value;
     }
     public resetMaximumBatchSize() {
@@ -2722,11 +4644,11 @@ export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObj
     }
 
     // rollback_maximum_batch_size - computed: true, optional: true, required: false
-    private _rollbackMaximumBatchSize = new RollbackMaximumBatchSizePropertyOutputReference(this, "rollback_maximum_batch_size");
+    private _rollbackMaximumBatchSize = new InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizePropertyOutputReference(this, "rollback_maximum_batch_size");
     public get rollbackMaximumBatchSize() {
         return this._rollbackMaximumBatchSize;
     }
-    public putRollbackMaximumBatchSize(value: RollbackMaximumBatchSizeProperty) {
+    public putRollbackMaximumBatchSize(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeProperty) {
         this._rollbackMaximumBatchSize.internalValue = value;
     }
     public resetRollbackMaximumBatchSize() {
@@ -2737,27 +4659,27 @@ export class RollingUpdatePolicyPropertyOutputReference extends cdktn.ComplexObj
         return this._rollbackMaximumBatchSize.internalValue;
     }
 }
-export interface DeploymentConfigProperty {
+export interface InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty {
     /**
     * An array that contains the alarms that SageMaker monitors to know whether to roll back the AMI update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#auto_rollback_configuration CcCluster#auto_rollback_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#auto_rollback_configuration CcCluster#auto_rollback_configuration}
     */
-    readonly autoRollbackConfiguration?: AlarmDetailsProperty[] | cdktn.IResolvable;
+    readonly autoRollbackConfiguration?: AutoRollbackConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The policy that SageMaker uses when updating the AMI versions of the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#rolling_update_policy CcCluster#rolling_update_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#rolling_update_policy CcCluster#rolling_update_policy}
     */
-    readonly rollingUpdatePolicy?: RollingUpdatePolicyProperty;
+    readonly rollingUpdatePolicy?: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty;
     /**
     * The duration in seconds that SageMaker waits before updating more instances in the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#wait_interval_in_seconds CcCluster#wait_interval_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#wait_interval_in_seconds CcCluster#wait_interval_in_seconds}
     */
     readonly waitIntervalInSeconds?: number;
 }
-export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject {
+export class InstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2769,7 +4691,7 @@ export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): DeploymentConfigProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2790,7 +4712,7 @@ export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: DeploymentConfigProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2812,11 +4734,11 @@ export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject
     }
 
     // auto_rollback_configuration - computed: true, optional: true, required: false
-    private _autoRollbackConfiguration = new AlarmDetailsPropertyList(this, "auto_rollback_configuration", false);
+    private _autoRollbackConfiguration = new AutoRollbackConfigurationPropertyList(this, "auto_rollback_configuration", false);
     public get autoRollbackConfiguration() {
         return this._autoRollbackConfiguration;
     }
-    public putAutoRollbackConfiguration(value: AlarmDetailsProperty[] | cdktn.IResolvable) {
+    public putAutoRollbackConfiguration(value: AutoRollbackConfigurationProperty[] | cdktn.IResolvable) {
         this._autoRollbackConfiguration.internalValue = value;
     }
     public resetAutoRollbackConfiguration() {
@@ -2828,11 +4750,11 @@ export class DeploymentConfigPropertyOutputReference extends cdktn.ComplexObject
     }
 
     // rolling_update_policy - computed: true, optional: true, required: false
-    private _rollingUpdatePolicy = new RollingUpdatePolicyPropertyOutputReference(this, "rolling_update_policy");
+    private _rollingUpdatePolicy = new InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyPropertyOutputReference(this, "rolling_update_policy");
     public get rollingUpdatePolicy() {
         return this._rollingUpdatePolicy;
     }
-    public putRollingUpdatePolicy(value: RollingUpdatePolicyProperty) {
+    public putRollingUpdatePolicy(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigRollingUpdatePolicyProperty) {
         this._rollingUpdatePolicy.internalValue = value;
     }
     public resetRollingUpdatePolicy() {
@@ -2863,13 +4785,13 @@ export interface ScheduledUpdateConfigProperty {
     /**
     * The configuration to use when updating the AMI versions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#deployment_config CcCluster#deployment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#deployment_config CcCluster#deployment_config}
     */
-    readonly deploymentConfig?: DeploymentConfigProperty;
+    readonly deploymentConfig?: InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty;
     /**
     * A cron expression that specifies the schedule that SageMaker follows when updating the AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#schedule_expression CcCluster#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#schedule_expression CcCluster#schedule_expression}
     */
     readonly scheduleExpression?: string;
 }
@@ -2922,11 +4844,11 @@ export class ScheduledUpdateConfigPropertyOutputReference extends cdktn.ComplexO
     }
 
     // deployment_config - computed: true, optional: true, required: false
-    private _deploymentConfig = new DeploymentConfigPropertyOutputReference(this, "deployment_config");
+    private _deploymentConfig = new InstanceGroupsScheduledUpdateConfigDeploymentConfigPropertyOutputReference(this, "deployment_config");
     public get deploymentConfig() {
         return this._deploymentConfig;
     }
-    public putDeploymentConfig(value: DeploymentConfigProperty) {
+    public putDeploymentConfig(value: InstanceGroupsScheduledUpdateConfigDeploymentConfigProperty) {
         this._deploymentConfig.internalValue = value;
     }
     public resetDeploymentConfig() {
@@ -2953,101 +4875,219 @@ export class ScheduledUpdateConfigPropertyOutputReference extends cdktn.ComplexO
         return this._scheduleExpression;
     }
 }
+export interface ClusterSlurmConfigProperty {
+    /**
+    * The type of Slurm node for this instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#node_type CcCluster#node_type}
+    */
+    readonly nodeType?: string;
+    /**
+    * The Slurm partitions that this instance group belongs to. Maximum of 1 partition.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#partition_names CcCluster#partition_names}
+    */
+    readonly partitionNames?: string[];
+}
+export class ClusterSlurmConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ClusterSlurmConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._nodeType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.nodeType = this._nodeType;
+        }
+        if (this._partitionNames !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.partitionNames = this._partitionNames;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ClusterSlurmConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._nodeType = undefined;
+            this._partitionNames = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._nodeType = value.nodeType;
+            this._partitionNames = value.partitionNames;
+        }
+    }
+
+    // node_type - computed: true, optional: true, required: false
+    private _nodeType?: string; 
+    public get nodeType() {
+        return this.getStringAttribute('node_type');
+    }
+    public set nodeType(value: string) {
+        this._nodeType = value;
+    }
+    public resetNodeType() {
+        this._nodeType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nodeTypeInput() {
+        return this._nodeType;
+    }
+
+    // partition_names - computed: true, optional: true, required: false
+    private _partitionNames?: string[]; 
+    public get partitionNames() {
+        return this.getListAttribute('partition_names');
+    }
+    public set partitionNames(value: string[]) {
+        this._partitionNames = value;
+    }
+    public resetPartitionNames() {
+        this._partitionNames = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get partitionNamesInput() {
+        return this._partitionNames;
+    }
+}
 export interface ClusterInstanceGroupProperty {
+    /**
+    * The configuration for automatic patching of the instance group. Enables workload-aware, patch-level AMI updates.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#auto_patch_config CcCluster#auto_patch_config}
+    */
+    readonly autoPatchConfig?: AutoPatchConfigProperty;
     /**
     * Specifies the capacity requirements configuration for an instance group
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#capacity_requirements CcCluster#capacity_requirements}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#capacity_requirements CcCluster#capacity_requirements}
     */
     readonly capacityRequirements?: ClusterCapacityRequirementsProperty;
     /**
     * The number of instances that are currently in the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
     */
     readonly currentCount?: number;
     /**
     * The execution role for the instance group to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
     */
     readonly executionRole?: string;
     /**
     * AMI Id to be used for launching EC2 instances - HyperPodPublicAmiId or CustomAmiId
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#image_id CcCluster#image_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#image_id CcCluster#image_id}
     */
     readonly imageId?: string;
     /**
     * The number of instances you specified to add to the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The name of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
     */
     readonly instanceGroupName?: string;
     /**
+    * The instance requirements for the instance group. Specifies a list of instance types that can be used.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_requirements CcCluster#instance_requirements}
+    */
+    readonly instanceRequirements?: InstanceRequirementsProperty;
+    /**
     * The instance storage configuration for the instance group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
     */
     readonly instanceStorageConfigs?: ClusterInstanceStorageConfigProperty[] | cdktn.IResolvable;
     /**
     * The instance type of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
     */
     readonly instanceType?: string;
     /**
     * Kubernetes configuration for cluster nodes including labels and taints.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#kubernetes_config CcCluster#kubernetes_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#kubernetes_config CcCluster#kubernetes_config}
     */
     readonly kubernetesConfig?: ClusterKubernetesConfigProperty;
     /**
-    * The lifecycle configuration for a SageMaker HyperPod cluster.
+    * The lifecycle configuration for a SageMaker HyperPod cluster. When omitted, the instance group uses Bootstrap mode. When provided with SourceS3Uri and OnCreate, uses Customer Managed mode. When provided with SourceS3Uri and OnInitComplete, uses Extended mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#life_cycle_config CcCluster#life_cycle_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#life_cycle_config CcCluster#life_cycle_config}
     */
     readonly lifeCycleConfig?: ClusterLifeCycleConfigProperty;
     /**
     * The minimum number of instances required for the instance group to be InService. MinInstanceCount must be less than or equal to InstanceCount.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#min_instance_count CcCluster#min_instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#min_instance_count CcCluster#min_instance_count}
     */
     readonly minInstanceCount?: number;
     /**
+    * Specifies the network interface configuration for the instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#network_interface CcCluster#network_interface}
+    */
+    readonly networkInterface?: ClusterNetworkInterfaceProperty;
+    /**
     * Nodes will undergo advanced stress test to detect and replace faulty instances, based on the type of deep health check(s) passed in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
     */
     readonly onStartDeepHealthChecks?: string[];
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
     readonly overrideVpcConfig?: InstanceGroupsOverrideVpcConfigProperty;
     /**
     * The configuration object of the schedule that SageMaker follows when updating the AMI.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#scheduled_update_config CcCluster#scheduled_update_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#scheduled_update_config CcCluster#scheduled_update_config}
     */
     readonly scheduledUpdateConfig?: ScheduledUpdateConfigProperty;
     /**
+    * Slurm configuration for the instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#slurm_config CcCluster#slurm_config}
+    */
+    readonly slurmConfig?: ClusterSlurmConfigProperty;
+    /**
     * The number you specified to TreadsPerCore in CreateCluster for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
     */
     readonly threadsPerCore?: number;
     /**
     * The Amazon Resource Name (ARN) of the training plan to use for this cluster instance group. For more information about how to reserve GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see CreateTrainingPlan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
     */
     readonly trainingPlanArn?: string;
 }
@@ -3071,6 +5111,10 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._autoPatchConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.autoPatchConfig = this._autoPatchConfig?.internalValue;
+        }
         if (this._capacityRequirements?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.capacityRequirements = this._capacityRequirements?.internalValue;
@@ -3095,6 +5139,10 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
             hasAnyValues = true;
             internalValueResult.instanceGroupName = this._instanceGroupName;
         }
+        if (this._instanceRequirements?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.instanceRequirements = this._instanceRequirements?.internalValue;
+        }
         if (this._instanceStorageConfigs?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.instanceStorageConfigs = this._instanceStorageConfigs?.internalValue;
@@ -3115,6 +5163,10 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
             hasAnyValues = true;
             internalValueResult.minInstanceCount = this._minInstanceCount;
         }
+        if (this._networkInterface?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.networkInterface = this._networkInterface?.internalValue;
+        }
         if (this._onStartDeepHealthChecks !== undefined) {
             hasAnyValues = true;
             internalValueResult.onStartDeepHealthChecks = this._onStartDeepHealthChecks;
@@ -3126,6 +5178,10 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         if (this._scheduledUpdateConfig?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.scheduledUpdateConfig = this._scheduledUpdateConfig?.internalValue;
+        }
+        if (this._slurmConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.slurmConfig = this._slurmConfig?.internalValue;
         }
         if (this._threadsPerCore !== undefined) {
             hasAnyValues = true;
@@ -3142,20 +5198,24 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._autoPatchConfig.internalValue = undefined;
             this._capacityRequirements.internalValue = undefined;
             this._currentCount = undefined;
             this._executionRole = undefined;
             this._imageId = undefined;
             this._instanceCount = undefined;
             this._instanceGroupName = undefined;
+            this._instanceRequirements.internalValue = undefined;
             this._instanceStorageConfigs.internalValue = undefined;
             this._instanceType = undefined;
             this._kubernetesConfig.internalValue = undefined;
             this._lifeCycleConfig.internalValue = undefined;
             this._minInstanceCount = undefined;
+            this._networkInterface.internalValue = undefined;
             this._onStartDeepHealthChecks = undefined;
             this._overrideVpcConfig.internalValue = undefined;
             this._scheduledUpdateConfig.internalValue = undefined;
+            this._slurmConfig.internalValue = undefined;
             this._threadsPerCore = undefined;
             this._trainingPlanArn = undefined;
         }
@@ -3166,23 +5226,43 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._autoPatchConfig.internalValue = value.autoPatchConfig;
             this._capacityRequirements.internalValue = value.capacityRequirements;
             this._currentCount = value.currentCount;
             this._executionRole = value.executionRole;
             this._imageId = value.imageId;
             this._instanceCount = value.instanceCount;
             this._instanceGroupName = value.instanceGroupName;
+            this._instanceRequirements.internalValue = value.instanceRequirements;
             this._instanceStorageConfigs.internalValue = value.instanceStorageConfigs;
             this._instanceType = value.instanceType;
             this._kubernetesConfig.internalValue = value.kubernetesConfig;
             this._lifeCycleConfig.internalValue = value.lifeCycleConfig;
             this._minInstanceCount = value.minInstanceCount;
+            this._networkInterface.internalValue = value.networkInterface;
             this._onStartDeepHealthChecks = value.onStartDeepHealthChecks;
             this._overrideVpcConfig.internalValue = value.overrideVpcConfig;
             this._scheduledUpdateConfig.internalValue = value.scheduledUpdateConfig;
+            this._slurmConfig.internalValue = value.slurmConfig;
             this._threadsPerCore = value.threadsPerCore;
             this._trainingPlanArn = value.trainingPlanArn;
         }
+    }
+
+    // auto_patch_config - computed: true, optional: true, required: false
+    private _autoPatchConfig = new AutoPatchConfigPropertyOutputReference(this, "auto_patch_config");
+    public get autoPatchConfig() {
+        return this._autoPatchConfig;
+    }
+    public putAutoPatchConfig(value: AutoPatchConfigProperty) {
+        this._autoPatchConfig.internalValue = value;
+    }
+    public resetAutoPatchConfig() {
+        this._autoPatchConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoPatchConfigInput() {
+        return this._autoPatchConfig.internalValue;
     }
 
     // capacity_requirements - computed: true, optional: true, required: false
@@ -3281,6 +5361,22 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         return this._instanceGroupName;
     }
 
+    // instance_requirements - computed: true, optional: true, required: false
+    private _instanceRequirements = new InstanceRequirementsPropertyOutputReference(this, "instance_requirements");
+    public get instanceRequirements() {
+        return this._instanceRequirements;
+    }
+    public putInstanceRequirements(value: InstanceRequirementsProperty) {
+        this._instanceRequirements.internalValue = value;
+    }
+    public resetInstanceRequirements() {
+        this._instanceRequirements.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get instanceRequirementsInput() {
+        return this._instanceRequirements.internalValue;
+    }
+
     // instance_storage_configs - computed: true, optional: true, required: false
     private _instanceStorageConfigs = new ClusterInstanceStorageConfigPropertyList(this, "instance_storage_configs", false);
     public get instanceStorageConfigs() {
@@ -3361,6 +5457,22 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
         return this._minInstanceCount;
     }
 
+    // network_interface - computed: true, optional: true, required: false
+    private _networkInterface = new ClusterNetworkInterfacePropertyOutputReference(this, "network_interface");
+    public get networkInterface() {
+        return this._networkInterface;
+    }
+    public putNetworkInterface(value: ClusterNetworkInterfaceProperty) {
+        this._networkInterface.internalValue = value;
+    }
+    public resetNetworkInterface() {
+        this._networkInterface.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get networkInterfaceInput() {
+        return this._networkInterface.internalValue;
+    }
+
     // on_start_deep_health_checks - computed: true, optional: true, required: false
     private _onStartDeepHealthChecks?: string[]; 
     public get onStartDeepHealthChecks() {
@@ -3407,6 +5519,22 @@ export class ClusterInstanceGroupPropertyOutputReference extends cdktn.ComplexOb
     // Temporarily expose input value. Use with caution.
     public get scheduledUpdateConfigInput() {
         return this._scheduledUpdateConfig.internalValue;
+    }
+
+    // slurm_config - computed: true, optional: true, required: false
+    private _slurmConfig = new ClusterSlurmConfigPropertyOutputReference(this, "slurm_config");
+    public get slurmConfig() {
+        return this._slurmConfig;
+    }
+    public putSlurmConfig(value: ClusterSlurmConfigProperty) {
+        this._slurmConfig.internalValue = value;
+    }
+    public resetSlurmConfig() {
+        this._slurmConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get slurmConfigInput() {
+        return this._slurmConfig.internalValue;
     }
 
     // threads_per_core - computed: true, optional: true, required: false
@@ -3465,7 +5593,7 @@ export interface ClusterOrchestratorEksConfigProperty {
     /**
     * The ARN of the EKS cluster, such as arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#cluster_arn CcCluster#cluster_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#cluster_arn CcCluster#cluster_arn}
     */
     readonly clusterArn?: string;
 }
@@ -3527,13 +5655,263 @@ export class ClusterOrchestratorEksConfigPropertyOutputReference extends cdktn.C
         return this._clusterArn;
     }
 }
+export interface AccountingDatabaseProperty {
+    /**
+    * Hostname or endpoint of the accounting database, such as an RDS endpoint.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#endpoint CcCluster#endpoint}
+    */
+    readonly endpoint?: string;
+    /**
+    * Name of the accounting database schema. Defaults to slurm_acct_db when omitted.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#name CcCluster#name}
+    */
+    readonly name?: string;
+    /**
+    * TCP port of the accounting database. Defaults to 3306 when omitted.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#port CcCluster#port}
+    */
+    readonly port?: number;
+    /**
+    * ARN of the Secrets Manager secret holding the database credentials.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#secret_arn CcCluster#secret_arn}
+    */
+    readonly secretArn?: string;
+}
+export class AccountingDatabasePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AccountingDatabaseProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._endpoint !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.endpoint = this._endpoint;
+        }
+        if (this._name !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.name = this._name;
+        }
+        if (this._port !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.port = this._port;
+        }
+        if (this._secretArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.secretArn = this._secretArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AccountingDatabaseProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._endpoint = undefined;
+            this._name = undefined;
+            this._port = undefined;
+            this._secretArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._endpoint = value.endpoint;
+            this._name = value.name;
+            this._port = value.port;
+            this._secretArn = value.secretArn;
+        }
+    }
+
+    // endpoint - computed: true, optional: true, required: false
+    private _endpoint?: string; 
+    public get endpoint() {
+        return this.getStringAttribute('endpoint');
+    }
+    public set endpoint(value: string) {
+        this._endpoint = value;
+    }
+    public resetEndpoint() {
+        this._endpoint = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get endpointInput() {
+        return this._endpoint;
+    }
+
+    // name - computed: true, optional: true, required: false
+    private _name?: string; 
+    public get name() {
+        return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+        this._name = value;
+    }
+    public resetName() {
+        this._name = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+        return this._name;
+    }
+
+    // port - computed: true, optional: true, required: false
+    private _port?: number; 
+    public get port() {
+        return this.getNumberAttribute('port');
+    }
+    public set port(value: number) {
+        this._port = value;
+    }
+    public resetPort() {
+        this._port = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get portInput() {
+        return this._port;
+    }
+
+    // secret_arn - computed: true, optional: true, required: false
+    private _secretArn?: string; 
+    public get secretArn() {
+        return this.getStringAttribute('secret_arn');
+    }
+    public set secretArn(value: string) {
+        this._secretArn = value;
+    }
+    public resetSecretArn() {
+        this._secretArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get secretArnInput() {
+        return this._secretArn;
+    }
+}
+export interface ClusterOrchestratorSlurmConfigProperty {
+    /**
+    * External MySQL-compatible accounting database that a Slurm cluster's slurmdbd connects to. Database credentials are supplied out-of-band through the referenced Secrets Manager secret. Supported only with Continuous node provisioning.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#accounting_database CcCluster#accounting_database}
+    */
+    readonly accountingDatabase?: AccountingDatabaseProperty;
+    /**
+    * The strategy for managing Slurm configuration on the cluster.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#slurm_config_strategy CcCluster#slurm_config_strategy}
+    */
+    readonly slurmConfigStrategy?: string;
+}
+export class ClusterOrchestratorSlurmConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ClusterOrchestratorSlurmConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._accountingDatabase?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.accountingDatabase = this._accountingDatabase?.internalValue;
+        }
+        if (this._slurmConfigStrategy !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.slurmConfigStrategy = this._slurmConfigStrategy;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ClusterOrchestratorSlurmConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._accountingDatabase.internalValue = undefined;
+            this._slurmConfigStrategy = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._accountingDatabase.internalValue = value.accountingDatabase;
+            this._slurmConfigStrategy = value.slurmConfigStrategy;
+        }
+    }
+
+    // accounting_database - computed: true, optional: true, required: false
+    private _accountingDatabase = new AccountingDatabasePropertyOutputReference(this, "accounting_database");
+    public get accountingDatabase() {
+        return this._accountingDatabase;
+    }
+    public putAccountingDatabase(value: AccountingDatabaseProperty) {
+        this._accountingDatabase.internalValue = value;
+    }
+    public resetAccountingDatabase() {
+        this._accountingDatabase.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accountingDatabaseInput() {
+        return this._accountingDatabase.internalValue;
+    }
+
+    // slurm_config_strategy - computed: true, optional: true, required: false
+    private _slurmConfigStrategy?: string; 
+    public get slurmConfigStrategy() {
+        return this.getStringAttribute('slurm_config_strategy');
+    }
+    public set slurmConfigStrategy(value: string) {
+        this._slurmConfigStrategy = value;
+    }
+    public resetSlurmConfigStrategy() {
+        this._slurmConfigStrategy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get slurmConfigStrategyInput() {
+        return this._slurmConfigStrategy;
+    }
+}
 export interface OrchestratorProperty {
     /**
     * Specifies parameter(s) related to EKS as orchestrator, e.g. the EKS cluster nodes will attach to,
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#eks CcCluster#eks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#eks CcCluster#eks}
     */
     readonly eks?: ClusterOrchestratorEksConfigProperty;
+    /**
+    * Specifies parameter(s) related to Slurm as orchestrator.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#slurm CcCluster#slurm}
+    */
+    readonly slurm?: ClusterOrchestratorSlurmConfigProperty;
 }
 export class OrchestratorPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -3557,6 +5935,10 @@ export class OrchestratorPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.eks = this._eks?.internalValue;
         }
+        if (this._slurm?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.slurm = this._slurm?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -3565,6 +5947,7 @@ export class OrchestratorPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._eks.internalValue = undefined;
+            this._slurm.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -3574,6 +5957,7 @@ export class OrchestratorPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._eks.internalValue = value.eks;
+            this._slurm.internalValue = value.slurm;
         }
     }
 
@@ -3592,18 +5976,34 @@ export class OrchestratorPropertyOutputReference extends cdktn.ComplexObject {
     public get eksInput() {
         return this._eks.internalValue;
     }
+
+    // slurm - computed: true, optional: true, required: false
+    private _slurm = new ClusterOrchestratorSlurmConfigPropertyOutputReference(this, "slurm");
+    public get slurm() {
+        return this._slurm;
+    }
+    public putSlurm(value: ClusterOrchestratorSlurmConfigProperty) {
+        this._slurm.internalValue = value;
+    }
+    public resetSlurm() {
+        this._slurm.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get slurmInput() {
+        return this._slurm.internalValue;
+    }
 }
 export interface FSxLustreConfigProperty {
     /**
     * The throughput capacity of the FSx for Lustre file system, measured in MB/s per TiB of storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#per_unit_storage_throughput CcCluster#per_unit_storage_throughput}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#per_unit_storage_throughput CcCluster#per_unit_storage_throughput}
     */
     readonly perUnitStorageThroughput?: number;
     /**
     * The storage capacity of the FSx for Lustre file system, specified in gibibytes (GiB).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#size_in_gi_b CcCluster#size_in_gi_b}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#size_in_gi_b CcCluster#size_in_gi_b}
     */
     readonly sizeInGiB?: number;
 }
@@ -3691,7 +6091,7 @@ export interface EnvironmentConfigProperty {
     /**
     * Configuration settings for an Amazon FSx for Lustre file system to be used with the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
     */
     readonly fsxLustreConfig?: FSxLustreConfigProperty;
 }
@@ -3755,17 +6155,17 @@ export class EnvironmentConfigPropertyOutputReference extends cdktn.ComplexObjec
 }
 export interface EbsVolumeConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#root_volume CcCluster#root_volume}
     */
     readonly rootVolume?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#volume_kms_key_id CcCluster#volume_kms_key_id}
     */
     readonly volumeKmsKeyId?: string;
     /**
     * The size in gigabytes (GB) of the additional EBS volume to be attached to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#volume_size_in_gb CcCluster#volume_size_in_gb}
     */
     readonly volumeSizeInGb?: number;
 }
@@ -3871,13 +6271,241 @@ export class EbsVolumeConfigPropertyOutputReference extends cdktn.ComplexObject 
         return this._volumeSizeInGb;
     }
 }
+export interface RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty {
+    /**
+    * The DNS name of the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#dns_name CcCluster#dns_name}
+    */
+    readonly dnsName?: string;
+    /**
+    * The mount name of the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_name CcCluster#mount_name}
+    */
+    readonly mountName?: string;
+    /**
+    * The mount path for the FSx for Lustre file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_path CcCluster#mount_path}
+    */
+    readonly mountPath?: string;
+}
+export class RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dnsName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dnsName = this._dnsName;
+        }
+        if (this._mountName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountName = this._mountName;
+        }
+        if (this._mountPath !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountPath = this._mountPath;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dnsName = undefined;
+            this._mountName = undefined;
+            this._mountPath = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dnsName = value.dnsName;
+            this._mountName = value.mountName;
+            this._mountPath = value.mountPath;
+        }
+    }
+
+    // dns_name - computed: true, optional: true, required: false
+    private _dnsName?: string; 
+    public get dnsName() {
+        return this.getStringAttribute('dns_name');
+    }
+    public set dnsName(value: string) {
+        this._dnsName = value;
+    }
+    public resetDnsName() {
+        this._dnsName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dnsNameInput() {
+        return this._dnsName;
+    }
+
+    // mount_name - computed: true, optional: true, required: false
+    private _mountName?: string; 
+    public get mountName() {
+        return this.getStringAttribute('mount_name');
+    }
+    public set mountName(value: string) {
+        this._mountName = value;
+    }
+    public resetMountName() {
+        this._mountName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountNameInput() {
+        return this._mountName;
+    }
+
+    // mount_path - computed: true, optional: true, required: false
+    private _mountPath?: string; 
+    public get mountPath() {
+        return this.getStringAttribute('mount_path');
+    }
+    public set mountPath(value: string) {
+        this._mountPath = value;
+    }
+    public resetMountPath() {
+        this._mountPath = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountPathInput() {
+        return this._mountPath;
+    }
+}
+export interface FsxOpenZfsConfigProperty {
+    /**
+    * The DNS name of the FSx for OpenZFS file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#dns_name CcCluster#dns_name}
+    */
+    readonly dnsName?: string;
+    /**
+    * The mount path for the FSx for OpenZFS file system.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mount_path CcCluster#mount_path}
+    */
+    readonly mountPath?: string;
+}
+export class FsxOpenZfsConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): FsxOpenZfsConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dnsName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dnsName = this._dnsName;
+        }
+        if (this._mountPath !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mountPath = this._mountPath;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: FsxOpenZfsConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dnsName = undefined;
+            this._mountPath = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dnsName = value.dnsName;
+            this._mountPath = value.mountPath;
+        }
+    }
+
+    // dns_name - computed: true, optional: true, required: false
+    private _dnsName?: string; 
+    public get dnsName() {
+        return this.getStringAttribute('dns_name');
+    }
+    public set dnsName(value: string) {
+        this._dnsName = value;
+    }
+    public resetDnsName() {
+        this._dnsName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dnsNameInput() {
+        return this._dnsName;
+    }
+
+    // mount_path - computed: true, optional: true, required: false
+    private _mountPath?: string; 
+    public get mountPath() {
+        return this.getStringAttribute('mount_path');
+    }
+    public set mountPath(value: string) {
+        this._mountPath = value;
+    }
+    public resetMountPath() {
+        this._mountPath = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mountPathInput() {
+        return this._mountPath;
+    }
+}
 export interface InstanceStorageConfigsProperty {
     /**
     * Defines the configuration for attaching additional Amazon Elastic Block Store (EBS) volumes to the instances in the SageMaker HyperPod cluster instance group. The additional EBS volume is attached to each instance within the SageMaker HyperPod cluster instance group and mounted to /opt/sagemaker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#ebs_volume_config CcCluster#ebs_volume_config}
     */
     readonly ebsVolumeConfig?: EbsVolumeConfigProperty;
+    /**
+    * Configuration for mounting an Amazon FSx Lustre file system to the instances in the SageMaker HyperPod cluster instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
+    */
+    readonly fsxLustreConfig?: RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty;
+    /**
+    * Configuration for mounting an Amazon FSx OpenZFS file system to the instances in the SageMaker HyperPod cluster instance group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_open_zfs_config CcCluster#fsx_open_zfs_config}
+    */
+    readonly fsxOpenZfsConfig?: FsxOpenZfsConfigProperty;
 }
 export class InstanceStorageConfigsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -3903,6 +6531,14 @@ export class InstanceStorageConfigsPropertyOutputReference extends cdktn.Complex
             hasAnyValues = true;
             internalValueResult.ebsVolumeConfig = this._ebsVolumeConfig?.internalValue;
         }
+        if (this._fsxLustreConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxLustreConfig = this._fsxLustreConfig?.internalValue;
+        }
+        if (this._fsxOpenZfsConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxOpenZfsConfig = this._fsxOpenZfsConfig?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -3911,6 +6547,8 @@ export class InstanceStorageConfigsPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._ebsVolumeConfig.internalValue = undefined;
+            this._fsxLustreConfig.internalValue = undefined;
+            this._fsxOpenZfsConfig.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -3920,6 +6558,8 @@ export class InstanceStorageConfigsPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._ebsVolumeConfig.internalValue = value.ebsVolumeConfig;
+            this._fsxLustreConfig.internalValue = value.fsxLustreConfig;
+            this._fsxOpenZfsConfig.internalValue = value.fsxOpenZfsConfig;
         }
     }
 
@@ -3937,6 +6577,38 @@ export class InstanceStorageConfigsPropertyOutputReference extends cdktn.Complex
     // Temporarily expose input value. Use with caution.
     public get ebsVolumeConfigInput() {
         return this._ebsVolumeConfig.internalValue;
+    }
+
+    // fsx_lustre_config - computed: true, optional: true, required: false
+    private _fsxLustreConfig = new RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigPropertyOutputReference(this, "fsx_lustre_config");
+    public get fsxLustreConfig() {
+        return this._fsxLustreConfig;
+    }
+    public putFsxLustreConfig(value: RestrictedInstanceGroupsInstanceStorageConfigsFsxLustreConfigProperty) {
+        this._fsxLustreConfig.internalValue = value;
+    }
+    public resetFsxLustreConfig() {
+        this._fsxLustreConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxLustreConfigInput() {
+        return this._fsxLustreConfig.internalValue;
+    }
+
+    // fsx_open_zfs_config - computed: true, optional: true, required: false
+    private _fsxOpenZfsConfig = new FsxOpenZfsConfigPropertyOutputReference(this, "fsx_open_zfs_config");
+    public get fsxOpenZfsConfig() {
+        return this._fsxOpenZfsConfig;
+    }
+    public putFsxOpenZfsConfig(value: FsxOpenZfsConfigProperty) {
+        this._fsxOpenZfsConfig.internalValue = value;
+    }
+    public resetFsxOpenZfsConfig() {
+        this._fsxOpenZfsConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxOpenZfsConfigInput() {
+        return this._fsxOpenZfsConfig.internalValue;
     }
 }
 
@@ -3963,13 +6635,13 @@ export interface RestrictedInstanceGroupsOverrideVpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }
@@ -4057,67 +6729,67 @@ export interface ClusterRestrictedInstanceGroupProperty {
     /**
     * The number of instances that are currently in the restricted instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#current_count CcCluster#current_count}
     */
     readonly currentCount?: number;
     /**
     * The configuration for the restricted instance groups (RIG) environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#environment_config CcCluster#environment_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#environment_config CcCluster#environment_config}
     */
     readonly environmentConfig?: EnvironmentConfigProperty;
     /**
     * The execution role for the instance group to assume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#execution_role CcCluster#execution_role}
     */
     readonly executionRole?: string;
     /**
     * The number of instances you specified to add to the restricted instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_count CcCluster#instance_count}
     */
     readonly instanceCount?: number;
     /**
     * The name of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_group_name CcCluster#instance_group_name}
     */
     readonly instanceGroupName?: string;
     /**
     * The instance storage configuration for the instance group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_storage_configs CcCluster#instance_storage_configs}
     */
     readonly instanceStorageConfigs?: InstanceStorageConfigsProperty[] | cdktn.IResolvable;
     /**
     * The instance type of the instance group of a SageMaker HyperPod cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_type CcCluster#instance_type}
     */
     readonly instanceType?: string;
     /**
     * Nodes will undergo advanced stress test to detect and replace faulty instances, based on the type of deep health check(s) passed in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#on_start_deep_health_checks CcCluster#on_start_deep_health_checks}
     */
     readonly onStartDeepHealthChecks?: string[];
     /**
     * Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#override_vpc_config CcCluster#override_vpc_config}
     */
     readonly overrideVpcConfig?: RestrictedInstanceGroupsOverrideVpcConfigProperty;
     /**
     * The number you specified to TreadsPerCore in CreateCluster for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#threads_per_core CcCluster#threads_per_core}
     */
     readonly threadsPerCore?: number;
     /**
     * The Amazon Resource Name (ARN) of the training plan to use for this cluster restricted instance group. For more information about how to reserve GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see CreateTrainingPlan.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#training_plan_arn CcCluster#training_plan_arn}
     */
     readonly trainingPlanArn?: string;
 }
@@ -4421,17 +7093,271 @@ export class ClusterRestrictedInstanceGroupPropertyList extends cdktn.ComplexLis
         return new ClusterRestrictedInstanceGroupPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
+export interface RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty {
+    /**
+    * The throughput capacity of the FSx for Lustre file system, measured in MB/s per TiB of storage.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#per_unit_storage_throughput CcCluster#per_unit_storage_throughput}
+    */
+    readonly perUnitStorageThroughput?: number;
+    /**
+    * The storage capacity of the FSx for Lustre file system, specified in gibibytes (GiB).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#size_in_gi_b CcCluster#size_in_gi_b}
+    */
+    readonly sizeInGiB?: number;
+}
+export class RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._perUnitStorageThroughput !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.perUnitStorageThroughput = this._perUnitStorageThroughput;
+        }
+        if (this._sizeInGiB !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.sizeInGiB = this._sizeInGiB;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._perUnitStorageThroughput = undefined;
+            this._sizeInGiB = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._perUnitStorageThroughput = value.perUnitStorageThroughput;
+            this._sizeInGiB = value.sizeInGiB;
+        }
+    }
+
+    // per_unit_storage_throughput - computed: true, optional: true, required: false
+    private _perUnitStorageThroughput?: number; 
+    public get perUnitStorageThroughput() {
+        return this.getNumberAttribute('per_unit_storage_throughput');
+    }
+    public set perUnitStorageThroughput(value: number) {
+        this._perUnitStorageThroughput = value;
+    }
+    public resetPerUnitStorageThroughput() {
+        this._perUnitStorageThroughput = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get perUnitStorageThroughputInput() {
+        return this._perUnitStorageThroughput;
+    }
+
+    // size_in_gi_b - computed: true, optional: true, required: false
+    private _sizeInGiB?: number; 
+    public get sizeInGiB() {
+        return this.getNumberAttribute('size_in_gi_b');
+    }
+    public set sizeInGiB(value: number) {
+        this._sizeInGiB = value;
+    }
+    public resetSizeInGiB() {
+        this._sizeInGiB = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sizeInGiBInput() {
+        return this._sizeInGiB;
+    }
+}
+export interface SharedEnvironmentConfigProperty {
+    /**
+    * Configuration settings for an Amazon FSx for Lustre file system to be used with the cluster.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_lustre_config CcCluster#fsx_lustre_config}
+    */
+    readonly fsxLustreConfig?: RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty;
+    /**
+    * The deletion policy for the shared FSx Lustre file system. Keep retains the FSx when RIGs are deleted. DeleteIfNotUsed deletes the FSx when no RIGs reference it.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#fsx_lustre_deletion_policy CcCluster#fsx_lustre_deletion_policy}
+    */
+    readonly fsxLustreDeletionPolicy?: string;
+}
+export class SharedEnvironmentConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): SharedEnvironmentConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._fsxLustreConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxLustreConfig = this._fsxLustreConfig?.internalValue;
+        }
+        if (this._fsxLustreDeletionPolicy !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fsxLustreDeletionPolicy = this._fsxLustreDeletionPolicy;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SharedEnvironmentConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._fsxLustreConfig.internalValue = undefined;
+            this._fsxLustreDeletionPolicy = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._fsxLustreConfig.internalValue = value.fsxLustreConfig;
+            this._fsxLustreDeletionPolicy = value.fsxLustreDeletionPolicy;
+        }
+    }
+
+    // fsx_lustre_config - computed: true, optional: true, required: false
+    private _fsxLustreConfig = new RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigPropertyOutputReference(this, "fsx_lustre_config");
+    public get fsxLustreConfig() {
+        return this._fsxLustreConfig;
+    }
+    public putFsxLustreConfig(value: RestrictedInstanceGroupsConfigSharedEnvironmentConfigFsxLustreConfigProperty) {
+        this._fsxLustreConfig.internalValue = value;
+    }
+    public resetFsxLustreConfig() {
+        this._fsxLustreConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxLustreConfigInput() {
+        return this._fsxLustreConfig.internalValue;
+    }
+
+    // fsx_lustre_deletion_policy - computed: true, optional: true, required: false
+    private _fsxLustreDeletionPolicy?: string; 
+    public get fsxLustreDeletionPolicy() {
+        return this.getStringAttribute('fsx_lustre_deletion_policy');
+    }
+    public set fsxLustreDeletionPolicy(value: string) {
+        this._fsxLustreDeletionPolicy = value;
+    }
+    public resetFsxLustreDeletionPolicy() {
+        this._fsxLustreDeletionPolicy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fsxLustreDeletionPolicyInput() {
+        return this._fsxLustreDeletionPolicy;
+    }
+}
+export interface RestrictedInstanceGroupsConfigProperty {
+    /**
+    * The shared environment configuration for restricted instance groups that use cluster-level shared FSx Lustre storage.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#shared_environment_config CcCluster#shared_environment_config}
+    */
+    readonly sharedEnvironmentConfig?: SharedEnvironmentConfigProperty;
+}
+export class RestrictedInstanceGroupsConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): RestrictedInstanceGroupsConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._sharedEnvironmentConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.sharedEnvironmentConfig = this._sharedEnvironmentConfig?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RestrictedInstanceGroupsConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._sharedEnvironmentConfig.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._sharedEnvironmentConfig.internalValue = value.sharedEnvironmentConfig;
+        }
+    }
+
+    // shared_environment_config - computed: true, optional: true, required: false
+    private _sharedEnvironmentConfig = new SharedEnvironmentConfigPropertyOutputReference(this, "shared_environment_config");
+    public get sharedEnvironmentConfig() {
+        return this._sharedEnvironmentConfig;
+    }
+    public putSharedEnvironmentConfig(value: SharedEnvironmentConfigProperty) {
+        this._sharedEnvironmentConfig.internalValue = value;
+    }
+    public resetSharedEnvironmentConfig() {
+        this._sharedEnvironmentConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sharedEnvironmentConfigInput() {
+        return this._sharedEnvironmentConfig.internalValue;
+    }
+}
 export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#key CcCluster#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#key CcCluster#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#value CcCluster#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#value CcCluster#value}
     */
     readonly value?: string;
 }
@@ -4541,13 +7467,13 @@ export interface TieredStorageConfigProperty {
     /**
     * The percentage of instance memory to allocate for tiered storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#instance_memory_allocation_percentage CcCluster#instance_memory_allocation_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#instance_memory_allocation_percentage CcCluster#instance_memory_allocation_percentage}
     */
     readonly instanceMemoryAllocationPercentage?: number;
     /**
     * The mode of tiered storage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#mode CcCluster#mode}
     */
     readonly mode?: string;
 }
@@ -4635,13 +7561,13 @@ export interface VpcConfigProperty {
     /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#security_group_ids CcCluster#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/sagemaker_cluster#subnets CcCluster#subnets}
     */
     readonly subnets?: string[];
 }

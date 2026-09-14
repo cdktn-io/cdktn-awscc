@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcDaemonTaskDefinitionProps extends cdktn.TerraformMetaArgument
     /**
     * A list of container definitions in JSON format that describe the containers that make up the daemon task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#container_definitions CcDaemonTaskDefinition#container_definitions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#container_definitions CcDaemonTaskDefinition#container_definitions}
     */
     readonly containerDefinitions?: CcDaemonTaskDefinition.DaemonContainerDefinitionProperty[] | cdktn.IResolvable;
     /**
     * The number of CPU units used by the daemon task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#cpu CcDaemonTaskDefinition#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#cpu CcDaemonTaskDefinition#cpu}
     */
     readonly cpu?: string;
     /**
     * The Amazon Resource Name (ARN) of the task execution role that grants the Amazon ECS container agent permission to make Amazon Web Services API calls on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#execution_role_arn CcDaemonTaskDefinition#execution_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#execution_role_arn CcDaemonTaskDefinition#execution_role_arn}
     */
     readonly executionRoleArn?: string;
     /**
     * The name of a family that this daemon task definition is registered to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#family CcDaemonTaskDefinition#family}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#family CcDaemonTaskDefinition#family}
     */
     readonly family?: string;
     /**
     * The IPC namespace mode for the daemon. The valid values are ``none`` and ``shared``. The default is ``none``.
     *  If ``none`` is specified or no value is provided, the daemon runs with its own IPC namespace, isolated from other tasks. If ``shared`` is specified, the daemon joins the host IPC namespace, making it accessible to non-daemon tasks that use ``ipcMode: "host"`` or other daemons that use ``ipcMode: "shared"``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#ipc_mode CcDaemonTaskDefinition#ipc_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#ipc_mode CcDaemonTaskDefinition#ipc_mode}
     */
     readonly ipcMode?: string;
     /**
     * The amount of memory (in MiB) used by the daemon task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#memory CcDaemonTaskDefinition#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#memory CcDaemonTaskDefinition#memory}
     */
     readonly memory?: string;
     /**
     * The PID namespace mode for the daemon. The valid values are ``none`` and ``shared``. The default is ``none``.
     *  If ``none`` is specified or no value is provided, the daemon runs with its own PID namespace, isolated from other tasks. If ``shared`` is specified, the daemon joins the host PID namespace, making it accessible to non-daemon tasks that use ``pidMode: "host"`` or other daemons that use ``pidMode: "shared"``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#pid_mode CcDaemonTaskDefinition#pid_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#pid_mode CcDaemonTaskDefinition#pid_mode}
     */
     readonly pidMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#tags CcDaemonTaskDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#tags CcDaemonTaskDefinition#tags}
     */
     readonly tags?: CcDaemonTaskDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * The short name or full Amazon Resource Name (ARN) of the IAM role that grants containers in the daemon task permission to call Amazon Web Services APIs on your behalf.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#task_role_arn CcDaemonTaskDefinition#task_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#task_role_arn CcDaemonTaskDefinition#task_role_arn}
     */
     readonly taskRoleArn?: string;
     /**
     * The list of data volume definitions for the daemon task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#volumes CcDaemonTaskDefinition#volumes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#volumes CcDaemonTaskDefinition#volumes}
     */
     readonly volumes?: CcDaemonTaskDefinition.VolumeProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition awscc_ecs_daemon_task_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition awscc_ecs_daemon_task_definition}
 */
 export class CcDaemonTaskDefinition extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcDaemonTaskDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDaemonTaskDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDaemonTaskDefinition to import
-    * @param importFromId The id of the existing CcDaemonTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDaemonTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDaemonTaskDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcDaemonTaskDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition awscc_ecs_daemon_task_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition awscc_ecs_daemon_task_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcDaemonTaskDefinition extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_ecs_daemon_task_definition',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1430,13 +1430,13 @@ export interface ContainerDependencyProperty {
     *   +  ``SUCCESS`` - This condition is the same as ``COMPLETE``, but it also requires that the container exits with a ``zero`` status. This condition can't be set on an essential container.
     *   +  ``HEALTHY`` - This condition validates that the dependent container passes its Docker health check before permitting other containers to start. This requires that the dependent container has health checks configured. This condition is confirmed only at task startup.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#condition CcDaemonTaskDefinition#condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#condition CcDaemonTaskDefinition#condition}
     */
     readonly condition?: string;
     /**
     * The name of a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#container_name CcDaemonTaskDefinition#container_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#container_name CcDaemonTaskDefinition#container_name}
     */
     readonly containerName?: string;
 }
@@ -1546,13 +1546,13 @@ export interface KeyValuePairProperty {
     /**
     * The name of the key-value pair. For environment variables, this is the name of the environment variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
     /**
     * The value of the key-value pair. For environment variables, this is the value of the environment variable.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
     */
     readonly value?: string;
 }
@@ -1662,13 +1662,13 @@ export interface EnvironmentFileProperty {
     /**
     * The file type to use. Environment files are objects in Amazon S3. The only supported value is ``s3``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#type CcDaemonTaskDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#type CcDaemonTaskDefinition#type}
     */
     readonly type?: string;
     /**
     * The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
     */
     readonly value?: string;
 }
@@ -1779,13 +1779,13 @@ export interface FirelensConfigurationProperty {
     * The options to use when configuring the log router. This field is optional and can be used to specify a custom configuration file or to add additional metadata, such as the task, task definition, cluster, and container instance details to the log event. If specified, the syntax to use is ``"options":{"enable-ecs-log-metadata":"true|false","config-file-type:"s3|file","config-file-value":"arn:aws:s3:::mybucket/fluent.conf|filepath"}``. For more information, see [Creating a task definition that uses a FireLens configuration](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html#firelens-taskdef) in the *Amazon Elastic Container Service Developer Guide*.
     *   Tasks hosted on FARGATElong only support the ``file`` configuration file type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#options CcDaemonTaskDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#options CcDaemonTaskDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
     * The log router to use. The valid values are ``fluentd`` or ``fluentbit``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#type CcDaemonTaskDefinition#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#type CcDaemonTaskDefinition#type}
     */
     readonly type?: string;
 }
@@ -1878,32 +1878,32 @@ export interface HealthCheckProperty {
     *   ``CMD-SHELL, curl -f http://localhost/ || exit 1`` 
     *  An exit code of 0 indicates success, and non-zero exit code indicates failure. For more information, see ``HealthCheck`` in the docker container create command.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#command CcDaemonTaskDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#command CcDaemonTaskDefinition#command}
     */
     readonly command?: string[];
     /**
     * The time period in seconds between each health check execution. You may specify between 5 and 300 seconds. The default value is 30 seconds. This value applies only when you specify a ``command``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#interval CcDaemonTaskDefinition#interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#interval CcDaemonTaskDefinition#interval}
     */
     readonly interval?: number;
     /**
     * The number of times to retry a failed health check before the container is considered unhealthy. You may specify between 1 and 10 retries. The default value is 3. This value applies only when you specify a ``command``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#retries CcDaemonTaskDefinition#retries}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#retries CcDaemonTaskDefinition#retries}
     */
     readonly retries?: number;
     /**
     * The optional grace period to provide containers time to bootstrap before failed health checks count towards the maximum number of retries. You can specify between 0 and 300 seconds. By default, the ``startPeriod`` is off. This value applies only when you specify a ``command``. 
     *   If a health check succeeds within the ``startPeriod``, then the container is considered healthy and any subsequent failures count toward the maximum number of retries.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#start_period CcDaemonTaskDefinition#start_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#start_period CcDaemonTaskDefinition#start_period}
     */
     readonly startPeriod?: number;
     /**
     * The time period in seconds to wait for a health check to succeed before it is considered a failure. You may specify between 2 and 60 seconds. The default value is 5. This value applies only when you specify a ``command``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#timeout CcDaemonTaskDefinition#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#timeout CcDaemonTaskDefinition#timeout}
     */
     readonly timeout?: number;
 }
@@ -2059,14 +2059,14 @@ export interface KernelCapabilitiesProperty {
     *   Tasks launched on FARGATElong only support adding the ``SYS_PTRACE`` kernel capability.
     *   Valid values: ``"ALL" | "AUDIT_CONTROL" | "AUDIT_WRITE" | "BLOCK_SUSPEND" | "CHOWN" | "DAC_OVERRIDE" | "DAC_READ_SEARCH" | "FOWNER" | "FSETID" | "IPC_LOCK" | "IPC_OWNER" | "KILL" | "LEASE" | "LINUX_IMMUTABLE" | "MAC_ADMIN" | "MAC_OVERRIDE" | "MKNOD" | "NET_ADMIN" | "NET_BIND_SERVICE" | "NET_BROADCAST" | "NET_RAW" | "SETFCAP" | "SETGID" | "SETPCAP" | "SETUID" | "SYS_ADMIN" | "SYS_BOOT" | "SYS_CHROOT" | "SYS_MODULE" | "SYS_NICE" | "SYS_PACCT" | "SYS_PTRACE" | "SYS_RAWIO" | "SYS_RESOURCE" | "SYS_TIME" | "SYS_TTY_CONFIG" | "SYSLOG" | "WAKE_ALARM"``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#add CcDaemonTaskDefinition#add}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#add CcDaemonTaskDefinition#add}
     */
     readonly add?: string[];
     /**
     * The Linux capabilities for the container that have been removed from the default configuration provided by Docker. This parameter maps to ``CapDrop`` in the docker container create command and the ``--cap-drop`` option to docker run.
     *  Valid values: ``"ALL" | "AUDIT_CONTROL" | "AUDIT_WRITE" | "BLOCK_SUSPEND" | "CHOWN" | "DAC_OVERRIDE" | "DAC_READ_SEARCH" | "FOWNER" | "FSETID" | "IPC_LOCK" | "IPC_OWNER" | "KILL" | "LEASE" | "LINUX_IMMUTABLE" | "MAC_ADMIN" | "MAC_OVERRIDE" | "MKNOD" | "NET_ADMIN" | "NET_BIND_SERVICE" | "NET_BROADCAST" | "NET_RAW" | "SETFCAP" | "SETGID" | "SETPCAP" | "SETUID" | "SYS_ADMIN" | "SYS_BOOT" | "SYS_CHROOT" | "SYS_MODULE" | "SYS_NICE" | "SYS_PACCT" | "SYS_PTRACE" | "SYS_RAWIO" | "SYS_RESOURCE" | "SYS_TIME" | "SYS_TTY_CONFIG" | "SYSLOG" | "WAKE_ALARM"``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#drop CcDaemonTaskDefinition#drop}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#drop CcDaemonTaskDefinition#drop}
     */
     readonly drop?: string[];
 }
@@ -2154,19 +2154,19 @@ export interface DeviceProperty {
     /**
     * The path inside the container at which to expose the host device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
     * The path for the device on the host container instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#host_path CcDaemonTaskDefinition#host_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#host_path CcDaemonTaskDefinition#host_path}
     */
     readonly hostPath?: string;
     /**
     * The explicit permissions to provide to the container for the device. By default, the container has permissions for ``read``, ``write``, and ``mknod`` for the device.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#permissions CcDaemonTaskDefinition#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#permissions CcDaemonTaskDefinition#permissions}
     */
     readonly permissions?: string[];
 }
@@ -2298,20 +2298,20 @@ export interface TmpfsProperty {
     /**
     * The absolute file path where the tmpfs volume is to be mounted.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
     * The list of tmpfs volume mount options.
     *  Valid values: ``"defaults" | "ro" | "rw" | "suid" | "nosuid" | "dev" | "nodev" | "exec" | "noexec" | "sync" | "async" | "dirsync" | "remount" | "mand" | "nomand" | "atime" | "noatime" | "diratime" | "nodiratime" | "bind" | "rbind" | "unbindable" | "runbindable" | "private" | "rprivate" | "shared" | "rshared" | "slave" | "rslave" | "relatime" | "norelatime" | "strictatime" | "nostrictatime" | "mode" | "uid" | "gid" | "nr_inodes" | "nr_blocks" | "mpol"``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#mount_options CcDaemonTaskDefinition#mount_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#mount_options CcDaemonTaskDefinition#mount_options}
     */
     readonly mountOptions?: string[];
     /**
     * The maximum size (in MiB) of the tmpfs volume.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#size CcDaemonTaskDefinition#size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#size CcDaemonTaskDefinition#size}
     */
     readonly size?: number;
 }
@@ -2444,26 +2444,26 @@ export interface LinuxParametersProperty {
     * The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.
     *   For tasks that use the Fargate launch type, ``capabilities`` is supported for all platform versions but the ``add`` parameter is only supported if using platform version 1.4.0 or later.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#capabilities CcDaemonTaskDefinition#capabilities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#capabilities CcDaemonTaskDefinition#capabilities}
     */
     readonly capabilities?: KernelCapabilitiesProperty;
     /**
     * Any host devices to expose to the container. This parameter maps to ``Devices`` in the docker container create command and the ``--device`` option to docker run.
     *   If you're using tasks that use the Fargate launch type, the ``devices`` parameter isn't supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#devices CcDaemonTaskDefinition#devices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#devices CcDaemonTaskDefinition#devices}
     */
     readonly devices?: DeviceProperty[] | cdktn.IResolvable;
     /**
     * Run an ``init`` process inside the container that forwards signals and reaps processes. This parameter maps to the ``--init`` option to docker run. This parameter requires version 1.25 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log in to your container instance and run the following command: ``sudo docker version --format '{{.Server.APIVersion}}'``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#init_process_enabled CcDaemonTaskDefinition#init_process_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#init_process_enabled CcDaemonTaskDefinition#init_process_enabled}
     */
     readonly initProcessEnabled?: boolean | cdktn.IResolvable;
     /**
     * The container path, mount options, and size (in MiB) of the tmpfs mount. This parameter maps to the ``--tmpfs`` option to docker run.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#tmpfs CcDaemonTaskDefinition#tmpfs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#tmpfs CcDaemonTaskDefinition#tmpfs}
     */
     readonly tmpfs?: TmpfsProperty[] | cdktn.IResolvable;
 }
@@ -2595,7 +2595,7 @@ export interface SecretProperty {
     /**
     * The name of the secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
     /**
@@ -2603,7 +2603,7 @@ export interface SecretProperty {
     *  For information about the require IAMlong permissions, see [Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-secrets.html#secrets-iam) (for Secrets Manager) or [Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-parameters.html) (for Systems Manager Parameter store) in the *Amazon Elastic Container Service Developer Guide*.
     *   If the SSM Parameter Store parameter exists in the same Region as the task you're launching, then you can use either the full ARN or name of the parameter. If the parameter exists in a different Region, then the full ARN must be specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value_from CcDaemonTaskDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value_from CcDaemonTaskDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -2718,7 +2718,7 @@ export interface LogConfigurationProperty {
     *  For more information about using the ``awsfirelens`` log driver, see [Send Amazon ECS logs to an service or Partner](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html).
     *   If you have a custom driver that isn't listed, you can fork the Amazon ECS container agent project that's [available on GitHub](https://docs.aws.amazon.com/https://github.com/aws/amazon-ecs-agent) and customize it to work with that driver. We encourage you to submit pull requests for changes that you would like to have included. However, we don't currently provide support for running modified copies of this software.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#log_driver CcDaemonTaskDefinition#log_driver}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#log_driver CcDaemonTaskDefinition#log_driver}
     */
     readonly logDriver?: string;
     /**
@@ -2735,13 +2735,13 @@ export interface LogConfigurationProperty {
     *  When you export logs to Amazon S3, you can specify the bucket using the ``bucket`` option. You can also specify ``region``, ``total_file_size``, ``upload_timeout``, and ``use_put_object`` as options.
     *  This parameter requires version 1.19 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log in to your container instance and run the following command: ``sudo docker version --format '{{.Server.APIVersion}}'``
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#options CcDaemonTaskDefinition#options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#options CcDaemonTaskDefinition#options}
     */
     readonly options?: { [key: string]: string };
     /**
     * The secrets to pass to the log configuration. For more information, see [Specifying sensitive data](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html) in the *Amazon Elastic Container Service Developer Guide*.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#secret_options CcDaemonTaskDefinition#secret_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#secret_options CcDaemonTaskDefinition#secret_options}
     */
     readonly secretOptions?: SecretProperty[] | cdktn.IResolvable;
 }
@@ -2851,19 +2851,19 @@ export interface MountPointProperty {
     /**
     * The path on the container to mount the host volume at.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#container_path CcDaemonTaskDefinition#container_path}
     */
     readonly containerPath?: string;
     /**
     * If this value is ``true``, the container has read-only access to the volume. If this value is ``false``, then the container can write to the volume. The default value is ``false``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#read_only CcDaemonTaskDefinition#read_only}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#read_only CcDaemonTaskDefinition#read_only}
     */
     readonly readOnly?: boolean | cdktn.IResolvable;
     /**
     * The name of the volume to mount. Must be a volume name referenced in the ``name`` parameter of task definition ``volume``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#source_volume CcDaemonTaskDefinition#source_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#source_volume CcDaemonTaskDefinition#source_volume}
     */
     readonly sourceVolume?: string;
 }
@@ -2996,7 +2996,7 @@ export interface RepositoryCredentialsProperty {
     * The Amazon Resource Name (ARN) of the secret containing the private repository credentials.
     *   When you use the Amazon ECS API, CLI, or AWS SDK, if the secret exists in the same Region as the task that you're launching then you can use either the full ARN or the name of the secret. When you use the AWS Management Console, you must specify the full ARN of the secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#credentials_parameter CcDaemonTaskDefinition#credentials_parameter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#credentials_parameter CcDaemonTaskDefinition#credentials_parameter}
     */
     readonly credentialsParameter?: string;
 }
@@ -3060,15 +3060,15 @@ export class RepositoryCredentialsPropertyOutputReference extends cdktn.ComplexO
 }
 export interface RestartPolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#enabled CcDaemonTaskDefinition#enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#enabled CcDaemonTaskDefinition#enabled}
     */
     readonly enabled?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#ignored_exit_codes CcDaemonTaskDefinition#ignored_exit_codes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#ignored_exit_codes CcDaemonTaskDefinition#ignored_exit_codes}
     */
     readonly ignoredExitCodes?: number[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#restart_attempt_period CcDaemonTaskDefinition#restart_attempt_period}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#restart_attempt_period CcDaemonTaskDefinition#restart_attempt_period}
     */
     readonly restartAttemptPeriod?: number;
 }
@@ -3178,7 +3178,7 @@ export interface SecretsProperty {
     /**
     * The name of the secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
     /**
@@ -3186,7 +3186,7 @@ export interface SecretsProperty {
     *  For information about the require IAMlong permissions, see [Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-secrets.html#secrets-iam) (for Secrets Manager) or [Required IAM permissions for Amazon ECS secrets](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-parameters.html) (for Systems Manager Parameter store) in the *Amazon Elastic Container Service Developer Guide*.
     *   If the SSM Parameter Store parameter exists in the same Region as the task you're launching, then you can use either the full ARN or name of the parameter. If the parameter exists in a different Region, then the full ARN must be specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value_from CcDaemonTaskDefinition#value_from}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value_from CcDaemonTaskDefinition#value_from}
     */
     readonly valueFrom?: string;
 }
@@ -3296,7 +3296,7 @@ export interface SystemControlProperty {
     /**
     * The namespaced kernel parameter to set a ``value`` for.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#namespace CcDaemonTaskDefinition#namespace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#namespace CcDaemonTaskDefinition#namespace}
     */
     readonly namespace?: string;
     /**
@@ -3305,7 +3305,7 @@ export interface SystemControlProperty {
     *  Valid network namespace values: ``Sysctls`` that start with ``"net.*"``. Only namespaced ``Sysctls`` that exist within the container starting with "net.* are accepted.
     *  All of these values are supported by Fargate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
     */
     readonly value?: string;
 }
@@ -3415,19 +3415,19 @@ export interface UlimitProperty {
     /**
     * The hard limit for the ``ulimit`` type. The value can be specified in bytes, seconds, or as a count, depending on the ``type`` of the ``ulimit``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#hard_limit CcDaemonTaskDefinition#hard_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#hard_limit CcDaemonTaskDefinition#hard_limit}
     */
     readonly hardLimit?: number;
     /**
     * The ``type`` of the ``ulimit``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
     /**
     * The soft limit for the ``ulimit`` type. The value can be specified in bytes, seconds, or as a count, depending on the ``type`` of the ``ulimit``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#soft_limit CcDaemonTaskDefinition#soft_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#soft_limit CcDaemonTaskDefinition#soft_limit}
     */
     readonly softLimit?: number;
 }
@@ -3559,175 +3559,175 @@ export interface DaemonContainerDefinitionProperty {
     /**
     * The command that's passed to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#command CcDaemonTaskDefinition#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#command CcDaemonTaskDefinition#command}
     */
     readonly command?: string[];
     /**
     * The number of ``cpu`` units reserved for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#cpu CcDaemonTaskDefinition#cpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#cpu CcDaemonTaskDefinition#cpu}
     */
     readonly cpu?: number;
     /**
     * The dependencies defined for container startup and shutdown. A container can contain multiple dependencies on other containers in a task definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#depends_on CcDaemonTaskDefinition#depends_on}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#depends_on CcDaemonTaskDefinition#depends_on}
     */
     readonly dependsOn?: ContainerDependencyProperty[] | cdktn.IResolvable;
     /**
     * The entry point that's passed to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#entry_point CcDaemonTaskDefinition#entry_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#entry_point CcDaemonTaskDefinition#entry_point}
     */
     readonly entryPoint?: string[];
     /**
     * The environment variables to pass to a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#environment CcDaemonTaskDefinition#environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#environment CcDaemonTaskDefinition#environment}
     */
     readonly environment?: KeyValuePairProperty[] | cdktn.IResolvable;
     /**
     * A list of files containing the environment variables to pass to a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#environment_files CcDaemonTaskDefinition#environment_files}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#environment_files CcDaemonTaskDefinition#environment_files}
     */
     readonly environmentFiles?: EnvironmentFileProperty[] | cdktn.IResolvable;
     /**
     * If the ``essential`` parameter of a container is marked as ``true``, and that container fails or stops for any reason, all other containers that are part of the task are stopped.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#essential CcDaemonTaskDefinition#essential}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#essential CcDaemonTaskDefinition#essential}
     */
     readonly essential?: boolean | cdktn.IResolvable;
     /**
     * The FireLens configuration for the container. This is used to specify and configure a log router for container logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#firelens_configuration CcDaemonTaskDefinition#firelens_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#firelens_configuration CcDaemonTaskDefinition#firelens_configuration}
     */
     readonly firelensConfiguration?: FirelensConfigurationProperty;
     /**
     * The container health check command and associated configuration parameters for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#health_check CcDaemonTaskDefinition#health_check}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#health_check CcDaemonTaskDefinition#health_check}
     */
     readonly healthCheck?: HealthCheckProperty;
     /**
     * The image used to start the container. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. Other repositories are specified with either ``repository-url/image:tag`` or ``repository-url/image@digest``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#image CcDaemonTaskDefinition#image}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#image CcDaemonTaskDefinition#image}
     */
     readonly image?: string;
     /**
     * When this parameter is ``true``, you can deploy containerized applications that require ``stdin`` or a ``tty`` to be allocated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#interactive CcDaemonTaskDefinition#interactive}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#interactive CcDaemonTaskDefinition#interactive}
     */
     readonly interactive?: boolean | cdktn.IResolvable;
     /**
     * Linux-specific modifications that are applied to the container configuration, such as Linux kernel capabilities.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#linux_parameters CcDaemonTaskDefinition#linux_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#linux_parameters CcDaemonTaskDefinition#linux_parameters}
     */
     readonly linuxParameters?: LinuxParametersProperty;
     /**
     * The log configuration specification for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#log_configuration CcDaemonTaskDefinition#log_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#log_configuration CcDaemonTaskDefinition#log_configuration}
     */
     readonly logConfiguration?: LogConfigurationProperty;
     /**
     * The amount (in MiB) of memory to present to the container. If the container attempts to exceed the memory specified here, the container is killed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#memory CcDaemonTaskDefinition#memory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#memory CcDaemonTaskDefinition#memory}
     */
     readonly memory?: number;
     /**
     * The soft limit (in MiB) of memory to reserve for the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#memory_reservation CcDaemonTaskDefinition#memory_reservation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#memory_reservation CcDaemonTaskDefinition#memory_reservation}
     */
     readonly memoryReservation?: number;
     /**
     * The mount points for data volumes in your container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#mount_points CcDaemonTaskDefinition#mount_points}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#mount_points CcDaemonTaskDefinition#mount_points}
     */
     readonly mountPoints?: MountPointProperty[] | cdktn.IResolvable;
     /**
     * The name of the container. Up to 255 letters (uppercase and lowercase), numbers, underscores, and hyphens are allowed.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
     /**
     * When this parameter is true, the container is given elevated privileges on the host container instance (similar to the ``root`` user).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#privileged CcDaemonTaskDefinition#privileged}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#privileged CcDaemonTaskDefinition#privileged}
     */
     readonly privileged?: boolean | cdktn.IResolvable;
     /**
     * When this parameter is ``true``, a TTY is allocated.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#pseudo_terminal CcDaemonTaskDefinition#pseudo_terminal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#pseudo_terminal CcDaemonTaskDefinition#pseudo_terminal}
     */
     readonly pseudoTerminal?: boolean | cdktn.IResolvable;
     /**
     * When this parameter is true, the container is given read-only access to its root file system.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#readonly_root_filesystem CcDaemonTaskDefinition#readonly_root_filesystem}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#readonly_root_filesystem CcDaemonTaskDefinition#readonly_root_filesystem}
     */
     readonly readonlyRootFilesystem?: boolean | cdktn.IResolvable;
     /**
     * The private repository authentication credentials to use.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#repository_credentials CcDaemonTaskDefinition#repository_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#repository_credentials CcDaemonTaskDefinition#repository_credentials}
     */
     readonly repositoryCredentials?: RepositoryCredentialsProperty;
     /**
     * The restart policy for the container. When you set up a restart policy, Amazon ECS can restart the container without needing to replace the task.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#restart_policy CcDaemonTaskDefinition#restart_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#restart_policy CcDaemonTaskDefinition#restart_policy}
     */
     readonly restartPolicy?: RestartPolicyProperty;
     /**
     * The secrets to pass to the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#secrets CcDaemonTaskDefinition#secrets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#secrets CcDaemonTaskDefinition#secrets}
     */
     readonly secrets?: SecretsProperty[] | cdktn.IResolvable;
     /**
     * Time duration (in seconds) to wait before giving up on resolving dependencies for a container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#start_timeout CcDaemonTaskDefinition#start_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#start_timeout CcDaemonTaskDefinition#start_timeout}
     */
     readonly startTimeout?: number;
     /**
     * Time duration (in seconds) to wait before the container is forcefully killed if it doesn't exit normally on its own.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#stop_timeout CcDaemonTaskDefinition#stop_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#stop_timeout CcDaemonTaskDefinition#stop_timeout}
     */
     readonly stopTimeout?: number;
     /**
     * A list of namespaced kernel parameters to set in the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#system_controls CcDaemonTaskDefinition#system_controls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#system_controls CcDaemonTaskDefinition#system_controls}
     */
     readonly systemControls?: SystemControlProperty[] | cdktn.IResolvable;
     /**
     * A list of ``ulimits`` to set in the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#ulimits CcDaemonTaskDefinition#ulimits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#ulimits CcDaemonTaskDefinition#ulimits}
     */
     readonly ulimits?: UlimitProperty[] | cdktn.IResolvable;
     /**
     * The user to use inside the container.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#user CcDaemonTaskDefinition#user}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#user CcDaemonTaskDefinition#user}
     */
     readonly user?: string;
     /**
     * The working directory to run commands inside the container in.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#working_directory CcDaemonTaskDefinition#working_directory}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#working_directory CcDaemonTaskDefinition#working_directory}
     */
     readonly workingDirectory?: string;
 }
@@ -4431,13 +4431,13 @@ export interface TagProperty {
     /**
     * One part of a key-value pair that make up a tag. A ``key`` is a general label that acts like a category for more specific tag values.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#key CcDaemonTaskDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#key CcDaemonTaskDefinition#key}
     */
     readonly key?: string;
     /**
     * The optional part of a key-value pair that make up a tag. A ``value`` acts as a descriptor within a tag category (key).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#value CcDaemonTaskDefinition#value}
     */
     readonly value?: string;
 }
@@ -4548,7 +4548,7 @@ export interface HostVolumePropertiesProperty {
     * When the ``host`` parameter is used, specify a ``sourcePath`` to declare the path on the host container instance that's presented to the container. If this parameter is empty, then the Docker daemon has assigned a host path for you. If the ``host`` parameter contains a ``sourcePath`` file location, then the data volume persists at the specified location on the host container instance until you delete it manually. If the ``sourcePath`` value doesn't exist on the host container instance, the Docker daemon creates it. If the location does exist, the contents of the source path folder are exported.
     *  If you're using the Fargate launch type, the ``sourcePath`` parameter is not supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#source_path CcDaemonTaskDefinition#source_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#source_path CcDaemonTaskDefinition#source_path}
     */
     readonly sourcePath?: string;
 }
@@ -4615,7 +4615,7 @@ export interface VolumeProperty {
     * This parameter is specified when you use bind mount host volumes. The contents of the ``host`` parameter determine whether your bind mount host volume persists on the host container instance and where it's stored. If the ``host`` parameter is empty, then the Docker daemon assigns a host path for your data volume. However, the data isn't guaranteed to persist after the containers that are associated with it stop running.
     *  Windows containers can mount whole directories on the same drive as ``$env:ProgramData``. Windows containers can't mount directories on a different drive, and mount point can't be across drives. For example, you can mount ``C:\my\path:C:\my\path`` and ``D:\:D:\``, but not ``D:\my\path:C:\my\path`` or ``D:\:C:\my\path``.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#host CcDaemonTaskDefinition#host}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#host CcDaemonTaskDefinition#host}
     */
     readonly host?: HostVolumePropertiesProperty;
     /**
@@ -4625,7 +4625,7 @@ export interface VolumeProperty {
     *  When a volume is using the ``efsVolumeConfiguration``, the name is required.
     *  When a volume is using the ``s3filesVolumeConfiguration``, the name is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/ecs_daemon_task_definition#name CcDaemonTaskDefinition#name}
     */
     readonly name?: string;
 }

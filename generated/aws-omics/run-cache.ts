@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcRunCacheProps extends cdktn.TerraformMetaArguments {
     /**
     * The default cache behavior for runs using this cache.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#cache_behavior CcRunCache#cache_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#cache_behavior CcRunCache#cache_behavior}
     */
     readonly cacheBehavior?: string;
     /**
     * The AWS account ID of the expected owner of the S3 bucket for the run cache.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#cache_bucket_owner_id CcRunCache#cache_bucket_owner_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#cache_bucket_owner_id CcRunCache#cache_bucket_owner_id}
     */
     readonly cacheBucketOwnerId?: string;
     /**
     * The S3 location for storing the cached task outputs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#cache_s3_location CcRunCache#cache_s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#cache_s3_location CcRunCache#cache_s3_location}
     */
     readonly cacheS3Location?: string;
     /**
     * A description of the run cache.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#description CcRunCache#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#description CcRunCache#description}
     */
     readonly description?: string;
     /**
     * A name for the run cache.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#name CcRunCache#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#name CcRunCache#name}
     */
     readonly name?: string;
     /**
     * Tags for the run cache.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#tags CcRunCache#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#tags CcRunCache#tags}
     */
     readonly tags?: CcRunCache.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache awscc_omics_run_cache}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache awscc_omics_run_cache}
 */
 export class CcRunCache extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcRunCache extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRunCache resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRunCache to import
-    * @param importFromId The id of the existing CcRunCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRunCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRunCache to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcRunCache extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache awscc_omics_run_cache} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache awscc_omics_run_cache} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcRunCache extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_omics_run_cache',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -329,13 +329,13 @@ export interface TagProperty {
     /**
     * The tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#key CcRunCache#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#key CcRunCache#key}
     */
     readonly key?: string;
     /**
     * The tag value.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_run_cache#value CcRunCache#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/omics_run_cache#value CcRunCache#value}
     */
     readonly value?: string;
 }

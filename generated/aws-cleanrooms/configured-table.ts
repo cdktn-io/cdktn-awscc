@@ -1,49 +1,49 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcConfiguredTableProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#allowed_columns CcConfiguredTable#allowed_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_columns CcConfiguredTable#allowed_columns}
     */
     readonly allowedColumns: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#analysis_method CcConfiguredTable#analysis_method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#analysis_method CcConfiguredTable#analysis_method}
     */
     readonly analysisMethod: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#analysis_rules CcConfiguredTable#analysis_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#analysis_rules CcConfiguredTable#analysis_rules}
     */
     readonly analysisRules?: CcConfiguredTable.AnalysisRuleProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#description CcConfiguredTable#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#description CcConfiguredTable#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#name CcConfiguredTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#name CcConfiguredTable#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#selected_analysis_methods CcConfiguredTable#selected_analysis_methods}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#selected_analysis_methods CcConfiguredTable#selected_analysis_methods}
     */
     readonly selectedAnalysisMethods?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#table_reference CcConfiguredTable#table_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#table_reference CcConfiguredTable#table_reference}
     */
     readonly tableReference: CcConfiguredTable.TableReferenceProperty;
     /**
     * An arbitrary set of tags (key-value pairs) for this cleanrooms collaboration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#tags CcConfiguredTable#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#tags CcConfiguredTable#tags}
     */
     readonly tags?: CcConfiguredTable.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table awscc_cleanrooms_configured_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table awscc_cleanrooms_configured_table}
 */
 export class CcConfiguredTable extends cdktn.TerraformResource {
 
@@ -59,7 +59,7 @@ export class CcConfiguredTable extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfiguredTable resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfiguredTable to import
-    * @param importFromId The id of the existing CcConfiguredTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfiguredTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfiguredTable to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +71,7 @@ export class CcConfiguredTable extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table awscc_cleanrooms_configured_table} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table awscc_cleanrooms_configured_table} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class CcConfiguredTable extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cleanrooms_configured_table',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -471,6 +471,138 @@ export function ccConfiguredTableAnalysisRuleAggregationPropertyToHclTerraform(s
 }
 
 
+export function ccConfiguredTableOutputColumnThresholdsPropertyToTerraform(struct?: CcConfiguredTable.OutputColumnThresholdsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        minimum_identity_count: cdktn.numberToTerraform(struct!.minimumIdentityCount),
+        output_column_name: cdktn.stringToTerraform(struct!.outputColumnName),
+    }
+}
+
+
+export function ccConfiguredTableOutputColumnThresholdsPropertyToHclTerraform(struct?: CcConfiguredTable.OutputColumnThresholdsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        minimum_identity_count: {
+            value: cdktn.numberToHclTerraform(struct!.minimumIdentityCount),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        output_column_name: {
+            value: cdktn.stringToHclTerraform(struct!.outputColumnName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccConfiguredTableAggregationThresholdsPropertyToTerraform(struct?: CcConfiguredTable.AggregationThresholdsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        allowed_aggregate_expression_type: cdktn.stringToTerraform(struct!.allowedAggregateExpressionType),
+        identity_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityColumns),
+        minimum_identity_count: cdktn.numberToTerraform(struct!.minimumIdentityCount),
+        output_column_thresholds: cdktn.listMapper(ccConfiguredTableOutputColumnThresholdsPropertyToTerraform, false)(struct!.outputColumnThresholds),
+        type: cdktn.stringToTerraform(struct!.type),
+    }
+}
+
+
+export function ccConfiguredTableAggregationThresholdsPropertyToHclTerraform(struct?: CcConfiguredTable.AggregationThresholdsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        allowed_aggregate_expression_type: {
+            value: cdktn.stringToHclTerraform(struct!.allowedAggregateExpressionType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        identity_columns: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityColumns),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        minimum_identity_count: {
+            value: cdktn.numberToHclTerraform(struct!.minimumIdentityCount),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        output_column_thresholds: {
+            value: cdktn.listMapperHcl(ccConfiguredTableOutputColumnThresholdsPropertyToHclTerraform, false)(struct!.outputColumnThresholds),
+            isBlock: true,
+            type: "list",
+            storageClassType: "OutputColumnThresholdsPropertyList",
+        },
+        type: {
+            value: cdktn.stringToHclTerraform(struct!.type),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccConfiguredTableComparisonControlsPropertyToTerraform(struct?: CcConfiguredTable.ComparisonControlsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        allowed_column_comparison_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedColumnComparisonColumns),
+        allowed_literal_comparison_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedLiteralComparisonColumns),
+    }
+}
+
+
+export function ccConfiguredTableComparisonControlsPropertyToHclTerraform(struct?: CcConfiguredTable.ComparisonControlsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        allowed_column_comparison_columns: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedColumnComparisonColumns),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        allowed_literal_comparison_columns: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedLiteralComparisonColumns),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccConfiguredTableDifferentialPrivacyColumnPropertyToTerraform(struct?: CcConfiguredTable.DifferentialPrivacyColumnProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -538,8 +670,10 @@ export function ccConfiguredTableAnalysisRuleCustomPropertyToTerraform(struct?: 
     }
     return {
         additional_analyses: cdktn.stringToTerraform(struct!.additionalAnalyses),
+        aggregation_thresholds: cdktn.listMapper(ccConfiguredTableAggregationThresholdsPropertyToTerraform, false)(struct!.aggregationThresholds),
         allowed_analyses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAnalyses),
         allowed_analysis_providers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAnalysisProviders),
+        comparison_controls: ccConfiguredTableComparisonControlsPropertyToTerraform(struct!.comparisonControls),
         differential_privacy: ccConfiguredTableDifferentialPrivacyPropertyToTerraform(struct!.differentialPrivacy),
         disallowed_output_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.disallowedOutputColumns),
     }
@@ -558,6 +692,12 @@ export function ccConfiguredTableAnalysisRuleCustomPropertyToHclTerraform(struct
             type: "simple",
             storageClassType: "string",
         },
+        aggregation_thresholds: {
+            value: cdktn.listMapperHcl(ccConfiguredTableAggregationThresholdsPropertyToHclTerraform, false)(struct!.aggregationThresholds),
+            isBlock: true,
+            type: "list",
+            storageClassType: "AggregationThresholdsPropertyList",
+        },
         allowed_analyses: {
             value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAnalyses),
             isBlock: false,
@@ -569,6 +709,12 @@ export function ccConfiguredTableAnalysisRuleCustomPropertyToHclTerraform(struct
             isBlock: false,
             type: "list",
             storageClassType: "stringList",
+        },
+        comparison_controls: {
+            value: ccConfiguredTableComparisonControlsPropertyToHclTerraform(struct!.comparisonControls),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ComparisonControlsProperty",
         },
         differential_privacy: {
             value: ccConfiguredTableDifferentialPrivacyPropertyToHclTerraform(struct!.differentialPrivacy),
@@ -1076,11 +1222,11 @@ export function ccConfiguredTableTagPropertyToHclTerraform(struct?: CcConfigured
 export namespace CcConfiguredTable {
 export interface AggregateColumnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#column_names CcConfiguredTable#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#column_names CcConfiguredTable#column_names}
     */
     readonly columnNames?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#function CcConfiguredTable#function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#function CcConfiguredTable#function}
     */
     readonly function?: string;
 }
@@ -1188,15 +1334,15 @@ export class AggregateColumnPropertyList extends cdktn.ComplexList {
 }
 export interface AggregationConstraintProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#column_name CcConfiguredTable#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#column_name CcConfiguredTable#column_name}
     */
     readonly columnName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#minimum CcConfiguredTable#minimum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#minimum CcConfiguredTable#minimum}
     */
     readonly minimum?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#type CcConfiguredTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#type CcConfiguredTable#type}
     */
     readonly type?: string;
 }
@@ -1326,35 +1472,35 @@ export class AggregationConstraintPropertyList extends cdktn.ComplexList {
 }
 export interface AnalysisRuleAggregationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
     */
     readonly additionalAnalyses?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#aggregate_columns CcConfiguredTable#aggregate_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#aggregate_columns CcConfiguredTable#aggregate_columns}
     */
     readonly aggregateColumns?: AggregateColumnProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#allowed_join_operators CcConfiguredTable#allowed_join_operators}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_join_operators CcConfiguredTable#allowed_join_operators}
     */
     readonly allowedJoinOperators?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#dimension_columns CcConfiguredTable#dimension_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#dimension_columns CcConfiguredTable#dimension_columns}
     */
     readonly dimensionColumns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#join_columns CcConfiguredTable#join_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#join_columns CcConfiguredTable#join_columns}
     */
     readonly joinColumns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#join_required CcConfiguredTable#join_required}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#join_required CcConfiguredTable#join_required}
     */
     readonly joinRequired?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#output_constraints CcConfiguredTable#output_constraints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#output_constraints CcConfiguredTable#output_constraints}
     */
     readonly outputConstraints?: AggregationConstraintProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#scalar_functions CcConfiguredTable#scalar_functions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#scalar_functions CcConfiguredTable#scalar_functions}
     */
     readonly scalarFunctions?: string[];
 }
@@ -1570,9 +1716,401 @@ export class AnalysisRuleAggregationPropertyOutputReference extends cdktn.Comple
         return this._scalarFunctions;
     }
 }
+export interface OutputColumnThresholdsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#minimum_identity_count CcConfiguredTable#minimum_identity_count}
+    */
+    readonly minimumIdentityCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#output_column_name CcConfiguredTable#output_column_name}
+    */
+    readonly outputColumnName?: string;
+}
+export class OutputColumnThresholdsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): OutputColumnThresholdsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._minimumIdentityCount !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.minimumIdentityCount = this._minimumIdentityCount;
+        }
+        if (this._outputColumnName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.outputColumnName = this._outputColumnName;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: OutputColumnThresholdsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._minimumIdentityCount = undefined;
+            this._outputColumnName = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._minimumIdentityCount = value.minimumIdentityCount;
+            this._outputColumnName = value.outputColumnName;
+        }
+    }
+
+    // minimum_identity_count - computed: true, optional: true, required: false
+    private _minimumIdentityCount?: number; 
+    public get minimumIdentityCount() {
+        return this.getNumberAttribute('minimum_identity_count');
+    }
+    public set minimumIdentityCount(value: number) {
+        this._minimumIdentityCount = value;
+    }
+    public resetMinimumIdentityCount() {
+        this._minimumIdentityCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get minimumIdentityCountInput() {
+        return this._minimumIdentityCount;
+    }
+
+    // output_column_name - computed: true, optional: true, required: false
+    private _outputColumnName?: string; 
+    public get outputColumnName() {
+        return this.getStringAttribute('output_column_name');
+    }
+    public set outputColumnName(value: string) {
+        this._outputColumnName = value;
+    }
+    public resetOutputColumnName() {
+        this._outputColumnName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get outputColumnNameInput() {
+        return this._outputColumnName;
+    }
+}
+
+export class OutputColumnThresholdsPropertyList extends cdktn.ComplexList {
+    public internalValue? : OutputColumnThresholdsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): OutputColumnThresholdsPropertyOutputReference {
+        return new OutputColumnThresholdsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface AggregationThresholdsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_aggregate_expression_type CcConfiguredTable#allowed_aggregate_expression_type}
+    */
+    readonly allowedAggregateExpressionType?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#identity_columns CcConfiguredTable#identity_columns}
+    */
+    readonly identityColumns?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#minimum_identity_count CcConfiguredTable#minimum_identity_count}
+    */
+    readonly minimumIdentityCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#output_column_thresholds CcConfiguredTable#output_column_thresholds}
+    */
+    readonly outputColumnThresholds?: OutputColumnThresholdsProperty[] | cdktn.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#type CcConfiguredTable#type}
+    */
+    readonly type?: string;
+}
+export class AggregationThresholdsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): AggregationThresholdsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._allowedAggregateExpressionType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.allowedAggregateExpressionType = this._allowedAggregateExpressionType;
+        }
+        if (this._identityColumns !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.identityColumns = this._identityColumns;
+        }
+        if (this._minimumIdentityCount !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.minimumIdentityCount = this._minimumIdentityCount;
+        }
+        if (this._outputColumnThresholds?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.outputColumnThresholds = this._outputColumnThresholds?.internalValue;
+        }
+        if (this._type !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.type = this._type;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AggregationThresholdsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._allowedAggregateExpressionType = undefined;
+            this._identityColumns = undefined;
+            this._minimumIdentityCount = undefined;
+            this._outputColumnThresholds.internalValue = undefined;
+            this._type = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._allowedAggregateExpressionType = value.allowedAggregateExpressionType;
+            this._identityColumns = value.identityColumns;
+            this._minimumIdentityCount = value.minimumIdentityCount;
+            this._outputColumnThresholds.internalValue = value.outputColumnThresholds;
+            this._type = value.type;
+        }
+    }
+
+    // allowed_aggregate_expression_type - computed: true, optional: true, required: false
+    private _allowedAggregateExpressionType?: string; 
+    public get allowedAggregateExpressionType() {
+        return this.getStringAttribute('allowed_aggregate_expression_type');
+    }
+    public set allowedAggregateExpressionType(value: string) {
+        this._allowedAggregateExpressionType = value;
+    }
+    public resetAllowedAggregateExpressionType() {
+        this._allowedAggregateExpressionType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allowedAggregateExpressionTypeInput() {
+        return this._allowedAggregateExpressionType;
+    }
+
+    // identity_columns - computed: true, optional: true, required: false
+    private _identityColumns?: string[]; 
+    public get identityColumns() {
+        return this.getListAttribute('identity_columns');
+    }
+    public set identityColumns(value: string[]) {
+        this._identityColumns = value;
+    }
+    public resetIdentityColumns() {
+        this._identityColumns = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get identityColumnsInput() {
+        return this._identityColumns;
+    }
+
+    // minimum_identity_count - computed: true, optional: true, required: false
+    private _minimumIdentityCount?: number; 
+    public get minimumIdentityCount() {
+        return this.getNumberAttribute('minimum_identity_count');
+    }
+    public set minimumIdentityCount(value: number) {
+        this._minimumIdentityCount = value;
+    }
+    public resetMinimumIdentityCount() {
+        this._minimumIdentityCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get minimumIdentityCountInput() {
+        return this._minimumIdentityCount;
+    }
+
+    // output_column_thresholds - computed: true, optional: true, required: false
+    private _outputColumnThresholds = new OutputColumnThresholdsPropertyList(this, "output_column_thresholds", false);
+    public get outputColumnThresholds() {
+        return this._outputColumnThresholds;
+    }
+    public putOutputColumnThresholds(value: OutputColumnThresholdsProperty[] | cdktn.IResolvable) {
+        this._outputColumnThresholds.internalValue = value;
+    }
+    public resetOutputColumnThresholds() {
+        this._outputColumnThresholds.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get outputColumnThresholdsInput() {
+        return this._outputColumnThresholds.internalValue;
+    }
+
+    // type - computed: true, optional: true, required: false
+    private _type?: string; 
+    public get type() {
+        return this.getStringAttribute('type');
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+    public resetType() {
+        this._type = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get typeInput() {
+        return this._type;
+    }
+}
+
+export class AggregationThresholdsPropertyList extends cdktn.ComplexList {
+    public internalValue? : AggregationThresholdsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): AggregationThresholdsPropertyOutputReference {
+        return new AggregationThresholdsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface ComparisonControlsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_column_comparison_columns CcConfiguredTable#allowed_column_comparison_columns}
+    */
+    readonly allowedColumnComparisonColumns?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_literal_comparison_columns CcConfiguredTable#allowed_literal_comparison_columns}
+    */
+    readonly allowedLiteralComparisonColumns?: string[];
+}
+export class ComparisonControlsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ComparisonControlsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._allowedColumnComparisonColumns !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.allowedColumnComparisonColumns = this._allowedColumnComparisonColumns;
+        }
+        if (this._allowedLiteralComparisonColumns !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.allowedLiteralComparisonColumns = this._allowedLiteralComparisonColumns;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ComparisonControlsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._allowedColumnComparisonColumns = undefined;
+            this._allowedLiteralComparisonColumns = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._allowedColumnComparisonColumns = value.allowedColumnComparisonColumns;
+            this._allowedLiteralComparisonColumns = value.allowedLiteralComparisonColumns;
+        }
+    }
+
+    // allowed_column_comparison_columns - computed: true, optional: true, required: false
+    private _allowedColumnComparisonColumns?: string[]; 
+    public get allowedColumnComparisonColumns() {
+        return this.getListAttribute('allowed_column_comparison_columns');
+    }
+    public set allowedColumnComparisonColumns(value: string[]) {
+        this._allowedColumnComparisonColumns = value;
+    }
+    public resetAllowedColumnComparisonColumns() {
+        this._allowedColumnComparisonColumns = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allowedColumnComparisonColumnsInput() {
+        return this._allowedColumnComparisonColumns;
+    }
+
+    // allowed_literal_comparison_columns - computed: true, optional: true, required: false
+    private _allowedLiteralComparisonColumns?: string[]; 
+    public get allowedLiteralComparisonColumns() {
+        return this.getListAttribute('allowed_literal_comparison_columns');
+    }
+    public set allowedLiteralComparisonColumns(value: string[]) {
+        this._allowedLiteralComparisonColumns = value;
+    }
+    public resetAllowedLiteralComparisonColumns() {
+        this._allowedLiteralComparisonColumns = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allowedLiteralComparisonColumnsInput() {
+        return this._allowedLiteralComparisonColumns;
+    }
+}
 export interface DifferentialPrivacyColumnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#name CcConfiguredTable#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#name CcConfiguredTable#name}
     */
     readonly name?: string;
 }
@@ -1658,7 +2196,7 @@ export class DifferentialPrivacyColumnPropertyList extends cdktn.ComplexList {
 }
 export interface DifferentialPrivacyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#columns CcConfiguredTable#columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#columns CcConfiguredTable#columns}
     */
     readonly columns?: DifferentialPrivacyColumnProperty[] | cdktn.IResolvable;
 }
@@ -1722,23 +2260,31 @@ export class DifferentialPrivacyPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AnalysisRuleCustomProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
     */
     readonly additionalAnalyses?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#allowed_analyses CcConfiguredTable#allowed_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#aggregation_thresholds CcConfiguredTable#aggregation_thresholds}
+    */
+    readonly aggregationThresholds?: AggregationThresholdsProperty[] | cdktn.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_analyses CcConfiguredTable#allowed_analyses}
     */
     readonly allowedAnalyses?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#allowed_analysis_providers CcConfiguredTable#allowed_analysis_providers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_analysis_providers CcConfiguredTable#allowed_analysis_providers}
     */
     readonly allowedAnalysisProviders?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#differential_privacy CcConfiguredTable#differential_privacy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#comparison_controls CcConfiguredTable#comparison_controls}
+    */
+    readonly comparisonControls?: ComparisonControlsProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#differential_privacy CcConfiguredTable#differential_privacy}
     */
     readonly differentialPrivacy?: DifferentialPrivacyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#disallowed_output_columns CcConfiguredTable#disallowed_output_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#disallowed_output_columns CcConfiguredTable#disallowed_output_columns}
     */
     readonly disallowedOutputColumns?: string[];
 }
@@ -1764,6 +2310,10 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
             hasAnyValues = true;
             internalValueResult.additionalAnalyses = this._additionalAnalyses;
         }
+        if (this._aggregationThresholds?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.aggregationThresholds = this._aggregationThresholds?.internalValue;
+        }
         if (this._allowedAnalyses !== undefined) {
             hasAnyValues = true;
             internalValueResult.allowedAnalyses = this._allowedAnalyses;
@@ -1771,6 +2321,10 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
         if (this._allowedAnalysisProviders !== undefined) {
             hasAnyValues = true;
             internalValueResult.allowedAnalysisProviders = this._allowedAnalysisProviders;
+        }
+        if (this._comparisonControls?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.comparisonControls = this._comparisonControls?.internalValue;
         }
         if (this._differentialPrivacy?.internalValue !== undefined) {
             hasAnyValues = true;
@@ -1788,8 +2342,10 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._additionalAnalyses = undefined;
+            this._aggregationThresholds.internalValue = undefined;
             this._allowedAnalyses = undefined;
             this._allowedAnalysisProviders = undefined;
+            this._comparisonControls.internalValue = undefined;
             this._differentialPrivacy.internalValue = undefined;
             this._disallowedOutputColumns = undefined;
         }
@@ -1801,8 +2357,10 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._additionalAnalyses = value.additionalAnalyses;
+            this._aggregationThresholds.internalValue = value.aggregationThresholds;
             this._allowedAnalyses = value.allowedAnalyses;
             this._allowedAnalysisProviders = value.allowedAnalysisProviders;
+            this._comparisonControls.internalValue = value.comparisonControls;
             this._differentialPrivacy.internalValue = value.differentialPrivacy;
             this._disallowedOutputColumns = value.disallowedOutputColumns;
         }
@@ -1822,6 +2380,22 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
     // Temporarily expose input value. Use with caution.
     public get additionalAnalysesInput() {
         return this._additionalAnalyses;
+    }
+
+    // aggregation_thresholds - computed: true, optional: true, required: false
+    private _aggregationThresholds = new AggregationThresholdsPropertyList(this, "aggregation_thresholds", false);
+    public get aggregationThresholds() {
+        return this._aggregationThresholds;
+    }
+    public putAggregationThresholds(value: AggregationThresholdsProperty[] | cdktn.IResolvable) {
+        this._aggregationThresholds.internalValue = value;
+    }
+    public resetAggregationThresholds() {
+        this._aggregationThresholds.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get aggregationThresholdsInput() {
+        return this._aggregationThresholds.internalValue;
     }
 
     // allowed_analyses - computed: true, optional: true, required: false
@@ -1854,6 +2428,22 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
     // Temporarily expose input value. Use with caution.
     public get allowedAnalysisProvidersInput() {
         return this._allowedAnalysisProviders;
+    }
+
+    // comparison_controls - computed: true, optional: true, required: false
+    private _comparisonControls = new ComparisonControlsPropertyOutputReference(this, "comparison_controls");
+    public get comparisonControls() {
+        return this._comparisonControls;
+    }
+    public putComparisonControls(value: ComparisonControlsProperty) {
+        this._comparisonControls.internalValue = value;
+    }
+    public resetComparisonControls() {
+        this._comparisonControls.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get comparisonControlsInput() {
+        return this._comparisonControls.internalValue;
     }
 
     // differential_privacy - computed: true, optional: true, required: false
@@ -1890,19 +2480,19 @@ export class AnalysisRuleCustomPropertyOutputReference extends cdktn.ComplexObje
 }
 export interface AnalysisRuleListProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#additional_analyses CcConfiguredTable#additional_analyses}
     */
     readonly additionalAnalyses?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#allowed_join_operators CcConfiguredTable#allowed_join_operators}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#allowed_join_operators CcConfiguredTable#allowed_join_operators}
     */
     readonly allowedJoinOperators?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#join_columns CcConfiguredTable#join_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#join_columns CcConfiguredTable#join_columns}
     */
     readonly joinColumns?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#list_columns CcConfiguredTable#list_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#list_columns CcConfiguredTable#list_columns}
     */
     readonly listColumns?: string[];
 }
@@ -2032,15 +2622,15 @@ export class AnalysisRuleListPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ConfiguredTableAnalysisRulePolicyV1Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#aggregation CcConfiguredTable#aggregation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#aggregation CcConfiguredTable#aggregation}
     */
     readonly aggregation?: AnalysisRuleAggregationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#custom CcConfiguredTable#custom}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#custom CcConfiguredTable#custom}
     */
     readonly custom?: AnalysisRuleCustomProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#list CcConfiguredTable#list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#list CcConfiguredTable#list}
     */
     readonly list?: AnalysisRuleListProperty;
 }
@@ -2148,7 +2738,7 @@ export class ConfiguredTableAnalysisRulePolicyV1PropertyOutputReference extends 
 }
 export interface ConfiguredTableAnalysisRulePolicyProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#v1 CcConfiguredTable#v1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#v1 CcConfiguredTable#v1}
     */
     readonly v1?: ConfiguredTableAnalysisRulePolicyV1Property;
 }
@@ -2212,11 +2802,11 @@ export class ConfiguredTableAnalysisRulePolicyPropertyOutputReference extends cd
 }
 export interface AnalysisRuleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#policy CcConfiguredTable#policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#policy CcConfiguredTable#policy}
     */
     readonly policy?: ConfiguredTableAnalysisRulePolicyProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#type CcConfiguredTable#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#type CcConfiguredTable#type}
     */
     readonly type?: string;
 }
@@ -2324,27 +2914,27 @@ export class AnalysisRulePropertyList extends cdktn.ComplexList {
 }
 export interface AthenaTableReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#catalog_name CcConfiguredTable#catalog_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#catalog_name CcConfiguredTable#catalog_name}
     */
     readonly catalogName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#output_location CcConfiguredTable#output_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#output_location CcConfiguredTable#output_location}
     */
     readonly outputLocation?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#region CcConfiguredTable#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#region CcConfiguredTable#region}
     */
     readonly region?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#work_group CcConfiguredTable#work_group}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#work_group CcConfiguredTable#work_group}
     */
     readonly workGroup?: string;
 }
@@ -2518,15 +3108,15 @@ export class AthenaTableReferencePropertyOutputReference extends cdktn.ComplexOb
 }
 export interface GlueTableReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#region CcConfiguredTable#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#region CcConfiguredTable#region}
     */
     readonly region?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
     */
     readonly tableName?: string;
 }
@@ -2634,11 +3224,11 @@ export class GlueTableReferencePropertyOutputReference extends cdktn.ComplexObje
 }
 export interface SnowflakeTableSchemaV1Property {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#column_name CcConfiguredTable#column_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#column_name CcConfiguredTable#column_name}
     */
     readonly columnName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#column_type CcConfiguredTable#column_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#column_type CcConfiguredTable#column_type}
     */
     readonly columnType?: string;
 }
@@ -2746,7 +3336,7 @@ export class SnowflakeTableSchemaV1PropertyList extends cdktn.ComplexList {
 }
 export interface SnowflakeTableSchemaProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#v1 CcConfiguredTable#v1}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#v1 CcConfiguredTable#v1}
     */
     readonly v1?: SnowflakeTableSchemaV1Property[] | cdktn.IResolvable;
 }
@@ -2810,27 +3400,27 @@ export class SnowflakeTableSchemaPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface SnowflakeTableReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#account_identifier CcConfiguredTable#account_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#account_identifier CcConfiguredTable#account_identifier}
     */
     readonly accountIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#database_name CcConfiguredTable#database_name}
     */
     readonly databaseName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#schema_name CcConfiguredTable#schema_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#schema_name CcConfiguredTable#schema_name}
     */
     readonly schemaName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#secret_arn CcConfiguredTable#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#secret_arn CcConfiguredTable#secret_arn}
     */
     readonly secretArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#table_name CcConfiguredTable#table_name}
     */
     readonly tableName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#table_schema CcConfiguredTable#table_schema}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#table_schema CcConfiguredTable#table_schema}
     */
     readonly tableSchema?: SnowflakeTableSchemaProperty;
 }
@@ -3004,15 +3594,15 @@ export class SnowflakeTableReferencePropertyOutputReference extends cdktn.Comple
 }
 export interface TableReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#athena CcConfiguredTable#athena}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#athena CcConfiguredTable#athena}
     */
     readonly athena?: AthenaTableReferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#glue CcConfiguredTable#glue}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#glue CcConfiguredTable#glue}
     */
     readonly glue?: GlueTableReferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#snowflake CcConfiguredTable#snowflake}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#snowflake CcConfiguredTable#snowflake}
     */
     readonly snowflake?: SnowflakeTableReferenceProperty;
 }
@@ -3120,11 +3710,11 @@ export class TableReferencePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#key CcConfiguredTable#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#key CcConfiguredTable#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cleanrooms_configured_table#value CcConfiguredTable#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/cleanrooms_configured_table#value CcConfiguredTable#value}
     */
     readonly value?: string;
 }

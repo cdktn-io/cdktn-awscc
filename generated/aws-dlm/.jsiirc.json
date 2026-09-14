@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_dlm"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.DLM"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.dlm"
+    }
+  }
+}

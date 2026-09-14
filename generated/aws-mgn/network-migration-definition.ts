@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcNetworkMigrationDefinitionProps extends cdktn.TerraformMetaAr
     /**
     * A description of the network migration definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#description CcNetworkMigrationDefinition#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#description CcNetworkMigrationDefinition#description}
     */
     readonly description?: string;
     /**
     * The name of the network migration definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#name CcNetworkMigrationDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#name CcNetworkMigrationDefinition#name}
     */
     readonly name: string;
     /**
     * Scope tags for the network migration definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#scope_tags CcNetworkMigrationDefinition#scope_tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#scope_tags CcNetworkMigrationDefinition#scope_tags}
     */
     readonly scopeTags?: { [key: string]: string };
     /**
     * A list of source configurations for the network migration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#source_configurations CcNetworkMigrationDefinition#source_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#source_configurations CcNetworkMigrationDefinition#source_configurations}
     */
     readonly sourceConfigurations: CcNetworkMigrationDefinition.SourceConfigurationProperty[] | cdktn.IResolvable;
     /**
     * Tags to assign to the network migration definition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#tags CcNetworkMigrationDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#tags CcNetworkMigrationDefinition#tags}
     */
     readonly tags?: CcNetworkMigrationDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * The target deployment configuration for the migrated network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#target_deployment CcNetworkMigrationDefinition#target_deployment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#target_deployment CcNetworkMigrationDefinition#target_deployment}
     */
     readonly targetDeployment?: string;
     /**
     * The target network configuration including topology and CIDR ranges.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#target_network CcNetworkMigrationDefinition#target_network}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#target_network CcNetworkMigrationDefinition#target_network}
     */
     readonly targetNetwork: CcNetworkMigrationDefinition.TargetNetworkProperty;
     /**
     * The S3 configuration for storing the target network artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#target_s3_configuration CcNetworkMigrationDefinition#target_s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#target_s3_configuration CcNetworkMigrationDefinition#target_s3_configuration}
     */
     readonly targetS3Configuration: CcNetworkMigrationDefinition.TargetS3ConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition awscc_mgn_network_migration_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition awscc_mgn_network_migration_definition}
 */
 export class CcNetworkMigrationDefinition extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcNetworkMigrationDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcNetworkMigrationDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcNetworkMigrationDefinition to import
-    * @param importFromId The id of the existing CcNetworkMigrationDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcNetworkMigrationDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcNetworkMigrationDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcNetworkMigrationDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition awscc_mgn_network_migration_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition awscc_mgn_network_migration_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcNetworkMigrationDefinition extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_mgn_network_migration_definition',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -546,19 +546,19 @@ export interface SourceS3ConfigurationProperty {
     /**
     * The name of the S3 bucket containing source data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#s3_bucket CcNetworkMigrationDefinition#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#s3_bucket CcNetworkMigrationDefinition#s3_bucket}
     */
     readonly s3Bucket: string;
     /**
     * The AWS account ID of the S3 bucket owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#s3_bucket_owner CcNetworkMigrationDefinition#s3_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#s3_bucket_owner CcNetworkMigrationDefinition#s3_bucket_owner}
     */
     readonly s3BucketOwner: string;
     /**
     * The S3 key (path) for the source data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#s3_key CcNetworkMigrationDefinition#s3_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#s3_key CcNetworkMigrationDefinition#s3_key}
     */
     readonly s3Key: string;
 }
@@ -659,13 +659,13 @@ export interface SourceConfigurationProperty {
     /**
     * The source environment type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#source_environment CcNetworkMigrationDefinition#source_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#source_environment CcNetworkMigrationDefinition#source_environment}
     */
     readonly sourceEnvironment: string;
     /**
     * S3 configuration for source network data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#source_s3_configuration CcNetworkMigrationDefinition#source_s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#source_s3_configuration CcNetworkMigrationDefinition#source_s3_configuration}
     */
     readonly sourceS3Configuration: SourceS3ConfigurationProperty;
 }
@@ -769,13 +769,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#key CcNetworkMigrationDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#key CcNetworkMigrationDefinition#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#value CcNetworkMigrationDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#value CcNetworkMigrationDefinition#value}
     */
     readonly value?: string;
 }
@@ -885,25 +885,25 @@ export interface TargetNetworkProperty {
     /**
     * The CIDR block for inbound traffic in the target network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#inbound_cidr CcNetworkMigrationDefinition#inbound_cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#inbound_cidr CcNetworkMigrationDefinition#inbound_cidr}
     */
     readonly inboundCidr?: string;
     /**
     * The CIDR block for inspection traffic in the target network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#inspection_cidr CcNetworkMigrationDefinition#inspection_cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#inspection_cidr CcNetworkMigrationDefinition#inspection_cidr}
     */
     readonly inspectionCidr?: string;
     /**
     * The CIDR block for outbound traffic in the target network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#outbound_cidr CcNetworkMigrationDefinition#outbound_cidr}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#outbound_cidr CcNetworkMigrationDefinition#outbound_cidr}
     */
     readonly outboundCidr?: string;
     /**
     * The network topology type for the target environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#topology CcNetworkMigrationDefinition#topology}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#topology CcNetworkMigrationDefinition#topology}
     */
     readonly topology: string;
 }
@@ -1032,13 +1032,13 @@ export interface TargetS3ConfigurationProperty {
     /**
     * The name of the S3 bucket for target artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#s3_bucket CcNetworkMigrationDefinition#s3_bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#s3_bucket CcNetworkMigrationDefinition#s3_bucket}
     */
     readonly s3Bucket: string;
     /**
     * The AWS account ID of the S3 bucket owner.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mgn_network_migration_definition#s3_bucket_owner CcNetworkMigrationDefinition#s3_bucket_owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/mgn_network_migration_definition#s3_bucket_owner CcNetworkMigrationDefinition#s3_bucket_owner}
     */
     readonly s3BucketOwner: string;
 }

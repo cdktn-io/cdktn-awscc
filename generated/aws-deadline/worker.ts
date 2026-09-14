@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcWorkerProps extends cdktn.TerraformMetaArguments {
     /**
     * The farm ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#farm_id CcWorker#farm_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#farm_id CcWorker#farm_id}
     */
     readonly farmId: string;
     /**
     * The fleet ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#fleet_id CcWorker#fleet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#fleet_id CcWorker#fleet_id}
     */
     readonly fleetId: string;
     /**
     * The IP address and host name of the worker.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#host_properties CcWorker#host_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#host_properties CcWorker#host_properties}
     */
     readonly hostProperties?: CcWorker.HostPropertiesRequestProperty;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#tags CcWorker#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#tags CcWorker#tags}
     */
     readonly tags?: CcWorker.TagsItemsProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker awscc_deadline_worker}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker awscc_deadline_worker}
 */
 export class CcWorker extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcWorker extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcWorker resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcWorker to import
-    * @param importFromId The id of the existing CcWorker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcWorker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcWorker to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcWorker extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker awscc_deadline_worker} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker awscc_deadline_worker} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcWorker extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_deadline_worker',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -342,13 +342,13 @@ export interface IpAddressesProperty {
     /**
     * The IpV4 address of the network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#ip_v4_addresses CcWorker#ip_v4_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#ip_v4_addresses CcWorker#ip_v4_addresses}
     */
     readonly ipV4Addresses?: string[];
     /**
     * The IpV6 address for the network and node component.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#ip_v6_addresses CcWorker#ip_v6_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#ip_v6_addresses CcWorker#ip_v6_addresses}
     */
     readonly ipV6Addresses?: string[];
 }
@@ -436,13 +436,13 @@ export interface HostPropertiesRequestProperty {
     /**
     * The host name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#host_name CcWorker#host_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#host_name CcWorker#host_name}
     */
     readonly hostName?: string;
     /**
     * The IP addresses for a host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#ip_addresses CcWorker#ip_addresses}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#ip_addresses CcWorker#ip_addresses}
     */
     readonly ipAddresses?: IpAddressesProperty;
 }
@@ -528,11 +528,11 @@ export class HostPropertiesRequestPropertyOutputReference extends cdktn.ComplexO
 }
 export interface TagsItemsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#key CcWorker#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#key CcWorker#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/deadline_worker#value CcWorker#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/deadline_worker#value CcWorker#value}
     */
     readonly value?: string;
 }

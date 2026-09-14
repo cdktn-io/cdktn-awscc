@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime
+// https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,85 @@ export interface CcRuntimeProps extends cdktn.TerraformMetaArguments {
     /**
     * The artifact of the agent
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#agent_runtime_artifact CcRuntime#agent_runtime_artifact}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#agent_runtime_artifact CcRuntime#agent_runtime_artifact}
     */
     readonly agentRuntimeArtifact: CcRuntime.AgentRuntimeArtifactProperty;
     /**
     * Name for a resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#agent_runtime_name CcRuntime#agent_runtime_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#agent_runtime_name CcRuntime#agent_runtime_name}
     */
     readonly agentRuntimeName: string;
     /**
     * Authorizer configuration for the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#authorizer_configuration CcRuntime#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#authorizer_configuration CcRuntime#authorizer_configuration}
     */
     readonly authorizerConfiguration?: CcRuntime.AuthorizerConfigurationProperty;
     /**
     * Capacity provider configuration for the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#capacity_provider_configuration CcRuntime#capacity_provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#capacity_provider_configuration CcRuntime#capacity_provider_configuration}
     */
     readonly capacityProviderConfiguration?: CcRuntime.CapacityProviderConfigurationProperty;
     /**
     * Description of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#description CcRuntime#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#description CcRuntime#description}
     */
     readonly description?: string;
     /**
     * Environment variables for the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#environment_variables CcRuntime#environment_variables}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#environment_variables CcRuntime#environment_variables}
     */
     readonly environmentVariables?: { [key: string]: string };
     /**
     * Filesystem configurations for the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#filesystem_configurations CcRuntime#filesystem_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#filesystem_configurations CcRuntime#filesystem_configurations}
     */
     readonly filesystemConfigurations?: CcRuntime.FilesystemConfigurationProperty[] | cdktn.IResolvable;
     /**
     * Lifecycle configuration for managing runtime sessions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#lifecycle_configuration CcRuntime#lifecycle_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#lifecycle_configuration CcRuntime#lifecycle_configuration}
     */
     readonly lifecycleConfiguration?: CcRuntime.LifecycleConfigurationProperty;
     /**
     * Network access configuration for the Agent
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#network_configuration CcRuntime#network_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#network_configuration CcRuntime#network_configuration}
     */
     readonly networkConfiguration?: CcRuntime.NetworkConfigurationProperty;
     /**
     * Protocol configuration for the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#protocol_configuration CcRuntime#protocol_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#protocol_configuration CcRuntime#protocol_configuration}
     */
     readonly protocolConfiguration?: string;
     /**
     * Configuration for HTTP request headers
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#request_header_configuration CcRuntime#request_header_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#request_header_configuration CcRuntime#request_header_configuration}
     */
     readonly requestHeaderConfiguration?: CcRuntime.RequestHeaderConfigurationProperty;
     /**
     * Amazon Resource Name (ARN) of an IAM role
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#role_arn CcRuntime#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#role_arn CcRuntime#role_arn}
     */
     readonly roleArn: string;
     /**
     * A map of tag keys and values
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime awscc_bedrockagentcore_runtime}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime awscc_bedrockagentcore_runtime}
 */
 export class CcRuntime extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class CcRuntime extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRuntime resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRuntime to import
-    * @param importFromId The id of the existing CcRuntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRuntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRuntime to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class CcRuntime extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime awscc_bedrockagentcore_runtime} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime awscc_bedrockagentcore_runtime} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class CcRuntime extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_runtime',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.101.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -1678,19 +1678,19 @@ export interface S3LocationProperty {
     /**
     * S3 bucket name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#bucket CcRuntime#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#bucket CcRuntime#bucket}
     */
     readonly bucket?: string;
     /**
     * S3 object key prefix
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#prefix CcRuntime#prefix}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#prefix CcRuntime#prefix}
     */
     readonly prefix?: string;
     /**
     * S3 object version ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#version_id CcRuntime#version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#version_id CcRuntime#version_id}
     */
     readonly versionId?: string;
 }
@@ -1800,7 +1800,7 @@ export interface CodeProperty {
     /**
     * S3 Location Configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#s3 CcRuntime#s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#s3 CcRuntime#s3}
     */
     readonly s3?: S3LocationProperty;
 }
@@ -1866,19 +1866,19 @@ export interface CodeConfigurationProperty {
     /**
     * Object represents source code from zip file
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#code CcRuntime#code}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#code CcRuntime#code}
     */
     readonly code?: CodeProperty;
     /**
     * List of entry points
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#entry_point CcRuntime#entry_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#entry_point CcRuntime#entry_point}
     */
     readonly entryPoint?: string[];
     /**
     * Managed runtime types
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#runtime CcRuntime#runtime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#runtime CcRuntime#runtime}
     */
     readonly runtime?: string;
 }
@@ -1988,7 +1988,7 @@ export interface ContainerConfigurationProperty {
     /**
     * The ECR URI of the container
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#container_uri CcRuntime#container_uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#container_uri CcRuntime#container_uri}
     */
     readonly containerUri?: string;
 }
@@ -2054,11 +2054,11 @@ export interface AgentRuntimeArtifactProperty {
     /**
     * Representation of a code configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#code_configuration CcRuntime#code_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#code_configuration CcRuntime#code_configuration}
     */
     readonly codeConfiguration?: CodeConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#container_configuration CcRuntime#container_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#container_configuration CcRuntime#container_configuration}
     */
     readonly containerConfiguration?: ContainerConfigurationProperty;
 }
@@ -2146,7 +2146,7 @@ export interface HostingEnvironmentProperty {
     /**
     * The ARN of the bedrock-agentcore hosting environment
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#arn CcRuntime#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#arn CcRuntime#arn}
     */
     readonly arn?: string;
 }
@@ -2234,13 +2234,13 @@ export interface AllowedWorkloadConfigurationProperty {
     /**
     * List of allow-listed hosting environments
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#hosting_environments CcRuntime#hosting_environments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#hosting_environments CcRuntime#hosting_environments}
     */
     readonly hostingEnvironments?: HostingEnvironmentProperty[] | cdktn.IResolvable;
     /**
     * List of allow-listed workload identity names
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#workload_identities CcRuntime#workload_identities}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#workload_identities CcRuntime#workload_identities}
     */
     readonly workloadIdentities?: string[];
 }
@@ -2328,13 +2328,13 @@ export interface ClaimMatchValueTypeProperty {
     /**
     * The string value to match for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#match_value_string CcRuntime#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#match_value_string CcRuntime#match_value_string}
     */
     readonly matchValueString?: string;
     /**
     * The list of strings to check for a match
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#match_value_string_list CcRuntime#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#match_value_string_list CcRuntime#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -2422,13 +2422,13 @@ export interface AuthorizingClaimMatchValueTypeProperty {
     /**
     * The relationship between the claim field value and the value or values being matched
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#claim_match_operator CcRuntime#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#claim_match_operator CcRuntime#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
     * The value or values in the custom claim to match for
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#claim_match_value CcRuntime#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#claim_match_value CcRuntime#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -2516,19 +2516,19 @@ export interface CustomClaimValidationTypeProperty {
     /**
     * The value or values in the custom claim to match and relationship of match
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#authorizing_claim_match_value CcRuntime#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#authorizing_claim_match_value CcRuntime#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
     * The name of the custom claim to validate
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#inbound_token_claim_name CcRuntime#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#inbound_token_claim_name CcRuntime#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
     * Token claim data type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#inbound_token_claim_value_type CcRuntime#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#inbound_token_claim_value_type CcRuntime#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -2660,37 +2660,37 @@ export interface ManagedVpcResourceProperty {
     /**
     * The IP address type for the endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#endpoint_ip_address_type CcRuntime#endpoint_ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#endpoint_ip_address_type CcRuntime#endpoint_ip_address_type}
     */
     readonly endpointIpAddressType?: string;
     /**
     * An intermediate domain to use as the resource configuration endpoint instead of the actual target domain
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#routing_domain CcRuntime#routing_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#routing_domain CcRuntime#routing_domain}
     */
     readonly routingDomain?: string;
     /**
     * The security group IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#security_group_ids CcRuntime#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#security_group_ids CcRuntime#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The subnet IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#subnet_ids CcRuntime#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#subnet_ids CcRuntime#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Tags to apply to the managed VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The VPC identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#vpc_identifier CcRuntime#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#vpc_identifier CcRuntime#vpc_identifier}
     */
     readonly vpcIdentifier?: string;
 }
@@ -2866,7 +2866,7 @@ export interface SelfManagedLatticeResourceProperty {
     /**
     * The identifier of the VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#resource_configuration_identifier CcRuntime#resource_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#resource_configuration_identifier CcRuntime#resource_configuration_identifier}
     */
     readonly resourceConfigurationIdentifier?: string;
 }
@@ -2932,13 +2932,13 @@ export interface PrivateEndpointProperty {
     /**
     * Managed VPC resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#managed_vpc_resource CcRuntime#managed_vpc_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#managed_vpc_resource CcRuntime#managed_vpc_resource}
     */
     readonly managedVpcResource?: ManagedVpcResourceProperty;
     /**
     * Self-managed VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#self_managed_lattice_resource CcRuntime#self_managed_lattice_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#self_managed_lattice_resource CcRuntime#self_managed_lattice_resource}
     */
     readonly selfManagedLatticeResource?: SelfManagedLatticeResourceProperty;
 }
@@ -3026,37 +3026,37 @@ export interface AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverri
     /**
     * The IP address type for the endpoint
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#endpoint_ip_address_type CcRuntime#endpoint_ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#endpoint_ip_address_type CcRuntime#endpoint_ip_address_type}
     */
     readonly endpointIpAddressType?: string;
     /**
     * An intermediate domain to use as the resource configuration endpoint instead of the actual target domain
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#routing_domain CcRuntime#routing_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#routing_domain CcRuntime#routing_domain}
     */
     readonly routingDomain?: string;
     /**
     * The security group IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#security_group_ids CcRuntime#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#security_group_ids CcRuntime#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The subnet IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#subnet_ids CcRuntime#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#subnet_ids CcRuntime#subnet_ids}
     */
     readonly subnetIds?: string[];
     /**
     * Tags to apply to the managed VPC Lattice resource gateway
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#tags CcRuntime#tags}
     */
     readonly tags?: { [key: string]: string };
     /**
     * The VPC identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#vpc_identifier CcRuntime#vpc_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#vpc_identifier CcRuntime#vpc_identifier}
     */
     readonly vpcIdentifier?: string;
 }
@@ -3232,7 +3232,7 @@ export interface AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverri
     /**
     * The identifier of the VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#resource_configuration_identifier CcRuntime#resource_configuration_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#resource_configuration_identifier CcRuntime#resource_configuration_identifier}
     */
     readonly resourceConfigurationIdentifier?: string;
 }
@@ -3298,13 +3298,13 @@ export interface AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverri
     /**
     * Managed VPC resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#managed_vpc_resource CcRuntime#managed_vpc_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#managed_vpc_resource CcRuntime#managed_vpc_resource}
     */
     readonly managedVpcResource?: AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResourceProperty;
     /**
     * Self-managed VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#self_managed_lattice_resource CcRuntime#self_managed_lattice_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#self_managed_lattice_resource CcRuntime#self_managed_lattice_resource}
     */
     readonly selfManagedLatticeResource?: AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResourceProperty;
 }
@@ -3392,13 +3392,13 @@ export interface PrivateEndpointOverrideProperty {
     /**
     * The domain to override
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#domain CcRuntime#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#domain CcRuntime#domain}
     */
     readonly domain?: string;
     /**
     * Private endpoint configuration. Exactly one of SelfManagedLatticeResource or ManagedVpcResource must be specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#private_endpoint CcRuntime#private_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#private_endpoint CcRuntime#private_endpoint}
     */
     readonly privateEndpoint?: AuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointProperty;
 }
@@ -3508,49 +3508,49 @@ export interface CustomJWTAuthorizerConfigurationProperty {
     /**
     * List of allowed audiences
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#allowed_audience CcRuntime#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#allowed_audience CcRuntime#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
     * List of allowed clients
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#allowed_clients CcRuntime#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#allowed_clients CcRuntime#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
     * List of allowed scopes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#allowed_scopes CcRuntime#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#allowed_scopes CcRuntime#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
     * Allow-list of upstream workloads permitted to reach this resource via the workload identity chain. When set, the data plane enforces that the introspected workload chain's caller matches one of the configured hosting environments or workload identities; absent means no chain enforcement.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#allowed_workload_configuration CcRuntime#allowed_workload_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#allowed_workload_configuration CcRuntime#allowed_workload_configuration}
     */
     readonly allowedWorkloadConfiguration?: AllowedWorkloadConfigurationProperty;
     /**
     * List of required custom claims
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#custom_claims CcRuntime#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#custom_claims CcRuntime#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
     * OpenID Connect discovery URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#discovery_url CcRuntime#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#discovery_url CcRuntime#discovery_url}
     */
     readonly discoveryUrl?: string;
     /**
     * Private endpoint configuration. Exactly one of SelfManagedLatticeResource or ManagedVpcResource must be specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#private_endpoint CcRuntime#private_endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#private_endpoint CcRuntime#private_endpoint}
     */
     readonly privateEndpoint?: PrivateEndpointProperty;
     /**
     * List of private endpoint overrides
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#private_endpoint_overrides CcRuntime#private_endpoint_overrides}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#private_endpoint_overrides CcRuntime#private_endpoint_overrides}
     */
     readonly privateEndpointOverrides?: PrivateEndpointOverrideProperty[] | cdktn.IResolvable;
 }
@@ -3770,7 +3770,7 @@ export interface AuthorizerConfigurationProperty {
     /**
     * Configuration for custom JWT authorizer
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#custom_jwt_authorizer CcRuntime#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#custom_jwt_authorizer CcRuntime#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -3836,7 +3836,7 @@ export interface CapacityProviderConfigurationProperty {
     /**
     * ARN of the capacity provider
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#capacity_provider_arn CcRuntime#capacity_provider_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#capacity_provider_arn CcRuntime#capacity_provider_arn}
     */
     readonly capacityProviderArn?: string;
 }
@@ -3902,13 +3902,13 @@ export interface CapacityProviderVolumeConfigurationProperty {
     /**
     * Mount path for filesystem configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
     */
     readonly mountPath?: string;
     /**
     * Name of the capacity provider volume
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#volume_name CcRuntime#volume_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#volume_name CcRuntime#volume_name}
     */
     readonly volumeName?: string;
 }
@@ -3996,13 +3996,13 @@ export interface EfsAccessPointConfigurationProperty {
     /**
     * ARN of the EFS access point
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#access_point_arn CcRuntime#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#access_point_arn CcRuntime#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
     * Mount path for filesystem configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
     */
     readonly mountPath?: string;
 }
@@ -4090,13 +4090,13 @@ export interface S3FilesAccessPointConfigurationProperty {
     /**
     * ARN of the S3 Files access point
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#access_point_arn CcRuntime#access_point_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#access_point_arn CcRuntime#access_point_arn}
     */
     readonly accessPointArn?: string;
     /**
     * Mount path for filesystem configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
     */
     readonly mountPath?: string;
 }
@@ -4184,7 +4184,7 @@ export interface SessionStorageConfigurationProperty {
     /**
     * Mount path for filesystem configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#mount_path CcRuntime#mount_path}
     */
     readonly mountPath?: string;
 }
@@ -4250,25 +4250,25 @@ export interface FilesystemConfigurationProperty {
     /**
     * Configuration for a CapacityProvider-managed volume to mount into the agent runtime
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#capacity_provider_volume CcRuntime#capacity_provider_volume}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#capacity_provider_volume CcRuntime#capacity_provider_volume}
     */
     readonly capacityProviderVolume?: CapacityProviderVolumeConfigurationProperty;
     /**
     * Configuration for EFS access point filesystem
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#efs_access_point CcRuntime#efs_access_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#efs_access_point CcRuntime#efs_access_point}
     */
     readonly efsAccessPoint?: EfsAccessPointConfigurationProperty;
     /**
     * Configuration for S3 Files access point filesystem
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#s3_files_access_point CcRuntime#s3_files_access_point}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#s3_files_access_point CcRuntime#s3_files_access_point}
     */
     readonly s3FilesAccessPoint?: S3FilesAccessPointConfigurationProperty;
     /**
     * Configuration for session storage
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#session_storage CcRuntime#session_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#session_storage CcRuntime#session_storage}
     */
     readonly sessionStorage?: SessionStorageConfigurationProperty;
 }
@@ -4422,13 +4422,13 @@ export interface LifecycleConfigurationProperty {
     /**
     * Timeout in seconds for idle runtime sessions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#idle_runtime_session_timeout CcRuntime#idle_runtime_session_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#idle_runtime_session_timeout CcRuntime#idle_runtime_session_timeout}
     */
     readonly idleRuntimeSessionTimeout?: number;
     /**
     * Maximum lifetime in seconds for runtime sessions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#max_lifetime CcRuntime#max_lifetime}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#max_lifetime CcRuntime#max_lifetime}
     */
     readonly maxLifetime?: number;
 }
@@ -4516,13 +4516,13 @@ export interface VpcConfigProperty {
     /**
     * Security groups for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#security_groups CcRuntime#security_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#security_groups CcRuntime#security_groups}
     */
     readonly securityGroups?: string[];
     /**
     * Subnets for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#subnets CcRuntime#subnets}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#subnets CcRuntime#subnets}
     */
     readonly subnets?: string[];
 }
@@ -4610,13 +4610,13 @@ export interface NetworkConfigurationProperty {
     /**
     * Network mode configuration type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#network_mode CcRuntime#network_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#network_mode CcRuntime#network_mode}
     */
     readonly networkMode?: string;
     /**
     * Network mode configuration for VPC
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#network_mode_config CcRuntime#network_mode_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#network_mode_config CcRuntime#network_mode_config}
     */
     readonly networkModeConfig?: VpcConfigProperty;
 }
@@ -4704,7 +4704,7 @@ export interface RequestHeaderConfigurationProperty {
     /**
     * List of allowed HTTP headers for agent runtime requests
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_runtime#request_header_allowlist CcRuntime#request_header_allowlist}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.101.0/docs/resources/bedrockagentcore_runtime#request_header_allowlist CcRuntime#request_header_allowlist}
     */
     readonly requestHeaderAllowlist?: string[];
 }
