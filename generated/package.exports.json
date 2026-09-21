@@ -335,6 +335,10 @@
     "types": "./generated/aws-directoryservice/index.d.ts",
     "default": "./generated/aws-directoryservice/index.js"
   },
+  "./aws-dlm": {
+    "types": "./generated/aws-dlm/index.d.ts",
+    "default": "./generated/aws-dlm/index.js"
+  },
   "./aws-dms": {
     "types": "./generated/aws-dms/index.d.ts",
     "default": "./generated/aws-dms/index.js"
@@ -478,6 +482,10 @@
   "./aws-guardduty": {
     "types": "./generated/aws-guardduty/index.d.ts",
     "default": "./generated/aws-guardduty/index.js"
+  },
+  "./aws-healthagent": {
+    "types": "./generated/aws-healthagent/index.d.ts",
+    "default": "./generated/aws-healthagent/index.js"
   },
   "./aws-healthimaging": {
     "types": "./generated/aws-healthimaging/index.d.ts",
@@ -810,6 +818,10 @@
   "./aws-pipes": {
     "types": "./generated/aws-pipes/index.d.ts",
     "default": "./generated/aws-pipes/index.js"
+  },
+  "./aws-pricingplanmanager": {
+    "types": "./generated/aws-pricingplanmanager/index.d.ts",
+    "default": "./generated/aws-pricingplanmanager/index.js"
   },
   "./aws-proton": {
     "types": "./generated/aws-proton/index.d.ts",

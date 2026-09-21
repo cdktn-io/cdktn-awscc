@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcEventActionProps extends cdktn.TerraformMetaArguments {
     /**
     * What occurs after a certain event.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#action CcEventAction#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#action CcEventAction#action}
     */
     readonly action: CcEventAction.ActionProperty;
     /**
     * What occurs to start an action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#event CcEventAction#event}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#event CcEventAction#event}
     */
     readonly event: CcEventAction.EventProperty;
     /**
     * The tags for the event action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#tags CcEventAction#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#tags CcEventAction#tags}
     */
     readonly tags?: CcEventAction.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action awscc_dataexchange_event_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action awscc_dataexchange_event_action}
 */
 export class CcEventAction extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcEventAction extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEventAction resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEventAction to import
-    * @param importFromId The id of the existing CcEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEventAction to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcEventAction extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action awscc_dataexchange_event_action} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action awscc_dataexchange_event_action} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcEventAction extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_dataexchange_event_action',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -434,13 +434,13 @@ export interface ExportServerSideEncryptionProperty {
     /**
     * The Amazon Resource Name (ARN) of the AWS KMS key you want to use to encrypt the Amazon S3 objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#kms_key_arn CcEventAction#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#kms_key_arn CcEventAction#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The type of server side encryption used for encrypting the objects in Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#type CcEventAction#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#type CcEventAction#type}
     */
     readonly type?: string;
 }
@@ -528,13 +528,13 @@ export interface AutoExportRevisionDestinationEntryProperty {
     /**
     * The Amazon S3 bucket that is the destination for the event action.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#bucket CcEventAction#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#bucket CcEventAction#bucket}
     */
     readonly bucket?: string;
     /**
     * A string representing the pattern for generated names of the individual assets in the revision.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#key_pattern CcEventAction#key_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#key_pattern CcEventAction#key_pattern}
     */
     readonly keyPattern?: string;
 }
@@ -622,13 +622,13 @@ export interface AutoExportRevisionToS3RequestDetailsProperty {
     /**
     * Encryption configuration of the export job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#encryption CcEventAction#encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#encryption CcEventAction#encryption}
     */
     readonly encryption?: ExportServerSideEncryptionProperty;
     /**
     * A revision destination is the Amazon S3 bucket folder destination to where the export will be sent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#revision_destination CcEventAction#revision_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#revision_destination CcEventAction#revision_destination}
     */
     readonly revisionDestination?: AutoExportRevisionDestinationEntryProperty;
 }
@@ -716,7 +716,7 @@ export interface ActionProperty {
     /**
     * Details of the operation to be performed by the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#export_revision_to_s3 CcEventAction#export_revision_to_s3}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#export_revision_to_s3 CcEventAction#export_revision_to_s3}
     */
     readonly exportRevisionToS3?: AutoExportRevisionToS3RequestDetailsProperty;
 }
@@ -782,7 +782,7 @@ export interface RevisionPublishedProperty {
     /**
     * The data set ID of the published revision.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#data_set_id CcEventAction#data_set_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#data_set_id CcEventAction#data_set_id}
     */
     readonly dataSetId?: string;
 }
@@ -848,7 +848,7 @@ export interface EventProperty {
     /**
     * Information about the published revision.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#revision_published CcEventAction#revision_published}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#revision_published CcEventAction#revision_published}
     */
     readonly revisionPublished?: RevisionPublishedProperty;
 }
@@ -914,13 +914,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#key CcEventAction#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#key CcEventAction#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/dataexchange_event_action#value CcEventAction#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/dataexchange_event_action#value CcEventAction#value}
     */
     readonly value?: string;
 }

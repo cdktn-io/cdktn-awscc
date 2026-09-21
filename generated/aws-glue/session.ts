@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,97 +9,97 @@ export interface CcSessionProps extends cdktn.TerraformMetaArguments {
     /**
     * The SessionCommand that runs the job.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#command CcSession#command}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#command CcSession#command}
     */
     readonly command: CcSession.SessionCommandProperty;
     /**
     * Specifies the connections used by the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#connections CcSession#connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#connections CcSession#connections}
     */
     readonly connections?: CcSession.ConnectionsListProperty;
     /**
     * A map array of key-value pairs. Max is 75 pairs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#default_arguments CcSession#default_arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#default_arguments CcSession#default_arguments}
     */
     readonly defaultArguments?: { [key: string]: string };
     /**
     * The description of the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#description CcSession#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#description CcSession#description}
     */
     readonly description?: string;
     /**
     * The Glue version determines the versions of Apache Spark and Python that Glue supports. The GlueVersion must be greater than 2.0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#glue_version CcSession#glue_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#glue_version CcSession#glue_version}
     */
     readonly glueVersion?: string;
     /**
     * The number of minutes when idle before session times out. Default is the value of Timeout.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#idle_timeout CcSession#idle_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#idle_timeout CcSession#idle_timeout}
     */
     readonly idleTimeout?: number;
     /**
     * The number of Glue data processing units (DPUs) that can be allocated when the job runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#max_capacity CcSession#max_capacity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#max_capacity CcSession#max_capacity}
     */
     readonly maxCapacity?: number;
     /**
     * The number of workers of a defined WorkerType to use for the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#number_of_workers CcSession#number_of_workers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#number_of_workers CcSession#number_of_workers}
     */
     readonly numberOfWorkers?: number;
     /**
     * The origin of the request.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#request_origin CcSession#request_origin}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#request_origin CcSession#request_origin}
     */
     readonly requestOrigin?: string;
     /**
     * The IAM Role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#role CcSession#role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#role CcSession#role}
     */
     readonly role: string;
     /**
     * The name of the SecurityConfiguration structure to be used with the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#security_configuration CcSession#security_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#security_configuration CcSession#security_configuration}
     */
     readonly securityConfiguration?: string;
     /**
     * The ID of the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#session_id CcSession#session_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#session_id CcSession#session_id}
     */
     readonly sessionId: string;
     /**
     * The tags belonging to the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#tags CcSession#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#tags CcSession#tags}
     */
     readonly tags?: CcSession.TagProperty[] | cdktn.IResolvable;
     /**
     * The number of minutes before session times out.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#timeout CcSession#timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#timeout CcSession#timeout}
     */
     readonly timeout?: number;
     /**
     * The type of predefined worker that is allocated when a session runs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#worker_type CcSession#worker_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#worker_type CcSession#worker_type}
     */
     readonly workerType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session awscc_glue_session}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session awscc_glue_session}
 */
 export class CcSession extends cdktn.TerraformResource {
 
@@ -115,7 +115,7 @@ export class CcSession extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcSession resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcSession to import
-    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcSession to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -127,7 +127,7 @@ export class CcSession extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session awscc_glue_session} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session awscc_glue_session} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class CcSession extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_glue_session',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -657,13 +657,13 @@ export interface SessionCommandProperty {
     /**
     * Specifies the name of the SessionCommand. Can be 'glueetl' or 'gluestreaming'.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#name CcSession#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#name CcSession#name}
     */
     readonly name?: string;
     /**
     * Specifies the Python version. The Python version indicates the version supported for jobs of type Spark.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#python_version CcSession#python_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#python_version CcSession#python_version}
     */
     readonly pythonVersion?: string;
 }
@@ -751,7 +751,7 @@ export interface ConnectionsListProperty {
     /**
     * A list of connection names used by the session.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#connections CcSession#connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#connections CcSession#connections}
     */
     readonly connections?: string[];
 }
@@ -817,13 +817,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#key CcSession#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#key CcSession#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/glue_session#value CcSession#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/glue_session#value CcSession#value}
     */
     readonly value?: string;
 }

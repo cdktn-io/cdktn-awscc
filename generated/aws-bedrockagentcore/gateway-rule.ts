@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGatewayRuleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#actions CcGatewayRule#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#actions CcGatewayRule#actions}
     */
     readonly actions: CcGatewayRule.ActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#conditions CcGatewayRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#conditions CcGatewayRule#conditions}
     */
     readonly conditions?: CcGatewayRule.ConditionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#gateway_identifier CcGatewayRule#gateway_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#gateway_identifier CcGatewayRule#gateway_identifier}
     */
     readonly gatewayIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#priority CcGatewayRule#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#priority CcGatewayRule#priority}
     */
     readonly priority: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule}
 */
 export class CcGatewayRule extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGatewayRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGatewayRule to import
-    * @param importFromId The id of the existing CcGatewayRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGatewayRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGatewayRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_gateway_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -186,6 +186,12 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     // status - computed: true, optional: false, required: false
     public get status() {
         return this.getStringAttribute('status');
+    }
+
+    // system - computed: true, optional: false, required: false
+    private _system = new CcGatewayRule.SystemPropertyOutputReference(this, "system");
+    public get systemAttribute() {
+        return this._system;
     }
 
     // updated_at - computed: true, optional: false, required: false
@@ -801,14 +807,35 @@ export function ccGatewayRuleConditionPropertyToHclTerraform(struct?: CcGatewayR
 }
 
 
+export function ccGatewayRuleSystemPropertyToTerraform(struct?: CcGatewayRule.SystemProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+    }
+}
+
+
+export function ccGatewayRuleSystemPropertyToHclTerraform(struct?: CcGatewayRule.SystemProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+    };
+    return attrs;
+}
+
+
 export namespace CcGatewayRule {
 export interface StaticOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
     */
     readonly bundleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
     */
     readonly bundleVersion?: string;
 }
@@ -894,11 +921,11 @@ export class StaticOverridePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ConfigurationBundleReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
     */
     readonly bundleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
     */
     readonly bundleVersion?: string;
 }
@@ -984,23 +1011,23 @@ export class ConfigurationBundleReferencePropertyOutputReference extends cdktn.C
 }
 export interface TrafficSplitEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
     */
     readonly configurationBundle?: ConfigurationBundleReferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
     */
     readonly metadata?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
     */
     readonly weight?: number;
 }
@@ -1174,7 +1201,7 @@ export class TrafficSplitEntryPropertyList extends cdktn.ComplexList {
 }
 export interface WeightedOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
     */
     readonly trafficSplit?: TrafficSplitEntryProperty[] | cdktn.IResolvable;
 }
@@ -1238,11 +1265,11 @@ export class WeightedOverridePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ConfigurationBundleActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#static_override CcGatewayRule#static_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#static_override CcGatewayRule#static_override}
     */
     readonly staticOverride?: StaticOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weighted_override CcGatewayRule#weighted_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#weighted_override CcGatewayRule#weighted_override}
     */
     readonly weightedOverride?: WeightedOverrideProperty;
 }
@@ -1328,7 +1355,7 @@ export class ConfigurationBundleActionPropertyOutputReference extends cdktn.Comp
 }
 export interface StaticRouteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
     */
     readonly targetName?: string;
 }
@@ -1392,23 +1419,23 @@ export class StaticRoutePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TargetTrafficSplitEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
     */
     readonly metadata?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
     */
     readonly targetName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
     */
     readonly weight?: number;
 }
@@ -1582,7 +1609,7 @@ export class TargetTrafficSplitEntryPropertyList extends cdktn.ComplexList {
 }
 export interface WeightedRouteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
     */
     readonly trafficSplit?: TargetTrafficSplitEntryProperty[] | cdktn.IResolvable;
 }
@@ -1646,11 +1673,11 @@ export class WeightedRoutePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RouteToTargetActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#static_route CcGatewayRule#static_route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#static_route CcGatewayRule#static_route}
     */
     readonly staticRoute?: StaticRouteProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weighted_route CcGatewayRule#weighted_route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#weighted_route CcGatewayRule#weighted_route}
     */
     readonly weightedRoute?: WeightedRouteProperty;
 }
@@ -1736,11 +1763,11 @@ export class RouteToTargetActionPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
     */
     readonly configurationBundle?: ConfigurationBundleActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#route_to_target CcGatewayRule#route_to_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#route_to_target CcGatewayRule#route_to_target}
     */
     readonly routeToTarget?: RouteToTargetActionProperty;
 }
@@ -1848,7 +1875,7 @@ export class ActionPropertyList extends cdktn.ComplexList {
 }
 export interface MatchPathsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
     */
     readonly anyOf?: string[];
 }
@@ -1912,11 +1939,11 @@ export class MatchPathsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface IamPrincipalProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#arn CcGatewayRule#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#arn CcGatewayRule#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#operator CcGatewayRule#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#operator CcGatewayRule#operator}
     */
     readonly operator?: string;
 }
@@ -2002,7 +2029,7 @@ export class IamPrincipalPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MatchPrincipalEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#iam_principal CcGatewayRule#iam_principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#iam_principal CcGatewayRule#iam_principal}
     */
     readonly iamPrincipal?: IamPrincipalProperty;
 }
@@ -2088,7 +2115,7 @@ export class MatchPrincipalEntryPropertyList extends cdktn.ComplexList {
 }
 export interface MatchPrincipalsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
     */
     readonly anyOf?: MatchPrincipalEntryProperty[] | cdktn.IResolvable;
 }
@@ -2152,11 +2179,11 @@ export class MatchPrincipalsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#match_paths CcGatewayRule#match_paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#match_paths CcGatewayRule#match_paths}
     */
     readonly matchPaths?: MatchPathsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#match_principals CcGatewayRule#match_principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/bedrockagentcore_gateway_rule#match_principals CcGatewayRule#match_principals}
     */
     readonly matchPrincipals?: MatchPrincipalsProperty;
 }
@@ -2260,6 +2287,39 @@ export class ConditionPropertyList extends cdktn.ComplexList {
     */
     public get(index: number): ConditionPropertyOutputReference {
         return new ConditionPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface SystemProperty {
+}
+export class SystemPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): SystemProperty | undefined {
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SystemProperty | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+        }
+    }
+
+    // managed_by - computed: true, optional: false, required: false
+    public get managedBy() {
+        return this.getStringAttribute('managed_by');
     }
 }
 }

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcMetricAttributionProps extends cdktn.TerraformMetaArguments {
     /**
     * The ARN of the destination dataset group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#dataset_group_arn CcMetricAttribution#dataset_group_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#dataset_group_arn CcMetricAttribution#dataset_group_arn}
     */
     readonly datasetGroupArn: string;
     /**
     * A list of metric attributes for the metric attribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#metrics CcMetricAttribution#metrics}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#metrics CcMetricAttribution#metrics}
     */
     readonly metrics: CcMetricAttribution.MetricAttributeProperty[] | cdktn.IResolvable;
     /**
     * The output configuration details for the metric attribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#metrics_output_config CcMetricAttribution#metrics_output_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#metrics_output_config CcMetricAttribution#metrics_output_config}
     */
     readonly metricsOutputConfig: CcMetricAttribution.MetricsOutputConfigProperty;
     /**
     * The name of the metric attribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#name CcMetricAttribution#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#name CcMetricAttribution#name}
     */
     readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution awscc_personalize_metric_attribution}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution awscc_personalize_metric_attribution}
 */
 export class CcMetricAttribution extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcMetricAttribution extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMetricAttribution resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMetricAttribution to import
-    * @param importFromId The id of the existing CcMetricAttribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMetricAttribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMetricAttribution to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcMetricAttribution extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution awscc_personalize_metric_attribution} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution awscc_personalize_metric_attribution} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcMetricAttribution extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_personalize_metric_attribution',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -328,19 +328,19 @@ export interface MetricAttributeProperty {
     /**
     * The metric's event type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#event_type CcMetricAttribution#event_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#event_type CcMetricAttribution#event_type}
     */
     readonly eventType: string;
     /**
     * The attribute's expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#expression CcMetricAttribution#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#expression CcMetricAttribution#expression}
     */
     readonly expression: string;
     /**
     * The metric's name.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#metric_name CcMetricAttribution#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#metric_name CcMetricAttribution#metric_name}
     */
     readonly metricName: string;
 }
@@ -463,13 +463,13 @@ export interface S3DataDestinationProperty {
     /**
     * The ARN of the KMS key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#kms_key_arn CcMetricAttribution#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#kms_key_arn CcMetricAttribution#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The file path of the Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#path CcMetricAttribution#path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#path CcMetricAttribution#path}
     */
     readonly path?: string;
 }
@@ -557,13 +557,13 @@ export interface MetricsOutputConfigProperty {
     /**
     * The ARN of the IAM role for the metric attribution.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#role_arn CcMetricAttribution#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#role_arn CcMetricAttribution#role_arn}
     */
     readonly roleArn: string;
     /**
     * The configuration details of an Amazon S3 output bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/personalize_metric_attribution#s3_data_destination CcMetricAttribution#s3_data_destination}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/personalize_metric_attribution#s3_data_destination CcMetricAttribution#s3_data_destination}
     */
     readonly s3DataDestination?: S3DataDestinationProperty;
 }

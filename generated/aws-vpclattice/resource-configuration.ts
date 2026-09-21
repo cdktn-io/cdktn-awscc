@@ -1,67 +1,67 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcResourceConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#allow_association_to_sharable_service_network CcResourceConfiguration#allow_association_to_sharable_service_network}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#allow_association_to_sharable_service_network CcResourceConfiguration#allow_association_to_sharable_service_network}
     */
     readonly allowAssociationToSharableServiceNetwork?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#custom_domain_name CcResourceConfiguration#custom_domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#custom_domain_name CcResourceConfiguration#custom_domain_name}
     */
     readonly customDomainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#domain_verification_id CcResourceConfiguration#domain_verification_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#domain_verification_id CcResourceConfiguration#domain_verification_id}
     */
     readonly domainVerificationId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#group_domain CcResourceConfiguration#group_domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#group_domain CcResourceConfiguration#group_domain}
     */
     readonly groupDomain?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#name CcResourceConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#name CcResourceConfiguration#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#port_ranges CcResourceConfiguration#port_ranges}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#port_ranges CcResourceConfiguration#port_ranges}
     */
     readonly portRanges?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#protocol_type CcResourceConfiguration#protocol_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#protocol_type CcResourceConfiguration#protocol_type}
     */
     readonly protocolType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#resource_configuration_auth_type CcResourceConfiguration#resource_configuration_auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#resource_configuration_auth_type CcResourceConfiguration#resource_configuration_auth_type}
     */
     readonly resourceConfigurationAuthType?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#resource_configuration_definition CcResourceConfiguration#resource_configuration_definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#resource_configuration_definition CcResourceConfiguration#resource_configuration_definition}
     */
     readonly resourceConfigurationDefinition?: CcResourceConfiguration.ResourceConfigurationDefinitionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id CcResourceConfiguration#resource_configuration_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id CcResourceConfiguration#resource_configuration_group_id}
     */
     readonly resourceConfigurationGroupId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#resource_configuration_type CcResourceConfiguration#resource_configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#resource_configuration_type CcResourceConfiguration#resource_configuration_type}
     */
     readonly resourceConfigurationType: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#resource_gateway_id CcResourceConfiguration#resource_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#resource_gateway_id CcResourceConfiguration#resource_gateway_id}
     */
     readonly resourceGatewayId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#tags CcResourceConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#tags CcResourceConfiguration#tags}
     */
     readonly tags?: CcResourceConfiguration.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration awscc_vpclattice_resource_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration awscc_vpclattice_resource_configuration}
 */
 export class CcResourceConfiguration extends cdktn.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CcResourceConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcResourceConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcResourceConfiguration to import
-    * @param importFromId The id of the existing CcResourceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcResourceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcResourceConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -89,7 +89,7 @@ export class CcResourceConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration awscc_vpclattice_resource_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration awscc_vpclattice_resource_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,7 +100,7 @@ export class CcResourceConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_vpclattice_resource_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -455,6 +455,36 @@ export class CcResourceConfiguration extends cdktn.TerraformResource {
     }
 }
 
+export function ccResourceConfigurationCidrResourcePropertyToTerraform(struct?: CcResourceConfiguration.CidrResourceProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        cidr_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrRanges),
+    }
+}
+
+
+export function ccResourceConfigurationCidrResourcePropertyToHclTerraform(struct?: CcResourceConfiguration.CidrResourceProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        cidr_ranges: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrRanges),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccResourceConfigurationDnsResourcePropertyToTerraform(struct?: CcResourceConfiguration.DnsResourceProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -499,6 +529,7 @@ export function ccResourceConfigurationResourceConfigurationDefinitionPropertyTo
     }
     return {
         arn_resource: cdktn.stringToTerraform(struct!.arnResource),
+        cidr_resource: ccResourceConfigurationCidrResourcePropertyToTerraform(struct!.cidrResource),
         dns_resource: ccResourceConfigurationDnsResourcePropertyToTerraform(struct!.dnsResource),
         ip_resource: cdktn.stringToTerraform(struct!.ipResource),
     }
@@ -516,6 +547,12 @@ export function ccResourceConfigurationResourceConfigurationDefinitionPropertyTo
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+        cidr_resource: {
+            value: ccResourceConfigurationCidrResourcePropertyToHclTerraform(struct!.cidrResource),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "CidrResourceProperty",
         },
         dns_resource: {
             value: ccResourceConfigurationDnsResourcePropertyToHclTerraform(struct!.dnsResource),
@@ -574,13 +611,77 @@ export function ccResourceConfigurationTagPropertyToHclTerraform(struct?: CcReso
 
 
 export namespace CcResourceConfiguration {
+export interface CidrResourceProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#cidr_ranges CcResourceConfiguration#cidr_ranges}
+    */
+    readonly cidrRanges?: string[];
+}
+export class CidrResourcePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): CidrResourceProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._cidrRanges !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.cidrRanges = this._cidrRanges;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: CidrResourceProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._cidrRanges = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._cidrRanges = value.cidrRanges;
+        }
+    }
+
+    // cidr_ranges - computed: true, optional: true, required: false
+    private _cidrRanges?: string[]; 
+    public get cidrRanges() {
+        return this.getListAttribute('cidr_ranges');
+    }
+    public set cidrRanges(value: string[]) {
+        this._cidrRanges = value;
+    }
+    public resetCidrRanges() {
+        this._cidrRanges = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get cidrRangesInput() {
+        return this._cidrRanges;
+    }
+}
 export interface DnsResourceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#domain_name CcResourceConfiguration#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#domain_name CcResourceConfiguration#domain_name}
     */
     readonly domainName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#ip_address_type CcResourceConfiguration#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#ip_address_type CcResourceConfiguration#ip_address_type}
     */
     readonly ipAddressType?: string;
 }
@@ -666,15 +767,19 @@ export class DnsResourcePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ResourceConfigurationDefinitionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#arn_resource CcResourceConfiguration#arn_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#arn_resource CcResourceConfiguration#arn_resource}
     */
     readonly arnResource?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#dns_resource CcResourceConfiguration#dns_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#cidr_resource CcResourceConfiguration#cidr_resource}
+    */
+    readonly cidrResource?: CidrResourceProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#dns_resource CcResourceConfiguration#dns_resource}
     */
     readonly dnsResource?: DnsResourceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#ip_resource CcResourceConfiguration#ip_resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#ip_resource CcResourceConfiguration#ip_resource}
     */
     readonly ipResource?: string;
 }
@@ -700,6 +805,10 @@ export class ResourceConfigurationDefinitionPropertyOutputReference extends cdkt
             hasAnyValues = true;
             internalValueResult.arnResource = this._arnResource;
         }
+        if (this._cidrResource?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.cidrResource = this._cidrResource?.internalValue;
+        }
         if (this._dnsResource?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.dnsResource = this._dnsResource?.internalValue;
@@ -716,6 +825,7 @@ export class ResourceConfigurationDefinitionPropertyOutputReference extends cdkt
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._arnResource = undefined;
+            this._cidrResource.internalValue = undefined;
             this._dnsResource.internalValue = undefined;
             this._ipResource = undefined;
         }
@@ -727,6 +837,7 @@ export class ResourceConfigurationDefinitionPropertyOutputReference extends cdkt
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._arnResource = value.arnResource;
+            this._cidrResource.internalValue = value.cidrResource;
             this._dnsResource.internalValue = value.dnsResource;
             this._ipResource = value.ipResource;
         }
@@ -746,6 +857,22 @@ export class ResourceConfigurationDefinitionPropertyOutputReference extends cdkt
     // Temporarily expose input value. Use with caution.
     public get arnResourceInput() {
         return this._arnResource;
+    }
+
+    // cidr_resource - computed: true, optional: true, required: false
+    private _cidrResource = new CidrResourcePropertyOutputReference(this, "cidr_resource");
+    public get cidrResource() {
+        return this._cidrResource;
+    }
+    public putCidrResource(value: CidrResourceProperty) {
+        this._cidrResource.internalValue = value;
+    }
+    public resetCidrResource() {
+        this._cidrResource.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get cidrResourceInput() {
+        return this._cidrResource.internalValue;
     }
 
     // dns_resource - computed: true, optional: true, required: false
@@ -782,11 +909,11 @@ export class ResourceConfigurationDefinitionPropertyOutputReference extends cdkt
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#key CcResourceConfiguration#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#key CcResourceConfiguration#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/vpclattice_resource_configuration#value CcResourceConfiguration#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/vpclattice_resource_configuration#value CcResourceConfiguration#value}
     */
     readonly value?: string;
 }

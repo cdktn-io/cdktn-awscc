@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcAdapterProps extends cdktn.TerraformMetaArguments {
     /**
     * The name to be assigned to the adapter being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#adapter_name CcAdapter#adapter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#adapter_name CcAdapter#adapter_name}
     */
     readonly adapterName: string;
     /**
     * Controls whether or not the adapter should automatically update.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#auto_update CcAdapter#auto_update}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#auto_update CcAdapter#auto_update}
     */
     readonly autoUpdate?: string;
     /**
     * The description to be assigned to the adapter being created.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#description CcAdapter#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#description CcAdapter#description}
     */
     readonly description?: string;
     /**
     * The type of feature that the adapter is being trained on. Currently, supported feature types are: QUERIES
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#feature_types CcAdapter#feature_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#feature_types CcAdapter#feature_types}
     */
     readonly featureTypes: string[];
     /**
     * A list of tags to be added to the adapter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#tags CcAdapter#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#tags CcAdapter#tags}
     */
     readonly tags?: CcAdapter.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter awscc_textract_adapter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter awscc_textract_adapter}
 */
 export class CcAdapter extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcAdapter extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAdapter resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAdapter to import
-    * @param importFromId The id of the existing CcAdapter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAdapter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAdapter to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcAdapter extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter awscc_textract_adapter} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter awscc_textract_adapter} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcAdapter extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_textract_adapter',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -288,13 +288,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#key CcAdapter#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#key CcAdapter#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/textract_adapter#value CcAdapter#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/textract_adapter#value CcAdapter#value}
     */
     readonly value?: string;
 }

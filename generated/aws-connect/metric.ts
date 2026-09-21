@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,55 +9,55 @@ export interface CcMetricProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the custom metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#description CcMetric#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#description CcMetric#description}
     */
     readonly description?: string;
     /**
     * The identifier of the Amazon Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#instance_arn CcMetric#instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#instance_arn CcMetric#instance_arn}
     */
     readonly instanceArn: string;
     /**
     * The calculation configuration for the metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#metric_calculation CcMetric#metric_calculation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#metric_calculation CcMetric#metric_calculation}
     */
-    readonly metricCalculation?: CcMetric.MetricCalculationProperty;
+    readonly metricCalculation: CcMetric.MetricCalculationProperty;
     /**
     * The name of the custom metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#name CcMetric#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#name CcMetric#name}
     */
-    readonly name?: string;
+    readonly name: string;
     /**
     * Indicates how to classify a positive trend in metric data on the UI
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#positive_trend_indicator CcMetric#positive_trend_indicator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#positive_trend_indicator CcMetric#positive_trend_indicator}
     */
     readonly positiveTrendIndicator?: string;
     /**
     * The status of the custom metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#status CcMetric#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#status CcMetric#status}
     */
-    readonly status?: string;
+    readonly status: string;
     /**
     * One or more tags.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#tags CcMetric#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#tags CcMetric#tags}
     */
     readonly tags?: CcMetric.TagProperty[] | cdktn.IResolvable;
     /**
     * Display unit for the metric data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#unit CcMetric#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#unit CcMetric#unit}
     */
-    readonly unit?: string;
+    readonly unit: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric awscc_connect_metric}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric awscc_connect_metric}
 */
 export class CcMetric extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class CcMetric extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcMetric resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcMetric to import
-    * @param importFromId The id of the existing CcMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcMetric to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class CcMetric extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric awscc_connect_metric} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric awscc_connect_metric} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class CcMetric extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_metric',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -212,7 +212,7 @@ export class CcMetric extends cdktn.TerraformResource {
         return this.getStringAttribute('metric_arn');
     }
 
-    // metric_calculation - computed: true, optional: true, required: false
+    // metric_calculation - computed: false, optional: false, required: true
     private _metricCalculation = new CcMetric.MetricCalculationPropertyOutputReference(this, "metric_calculation");
     public get metricCalculation() {
         return this._metricCalculation;
@@ -220,24 +220,18 @@ export class CcMetric extends cdktn.TerraformResource {
     public putMetricCalculation(value: CcMetric.MetricCalculationProperty) {
         this._metricCalculation.internalValue = value;
     }
-    public resetMetricCalculation() {
-        this._metricCalculation.internalValue = undefined;
-    }
     // Temporarily expose input value. Use with caution.
     public get metricCalculationInput() {
         return this._metricCalculation.internalValue;
     }
 
-    // name - computed: true, optional: true, required: false
+    // name - computed: false, optional: false, required: true
     private _name?: string; 
     public get name() {
         return this.getStringAttribute('name');
     }
     public set name(value: string) {
         this._name = value;
-    }
-    public resetName() {
-        this._name = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get nameInput() {
@@ -275,16 +269,13 @@ export class CcMetric extends cdktn.TerraformResource {
         return this.getNumberAttribute('refresh_rate');
     }
 
-    // status - computed: true, optional: true, required: false
+    // status - computed: false, optional: false, required: true
     private _status?: string; 
     public get status() {
         return this.getStringAttribute('status');
     }
     public set status(value: string) {
         this._status = value;
-    }
-    public resetStatus() {
-        this._status = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get statusInput() {
@@ -327,16 +318,13 @@ export class CcMetric extends cdktn.TerraformResource {
         return this.getStringAttribute('type');
     }
 
-    // unit - computed: true, optional: true, required: false
+    // unit - computed: false, optional: false, required: true
     private _unit?: string; 
     public get unit() {
         return this.getStringAttribute('unit');
     }
     public set unit(value: string) {
         this._unit = value;
-    }
-    public resetUnit() {
-        this._unit = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get unitInput() {
@@ -905,7 +893,7 @@ export class LastModifiedUserPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface MetricFilterBooleanConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#comparison CcMetric#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#comparison CcMetric#comparison}
     */
     readonly comparison?: string;
 }
@@ -969,11 +957,11 @@ export class MetricFilterBooleanConditionPropertyOutputReference extends cdktn.C
 }
 export interface MetricFilterNumberConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#comparison CcMetric#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#comparison CcMetric#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#values CcMetric#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#values CcMetric#values}
     */
     readonly values?: number[];
 }
@@ -1059,11 +1047,11 @@ export class MetricFilterNumberConditionPropertyOutputReference extends cdktn.Co
 }
 export interface MetricFilterStringConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#comparison CcMetric#comparison}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#comparison CcMetric#comparison}
     */
     readonly comparison?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#values CcMetric#values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#values CcMetric#values}
     */
     readonly values?: string[];
 }
@@ -1149,23 +1137,23 @@ export class MetricFilterStringConditionPropertyOutputReference extends cdktn.Co
 }
 export interface MetricFilterProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#boolean_condition CcMetric#boolean_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#boolean_condition CcMetric#boolean_condition}
     */
     readonly booleanCondition?: MetricFilterBooleanConditionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#metric_filter_key CcMetric#metric_filter_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#metric_filter_key CcMetric#metric_filter_key}
     */
     readonly metricFilterKey?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#negate CcMetric#negate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#negate CcMetric#negate}
     */
     readonly negate?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#number_condition CcMetric#number_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#number_condition CcMetric#number_condition}
     */
     readonly numberCondition?: MetricFilterNumberConditionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#string_condition CcMetric#string_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#string_condition CcMetric#string_condition}
     */
     readonly stringCondition?: MetricFilterStringConditionProperty;
 }
@@ -1341,19 +1329,19 @@ export interface CalculationComponentProperty {
     /**
     * Metric calculation component alias for use within a calculation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#alias CcMetric#alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#alias CcMetric#alias}
     */
-    readonly alias?: string;
+    readonly alias: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#metric_filters CcMetric#metric_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#metric_filters CcMetric#metric_filters}
     */
     readonly metricFilters?: MetricFilterProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#metric_id CcMetric#metric_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#metric_id CcMetric#metric_id}
     */
     readonly metricId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#metric_name CcMetric#metric_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#metric_name CcMetric#metric_name}
     */
     readonly metricName?: string;
 }
@@ -1419,16 +1407,13 @@ export class CalculationComponentPropertyOutputReference extends cdktn.ComplexOb
         }
     }
 
-    // alias - computed: true, optional: true, required: false
+    // alias - computed: false, optional: false, required: true
     private _alias?: string; 
     public get alias() {
         return this.getStringAttribute('alias');
     }
     public set alias(value: string) {
         this._alias = value;
-    }
-    public resetAlias() {
-        this._alias = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get aliasInput() {
@@ -1507,15 +1492,15 @@ export interface MetricCalculationProperty {
     /**
     * The calculation formula
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#calculation CcMetric#calculation}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#calculation CcMetric#calculation}
     */
-    readonly calculation?: string;
+    readonly calculation: string;
     /**
     * The calculation components for the metric
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#calculation_components CcMetric#calculation_components}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#calculation_components CcMetric#calculation_components}
     */
-    readonly calculationComponents?: CalculationComponentProperty[] | cdktn.IResolvable;
+    readonly calculationComponents: CalculationComponentProperty[] | cdktn.IResolvable;
 }
 export class MetricCalculationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -1565,7 +1550,7 @@ export class MetricCalculationPropertyOutputReference extends cdktn.ComplexObjec
         }
     }
 
-    // calculation - computed: true, optional: true, required: false
+    // calculation - computed: false, optional: false, required: true
     private _calculation?: string; 
     public get calculation() {
         return this.getStringAttribute('calculation');
@@ -1573,24 +1558,18 @@ export class MetricCalculationPropertyOutputReference extends cdktn.ComplexObjec
     public set calculation(value: string) {
         this._calculation = value;
     }
-    public resetCalculation() {
-        this._calculation = undefined;
-    }
     // Temporarily expose input value. Use with caution.
     public get calculationInput() {
         return this._calculation;
     }
 
-    // calculation_components - computed: true, optional: true, required: false
+    // calculation_components - computed: false, optional: false, required: true
     private _calculationComponents = new CalculationComponentPropertyList(this, "calculation_components", false);
     public get calculationComponents() {
         return this._calculationComponents;
     }
     public putCalculationComponents(value: CalculationComponentProperty[] | cdktn.IResolvable) {
         this._calculationComponents.internalValue = value;
-    }
-    public resetCalculationComponents() {
-        this._calculationComponents.internalValue = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get calculationComponentsInput() {
@@ -1601,13 +1580,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#key CcMetric#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#key CcMetric#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is maximum of 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -. 
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_metric#value CcMetric#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/connect_metric#value CcMetric#value}
     */
     readonly value?: string;
 }

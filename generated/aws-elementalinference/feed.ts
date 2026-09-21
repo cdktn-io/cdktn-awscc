@@ -1,31 +1,31 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFeedProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#access_role_arn CcFeed#access_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#access_role_arn CcFeed#access_role_arn}
     */
     readonly accessRoleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#name CcFeed#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#outputs CcFeed#outputs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#outputs CcFeed#outputs}
     */
     readonly outputs: CcFeed.GetOutputProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#tags CcFeed#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#tags CcFeed#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed awscc_elementalinference_feed}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed awscc_elementalinference_feed}
 */
 export class CcFeed extends cdktn.TerraformResource {
 
@@ -41,7 +41,7 @@ export class CcFeed extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFeed resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFeed to import
-    * @param importFromId The id of the existing CcFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFeed that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFeed to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -53,7 +53,7 @@ export class CcFeed extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed awscc_elementalinference_feed} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed awscc_elementalinference_feed} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class CcFeed extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_elementalinference_feed',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -528,7 +528,9 @@ export function ccFeedGetOutputPropertyToHclTerraform(struct?: CcFeed.GetOutputP
 export namespace CcFeed {
 export interface DataSourceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#fixture_id CcFeed#fixture_id}
+    * The ID of the fixture whose event data you want Elemental Inference to map onto this clipping output. To obtain this ID, use the SearchFixtures operation.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#fixture_id CcFeed#fixture_id}
     */
     readonly fixtureId?: string;
 }
@@ -592,11 +594,13 @@ export class DataSourceConfigurationPropertyOutputReference extends cdktn.Comple
 }
 export interface ClippingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#callback_metadata CcFeed#callback_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#callback_metadata CcFeed#callback_metadata}
     */
     readonly callbackMetadata?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#data_source_configuration CcFeed#data_source_configuration}
+    * Identifies the fixture whose event data Elemental Inference maps onto the clipping metadata for an output.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#data_source_configuration CcFeed#data_source_configuration}
     */
     readonly dataSourceConfiguration?: DataSourceConfigurationProperty;
 }
@@ -682,11 +686,11 @@ export class ClippingConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface TemplateGroupsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#name CcFeed#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#template_uris CcFeed#template_uris}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#template_uris CcFeed#template_uris}
     */
     readonly templateUris?: string[];
 }
@@ -794,7 +798,7 @@ export class TemplateGroupsPropertyList extends cdktn.ComplexList {
 }
 export interface CroppingProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#template_groups CcFeed#template_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#template_groups CcFeed#template_groups}
     */
     readonly templateGroups?: TemplateGroupsProperty[] | cdktn.IResolvable;
 }
@@ -858,11 +862,11 @@ export class CroppingPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface AspectRatioProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#height CcFeed#height}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#height CcFeed#height}
     */
     readonly height?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#width CcFeed#width}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#width CcFeed#width}
     */
     readonly width?: number;
 }
@@ -948,19 +952,19 @@ export class AspectRatioPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface SubtitlingConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#aspect_ratio CcFeed#aspect_ratio}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#aspect_ratio CcFeed#aspect_ratio}
     */
     readonly aspectRatio?: AspectRatioProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#dictionary CcFeed#dictionary}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#dictionary CcFeed#dictionary}
     */
     readonly dictionary?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#language CcFeed#language}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#language CcFeed#language}
     */
     readonly language?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#profanity_filter CcFeed#profanity_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#profanity_filter CcFeed#profanity_filter}
     */
     readonly profanityFilter?: string;
 }
@@ -1090,15 +1094,15 @@ export class SubtitlingConfigPropertyOutputReference extends cdktn.ComplexObject
 }
 export interface OutputConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#clipping CcFeed#clipping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#clipping CcFeed#clipping}
     */
     readonly clipping?: ClippingConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#cropping CcFeed#cropping}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#cropping CcFeed#cropping}
     */
     readonly cropping?: CroppingProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#subtitling CcFeed#subtitling}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#subtitling CcFeed#subtitling}
     */
     readonly subtitling?: SubtitlingConfigProperty;
 }
@@ -1206,19 +1210,19 @@ export class OutputConfigPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface GetOutputProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#description CcFeed#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#description CcFeed#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#name CcFeed#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#name CcFeed#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#output_config CcFeed#output_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#output_config CcFeed#output_config}
     */
     readonly outputConfig: OutputConfigProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/elementalinference_feed#status CcFeed#status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/elementalinference_feed#status CcFeed#status}
     */
     readonly status: string;
 }
