@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,37 @@ export interface CcTransitGatewayRouteTableAttachmentProps extends cdktn.Terrafo
     /**
     * The name of the network function group attachment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
     */
     readonly networkFunctionGroupName?: string;
     /**
     * The Id of peering between transit gateway and core network.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#peering_id CcTransitGatewayRouteTableAttachment#peering_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#peering_id CcTransitGatewayRouteTableAttachment#peering_id}
     */
     readonly peeringId: string;
     /**
-    * The attachment to move from one network function group to another.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_network_function_group_change CcTransitGatewayRouteTableAttachment#proposed_network_function_group_change}
-    */
-    readonly proposedNetworkFunctionGroupChange?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty;
-    /**
-    * The attachment to move from one segment to another.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#proposed_segment_change CcTransitGatewayRouteTableAttachment#proposed_segment_change}
-    */
-    readonly proposedSegmentChange?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty;
-    /**
     * Routing policy label
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#routing_policy_label CcTransitGatewayRouteTableAttachment#routing_policy_label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#routing_policy_label CcTransitGatewayRouteTableAttachment#routing_policy_label}
     */
     readonly routingPolicyLabel?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
     */
     readonly tags?: CcTransitGatewayRouteTableAttachment.TagsProperty[] | cdktn.IResolvable;
     /**
     * The Arn of transit gateway route table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#transit_gateway_route_table_arn CcTransitGatewayRouteTableAttachment#transit_gateway_route_table_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#transit_gateway_route_table_arn CcTransitGatewayRouteTableAttachment#transit_gateway_route_table_arn}
     */
     readonly transitGatewayRouteTableArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment}
 */
 export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResource {
 
@@ -67,7 +55,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
     * Generates CDKTN code for importing a CcTransitGatewayRouteTableAttachment resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTransitGatewayRouteTableAttachment to import
-    * @param importFromId The id of the existing CcTransitGatewayRouteTableAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTransitGatewayRouteTableAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTransitGatewayRouteTableAttachment to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +67,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment awscc_networkmanager_transit_gateway_route_table_attachment} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +78,7 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
             terraformResourceType: 'awscc_networkmanager_transit_gateway_route_table_attachment',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -102,8 +90,6 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
         });
         this._networkFunctionGroupName = config.networkFunctionGroupName;
         this._peeringId = config.peeringId;
-        this._proposedNetworkFunctionGroupChange.internalValue = config.proposedNetworkFunctionGroupChange;
-        this._proposedSegmentChange.internalValue = config.proposedSegmentChange;
         this._routingPolicyLabel = config.routingPolicyLabel;
         this._tags.internalValue = config.tags;
         this._transitGatewayRouteTableArn = config.transitGatewayRouteTableArn;
@@ -192,36 +178,16 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
         return this._peeringId;
     }
 
-    // proposed_network_function_group_change - computed: true, optional: true, required: false
+    // proposed_network_function_group_change - computed: true, optional: false, required: false
     private _proposedNetworkFunctionGroupChange = new CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangePropertyOutputReference(this, "proposed_network_function_group_change");
     public get proposedNetworkFunctionGroupChange() {
         return this._proposedNetworkFunctionGroupChange;
     }
-    public putProposedNetworkFunctionGroupChange(value: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty) {
-        this._proposedNetworkFunctionGroupChange.internalValue = value;
-    }
-    public resetProposedNetworkFunctionGroupChange() {
-        this._proposedNetworkFunctionGroupChange.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get proposedNetworkFunctionGroupChangeInput() {
-        return this._proposedNetworkFunctionGroupChange.internalValue;
-    }
 
-    // proposed_segment_change - computed: true, optional: true, required: false
+    // proposed_segment_change - computed: true, optional: false, required: false
     private _proposedSegmentChange = new CcTransitGatewayRouteTableAttachment.ProposedSegmentChangePropertyOutputReference(this, "proposed_segment_change");
     public get proposedSegmentChange() {
         return this._proposedSegmentChange;
-    }
-    public putProposedSegmentChange(value: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty) {
-        this._proposedSegmentChange.internalValue = value;
-    }
-    public resetProposedSegmentChange() {
-        this._proposedSegmentChange.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get proposedSegmentChangeInput() {
-        return this._proposedSegmentChange.internalValue;
     }
 
     // resource_arn - computed: true, optional: false, required: false
@@ -297,8 +263,6 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
         return {
             network_function_group_name: cdktn.stringToTerraform(this._networkFunctionGroupName),
             peering_id: cdktn.stringToTerraform(this._peeringId),
-            proposed_network_function_group_change: ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToTerraform(this._proposedNetworkFunctionGroupChange.internalValue),
-            proposed_segment_change: ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToTerraform(this._proposedSegmentChange.internalValue),
             routing_policy_label: cdktn.stringToTerraform(this._routingPolicyLabel),
             tags: cdktn.listMapper(ccTransitGatewayRouteTableAttachmentTagsPropertyToTerraform, false)(this._tags.internalValue),
             transit_gateway_route_table_arn: cdktn.stringToTerraform(this._transitGatewayRouteTableArn),
@@ -318,18 +282,6 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
-            },
-            proposed_network_function_group_change: {
-                value: ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToHclTerraform(this._proposedNetworkFunctionGroupChange.internalValue),
-                isBlock: true,
-                type: "struct",
-                storageClassType: "CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty",
-            },
-            proposed_segment_change: {
-                value: ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToHclTerraform(this._proposedSegmentChange.internalValue),
-                isBlock: true,
-                type: "struct",
-                storageClassType: "CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty",
             },
             routing_policy_label: {
                 value: cdktn.stringToHclTerraform(this._routingPolicyLabel),
@@ -356,165 +308,87 @@ export class CcTransitGatewayRouteTableAttachment extends cdktn.TerraformResourc
     }
 }
 
-export function ccTransitGatewayRouteTableAttachmentTagPropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.TagProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentTagPropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.TagProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        key: cdktn.stringToTerraform(struct!.key),
-        value: cdktn.stringToTerraform(struct!.value),
     }
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentTagPropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.TagProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentTagPropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.TagProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
-        key: {
-            value: cdktn.stringToHclTerraform(struct!.key),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        value: {
-            value: cdktn.stringToHclTerraform(struct!.value),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
     };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+    return attrs;
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        attachment_policy_rule_number: cdktn.numberToTerraform(struct!.attachmentPolicyRuleNumber),
-        network_function_group_name: cdktn.stringToTerraform(struct!.networkFunctionGroupName),
-        tags: cdktn.listMapper(ccTransitGatewayRouteTableAttachmentTagPropertyToTerraform, false)(struct!.tags),
     }
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedNetworkFunctionGroupChangePropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedNetworkFunctionGroupChangeProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
-        attachment_policy_rule_number: {
-            value: cdktn.numberToHclTerraform(struct!.attachmentPolicyRuleNumber),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "number",
-        },
-        network_function_group_name: {
-            value: cdktn.stringToHclTerraform(struct!.networkFunctionGroupName),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        tags: {
-            value: cdktn.listMapperHcl(ccTransitGatewayRouteTableAttachmentTagPropertyToHclTerraform, false)(struct!.tags),
-            isBlock: true,
-            type: "set",
-            storageClassType: "TagPropertyList",
-        },
     };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+    return attrs;
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeTagsProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeTagsProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        key: cdktn.stringToTerraform(struct!.key),
-        value: cdktn.stringToTerraform(struct!.value),
     }
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeTagsProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeTagsProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
-        key: {
-            value: cdktn.stringToHclTerraform(struct!.key),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        value: {
-            value: cdktn.stringToHclTerraform(struct!.value),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
     };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+    return attrs;
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        attachment_policy_rule_number: cdktn.numberToTerraform(struct!.attachmentPolicyRuleNumber),
-        segment_name: cdktn.stringToTerraform(struct!.segmentName),
-        tags: cdktn.listMapper(ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToTerraform, false)(struct!.tags),
     }
 }
 
 
-export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty | cdktn.IResolvable): any {
+export function ccTransitGatewayRouteTableAttachmentProposedSegmentChangePropertyToHclTerraform(struct?: CcTransitGatewayRouteTableAttachment.ProposedSegmentChangeProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
-        attachment_policy_rule_number: {
-            value: cdktn.numberToHclTerraform(struct!.attachmentPolicyRuleNumber),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "number",
-        },
-        segment_name: {
-            value: cdktn.stringToHclTerraform(struct!.segmentName),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        tags: {
-            value: cdktn.listMapperHcl(ccTransitGatewayRouteTableAttachmentProposedSegmentChangeTagsPropertyToHclTerraform, false)(struct!.tags),
-            isBlock: true,
-            type: "set",
-            storageClassType: "ProposedSegmentChangeTagsPropertyList",
-        },
     };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+    return attrs;
 }
 
 
@@ -557,22 +431,9 @@ export function ccTransitGatewayRouteTableAttachmentTagsPropertyToHclTerraform(s
 
 export namespace CcTransitGatewayRouteTableAttachment {
 export interface TagProperty {
-    /**
-    * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
-    */
-    readonly key?: string;
-    /**
-    * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
-    */
-    readonly value?: string;
 }
 export class TagPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
 
     /**
     * @param terraformResource The parent resource
@@ -584,77 +445,33 @@ export class TagPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): TagProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
+    public get internalValue(): TagProperty | undefined {
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
-        if (this._key !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.key = this._key;
-        }
-        if (this._value !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.value = this._value;
-        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: TagProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: TagProperty | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._key = undefined;
-            this._value = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
         }
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._key = value.key;
-            this._value = value.value;
         }
     }
 
-    // key - computed: true, optional: true, required: false
-    private _key?: string; 
+    // key - computed: true, optional: false, required: false
     public get key() {
         return this.getStringAttribute('key');
     }
-    public set key(value: string) {
-        this._key = value;
-    }
-    public resetKey() {
-        this._key = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get keyInput() {
-        return this._key;
-    }
 
-    // value - computed: true, optional: true, required: false
-    private _value?: string; 
+    // value - computed: true, optional: false, required: false
     public get value() {
         return this.getStringAttribute('value');
-    }
-    public set value(value: string) {
-        this._value = value;
-    }
-    public resetValue() {
-        this._value = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get valueInput() {
-        return this._value;
     }
 }
 
 export class TagPropertyList extends cdktn.ComplexList {
-    public internalValue? : TagProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -673,28 +490,9 @@ export class TagPropertyList extends cdktn.ComplexList {
     }
 }
 export interface ProposedNetworkFunctionGroupChangeProperty {
-    /**
-    * The rule number in the policy document that applies to this change.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
-    */
-    readonly attachmentPolicyRuleNumber?: number;
-    /**
-    * The name of the network function group to change.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#network_function_group_name CcTransitGatewayRouteTableAttachment#network_function_group_name}
-    */
-    readonly networkFunctionGroupName?: string;
-    /**
-    * The key-value tags that changed for the network function group.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
-    */
-    readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
 export class ProposedNetworkFunctionGroupChangePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
 
     /**
     * @param terraformResource The parent resource
@@ -704,113 +502,41 @@ export class ProposedNetworkFunctionGroupChangePropertyOutputReference extends c
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ProposedNetworkFunctionGroupChangeProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
+    public get internalValue(): ProposedNetworkFunctionGroupChangeProperty | undefined {
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
-        if (this._attachmentPolicyRuleNumber !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.attachmentPolicyRuleNumber = this._attachmentPolicyRuleNumber;
-        }
-        if (this._networkFunctionGroupName !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.networkFunctionGroupName = this._networkFunctionGroupName;
-        }
-        if (this._tags?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.tags = this._tags?.internalValue;
-        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ProposedNetworkFunctionGroupChangeProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ProposedNetworkFunctionGroupChangeProperty | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._attachmentPolicyRuleNumber = undefined;
-            this._networkFunctionGroupName = undefined;
-            this._tags.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
         }
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._attachmentPolicyRuleNumber = value.attachmentPolicyRuleNumber;
-            this._networkFunctionGroupName = value.networkFunctionGroupName;
-            this._tags.internalValue = value.tags;
         }
     }
 
-    // attachment_policy_rule_number - computed: true, optional: true, required: false
-    private _attachmentPolicyRuleNumber?: number; 
+    // attachment_policy_rule_number - computed: true, optional: false, required: false
     public get attachmentPolicyRuleNumber() {
         return this.getNumberAttribute('attachment_policy_rule_number');
     }
-    public set attachmentPolicyRuleNumber(value: number) {
-        this._attachmentPolicyRuleNumber = value;
-    }
-    public resetAttachmentPolicyRuleNumber() {
-        this._attachmentPolicyRuleNumber = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get attachmentPolicyRuleNumberInput() {
-        return this._attachmentPolicyRuleNumber;
-    }
 
-    // network_function_group_name - computed: true, optional: true, required: false
-    private _networkFunctionGroupName?: string; 
+    // network_function_group_name - computed: true, optional: false, required: false
     public get networkFunctionGroupName() {
         return this.getStringAttribute('network_function_group_name');
     }
-    public set networkFunctionGroupName(value: string) {
-        this._networkFunctionGroupName = value;
-    }
-    public resetNetworkFunctionGroupName() {
-        this._networkFunctionGroupName = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get networkFunctionGroupNameInput() {
-        return this._networkFunctionGroupName;
-    }
 
-    // tags - computed: true, optional: true, required: false
+    // tags - computed: true, optional: false, required: false
     private _tags = new TagPropertyList(this, "tags", true);
     public get tags() {
         return this._tags;
     }
-    public putTags(value: TagProperty[] | cdktn.IResolvable) {
-        this._tags.internalValue = value;
-    }
-    public resetTags() {
-        this._tags.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get tagsInput() {
-        return this._tags.internalValue;
-    }
 }
 export interface ProposedSegmentChangeTagsProperty {
-    /**
-    * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
-    */
-    readonly key?: string;
-    /**
-    * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
-    */
-    readonly value?: string;
 }
 export class ProposedSegmentChangeTagsPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
 
     /**
     * @param terraformResource The parent resource
@@ -822,77 +548,33 @@ export class ProposedSegmentChangeTagsPropertyOutputReference extends cdktn.Comp
         super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
     }
 
-    public get internalValue(): ProposedSegmentChangeTagsProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
+    public get internalValue(): ProposedSegmentChangeTagsProperty | undefined {
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
-        if (this._key !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.key = this._key;
-        }
-        if (this._value !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.value = this._value;
-        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ProposedSegmentChangeTagsProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ProposedSegmentChangeTagsProperty | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._key = undefined;
-            this._value = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
         }
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._key = value.key;
-            this._value = value.value;
         }
     }
 
-    // key - computed: true, optional: true, required: false
-    private _key?: string; 
+    // key - computed: true, optional: false, required: false
     public get key() {
         return this.getStringAttribute('key');
     }
-    public set key(value: string) {
-        this._key = value;
-    }
-    public resetKey() {
-        this._key = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get keyInput() {
-        return this._key;
-    }
 
-    // value - computed: true, optional: true, required: false
-    private _value?: string; 
+    // value - computed: true, optional: false, required: false
     public get value() {
         return this.getStringAttribute('value');
-    }
-    public set value(value: string) {
-        this._value = value;
-    }
-    public resetValue() {
-        this._value = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get valueInput() {
-        return this._value;
     }
 }
 
 export class ProposedSegmentChangeTagsPropertyList extends cdktn.ComplexList {
-    public internalValue? : ProposedSegmentChangeTagsProperty[] | cdktn.IResolvable
 
     /**
     * @param terraformResource The parent resource
@@ -911,28 +593,9 @@ export class ProposedSegmentChangeTagsPropertyList extends cdktn.ComplexList {
     }
 }
 export interface ProposedSegmentChangeProperty {
-    /**
-    * The rule number in the policy document that applies to this change.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#attachment_policy_rule_number CcTransitGatewayRouteTableAttachment#attachment_policy_rule_number}
-    */
-    readonly attachmentPolicyRuleNumber?: number;
-    /**
-    * The name of the segment to change.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#segment_name CcTransitGatewayRouteTableAttachment#segment_name}
-    */
-    readonly segmentName?: string;
-    /**
-    * The key-value tags that changed for the segment.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#tags CcTransitGatewayRouteTableAttachment#tags}
-    */
-    readonly tags?: ProposedSegmentChangeTagsProperty[] | cdktn.IResolvable;
 }
 export class ProposedSegmentChangePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
 
     /**
     * @param terraformResource The parent resource
@@ -942,107 +605,48 @@ export class ProposedSegmentChangePropertyOutputReference extends cdktn.ComplexO
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): ProposedSegmentChangeProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
+    public get internalValue(): ProposedSegmentChangeProperty | undefined {
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
-        if (this._attachmentPolicyRuleNumber !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.attachmentPolicyRuleNumber = this._attachmentPolicyRuleNumber;
-        }
-        if (this._segmentName !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.segmentName = this._segmentName;
-        }
-        if (this._tags?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.tags = this._tags?.internalValue;
-        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: ProposedSegmentChangeProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ProposedSegmentChangeProperty | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._attachmentPolicyRuleNumber = undefined;
-            this._segmentName = undefined;
-            this._tags.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
         }
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._attachmentPolicyRuleNumber = value.attachmentPolicyRuleNumber;
-            this._segmentName = value.segmentName;
-            this._tags.internalValue = value.tags;
         }
     }
 
-    // attachment_policy_rule_number - computed: true, optional: true, required: false
-    private _attachmentPolicyRuleNumber?: number; 
+    // attachment_policy_rule_number - computed: true, optional: false, required: false
     public get attachmentPolicyRuleNumber() {
         return this.getNumberAttribute('attachment_policy_rule_number');
     }
-    public set attachmentPolicyRuleNumber(value: number) {
-        this._attachmentPolicyRuleNumber = value;
-    }
-    public resetAttachmentPolicyRuleNumber() {
-        this._attachmentPolicyRuleNumber = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get attachmentPolicyRuleNumberInput() {
-        return this._attachmentPolicyRuleNumber;
-    }
 
-    // segment_name - computed: true, optional: true, required: false
-    private _segmentName?: string; 
+    // segment_name - computed: true, optional: false, required: false
     public get segmentName() {
         return this.getStringAttribute('segment_name');
     }
-    public set segmentName(value: string) {
-        this._segmentName = value;
-    }
-    public resetSegmentName() {
-        this._segmentName = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get segmentNameInput() {
-        return this._segmentName;
-    }
 
-    // tags - computed: true, optional: true, required: false
+    // tags - computed: true, optional: false, required: false
     private _tags = new ProposedSegmentChangeTagsPropertyList(this, "tags", true);
     public get tags() {
         return this._tags;
-    }
-    public putTags(value: ProposedSegmentChangeTagsProperty[] | cdktn.IResolvable) {
-        this._tags.internalValue = value;
-    }
-    public resetTags() {
-        this._tags.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get tagsInput() {
-        return this._tags.internalValue;
     }
 }
 export interface TagsProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#key CcTransitGatewayRouteTableAttachment#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/networkmanager_transit_gateway_route_table_attachment#value CcTransitGatewayRouteTableAttachment#value}
     */
     readonly value?: string;
 }

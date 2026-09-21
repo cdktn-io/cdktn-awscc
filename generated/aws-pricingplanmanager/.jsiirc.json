@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_pricingplanmanager"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Pricingplanmanager"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.pricingplanmanager"
+    }
+  }
+}

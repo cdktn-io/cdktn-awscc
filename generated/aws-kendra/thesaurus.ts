@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcThesaurusProps extends cdktn.TerraformMetaArguments {
     /**
     * A description for the thesaurus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#description CcThesaurus#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#description CcThesaurus#description}
     */
     readonly description?: string;
     /**
     * The identifier of the index for the thesaurus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#index_id CcThesaurus#index_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#index_id CcThesaurus#index_id}
     */
     readonly indexId: string;
     /**
     * A name for the thesaurus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#name CcThesaurus#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#name CcThesaurus#name}
     */
     readonly name: string;
     /**
     * An IAM role that gives Amazon Kendra permissions to access the thesaurus file specified in SourceS3Path.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#role_arn CcThesaurus#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#role_arn CcThesaurus#role_arn}
     */
     readonly roleArn: string;
     /**
     * Information required to find a specific file in an Amazon S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#source_s3_path CcThesaurus#source_s3_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#source_s3_path CcThesaurus#source_s3_path}
     */
     readonly sourceS3Path: CcThesaurus.S3PathProperty;
     /**
     * A list of key-value pairs that identify or categorize the thesaurus.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#tags CcThesaurus#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#tags CcThesaurus#tags}
     */
     readonly tags?: CcThesaurus.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus awscc_kendra_thesaurus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus awscc_kendra_thesaurus}
 */
 export class CcThesaurus extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcThesaurus extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcThesaurus resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcThesaurus to import
-    * @param importFromId The id of the existing CcThesaurus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcThesaurus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcThesaurus to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcThesaurus extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus awscc_kendra_thesaurus} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus awscc_kendra_thesaurus} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcThesaurus extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_kendra_thesaurus',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -344,13 +344,13 @@ export interface S3PathProperty {
     /**
     * The name of the S3 bucket that contains the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#bucket CcThesaurus#bucket}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#bucket CcThesaurus#bucket}
     */
     readonly bucket: string;
     /**
     * The name of the file.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#key CcThesaurus#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#key CcThesaurus#key}
     */
     readonly key: string;
 }
@@ -432,13 +432,13 @@ export interface TagProperty {
     /**
     * The key for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#key CcThesaurus#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#key CcThesaurus#key}
     */
     readonly key?: string;
     /**
     * The value associated with the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kendra_thesaurus#value CcThesaurus#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/kendra_thesaurus#value CcThesaurus#value}
     */
     readonly value?: string;
 }

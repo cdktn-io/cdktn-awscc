@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcCustomDetectionRuleAssociationProps extends cdktn.TerraformMe
     /**
     * Whether the rule runs in LIVE mode (generates findings) or DRY_RUN mode (evaluates without generating findings).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#mode CcCustomDetectionRuleAssociation#mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#mode CcCustomDetectionRuleAssociation#mode}
     */
     readonly mode: string;
     /**
     * The catalog identifier of the custom detection rule to associate.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#rule_id CcCustomDetectionRuleAssociation#rule_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#rule_id CcCustomDetectionRuleAssociation#rule_id}
     */
     readonly ruleId: string;
     /**
     * The tags applied to the association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#tags CcCustomDetectionRuleAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#tags CcCustomDetectionRuleAssociation#tags}
     */
     readonly tags?: CcCustomDetectionRuleAssociation.TagItemProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association awscc_guardduty_custom_detection_rule_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association awscc_guardduty_custom_detection_rule_association}
 */
 export class CcCustomDetectionRuleAssociation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcCustomDetectionRuleAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCustomDetectionRuleAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCustomDetectionRuleAssociation to import
-    * @param importFromId The id of the existing CcCustomDetectionRuleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCustomDetectionRuleAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCustomDetectionRuleAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcCustomDetectionRuleAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association awscc_guardduty_custom_detection_rule_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association awscc_guardduty_custom_detection_rule_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcCustomDetectionRuleAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_guardduty_custom_detection_rule_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -236,11 +236,11 @@ export function ccCustomDetectionRuleAssociationTagItemPropertyToHclTerraform(st
 export namespace CcCustomDetectionRuleAssociation {
 export interface TagItemProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#key CcCustomDetectionRuleAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#key CcCustomDetectionRuleAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/guardduty_custom_detection_rule_association#value CcCustomDetectionRuleAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/guardduty_custom_detection_rule_association#value CcCustomDetectionRuleAssociation#value}
     */
     readonly value?: string;
 }

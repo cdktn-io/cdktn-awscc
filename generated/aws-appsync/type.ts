@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcTypeProps extends cdktn.TerraformMetaArguments {
     /**
     * The API ID.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type#api_id CcType#api_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type#api_id CcType#api_id}
     */
     readonly apiId: string;
     /**
     * The type definition, in GraphQL Schema Definition Language (SDL) format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type#definition CcType#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type#definition CcType#definition}
     */
     readonly definition: string;
     /**
     * The type format: SDL or JSON.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type#format CcType#format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type#format CcType#format}
     */
     readonly format: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type awscc_appsync_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type awscc_appsync_type}
 */
 export class CcType extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcType extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcType resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcType to import
-    * @param importFromId The id of the existing CcType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcType to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcType extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appsync_type awscc_appsync_type} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/appsync_type awscc_appsync_type} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcType extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appsync_type',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,

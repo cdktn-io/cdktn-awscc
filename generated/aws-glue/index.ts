@@ -4,6 +4,7 @@ export * from './blueprint';
 export * from './catalog';
 export * from './classifier';
 export * from './connection';
+export * from './connection-type';
 export * from './crawler';
 export * from './custom-entity-type';
 export * from './data-catalog-encryption-settings';

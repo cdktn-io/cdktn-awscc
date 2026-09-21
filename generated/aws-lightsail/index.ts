@@ -13,6 +13,7 @@ export * from './distribution';
 export * from './domain';
 export * from './instance';
 export * from './instance-snapshot';
+export * from './key-pair';
 export * from './load-balancer';
 export * from './load-balancer-tls-certificate';
 export * from './static-ip';

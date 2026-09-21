@@ -6,3 +6,5 @@ export * from './health-check';
 export * from './hosted-zone';
 export * from './key-signing-key';
 export * from './record-set';
+export * from './traffic-policy';
+export * from './traffic-policy-instance';

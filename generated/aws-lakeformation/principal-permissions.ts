@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions
+// https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcPrincipalPermissionsProps extends cdktn.TerraformMetaArgument
     /**
     * The identifier for the GLUDC. By default, the account ID. The GLUDC is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your Lake Formation environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog CcPrincipalPermissions#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog CcPrincipalPermissions#catalog}
     */
     readonly catalog?: string;
     /**
     * The permissions granted or revoked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#permissions CcPrincipalPermissions#permissions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#permissions CcPrincipalPermissions#permissions}
     */
     readonly permissions: string[];
     /**
     * Indicates the ability to grant permissions (as a subset of permissions granted).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#permissions_with_grant_option CcPrincipalPermissions#permissions_with_grant_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#permissions_with_grant_option CcPrincipalPermissions#permissions_with_grant_option}
     */
     readonly permissionsWithGrantOption: string[];
     /**
     * The principal to be granted a permission.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#principal CcPrincipalPermissions#principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#principal CcPrincipalPermissions#principal}
     */
     readonly principal: CcPrincipalPermissions.DataLakePrincipalProperty;
     /**
     * The resource to be granted or revoked permissions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#resource CcPrincipalPermissions#resource}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#resource CcPrincipalPermissions#resource}
     */
     readonly resource: CcPrincipalPermissions.ResourceProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions awscc_lakeformation_principal_permissions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions awscc_lakeformation_principal_permissions}
 */
 export class CcPrincipalPermissions extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcPrincipalPermissions extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcPrincipalPermissions resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcPrincipalPermissions to import
-    * @param importFromId The id of the existing CcPrincipalPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcPrincipalPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcPrincipalPermissions to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcPrincipalPermissions extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions awscc_lakeformation_principal_permissions} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions awscc_lakeformation_principal_permissions} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcPrincipalPermissions extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_lakeformation_principal_permissions',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.102.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -254,6 +254,36 @@ export function ccPrincipalPermissionsDataLakePrincipalPropertyToHclTerraform(st
     const attrs = {
         data_lake_principal_identifier: {
             value: cdktn.stringToHclTerraform(struct!.dataLakePrincipalIdentifier),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccPrincipalPermissionsCatalogPropertyToTerraform(struct?: CcPrincipalPermissions.CatalogProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        id: cdktn.stringToTerraform(struct!.id),
+    }
+}
+
+
+export function ccPrincipalPermissionsCatalogPropertyToHclTerraform(struct?: CcPrincipalPermissions.CatalogProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        id: {
+            value: cdktn.stringToHclTerraform(struct!.id),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
@@ -660,7 +690,7 @@ export function ccPrincipalPermissionsResourcePropertyToTerraform(struct?: CcPri
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        catalog: cdktn.stringToTerraform(struct!.catalog),
+        catalog: ccPrincipalPermissionsCatalogPropertyToTerraform(struct!.catalog),
         data_cells_filter: ccPrincipalPermissionsDataCellsFilterResourcePropertyToTerraform(struct!.dataCellsFilter),
         data_location: ccPrincipalPermissionsDataLocationResourcePropertyToTerraform(struct!.dataLocation),
         database: ccPrincipalPermissionsDatabaseResourcePropertyToTerraform(struct!.database),
@@ -679,10 +709,10 @@ export function ccPrincipalPermissionsResourcePropertyToHclTerraform(struct?: Cc
     }
     const attrs = {
         catalog: {
-            value: cdktn.stringToHclTerraform(struct!.catalog),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
+            value: ccPrincipalPermissionsCatalogPropertyToHclTerraform(struct!.catalog),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "CatalogProperty",
         },
         data_cells_filter: {
             value: ccPrincipalPermissionsDataCellsFilterResourcePropertyToHclTerraform(struct!.dataCellsFilter),
@@ -738,7 +768,7 @@ export interface DataLakePrincipalProperty {
     /**
     * An identifier for the LFlong principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#data_lake_principal_identifier CcPrincipalPermissions#data_lake_principal_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#data_lake_principal_identifier CcPrincipalPermissions#data_lake_principal_identifier}
     */
     readonly dataLakePrincipalIdentifier?: string;
 }
@@ -800,29 +830,96 @@ export class DataLakePrincipalPropertyOutputReference extends cdktn.ComplexObjec
         return this._dataLakePrincipalIdentifier;
     }
 }
+export interface CatalogProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#id CcPrincipalPermissions#id}
+    *
+    * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+    * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+    */
+    readonly id?: string;
+}
+export class CatalogPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): CatalogProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._id !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.id = this._id;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: CatalogProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._id = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._id = value.id;
+        }
+    }
+
+    // id - computed: true, optional: true, required: false
+    private _id?: string; 
+    public get id() {
+        return this.getStringAttribute('id');
+    }
+    public set id(value: string) {
+        this._id = value;
+    }
+    public resetId() {
+        this._id = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get idInput() {
+        return this._id;
+    }
+}
 export interface DataCellsFilterResourceProperty {
     /**
     * A database in the GLUDC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
     */
     readonly databaseName?: string;
     /**
     * The name given by the user to the data filter cell.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
     */
     readonly name?: string;
     /**
     * The ID of the catalog to which the table belongs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#table_catalog_id CcPrincipalPermissions#table_catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#table_catalog_id CcPrincipalPermissions#table_catalog_id}
     */
     readonly tableCatalogId?: string;
     /**
     * The name of the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#table_name CcPrincipalPermissions#table_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#table_name CcPrincipalPermissions#table_name}
     */
     readonly tableName?: string;
 }
@@ -954,13 +1051,13 @@ export interface DataLocationResourceProperty {
     /**
     * The identifier for the GLUDC where the location is registered with LFlong.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The Amazon Resource Name (ARN) that uniquely identifies the data location resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#resource_arn CcPrincipalPermissions#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#resource_arn CcPrincipalPermissions#resource_arn}
     */
     readonly resourceArn?: string;
 }
@@ -1048,13 +1145,13 @@ export interface DatabaseResourceProperty {
     /**
     * The identifier for the Data Catalog. By default, it is the account ID of the caller.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The name of the database resource. Unique to the Data Catalog.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
     */
     readonly name?: string;
 }
@@ -1142,19 +1239,19 @@ export interface LFTagKeyResourceProperty {
     /**
     * The identifier for the GLUDC where the location is registered with GLUDC.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The key-name for the LF-tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#tag_key CcPrincipalPermissions#tag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#tag_key CcPrincipalPermissions#tag_key}
     */
     readonly tagKey?: string;
     /**
     * A list of possible values for the corresponding ``TagKey`` of an LF-tag key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#tag_values CcPrincipalPermissions#tag_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#tag_values CcPrincipalPermissions#tag_values}
     */
     readonly tagValues?: string[];
 }
@@ -1264,13 +1361,13 @@ export interface LFTagProperty {
     /**
     * The key-name for the LF-tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#tag_key CcPrincipalPermissions#tag_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#tag_key CcPrincipalPermissions#tag_key}
     */
     readonly tagKey?: string;
     /**
     * A list of possible values of the corresponding ``TagKey`` of an LF-tag key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#tag_values CcPrincipalPermissions#tag_values}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#tag_values CcPrincipalPermissions#tag_values}
     */
     readonly tagValues?: string[];
 }
@@ -1380,19 +1477,19 @@ export interface LFTagPolicyResourceProperty {
     /**
     * The identifier for the GLUDC. The GLUDC is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your LFlong environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * A list of LF-tag conditions that apply to the resource's LF-tag policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#expression CcPrincipalPermissions#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#expression CcPrincipalPermissions#expression}
     */
     readonly expression?: LFTagProperty[] | cdktn.IResolvable;
     /**
     * The resource type for which the LF-tag policy applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#resource_type CcPrincipalPermissions#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#resource_type CcPrincipalPermissions#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -1502,26 +1599,26 @@ export interface TableResourceProperty {
     /**
     * The identifier for the Data Catalog. By default, it is the account ID of the caller.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The name of the database for the table. Unique to a Data Catalog. A database is a set of associated table definitions organized into a logical group. You can Grant and Revoke database privileges to a principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
     */
     readonly databaseName?: string;
     /**
     * The name of the table.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
     */
     readonly name?: string;
     /**
     * A wildcard object representing every table under a database.
     *  At least one of ``TableResource$Name`` or ``TableResource$TableWildcard`` is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#table_wildcard CcPrincipalPermissions#table_wildcard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#table_wildcard CcPrincipalPermissions#table_wildcard}
     */
     readonly tableWildcard?: string;
 }
@@ -1653,7 +1750,7 @@ export interface ColumnWildcardProperty {
     /**
     * Excludes column names. Any column with this name will be excluded.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#excluded_column_names CcPrincipalPermissions#excluded_column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#excluded_column_names CcPrincipalPermissions#excluded_column_names}
     */
     readonly excludedColumnNames?: string[];
 }
@@ -1719,31 +1816,31 @@ export interface TableWithColumnsResourceProperty {
     /**
     * The identifier for the GLUDC where the location is registered with LFlong.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog_id CcPrincipalPermissions#catalog_id}
     */
     readonly catalogId?: string;
     /**
     * The list of column names for the table. At least one of ``ColumnNames`` or ``ColumnWildcard`` is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#column_names CcPrincipalPermissions#column_names}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#column_names CcPrincipalPermissions#column_names}
     */
     readonly columnNames?: string[];
     /**
     * A wildcard specified by a ``ColumnWildcard`` object. At least one of ``ColumnNames`` or ``ColumnWildcard`` is required.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#column_wildcard CcPrincipalPermissions#column_wildcard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#column_wildcard CcPrincipalPermissions#column_wildcard}
     */
     readonly columnWildcard?: ColumnWildcardProperty;
     /**
     * The name of the database for the table with columns resource. Unique to the Data Catalog. A database is a set of associated table definitions organized into a logical group. You can Grant and Revoke database privileges to a principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#database_name CcPrincipalPermissions#database_name}
     */
     readonly databaseName?: string;
     /**
     * The name of the table resource. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#name CcPrincipalPermissions#name}
     */
     readonly name?: string;
 }
@@ -1897,49 +1994,49 @@ export interface ResourceProperty {
     /**
     * The identifier for the Data Catalog. By default, the account ID. The Data Catalog is the persistent metadata store. It contains database definitions, table definitions, and other control information to manage your LFlong environment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#catalog CcPrincipalPermissions#catalog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#catalog CcPrincipalPermissions#catalog}
     */
-    readonly catalog?: string;
+    readonly catalog?: CatalogProperty;
     /**
     * A data cell filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#data_cells_filter CcPrincipalPermissions#data_cells_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#data_cells_filter CcPrincipalPermissions#data_cells_filter}
     */
     readonly dataCellsFilter?: DataCellsFilterResourceProperty;
     /**
     * The location of an Amazon S3 path where permissions are granted or revoked.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#data_location CcPrincipalPermissions#data_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#data_location CcPrincipalPermissions#data_location}
     */
     readonly dataLocation?: DataLocationResourceProperty;
     /**
     * The database for the resource. Unique to the Data Catalog. A database is a set of associated table definitions organized into a logical group. You can Grant and Revoke database permissions to a principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#database CcPrincipalPermissions#database}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#database CcPrincipalPermissions#database}
     */
     readonly database?: DatabaseResourceProperty;
     /**
     * The LF-tag key and values attached to a resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#lf_tag CcPrincipalPermissions#lf_tag}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#lf_tag CcPrincipalPermissions#lf_tag}
     */
     readonly lfTag?: LFTagKeyResourceProperty;
     /**
     * A list of LF-tag conditions that define a resource's LF-tag policy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#lf_tag_policy CcPrincipalPermissions#lf_tag_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#lf_tag_policy CcPrincipalPermissions#lf_tag_policy}
     */
     readonly lfTagPolicy?: LFTagPolicyResourceProperty;
     /**
     * The table for the resource. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#table CcPrincipalPermissions#table}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#table CcPrincipalPermissions#table}
     */
     readonly table?: TableResourceProperty;
     /**
     * The table with columns for the resource. A principal with permissions to this resource can select metadata from the columns of a table in the Data Catalog and the underlying data in Amazon S3.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/lakeformation_principal_permissions#table_with_columns CcPrincipalPermissions#table_with_columns}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.102.0/docs/resources/lakeformation_principal_permissions#table_with_columns CcPrincipalPermissions#table_with_columns}
     */
     readonly tableWithColumns?: TableWithColumnsResourceProperty;
 }
@@ -1961,9 +2058,9 @@ export class ResourcePropertyOutputReference extends cdktn.ComplexObject {
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
-        if (this._catalog !== undefined) {
+        if (this._catalog?.internalValue !== undefined) {
             hasAnyValues = true;
-            internalValueResult.catalog = this._catalog;
+            internalValueResult.catalog = this._catalog?.internalValue;
         }
         if (this._dataCellsFilter?.internalValue !== undefined) {
             hasAnyValues = true;
@@ -2000,7 +2097,7 @@ export class ResourcePropertyOutputReference extends cdktn.ComplexObject {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
-            this._catalog = undefined;
+            this._catalog.internalValue = undefined;
             this._dataCellsFilter.internalValue = undefined;
             this._dataLocation.internalValue = undefined;
             this._database.internalValue = undefined;
@@ -2016,7 +2113,7 @@ export class ResourcePropertyOutputReference extends cdktn.ComplexObject {
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
-            this._catalog = value.catalog;
+            this._catalog.internalValue = value.catalog;
             this._dataCellsFilter.internalValue = value.dataCellsFilter;
             this._dataLocation.internalValue = value.dataLocation;
             this._database.internalValue = value.database;
@@ -2028,19 +2125,19 @@ export class ResourcePropertyOutputReference extends cdktn.ComplexObject {
     }
 
     // catalog - computed: true, optional: true, required: false
-    private _catalog?: string; 
+    private _catalog = new CatalogPropertyOutputReference(this, "catalog");
     public get catalog() {
-        return this.getStringAttribute('catalog');
+        return this._catalog;
     }
-    public set catalog(value: string) {
-        this._catalog = value;
+    public putCatalog(value: CatalogProperty) {
+        this._catalog.internalValue = value;
     }
     public resetCatalog() {
-        this._catalog = undefined;
+        this._catalog.internalValue = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get catalogInput() {
-        return this._catalog;
+        return this._catalog.internalValue;
     }
 
     // data_cells_filter - computed: true, optional: true, required: false
