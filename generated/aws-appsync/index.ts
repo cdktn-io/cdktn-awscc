@@ -1,6 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 export * from './api';
+export * from './api-key';
 export * from './channel-namespace';
 export * from './data-source';
 export * from './domain-name';

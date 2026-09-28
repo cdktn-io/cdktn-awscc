@@ -6,6 +6,7 @@ export * from './deployment';
 export * from './deployment-strategy';
 export * from './environment';
 export * from './experiment-definition';
+export * from './experiment-run';
 export * from './extension';
 export * from './extension-association';
 export * from './hosted-configuration-version';

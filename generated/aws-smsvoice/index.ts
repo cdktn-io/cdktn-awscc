@@ -8,3 +8,4 @@ export * from './protect-configuration';
 export * from './registration';
 export * from './resource-policy';
 export * from './sender-id';
+export * from './verified-destination-number';

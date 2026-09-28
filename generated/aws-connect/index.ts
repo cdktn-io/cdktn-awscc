@@ -34,4 +34,5 @@ export * from './user-hierarchy-group';
 export * from './user-hierarchy-structure';
 export * from './view';
 export * from './view-version';
+export * from './vocabulary';
 export * from './workspace';

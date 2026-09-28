@@ -3,6 +3,7 @@
 export * from './dataset';
 export * from './dataset-group';
 export * from './event-tracker';
+export * from './filter';
 export * from './metric-attribution';
 export * from './schema';
 export * from './solution';

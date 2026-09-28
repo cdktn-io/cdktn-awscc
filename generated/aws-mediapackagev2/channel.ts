@@ -1,53 +1,59 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel
+// https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcChannelProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#channel_group_name CcChannel#channel_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#channel_group_name CcChannel#channel_group_name}
     */
     readonly channelGroupName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#channel_name CcChannel#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#channel_name CcChannel#channel_name}
     */
     readonly channelName: string;
     /**
     * <p>Enter any descriptive text that helps you to identify the channel.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#description CcChannel#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#description CcChannel#description}
     */
     readonly description?: string;
     /**
     * <p>The configuration for input switching based on the media quality confidence score (MQCS) as provided from AWS Elemental MediaLive.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#input_switch_configuration CcChannel#input_switch_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#input_switch_configuration CcChannel#input_switch_configuration}
     */
     readonly inputSwitchConfiguration?: CcChannel.InputSwitchConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#input_type CcChannel#input_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#input_type CcChannel#input_type}
     */
     readonly inputType?: string;
     /**
+    * <p>The multiview configuration for a channel. A multiview channel composites video from several source channels into a single tiled output stream. Players receive one standard HLS or DASH stream instead of several separate streams. This setting is required when <code>InputType</code> is <code>MULTIVIEW</code>, and can't be set for any other input type.</p>
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#multiview_configuration CcChannel#multiview_configuration}
+    */
+    readonly multiviewConfiguration?: CcChannel.MultiviewConfigurationProperty;
+    /**
     * <p>The settings for what common media server data (CMSD) headers AWS Elemental MediaPackage includes in responses to the CDN.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#output_header_configuration CcChannel#output_header_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#output_header_configuration CcChannel#output_header_configuration}
     */
     readonly outputHeaderConfiguration?: CcChannel.OutputHeaderConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#output_locking_mode CcChannel#output_locking_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#output_locking_mode CcChannel#output_locking_mode}
     */
     readonly outputLockingMode?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#tags CcChannel#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#tags CcChannel#tags}
     */
     readonly tags?: CcChannel.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel awscc_mediapackagev2_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel awscc_mediapackagev2_channel}
 */
 export class CcChannel extends cdktn.TerraformResource {
 
@@ -63,7 +69,7 @@ export class CcChannel extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcChannel resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcChannel to import
-    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcChannel to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -75,7 +81,7 @@ export class CcChannel extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel awscc_mediapackagev2_channel} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel awscc_mediapackagev2_channel} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +92,7 @@ export class CcChannel extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_mediapackagev2_channel',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.103.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -101,6 +107,7 @@ export class CcChannel extends cdktn.TerraformResource {
         this._description = config.description;
         this._inputSwitchConfiguration.internalValue = config.inputSwitchConfiguration;
         this._inputType = config.inputType;
+        this._multiviewConfiguration.internalValue = config.multiviewConfiguration;
         this._outputHeaderConfiguration.internalValue = config.outputHeaderConfiguration;
         this._outputLockingMode = config.outputLockingMode;
         this._tags.internalValue = config.tags;
@@ -113,6 +120,11 @@ export class CcChannel extends cdktn.TerraformResource {
     // arn - computed: true, optional: false, required: false
     public get arn() {
         return this.getStringAttribute('arn');
+    }
+
+    // attached_multiview_channels - computed: true, optional: false, required: false
+    public get attachedMultiviewChannels() {
+        return this.getListAttribute('attached_multiview_channels');
     }
 
     // channel_group_name - computed: false, optional: false, required: true
@@ -215,6 +227,22 @@ export class CcChannel extends cdktn.TerraformResource {
         return this.getStringAttribute('modified_at');
     }
 
+    // multiview_configuration - computed: true, optional: true, required: false
+    private _multiviewConfiguration = new CcChannel.MultiviewConfigurationPropertyOutputReference(this, "multiview_configuration");
+    public get multiviewConfiguration() {
+        return this._multiviewConfiguration;
+    }
+    public putMultiviewConfiguration(value: CcChannel.MultiviewConfigurationProperty) {
+        this._multiviewConfiguration.internalValue = value;
+    }
+    public resetMultiviewConfiguration() {
+        this._multiviewConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get multiviewConfigurationInput() {
+        return this._multiviewConfiguration.internalValue;
+    }
+
     // output_header_configuration - computed: true, optional: true, required: false
     private _outputHeaderConfiguration = new CcChannel.OutputHeaderConfigurationPropertyOutputReference(this, "output_header_configuration");
     public get outputHeaderConfiguration() {
@@ -274,6 +302,7 @@ export class CcChannel extends cdktn.TerraformResource {
             description: cdktn.stringToTerraform(this._description),
             input_switch_configuration: ccChannelInputSwitchConfigurationPropertyToTerraform(this._inputSwitchConfiguration.internalValue),
             input_type: cdktn.stringToTerraform(this._inputType),
+            multiview_configuration: ccChannelMultiviewConfigurationPropertyToTerraform(this._multiviewConfiguration.internalValue),
             output_header_configuration: ccChannelOutputHeaderConfigurationPropertyToTerraform(this._outputHeaderConfiguration.internalValue),
             output_locking_mode: cdktn.stringToTerraform(this._outputLockingMode),
             tags: cdktn.listMapper(ccChannelTagPropertyToTerraform, false)(this._tags.internalValue),
@@ -311,6 +340,12 @@ export class CcChannel extends cdktn.TerraformResource {
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
+            },
+            multiview_configuration: {
+                value: ccChannelMultiviewConfigurationPropertyToHclTerraform(this._multiviewConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcChannel.MultiviewConfigurationProperty",
             },
             output_header_configuration: {
                 value: ccChannelOutputHeaderConfigurationPropertyToHclTerraform(this._outputHeaderConfiguration.internalValue),
@@ -387,6 +422,43 @@ export function ccChannelInputSwitchConfigurationPropertyToHclTerraform(struct?:
             isBlock: false,
             type: "simple",
             storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccChannelMultiviewConfigurationPropertyToTerraform(struct?: CcChannel.MultiviewConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        available_layouts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availableLayouts),
+        available_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availableSources),
+    }
+}
+
+
+export function ccChannelMultiviewConfigurationPropertyToHclTerraform(struct?: CcChannel.MultiviewConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        available_layouts: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availableLayouts),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        available_sources: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availableSources),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
     };
 
@@ -526,13 +598,13 @@ export interface InputSwitchConfigurationProperty {
     /**
     * <p>When true, AWS Elemental MediaPackage performs input switching based on the MQCS. Default is false. This setting is valid only when <code>InputType</code> is <code>CMAF</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#mqcs_input_switching CcChannel#mqcs_input_switching}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#mqcs_input_switching CcChannel#mqcs_input_switching}
     */
     readonly mqcsInputSwitching?: boolean | cdktn.IResolvable;
     /**
     * <p>For CMAF inputs, indicates which input MediaPackage should prefer when both inputs have equal MQCS scores. Select <code>1</code> to prefer the first ingest endpoint, or <code>2</code> to prefer the second ingest endpoint. If you don't specify a preferred input, MediaPackage uses its default switching behavior when MQCS scores are equal.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#preferred_input CcChannel#preferred_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#preferred_input CcChannel#preferred_input}
     */
     readonly preferredInput?: number;
 }
@@ -616,11 +688,105 @@ export class InputSwitchConfigurationPropertyOutputReference extends cdktn.Compl
         return this._preferredInput;
     }
 }
+export interface MultiviewConfigurationProperty {
+    /**
+    * <p>The tile layouts that players can request from this multiview channel's origin endpoints. Only the layouts that you list here are available. Each layout must appear at most once.</p>
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#available_layouts CcChannel#available_layouts}
+    */
+    readonly availableLayouts?: string[];
+    /**
+    * <p>The channels that players can use as tiles in this multiview channel's output. Each source channel must be in the same channel group as the multiview channel, and must have an <code>InputType</code> of <code>CMAF</code>. Only the channels that you list here are available as tiles.</p>
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#available_sources CcChannel#available_sources}
+    */
+    readonly availableSources?: string[];
+}
+export class MultiviewConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): MultiviewConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._availableLayouts !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.availableLayouts = this._availableLayouts;
+        }
+        if (this._availableSources !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.availableSources = this._availableSources;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: MultiviewConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._availableLayouts = undefined;
+            this._availableSources = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._availableLayouts = value.availableLayouts;
+            this._availableSources = value.availableSources;
+        }
+    }
+
+    // available_layouts - computed: true, optional: true, required: false
+    private _availableLayouts?: string[]; 
+    public get availableLayouts() {
+        return this.getListAttribute('available_layouts');
+    }
+    public set availableLayouts(value: string[]) {
+        this._availableLayouts = value;
+    }
+    public resetAvailableLayouts() {
+        this._availableLayouts = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get availableLayoutsInput() {
+        return this._availableLayouts;
+    }
+
+    // available_sources - computed: true, optional: true, required: false
+    private _availableSources?: string[]; 
+    public get availableSources() {
+        return this.getListAttribute('available_sources');
+    }
+    public set availableSources(value: string[]) {
+        this._availableSources = value;
+    }
+    public resetAvailableSources() {
+        this._availableSources = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get availableSourcesInput() {
+        return this._availableSources;
+    }
+}
 export interface OutputHeaderConfigurationProperty {
     /**
     * <p>When true, AWS Elemental MediaPackage includes the MQCS in responses to the CDN. This setting is valid only when <code>InputType</code> is <code>CMAF</code>.</p>
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#publish_mqcs CcChannel#publish_mqcs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#publish_mqcs CcChannel#publish_mqcs}
     */
     readonly publishMqcs?: boolean | cdktn.IResolvable;
 }
@@ -684,11 +850,11 @@ export class OutputHeaderConfigurationPropertyOutputReference extends cdktn.Comp
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#key CcChannel#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#key CcChannel#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediapackagev2_channel#value CcChannel#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.103.0/docs/resources/mediapackagev2_channel#value CcChannel#value}
     */
     readonly value?: string;
 }
