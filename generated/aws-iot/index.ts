@@ -27,6 +27,7 @@ export * from './software-package-version';
 export * from './stream';
 export * from './thing';
 export * from './thing-group';
+export * from './thing-principal-attachment';
 export * from './thing-type';
 export * from './topic-rule';
 export * from './topic-rule-destination';

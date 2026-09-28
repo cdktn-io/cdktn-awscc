@@ -5,6 +5,7 @@ export * from './config-rule';
 export * from './configuration-aggregator';
 export * from './conformance-pack';
 export * from './connector';
+export * from './delivery-channel';
 export * from './organization-conformance-pack';
 export * from './remediation-configuration';
 export * from './stored-query';
