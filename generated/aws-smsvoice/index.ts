@@ -6,5 +6,7 @@ export * from './phone-number';
 export * from './pool';
 export * from './protect-configuration';
 export * from './registration';
+export * from './registration-attachment';
 export * from './resource-policy';
 export * from './sender-id';
+export * from './verified-destination-number';

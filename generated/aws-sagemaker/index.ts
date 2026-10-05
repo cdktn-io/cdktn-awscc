@@ -1,17 +1,21 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 export * from './action';
+export * from './ai-workload-config';
 export * from './algorithm';
 export * from './app';
 export * from './app-image-config';
 export * from './artifact';
 export * from './cluster';
+export * from './cluster-scheduler-config';
+export * from './code-repository';
 export * from './context';
 export * from './data-quality-job-definition';
 export * from './device';
 export * from './device-fleet';
 export * from './domain';
 export * from './endpoint';
+export * from './endpoint-config';
 export * from './experiment';
 export * from './experiment-trial-component';
 export * from './feature-group';
@@ -30,6 +34,8 @@ export * from './model-package';
 export * from './model-package-group';
 export * from './model-quality-job-definition';
 export * from './monitoring-schedule';
+export * from './notebook-instance';
+export * from './notebook-instance-lifecycle-config';
 export * from './partner-app';
 export * from './pipeline';
 export * from './processing-job';
@@ -39,3 +45,4 @@ export * from './studio-lifecycle-config';
 export * from './trial-component';
 export * from './user-profile';
 export * from './workforce';
+export * from './workteam';

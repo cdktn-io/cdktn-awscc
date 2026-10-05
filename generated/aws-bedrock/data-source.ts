@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source
+// https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,49 @@ export interface CcDataSourceProps extends cdktn.TerraformMetaArguments {
     /**
     * The deletion policy for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#data_deletion_policy CcDataSource#data_deletion_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#data_deletion_policy CcDataSource#data_deletion_policy}
     */
     readonly dataDeletionPolicy?: string;
     /**
     * Specifies a raw data source location to ingest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#data_source_configuration CcDataSource#data_source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#data_source_configuration CcDataSource#data_source_configuration}
     */
     readonly dataSourceConfiguration: CcDataSource.DataSourceConfigurationProperty;
     /**
     * Description of the Resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#description CcDataSource#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#description CcDataSource#description}
     */
     readonly description?: string;
     /**
     * The unique identifier of the knowledge base to which to add the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#knowledge_base_id CcDataSource#knowledge_base_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#knowledge_base_id CcDataSource#knowledge_base_id}
     */
     readonly knowledgeBaseId: string;
     /**
     * The name of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#name CcDataSource#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#name CcDataSource#name}
     */
     readonly name: string;
     /**
     * Contains details about the server-side encryption for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#server_side_encryption_configuration CcDataSource#server_side_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#server_side_encryption_configuration CcDataSource#server_side_encryption_configuration}
     */
     readonly serverSideEncryptionConfiguration?: CcDataSource.ServerSideEncryptionConfigurationProperty;
     /**
     * Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#vector_ingestion_configuration CcDataSource#vector_ingestion_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#vector_ingestion_configuration CcDataSource#vector_ingestion_configuration}
     */
     readonly vectorIngestionConfiguration?: CcDataSource.VectorIngestionConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source awscc_bedrock_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source awscc_bedrock_data_source}
 */
 export class CcDataSource extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDataSource resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDataSource to import
-    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDataSource to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class CcDataSource extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source awscc_bedrock_data_source} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source awscc_bedrock_data_source} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class CcDataSource extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrock_data_source',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.104.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -713,6 +713,147 @@ export function ccDataSourceMediaExtractionConfigurationPropertyToHclTerraform(s
 }
 
 
+export function ccDataSourceDayOfMonthPropertyToTerraform(struct?: CcDataSource.DayOfMonthProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        day_number: cdktn.numberToTerraform(struct!.dayNumber),
+        last_day_of_month: cdktn.stringToTerraform(struct!.lastDayOfMonth),
+    }
+}
+
+
+export function ccDataSourceDayOfMonthPropertyToHclTerraform(struct?: CcDataSource.DayOfMonthProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        day_number: {
+            value: cdktn.numberToHclTerraform(struct!.dayNumber),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        last_day_of_month: {
+            value: cdktn.stringToHclTerraform(struct!.lastDayOfMonth),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccDataSourceMonthlyPropertyToTerraform(struct?: CcDataSource.MonthlyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        day_of_month: ccDataSourceDayOfMonthPropertyToTerraform(struct!.dayOfMonth),
+    }
+}
+
+
+export function ccDataSourceMonthlyPropertyToHclTerraform(struct?: CcDataSource.MonthlyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        day_of_month: {
+            value: ccDataSourceDayOfMonthPropertyToHclTerraform(struct!.dayOfMonth),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DayOfMonthProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccDataSourceWeeklyPropertyToTerraform(struct?: CcDataSource.WeeklyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    }
+}
+
+
+export function ccDataSourceWeeklyPropertyToHclTerraform(struct?: CcDataSource.WeeklyProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        day_of_week: {
+            value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccDataSourceSyncSchedulePropertyToTerraform(struct?: CcDataSource.SyncScheduleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        daily: cdktn.stringToTerraform(struct!.daily),
+        monthly: ccDataSourceMonthlyPropertyToTerraform(struct!.monthly),
+        weekly: ccDataSourceWeeklyPropertyToTerraform(struct!.weekly),
+    }
+}
+
+
+export function ccDataSourceSyncSchedulePropertyToHclTerraform(struct?: CcDataSource.SyncScheduleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        daily: {
+            value: cdktn.stringToHclTerraform(struct!.daily),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        monthly: {
+            value: ccDataSourceMonthlyPropertyToHclTerraform(struct!.monthly),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "MonthlyProperty",
+        },
+        weekly: {
+            value: ccDataSourceWeeklyPropertyToHclTerraform(struct!.weekly),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "WeeklyProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccDataSourceManagedKnowledgeBaseConnectorConfigurationPropertyToTerraform(struct?: CcDataSource.ManagedKnowledgeBaseConnectorConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -722,6 +863,7 @@ export function ccDataSourceManagedKnowledgeBaseConnectorConfigurationPropertyTo
         connector_parameters: cdktn.stringToTerraform(struct!.connectorParameters),
         deletion_protection_configuration: ccDataSourceDeletionProtectionConfigurationPropertyToTerraform(struct!.deletionProtectionConfiguration),
         media_extraction_configuration: ccDataSourceMediaExtractionConfigurationPropertyToTerraform(struct!.mediaExtractionConfiguration),
+        sync_schedule: ccDataSourceSyncSchedulePropertyToTerraform(struct!.syncSchedule),
     }
 }
 
@@ -749,6 +891,12 @@ export function ccDataSourceManagedKnowledgeBaseConnectorConfigurationPropertyTo
             isBlock: true,
             type: "struct",
             storageClassType: "MediaExtractionConfigurationProperty",
+        },
+        sync_schedule: {
+            value: ccDataSourceSyncSchedulePropertyToHclTerraform(struct!.syncSchedule),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "SyncScheduleProperty",
         },
     };
 
@@ -2291,19 +2439,19 @@ export interface PatternObjectFilterProperty {
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
     */
     readonly exclusionFilters?: string[];
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
     */
     readonly inclusionFilters?: string[];
     /**
     * The supported object type or content type of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
     */
     readonly objectType?: string;
 }
@@ -2435,7 +2583,7 @@ export interface PatternObjectFilterConfigurationProperty {
     /**
     * Contains information
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
     */
     readonly filters?: PatternObjectFilterProperty[] | cdktn.IResolvable;
 }
@@ -2501,13 +2649,13 @@ export interface CrawlFilterConfigurationProperty {
     /**
     * The configuration of specific filters applied to your data source content. You can filter out or include certain content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
     */
     readonly patternObjectFilter?: PatternObjectFilterConfigurationProperty;
     /**
     * The crawl filter type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -2595,7 +2743,7 @@ export interface ConfluenceCrawlerConfigurationProperty {
     /**
     * The type of filtering that you want to apply to certain objects or content of the data source. For example, the PATTERN type is regular expression patterns you can apply to filter your content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
     */
     readonly filterConfiguration?: CrawlFilterConfigurationProperty;
 }
@@ -2661,25 +2809,25 @@ export interface ConfluenceSourceConfigurationProperty {
     /**
     * The supported authentication type to authenticate and connect to your Confluence instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
     */
     readonly authType?: string;
     /**
     * The Amazon Resource Name of an AWS Secrets Manager secret that stores your authentication credentials for your Confluence instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Confluence connection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * The supported host type, whether online/cloud or server/on-premises.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#host_type CcDataSource#host_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#host_type CcDataSource#host_type}
     */
     readonly hostType?: string;
     /**
     * The Confluence host URL or instance URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#host_url CcDataSource#host_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#host_url CcDataSource#host_url}
     */
     readonly hostUrl?: string;
 }
@@ -2811,13 +2959,13 @@ export interface ConfluenceDataSourceConfigurationProperty {
     /**
     * The configuration of the Confluence content. For example, configuring specific types of Confluence content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
     */
     readonly crawlerConfiguration?: ConfluenceCrawlerConfigurationProperty;
     /**
     * The endpoint information to connect to your Confluence data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
     */
     readonly sourceConfiguration?: ConfluenceSourceConfigurationProperty;
 }
@@ -2905,13 +3053,13 @@ export interface DeletionProtectionConfigurationProperty {
     /**
     * Indicates whether a feature is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#deletion_protection_status CcDataSource#deletion_protection_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#deletion_protection_status CcDataSource#deletion_protection_status}
     */
     readonly deletionProtectionStatus?: string;
     /**
     * Threshold for deletion protection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#deletion_protection_threshold CcDataSource#deletion_protection_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#deletion_protection_threshold CcDataSource#deletion_protection_threshold}
     */
     readonly deletionProtectionThreshold?: number;
 }
@@ -2999,7 +3147,7 @@ export interface AudioExtractionConfigurationProperty {
     /**
     * Indicates whether a feature is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#audio_extraction_status CcDataSource#audio_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#audio_extraction_status CcDataSource#audio_extraction_status}
     */
     readonly audioExtractionStatus?: string;
 }
@@ -3065,7 +3213,7 @@ export interface ImageExtractionConfigurationProperty {
     /**
     * Indicates whether a feature is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#image_extraction_status CcDataSource#image_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#image_extraction_status CcDataSource#image_extraction_status}
     */
     readonly imageExtractionStatus?: string;
 }
@@ -3131,7 +3279,7 @@ export interface VideoExtractionConfigurationProperty {
     /**
     * Indicates whether a feature is enabled or disabled.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#video_extraction_status CcDataSource#video_extraction_status}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#video_extraction_status CcDataSource#video_extraction_status}
     */
     readonly videoExtractionStatus?: string;
 }
@@ -3197,19 +3345,19 @@ export interface MediaExtractionConfigurationProperty {
     /**
     * Configuration for audio extraction.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#audio_extraction_configuration CcDataSource#audio_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#audio_extraction_configuration CcDataSource#audio_extraction_configuration}
     */
     readonly audioExtractionConfiguration?: AudioExtractionConfigurationProperty;
     /**
     * Configuration for image extraction.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#image_extraction_configuration CcDataSource#image_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#image_extraction_configuration CcDataSource#image_extraction_configuration}
     */
     readonly imageExtractionConfiguration?: ImageExtractionConfigurationProperty;
     /**
     * Configuration for video extraction.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#video_extraction_configuration CcDataSource#video_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#video_extraction_configuration CcDataSource#video_extraction_configuration}
     */
     readonly videoExtractionConfiguration?: VideoExtractionConfigurationProperty;
 }
@@ -3315,25 +3463,379 @@ export class MediaExtractionConfigurationPropertyOutputReference extends cdktn.C
         return this._videoExtractionConfiguration.internalValue;
     }
 }
+export interface DayOfMonthProperty {
+    /**
+    * Specific day of the month, 1 through 28 (capped at 28 to avoid month-length ambiguity).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#day_number CcDataSource#day_number}
+    */
+    readonly dayNumber?: number;
+    /**
+    * Run on the last calendar day of each month.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#last_day_of_month CcDataSource#last_day_of_month}
+    */
+    readonly lastDayOfMonth?: string;
+}
+export class DayOfMonthPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DayOfMonthProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dayNumber !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dayNumber = this._dayNumber;
+        }
+        if (this._lastDayOfMonth !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.lastDayOfMonth = this._lastDayOfMonth;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DayOfMonthProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dayNumber = undefined;
+            this._lastDayOfMonth = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dayNumber = value.dayNumber;
+            this._lastDayOfMonth = value.lastDayOfMonth;
+        }
+    }
+
+    // day_number - computed: true, optional: true, required: false
+    private _dayNumber?: number; 
+    public get dayNumber() {
+        return this.getNumberAttribute('day_number');
+    }
+    public set dayNumber(value: number) {
+        this._dayNumber = value;
+    }
+    public resetDayNumber() {
+        this._dayNumber = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dayNumberInput() {
+        return this._dayNumber;
+    }
+
+    // last_day_of_month - computed: true, optional: true, required: false
+    private _lastDayOfMonth?: string; 
+    public get lastDayOfMonth() {
+        return this.getStringAttribute('last_day_of_month');
+    }
+    public set lastDayOfMonth(value: string) {
+        this._lastDayOfMonth = value;
+    }
+    public resetLastDayOfMonth() {
+        this._lastDayOfMonth = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get lastDayOfMonthInput() {
+        return this._lastDayOfMonth;
+    }
+}
+export interface MonthlyProperty {
+    /**
+    * Day of the month on which a monthly refresh runs. Exactly one variant is set: an explicit day number, or the last calendar day of the month.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#day_of_month CcDataSource#day_of_month}
+    */
+    readonly dayOfMonth?: DayOfMonthProperty;
+}
+export class MonthlyPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): MonthlyProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dayOfMonth?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dayOfMonth = this._dayOfMonth?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: MonthlyProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dayOfMonth.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dayOfMonth.internalValue = value.dayOfMonth;
+        }
+    }
+
+    // day_of_month - computed: true, optional: true, required: false
+    private _dayOfMonth = new DayOfMonthPropertyOutputReference(this, "day_of_month");
+    public get dayOfMonth() {
+        return this._dayOfMonth;
+    }
+    public putDayOfMonth(value: DayOfMonthProperty) {
+        this._dayOfMonth.internalValue = value;
+    }
+    public resetDayOfMonth() {
+        this._dayOfMonth.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dayOfMonthInput() {
+        return this._dayOfMonth.internalValue;
+    }
+}
+export interface WeeklyProperty {
+    /**
+    * Day of the week.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#day_of_week CcDataSource#day_of_week}
+    */
+    readonly dayOfWeek?: string;
+}
+export class WeeklyPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): WeeklyProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dayOfWeek !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dayOfWeek = this._dayOfWeek;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: WeeklyProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dayOfWeek = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dayOfWeek = value.dayOfWeek;
+        }
+    }
+
+    // day_of_week - computed: true, optional: true, required: false
+    private _dayOfWeek?: string; 
+    public get dayOfWeek() {
+        return this.getStringAttribute('day_of_week');
+    }
+    public set dayOfWeek(value: string) {
+        this._dayOfWeek = value;
+    }
+    public resetDayOfWeek() {
+        this._dayOfWeek = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dayOfWeekInput() {
+        return this._dayOfWeek;
+    }
+}
+export interface SyncScheduleProperty {
+    /**
+    * A daily refresh. The run time is system-chosen (off-peak) and not customer-configurable.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#daily CcDataSource#daily}
+    */
+    readonly daily?: string;
+    /**
+    * A monthly refresh on a specified day of the month.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#monthly CcDataSource#monthly}
+    */
+    readonly monthly?: MonthlyProperty;
+    /**
+    * A weekly refresh on a specified day of the week.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#weekly CcDataSource#weekly}
+    */
+    readonly weekly?: WeeklyProperty;
+}
+export class SyncSchedulePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): SyncScheduleProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._daily !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.daily = this._daily;
+        }
+        if (this._monthly?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.monthly = this._monthly?.internalValue;
+        }
+        if (this._weekly?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.weekly = this._weekly?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SyncScheduleProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._daily = undefined;
+            this._monthly.internalValue = undefined;
+            this._weekly.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._daily = value.daily;
+            this._monthly.internalValue = value.monthly;
+            this._weekly.internalValue = value.weekly;
+        }
+    }
+
+    // daily - computed: true, optional: true, required: false
+    private _daily?: string; 
+    public get daily() {
+        return this.getStringAttribute('daily');
+    }
+    public set daily(value: string) {
+        this._daily = value;
+    }
+    public resetDaily() {
+        this._daily = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dailyInput() {
+        return this._daily;
+    }
+
+    // monthly - computed: true, optional: true, required: false
+    private _monthly = new MonthlyPropertyOutputReference(this, "monthly");
+    public get monthly() {
+        return this._monthly;
+    }
+    public putMonthly(value: MonthlyProperty) {
+        this._monthly.internalValue = value;
+    }
+    public resetMonthly() {
+        this._monthly.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get monthlyInput() {
+        return this._monthly.internalValue;
+    }
+
+    // weekly - computed: true, optional: true, required: false
+    private _weekly = new WeeklyPropertyOutputReference(this, "weekly");
+    public get weekly() {
+        return this._weekly;
+    }
+    public putWeekly(value: WeeklyProperty) {
+        this._weekly.internalValue = value;
+    }
+    public resetWeekly() {
+        this._weekly.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get weeklyInput() {
+        return this._weekly.internalValue;
+    }
+}
 export interface ManagedKnowledgeBaseConnectorConfigurationProperty {
     /**
     * Connector-specific parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#connector_parameters CcDataSource#connector_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#connector_parameters CcDataSource#connector_parameters}
     */
     readonly connectorParameters?: string;
     /**
     * Configuration for deletion protection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#deletion_protection_configuration CcDataSource#deletion_protection_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#deletion_protection_configuration CcDataSource#deletion_protection_configuration}
     */
     readonly deletionProtectionConfiguration?: DeletionProtectionConfigurationProperty;
     /**
     * Configuration for media extraction settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#media_extraction_configuration CcDataSource#media_extraction_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#media_extraction_configuration CcDataSource#media_extraction_configuration}
     */
     readonly mediaExtractionConfiguration?: MediaExtractionConfigurationProperty;
+    /**
+    * Recurring schedule on which the connector automatically refreshes ingested content. Exactly one frequency variant is set.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#sync_schedule CcDataSource#sync_schedule}
+    */
+    readonly syncSchedule?: SyncScheduleProperty;
 }
 export class ManagedKnowledgeBaseConnectorConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -3365,6 +3867,10 @@ export class ManagedKnowledgeBaseConnectorConfigurationPropertyOutputReference e
             hasAnyValues = true;
             internalValueResult.mediaExtractionConfiguration = this._mediaExtractionConfiguration?.internalValue;
         }
+        if (this._syncSchedule?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.syncSchedule = this._syncSchedule?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -3375,6 +3881,7 @@ export class ManagedKnowledgeBaseConnectorConfigurationPropertyOutputReference e
             this._connectorParameters = undefined;
             this._deletionProtectionConfiguration.internalValue = undefined;
             this._mediaExtractionConfiguration.internalValue = undefined;
+            this._syncSchedule.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -3386,6 +3893,7 @@ export class ManagedKnowledgeBaseConnectorConfigurationPropertyOutputReference e
             this._connectorParameters = value.connectorParameters;
             this._deletionProtectionConfiguration.internalValue = value.deletionProtectionConfiguration;
             this._mediaExtractionConfiguration.internalValue = value.mediaExtractionConfiguration;
+            this._syncSchedule.internalValue = value.syncSchedule;
         }
     }
 
@@ -3436,24 +3944,40 @@ export class ManagedKnowledgeBaseConnectorConfigurationPropertyOutputReference e
     public get mediaExtractionConfigurationInput() {
         return this._mediaExtractionConfiguration.internalValue;
     }
+
+    // sync_schedule - computed: true, optional: true, required: false
+    private _syncSchedule = new SyncSchedulePropertyOutputReference(this, "sync_schedule");
+    public get syncSchedule() {
+        return this._syncSchedule;
+    }
+    public putSyncSchedule(value: SyncScheduleProperty) {
+        this._syncSchedule.internalValue = value;
+    }
+    public resetSyncSchedule() {
+        this._syncSchedule.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get syncScheduleInput() {
+        return this._syncSchedule.internalValue;
+    }
 }
 export interface S3DataSourceConfigurationProperty {
     /**
     * The ARN of the bucket that contains the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#bucket_arn CcDataSource#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#bucket_arn CcDataSource#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The account ID for the owner of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#bucket_owner_account_id CcDataSource#bucket_owner_account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#bucket_owner_account_id CcDataSource#bucket_owner_account_id}
     */
     readonly bucketOwnerAccountId?: string;
     /**
     * A list of S3 prefixes that define the object containing the data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#inclusion_prefixes CcDataSource#inclusion_prefixes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#inclusion_prefixes CcDataSource#inclusion_prefixes}
     */
     readonly inclusionPrefixes?: string[];
 }
@@ -3563,19 +4087,19 @@ export interface DataSourceConfigurationSalesforceConfigurationCrawlerConfigurat
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
     */
     readonly exclusionFilters?: string[];
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
     */
     readonly inclusionFilters?: string[];
     /**
     * The supported object type or content type of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
     */
     readonly objectType?: string;
 }
@@ -3707,7 +4231,7 @@ export interface DataSourceConfigurationSalesforceConfigurationCrawlerConfigurat
     /**
     * Contains information
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
     */
     readonly filters?: DataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersProperty[] | cdktn.IResolvable;
 }
@@ -3773,13 +4297,13 @@ export interface DataSourceConfigurationSalesforceConfigurationCrawlerConfigurat
     /**
     * The configuration of specific filters applied to your data source content. You can filter out or include certain content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
     */
     readonly patternObjectFilter?: DataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterProperty;
     /**
     * The crawl filter type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -3867,7 +4391,7 @@ export interface SalesforceCrawlerConfigurationProperty {
     /**
     * The type of filtering that you want to apply to certain objects or content of the data source. For example, the PATTERN type is regular expression patterns you can apply to filter your content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
     */
     readonly filterConfiguration?: DataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationProperty;
 }
@@ -3933,19 +4457,19 @@ export interface SalesforceSourceConfigurationProperty {
     /**
     * The supported authentication type to authenticate and connect to your Salesforce instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
     */
     readonly authType?: string;
     /**
     * The Amazon Resource Name of an AWS Secrets Manager secret that stores your authentication credentials for your Salesforce instance URL. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see Salesforce connection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * The Salesforce host URL or instance URL.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#host_url CcDataSource#host_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#host_url CcDataSource#host_url}
     */
     readonly hostUrl?: string;
 }
@@ -4055,13 +4579,13 @@ export interface SalesforceDataSourceConfigurationProperty {
     /**
     * The configuration of filtering the Salesforce content. For example, configuring regular expression patterns to include or exclude certain content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
     */
     readonly crawlerConfiguration?: SalesforceCrawlerConfigurationProperty;
     /**
     * The endpoint information to connect to your Salesforce data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
     */
     readonly sourceConfiguration?: SalesforceSourceConfigurationProperty;
 }
@@ -4149,19 +4673,19 @@ export interface DataSourceConfigurationSharePointConfigurationCrawlerConfigurat
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
     */
     readonly exclusionFilters?: string[];
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
     */
     readonly inclusionFilters?: string[];
     /**
     * The supported object type or content type of the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#object_type CcDataSource#object_type}
     */
     readonly objectType?: string;
 }
@@ -4293,7 +4817,7 @@ export interface DataSourceConfigurationSharePointConfigurationCrawlerConfigurat
     /**
     * Contains information
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filters CcDataSource#filters}
     */
     readonly filters?: DataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFiltersProperty[] | cdktn.IResolvable;
 }
@@ -4359,13 +4883,13 @@ export interface DataSourceConfigurationSharePointConfigurationCrawlerConfigurat
     /**
     * The configuration of specific filters applied to your data source content. You can filter out or include certain content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#pattern_object_filter CcDataSource#pattern_object_filter}
     */
     readonly patternObjectFilter?: DataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterProperty;
     /**
     * The crawl filter type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -4453,7 +4977,7 @@ export interface SharePointCrawlerConfigurationProperty {
     /**
     * The type of filtering that you want to apply to certain objects or content of the data source. For example, the PATTERN type is regular expression patterns you can apply to filter your content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#filter_configuration CcDataSource#filter_configuration}
     */
     readonly filterConfiguration?: DataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationProperty;
 }
@@ -4519,37 +5043,37 @@ export interface SharePointSourceConfigurationProperty {
     /**
     * The supported authentication type to authenticate and connect to your SharePoint site/sites.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#auth_type CcDataSource#auth_type}
     */
     readonly authType?: string;
     /**
     * The Amazon Resource Name of an AWS Secrets Manager secret that stores your authentication credentials for your SharePoint site/sites. For more information on the key-value pairs that must be included in your secret, depending on your authentication type, see SharePoint connection configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#credentials_secret_arn CcDataSource#credentials_secret_arn}
     */
     readonly credentialsSecretArn?: string;
     /**
     * The domain of your SharePoint instance or site URL/URLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#domain CcDataSource#domain}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#domain CcDataSource#domain}
     */
     readonly domain?: string;
     /**
     * The supported host type, whether online/cloud or server/on-premises.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#host_type CcDataSource#host_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#host_type CcDataSource#host_type}
     */
     readonly hostType?: string;
     /**
     * A list of one or more SharePoint site URLs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#site_urls CcDataSource#site_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#site_urls CcDataSource#site_urls}
     */
     readonly siteUrls?: string[];
     /**
     * The identifier of your Microsoft 365 tenant.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#tenant_id CcDataSource#tenant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#tenant_id CcDataSource#tenant_id}
     */
     readonly tenantId?: string;
 }
@@ -4725,13 +5249,13 @@ export interface SharePointDataSourceConfigurationProperty {
     /**
     * The configuration of the SharePoint content. For example, configuring specific types of SharePoint content.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
     */
     readonly crawlerConfiguration?: SharePointCrawlerConfigurationProperty;
     /**
     * The endpoint information to connect to your SharePoint data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
     */
     readonly sourceConfiguration?: SharePointSourceConfigurationProperty;
 }
@@ -4819,13 +5343,13 @@ export interface WebCrawlerLimitsProperty {
     /**
     * Maximum number of pages the crawler can crawl.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#max_pages CcDataSource#max_pages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#max_pages CcDataSource#max_pages}
     */
     readonly maxPages?: number;
     /**
     * Rate of web URLs retrieved per minute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#rate_limit CcDataSource#rate_limit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#rate_limit CcDataSource#rate_limit}
     */
     readonly rateLimit?: number;
 }
@@ -4913,31 +5437,31 @@ export interface WebCrawlerConfigurationProperty {
     /**
     * Limit settings for the web crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#crawler_limits CcDataSource#crawler_limits}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#crawler_limits CcDataSource#crawler_limits}
     */
     readonly crawlerLimits?: WebCrawlerLimitsProperty;
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#exclusion_filters CcDataSource#exclusion_filters}
     */
     readonly exclusionFilters?: string[];
     /**
     * A set of regular expression filter patterns for a type of object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#inclusion_filters CcDataSource#inclusion_filters}
     */
     readonly inclusionFilters?: string[];
     /**
     * The scope that a web crawl job will be restricted to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#scope CcDataSource#scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#scope CcDataSource#scope}
     */
     readonly scope?: string;
     /**
     * The suffix that will be included in the user agent header.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#user_agent CcDataSource#user_agent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#user_agent CcDataSource#user_agent}
     */
     readonly userAgent?: string;
 }
@@ -5096,7 +5620,7 @@ export interface SeedUrlProperty {
     /**
     * A web url.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#url CcDataSource#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#url CcDataSource#url}
     */
     readonly url?: string;
 }
@@ -5184,7 +5708,7 @@ export interface UrlConfigurationProperty {
     /**
     * A list of web urls.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#seed_urls CcDataSource#seed_urls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#seed_urls CcDataSource#seed_urls}
     */
     readonly seedUrls?: SeedUrlProperty[] | cdktn.IResolvable;
 }
@@ -5250,7 +5774,7 @@ export interface WebSourceConfigurationProperty {
     /**
     * A url configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#url_configuration CcDataSource#url_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#url_configuration CcDataSource#url_configuration}
     */
     readonly urlConfiguration?: UrlConfigurationProperty;
 }
@@ -5316,13 +5840,13 @@ export interface WebDataSourceConfigurationProperty {
     /**
     * Configuration for the web crawler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#crawler_configuration CcDataSource#crawler_configuration}
     */
     readonly crawlerConfiguration?: WebCrawlerConfigurationProperty;
     /**
     * A web source configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#source_configuration CcDataSource#source_configuration}
     */
     readonly sourceConfiguration?: WebSourceConfigurationProperty;
 }
@@ -5410,43 +5934,43 @@ export interface DataSourceConfigurationProperty {
     /**
     * The configuration information to connect to Confluence as your data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#confluence_configuration CcDataSource#confluence_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#confluence_configuration CcDataSource#confluence_configuration}
     */
     readonly confluenceConfiguration?: ConfluenceDataSourceConfigurationProperty;
     /**
     * Configuration for managed knowledge base connector data sources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#managed_knowledge_base_connector_configuration CcDataSource#managed_knowledge_base_connector_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#managed_knowledge_base_connector_configuration CcDataSource#managed_knowledge_base_connector_configuration}
     */
     readonly managedKnowledgeBaseConnectorConfiguration?: ManagedKnowledgeBaseConnectorConfigurationProperty;
     /**
     * The configuration information to connect to Amazon S3 as your data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#s3_configuration CcDataSource#s3_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#s3_configuration CcDataSource#s3_configuration}
     */
     readonly s3Configuration?: S3DataSourceConfigurationProperty;
     /**
     * The configuration information to connect to Salesforce as your data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#salesforce_configuration CcDataSource#salesforce_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#salesforce_configuration CcDataSource#salesforce_configuration}
     */
     readonly salesforceConfiguration?: SalesforceDataSourceConfigurationProperty;
     /**
     * The configuration information to connect to SharePoint as your data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#share_point_configuration CcDataSource#share_point_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#share_point_configuration CcDataSource#share_point_configuration}
     */
     readonly sharePointConfiguration?: SharePointDataSourceConfigurationProperty;
     /**
     * The type of the data source location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#type CcDataSource#type}
     */
     readonly type: string;
     /**
     * Configures a web data source location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#web_configuration CcDataSource#web_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#web_configuration CcDataSource#web_configuration}
     */
     readonly webConfiguration?: WebDataSourceConfigurationProperty;
 }
@@ -5641,7 +6165,7 @@ export interface ServerSideEncryptionConfigurationProperty {
     /**
     * The ARN of the AWS KMS key used to encrypt the resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#kms_key_arn CcDataSource#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#kms_key_arn CcDataSource#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
 }
@@ -5707,13 +6231,13 @@ export interface FixedSizeChunkingConfigurationProperty {
     /**
     * The maximum number of tokens to include in a chunk.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
     */
     readonly maxTokens?: number;
     /**
     * The percentage of overlap between adjacent chunks of a data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#overlap_percentage CcDataSource#overlap_percentage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#overlap_percentage CcDataSource#overlap_percentage}
     */
     readonly overlapPercentage?: number;
 }
@@ -5801,7 +6325,7 @@ export interface HierarchicalChunkingLevelConfigurationProperty {
     /**
     * The maximum number of tokens that a chunk can contain in this layer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
     */
     readonly maxTokens?: number;
 }
@@ -5889,13 +6413,13 @@ export interface HierarchicalChunkingConfigurationProperty {
     /**
     * Token settings for each layer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#level_configurations CcDataSource#level_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#level_configurations CcDataSource#level_configurations}
     */
     readonly levelConfigurations?: HierarchicalChunkingLevelConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The number of tokens to repeat across chunks in the same layer.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#overlap_tokens CcDataSource#overlap_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#overlap_tokens CcDataSource#overlap_tokens}
     */
     readonly overlapTokens?: number;
 }
@@ -5983,19 +6507,19 @@ export interface SemanticChunkingConfigurationProperty {
     /**
     * The dissimilarity threshold for splitting chunks.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#breakpoint_percentile_threshold CcDataSource#breakpoint_percentile_threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#breakpoint_percentile_threshold CcDataSource#breakpoint_percentile_threshold}
     */
     readonly breakpointPercentileThreshold?: number;
     /**
     * The buffer size.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#buffer_size CcDataSource#buffer_size}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#buffer_size CcDataSource#buffer_size}
     */
     readonly bufferSize?: number;
     /**
     * The maximum number of tokens that a chunk can contain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#max_tokens CcDataSource#max_tokens}
     */
     readonly maxTokens?: number;
 }
@@ -6105,25 +6629,25 @@ export interface ChunkingConfigurationProperty {
     /**
     * Knowledge base can split your source data into chunks. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. You have the following options for chunking your data. If you opt for NONE, then you may want to pre-process your files by splitting them up such that each file corresponds to a chunk.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#chunking_strategy CcDataSource#chunking_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#chunking_strategy CcDataSource#chunking_strategy}
     */
     readonly chunkingStrategy?: string;
     /**
     * Configurations for when you choose fixed-size chunking. If you set the chunkingStrategy as NONE, exclude this field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#fixed_size_chunking_configuration CcDataSource#fixed_size_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#fixed_size_chunking_configuration CcDataSource#fixed_size_chunking_configuration}
     */
     readonly fixedSizeChunkingConfiguration?: FixedSizeChunkingConfigurationProperty;
     /**
     * Configurations for when you choose hierarchical chunking. If you set the chunkingStrategy as NONE, exclude this field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#hierarchical_chunking_configuration CcDataSource#hierarchical_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#hierarchical_chunking_configuration CcDataSource#hierarchical_chunking_configuration}
     */
     readonly hierarchicalChunkingConfiguration?: HierarchicalChunkingConfigurationProperty;
     /**
     * Configurations for when you choose semantic chunking. If you set the chunkingStrategy as NONE, exclude this field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#semantic_chunking_configuration CcDataSource#semantic_chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#semantic_chunking_configuration CcDataSource#semantic_chunking_configuration}
     */
     readonly semanticChunkingConfiguration?: SemanticChunkingConfigurationProperty;
 }
@@ -6255,7 +6779,7 @@ export interface EnrichmentStrategyConfigurationProperty {
     /**
     * Enrichment Strategy method.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#method CcDataSource#method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#method CcDataSource#method}
     */
     readonly method?: string;
 }
@@ -6321,13 +6845,13 @@ export interface BedrockFoundationModelContextEnrichmentConfigurationProperty {
     /**
     * Strategy to be used when using Bedrock Foundation Model for Context Enrichment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#enrichment_strategy_configuration CcDataSource#enrichment_strategy_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#enrichment_strategy_configuration CcDataSource#enrichment_strategy_configuration}
     */
     readonly enrichmentStrategyConfiguration?: EnrichmentStrategyConfigurationProperty;
     /**
     * The model's ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#model_arn CcDataSource#model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#model_arn CcDataSource#model_arn}
     */
     readonly modelArn?: string;
 }
@@ -6415,13 +6939,13 @@ export interface ContextEnrichmentConfigurationProperty {
     /**
     * Bedrock Foundation Model configuration to be used for Context Enrichment.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#bedrock_foundation_model_configuration CcDataSource#bedrock_foundation_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#bedrock_foundation_model_configuration CcDataSource#bedrock_foundation_model_configuration}
     */
     readonly bedrockFoundationModelConfiguration?: BedrockFoundationModelContextEnrichmentConfigurationProperty;
     /**
     * Enrichment type to be used for the vector database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#type CcDataSource#type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#type CcDataSource#type}
     */
     readonly type?: string;
 }
@@ -6509,7 +7033,7 @@ export interface S3LocationProperty {
     /**
     * The location's URI
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#uri CcDataSource#uri}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#uri CcDataSource#uri}
     */
     readonly uri?: string;
 }
@@ -6575,7 +7099,7 @@ export interface IntermediateStorageProperty {
     /**
     * An Amazon S3 location.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#s3_location CcDataSource#s3_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#s3_location CcDataSource#s3_location}
     */
     readonly s3Location?: S3LocationProperty;
 }
@@ -6641,7 +7165,7 @@ export interface TransformationLambdaConfigurationProperty {
     /**
     * The function's ARN identifier.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#lambda_arn CcDataSource#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#lambda_arn CcDataSource#lambda_arn}
     */
     readonly lambdaArn?: string;
 }
@@ -6707,7 +7231,7 @@ export interface TransformationFunctionProperty {
     /**
     * A Lambda function that processes documents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#transformation_lambda_configuration CcDataSource#transformation_lambda_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#transformation_lambda_configuration CcDataSource#transformation_lambda_configuration}
     */
     readonly transformationLambdaConfiguration?: TransformationLambdaConfigurationProperty;
 }
@@ -6773,13 +7297,13 @@ export interface TransformationProperty {
     /**
     * When the service applies the transformation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#step_to_apply CcDataSource#step_to_apply}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#step_to_apply CcDataSource#step_to_apply}
     */
     readonly stepToApply?: string;
     /**
     * A Lambda function that processes documents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#transformation_function CcDataSource#transformation_function}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#transformation_function CcDataSource#transformation_function}
     */
     readonly transformationFunction?: TransformationFunctionProperty;
 }
@@ -6889,13 +7413,13 @@ export interface CustomTransformationConfigurationProperty {
     /**
     * A location for storing content from data sources temporarily as it is processed by custom components in the ingestion pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#intermediate_storage CcDataSource#intermediate_storage}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#intermediate_storage CcDataSource#intermediate_storage}
     */
     readonly intermediateStorage?: IntermediateStorageProperty;
     /**
     * A list of Lambda functions that process documents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#transformations CcDataSource#transformations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#transformations CcDataSource#transformations}
     */
     readonly transformations?: TransformationProperty[] | cdktn.IResolvable;
 }
@@ -6983,7 +7507,7 @@ export interface BedrockDataAutomationConfigurationProperty {
     /**
     * Determine how will parsed content be stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_modality CcDataSource#parsing_modality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_modality CcDataSource#parsing_modality}
     */
     readonly parsingModality?: string;
 }
@@ -7049,7 +7573,7 @@ export interface ParsingPromptProperty {
     /**
     * Instructions for interpreting the contents of a document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_prompt_text CcDataSource#parsing_prompt_text}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_prompt_text CcDataSource#parsing_prompt_text}
     */
     readonly parsingPromptText?: string;
 }
@@ -7115,19 +7639,19 @@ export interface BedrockFoundationModelConfigurationProperty {
     /**
     * The model's ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#model_arn CcDataSource#model_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#model_arn CcDataSource#model_arn}
     */
     readonly modelArn?: string;
     /**
     * Determine how will parsed content be stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_modality CcDataSource#parsing_modality}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_modality CcDataSource#parsing_modality}
     */
     readonly parsingModality?: string;
     /**
     * Instructions for interpreting the contents of a document.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_prompt CcDataSource#parsing_prompt}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_prompt CcDataSource#parsing_prompt}
     */
     readonly parsingPrompt?: ParsingPromptProperty;
 }
@@ -7237,19 +7761,19 @@ export interface ParsingConfigurationProperty {
     /**
     * Settings for a Bedrock Data Automation used to parse documents for a data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#bedrock_data_automation_configuration CcDataSource#bedrock_data_automation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#bedrock_data_automation_configuration CcDataSource#bedrock_data_automation_configuration}
     */
     readonly bedrockDataAutomationConfiguration?: BedrockDataAutomationConfigurationProperty;
     /**
     * Settings for a foundation model used to parse documents for a data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#bedrock_foundation_model_configuration CcDataSource#bedrock_foundation_model_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#bedrock_foundation_model_configuration CcDataSource#bedrock_foundation_model_configuration}
     */
     readonly bedrockFoundationModelConfiguration?: BedrockFoundationModelConfigurationProperty;
     /**
     * The parsing strategy for the data source.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_strategy CcDataSource#parsing_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_strategy CcDataSource#parsing_strategy}
     */
     readonly parsingStrategy?: string;
 }
@@ -7359,25 +7883,25 @@ export interface VectorIngestionConfigurationProperty {
     /**
     * Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#chunking_configuration CcDataSource#chunking_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#chunking_configuration CcDataSource#chunking_configuration}
     */
     readonly chunkingConfiguration?: ChunkingConfigurationProperty;
     /**
     * Additional Enrichment Configuration for example when using GraphRag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#context_enrichment_configuration CcDataSource#context_enrichment_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#context_enrichment_configuration CcDataSource#context_enrichment_configuration}
     */
     readonly contextEnrichmentConfiguration?: ContextEnrichmentConfigurationProperty;
     /**
     * Settings for customizing steps in the data source content ingestion pipeline.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#custom_transformation_configuration CcDataSource#custom_transformation_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#custom_transformation_configuration CcDataSource#custom_transformation_configuration}
     */
     readonly customTransformationConfiguration?: CustomTransformationConfigurationProperty;
     /**
     * Settings for parsing document contents
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrock_data_source#parsing_configuration CcDataSource#parsing_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/bedrock_data_source#parsing_configuration CcDataSource#parsing_configuration}
     */
     readonly parsingConfiguration?: ParsingConfigurationProperty;
 }

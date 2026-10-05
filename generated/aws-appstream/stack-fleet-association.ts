@@ -1,23 +1,27 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcStackFleetAssociationProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association#fleet_name CcStackFleetAssociation#fleet_name}
+    * The name of the fleet. To associate a fleet with a stack, you must specify a dependency on the fleet resource.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association#fleet_name CcStackFleetAssociation#fleet_name}
     */
     readonly fleetName: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association#stack_name CcStackFleetAssociation#stack_name}
+    * The name of the stack. To associate a fleet with a stack, you must specify a dependency on the stack resource.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association#stack_name CcStackFleetAssociation#stack_name}
     */
     readonly stackName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association}
 */
 export class CcStackFleetAssociation extends cdktn.TerraformResource {
 
@@ -33,7 +37,7 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcStackFleetAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcStackFleetAssociation to import
-    * @param importFromId The id of the existing CcStackFleetAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcStackFleetAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcStackFleetAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -45,7 +49,7 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/appstream_stack_fleet_association awscc_appstream_stack_fleet_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +60,7 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_appstream_stack_fleet_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.104.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -90,11 +94,6 @@ export class CcStackFleetAssociation extends cdktn.TerraformResource {
     // id - computed: true, optional: false, required: false
     public get id() {
         return this.getStringAttribute('id');
-    }
-
-    // stack_fleet_association_id - computed: true, optional: false, required: false
-    public get stackFleetAssociationId() {
-        return this.getStringAttribute('stack_fleet_association_id');
     }
 
     // stack_name - computed: false, optional: false, required: true

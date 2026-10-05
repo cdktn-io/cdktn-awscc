@@ -6,6 +6,7 @@ export * from './parameter-group';
 export * from './replication-group';
 export * from './serverless-cache';
 export * from './serverless-cache-snapshot';
+export * from './snapshot';
 export * from './subnet-group';
 export * from './user';
 export * from './user-group';

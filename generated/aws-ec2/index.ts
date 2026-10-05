@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './application-status-check';
 export * from './capacity-manager-data-export';
 export * from './capacity-reservation';
 export * from './capacity-reservation-fleet';
@@ -15,12 +16,15 @@ export * from './flow-log';
 export * from './fpga-image';
 export * from './gateway-route-table-association';
 export * from './host';
+export * from './i-pv4-pool';
 export * from './instance';
 export * from './instance-connect-endpoint';
+export * from './instance-event-window';
 export * from './internet-gateway';
 export * from './ip-pool-route-table-association';
 export * from './ipam';
 export * from './ipam-allocation';
+export * from './ipam-external-resource-verification-token';
 export * from './ipam-pool';
 export * from './ipam-pool-cidr';
 export * from './ipam-prefix-list-resolver';
@@ -63,6 +67,7 @@ export * from './spot-fleet';
 export * from './sql-ha-standby-detected-instance';
 export * from './subnet';
 export * from './subnet-cidr-block';
+export * from './subnet-cidr-reservation';
 export * from './subnet-network-acl-association';
 export * from './subnet-route-table-association';
 export * from './traffic-mirror-filter';
