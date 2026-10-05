@@ -4,5 +4,6 @@ export * from './acl';
 export * from './cluster';
 export * from './multi-region-cluster';
 export * from './parameter-group';
+export * from './snapshot';
 export * from './subnet-group';
 export * from './user';

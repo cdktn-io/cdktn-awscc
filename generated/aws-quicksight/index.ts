@@ -4,6 +4,7 @@ export * from './action-connector';
 export * from './agent';
 export * from './analysis';
 export * from './custom-permissions';
+export * from './customization';
 export * from './dashboard';
 export * from './data-set';
 export * from './data-source';

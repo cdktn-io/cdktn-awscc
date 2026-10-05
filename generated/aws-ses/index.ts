@@ -6,6 +6,7 @@ export * from './contact-list';
 export * from './custom-verification-email-template';
 export * from './dedicated-ip-pool';
 export * from './email-identity';
+export * from './email-identity-certificate';
 export * from './mail-manager-addon-instance';
 export * from './mail-manager-addon-subscription';
 export * from './mail-manager-address-list';

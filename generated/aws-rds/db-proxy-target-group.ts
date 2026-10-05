@@ -1,39 +1,45 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcDBProxyTargetGroupProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#connection_pool_configuration_info CcDBProxyTargetGroup#connection_pool_configuration_info}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#connection_pool_configuration_info CcDBProxyTargetGroup#connection_pool_configuration_info}
     */
     readonly connectionPoolConfigurationInfo?: CcDBProxyTargetGroup.ConnectionPoolConfigurationInfoFormatProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#db_cluster_identifiers CcDBProxyTargetGroup#db_cluster_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#db_cluster_identifiers CcDBProxyTargetGroup#db_cluster_identifiers}
     */
     readonly dbClusterIdentifiers?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#db_instance_identifiers CcDBProxyTargetGroup#db_instance_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#db_instance_identifiers CcDBProxyTargetGroup#db_instance_identifiers}
     */
     readonly dbInstanceIdentifiers?: string[];
     /**
     * The identifier for the proxy.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#db_proxy_name CcDBProxyTargetGroup#db_proxy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#db_proxy_name CcDBProxyTargetGroup#db_proxy_name}
     */
     readonly dbProxyName: string;
     /**
+    * An array of key-value pairs to apply to this resource.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#tags CcDBProxyTargetGroup#tags}
+    */
+    readonly tags?: CcDBProxyTargetGroup.TagsProperty[] | cdktn.IResolvable;
+    /**
     * The identifier for the DBProxyTargetGroup
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#target_group_name CcDBProxyTargetGroup#target_group_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#target_group_name CcDBProxyTargetGroup#target_group_name}
     */
     readonly targetGroupName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group awscc_rds_db_proxy_target_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group awscc_rds_db_proxy_target_group}
 */
 export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
 
@@ -49,7 +55,7 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcDBProxyTargetGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcDBProxyTargetGroup to import
-    * @param importFromId The id of the existing CcDBProxyTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcDBProxyTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcDBProxyTargetGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +67,7 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group awscc_rds_db_proxy_target_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group awscc_rds_db_proxy_target_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +78,7 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_rds_db_proxy_target_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.104.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -86,6 +92,7 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
         this._dbClusterIdentifiers = config.dbClusterIdentifiers;
         this._dbInstanceIdentifiers = config.dbInstanceIdentifiers;
         this._dbProxyName = config.dbProxyName;
+        this._tags.internalValue = config.tags;
         this._targetGroupName = config.targetGroupName;
     }
 
@@ -159,6 +166,22 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
         return this.getStringAttribute('id');
     }
 
+    // tags - computed: true, optional: true, required: false
+    private _tags = new CcDBProxyTargetGroup.TagsPropertyList(this, "tags", true);
+    public get tags() {
+        return this._tags;
+    }
+    public putTags(value: CcDBProxyTargetGroup.TagsProperty[] | cdktn.IResolvable) {
+        this._tags.internalValue = value;
+    }
+    public resetTags() {
+        this._tags.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+        return this._tags.internalValue;
+    }
+
     // target_group_arn - computed: true, optional: false, required: false
     public get targetGroupArn() {
         return this.getStringAttribute('target_group_arn');
@@ -187,6 +210,7 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
             db_cluster_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbClusterIdentifiers),
             db_instance_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbInstanceIdentifiers),
             db_proxy_name: cdktn.stringToTerraform(this._dbProxyName),
+            tags: cdktn.listMapper(ccDBProxyTargetGroupTagsPropertyToTerraform, false)(this._tags.internalValue),
             target_group_name: cdktn.stringToTerraform(this._targetGroupName),
         };
     }
@@ -216,6 +240,12 @@ export class CcDBProxyTargetGroup extends cdktn.TerraformResource {
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
+            },
+            tags: {
+                value: cdktn.listMapperHcl(ccDBProxyTargetGroupTagsPropertyToHclTerraform, false)(this._tags.internalValue),
+                isBlock: true,
+                type: "set",
+                storageClassType: "CcDBProxyTargetGroup.TagsPropertyList",
             },
             target_group_name: {
                 value: cdktn.stringToHclTerraform(this._targetGroupName),
@@ -288,36 +318,73 @@ export function ccDBProxyTargetGroupConnectionPoolConfigurationInfoFormatPropert
 }
 
 
+export function ccDBProxyTargetGroupTagsPropertyToTerraform(struct?: CcDBProxyTargetGroup.TagsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        key: cdktn.stringToTerraform(struct!.key),
+        value: cdktn.stringToTerraform(struct!.value),
+    }
+}
+
+
+export function ccDBProxyTargetGroupTagsPropertyToHclTerraform(struct?: CcDBProxyTargetGroup.TagsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        key: {
+            value: cdktn.stringToHclTerraform(struct!.key),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.stringToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export namespace CcDBProxyTargetGroup {
 export interface ConnectionPoolConfigurationInfoFormatProperty {
     /**
     * The number of seconds for a proxy to wait for a connection to become available in the connection pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#connection_borrow_timeout CcDBProxyTargetGroup#connection_borrow_timeout}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#connection_borrow_timeout CcDBProxyTargetGroup#connection_borrow_timeout}
     */
     readonly connectionBorrowTimeout?: number;
     /**
     * One or more SQL statements for the proxy to run when opening each new database connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#init_query CcDBProxyTargetGroup#init_query}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#init_query CcDBProxyTargetGroup#init_query}
     */
     readonly initQuery?: string;
     /**
     * The maximum size of the connection pool for each target in a target group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#max_connections_percent CcDBProxyTargetGroup#max_connections_percent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#max_connections_percent CcDBProxyTargetGroup#max_connections_percent}
     */
     readonly maxConnectionsPercent?: number;
     /**
     * Controls how actively the proxy closes idle database connections in the connection pool.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#max_idle_connections_percent CcDBProxyTargetGroup#max_idle_connections_percent}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#max_idle_connections_percent CcDBProxyTargetGroup#max_idle_connections_percent}
     */
     readonly maxIdleConnectionsPercent?: number;
     /**
     * Each item in the list represents a class of SQL operations that normally cause all later statements in a session using a proxy to be pinned to the same underlying database connection.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/rds_db_proxy_target_group#session_pinning_filters CcDBProxyTargetGroup#session_pinning_filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#session_pinning_filters CcDBProxyTargetGroup#session_pinning_filters}
     */
     readonly sessionPinningFilters?: string[];
 }
@@ -465,6 +532,122 @@ export class ConnectionPoolConfigurationInfoFormatPropertyOutputReference extend
     // Temporarily expose input value. Use with caution.
     public get sessionPinningFiltersInput() {
         return this._sessionPinningFilters;
+    }
+}
+export interface TagsProperty {
+    /**
+    * The key name of the tag.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#key CcDBProxyTargetGroup#key}
+    */
+    readonly key?: string;
+    /**
+    * The value for the tag.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/rds_db_proxy_target_group#value CcDBProxyTargetGroup#value}
+    */
+    readonly value?: string;
+}
+export class TagsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): TagsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._key !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.key = this._key;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: TagsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._key = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._key = value.key;
+            this._value = value.value;
+        }
+    }
+
+    // key - computed: true, optional: true, required: false
+    private _key?: string; 
+    public get key() {
+        return this.getStringAttribute('key');
+    }
+    public set key(value: string) {
+        this._key = value;
+    }
+    public resetKey() {
+        this._key = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get keyInput() {
+        return this._key;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: string; 
+    public get value() {
+        return this.getStringAttribute('value');
+    }
+    public set value(value: string) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+
+export class TagsPropertyList extends cdktn.ComplexList {
+    public internalValue? : TagsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): TagsPropertyOutputReference {
+        return new TagsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
 }

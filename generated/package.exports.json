@@ -119,6 +119,10 @@
     "types": "./generated/aws-batch/index.d.ts",
     "default": "./generated/aws-batch/index.js"
   },
+  "./aws-bcm": {
+    "types": "./generated/aws-bcm/index.d.ts",
+    "default": "./generated/aws-bcm/index.js"
+  },
   "./aws-bcmdataexports": {
     "types": "./generated/aws-bcmdataexports/index.d.ts",
     "default": "./generated/aws-bcmdataexports/index.js"
@@ -186,6 +190,10 @@
   "./aws-cleanroomsml": {
     "types": "./generated/aws-cleanroomsml/index.d.ts",
     "default": "./generated/aws-cleanroomsml/index.js"
+  },
+  "./aws-cloud9": {
+    "types": "./generated/aws-cloud9/index.d.ts",
+    "default": "./generated/aws-cloud9/index.js"
   },
   "./aws-cloudformation": {
     "types": "./generated/aws-cloudformation/index.d.ts",
@@ -335,6 +343,10 @@
     "types": "./generated/aws-directoryservice/index.d.ts",
     "default": "./generated/aws-directoryservice/index.js"
   },
+  "./aws-dlm": {
+    "types": "./generated/aws-dlm/index.d.ts",
+    "default": "./generated/aws-dlm/index.js"
+  },
   "./aws-dms": {
     "types": "./generated/aws-dms/index.d.ts",
     "default": "./generated/aws-dms/index.js"
@@ -419,6 +431,10 @@
     "types": "./generated/aws-eventschemas/index.d.ts",
     "default": "./generated/aws-eventschemas/index.js"
   },
+  "./aws-eventsv2": {
+    "types": "./generated/aws-eventsv2/index.d.ts",
+    "default": "./generated/aws-eventsv2/index.js"
+  },
   "./aws-evidently": {
     "types": "./generated/aws-evidently/index.d.ts",
     "default": "./generated/aws-evidently/index.js"
@@ -478,6 +494,10 @@
   "./aws-guardduty": {
     "types": "./generated/aws-guardduty/index.d.ts",
     "default": "./generated/aws-guardduty/index.js"
+  },
+  "./aws-healthagent": {
+    "types": "./generated/aws-healthagent/index.d.ts",
+    "default": "./generated/aws-healthagent/index.js"
   },
   "./aws-healthimaging": {
     "types": "./generated/aws-healthimaging/index.d.ts",
@@ -723,6 +743,14 @@
     "types": "./generated/aws-networkmanager/index.d.ts",
     "default": "./generated/aws-networkmanager/index.js"
   },
+  "./aws-networkmonitor": {
+    "types": "./generated/aws-networkmonitor/index.d.ts",
+    "default": "./generated/aws-networkmonitor/index.js"
+  },
+  "./aws-networksecuritymanager": {
+    "types": "./generated/aws-networksecuritymanager/index.d.ts",
+    "default": "./generated/aws-networksecuritymanager/index.js"
+  },
   "./aws-nimblestudio": {
     "types": "./generated/aws-nimblestudio/index.d.ts",
     "default": "./generated/aws-nimblestudio/index.js"
@@ -803,6 +831,10 @@
     "types": "./generated/aws-personalize/index.d.ts",
     "default": "./generated/aws-personalize/index.js"
   },
+  "./aws-pi": {
+    "types": "./generated/aws-pi/index.d.ts",
+    "default": "./generated/aws-pi/index.js"
+  },
   "./aws-pinpoint": {
     "types": "./generated/aws-pinpoint/index.d.ts",
     "default": "./generated/aws-pinpoint/index.js"
@@ -810,6 +842,10 @@
   "./aws-pipes": {
     "types": "./generated/aws-pipes/index.d.ts",
     "default": "./generated/aws-pipes/index.js"
+  },
+  "./aws-pricingplanmanager": {
+    "types": "./generated/aws-pricingplanmanager/index.d.ts",
+    "default": "./generated/aws-pricingplanmanager/index.js"
   },
   "./aws-proton": {
     "types": "./generated/aws-proton/index.d.ts",

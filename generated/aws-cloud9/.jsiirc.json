@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_cloud9"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Cloud9"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.cloud9"
+    }
+  }
+}

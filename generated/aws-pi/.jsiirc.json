@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_pi"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Pi"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.pi"
+    }
+  }
+}

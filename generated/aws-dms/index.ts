@@ -9,3 +9,4 @@ export * from './instance-profile';
 export * from './migration-project';
 export * from './replication-config';
 export * from './replication-subnet-group';
+export * from './replication-task';

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector
+// https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,67 +9,67 @@ export interface CcConnectorProps extends cdktn.TerraformMetaArguments {
     /**
     * Specifies the access role for the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#access_role CcConnector#access_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#access_role CcConnector#access_role}
     */
     readonly accessRole: string;
     /**
     * Configuration for an AS2 connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#as_2_config CcConnector#as_2_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#as_2_config CcConnector#as_2_config}
     */
     readonly as2Config?: CcConnector.As2ConfigProperty;
     /**
     * Egress configuration for the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#egress_config CcConnector#egress_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#egress_config CcConnector#egress_config}
     */
     readonly egressConfig?: CcConnector.ConnectorEgressConfigProperty;
     /**
     * Specifies the egress type for the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#egress_type CcConnector#egress_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#egress_type CcConnector#egress_type}
     */
     readonly egressType?: string;
     /**
     * IP address type for Connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#ip_address_type CcConnector#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#ip_address_type CcConnector#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * Specifies the logging role for the connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#logging_role CcConnector#logging_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#logging_role CcConnector#logging_role}
     */
     readonly loggingRole?: string;
     /**
     * Security policy for SFTP Connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#security_policy_name CcConnector#security_policy_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#security_policy_name CcConnector#security_policy_name}
     */
     readonly securityPolicyName?: string;
     /**
     * Configuration for an SFTP connector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#sftp_config CcConnector#sftp_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#sftp_config CcConnector#sftp_config}
     */
     readonly sftpConfig?: CcConnector.SftpConfigProperty;
     /**
     * Key-value pairs that can be used to group and search for connectors. Tags are metadata attached to connectors for any purpose.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#tags CcConnector#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#tags CcConnector#tags}
     */
     readonly tags?: CcConnector.TagProperty[] | cdktn.IResolvable;
     /**
     * URL for Connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#url CcConnector#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#url CcConnector#url}
     */
     readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector awscc_transfer_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector awscc_transfer_connector}
 */
 export class CcConnector extends cdktn.TerraformResource {
 
@@ -85,7 +85,7 @@ export class CcConnector extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConnector resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConnector to import
-    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConnector to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -97,7 +97,7 @@ export class CcConnector extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector awscc_transfer_connector} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector awscc_transfer_connector} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class CcConnector extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_transfer_connector',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.104.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -620,6 +620,7 @@ export function ccConnectorSftpConfigPropertyToTerraform(struct?: CcConnector.Sf
     }
     return {
         max_concurrent_connections: cdktn.numberToTerraform(struct!.maxConcurrentConnections),
+        ordered_user_secret_version_stages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.orderedUserSecretVersionStages),
         trusted_host_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedHostKeys),
         user_secret_id: cdktn.stringToTerraform(struct!.userSecretId),
     }
@@ -637,6 +638,12 @@ export function ccConnectorSftpConfigPropertyToHclTerraform(struct?: CcConnector
             isBlock: false,
             type: "simple",
             storageClassType: "number",
+        },
+        ordered_user_secret_version_stages: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.orderedUserSecretVersionStages),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
         trusted_host_keys: {
             value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedHostKeys),
@@ -697,13 +704,13 @@ export function ccConnectorTagPropertyToHclTerraform(struct?: CcConnector.TagPro
 export namespace CcConnector {
 export interface ConnectorAsyncMdnConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#server_ids CcConnector#server_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#server_ids CcConnector#server_ids}
     */
     readonly serverIds?: string[];
     /**
     * URL of the server to receive the MDN response on
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#url CcConnector#url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#url CcConnector#url}
     */
     readonly url?: string;
 }
@@ -791,67 +798,67 @@ export interface As2ConfigProperty {
     /**
     * Configuration for an AS2 connector with ASYNC MDN Response
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#async_mdn_config CcConnector#async_mdn_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#async_mdn_config CcConnector#async_mdn_config}
     */
     readonly asyncMdnConfig?: ConnectorAsyncMdnConfigProperty;
     /**
     * ARN or name of the secret in AWS Secrets Manager which contains the credentials for Basic authentication. If empty, Basic authentication is disabled for the AS2 connector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#basic_auth_secret_id CcConnector#basic_auth_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#basic_auth_secret_id CcConnector#basic_auth_secret_id}
     */
     readonly basicAuthSecretId?: string;
     /**
     * Compression setting for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#compression CcConnector#compression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#compression CcConnector#compression}
     */
     readonly compression?: string;
     /**
     * Encryption algorithm for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#encryption_algorithm CcConnector#encryption_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#encryption_algorithm CcConnector#encryption_algorithm}
     */
     readonly encryptionAlgorithm?: string;
     /**
     * A unique identifier for the local profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#local_profile_id CcConnector#local_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#local_profile_id CcConnector#local_profile_id}
     */
     readonly localProfileId?: string;
     /**
     * MDN Response setting for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#mdn_response CcConnector#mdn_response}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#mdn_response CcConnector#mdn_response}
     */
     readonly mdnResponse?: string;
     /**
     * MDN Signing algorithm for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#mdn_signing_algorithm CcConnector#mdn_signing_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#mdn_signing_algorithm CcConnector#mdn_signing_algorithm}
     */
     readonly mdnSigningAlgorithm?: string;
     /**
     * The message subject for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#message_subject CcConnector#message_subject}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#message_subject CcConnector#message_subject}
     */
     readonly messageSubject?: string;
     /**
     * A unique identifier for the partner profile.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#partner_profile_id CcConnector#partner_profile_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#partner_profile_id CcConnector#partner_profile_id}
     */
     readonly partnerProfileId?: string;
     /**
     * Specifies whether to use the AWS S3 object content-type as the content-type for the AS2 message.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#preserve_content_type CcConnector#preserve_content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#preserve_content_type CcConnector#preserve_content_type}
     */
     readonly preserveContentType?: string;
     /**
     * Signing algorithm for this AS2 connector configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#signing_algorithm CcConnector#signing_algorithm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#signing_algorithm CcConnector#signing_algorithm}
     */
     readonly signingAlgorithm?: string;
 }
@@ -1137,13 +1144,13 @@ export interface ConnectorVpcLatticeEgressConfigProperty {
     /**
     * Port to connect to on the target VPC Lattice resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#port_number CcConnector#port_number}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#port_number CcConnector#port_number}
     */
     readonly portNumber?: number;
     /**
     * ARN of the VPC Lattice resource configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#resource_configuration_arn CcConnector#resource_configuration_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#resource_configuration_arn CcConnector#resource_configuration_arn}
     */
     readonly resourceConfigurationArn?: string;
 }
@@ -1229,7 +1236,7 @@ export class ConnectorVpcLatticeEgressConfigPropertyOutputReference extends cdkt
 }
 export interface ConnectorEgressConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#vpc_lattice CcConnector#vpc_lattice}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#vpc_lattice CcConnector#vpc_lattice}
     */
     readonly vpcLattice?: ConnectorVpcLatticeEgressConfigProperty;
 }
@@ -1295,19 +1302,25 @@ export interface SftpConfigProperty {
     /**
     * Specifies the number of active connections that your connector can establish with the remote server at the same time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#max_concurrent_connections CcConnector#max_concurrent_connections}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#max_concurrent_connections CcConnector#max_concurrent_connections}
     */
     readonly maxConcurrentConnections?: number;
     /**
+    * Specifies the order in which the connector attempts to use secret versions during authentication. This enables fallback to alternative credentials if the primary version fails.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#ordered_user_secret_version_stages CcConnector#ordered_user_secret_version_stages}
+    */
+    readonly orderedUserSecretVersionStages?: string[];
+    /**
     * List of public host keys, for the external server to which you are connecting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#trusted_host_keys CcConnector#trusted_host_keys}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#trusted_host_keys CcConnector#trusted_host_keys}
     */
     readonly trustedHostKeys?: string[];
     /**
     * ARN or name of the secret in AWS Secrets Manager which contains the SFTP user's private keys or passwords.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#user_secret_id CcConnector#user_secret_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#user_secret_id CcConnector#user_secret_id}
     */
     readonly userSecretId?: string;
 }
@@ -1333,6 +1346,10 @@ export class SftpConfigPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.maxConcurrentConnections = this._maxConcurrentConnections;
         }
+        if (this._orderedUserSecretVersionStages !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.orderedUserSecretVersionStages = this._orderedUserSecretVersionStages;
+        }
         if (this._trustedHostKeys !== undefined) {
             hasAnyValues = true;
             internalValueResult.trustedHostKeys = this._trustedHostKeys;
@@ -1349,6 +1366,7 @@ export class SftpConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._maxConcurrentConnections = undefined;
+            this._orderedUserSecretVersionStages = undefined;
             this._trustedHostKeys = undefined;
             this._userSecretId = undefined;
         }
@@ -1360,6 +1378,7 @@ export class SftpConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._maxConcurrentConnections = value.maxConcurrentConnections;
+            this._orderedUserSecretVersionStages = value.orderedUserSecretVersionStages;
             this._trustedHostKeys = value.trustedHostKeys;
             this._userSecretId = value.userSecretId;
         }
@@ -1379,6 +1398,22 @@ export class SftpConfigPropertyOutputReference extends cdktn.ComplexObject {
     // Temporarily expose input value. Use with caution.
     public get maxConcurrentConnectionsInput() {
         return this._maxConcurrentConnections;
+    }
+
+    // ordered_user_secret_version_stages - computed: true, optional: true, required: false
+    private _orderedUserSecretVersionStages?: string[]; 
+    public get orderedUserSecretVersionStages() {
+        return this.getListAttribute('ordered_user_secret_version_stages');
+    }
+    public set orderedUserSecretVersionStages(value: string[]) {
+        this._orderedUserSecretVersionStages = value;
+    }
+    public resetOrderedUserSecretVersionStages() {
+        this._orderedUserSecretVersionStages = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get orderedUserSecretVersionStagesInput() {
+        return this._orderedUserSecretVersionStages;
     }
 
     // trusted_host_keys - computed: true, optional: true, required: false
@@ -1417,13 +1452,13 @@ export interface TagProperty {
     /**
     * The name assigned to the tag that you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#key CcConnector#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#key CcConnector#key}
     */
     readonly key?: string;
     /**
     * Contains one or more values that you assigned to the key name you create.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/transfer_connector#value CcConnector#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/transfer_connector#value CcConnector#value}
     */
     readonly value?: string;
 }

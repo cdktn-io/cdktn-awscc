@@ -8,3 +8,4 @@ export * from './insight-rule';
 export * from './log-alarm';
 export * from './metric-stream';
 export * from './o-tel-enrichment';
+export * from './view';

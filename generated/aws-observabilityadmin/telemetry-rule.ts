@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,25 +9,25 @@ export interface CcTelemetryRuleProps extends cdktn.TerraformMetaArguments {
     /**
     * The telemetry rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#rule CcTelemetryRule#rule}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#rule CcTelemetryRule#rule}
     */
     readonly rule: CcTelemetryRule.TelemetryRuleProperty;
     /**
     * The name of the telemetry rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#rule_name CcTelemetryRule#rule_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#rule_name CcTelemetryRule#rule_name}
     */
     readonly ruleName: string;
     /**
     * An array of key-value pairs to apply to this resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#tags CcTelemetryRule#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#tags CcTelemetryRule#tags}
     */
     readonly tags?: CcTelemetryRule.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule awscc_observabilityadmin_telemetry_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule awscc_observabilityadmin_telemetry_rule}
 */
 export class CcTelemetryRule extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class CcTelemetryRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcTelemetryRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcTelemetryRule to import
-    * @param importFromId The id of the existing CcTelemetryRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcTelemetryRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcTelemetryRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class CcTelemetryRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule awscc_observabilityadmin_telemetry_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule awscc_observabilityadmin_telemetry_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class CcTelemetryRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_observabilityadmin_telemetry_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.104.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -401,6 +401,36 @@ export function ccTelemetryRuleLogDeliveryParametersPropertyToHclTerraform(struc
             isBlock: false,
             type: "set",
             storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccTelemetryRuleMskMonitoringParametersPropertyToTerraform(struct?: CcTelemetryRule.MskMonitoringParametersProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        enhanced_monitoring: cdktn.stringToTerraform(struct!.enhancedMonitoring),
+    }
+}
+
+
+export function ccTelemetryRuleMskMonitoringParametersPropertyToHclTerraform(struct?: CcTelemetryRule.MskMonitoringParametersProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        enhanced_monitoring: {
+            value: cdktn.stringToHclTerraform(struct!.enhancedMonitoring),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
         },
     };
 
@@ -768,6 +798,7 @@ export function ccTelemetryRuleTelemetryDestinationConfigurationPropertyToTerraf
         elb_load_balancer_logging_parameters: ccTelemetryRuleELBLoadBalancerLoggingParametersPropertyToTerraform(struct!.elbLoadBalancerLoggingParameters),
         kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
         log_delivery_parameters: ccTelemetryRuleLogDeliveryParametersPropertyToTerraform(struct!.logDeliveryParameters),
+        msk_monitoring_parameters: ccTelemetryRuleMskMonitoringParametersPropertyToTerraform(struct!.mskMonitoringParameters),
         retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
         vpc_flow_log_parameters: ccTelemetryRuleVPCFlowLogParametersPropertyToTerraform(struct!.vpcFlowLogParameters),
         waf_logging_parameters: ccTelemetryRuleWAFLoggingParametersPropertyToTerraform(struct!.wafLoggingParameters),
@@ -816,6 +847,12 @@ export function ccTelemetryRuleTelemetryDestinationConfigurationPropertyToHclTer
             isBlock: true,
             type: "struct",
             storageClassType: "LogDeliveryParametersProperty",
+        },
+        msk_monitoring_parameters: {
+            value: ccTelemetryRuleMskMonitoringParametersPropertyToHclTerraform(struct!.mskMonitoringParameters),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "MskMonitoringParametersProperty",
         },
         retention_in_days: {
             value: cdktn.numberToHclTerraform(struct!.retentionInDays),
@@ -1027,43 +1064,43 @@ export interface AdvancedFieldSelectorProperty {
     /**
     * An operator that includes events that match the last few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#ends_with CcTelemetryRule#ends_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#ends_with CcTelemetryRule#ends_with}
     */
     readonly endsWith?: string[];
     /**
     * An operator that includes events that match the exact value of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#equals CcTelemetryRule#equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#equals CcTelemetryRule#equals}
     */
     readonly equalTo?: string[];
     /**
     * A field in a CloudTrail event record on which to filter events to be logged
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#field CcTelemetryRule#field}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#field CcTelemetryRule#field}
     */
     readonly field?: string;
     /**
     * An operator that excludes events that match the last few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#not_ends_with CcTelemetryRule#not_ends_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#not_ends_with CcTelemetryRule#not_ends_with}
     */
     readonly notEndsWith?: string[];
     /**
     * An operator that excludes events that match the exact value of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#not_equals CcTelemetryRule#not_equals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#not_equals CcTelemetryRule#not_equals}
     */
     readonly notEquals?: string[];
     /**
     * An operator that excludes events that match the first few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#not_starts_with CcTelemetryRule#not_starts_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#not_starts_with CcTelemetryRule#not_starts_with}
     */
     readonly notStartsWith?: string[];
     /**
     * An operator that includes events that match the first few characters of the event record field specified as the value of Field.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#starts_with CcTelemetryRule#starts_with}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#starts_with CcTelemetryRule#starts_with}
     */
     readonly startsWith?: string[];
 }
@@ -1283,13 +1320,13 @@ export interface AdvancedEventSelectorProperty {
     /**
     * Contains all selector statements in an advanced event selector.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#field_selectors CcTelemetryRule#field_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#field_selectors CcTelemetryRule#field_selectors}
     */
     readonly fieldSelectors?: AdvancedFieldSelectorProperty[] | cdktn.IResolvable;
     /**
     * An optional descriptive name for the advanced event selector
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#name CcTelemetryRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#name CcTelemetryRule#name}
     */
     readonly name?: string;
 }
@@ -1399,7 +1436,7 @@ export interface CloudtrailParametersProperty {
     /**
     * Create fine-grained selectors for AWS CloudTrail management and data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#advanced_event_selectors CcTelemetryRule#advanced_event_selectors}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#advanced_event_selectors CcTelemetryRule#advanced_event_selectors}
     */
     readonly advancedEventSelectors?: AdvancedEventSelectorProperty[] | cdktn.IResolvable;
 }
@@ -1465,11 +1502,11 @@ export interface ELBLoadBalancerLoggingParametersProperty {
     /**
     * A delimiter to delineate log fields
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#field_delimiter CcTelemetryRule#field_delimiter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#field_delimiter CcTelemetryRule#field_delimiter}
     */
     readonly fieldDelimiter?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#output_format CcTelemetryRule#output_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#output_format CcTelemetryRule#output_format}
     */
     readonly outputFormat?: string;
 }
@@ -1557,7 +1594,7 @@ export interface LogDeliveryParametersProperty {
     /**
     * Types of logs to deliver
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#log_types CcTelemetryRule#log_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#log_types CcTelemetryRule#log_types}
     */
     readonly logTypes?: string[];
 }
@@ -1619,23 +1656,89 @@ export class LogDeliveryParametersPropertyOutputReference extends cdktn.ComplexO
         return this._logTypes;
     }
 }
+export interface MskMonitoringParametersProperty {
+    /**
+    * The level of enhanced monitoring for the MSK cluster.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#enhanced_monitoring CcTelemetryRule#enhanced_monitoring}
+    */
+    readonly enhancedMonitoring?: string;
+}
+export class MskMonitoringParametersPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): MskMonitoringParametersProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._enhancedMonitoring !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.enhancedMonitoring = this._enhancedMonitoring;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: MskMonitoringParametersProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._enhancedMonitoring = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._enhancedMonitoring = value.enhancedMonitoring;
+        }
+    }
+
+    // enhanced_monitoring - computed: true, optional: true, required: false
+    private _enhancedMonitoring?: string; 
+    public get enhancedMonitoring() {
+        return this.getStringAttribute('enhanced_monitoring');
+    }
+    public set enhancedMonitoring(value: string) {
+        this._enhancedMonitoring = value;
+    }
+    public resetEnhancedMonitoring() {
+        this._enhancedMonitoring = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enhancedMonitoringInput() {
+        return this._enhancedMonitoring;
+    }
+}
 export interface VPCFlowLogParametersProperty {
     /**
     * The fields to include in the flow log record. If you omit this parameter, the flow log is created using the default format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#log_format CcTelemetryRule#log_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#log_format CcTelemetryRule#log_format}
     */
     readonly logFormat?: string;
     /**
     * The maximum interval of time, in seconds, during which a flow of packets is captured and aggregated into a flow log record. Default is 600s.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#max_aggregation_interval CcTelemetryRule#max_aggregation_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#max_aggregation_interval CcTelemetryRule#max_aggregation_interval}
     */
     readonly maxAggregationInterval?: number;
     /**
     * The type of traffic captured for the flow log. Default is ALL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#traffic_type CcTelemetryRule#traffic_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#traffic_type CcTelemetryRule#traffic_type}
     */
     readonly trafficType?: string;
 }
@@ -1745,7 +1848,7 @@ export interface ActionConditionProperty {
     /**
     * The enumerated action to take.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#action CcTelemetryRule#action}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#action CcTelemetryRule#action}
     */
     readonly action?: string;
 }
@@ -1811,7 +1914,7 @@ export interface LabelNameConditionProperty {
     /**
     * The label name of the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#label_name CcTelemetryRule#label_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#label_name CcTelemetryRule#label_name}
     */
     readonly labelName?: string;
 }
@@ -1877,13 +1980,13 @@ export interface ConditionProperty {
     /**
     * The condition of the action desired in the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#action_condition CcTelemetryRule#action_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#action_condition CcTelemetryRule#action_condition}
     */
     readonly actionCondition?: ActionConditionProperty;
     /**
     * The label name of the condition.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#label_name_condition CcTelemetryRule#label_name_condition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#label_name_condition CcTelemetryRule#label_name_condition}
     */
     readonly labelNameCondition?: LabelNameConditionProperty;
 }
@@ -1993,19 +2096,19 @@ export interface FilterProperty {
     /**
     * The behavior required of the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#behavior CcTelemetryRule#behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#behavior CcTelemetryRule#behavior}
     */
     readonly behavior?: string;
     /**
     * A list of conditions for a filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#conditions CcTelemetryRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#conditions CcTelemetryRule#conditions}
     */
     readonly conditions?: ConditionProperty[] | cdktn.IResolvable;
     /**
     * The requirement portion of the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#requirement CcTelemetryRule#requirement}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#requirement CcTelemetryRule#requirement}
     */
     readonly requirement?: string;
 }
@@ -2137,13 +2240,13 @@ export interface LoggingFilterProperty {
     /**
     * The behavior required of the filter.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#default_behavior CcTelemetryRule#default_behavior}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#default_behavior CcTelemetryRule#default_behavior}
     */
     readonly defaultBehavior?: string;
     /**
     * A list of filters to be applied.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#filters CcTelemetryRule#filters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#filters CcTelemetryRule#filters}
     */
     readonly filters?: FilterProperty[] | cdktn.IResolvable;
 }
@@ -2231,7 +2334,7 @@ export interface SingleHeaderProperty {
     /**
     * The name of the header
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#name CcTelemetryRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#name CcTelemetryRule#name}
     */
     readonly name?: string;
 }
@@ -2297,25 +2400,25 @@ export interface FieldToMatchProperty {
     /**
     * The method with which to match this rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#method CcTelemetryRule#method}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#method CcTelemetryRule#method}
     */
     readonly method?: string;
     /**
     * The query string to find the resource to match this field to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#query_string CcTelemetryRule#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#query_string CcTelemetryRule#query_string}
     */
     readonly queryString?: string;
     /**
     * Header for the field to match.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#single_header CcTelemetryRule#single_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#single_header CcTelemetryRule#single_header}
     */
     readonly singleHeader?: SingleHeaderProperty;
     /**
     * This is the URI path to match this rule to.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#uri_path CcTelemetryRule#uri_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#uri_path CcTelemetryRule#uri_path}
     */
     readonly uriPath?: string;
 }
@@ -2469,19 +2572,19 @@ export interface WAFLoggingParametersProperty {
     /**
     * The type of logs to generate for WAF.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#log_type CcTelemetryRule#log_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#log_type CcTelemetryRule#log_type}
     */
     readonly logType?: string;
     /**
     * Default handling for logs that don't match any of the specified filtering conditions.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#logging_filter CcTelemetryRule#logging_filter}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#logging_filter CcTelemetryRule#logging_filter}
     */
     readonly loggingFilter?: LoggingFilterProperty;
     /**
     * Fields not to be included in the logs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#redacted_fields CcTelemetryRule#redacted_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#redacted_fields CcTelemetryRule#redacted_fields}
     */
     readonly redactedFields?: FieldToMatchProperty[] | cdktn.IResolvable;
 }
@@ -2591,55 +2694,61 @@ export interface TelemetryDestinationConfigurationProperty {
     /**
     * Telemetry parameters for Cloudtrail
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#cloudtrail_parameters CcTelemetryRule#cloudtrail_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#cloudtrail_parameters CcTelemetryRule#cloudtrail_parameters}
     */
     readonly cloudtrailParameters?: CloudtrailParametersProperty;
     /**
     * Pattern for telemetry data destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#destination_pattern CcTelemetryRule#destination_pattern}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#destination_pattern CcTelemetryRule#destination_pattern}
     */
     readonly destinationPattern?: string;
     /**
     * Type of telemetry destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#destination_type CcTelemetryRule#destination_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#destination_type CcTelemetryRule#destination_type}
     */
     readonly destinationType?: string;
     /**
     * Telemetry parameters for ELB/NLB Load Balancer Logs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#elb_load_balancer_logging_parameters CcTelemetryRule#elb_load_balancer_logging_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#elb_load_balancer_logging_parameters CcTelemetryRule#elb_load_balancer_logging_parameters}
     */
     readonly elbLoadBalancerLoggingParameters?: ELBLoadBalancerLoggingParametersProperty;
     /**
     * The Amazon Resource Name (ARN) of the customer-managed AWS KMS key used to encrypt the destination log groups specified in the Telemetry Rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#kms_key_arn CcTelemetryRule#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#kms_key_arn CcTelemetryRule#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * Parameters for log delivery configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#log_delivery_parameters CcTelemetryRule#log_delivery_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#log_delivery_parameters CcTelemetryRule#log_delivery_parameters}
     */
     readonly logDeliveryParameters?: LogDeliveryParametersProperty;
     /**
+    * Configuration parameters for Amazon MSK cluster monitoring.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#msk_monitoring_parameters CcTelemetryRule#msk_monitoring_parameters}
+    */
+    readonly mskMonitoringParameters?: MskMonitoringParametersProperty;
+    /**
     * Number of days to retain the telemetry data in the specified destination
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#retention_in_days CcTelemetryRule#retention_in_days}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#retention_in_days CcTelemetryRule#retention_in_days}
     */
     readonly retentionInDays?: number;
     /**
     * Telemetry parameters for VPC Flow logs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#vpc_flow_log_parameters CcTelemetryRule#vpc_flow_log_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#vpc_flow_log_parameters CcTelemetryRule#vpc_flow_log_parameters}
     */
     readonly vpcFlowLogParameters?: VPCFlowLogParametersProperty;
     /**
     * Telemetry parameters for WAF v2 Web ACL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#waf_logging_parameters CcTelemetryRule#waf_logging_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#waf_logging_parameters CcTelemetryRule#waf_logging_parameters}
     */
     readonly wafLoggingParameters?: WAFLoggingParametersProperty;
 }
@@ -2685,6 +2794,10 @@ export class TelemetryDestinationConfigurationPropertyOutputReference extends cd
             hasAnyValues = true;
             internalValueResult.logDeliveryParameters = this._logDeliveryParameters?.internalValue;
         }
+        if (this._mskMonitoringParameters?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mskMonitoringParameters = this._mskMonitoringParameters?.internalValue;
+        }
         if (this._retentionInDays !== undefined) {
             hasAnyValues = true;
             internalValueResult.retentionInDays = this._retentionInDays;
@@ -2710,6 +2823,7 @@ export class TelemetryDestinationConfigurationPropertyOutputReference extends cd
             this._elbLoadBalancerLoggingParameters.internalValue = undefined;
             this._kmsKeyArn = undefined;
             this._logDeliveryParameters.internalValue = undefined;
+            this._mskMonitoringParameters.internalValue = undefined;
             this._retentionInDays = undefined;
             this._vpcFlowLogParameters.internalValue = undefined;
             this._wafLoggingParameters.internalValue = undefined;
@@ -2727,6 +2841,7 @@ export class TelemetryDestinationConfigurationPropertyOutputReference extends cd
             this._elbLoadBalancerLoggingParameters.internalValue = value.elbLoadBalancerLoggingParameters;
             this._kmsKeyArn = value.kmsKeyArn;
             this._logDeliveryParameters.internalValue = value.logDeliveryParameters;
+            this._mskMonitoringParameters.internalValue = value.mskMonitoringParameters;
             this._retentionInDays = value.retentionInDays;
             this._vpcFlowLogParameters.internalValue = value.vpcFlowLogParameters;
             this._wafLoggingParameters.internalValue = value.wafLoggingParameters;
@@ -2829,6 +2944,22 @@ export class TelemetryDestinationConfigurationPropertyOutputReference extends cd
         return this._logDeliveryParameters.internalValue;
     }
 
+    // msk_monitoring_parameters - computed: true, optional: true, required: false
+    private _mskMonitoringParameters = new MskMonitoringParametersPropertyOutputReference(this, "msk_monitoring_parameters");
+    public get mskMonitoringParameters() {
+        return this._mskMonitoringParameters;
+    }
+    public putMskMonitoringParameters(value: MskMonitoringParametersProperty) {
+        this._mskMonitoringParameters.internalValue = value;
+    }
+    public resetMskMonitoringParameters() {
+        this._mskMonitoringParameters.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get mskMonitoringParametersInput() {
+        return this._mskMonitoringParameters.internalValue;
+    }
+
     // retention_in_days - computed: true, optional: true, required: false
     private _retentionInDays?: number; 
     public get retentionInDays() {
@@ -2881,49 +3012,49 @@ export interface TelemetryRuleProperty {
     /**
     * When true, the rule is replicated to all supported regions
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#all_regions CcTelemetryRule#all_regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#all_regions CcTelemetryRule#all_regions}
     */
     readonly allRegions?: boolean | cdktn.IResolvable;
     /**
     * When true, configuration drift in managed telemetry resources will be detected and remediated for resource-level fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#allow_field_updates CcTelemetryRule#allow_field_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#allow_field_updates CcTelemetryRule#allow_field_updates}
     */
     readonly allowFieldUpdates?: boolean | cdktn.IResolvable;
     /**
     * The destination configuration for telemetry data
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#destination_configuration CcTelemetryRule#destination_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#destination_configuration CcTelemetryRule#destination_configuration}
     */
     readonly destinationConfiguration?: TelemetryDestinationConfigurationProperty;
     /**
     * List of AWS region codes where the rule should be replicated
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#regions CcTelemetryRule#regions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#regions CcTelemetryRule#regions}
     */
     readonly regions?: string[];
     /**
     * Resource Type associated with the Telemetry Rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#resource_type CcTelemetryRule#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#resource_type CcTelemetryRule#resource_type}
     */
     readonly resourceType: string;
     /**
     * Selection Criteria on resource level for rule application
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#selection_criteria CcTelemetryRule#selection_criteria}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#selection_criteria CcTelemetryRule#selection_criteria}
     */
     readonly selectionCriteria?: string;
     /**
     * The telemetry source types for a telemetry rule.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#telemetry_source_types CcTelemetryRule#telemetry_source_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#telemetry_source_types CcTelemetryRule#telemetry_source_types}
     */
     readonly telemetrySourceTypes?: string[];
     /**
     * Telemetry Type associated with the Telemetry Rule
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#telemetry_type CcTelemetryRule#telemetry_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#telemetry_type CcTelemetryRule#telemetry_type}
     */
     readonly telemetryType: string;
 }
@@ -3137,13 +3268,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#key CcTelemetryRule#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#key CcTelemetryRule#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/observabilityadmin_telemetry_rule#value CcTelemetryRule#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.104.0/docs/resources/observabilityadmin_telemetry_rule#value CcTelemetryRule#value}
     */
     readonly value?: string;
 }
