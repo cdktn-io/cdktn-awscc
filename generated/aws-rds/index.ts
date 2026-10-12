@@ -3,6 +3,7 @@
 export * from './cluster-snapshot';
 export * from './custom-db-engine-version';
 export * from './db-cluster';
+export * from './db-cluster-endpoint';
 export * from './db-cluster-parameter-group';
 export * from './db-instance';
 export * from './db-parameter-group';

@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry
+// https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,61 @@ export interface CcRegistryProps extends cdktn.TerraformMetaArguments {
     /**
     * Configuration for the registry's record approval workflow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#approval_configuration CcRegistry#approval_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#approval_configuration CcRegistry#approval_configuration}
     */
     readonly approvalConfiguration?: CcRegistry.ApprovalConfigurationProperty;
     /**
     * The type of authorizer that controls how consumers access the registry's search and MCP invoke operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#authorizer_type CcRegistry#authorizer_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#authorizer_type CcRegistry#authorizer_type}
     */
     readonly authorizerType?: string;
     /**
+    * Specifies whether auto-detection is requested for the registry. Must be specified together with AutoDetectionScope. Setting this to true is necessary but not sufficient for auto-detection to become active; the preconditions of the configured scope must also be met. To turn auto-detection off, explicitly set this to false - removing AutoDetectionEnabled and AutoDetectionScope from the template is a no-op and leaves the existing auto-detection settings unchanged. A registry cannot be deleted while auto-detection is enabled: set this to false and update the stack before deleting the registry.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#auto_detection_enabled CcRegistry#auto_detection_enabled}
+    */
+    readonly autoDetectionEnabled?: boolean | cdktn.IResolvable;
+    /**
+    * The source from which resources are detected. ORGANIZATION sources resources from all member accounts of an AWS Organization.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#auto_detection_scope CcRegistry#auto_detection_scope}
+    */
+    readonly autoDetectionScope?: string;
+    /**
     * The description of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#description CcRegistry#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#description CcRegistry#description}
     */
     readonly description?: string;
     /**
     * Discovery configuration for the registry. Controls how consumers are authorized to search the registry and invoke its MCP endpoint.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#discovery_configuration CcRegistry#discovery_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#discovery_configuration CcRegistry#discovery_configuration}
     */
     readonly discoveryConfiguration?: CcRegistry.DiscoveryConfigurationProperty;
     /**
+    * The server-side encryption configuration for a registry. Specifies a customer managed key used to encrypt the registry's content. When omitted, the registry's content is encrypted with an AWS owned key. You cannot change the encryption configuration after registry creation. Specifying a different KMS key, adding this property to an existing registry, or removing it replaces the registry: CloudFormation creates a new registry with a new Amazon Resource Name (ARN) and then deletes the original, including all registry records it contains. Registry records that are not managed by the stack are not re-created in the new registry, and if any remain in the original registry its deletion fails and it is left behind.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#encryption_configuration CcRegistry#encryption_configuration}
+    */
+    readonly encryptionConfiguration?: CcRegistry.EncryptionConfigurationProperty;
+    /**
     * The name of the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#name CcRegistry#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#name CcRegistry#name}
     */
     readonly name: string;
     /**
     * Tags to assign to the registry.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#tags CcRegistry#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#tags CcRegistry#tags}
     */
     readonly tags?: CcRegistry.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry awscc_agentregistry_registry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry awscc_agentregistry_registry}
 */
 export class CcRegistry extends cdktn.TerraformResource {
 
@@ -61,7 +79,7 @@ export class CcRegistry extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRegistry resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRegistry to import
-    * @param importFromId The id of the existing CcRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRegistry to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +91,7 @@ export class CcRegistry extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry awscc_agentregistry_registry} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry awscc_agentregistry_registry} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +102,7 @@ export class CcRegistry extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_agentregistry_registry',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.105.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -96,8 +114,11 @@ export class CcRegistry extends cdktn.TerraformResource {
         });
         this._approvalConfiguration.internalValue = config.approvalConfiguration;
         this._authorizerType = config.authorizerType;
+        this._autoDetectionEnabled = config.autoDetectionEnabled;
+        this._autoDetectionScope = config.autoDetectionScope;
         this._description = config.description;
         this._discoveryConfiguration.internalValue = config.discoveryConfiguration;
+        this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
         this._name = config.name;
         this._tags.internalValue = config.tags;
     }
@@ -138,6 +159,43 @@ export class CcRegistry extends cdktn.TerraformResource {
         return this._authorizerType;
     }
 
+    // auto_detection_enabled - computed: true, optional: true, required: false
+    private _autoDetectionEnabled?: boolean | cdktn.IResolvable; 
+    public get autoDetectionEnabled() {
+        return this.getBooleanAttribute('auto_detection_enabled');
+    }
+    public set autoDetectionEnabled(value: boolean | cdktn.IResolvable) {
+        this._autoDetectionEnabled = value;
+    }
+    public resetAutoDetectionEnabled() {
+        this._autoDetectionEnabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoDetectionEnabledInput() {
+        return this._autoDetectionEnabled;
+    }
+
+    // auto_detection_scope - computed: true, optional: true, required: false
+    private _autoDetectionScope?: string; 
+    public get autoDetectionScope() {
+        return this.getStringAttribute('auto_detection_scope');
+    }
+    public set autoDetectionScope(value: string) {
+        this._autoDetectionScope = value;
+    }
+    public resetAutoDetectionScope() {
+        this._autoDetectionScope = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoDetectionScopeInput() {
+        return this._autoDetectionScope;
+    }
+
+    // auto_detection_status - computed: true, optional: false, required: false
+    public get autoDetectionStatus() {
+        return this.getStringAttribute('auto_detection_status');
+    }
+
     // created_at - computed: true, optional: false, required: false
     public get createdAt() {
         return this.getStringAttribute('created_at');
@@ -173,6 +231,22 @@ export class CcRegistry extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get discoveryConfigurationInput() {
         return this._discoveryConfiguration.internalValue;
+    }
+
+    // encryption_configuration - computed: true, optional: true, required: false
+    private _encryptionConfiguration = new CcRegistry.EncryptionConfigurationPropertyOutputReference(this, "encryption_configuration");
+    public get encryptionConfiguration() {
+        return this._encryptionConfiguration;
+    }
+    public putEncryptionConfiguration(value: CcRegistry.EncryptionConfigurationProperty) {
+        this._encryptionConfiguration.internalValue = value;
+    }
+    public resetEncryptionConfiguration() {
+        this._encryptionConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionConfigurationInput() {
+        return this._encryptionConfiguration.internalValue;
     }
 
     // id - computed: true, optional: false, required: false
@@ -237,8 +311,11 @@ export class CcRegistry extends cdktn.TerraformResource {
         return {
             approval_configuration: ccRegistryApprovalConfigurationPropertyToTerraform(this._approvalConfiguration.internalValue),
             authorizer_type: cdktn.stringToTerraform(this._authorizerType),
+            auto_detection_enabled: cdktn.booleanToTerraform(this._autoDetectionEnabled),
+            auto_detection_scope: cdktn.stringToTerraform(this._autoDetectionScope),
             description: cdktn.stringToTerraform(this._description),
             discovery_configuration: ccRegistryDiscoveryConfigurationPropertyToTerraform(this._discoveryConfiguration.internalValue),
+            encryption_configuration: ccRegistryEncryptionConfigurationPropertyToTerraform(this._encryptionConfiguration.internalValue),
             name: cdktn.stringToTerraform(this._name),
             tags: cdktn.listMapper(ccRegistryTagPropertyToTerraform, false)(this._tags.internalValue),
         };
@@ -258,6 +335,18 @@ export class CcRegistry extends cdktn.TerraformResource {
                 type: "simple",
                 storageClassType: "string",
             },
+            auto_detection_enabled: {
+                value: cdktn.booleanToHclTerraform(this._autoDetectionEnabled),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "boolean",
+            },
+            auto_detection_scope: {
+                value: cdktn.stringToHclTerraform(this._autoDetectionScope),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
             description: {
                 value: cdktn.stringToHclTerraform(this._description),
                 isBlock: false,
@@ -269,6 +358,12 @@ export class CcRegistry extends cdktn.TerraformResource {
                 isBlock: true,
                 type: "struct",
                 storageClassType: "CcRegistry.DiscoveryConfigurationProperty",
+            },
+            encryption_configuration: {
+                value: ccRegistryEncryptionConfigurationPropertyToHclTerraform(this._encryptionConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcRegistry.EncryptionConfigurationProperty",
             },
             name: {
                 value: cdktn.stringToHclTerraform(this._name),
@@ -555,6 +650,36 @@ export function ccRegistryDiscoveryConfigurationPropertyToHclTerraform(struct?: 
 }
 
 
+export function ccRegistryEncryptionConfigurationPropertyToTerraform(struct?: CcRegistry.EncryptionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        kms_key_arn: cdktn.stringToTerraform(struct!.kmsKeyArn),
+    }
+}
+
+
+export function ccRegistryEncryptionConfigurationPropertyToHclTerraform(struct?: CcRegistry.EncryptionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        kms_key_arn: {
+            value: cdktn.stringToHclTerraform(struct!.kmsKeyArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccRegistryTagPropertyToTerraform(struct?: CcRegistry.TagProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -597,7 +722,7 @@ export interface ApprovalConfigurationProperty {
     /**
     * The rules that determine which registry records are automatically approved on submission. When omitted or empty, submitted records require manual review.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#auto_approval_rules CcRegistry#auto_approval_rules}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#auto_approval_rules CcRegistry#auto_approval_rules}
     */
     readonly autoApprovalRules?: string[];
 }
@@ -661,11 +786,11 @@ export class ApprovalConfigurationPropertyOutputReference extends cdktn.ComplexO
 }
 export interface ClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#match_value_string CcRegistry#match_value_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#match_value_string CcRegistry#match_value_string}
     */
     readonly matchValueString?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#match_value_string_list CcRegistry#match_value_string_list}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#match_value_string_list CcRegistry#match_value_string_list}
     */
     readonly matchValueStringList?: string[];
 }
@@ -751,13 +876,13 @@ export class ClaimMatchValueTypePropertyOutputReference extends cdktn.ComplexObj
 }
 export interface AuthorizingClaimMatchValueTypeProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#claim_match_operator CcRegistry#claim_match_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#claim_match_operator CcRegistry#claim_match_operator}
     */
     readonly claimMatchOperator?: string;
     /**
     * The expected value used to match a claim. Exactly one member is set.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#claim_match_value CcRegistry#claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#claim_match_value CcRegistry#claim_match_value}
     */
     readonly claimMatchValue?: ClaimMatchValueTypeProperty;
 }
@@ -845,15 +970,15 @@ export interface CustomClaimValidationTypeProperty {
     /**
     * The value and match operator used to authorize a claim during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#authorizing_claim_match_value CcRegistry#authorizing_claim_match_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#authorizing_claim_match_value CcRegistry#authorizing_claim_match_value}
     */
     readonly authorizingClaimMatchValue?: AuthorizingClaimMatchValueTypeProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#inbound_token_claim_name CcRegistry#inbound_token_claim_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#inbound_token_claim_name CcRegistry#inbound_token_claim_name}
     */
     readonly inboundTokenClaimName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#inbound_token_claim_value_type CcRegistry#inbound_token_claim_value_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#inbound_token_claim_value_type CcRegistry#inbound_token_claim_value_type}
     */
     readonly inboundTokenClaimValueType?: string;
 }
@@ -985,31 +1110,31 @@ export interface CustomJWTAuthorizerConfigurationProperty {
     /**
     * The audience values accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#allowed_audience CcRegistry#allowed_audience}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#allowed_audience CcRegistry#allowed_audience}
     */
     readonly allowedAudience?: string[];
     /**
     * The client identifiers accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#allowed_clients CcRegistry#allowed_clients}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#allowed_clients CcRegistry#allowed_clients}
     */
     readonly allowedClients?: string[];
     /**
     * The scopes accepted during JWT validation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#allowed_scopes CcRegistry#allowed_scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#allowed_scopes CcRegistry#allowed_scopes}
     */
     readonly allowedScopes?: string[];
     /**
     * Additional custom claim validations applied to the inbound JWT.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#custom_claims CcRegistry#custom_claims}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#custom_claims CcRegistry#custom_claims}
     */
     readonly customClaims?: CustomClaimValidationTypeProperty[] | cdktn.IResolvable;
     /**
     * The OpenID Connect discovery URL used to retrieve the identity provider's metadata and signing keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#discovery_url CcRegistry#discovery_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#discovery_url CcRegistry#discovery_url}
     */
     readonly discoveryUrl?: string;
 }
@@ -1163,7 +1288,7 @@ export interface AuthorizerConfigurationProperty {
     /**
     * Configuration for a custom JWT authorizer that validates inbound bearer tokens against an OpenID Connect identity provider.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#custom_jwt_authorizer CcRegistry#custom_jwt_authorizer}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#custom_jwt_authorizer CcRegistry#custom_jwt_authorizer}
     */
     readonly customJwtAuthorizer?: CustomJWTAuthorizerConfigurationProperty;
 }
@@ -1229,7 +1354,7 @@ export interface DiscoveryConfigurationProperty {
     /**
     * The authorizer configuration for the registry. This is a union - specify exactly one member.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#authorizer_configuration CcRegistry#authorizer_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#authorizer_configuration CcRegistry#authorizer_configuration}
     */
     readonly authorizerConfiguration?: AuthorizerConfigurationProperty;
 }
@@ -1291,17 +1416,83 @@ export class DiscoveryConfigurationPropertyOutputReference extends cdktn.Complex
         return this._authorizerConfiguration.internalValue;
     }
 }
+export interface EncryptionConfigurationProperty {
+    /**
+    * The Amazon Resource Name (ARN) of the customer-managed AWS KMS key used to encrypt the registry's content. The key must be a symmetric encryption key in the same AWS account and Region as the registry. Multi-Region keys are not supported.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#kms_key_arn CcRegistry#kms_key_arn}
+    */
+    readonly kmsKeyArn?: string;
+}
+export class EncryptionConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): EncryptionConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._kmsKeyArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.kmsKeyArn = this._kmsKeyArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: EncryptionConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._kmsKeyArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._kmsKeyArn = value.kmsKeyArn;
+        }
+    }
+
+    // kms_key_arn - computed: true, optional: true, required: false
+    private _kmsKeyArn?: string; 
+    public get kmsKeyArn() {
+        return this.getStringAttribute('kms_key_arn');
+    }
+    public set kmsKeyArn(value: string) {
+        this._kmsKeyArn = value;
+    }
+    public resetKmsKeyArn() {
+        this._kmsKeyArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get kmsKeyArnInput() {
+        return this._kmsKeyArn;
+    }
+}
 export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#key CcRegistry#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#key CcRegistry#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/agentregistry_registry#value CcRegistry#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.105.0/docs/resources/agentregistry_registry#value CcRegistry#value}
     */
     readonly value?: string;
 }
