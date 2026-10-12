@@ -6,6 +6,7 @@ export * from './connection-function';
 export * from './connection-group';
 export * from './continuous-deployment-policy';
 export * from './distribution-tenant';
+export * from './field-level-encryption-profile';
 export * from './function';
 export * from './key-group';
 export * from './key-value-store';

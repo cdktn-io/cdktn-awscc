@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_healthagent"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Healthagent"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.healthagent"
+    }
+  }
+}
