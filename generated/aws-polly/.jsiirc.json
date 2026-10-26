@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_polly"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Polly"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.polly"
+    }
+  }
+}

@@ -1,71 +1,95 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFirewallProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone_change_protection CcFirewall#availability_zone_change_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#availability_zone_change_protection CcFirewall#availability_zone_change_protection}
     */
     readonly availabilityZoneChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone_mappings CcFirewall#availability_zone_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#availability_zone_mappings CcFirewall#availability_zone_mappings}
     */
     readonly availabilityZoneMappings?: CcFirewall.AvailabilityZoneMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#delete_protection CcFirewall#delete_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#delete_protection CcFirewall#delete_protection}
     */
     readonly deleteProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#description CcFirewall#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#description CcFirewall#description}
     */
     readonly description?: string;
     /**
     * The types of analysis to enable for the firewall. Can be TLS_SNI, HTTP_HOST, or both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#enabled_analysis_types CcFirewall#enabled_analysis_types}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#enabled_analysis_types CcFirewall#enabled_analysis_types}
     */
     readonly enabledAnalysisTypes?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_name CcFirewall#firewall_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#firewall_name CcFirewall#firewall_name}
     */
     readonly firewallName: string;
     /**
     * A resource ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_policy_arn CcFirewall#firewall_policy_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#firewall_policy_arn CcFirewall#firewall_policy_arn}
     */
     readonly firewallPolicyArn: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection CcFirewall#firewall_policy_change_protection}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection CcFirewall#firewall_policy_change_protection}
     */
     readonly firewallPolicyChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_change_protection CcFirewall#subnet_change_protection}
+    * The NAT gateways that the firewall proxies egress traffic through when NoSourcePreservation is true.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#nat_gateway_mappings CcFirewall#nat_gateway_mappings}
+    */
+    readonly natGatewayMappings?: CcFirewall.NatGatewayMappingsProperty[] | cdktn.IResolvable;
+    /**
+    * Indicates whether the firewall operates in proxy mode, where the source IP address of traffic is not preserved. When true, specify NatGatewayMappings and VpcEndpoint instead of the top-level VpcId and SubnetMappings. You can't change this setting after you create the firewall.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#no_source_preservation CcFirewall#no_source_preservation}
+    */
+    readonly noSourcePreservation?: boolean | cdktn.IResolvable;
+    /**
+    * The proxy listener configuration for a proxy-mode (no source preservation) firewall.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#proxy_settings CcFirewall#proxy_settings}
+    */
+    readonly proxySettings?: CcFirewall.ProxySettingsProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#subnet_change_protection CcFirewall#subnet_change_protection}
     */
     readonly subnetChangeProtection?: boolean | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_mappings CcFirewall#subnet_mappings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#subnet_mappings CcFirewall#subnet_mappings}
     */
     readonly subnetMappings?: CcFirewall.SubnetMappingProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#tags CcFirewall#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#tags CcFirewall#tags}
     */
     readonly tags?: CcFirewall.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#transit_gateway_id CcFirewall#transit_gateway_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#transit_gateway_id CcFirewall#transit_gateway_id}
     */
     readonly transitGatewayId?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#vpc_id CcFirewall#vpc_id}
+    * The VPC and subnets for a proxy-mode firewall's endpoint. Provide this instead of the top-level VpcId and SubnetMappings when NoSourcePreservation is true.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#vpc_endpoint CcFirewall#vpc_endpoint}
+    */
+    readonly vpcEndpoint?: CcFirewall.VpcEndpointProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#vpc_id CcFirewall#vpc_id}
     */
     readonly vpcId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall}
 */
 export class CcFirewall extends cdktn.TerraformResource {
 
@@ -81,7 +105,7 @@ export class CcFirewall extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFirewall resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFirewall to import
-    * @param importFromId The id of the existing CcFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFirewall to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -93,7 +117,7 @@ export class CcFirewall extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall awscc_networkfirewall_firewall} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +128,7 @@ export class CcFirewall extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_networkfirewall_firewall',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -122,10 +146,14 @@ export class CcFirewall extends cdktn.TerraformResource {
         this._firewallName = config.firewallName;
         this._firewallPolicyArn = config.firewallPolicyArn;
         this._firewallPolicyChangeProtection = config.firewallPolicyChangeProtection;
+        this._natGatewayMappings.internalValue = config.natGatewayMappings;
+        this._noSourcePreservation = config.noSourcePreservation;
+        this._proxySettings.internalValue = config.proxySettings;
         this._subnetChangeProtection = config.subnetChangeProtection;
         this._subnetMappings.internalValue = config.subnetMappings;
         this._tags.internalValue = config.tags;
         this._transitGatewayId = config.transitGatewayId;
+        this._vpcEndpoint.internalValue = config.vpcEndpoint;
         this._vpcId = config.vpcId;
     }
 
@@ -275,6 +303,59 @@ export class CcFirewall extends cdktn.TerraformResource {
         return this.getStringAttribute('id');
     }
 
+    // nat_gateway_mappings - computed: true, optional: true, required: false
+    private _natGatewayMappings = new CcFirewall.NatGatewayMappingsPropertyList(this, "nat_gateway_mappings", true);
+    public get natGatewayMappings() {
+        return this._natGatewayMappings;
+    }
+    public putNatGatewayMappings(value: CcFirewall.NatGatewayMappingsProperty[] | cdktn.IResolvable) {
+        this._natGatewayMappings.internalValue = value;
+    }
+    public resetNatGatewayMappings() {
+        this._natGatewayMappings.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get natGatewayMappingsInput() {
+        return this._natGatewayMappings.internalValue;
+    }
+
+    // no_source_preservation - computed: true, optional: true, required: false
+    private _noSourcePreservation?: boolean | cdktn.IResolvable; 
+    public get noSourcePreservation() {
+        return this.getBooleanAttribute('no_source_preservation');
+    }
+    public set noSourcePreservation(value: boolean | cdktn.IResolvable) {
+        this._noSourcePreservation = value;
+    }
+    public resetNoSourcePreservation() {
+        this._noSourcePreservation = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get noSourcePreservationInput() {
+        return this._noSourcePreservation;
+    }
+
+    // number_of_associations - computed: true, optional: false, required: false
+    public get numberOfAssociations() {
+        return this.getNumberAttribute('number_of_associations');
+    }
+
+    // proxy_settings - computed: true, optional: true, required: false
+    private _proxySettings = new CcFirewall.ProxySettingsPropertyOutputReference(this, "proxy_settings");
+    public get proxySettings() {
+        return this._proxySettings;
+    }
+    public putProxySettings(value: CcFirewall.ProxySettingsProperty) {
+        this._proxySettings.internalValue = value;
+    }
+    public resetProxySettings() {
+        this._proxySettings.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get proxySettingsInput() {
+        return this._proxySettings.internalValue;
+    }
+
     // subnet_change_protection - computed: true, optional: true, required: false
     private _subnetChangeProtection?: boolean | cdktn.IResolvable; 
     public get subnetChangeProtection() {
@@ -344,6 +425,22 @@ export class CcFirewall extends cdktn.TerraformResource {
         return this._transitGatewayId;
     }
 
+    // vpc_endpoint - computed: true, optional: true, required: false
+    private _vpcEndpoint = new CcFirewall.VpcEndpointPropertyOutputReference(this, "vpc_endpoint");
+    public get vpcEndpoint() {
+        return this._vpcEndpoint;
+    }
+    public putVpcEndpoint(value: CcFirewall.VpcEndpointProperty) {
+        this._vpcEndpoint.internalValue = value;
+    }
+    public resetVpcEndpoint() {
+        this._vpcEndpoint.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get vpcEndpointInput() {
+        return this._vpcEndpoint.internalValue;
+    }
+
     // vpc_id - computed: true, optional: true, required: false
     private _vpcId?: string; 
     public get vpcId() {
@@ -374,10 +471,14 @@ export class CcFirewall extends cdktn.TerraformResource {
             firewall_name: cdktn.stringToTerraform(this._firewallName),
             firewall_policy_arn: cdktn.stringToTerraform(this._firewallPolicyArn),
             firewall_policy_change_protection: cdktn.booleanToTerraform(this._firewallPolicyChangeProtection),
+            nat_gateway_mappings: cdktn.listMapper(ccFirewallNatGatewayMappingsPropertyToTerraform, false)(this._natGatewayMappings.internalValue),
+            no_source_preservation: cdktn.booleanToTerraform(this._noSourcePreservation),
+            proxy_settings: ccFirewallProxySettingsPropertyToTerraform(this._proxySettings.internalValue),
             subnet_change_protection: cdktn.booleanToTerraform(this._subnetChangeProtection),
             subnet_mappings: cdktn.listMapper(ccFirewallSubnetMappingPropertyToTerraform, false)(this._subnetMappings.internalValue),
             tags: cdktn.listMapper(ccFirewallTagPropertyToTerraform, false)(this._tags.internalValue),
             transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
+            vpc_endpoint: ccFirewallVpcEndpointPropertyToTerraform(this._vpcEndpoint.internalValue),
             vpc_id: cdktn.stringToTerraform(this._vpcId),
         };
     }
@@ -432,6 +533,24 @@ export class CcFirewall extends cdktn.TerraformResource {
                 type: "simple",
                 storageClassType: "boolean",
             },
+            nat_gateway_mappings: {
+                value: cdktn.listMapperHcl(ccFirewallNatGatewayMappingsPropertyToHclTerraform, false)(this._natGatewayMappings.internalValue),
+                isBlock: true,
+                type: "set",
+                storageClassType: "CcFirewall.NatGatewayMappingsPropertyList",
+            },
+            no_source_preservation: {
+                value: cdktn.booleanToHclTerraform(this._noSourcePreservation),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "boolean",
+            },
+            proxy_settings: {
+                value: ccFirewallProxySettingsPropertyToHclTerraform(this._proxySettings.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcFirewall.ProxySettingsProperty",
+            },
             subnet_change_protection: {
                 value: cdktn.booleanToHclTerraform(this._subnetChangeProtection),
                 isBlock: false,
@@ -455,6 +574,12 @@ export class CcFirewall extends cdktn.TerraformResource {
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
+            },
+            vpc_endpoint: {
+                value: ccFirewallVpcEndpointPropertyToHclTerraform(this._vpcEndpoint.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcFirewall.VpcEndpointProperty",
             },
             vpc_id: {
                 value: cdktn.stringToHclTerraform(this._vpcId),
@@ -491,6 +616,103 @@ export function ccFirewallAvailabilityZoneMappingPropertyToHclTerraform(struct?:
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFirewallNatGatewayMappingsPropertyToTerraform(struct?: CcFirewall.NatGatewayMappingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        nat_gateway_id: cdktn.stringToTerraform(struct!.natGatewayId),
+    }
+}
+
+
+export function ccFirewallNatGatewayMappingsPropertyToHclTerraform(struct?: CcFirewall.NatGatewayMappingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        nat_gateway_id: {
+            value: cdktn.stringToHclTerraform(struct!.natGatewayId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFirewallListenerPropertiesPropertyToTerraform(struct?: CcFirewall.ListenerPropertiesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        port: cdktn.numberToTerraform(struct!.port),
+        type: cdktn.stringToTerraform(struct!.type),
+    }
+}
+
+
+export function ccFirewallListenerPropertiesPropertyToHclTerraform(struct?: CcFirewall.ListenerPropertiesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        port: {
+            value: cdktn.numberToHclTerraform(struct!.port),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        type: {
+            value: cdktn.stringToHclTerraform(struct!.type),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFirewallProxySettingsPropertyToTerraform(struct?: CcFirewall.ProxySettingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        listener_properties: cdktn.listMapper(ccFirewallListenerPropertiesPropertyToTerraform, false)(struct!.listenerProperties),
+    }
+}
+
+
+export function ccFirewallProxySettingsPropertyToHclTerraform(struct?: CcFirewall.ProxySettingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        listener_properties: {
+            value: cdktn.listMapperHcl(ccFirewallListenerPropertiesPropertyToHclTerraform, false)(struct!.listenerProperties),
+            isBlock: true,
+            type: "list",
+            storageClassType: "ListenerPropertiesPropertyList",
         },
     };
 
@@ -573,12 +795,86 @@ export function ccFirewallTagPropertyToHclTerraform(struct?: CcFirewall.TagPrope
 }
 
 
+export function ccFirewallSubnetMappingsPropertyToTerraform(struct?: CcFirewall.SubnetMappingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        ip_address_type: cdktn.stringToTerraform(struct!.ipAddressType),
+        subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    }
+}
+
+
+export function ccFirewallSubnetMappingsPropertyToHclTerraform(struct?: CcFirewall.SubnetMappingsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        ip_address_type: {
+            value: cdktn.stringToHclTerraform(struct!.ipAddressType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        subnet_id: {
+            value: cdktn.stringToHclTerraform(struct!.subnetId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFirewallVpcEndpointPropertyToTerraform(struct?: CcFirewall.VpcEndpointProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        subnet_mappings: cdktn.listMapper(ccFirewallSubnetMappingsPropertyToTerraform, false)(struct!.subnetMappings),
+        vpc_id: cdktn.stringToTerraform(struct!.vpcId),
+    }
+}
+
+
+export function ccFirewallVpcEndpointPropertyToHclTerraform(struct?: CcFirewall.VpcEndpointProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        subnet_mappings: {
+            value: cdktn.listMapperHcl(ccFirewallSubnetMappingsPropertyToHclTerraform, false)(struct!.subnetMappings),
+            isBlock: true,
+            type: "set",
+            storageClassType: "SubnetMappingsPropertyList",
+        },
+        vpc_id: {
+            value: cdktn.stringToHclTerraform(struct!.vpcId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export namespace CcFirewall {
 export interface AvailabilityZoneMappingProperty {
     /**
     * A AvailabilityZone
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#availability_zone CcFirewall#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#availability_zone CcFirewall#availability_zone}
     */
     readonly availabilityZone?: string;
 }
@@ -662,17 +958,285 @@ export class AvailabilityZoneMappingPropertyList extends cdktn.ComplexList {
         return new AvailabilityZoneMappingPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
+export interface NatGatewayMappingsProperty {
+    /**
+    * The unique identifier of a NAT gateway.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#nat_gateway_id CcFirewall#nat_gateway_id}
+    */
+    readonly natGatewayId?: string;
+}
+export class NatGatewayMappingsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): NatGatewayMappingsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._natGatewayId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.natGatewayId = this._natGatewayId;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: NatGatewayMappingsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._natGatewayId = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._natGatewayId = value.natGatewayId;
+        }
+    }
+
+    // nat_gateway_id - computed: true, optional: true, required: false
+    private _natGatewayId?: string; 
+    public get natGatewayId() {
+        return this.getStringAttribute('nat_gateway_id');
+    }
+    public set natGatewayId(value: string) {
+        this._natGatewayId = value;
+    }
+    public resetNatGatewayId() {
+        this._natGatewayId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get natGatewayIdInput() {
+        return this._natGatewayId;
+    }
+}
+
+export class NatGatewayMappingsPropertyList extends cdktn.ComplexList {
+    public internalValue? : NatGatewayMappingsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): NatGatewayMappingsPropertyOutputReference {
+        return new NatGatewayMappingsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface ListenerPropertiesProperty {
+    /**
+    * The port the proxy listener accepts traffic on.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#port CcFirewall#port}
+    */
+    readonly port?: number;
+    /**
+    * The protocol the proxy listener uses.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#type CcFirewall#type}
+    */
+    readonly type?: string;
+}
+export class ListenerPropertiesPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): ListenerPropertiesProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._port !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.port = this._port;
+        }
+        if (this._type !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.type = this._type;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ListenerPropertiesProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._port = undefined;
+            this._type = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._port = value.port;
+            this._type = value.type;
+        }
+    }
+
+    // port - computed: true, optional: true, required: false
+    private _port?: number; 
+    public get port() {
+        return this.getNumberAttribute('port');
+    }
+    public set port(value: number) {
+        this._port = value;
+    }
+    public resetPort() {
+        this._port = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get portInput() {
+        return this._port;
+    }
+
+    // type - computed: true, optional: true, required: false
+    private _type?: string; 
+    public get type() {
+        return this.getStringAttribute('type');
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+    public resetType() {
+        this._type = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get typeInput() {
+        return this._type;
+    }
+}
+
+export class ListenerPropertiesPropertyList extends cdktn.ComplexList {
+    public internalValue? : ListenerPropertiesProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): ListenerPropertiesPropertyOutputReference {
+        return new ListenerPropertiesPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface ProxySettingsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#listener_properties CcFirewall#listener_properties}
+    */
+    readonly listenerProperties?: ListenerPropertiesProperty[] | cdktn.IResolvable;
+}
+export class ProxySettingsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ProxySettingsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._listenerProperties?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.listenerProperties = this._listenerProperties?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ProxySettingsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._listenerProperties.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._listenerProperties.internalValue = value.listenerProperties;
+        }
+    }
+
+    // listener_properties - computed: true, optional: true, required: false
+    private _listenerProperties = new ListenerPropertiesPropertyList(this, "listener_properties", false);
+    public get listenerProperties() {
+        return this._listenerProperties;
+    }
+    public putListenerProperties(value: ListenerPropertiesProperty[] | cdktn.IResolvable) {
+        this._listenerProperties.internalValue = value;
+    }
+    public resetListenerProperties() {
+        this._listenerProperties.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get listenerPropertiesInput() {
+        return this._listenerProperties.internalValue;
+    }
+}
 export interface SubnetMappingProperty {
     /**
     * A IPAddressType
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#ip_address_type CcFirewall#ip_address_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#ip_address_type CcFirewall#ip_address_type}
     */
     readonly ipAddressType?: string;
     /**
     * A SubnetId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#subnet_id CcFirewall#subnet_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#subnet_id CcFirewall#subnet_id}
     */
     readonly subnetId?: string;
 }
@@ -780,11 +1344,11 @@ export class SubnetMappingPropertyList extends cdktn.ComplexList {
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#key CcFirewall#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#key CcFirewall#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/networkfirewall_firewall#value CcFirewall#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#value CcFirewall#value}
     */
     readonly value?: string;
 }
@@ -888,6 +1452,214 @@ export class TagPropertyList extends cdktn.ComplexList {
     */
     public get(index: number): TagPropertyOutputReference {
         return new TagPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface SubnetMappingsProperty {
+    /**
+    * A IPAddressType
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#ip_address_type CcFirewall#ip_address_type}
+    */
+    readonly ipAddressType?: string;
+    /**
+    * A SubnetId.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#subnet_id CcFirewall#subnet_id}
+    */
+    readonly subnetId?: string;
+}
+export class SubnetMappingsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): SubnetMappingsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._ipAddressType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.ipAddressType = this._ipAddressType;
+        }
+        if (this._subnetId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.subnetId = this._subnetId;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SubnetMappingsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._ipAddressType = undefined;
+            this._subnetId = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._ipAddressType = value.ipAddressType;
+            this._subnetId = value.subnetId;
+        }
+    }
+
+    // ip_address_type - computed: true, optional: true, required: false
+    private _ipAddressType?: string; 
+    public get ipAddressType() {
+        return this.getStringAttribute('ip_address_type');
+    }
+    public set ipAddressType(value: string) {
+        this._ipAddressType = value;
+    }
+    public resetIpAddressType() {
+        this._ipAddressType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipAddressTypeInput() {
+        return this._ipAddressType;
+    }
+
+    // subnet_id - computed: true, optional: true, required: false
+    private _subnetId?: string; 
+    public get subnetId() {
+        return this.getStringAttribute('subnet_id');
+    }
+    public set subnetId(value: string) {
+        this._subnetId = value;
+    }
+    public resetSubnetId() {
+        this._subnetId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get subnetIdInput() {
+        return this._subnetId;
+    }
+}
+
+export class SubnetMappingsPropertyList extends cdktn.ComplexList {
+    public internalValue? : SubnetMappingsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): SubnetMappingsPropertyOutputReference {
+        return new SubnetMappingsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface VpcEndpointProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#subnet_mappings CcFirewall#subnet_mappings}
+    */
+    readonly subnetMappings?: SubnetMappingsProperty[] | cdktn.IResolvable;
+    /**
+    * The unique identifier of the VPC for the firewall endpoint.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/networkfirewall_firewall#vpc_id CcFirewall#vpc_id}
+    */
+    readonly vpcId?: string;
+}
+export class VpcEndpointPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): VpcEndpointProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._subnetMappings?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.subnetMappings = this._subnetMappings?.internalValue;
+        }
+        if (this._vpcId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.vpcId = this._vpcId;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: VpcEndpointProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._subnetMappings.internalValue = undefined;
+            this._vpcId = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._subnetMappings.internalValue = value.subnetMappings;
+            this._vpcId = value.vpcId;
+        }
+    }
+
+    // subnet_mappings - computed: true, optional: true, required: false
+    private _subnetMappings = new SubnetMappingsPropertyList(this, "subnet_mappings", true);
+    public get subnetMappings() {
+        return this._subnetMappings;
+    }
+    public putSubnetMappings(value: SubnetMappingsProperty[] | cdktn.IResolvable) {
+        this._subnetMappings.internalValue = value;
+    }
+    public resetSubnetMappings() {
+        this._subnetMappings.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get subnetMappingsInput() {
+        return this._subnetMappings.internalValue;
+    }
+
+    // vpc_id - computed: true, optional: true, required: false
+    private _vpcId?: string; 
+    public get vpcId() {
+        return this.getStringAttribute('vpc_id');
+    }
+    public set vpcId(value: string) {
+        this._vpcId = value;
+    }
+    public resetVpcId() {
+        this._vpcId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get vpcIdInput() {
+        return this._vpcId;
     }
 }
 }

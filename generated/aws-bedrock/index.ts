@@ -20,4 +20,5 @@ export * from './knowledge-base-policy';
 export * from './prompt';
 export * from './prompt-version';
 export * from './resource-policy';
+export * from './retrieval-instruction';
 export * from './session';

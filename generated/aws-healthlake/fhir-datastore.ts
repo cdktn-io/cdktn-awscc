@@ -1,49 +1,67 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcFHIRDatastoreProps extends cdktn.TerraformMetaArguments {
     /**
+    * The analytics configuration for the Data Store. Omitted when the Data Store can't carry analytics.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#analytics_configuration CcFHIRDatastore#analytics_configuration}
+    */
+    readonly analyticsConfiguration?: CcFHIRDatastore.AnalyticsConfigurationProperty;
+    /**
     * The user-generated name for the Data Store.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#datastore_name CcFHIRDatastore#datastore_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#datastore_name CcFHIRDatastore#datastore_name}
     */
     readonly datastoreName?: string;
     /**
     * The FHIR version. Only R4 version data is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#datastore_type_version CcFHIRDatastore#datastore_type_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#datastore_type_version CcFHIRDatastore#datastore_type_version}
     */
     readonly datastoreTypeVersion: string;
     /**
     * The identity provider configuration for the datastore
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#identity_provider_configuration CcFHIRDatastore#identity_provider_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#identity_provider_configuration CcFHIRDatastore#identity_provider_configuration}
     */
     readonly identityProviderConfiguration?: CcFHIRDatastore.IdentityProviderConfigurationProperty;
     /**
+    * The natural language processing (NLP) configuration for the Data Store.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#nlp_configuration CcFHIRDatastore#nlp_configuration}
+    */
+    readonly nlpConfiguration?: CcFHIRDatastore.NlpConfigurationProperty;
+    /**
     * The preloaded data configuration for the Data Store. Only data preloaded from Synthea is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#preload_data_config CcFHIRDatastore#preload_data_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#preload_data_config CcFHIRDatastore#preload_data_config}
     */
     readonly preloadDataConfig?: CcFHIRDatastore.PreloadDataConfigProperty;
     /**
+    * The profile configuration for the Data Store.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#profile_configuration CcFHIRDatastore#profile_configuration}
+    */
+    readonly profileConfiguration?: CcFHIRDatastore.ProfileConfigurationProperty;
+    /**
     * The server-side encryption key configuration for a customer provided encryption key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#sse_configuration CcFHIRDatastore#sse_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#sse_configuration CcFHIRDatastore#sse_configuration}
     */
     readonly sseConfiguration?: CcFHIRDatastore.SseConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#tags CcFHIRDatastore#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#tags CcFHIRDatastore#tags}
     */
     readonly tags?: CcFHIRDatastore.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore}
 */
 export class CcFHIRDatastore extends cdktn.TerraformResource {
 
@@ -59,7 +77,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcFHIRDatastore resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcFHIRDatastore to import
-    * @param importFromId The id of the existing CcFHIRDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcFHIRDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcFHIRDatastore to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +89,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore awscc_healthlake_fhir_datastore} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +100,7 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_healthlake_fhir_datastore',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -92,10 +110,13 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
             connection: config.connection,
             forEach: config.forEach
         });
+        this._analyticsConfiguration.internalValue = config.analyticsConfiguration;
         this._datastoreName = config.datastoreName;
         this._datastoreTypeVersion = config.datastoreTypeVersion;
         this._identityProviderConfiguration.internalValue = config.identityProviderConfiguration;
+        this._nlpConfiguration.internalValue = config.nlpConfiguration;
         this._preloadDataConfig.internalValue = config.preloadDataConfig;
+        this._profileConfiguration.internalValue = config.profileConfiguration;
         this._sseConfiguration.internalValue = config.sseConfiguration;
         this._tags.internalValue = config.tags;
     }
@@ -103,6 +124,22 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // analytics_configuration - computed: true, optional: true, required: false
+    private _analyticsConfiguration = new CcFHIRDatastore.AnalyticsConfigurationPropertyOutputReference(this, "analytics_configuration");
+    public get analyticsConfiguration() {
+        return this._analyticsConfiguration;
+    }
+    public putAnalyticsConfiguration(value: CcFHIRDatastore.AnalyticsConfigurationProperty) {
+        this._analyticsConfiguration.internalValue = value;
+    }
+    public resetAnalyticsConfiguration() {
+        this._analyticsConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get analyticsConfigurationInput() {
+        return this._analyticsConfiguration.internalValue;
+    }
 
     // created_at - computed: true, optional: false, required: false
     private _createdAt = new CcFHIRDatastore.CreatedAtPropertyOutputReference(this, "created_at");
@@ -180,6 +217,22 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
         return this._identityProviderConfiguration.internalValue;
     }
 
+    // nlp_configuration - computed: true, optional: true, required: false
+    private _nlpConfiguration = new CcFHIRDatastore.NlpConfigurationPropertyOutputReference(this, "nlp_configuration");
+    public get nlpConfiguration() {
+        return this._nlpConfiguration;
+    }
+    public putNlpConfiguration(value: CcFHIRDatastore.NlpConfigurationProperty) {
+        this._nlpConfiguration.internalValue = value;
+    }
+    public resetNlpConfiguration() {
+        this._nlpConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nlpConfigurationInput() {
+        return this._nlpConfiguration.internalValue;
+    }
+
     // preload_data_config - computed: true, optional: true, required: false
     private _preloadDataConfig = new CcFHIRDatastore.PreloadDataConfigPropertyOutputReference(this, "preload_data_config");
     public get preloadDataConfig() {
@@ -194,6 +247,22 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get preloadDataConfigInput() {
         return this._preloadDataConfig.internalValue;
+    }
+
+    // profile_configuration - computed: true, optional: true, required: false
+    private _profileConfiguration = new CcFHIRDatastore.ProfileConfigurationPropertyOutputReference(this, "profile_configuration");
+    public get profileConfiguration() {
+        return this._profileConfiguration;
+    }
+    public putProfileConfiguration(value: CcFHIRDatastore.ProfileConfigurationProperty) {
+        this._profileConfiguration.internalValue = value;
+    }
+    public resetProfileConfiguration() {
+        this._profileConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get profileConfigurationInput() {
+        return this._profileConfiguration.internalValue;
     }
 
     // sse_configuration - computed: true, optional: true, required: false
@@ -234,10 +303,13 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
 
     protected synthesizeAttributes(): { [name: string]: any } {
         return {
+            analytics_configuration: ccFHIRDatastoreAnalyticsConfigurationPropertyToTerraform(this._analyticsConfiguration.internalValue),
             datastore_name: cdktn.stringToTerraform(this._datastoreName),
             datastore_type_version: cdktn.stringToTerraform(this._datastoreTypeVersion),
             identity_provider_configuration: ccFHIRDatastoreIdentityProviderConfigurationPropertyToTerraform(this._identityProviderConfiguration.internalValue),
+            nlp_configuration: ccFHIRDatastoreNlpConfigurationPropertyToTerraform(this._nlpConfiguration.internalValue),
             preload_data_config: ccFHIRDatastorePreloadDataConfigPropertyToTerraform(this._preloadDataConfig.internalValue),
+            profile_configuration: ccFHIRDatastoreProfileConfigurationPropertyToTerraform(this._profileConfiguration.internalValue),
             sse_configuration: ccFHIRDatastoreSseConfigurationPropertyToTerraform(this._sseConfiguration.internalValue),
             tags: cdktn.listMapper(ccFHIRDatastoreTagPropertyToTerraform, false)(this._tags.internalValue),
         };
@@ -245,6 +317,12 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
 
     protected synthesizeHclAttributes(): { [name: string]: any } {
         const attrs = {
+            analytics_configuration: {
+                value: ccFHIRDatastoreAnalyticsConfigurationPropertyToHclTerraform(this._analyticsConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcFHIRDatastore.AnalyticsConfigurationProperty",
+            },
             datastore_name: {
                 value: cdktn.stringToHclTerraform(this._datastoreName),
                 isBlock: false,
@@ -263,11 +341,23 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
                 type: "struct",
                 storageClassType: "CcFHIRDatastore.IdentityProviderConfigurationProperty",
             },
+            nlp_configuration: {
+                value: ccFHIRDatastoreNlpConfigurationPropertyToHclTerraform(this._nlpConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcFHIRDatastore.NlpConfigurationProperty",
+            },
             preload_data_config: {
                 value: ccFHIRDatastorePreloadDataConfigPropertyToHclTerraform(this._preloadDataConfig.internalValue),
                 isBlock: true,
                 type: "struct",
                 storageClassType: "CcFHIRDatastore.PreloadDataConfigProperty",
+            },
+            profile_configuration: {
+                value: ccFHIRDatastoreProfileConfigurationPropertyToHclTerraform(this._profileConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcFHIRDatastore.ProfileConfigurationProperty",
             },
             sse_configuration: {
                 value: ccFHIRDatastoreSseConfigurationPropertyToHclTerraform(this._sseConfiguration.internalValue),
@@ -287,6 +377,36 @@ export class CcFHIRDatastore extends cdktn.TerraformResource {
         return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
     }
 }
+
+export function ccFHIRDatastoreAnalyticsConfigurationPropertyToTerraform(struct?: CcFHIRDatastore.AnalyticsConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        status: cdktn.stringToTerraform(struct!.status),
+    }
+}
+
+
+export function ccFHIRDatastoreAnalyticsConfigurationPropertyToHclTerraform(struct?: CcFHIRDatastore.AnalyticsConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        status: {
+            value: cdktn.stringToHclTerraform(struct!.status),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 
 export function ccFHIRDatastoreCreatedAtPropertyToTerraform(struct?: CcFHIRDatastore.CreatedAtProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
@@ -360,6 +480,36 @@ export function ccFHIRDatastoreIdentityProviderConfigurationPropertyToHclTerrafo
 }
 
 
+export function ccFHIRDatastoreNlpConfigurationPropertyToTerraform(struct?: CcFHIRDatastore.NlpConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        status: cdktn.stringToTerraform(struct!.status),
+    }
+}
+
+
+export function ccFHIRDatastoreNlpConfigurationPropertyToHclTerraform(struct?: CcFHIRDatastore.NlpConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        status: {
+            value: cdktn.stringToHclTerraform(struct!.status),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccFHIRDatastorePreloadDataConfigPropertyToTerraform(struct?: CcFHIRDatastore.PreloadDataConfigProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -382,6 +532,36 @@ export function ccFHIRDatastorePreloadDataConfigPropertyToHclTerraform(struct?: 
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccFHIRDatastoreProfileConfigurationPropertyToTerraform(struct?: CcFHIRDatastore.ProfileConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        default_profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.defaultProfiles),
+    }
+}
+
+
+export function ccFHIRDatastoreProfileConfigurationPropertyToHclTerraform(struct?: CcFHIRDatastore.ProfileConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        default_profiles: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.defaultProfiles),
+            isBlock: false,
+            type: "set",
+            storageClassType: "stringList",
         },
     };
 
@@ -495,6 +675,72 @@ export function ccFHIRDatastoreTagPropertyToHclTerraform(struct?: CcFHIRDatastor
 
 
 export namespace CcFHIRDatastore {
+export interface AnalyticsConfigurationProperty {
+    /**
+    * The analytics status for the Data Store.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#status CcFHIRDatastore#status}
+    */
+    readonly status?: string;
+}
+export class AnalyticsConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AnalyticsConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._status !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.status = this._status;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AnalyticsConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._status = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._status = value.status;
+        }
+    }
+
+    // status - computed: true, optional: true, required: false
+    private _status?: string; 
+    public get status() {
+        return this.getStringAttribute('status');
+    }
+    public set status(value: string) {
+        this._status = value;
+    }
+    public resetStatus() {
+        this._status = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusInput() {
+        return this._status;
+    }
+}
 export interface CreatedAtProperty {
 }
 export class CreatedAtPropertyOutputReference extends cdktn.ComplexObject {
@@ -537,25 +783,25 @@ export interface IdentityProviderConfigurationProperty {
     /**
     * Type of Authorization Strategy. The two types of supported Authorization strategies are SMART_ON_FHIR_V1 and AWS_AUTH.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#authorization_strategy CcFHIRDatastore#authorization_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#authorization_strategy CcFHIRDatastore#authorization_strategy}
     */
     readonly authorizationStrategy?: string;
     /**
     * Flag to indicate if fine-grained authorization will be enabled for the datastore
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#fine_grained_authorization_enabled CcFHIRDatastore#fine_grained_authorization_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#fine_grained_authorization_enabled CcFHIRDatastore#fine_grained_authorization_enabled}
     */
     readonly fineGrainedAuthorizationEnabled?: boolean | cdktn.IResolvable;
     /**
     * The Amazon Resource Name (ARN) of the Lambda function that will be used to decode the access token created by the authorization server.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#idp_lambda_arn CcFHIRDatastore#idp_lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#idp_lambda_arn CcFHIRDatastore#idp_lambda_arn}
     */
     readonly idpLambdaArn?: string;
     /**
     * The JSON metadata elements for identity provider configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#metadata CcFHIRDatastore#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#metadata CcFHIRDatastore#metadata}
     */
     readonly metadata?: string;
 }
@@ -683,11 +929,77 @@ export class IdentityProviderConfigurationPropertyOutputReference extends cdktn.
         return this._metadata;
     }
 }
+export interface NlpConfigurationProperty {
+    /**
+    * The NLP status for the Data Store.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#status CcFHIRDatastore#status}
+    */
+    readonly status?: string;
+}
+export class NlpConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): NlpConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._status !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.status = this._status;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: NlpConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._status = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._status = value.status;
+        }
+    }
+
+    // status - computed: true, optional: true, required: false
+    private _status?: string; 
+    public get status() {
+        return this.getStringAttribute('status');
+    }
+    public set status(value: string) {
+        this._status = value;
+    }
+    public resetStatus() {
+        this._status = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusInput() {
+        return this._status;
+    }
+}
 export interface PreloadDataConfigProperty {
     /**
     * The type of preloaded data. Only Synthea preloaded data is supported.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#preload_data_type CcFHIRDatastore#preload_data_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#preload_data_type CcFHIRDatastore#preload_data_type}
     */
     readonly preloadDataType?: string;
 }
@@ -749,17 +1061,83 @@ export class PreloadDataConfigPropertyOutputReference extends cdktn.ComplexObjec
         return this._preloadDataType;
     }
 }
+export interface ProfileConfigurationProperty {
+    /**
+    * The FHIR profiles the Data Store validates resources against by default, for example us-core-3.1.1.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#default_profiles CcFHIRDatastore#default_profiles}
+    */
+    readonly defaultProfiles?: string[];
+}
+export class ProfileConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ProfileConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._defaultProfiles !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.defaultProfiles = this._defaultProfiles;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ProfileConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._defaultProfiles = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._defaultProfiles = value.defaultProfiles;
+        }
+    }
+
+    // default_profiles - computed: true, optional: true, required: false
+    private _defaultProfiles?: string[]; 
+    public get defaultProfiles() {
+        return cdktn.Fn.tolist(this.getListAttribute('default_profiles'));
+    }
+    public set defaultProfiles(value: string[]) {
+        this._defaultProfiles = value;
+    }
+    public resetDefaultProfiles() {
+        this._defaultProfiles = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get defaultProfilesInput() {
+        return this._defaultProfiles;
+    }
+}
 export interface KmsEncryptionConfigProperty {
     /**
     * The type of customer-managed-key (CMK) used for encryption. The two types of supported CMKs are customer owned CMKs and AWS owned CMKs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#cmk_type CcFHIRDatastore#cmk_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#cmk_type CcFHIRDatastore#cmk_type}
     */
     readonly cmkType?: string;
     /**
     * The KMS encryption key id/alias used to encrypt the Data Store contents at rest.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#kms_key_id CcFHIRDatastore#kms_key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#kms_key_id CcFHIRDatastore#kms_key_id}
     */
     readonly kmsKeyId?: string;
 }
@@ -847,7 +1225,7 @@ export interface SseConfigurationProperty {
     /**
     * The customer-managed-key (CMK) used when creating a Data Store. If a customer owned key is not specified, an AWS owned key will be used for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#kms_encryption_config CcFHIRDatastore#kms_encryption_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#kms_encryption_config CcFHIRDatastore#kms_encryption_config}
     */
     readonly kmsEncryptionConfig?: KmsEncryptionConfigProperty;
 }
@@ -913,13 +1291,13 @@ export interface TagProperty {
     /**
     * The key of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#key CcFHIRDatastore#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#key CcFHIRDatastore#key}
     */
     readonly key?: string;
     /**
     * The value of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/healthlake_fhir_datastore#value CcFHIRDatastore#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/healthlake_fhir_datastore#value CcFHIRDatastore#value}
     */
     readonly value?: string;
 }

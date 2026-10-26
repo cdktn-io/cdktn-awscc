@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,37 +9,37 @@ export interface CcInstanceProps extends cdktn.TerraformMetaArguments {
     /**
     * The attributes for the instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#attributes CcInstance#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#attributes CcInstance#attributes}
     */
     readonly attributes: CcInstance.AttributesProperty;
     /**
     * Existing directoryId user wants to map to the new Connect instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#directory_id CcInstance#directory_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#directory_id CcInstance#directory_id}
     */
     readonly directoryId?: string;
     /**
     * Specifies the type of directory integration for new instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#identity_management_type CcInstance#identity_management_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#identity_management_type CcInstance#identity_management_type}
     */
     readonly identityManagementType: string;
     /**
     * Alias of the new directory created as part of new instance creation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#instance_alias CcInstance#instance_alias}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#instance_alias CcInstance#instance_alias}
     */
     readonly instanceAlias?: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#tags CcInstance#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#tags CcInstance#tags}
     */
     readonly tags?: CcInstance.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance awscc_connect_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance awscc_connect_instance}
 */
 export class CcInstance extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CcInstance extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcInstance resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcInstance to import
-    * @param importFromId The id of the existing CcInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcInstance to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CcInstance extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance awscc_connect_instance} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance awscc_connect_instance} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CcInstance extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_connect_instance',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -262,6 +262,7 @@ export function ccInstanceAttributesPropertyToTerraform(struct?: CcInstance.Attr
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        auto_mute_agent_on_hold: cdktn.booleanToTerraform(struct!.autoMuteAgentOnHold),
         auto_resolve_best_voices: cdktn.booleanToTerraform(struct!.autoResolveBestVoices),
         contact_lens: cdktn.booleanToTerraform(struct!.contactLens),
         contactflow_logs: cdktn.booleanToTerraform(struct!.contactflowLogs),
@@ -285,6 +286,12 @@ export function ccInstanceAttributesPropertyToHclTerraform(struct?: CcInstance.A
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        auto_mute_agent_on_hold: {
+            value: cdktn.booleanToHclTerraform(struct!.autoMuteAgentOnHold),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "boolean",
+        },
         auto_resolve_best_voices: {
             value: cdktn.booleanToHclTerraform(struct!.autoResolveBestVoices),
             isBlock: false,
@@ -410,81 +417,87 @@ export function ccInstanceTagPropertyToHclTerraform(struct?: CcInstance.TagPrope
 export namespace CcInstance {
 export interface AttributesProperty {
     /**
+    * Boolean flag which enables AUTO_MUTE_AGENT_ON_HOLD on an instance.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#auto_mute_agent_on_hold CcInstance#auto_mute_agent_on_hold}
+    */
+    readonly autoMuteAgentOnHold?: boolean | cdktn.IResolvable;
+    /**
     * Boolean flag which enables AUTO_RESOLVE_BEST_VOICES on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#auto_resolve_best_voices CcInstance#auto_resolve_best_voices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#auto_resolve_best_voices CcInstance#auto_resolve_best_voices}
     */
     readonly autoResolveBestVoices?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables CONTACT_LENS on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#contact_lens CcInstance#contact_lens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#contact_lens CcInstance#contact_lens}
     */
     readonly contactLens?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables CONTACTFLOW_LOGS on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#contactflow_logs CcInstance#contactflow_logs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#contactflow_logs CcInstance#contactflow_logs}
     */
     readonly contactflowLogs?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables EARLY_MEDIA on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#early_media CcInstance#early_media}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#early_media CcInstance#early_media}
     */
     readonly earlyMedia?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables ENHANCED_CHAT_MONITORING on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#enhanced_chat_monitoring CcInstance#enhanced_chat_monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#enhanced_chat_monitoring CcInstance#enhanced_chat_monitoring}
     */
     readonly enhancedChatMonitoring?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables ENHANCED_CONTACT_MONITORING on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#enhanced_contact_monitoring CcInstance#enhanced_contact_monitoring}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#enhanced_contact_monitoring CcInstance#enhanced_contact_monitoring}
     */
     readonly enhancedContactMonitoring?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables HIGH_VOLUME_OUTBOUND on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#high_volume_out_bound CcInstance#high_volume_out_bound}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#high_volume_out_bound CcInstance#high_volume_out_bound}
     */
     readonly highVolumeOutBound?: boolean | cdktn.IResolvable;
     /**
     * Mandatory element which enables inbound calls on new instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#inbound_calls CcInstance#inbound_calls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#inbound_calls CcInstance#inbound_calls}
     */
     readonly inboundCalls: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables MESSAGE_STREAMING on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#message_streaming CcInstance#message_streaming}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#message_streaming CcInstance#message_streaming}
     */
     readonly messageStreaming?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables MULTI_PARTY_CHAT_CONFERENCE on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#multi_party_chat_conference CcInstance#multi_party_chat_conference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#multi_party_chat_conference CcInstance#multi_party_chat_conference}
     */
     readonly multiPartyChatConference?: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables MULTI_PARTY_CONFERENCE on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#multi_party_conference CcInstance#multi_party_conference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#multi_party_conference CcInstance#multi_party_conference}
     */
     readonly multiPartyConference?: boolean | cdktn.IResolvable;
     /**
     * Mandatory element which enables outbound calls on new instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#outbound_calls CcInstance#outbound_calls}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#outbound_calls CcInstance#outbound_calls}
     */
     readonly outboundCalls: boolean | cdktn.IResolvable;
     /**
     * Boolean flag which enables USE_CUSTOM_TTS_VOICES on an instance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#use_custom_tts_voices CcInstance#use_custom_tts_voices}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#use_custom_tts_voices CcInstance#use_custom_tts_voices}
     */
     readonly useCustomTtsVoices?: boolean | cdktn.IResolvable;
 }
@@ -506,6 +519,10 @@ export class AttributesPropertyOutputReference extends cdktn.ComplexObject {
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._autoMuteAgentOnHold !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.autoMuteAgentOnHold = this._autoMuteAgentOnHold;
+        }
         if (this._autoResolveBestVoices !== undefined) {
             hasAnyValues = true;
             internalValueResult.autoResolveBestVoices = this._autoResolveBestVoices;
@@ -565,6 +582,7 @@ export class AttributesPropertyOutputReference extends cdktn.ComplexObject {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._autoMuteAgentOnHold = undefined;
             this._autoResolveBestVoices = undefined;
             this._contactLens = undefined;
             this._contactflowLogs = undefined;
@@ -586,6 +604,7 @@ export class AttributesPropertyOutputReference extends cdktn.ComplexObject {
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._autoMuteAgentOnHold = value.autoMuteAgentOnHold;
             this._autoResolveBestVoices = value.autoResolveBestVoices;
             this._contactLens = value.contactLens;
             this._contactflowLogs = value.contactflowLogs;
@@ -600,6 +619,22 @@ export class AttributesPropertyOutputReference extends cdktn.ComplexObject {
             this._outboundCalls = value.outboundCalls;
             this._useCustomTtsVoices = value.useCustomTtsVoices;
         }
+    }
+
+    // auto_mute_agent_on_hold - computed: true, optional: true, required: false
+    private _autoMuteAgentOnHold?: boolean | cdktn.IResolvable; 
+    public get autoMuteAgentOnHold() {
+        return this.getBooleanAttribute('auto_mute_agent_on_hold');
+    }
+    public set autoMuteAgentOnHold(value: boolean | cdktn.IResolvable) {
+        this._autoMuteAgentOnHold = value;
+    }
+    public resetAutoMuteAgentOnHold() {
+        this._autoMuteAgentOnHold = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoMuteAgentOnHoldInput() {
+        return this._autoMuteAgentOnHold;
     }
 
     // auto_resolve_best_voices - computed: true, optional: true, required: false
@@ -808,13 +843,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#key CcInstance#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#key CcInstance#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/connect_instance#value CcInstance#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/connect_instance#value CcInstance#value}
     */
     readonly value?: string;
 }

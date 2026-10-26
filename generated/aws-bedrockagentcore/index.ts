@@ -6,6 +6,7 @@ export * from './browser-profile';
 export * from './capacity-provider';
 export * from './code-interpreter-custom';
 export * from './configuration-bundle';
+export * from './consent-portal';
 export * from './evaluator';
 export * from './gateway';
 export * from './gateway-rate-limit';
