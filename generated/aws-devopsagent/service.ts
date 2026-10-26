@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,49 +9,55 @@ export interface CcServiceProps extends cdktn.TerraformMetaArguments {
     /**
     * The name of the private connection to use for OAuth token exchange requests only. Cannot be specified when PrivateConnectionName is provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_url_private_connection_name CcService#exchange_url_private_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_url_private_connection_name CcService#exchange_url_private_connection_name}
     */
     readonly exchangeUrlPrivateConnectionName?: string;
     /**
     * The ARN of the KMS key to use for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#kms_key_arn CcService#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#kms_key_arn CcService#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
+    * The display name for the service registration.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#name CcService#name}
+    */
+    readonly name?: string;
+    /**
     * The name of the private connection to use for VPC connectivity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#private_connection_name CcService#private_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#private_connection_name CcService#private_connection_name}
     */
     readonly privateConnectionName?: string;
     /**
     * Service-specific configuration details for create operation
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#service_details CcService#service_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#service_details CcService#service_details}
     */
     readonly serviceDetails?: CcService.ServiceDetailsProperty;
     /**
     * The type of service being registered
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#service_type CcService#service_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#service_type CcService#service_type}
     */
     readonly serviceType: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#tags CcService#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#tags CcService#tags}
     */
     readonly tags?: CcService.TagProperty[] | cdktn.IResolvable;
     /**
     * The name of the private connection to use for API calls (target URL) only. Cannot be specified when PrivateConnectionName is provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#target_url_private_connection_name CcService#target_url_private_connection_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#target_url_private_connection_name CcService#target_url_private_connection_name}
     */
     readonly targetUrlPrivateConnectionName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service awscc_devopsagent_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service awscc_devopsagent_service}
 */
 export class CcService extends cdktn.TerraformResource {
 
@@ -67,7 +73,7 @@ export class CcService extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcService resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcService to import
-    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcService to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +85,7 @@ export class CcService extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service awscc_devopsagent_service} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service awscc_devopsagent_service} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +96,7 @@ export class CcService extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_devopsagent_service',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -102,6 +108,7 @@ export class CcService extends cdktn.TerraformResource {
         });
         this._exchangeUrlPrivateConnectionName = config.exchangeUrlPrivateConnectionName;
         this._kmsKeyArn = config.kmsKeyArn;
+        this._name = config.name;
         this._privateConnectionName = config.privateConnectionName;
         this._serviceDetails.internalValue = config.serviceDetails;
         this._serviceType = config.serviceType;
@@ -165,6 +172,22 @@ export class CcService extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get kmsKeyArnInput() {
         return this._kmsKeyArn;
+    }
+
+    // name - computed: true, optional: true, required: false
+    private _name?: string; 
+    public get name() {
+        return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+        this._name = value;
+    }
+    public resetName() {
+        this._name = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+        return this._name;
     }
 
     // private_connection_name - computed: true, optional: true, required: false
@@ -257,6 +280,7 @@ export class CcService extends cdktn.TerraformResource {
         return {
             exchange_url_private_connection_name: cdktn.stringToTerraform(this._exchangeUrlPrivateConnectionName),
             kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
+            name: cdktn.stringToTerraform(this._name),
             private_connection_name: cdktn.stringToTerraform(this._privateConnectionName),
             service_details: ccServiceServiceDetailsPropertyToTerraform(this._serviceDetails.internalValue),
             service_type: cdktn.stringToTerraform(this._serviceType),
@@ -275,6 +299,12 @@ export class CcService extends cdktn.TerraformResource {
             },
             kms_key_arn: {
                 value: cdktn.stringToHclTerraform(this._kmsKeyArn),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
+            name: {
+                value: cdktn.stringToHclTerraform(this._name),
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
@@ -348,6 +378,27 @@ export function ccServiceDynatracePropertyToTerraform(struct?: CcService.Dynatra
 
 
 export function ccServiceDynatracePropertyToHclTerraform(struct?: CcService.DynatraceProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+    };
+    return attrs;
+}
+
+
+export function ccServiceAdditionalServiceDetailsGitHubPropertyToTerraform(struct?: CcService.AdditionalServiceDetailsGitHubProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+    }
+}
+
+
+export function ccServiceAdditionalServiceDetailsGitHubPropertyToHclTerraform(struct?: CcService.AdditionalServiceDetailsGitHubProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -708,6 +759,138 @@ export function ccServiceDynatraceServiceDetailsPropertyToHclTerraform(struct?: 
             isBlock: true,
             type: "struct",
             storageClassType: "DynatraceAuthorizationConfigProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccServiceAppVerificationPropertyToTerraform(struct?: CcService.AppVerificationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        app_variant: cdktn.stringToTerraform(struct!.appVariant),
+        organization_name: cdktn.stringToTerraform(struct!.organizationName),
+        target_url: cdktn.stringToTerraform(struct!.targetUrl),
+        token_value: cdktn.stringToTerraform(struct!.tokenValue),
+    }
+}
+
+
+export function ccServiceAppVerificationPropertyToHclTerraform(struct?: CcService.AppVerificationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        app_variant: {
+            value: cdktn.stringToHclTerraform(struct!.appVariant),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        organization_name: {
+            value: cdktn.stringToHclTerraform(struct!.organizationName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        target_url: {
+            value: cdktn.stringToHclTerraform(struct!.targetUrl),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_value: {
+            value: cdktn.stringToHclTerraform(struct!.tokenValue),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccServiceDirectAccessPropertyToTerraform(struct?: CcService.DirectAccessProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        organization_name: cdktn.stringToTerraform(struct!.organizationName),
+        target_url: cdktn.stringToTerraform(struct!.targetUrl),
+        token_value: cdktn.stringToTerraform(struct!.tokenValue),
+    }
+}
+
+
+export function ccServiceDirectAccessPropertyToHclTerraform(struct?: CcService.DirectAccessProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        organization_name: {
+            value: cdktn.stringToHclTerraform(struct!.organizationName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        target_url: {
+            value: cdktn.stringToHclTerraform(struct!.targetUrl),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        token_value: {
+            value: cdktn.stringToHclTerraform(struct!.tokenValue),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccServiceServiceDetailsGitHubPropertyToTerraform(struct?: CcService.ServiceDetailsGitHubProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        app_verification: ccServiceAppVerificationPropertyToTerraform(struct!.appVerification),
+        direct_access: ccServiceDirectAccessPropertyToTerraform(struct!.directAccess),
+    }
+}
+
+
+export function ccServiceServiceDetailsGitHubPropertyToHclTerraform(struct?: CcService.ServiceDetailsGitHubProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        app_verification: {
+            value: ccServiceAppVerificationPropertyToHclTerraform(struct!.appVerification),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "AppVerificationProperty",
+        },
+        direct_access: {
+            value: ccServiceDirectAccessPropertyToHclTerraform(struct!.directAccess),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DirectAccessProperty",
         },
     };
 
@@ -1743,6 +1926,7 @@ export function ccServiceServiceDetailsPropertyToTerraform(struct?: CcService.Se
     return {
         azure_identity: ccServiceAzureIdentityServiceDetailsPropertyToTerraform(struct!.azureIdentity),
         dynatrace: ccServiceDynatraceServiceDetailsPropertyToTerraform(struct!.dynatrace),
+        git_hub: ccServiceServiceDetailsGitHubPropertyToTerraform(struct!.gitHub),
         git_lab: ccServiceGitLabDetailsPropertyToTerraform(struct!.gitLab),
         mcp_server: ccServiceMCPServerDetailsPropertyToTerraform(struct!.mcpServer),
         mcp_server_grafana: ccServiceMCPServerGrafanaDetailsPropertyToTerraform(struct!.mcpServerGrafana),
@@ -1772,6 +1956,12 @@ export function ccServiceServiceDetailsPropertyToHclTerraform(struct?: CcService
             isBlock: true,
             type: "struct",
             storageClassType: "DynatraceServiceDetailsProperty",
+        },
+        git_hub: {
+            value: ccServiceServiceDetailsGitHubPropertyToHclTerraform(struct!.gitHub),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ServiceDetailsGitHubProperty",
         },
         git_lab: {
             value: ccServiceGitLabDetailsPropertyToHclTerraform(struct!.gitLab),
@@ -1945,6 +2135,64 @@ export class DynatracePropertyOutputReference extends cdktn.ComplexObject {
     // account_urn - computed: true, optional: false, required: false
     public get accountUrn() {
         return this.getStringAttribute('account_urn');
+    }
+}
+export interface AdditionalServiceDetailsGitHubProperty {
+}
+export class AdditionalServiceDetailsGitHubPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AdditionalServiceDetailsGitHubProperty | undefined {
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AdditionalServiceDetailsGitHubProperty | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+        }
+    }
+
+    // app_variant - computed: true, optional: false, required: false
+    public get appVariant() {
+        return this.getStringAttribute('app_variant');
+    }
+
+    // auth_mode - computed: true, optional: false, required: false
+    public get authMode() {
+        return this.getStringAttribute('auth_mode');
+    }
+
+    // hosting_type - computed: true, optional: false, required: false
+    public get hostingType() {
+        return this.getStringAttribute('hosting_type');
+    }
+
+    // owner - computed: true, optional: false, required: false
+    public get owner() {
+        return this.getStringAttribute('owner');
+    }
+
+    // owner_type - computed: true, optional: false, required: false
+    public get ownerType() {
+        return this.getStringAttribute('owner_type');
+    }
+
+    // target_url - computed: true, optional: false, required: false
+    public get targetUrl() {
+        return this.getStringAttribute('target_url');
     }
 }
 export interface GitLabProperty {
@@ -2362,6 +2610,12 @@ export class AdditionalServiceDetailsPropertyOutputReference extends cdktn.Compl
         return this._dynatrace;
     }
 
+    // git_hub - computed: true, optional: false, required: false
+    private _gitHub = new AdditionalServiceDetailsGitHubPropertyOutputReference(this, "git_hub");
+    public get gitHub() {
+        return this._gitHub;
+    }
+
     // git_lab - computed: true, optional: false, required: false
     private _gitLab = new GitLabPropertyOutputReference(this, "git_lab");
     public get gitLab() {
@@ -2414,25 +2668,25 @@ export interface AzureIdentityServiceDetailsProperty {
     /**
     * Azure AD application client ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_id CcService#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_id CcService#client_id}
     */
     readonly clientId?: string;
     /**
     * Azure AD tenant ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#tenant_id CcService#tenant_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#tenant_id CcService#tenant_id}
     */
     readonly tenantId?: string;
     /**
     * ARN of the IAM role for web identity token exchange
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#web_identity_role_arn CcService#web_identity_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#web_identity_role_arn CcService#web_identity_role_arn}
     */
     readonly webIdentityRoleArn?: string;
     /**
     * List of audiences for the web identity token
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#web_identity_token_audiences CcService#web_identity_token_audiences}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#web_identity_token_audiences CcService#web_identity_token_audiences}
     */
     readonly webIdentityTokenAudiences?: string[];
 }
@@ -2564,25 +2818,25 @@ export interface OAuthClientDetailsProperty {
     /**
     * OAuth client ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_id CcService#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_id CcService#client_id}
     */
     readonly clientId?: string;
     /**
     * User friendly OAuth client name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_name CcService#client_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_name CcService#client_name}
     */
     readonly clientName?: string;
     /**
     * OAuth client secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * OAuth token exchange parameters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
     */
     readonly exchangeParameters?: string;
 }
@@ -2714,7 +2968,7 @@ export interface DynatraceAuthorizationConfigProperty {
     /**
     * OAuth client credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
     */
     readonly oAuthClientCredentials?: OAuthClientDetailsProperty;
 }
@@ -2780,13 +3034,13 @@ export interface DynatraceServiceDetailsProperty {
     /**
     * Dynatrace resource account URN
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#account_urn CcService#account_urn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#account_urn CcService#account_urn}
     */
     readonly accountUrn?: string;
     /**
     * Dynatrace OAuth authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: DynatraceAuthorizationConfigProperty;
 }
@@ -2870,29 +3124,395 @@ export class DynatraceServiceDetailsPropertyOutputReference extends cdktn.Comple
         return this._authorizationConfig.internalValue;
     }
 }
+export interface AppVerificationProperty {
+    /**
+    * Permission variant of the DevOps Agent GitHub App that must already be installed on the organization or account
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#app_variant CcService#app_variant}
+    */
+    readonly appVariant?: string;
+    /**
+    * GitHub organization to scope the service to. The token must be an active member of the organization and only that organization's repositories are accessible. Omit to register the token's own user account
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#organization_name CcService#organization_name}
+    */
+    readonly organizationName?: string;
+    /**
+    * GitHub instance URL. Omit for github.com. Provide the instance host for GitHub Enterprise Server or GitHub Enterprise Cloud with data residency (e.g. https://github.example.com)
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#target_url CcService#target_url}
+    */
+    readonly targetUrl?: string;
+    /**
+    * GitHub personal access token (PAT) value. Accepts classic PATs (ghp_...), fine-grained PATs (github_pat_...), and GitHub Enterprise Server token formats
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    */
+    readonly tokenValue?: string;
+}
+export class AppVerificationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AppVerificationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._appVariant !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.appVariant = this._appVariant;
+        }
+        if (this._organizationName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.organizationName = this._organizationName;
+        }
+        if (this._targetUrl !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetUrl = this._targetUrl;
+        }
+        if (this._tokenValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenValue = this._tokenValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AppVerificationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._appVariant = undefined;
+            this._organizationName = undefined;
+            this._targetUrl = undefined;
+            this._tokenValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._appVariant = value.appVariant;
+            this._organizationName = value.organizationName;
+            this._targetUrl = value.targetUrl;
+            this._tokenValue = value.tokenValue;
+        }
+    }
+
+    // app_variant - computed: true, optional: true, required: false
+    private _appVariant?: string; 
+    public get appVariant() {
+        return this.getStringAttribute('app_variant');
+    }
+    public set appVariant(value: string) {
+        this._appVariant = value;
+    }
+    public resetAppVariant() {
+        this._appVariant = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get appVariantInput() {
+        return this._appVariant;
+    }
+
+    // organization_name - computed: true, optional: true, required: false
+    private _organizationName?: string; 
+    public get organizationName() {
+        return this.getStringAttribute('organization_name');
+    }
+    public set organizationName(value: string) {
+        this._organizationName = value;
+    }
+    public resetOrganizationName() {
+        this._organizationName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get organizationNameInput() {
+        return this._organizationName;
+    }
+
+    // target_url - computed: true, optional: true, required: false
+    private _targetUrl?: string; 
+    public get targetUrl() {
+        return this.getStringAttribute('target_url');
+    }
+    public set targetUrl(value: string) {
+        this._targetUrl = value;
+    }
+    public resetTargetUrl() {
+        this._targetUrl = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetUrlInput() {
+        return this._targetUrl;
+    }
+
+    // token_value - computed: true, optional: true, required: false
+    private _tokenValue?: string; 
+    public get tokenValue() {
+        return this.getStringAttribute('token_value');
+    }
+    public set tokenValue(value: string) {
+        this._tokenValue = value;
+    }
+    public resetTokenValue() {
+        this._tokenValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenValueInput() {
+        return this._tokenValue;
+    }
+}
+export interface DirectAccessProperty {
+    /**
+    * GitHub organization to scope the service to. The token must be an active member of the organization and only that organization's repositories are accessible. Omit to register the token's own user account
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#organization_name CcService#organization_name}
+    */
+    readonly organizationName?: string;
+    /**
+    * GitHub instance URL. Omit for github.com. Provide the instance host for GitHub Enterprise Server or GitHub Enterprise Cloud with data residency (e.g. https://github.example.com)
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#target_url CcService#target_url}
+    */
+    readonly targetUrl?: string;
+    /**
+    * GitHub personal access token (PAT) value. Accepts classic PATs (ghp_...), fine-grained PATs (github_pat_...), and GitHub Enterprise Server token formats
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    */
+    readonly tokenValue?: string;
+}
+export class DirectAccessPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DirectAccessProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._organizationName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.organizationName = this._organizationName;
+        }
+        if (this._targetUrl !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetUrl = this._targetUrl;
+        }
+        if (this._tokenValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tokenValue = this._tokenValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DirectAccessProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._organizationName = undefined;
+            this._targetUrl = undefined;
+            this._tokenValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._organizationName = value.organizationName;
+            this._targetUrl = value.targetUrl;
+            this._tokenValue = value.tokenValue;
+        }
+    }
+
+    // organization_name - computed: true, optional: true, required: false
+    private _organizationName?: string; 
+    public get organizationName() {
+        return this.getStringAttribute('organization_name');
+    }
+    public set organizationName(value: string) {
+        this._organizationName = value;
+    }
+    public resetOrganizationName() {
+        this._organizationName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get organizationNameInput() {
+        return this._organizationName;
+    }
+
+    // target_url - computed: true, optional: true, required: false
+    private _targetUrl?: string; 
+    public get targetUrl() {
+        return this.getStringAttribute('target_url');
+    }
+    public set targetUrl(value: string) {
+        this._targetUrl = value;
+    }
+    public resetTargetUrl() {
+        this._targetUrl = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetUrlInput() {
+        return this._targetUrl;
+    }
+
+    // token_value - computed: true, optional: true, required: false
+    private _tokenValue?: string; 
+    public get tokenValue() {
+        return this.getStringAttribute('token_value');
+    }
+    public set tokenValue(value: string) {
+        this._tokenValue = value;
+    }
+    public resetTokenValue() {
+        this._tokenValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tokenValueInput() {
+        return this._tokenValue;
+    }
+}
+export interface ServiceDetailsGitHubProperty {
+    /**
+    * The token verifies an existing DevOps Agent GitHub App installation on github.com and is then discarded. Not supported for GitHub Enterprise Server
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#app_verification CcService#app_verification}
+    */
+    readonly appVerification?: AppVerificationProperty;
+    /**
+    * The token is stored and used as the long-lived credential for GitHub API access
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#direct_access CcService#direct_access}
+    */
+    readonly directAccess?: DirectAccessProperty;
+}
+export class ServiceDetailsGitHubPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ServiceDetailsGitHubProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._appVerification?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.appVerification = this._appVerification?.internalValue;
+        }
+        if (this._directAccess?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.directAccess = this._directAccess?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ServiceDetailsGitHubProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._appVerification.internalValue = undefined;
+            this._directAccess.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._appVerification.internalValue = value.appVerification;
+            this._directAccess.internalValue = value.directAccess;
+        }
+    }
+
+    // app_verification - computed: true, optional: true, required: false
+    private _appVerification = new AppVerificationPropertyOutputReference(this, "app_verification");
+    public get appVerification() {
+        return this._appVerification;
+    }
+    public putAppVerification(value: AppVerificationProperty) {
+        this._appVerification.internalValue = value;
+    }
+    public resetAppVerification() {
+        this._appVerification.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get appVerificationInput() {
+        return this._appVerification.internalValue;
+    }
+
+    // direct_access - computed: true, optional: true, required: false
+    private _directAccess = new DirectAccessPropertyOutputReference(this, "direct_access");
+    public get directAccess() {
+        return this._directAccess;
+    }
+    public putDirectAccess(value: DirectAccessProperty) {
+        this._directAccess.internalValue = value;
+    }
+    public resetDirectAccess() {
+        this._directAccess.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get directAccessInput() {
+        return this._directAccess.internalValue;
+    }
+}
 export interface GitLabDetailsProperty {
     /**
     * Optional GitLab group ID for group-level access tokens
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#group_id CcService#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#group_id CcService#group_id}
     */
     readonly groupId?: string;
     /**
     * GitLab instance URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#target_url CcService#target_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#target_url CcService#target_url}
     */
     readonly targetUrl?: string;
     /**
     * Type of GitLab access token
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_type CcService#token_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_type CcService#token_type}
     */
     readonly tokenType?: string;
     /**
     * GitLab access token value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
     */
     readonly tokenValue?: string;
 }
@@ -3024,19 +3644,19 @@ export interface ApiKeyDetailsProperty {
     /**
     * HTTP header name to send the API key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key_header CcService#api_key_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key_header CcService#api_key_header}
     */
     readonly apiKeyHeader?: string;
     /**
     * User friendly API key name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key_name CcService#api_key_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key_name CcService#api_key_name}
     */
     readonly apiKeyName?: string;
     /**
     * API key value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key_value CcService#api_key_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key_value CcService#api_key_value}
     */
     readonly apiKeyValue?: string;
 }
@@ -3146,19 +3766,19 @@ export interface BearerTokenDetailsProperty {
     /**
     * HTTP header name to send the bearer token
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
     */
     readonly authorizationHeader?: string;
     /**
     * User friendly bearer token name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_name CcService#token_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_name CcService#token_name}
     */
     readonly tokenName?: string;
     /**
     * Bearer token value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
     */
     readonly tokenValue?: string;
 }
@@ -3268,37 +3888,37 @@ export interface MCPServerOAuthClientCredentialsConfigProperty {
     /**
     * OAuth client ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_id CcService#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_id CcService#client_id}
     */
     readonly clientId?: string;
     /**
     * User friendly OAuth client name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_name CcService#client_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_name CcService#client_name}
     */
     readonly clientName?: string;
     /**
     * OAuth client secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * OAuth token exchange parameters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
     */
     readonly exchangeParameters?: string;
     /**
     * OAuth token exchange URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_url CcService#exchange_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_url CcService#exchange_url}
     */
     readonly exchangeUrl?: string;
     /**
     * OAuth scopes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#scopes CcService#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#scopes CcService#scopes}
     */
     readonly scopes?: string[];
 }
@@ -3474,19 +4094,19 @@ export interface MCPServerAuthorizationConfigProperty {
     /**
     * API key authentication details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key CcService#api_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key CcService#api_key}
     */
     readonly apiKey?: ApiKeyDetailsProperty;
     /**
     * Bearer token authentication details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
     */
     readonly bearerToken?: BearerTokenDetailsProperty;
     /**
     * MCP server OAuth client credentials configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
     */
     readonly oAuthClientCredentials?: MCPServerOAuthClientCredentialsConfigProperty;
 }
@@ -3596,25 +4216,25 @@ export interface MCPServerDetailsProperty {
     /**
     * MCP server authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: MCPServerAuthorizationConfigProperty;
     /**
     * Optional description for the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
     */
     readonly endpoint?: string;
     /**
     * MCP server name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#name CcService#name}
     */
     readonly name?: string;
 }
@@ -3746,19 +4366,19 @@ export interface ServiceDetailsMcpServerGrafanaAuthorizationConfigBearerTokenPro
     /**
     * HTTP header name to send the bearer token
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
     */
     readonly authorizationHeader?: string;
     /**
     * User friendly bearer token name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_name CcService#token_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_name CcService#token_name}
     */
     readonly tokenName?: string;
     /**
     * Bearer token value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
     */
     readonly tokenValue?: string;
 }
@@ -3868,7 +4488,7 @@ export interface MCPServerGrafanaAuthorizationConfigProperty {
     /**
     * Bearer token authentication details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
     */
     readonly bearerToken?: ServiceDetailsMcpServerGrafanaAuthorizationConfigBearerTokenProperty;
 }
@@ -3934,25 +4554,25 @@ export interface MCPServerGrafanaDetailsProperty {
     /**
     * Grafana MCP server authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: MCPServerGrafanaAuthorizationConfigProperty;
     /**
     * Optional description for the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
     */
     readonly endpoint?: string;
     /**
     * MCP server name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#name CcService#name}
     */
     readonly name?: string;
 }
@@ -4084,37 +4704,37 @@ export interface NewRelicApiKeyConfigProperty {
     /**
     * New Relic Account ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#account_id CcService#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#account_id CcService#account_id}
     */
     readonly accountId?: string;
     /**
     * List of alert policy IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#alert_policy_ids CcService#alert_policy_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#alert_policy_ids CcService#alert_policy_ids}
     */
     readonly alertPolicyIds?: string[];
     /**
     * New Relic User API Key
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key CcService#api_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key CcService#api_key}
     */
     readonly apiKey?: string;
     /**
     * List of monitored APM application IDs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#application_ids CcService#application_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#application_ids CcService#application_ids}
     */
     readonly applicationIds?: string[];
     /**
     * List of globally unique IDs for New Relic resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#entity_guids CcService#entity_guids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#entity_guids CcService#entity_guids}
     */
     readonly entityGuids?: string[];
     /**
     * New Relic region
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#region CcService#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#region CcService#region}
     */
     readonly region?: string;
 }
@@ -4290,7 +4910,7 @@ export interface NewRelicAuthorizationConfigProperty {
     /**
     * New Relic API key configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#api_key CcService#api_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#api_key CcService#api_key}
     */
     readonly apiKey?: NewRelicApiKeyConfigProperty;
 }
@@ -4356,7 +4976,7 @@ export interface NewRelicServiceDetailsProperty {
     /**
     * New Relic authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: NewRelicAuthorizationConfigProperty;
 }
@@ -4422,31 +5042,31 @@ export interface MCPServerSigV4AuthorizationConfigProperty {
     /**
     * Custom headers for the SigV4 MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#custom_headers CcService#custom_headers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#custom_headers CcService#custom_headers}
     */
     readonly customHeaders?: { [key: string]: string };
     /**
     * IAM role ARN to assume for SigV4 signing. Optional - when omitted, credentials are resolved at runtime via a monitor account association.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_role_arn CcService#mcp_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_role_arn CcService#mcp_role_arn}
     */
     readonly mcpRoleArn?: string;
     /**
     * AWS region for SigV4 signing. Use '*' for SigV4a multi-region signing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#region CcService#region}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#region CcService#region}
     */
     readonly region?: string;
     /**
-    * Deprecated - use McpRoleArn instead. IAM role ARN to assume for SigV4 signing
+    * Deprecated - use McpRoleArn instead. IAM role ARN to assume for SigV4 signing. Set to an empty string to remove a previously configured role and make the server role-less (cross-account).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#role_arn CcService#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#role_arn CcService#role_arn}
     */
     readonly roleArn?: string;
     /**
     * AWS service name for SigV4 signing
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#service CcService#service}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#service CcService#service}
     */
     readonly service?: string;
 }
@@ -4600,25 +5220,25 @@ export interface MCPServerSigV4DetailsProperty {
     /**
     * SigV4 authorization configuration for MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: MCPServerSigV4AuthorizationConfigProperty;
     /**
     * Optional description for the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
     */
     readonly endpoint?: string;
     /**
     * MCP server name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#name CcService#name}
     */
     readonly name?: string;
 }
@@ -4750,19 +5370,19 @@ export interface ServiceDetailsMcpServerSplunkAuthorizationConfigBearerTokenProp
     /**
     * HTTP header name to send the bearer token
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_header CcService#authorization_header}
     */
     readonly authorizationHeader?: string;
     /**
     * User friendly bearer token name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_name CcService#token_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_name CcService#token_name}
     */
     readonly tokenName?: string;
     /**
     * Bearer token value
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#token_value CcService#token_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#token_value CcService#token_value}
     */
     readonly tokenValue?: string;
 }
@@ -4872,7 +5492,7 @@ export interface MCPServerSplunkAuthorizationConfigProperty {
     /**
     * Bearer token authentication details
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#bearer_token CcService#bearer_token}
     */
     readonly bearerToken?: ServiceDetailsMcpServerSplunkAuthorizationConfigBearerTokenProperty;
 }
@@ -4938,25 +5558,25 @@ export interface MCPServerSplunkDetailsProperty {
     /**
     * MCP server splunk authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: MCPServerSplunkAuthorizationConfigProperty;
     /**
     * Optional description for the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#description CcService#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#description CcService#description}
     */
     readonly description?: string;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#endpoint CcService#endpoint}
     */
     readonly endpoint?: string;
     /**
     * MCP server name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#name CcService#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#name CcService#name}
     */
     readonly name?: string;
 }
@@ -5088,25 +5708,25 @@ export interface ServiceDetailsPagerDutyAuthorizationConfigOAuthClientCredential
     /**
     * OAuth client ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_id CcService#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_id CcService#client_id}
     */
     readonly clientId?: string;
     /**
     * User friendly OAuth client name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_name CcService#client_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_name CcService#client_name}
     */
     readonly clientName?: string;
     /**
     * OAuth client secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * OAuth token exchange parameters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
     */
     readonly exchangeParameters?: string;
 }
@@ -5238,7 +5858,7 @@ export interface PagerDutyAuthorizationConfigProperty {
     /**
     * OAuth client credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
     */
     readonly oAuthClientCredentials?: ServiceDetailsPagerDutyAuthorizationConfigOAuthClientCredentialsProperty;
 }
@@ -5304,13 +5924,13 @@ export interface PagerDutyDetailsProperty {
     /**
     * PagerDuty OAuth authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: PagerDutyAuthorizationConfigProperty;
     /**
     * PagerDuty scopes
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#scopes CcService#scopes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#scopes CcService#scopes}
     */
     readonly scopes?: string[];
 }
@@ -5398,25 +6018,25 @@ export interface ServiceDetailsServiceNowAuthorizationConfigOAuthClientCredentia
     /**
     * OAuth client ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_id CcService#client_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_id CcService#client_id}
     */
     readonly clientId?: string;
     /**
     * User friendly OAuth client name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_name CcService#client_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_name CcService#client_name}
     */
     readonly clientName?: string;
     /**
     * OAuth client secret
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#client_secret CcService#client_secret}
     */
     readonly clientSecret?: string;
     /**
     * OAuth token exchange parameters
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#exchange_parameters CcService#exchange_parameters}
     */
     readonly exchangeParameters?: string;
 }
@@ -5548,7 +6168,7 @@ export interface ServiceNowAuthorizationConfigProperty {
     /**
     * OAuth client credentials
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#o_auth_client_credentials CcService#o_auth_client_credentials}
     */
     readonly oAuthClientCredentials?: ServiceDetailsServiceNowAuthorizationConfigOAuthClientCredentialsProperty;
 }
@@ -5614,13 +6234,13 @@ export interface ServiceNowServiceDetailsProperty {
     /**
     * ServiceNow OAuth authorization configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#authorization_config CcService#authorization_config}
     */
     readonly authorizationConfig?: ServiceNowAuthorizationConfigProperty;
     /**
     * ServiceNow instance URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#instance_url CcService#instance_url}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#instance_url CcService#instance_url}
     */
     readonly instanceUrl?: string;
 }
@@ -5708,61 +6328,67 @@ export interface ServiceDetailsProperty {
     /**
     * Azure Identity service configuration for federated identity
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#azure_identity CcService#azure_identity}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#azure_identity CcService#azure_identity}
     */
     readonly azureIdentity?: AzureIdentityServiceDetailsProperty;
     /**
     * Dynatrace service configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#dynatrace CcService#dynatrace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#dynatrace CcService#dynatrace}
     */
     readonly dynatrace?: DynatraceServiceDetailsProperty;
     /**
+    * GitHub personal access token (PAT) service configuration. Exactly one of AppVerification or DirectAccess selects how the token is used
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#git_hub CcService#git_hub}
+    */
+    readonly gitHub?: ServiceDetailsGitHubProperty;
+    /**
     * GitLab service configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#git_lab CcService#git_lab}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#git_lab CcService#git_lab}
     */
     readonly gitLab?: GitLabDetailsProperty;
     /**
     * MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_server CcService#mcp_server}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_server CcService#mcp_server}
     */
     readonly mcpServer?: MCPServerDetailsProperty;
     /**
     * Grafana MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_server_grafana CcService#mcp_server_grafana}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_server_grafana CcService#mcp_server_grafana}
     */
     readonly mcpServerGrafana?: MCPServerGrafanaDetailsProperty;
     /**
     * New Relic service configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_server_new_relic CcService#mcp_server_new_relic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_server_new_relic CcService#mcp_server_new_relic}
     */
     readonly mcpServerNewRelic?: NewRelicServiceDetailsProperty;
     /**
     * SigV4-authenticated MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_server_sig_v4 CcService#mcp_server_sig_v4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_server_sig_v4 CcService#mcp_server_sig_v4}
     */
     readonly mcpServerSigV4?: MCPServerSigV4DetailsProperty;
     /**
     * Splunk MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#mcp_server_splunk CcService#mcp_server_splunk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#mcp_server_splunk CcService#mcp_server_splunk}
     */
     readonly mcpServerSplunk?: MCPServerSplunkDetailsProperty;
     /**
     * PagerDuty service configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#pager_duty CcService#pager_duty}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#pager_duty CcService#pager_duty}
     */
     readonly pagerDuty?: PagerDutyDetailsProperty;
     /**
     * ServiceNow service configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#service_now CcService#service_now}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#service_now CcService#service_now}
     */
     readonly serviceNow?: ServiceNowServiceDetailsProperty;
 }
@@ -5791,6 +6417,10 @@ export class ServiceDetailsPropertyOutputReference extends cdktn.ComplexObject {
         if (this._dynatrace?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.dynatrace = this._dynatrace?.internalValue;
+        }
+        if (this._gitHub?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.gitHub = this._gitHub?.internalValue;
         }
         if (this._gitLab?.internalValue !== undefined) {
             hasAnyValues = true;
@@ -5833,6 +6463,7 @@ export class ServiceDetailsPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._azureIdentity.internalValue = undefined;
             this._dynatrace.internalValue = undefined;
+            this._gitHub.internalValue = undefined;
             this._gitLab.internalValue = undefined;
             this._mcpServer.internalValue = undefined;
             this._mcpServerGrafana.internalValue = undefined;
@@ -5851,6 +6482,7 @@ export class ServiceDetailsPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._azureIdentity.internalValue = value.azureIdentity;
             this._dynatrace.internalValue = value.dynatrace;
+            this._gitHub.internalValue = value.gitHub;
             this._gitLab.internalValue = value.gitLab;
             this._mcpServer.internalValue = value.mcpServer;
             this._mcpServerGrafana.internalValue = value.mcpServerGrafana;
@@ -5892,6 +6524,22 @@ export class ServiceDetailsPropertyOutputReference extends cdktn.ComplexObject {
     // Temporarily expose input value. Use with caution.
     public get dynatraceInput() {
         return this._dynatrace.internalValue;
+    }
+
+    // git_hub - computed: true, optional: true, required: false
+    private _gitHub = new ServiceDetailsGitHubPropertyOutputReference(this, "git_hub");
+    public get gitHub() {
+        return this._gitHub;
+    }
+    public putGitHub(value: ServiceDetailsGitHubProperty) {
+        this._gitHub.internalValue = value;
+    }
+    public resetGitHub() {
+        this._gitHub.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get gitHubInput() {
+        return this._gitHub.internalValue;
     }
 
     // git_lab - computed: true, optional: true, required: false
@@ -6026,13 +6674,13 @@ export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#key CcService#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#key CcService#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_service#value CcService#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_service#value CcService#value}
     */
     readonly value?: string;
 }

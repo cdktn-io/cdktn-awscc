@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcAssociationProps extends cdktn.TerraformMetaArguments {
     /**
     * The unique identifier of the AgentSpace
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#agent_space_id CcAssociation#agent_space_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#agent_space_id CcAssociation#agent_space_id}
     */
     readonly agentSpaceId: string;
     /**
     * The configuration that directs how AgentSpace interacts with the given service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#configuration CcAssociation#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#configuration CcAssociation#configuration}
     */
     readonly configuration: CcAssociation.ServiceConfigurationProperty;
     /**
     * Set of linked association IDs for parent-child relationships
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#linked_association_ids CcAssociation#linked_association_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#linked_association_ids CcAssociation#linked_association_ids}
     */
     readonly linkedAssociationIds?: string[];
     /**
     * The identifier for the associated service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#service_id CcAssociation#service_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#service_id CcAssociation#service_id}
     */
     readonly serviceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association awscc_devopsagent_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association awscc_devopsagent_association}
 */
 export class CcAssociation extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcAssociation extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAssociation resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAssociation to import
-    * @param importFromId The id of the existing CcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAssociation to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcAssociation extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association awscc_devopsagent_association} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association awscc_devopsagent_association} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcAssociation extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_devopsagent_association',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -302,6 +302,7 @@ export function ccAssociationAWSConfigurationPropertyToTerraform(struct?: CcAsso
     return {
         account_id: cdktn.stringToTerraform(struct!.accountId),
         account_type: cdktn.stringToTerraform(struct!.accountType),
+        agent_elevated_role_arn: cdktn.stringToTerraform(struct!.agentElevatedRoleArn),
         assumable_role_arn: cdktn.stringToTerraform(struct!.assumableRoleArn),
         resources: cdktn.listMapper(ccAssociationAWSResourcePropertyToTerraform, false)(struct!.resources),
         tags: cdktn.listMapper(ccAssociationKeyValuePairPropertyToTerraform, false)(struct!.tags),
@@ -323,6 +324,12 @@ export function ccAssociationAWSConfigurationPropertyToHclTerraform(struct?: CcA
         },
         account_type: {
             value: cdktn.stringToHclTerraform(struct!.accountType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        agent_elevated_role_arn: {
+            value: cdktn.stringToHclTerraform(struct!.agentElevatedRoleArn),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
@@ -624,6 +631,7 @@ export function ccAssociationMCPServerDatadogConfigurationPropertyToTerraform(st
     return {
         description: cdktn.stringToTerraform(struct!.description),
         enable_webhook_updates: cdktn.booleanToTerraform(struct!.enableWebhookUpdates),
+        enabled_elevated_tools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabledElevatedTools),
         endpoint: cdktn.stringToTerraform(struct!.endpoint),
         name: cdktn.stringToTerraform(struct!.name),
     }
@@ -647,6 +655,12 @@ export function ccAssociationMCPServerDatadogConfigurationPropertyToHclTerraform
             isBlock: false,
             type: "simple",
             storageClassType: "boolean",
+        },
+        enabled_elevated_tools: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabledElevatedTools),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
         endpoint: {
             value: cdktn.stringToHclTerraform(struct!.endpoint),
@@ -674,6 +688,7 @@ export function ccAssociationMCPServerGrafanaConfigurationPropertyToTerraform(st
     }
     return {
         enable_webhook_updates: cdktn.booleanToTerraform(struct!.enableWebhookUpdates),
+        enabled_elevated_tools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabledElevatedTools),
         endpoint: cdktn.stringToTerraform(struct!.endpoint),
         tools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tools),
     }
@@ -691,6 +706,12 @@ export function ccAssociationMCPServerGrafanaConfigurationPropertyToHclTerraform
             isBlock: false,
             type: "simple",
             storageClassType: "boolean",
+        },
+        enabled_elevated_tools: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabledElevatedTools),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
         endpoint: {
             value: cdktn.stringToHclTerraform(struct!.endpoint),
@@ -910,6 +931,43 @@ export function ccAssociationServiceNowConfigurationPropertyToHclTerraform(struc
 }
 
 
+export function ccAssociationBidirectionalPropertyToTerraform(struct?: CcAssociation.BidirectionalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        enabled: cdktn.booleanToTerraform(struct!.enabled),
+        role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    }
+}
+
+
+export function ccAssociationBidirectionalPropertyToHclTerraform(struct?: CcAssociation.BidirectionalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        enabled: {
+            value: cdktn.booleanToHclTerraform(struct!.enabled),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "boolean",
+        },
+        role_arn: {
+            value: cdktn.stringToHclTerraform(struct!.roleArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccAssociationSlackChannelPropertyToTerraform(struct?: CcAssociation.SlackChannelProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -983,6 +1041,7 @@ export function ccAssociationSlackConfigurationPropertyToTerraform(struct?: CcAs
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        bidirectional: ccAssociationBidirectionalPropertyToTerraform(struct!.bidirectional),
         transmission_target: ccAssociationSlackTransmissionTargetPropertyToTerraform(struct!.transmissionTarget),
         workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
         workspace_name: cdktn.stringToTerraform(struct!.workspaceName),
@@ -996,6 +1055,12 @@ export function ccAssociationSlackConfigurationPropertyToHclTerraform(struct?: C
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        bidirectional: {
+            value: ccAssociationBidirectionalPropertyToHclTerraform(struct!.bidirectional),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "BidirectionalProperty",
+        },
         transmission_target: {
             value: ccAssociationSlackTransmissionTargetPropertyToHclTerraform(struct!.transmissionTarget),
             isBlock: true,
@@ -1110,6 +1175,7 @@ export function ccAssociationSourceAwsConfigurationPropertyToTerraform(struct?: 
     return {
         account_id: cdktn.stringToTerraform(struct!.accountId),
         account_type: cdktn.stringToTerraform(struct!.accountType),
+        agent_elevated_role_arn: cdktn.stringToTerraform(struct!.agentElevatedRoleArn),
         assumable_role_arn: cdktn.stringToTerraform(struct!.assumableRoleArn),
         resources: cdktn.listMapper(ccAssociationResourcesPropertyToTerraform, false)(struct!.resources),
         tags: cdktn.listMapper(ccAssociationTagsPropertyToTerraform, false)(struct!.tags),
@@ -1131,6 +1197,12 @@ export function ccAssociationSourceAwsConfigurationPropertyToHclTerraform(struct
         },
         account_type: {
             value: cdktn.stringToHclTerraform(struct!.accountType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        agent_elevated_role_arn: {
+            value: cdktn.stringToHclTerraform(struct!.agentElevatedRoleArn),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
@@ -1300,19 +1372,19 @@ export interface AWSResourceProperty {
     /**
     * The Amazon Resource Name (ARN) of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_arn CcAssociation#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_arn CcAssociation#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * Additional metadata for the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_metadata CcAssociation#resource_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_metadata CcAssociation#resource_metadata}
     */
     readonly resourceMetadata?: string;
     /**
     * Resource type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_type CcAssociation#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_type CcAssociation#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -1442,11 +1514,11 @@ export class AWSResourcePropertyList extends cdktn.ComplexList {
 }
 export interface KeyValuePairProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#key CcAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#key CcAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#value CcAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#value CcAssociation#value}
     */
     readonly value?: string;
 }
@@ -1556,31 +1628,37 @@ export interface AWSConfigurationProperty {
     /**
     * AWS Account Id corresponding to provided resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
     */
     readonly accountId?: string;
     /**
     * Account Type 'monitor' for DevOpsAgent monitoring
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#account_type CcAssociation#account_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#account_type CcAssociation#account_type}
     */
     readonly accountType?: string;
     /**
+    * The IAM role that AWS DevOps Agent assumes to perform elevated directed actions in this AWS account. Elevated actions also require ElevatedActionsEnabled to be set in the Preferences of the AgentSpace. When not provided, only non-elevated directed actions are available. Removing this property from the template clears the role on update. Setting this role is subject to the same iam:PassRole requirement as AssumableRoleArn.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#agent_elevated_role_arn CcAssociation#agent_elevated_role_arn}
+    */
+    readonly agentElevatedRoleArn?: string;
+    /**
     * Role ARN to be assumed by DevOpsAgent to operate on behalf of customer
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#assumable_role_arn CcAssociation#assumable_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#assumable_role_arn CcAssociation#assumable_role_arn}
     */
     readonly assumableRoleArn?: string;
     /**
     * List of AWS resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
     */
     readonly resources?: AWSResourceProperty[] | cdktn.IResolvable;
     /**
     * List of AWS tags as key-value pairs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#tags CcAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#tags CcAssociation#tags}
     */
     readonly tags?: KeyValuePairProperty[] | cdktn.IResolvable;
 }
@@ -1610,6 +1688,10 @@ export class AWSConfigurationPropertyOutputReference extends cdktn.ComplexObject
             hasAnyValues = true;
             internalValueResult.accountType = this._accountType;
         }
+        if (this._agentElevatedRoleArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.agentElevatedRoleArn = this._agentElevatedRoleArn;
+        }
         if (this._assumableRoleArn !== undefined) {
             hasAnyValues = true;
             internalValueResult.assumableRoleArn = this._assumableRoleArn;
@@ -1631,6 +1713,7 @@ export class AWSConfigurationPropertyOutputReference extends cdktn.ComplexObject
             this.resolvableValue = undefined;
             this._accountId = undefined;
             this._accountType = undefined;
+            this._agentElevatedRoleArn = undefined;
             this._assumableRoleArn = undefined;
             this._resources.internalValue = undefined;
             this._tags.internalValue = undefined;
@@ -1644,6 +1727,7 @@ export class AWSConfigurationPropertyOutputReference extends cdktn.ComplexObject
             this.resolvableValue = undefined;
             this._accountId = value.accountId;
             this._accountType = value.accountType;
+            this._agentElevatedRoleArn = value.agentElevatedRoleArn;
             this._assumableRoleArn = value.assumableRoleArn;
             this._resources.internalValue = value.resources;
             this._tags.internalValue = value.tags;
@@ -1680,6 +1764,22 @@ export class AWSConfigurationPropertyOutputReference extends cdktn.ComplexObject
     // Temporarily expose input value. Use with caution.
     public get accountTypeInput() {
         return this._accountType;
+    }
+
+    // agent_elevated_role_arn - computed: true, optional: true, required: false
+    private _agentElevatedRoleArn?: string; 
+    public get agentElevatedRoleArn() {
+        return this.getStringAttribute('agent_elevated_role_arn');
+    }
+    public set agentElevatedRoleArn(value: string) {
+        this._agentElevatedRoleArn = value;
+    }
+    public resetAgentElevatedRoleArn() {
+        this._agentElevatedRoleArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get agentElevatedRoleArnInput() {
+        return this._agentElevatedRoleArn;
     }
 
     // assumable_role_arn - computed: true, optional: true, required: false
@@ -1734,7 +1834,7 @@ export interface AzureConfigurationProperty {
     /**
     * Azure subscription ID corresponding to provided resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#subscription_id CcAssociation#subscription_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#subscription_id CcAssociation#subscription_id}
     */
     readonly subscriptionId?: string;
 }
@@ -1800,19 +1900,19 @@ export interface DynatraceConfigurationProperty {
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * Dynatrace environment id
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#env_id CcAssociation#env_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#env_id CcAssociation#env_id}
     */
     readonly envId?: string;
     /**
     * List of Dynatrace resources to monitor
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
     */
     readonly resources?: string[];
 }
@@ -1922,7 +2022,7 @@ export interface EventChannelConfigurationProperty {
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
 }
@@ -1988,25 +2088,25 @@ export interface GitHubConfigurationProperty {
     /**
     * Repository owner
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#owner CcAssociation#owner}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#owner CcAssociation#owner}
     */
     readonly owner?: string;
     /**
     * Type of repository owner
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#owner_type CcAssociation#owner_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#owner_type CcAssociation#owner_type}
     */
     readonly ownerType?: string;
     /**
     * Associated Github repo ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#repo_id CcAssociation#repo_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#repo_id CcAssociation#repo_id}
     */
     readonly repoId?: string;
     /**
     * Associated Github repo name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#repo_name CcAssociation#repo_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#repo_name CcAssociation#repo_name}
     */
     readonly repoName?: string;
 }
@@ -2138,25 +2238,25 @@ export interface GitLabConfigurationProperty {
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * GitLab instance identifier
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#instance_identifier CcAssociation#instance_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#instance_identifier CcAssociation#instance_identifier}
     */
     readonly instanceIdentifier?: string;
     /**
     * GitLab numeric project ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#project_id CcAssociation#project_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#project_id CcAssociation#project_id}
     */
     readonly projectId?: string;
     /**
     * Full GitLab project path (e.g., namespace/project-name)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#project_path CcAssociation#project_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#project_path CcAssociation#project_path}
     */
     readonly projectPath?: string;
 }
@@ -2288,31 +2388,31 @@ export interface MCPServerConfigurationProperty {
     /**
     * The description of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#description CcAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#description CcAssociation#description}
     */
     readonly description?: string;
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
     */
     readonly endpoint?: string;
     /**
     * The name of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#name CcAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#name CcAssociation#name}
     */
     readonly name?: string;
     /**
     * List of MCP tools that can be used with the association
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
     */
     readonly tools?: string[];
 }
@@ -2466,25 +2566,31 @@ export interface MCPServerDatadogConfigurationProperty {
     /**
     * The description of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#description CcAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#description CcAssociation#description}
     */
     readonly description?: string;
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
+    * The mutative MCP tools enabled for this integration, by tool name. Only tools the service classifies as MUTATIVE may be listed; other names are rejected. Tool names can be found in the console or from the association's current configuration. The list fully replaces the stored value on update: removing a name disables that tool, and removing the property disables all elevated tools.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enabled_elevated_tools CcAssociation#enabled_elevated_tools}
+    */
+    readonly enabledElevatedTools?: string[];
+    /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
     */
     readonly endpoint?: string;
     /**
     * The name of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#name CcAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#name CcAssociation#name}
     */
     readonly name?: string;
 }
@@ -2514,6 +2620,10 @@ export class MCPServerDatadogConfigurationPropertyOutputReference extends cdktn.
             hasAnyValues = true;
             internalValueResult.enableWebhookUpdates = this._enableWebhookUpdates;
         }
+        if (this._enabledElevatedTools !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.enabledElevatedTools = this._enabledElevatedTools;
+        }
         if (this._endpoint !== undefined) {
             hasAnyValues = true;
             internalValueResult.endpoint = this._endpoint;
@@ -2531,6 +2641,7 @@ export class MCPServerDatadogConfigurationPropertyOutputReference extends cdktn.
             this.resolvableValue = undefined;
             this._description = undefined;
             this._enableWebhookUpdates = undefined;
+            this._enabledElevatedTools = undefined;
             this._endpoint = undefined;
             this._name = undefined;
         }
@@ -2543,6 +2654,7 @@ export class MCPServerDatadogConfigurationPropertyOutputReference extends cdktn.
             this.resolvableValue = undefined;
             this._description = value.description;
             this._enableWebhookUpdates = value.enableWebhookUpdates;
+            this._enabledElevatedTools = value.enabledElevatedTools;
             this._endpoint = value.endpoint;
             this._name = value.name;
         }
@@ -2578,6 +2690,22 @@ export class MCPServerDatadogConfigurationPropertyOutputReference extends cdktn.
     // Temporarily expose input value. Use with caution.
     public get enableWebhookUpdatesInput() {
         return this._enableWebhookUpdates;
+    }
+
+    // enabled_elevated_tools - computed: true, optional: true, required: false
+    private _enabledElevatedTools?: string[]; 
+    public get enabledElevatedTools() {
+        return this.getListAttribute('enabled_elevated_tools');
+    }
+    public set enabledElevatedTools(value: string[]) {
+        this._enabledElevatedTools = value;
+    }
+    public resetEnabledElevatedTools() {
+        this._enabledElevatedTools = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledElevatedToolsInput() {
+        return this._enabledElevatedTools;
     }
 
     // endpoint - computed: true, optional: true, required: false
@@ -2616,19 +2744,25 @@ export interface MCPServerGrafanaConfigurationProperty {
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
+    * The mutative MCP tools enabled for this integration, by tool name. Only tools the service classifies as MUTATIVE may be listed; other names are rejected. Tool names can be found in the console or from the association's current configuration. The list fully replaces the stored value on update: removing a name disables that tool, and removing the property disables all elevated tools. Independent of Tools, which selects the toolsets available to the agent.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enabled_elevated_tools CcAssociation#enabled_elevated_tools}
+    */
+    readonly enabledElevatedTools?: string[];
+    /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
     */
     readonly endpoint?: string;
     /**
     * List of tool categories to enable for the Grafana MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
     */
     readonly tools?: string[];
 }
@@ -2654,6 +2788,10 @@ export class MCPServerGrafanaConfigurationPropertyOutputReference extends cdktn.
             hasAnyValues = true;
             internalValueResult.enableWebhookUpdates = this._enableWebhookUpdates;
         }
+        if (this._enabledElevatedTools !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.enabledElevatedTools = this._enabledElevatedTools;
+        }
         if (this._endpoint !== undefined) {
             hasAnyValues = true;
             internalValueResult.endpoint = this._endpoint;
@@ -2670,6 +2808,7 @@ export class MCPServerGrafanaConfigurationPropertyOutputReference extends cdktn.
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._enableWebhookUpdates = undefined;
+            this._enabledElevatedTools = undefined;
             this._endpoint = undefined;
             this._tools = undefined;
         }
@@ -2681,6 +2820,7 @@ export class MCPServerGrafanaConfigurationPropertyOutputReference extends cdktn.
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._enableWebhookUpdates = value.enableWebhookUpdates;
+            this._enabledElevatedTools = value.enabledElevatedTools;
             this._endpoint = value.endpoint;
             this._tools = value.tools;
         }
@@ -2700,6 +2840,22 @@ export class MCPServerGrafanaConfigurationPropertyOutputReference extends cdktn.
     // Temporarily expose input value. Use with caution.
     public get enableWebhookUpdatesInput() {
         return this._enableWebhookUpdates;
+    }
+
+    // enabled_elevated_tools - computed: true, optional: true, required: false
+    private _enabledElevatedTools?: string[]; 
+    public get enabledElevatedTools() {
+        return this.getListAttribute('enabled_elevated_tools');
+    }
+    public set enabledElevatedTools(value: string[]) {
+        this._enabledElevatedTools = value;
+    }
+    public resetEnabledElevatedTools() {
+        this._enabledElevatedTools = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledElevatedToolsInput() {
+        return this._enabledElevatedTools;
     }
 
     // endpoint - computed: true, optional: true, required: false
@@ -2738,13 +2894,13 @@ export interface MCPServerNewRelicConfigurationProperty {
     /**
     * New Relic Account ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
     */
     readonly accountId?: string;
     /**
     * MCP server endpoint URL (e.g., https://mcp.newrelic.com/mcp/)
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
     */
     readonly endpoint?: string;
 }
@@ -2832,7 +2988,7 @@ export interface MCPServerSigV4ConfigurationProperty {
     /**
     * List of MCP tools available for the association
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#tools CcAssociation#tools}
     */
     readonly tools?: string[];
 }
@@ -2898,25 +3054,25 @@ export interface MCPServerSplunkConfigurationProperty {
     /**
     * The description of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#description CcAssociation#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#description CcAssociation#description}
     */
     readonly description?: string;
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * MCP server endpoint URL
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#endpoint CcAssociation#endpoint}
     */
     readonly endpoint?: string;
     /**
     * The name of the MCP server
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#name CcAssociation#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#name CcAssociation#name}
     */
     readonly name?: string;
 }
@@ -3048,19 +3204,19 @@ export interface PagerDutyConfigurationProperty {
     /**
     * Email to be used in PagerDuty API header
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#customer_email CcAssociation#customer_email}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#customer_email CcAssociation#customer_email}
     */
     readonly customerEmail?: string;
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * List of PagerDuty service IDs available for the association
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#services CcAssociation#services}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#services CcAssociation#services}
     */
     readonly services?: string[];
 }
@@ -3170,13 +3326,13 @@ export interface ServiceNowConfigurationProperty {
     /**
     * When set to true, enables the Agent Space to create and update webhooks for receiving notifications and events from the service
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enable_webhook_updates CcAssociation#enable_webhook_updates}
     */
     readonly enableWebhookUpdates?: boolean | cdktn.IResolvable;
     /**
     * ServiceNow instance ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#instance_id CcAssociation#instance_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#instance_id CcAssociation#instance_id}
     */
     readonly instanceId?: string;
 }
@@ -3260,17 +3416,111 @@ export class ServiceNowConfigurationPropertyOutputReference extends cdktn.Comple
         return this._instanceId;
     }
 }
+export interface BidirectionalProperty {
+    /**
+    * Whether bidirectional communication is enabled for this association. When set to true, you can mention the agent in a configured Slack channel and it responds in that channel. When omitted or set to false, the agent ignores mentions and only sends notifications
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#enabled CcAssociation#enabled}
+    */
+    readonly enabled?: boolean | cdktn.IResolvable;
+    /**
+    * IAM role ARN that AWS DevOps Agent assumes to exchange messages with your Slack workspace on behalf of this association
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#role_arn CcAssociation#role_arn}
+    */
+    readonly roleArn?: string;
+}
+export class BidirectionalPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): BidirectionalProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._enabled !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.enabled = this._enabled;
+        }
+        if (this._roleArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.roleArn = this._roleArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: BidirectionalProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._enabled = undefined;
+            this._roleArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._enabled = value.enabled;
+            this._roleArn = value.roleArn;
+        }
+    }
+
+    // enabled - computed: true, optional: true, required: false
+    private _enabled?: boolean | cdktn.IResolvable; 
+    public get enabled() {
+        return this.getBooleanAttribute('enabled');
+    }
+    public set enabled(value: boolean | cdktn.IResolvable) {
+        this._enabled = value;
+    }
+    public resetEnabled() {
+        this._enabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledInput() {
+        return this._enabled;
+    }
+
+    // role_arn - computed: true, optional: true, required: false
+    private _roleArn?: string; 
+    public get roleArn() {
+        return this.getStringAttribute('role_arn');
+    }
+    public set roleArn(value: string) {
+        this._roleArn = value;
+    }
+    public resetRoleArn() {
+        this._roleArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get roleArnInput() {
+        return this._roleArn;
+    }
+}
 export interface SlackChannelProperty {
     /**
     * Slack channel ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#channel_id CcAssociation#channel_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#channel_id CcAssociation#channel_id}
     */
     readonly channelId?: string;
     /**
     * Slack channel name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#channel_name CcAssociation#channel_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#channel_name CcAssociation#channel_name}
     */
     readonly channelName?: string;
 }
@@ -3358,7 +3608,7 @@ export interface SlackTransmissionTargetProperty {
     /**
     * Destination for IncidentResponse agent.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#incident_response_target CcAssociation#incident_response_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#incident_response_target CcAssociation#incident_response_target}
     */
     readonly incidentResponseTarget?: SlackChannelProperty;
 }
@@ -3422,21 +3672,27 @@ export class SlackTransmissionTargetPropertyOutputReference extends cdktn.Comple
 }
 export interface SlackConfigurationProperty {
     /**
+    * Optional bidirectional communication configuration. Supply this configuration and set Enabled to true so you can interact with the agent directly from Slack
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#bidirectional CcAssociation#bidirectional}
+    */
+    readonly bidirectional?: BidirectionalProperty;
+    /**
     * Transmission targets for agent notifications
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#transmission_target CcAssociation#transmission_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#transmission_target CcAssociation#transmission_target}
     */
     readonly transmissionTarget?: SlackTransmissionTargetProperty;
     /**
     * Associated Slack workspace ID
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#workspace_id CcAssociation#workspace_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#workspace_id CcAssociation#workspace_id}
     */
     readonly workspaceId?: string;
     /**
     * Associated Slack workspace name
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#workspace_name CcAssociation#workspace_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#workspace_name CcAssociation#workspace_name}
     */
     readonly workspaceName?: string;
 }
@@ -3458,6 +3714,10 @@ export class SlackConfigurationPropertyOutputReference extends cdktn.ComplexObje
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._bidirectional?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.bidirectional = this._bidirectional?.internalValue;
+        }
         if (this._transmissionTarget?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.transmissionTarget = this._transmissionTarget?.internalValue;
@@ -3477,6 +3737,7 @@ export class SlackConfigurationPropertyOutputReference extends cdktn.ComplexObje
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._bidirectional.internalValue = undefined;
             this._transmissionTarget.internalValue = undefined;
             this._workspaceId = undefined;
             this._workspaceName = undefined;
@@ -3488,10 +3749,27 @@ export class SlackConfigurationPropertyOutputReference extends cdktn.ComplexObje
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._bidirectional.internalValue = value.bidirectional;
             this._transmissionTarget.internalValue = value.transmissionTarget;
             this._workspaceId = value.workspaceId;
             this._workspaceName = value.workspaceName;
         }
+    }
+
+    // bidirectional - computed: true, optional: true, required: false
+    private _bidirectional = new BidirectionalPropertyOutputReference(this, "bidirectional");
+    public get bidirectional() {
+        return this._bidirectional;
+    }
+    public putBidirectional(value: BidirectionalProperty) {
+        this._bidirectional.internalValue = value;
+    }
+    public resetBidirectional() {
+        this._bidirectional.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get bidirectionalInput() {
+        return this._bidirectional.internalValue;
     }
 
     // transmission_target - computed: true, optional: true, required: false
@@ -3546,19 +3824,19 @@ export interface ResourcesProperty {
     /**
     * The Amazon Resource Name (ARN) of the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_arn CcAssociation#resource_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_arn CcAssociation#resource_arn}
     */
     readonly resourceArn?: string;
     /**
     * Additional metadata for the resource
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_metadata CcAssociation#resource_metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_metadata CcAssociation#resource_metadata}
     */
     readonly resourceMetadata?: string;
     /**
     * Resource type
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resource_type CcAssociation#resource_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resource_type CcAssociation#resource_type}
     */
     readonly resourceType?: string;
 }
@@ -3688,11 +3966,11 @@ export class ResourcesPropertyList extends cdktn.ComplexList {
 }
 export interface TagsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#key CcAssociation#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#key CcAssociation#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#value CcAssociation#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#value CcAssociation#value}
     */
     readonly value?: string;
 }
@@ -3802,31 +4080,37 @@ export interface SourceAwsConfigurationProperty {
     /**
     * AWS Account Id corresponding to provided resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#account_id CcAssociation#account_id}
     */
     readonly accountId?: string;
     /**
     * Account Type 'source' for DevOpsAgent monitoring
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#account_type CcAssociation#account_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#account_type CcAssociation#account_type}
     */
     readonly accountType?: string;
     /**
+    * The IAM role that AWS DevOps Agent assumes to perform elevated directed actions in this AWS account. Elevated actions also require ElevatedActionsEnabled to be set in the Preferences of the AgentSpace. When not provided, only non-elevated directed actions are available. Removing this property from the template clears the role on update. Setting this role is subject to the same iam:PassRole requirement as AssumableRoleArn.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#agent_elevated_role_arn CcAssociation#agent_elevated_role_arn}
+    */
+    readonly agentElevatedRoleArn?: string;
+    /**
     * Role ARN to be assumed by DevOpsAgent to operate on behalf of customer
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#assumable_role_arn CcAssociation#assumable_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#assumable_role_arn CcAssociation#assumable_role_arn}
     */
     readonly assumableRoleArn?: string;
     /**
     * List of AWS resources
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#resources CcAssociation#resources}
     */
     readonly resources?: ResourcesProperty[] | cdktn.IResolvable;
     /**
     * List of AWS tags as key-value pairs
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#tags CcAssociation#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#tags CcAssociation#tags}
     */
     readonly tags?: TagsProperty[] | cdktn.IResolvable;
 }
@@ -3856,6 +4140,10 @@ export class SourceAwsConfigurationPropertyOutputReference extends cdktn.Complex
             hasAnyValues = true;
             internalValueResult.accountType = this._accountType;
         }
+        if (this._agentElevatedRoleArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.agentElevatedRoleArn = this._agentElevatedRoleArn;
+        }
         if (this._assumableRoleArn !== undefined) {
             hasAnyValues = true;
             internalValueResult.assumableRoleArn = this._assumableRoleArn;
@@ -3877,6 +4165,7 @@ export class SourceAwsConfigurationPropertyOutputReference extends cdktn.Complex
             this.resolvableValue = undefined;
             this._accountId = undefined;
             this._accountType = undefined;
+            this._agentElevatedRoleArn = undefined;
             this._assumableRoleArn = undefined;
             this._resources.internalValue = undefined;
             this._tags.internalValue = undefined;
@@ -3890,6 +4179,7 @@ export class SourceAwsConfigurationPropertyOutputReference extends cdktn.Complex
             this.resolvableValue = undefined;
             this._accountId = value.accountId;
             this._accountType = value.accountType;
+            this._agentElevatedRoleArn = value.agentElevatedRoleArn;
             this._assumableRoleArn = value.assumableRoleArn;
             this._resources.internalValue = value.resources;
             this._tags.internalValue = value.tags;
@@ -3926,6 +4216,22 @@ export class SourceAwsConfigurationPropertyOutputReference extends cdktn.Complex
     // Temporarily expose input value. Use with caution.
     public get accountTypeInput() {
         return this._accountType;
+    }
+
+    // agent_elevated_role_arn - computed: true, optional: true, required: false
+    private _agentElevatedRoleArn?: string; 
+    public get agentElevatedRoleArn() {
+        return this.getStringAttribute('agent_elevated_role_arn');
+    }
+    public set agentElevatedRoleArn(value: string) {
+        this._agentElevatedRoleArn = value;
+    }
+    public resetAgentElevatedRoleArn() {
+        this._agentElevatedRoleArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get agentElevatedRoleArnInput() {
+        return this._agentElevatedRoleArn;
     }
 
     // assumable_role_arn - computed: true, optional: true, required: false
@@ -3980,97 +4286,97 @@ export interface ServiceConfigurationProperty {
     /**
     * AWS association for 'monitor' account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#aws CcAssociation#aws}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#aws CcAssociation#aws}
     */
     readonly aws?: AWSConfigurationProperty;
     /**
     * Azure subscription integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#azure CcAssociation#azure}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#azure CcAssociation#azure}
     */
     readonly azure?: AzureConfigurationProperty;
     /**
     * Dynatrace monitoring configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#dynatrace CcAssociation#dynatrace}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#dynatrace CcAssociation#dynatrace}
     */
     readonly dynatrace?: DynatraceConfigurationProperty;
     /**
     * EventChannelconfiguration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#event_channel CcAssociation#event_channel}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#event_channel CcAssociation#event_channel}
     */
     readonly eventChannel?: EventChannelConfigurationProperty;
     /**
     * GitHub repository integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#git_hub CcAssociation#git_hub}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#git_hub CcAssociation#git_hub}
     */
     readonly gitHub?: GitHubConfigurationProperty;
     /**
     * GitLab project integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#git_lab CcAssociation#git_lab}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#git_lab CcAssociation#git_lab}
     */
     readonly gitLab?: GitLabConfigurationProperty;
     /**
     * MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server CcAssociation#mcp_server}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server CcAssociation#mcp_server}
     */
     readonly mcpServer?: MCPServerConfigurationProperty;
     /**
     * Datadog MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server_datadog CcAssociation#mcp_server_datadog}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server_datadog CcAssociation#mcp_server_datadog}
     */
     readonly mcpServerDatadog?: MCPServerDatadogConfigurationProperty;
     /**
     * Grafana MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server_grafana CcAssociation#mcp_server_grafana}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server_grafana CcAssociation#mcp_server_grafana}
     */
     readonly mcpServerGrafana?: MCPServerGrafanaConfigurationProperty;
     /**
     * NewRelic MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server_new_relic CcAssociation#mcp_server_new_relic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server_new_relic CcAssociation#mcp_server_new_relic}
     */
     readonly mcpServerNewRelic?: MCPServerNewRelicConfigurationProperty;
     /**
     * SigV4-authenticated MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server_sig_v4 CcAssociation#mcp_server_sig_v4}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server_sig_v4 CcAssociation#mcp_server_sig_v4}
     */
     readonly mcpServerSigV4?: MCPServerSigV4ConfigurationProperty;
     /**
     * Splunk MCP server configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#mcp_server_splunk CcAssociation#mcp_server_splunk}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#mcp_server_splunk CcAssociation#mcp_server_splunk}
     */
     readonly mcpServerSplunk?: MCPServerSplunkConfigurationProperty;
     /**
     * PagerDuty integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#pager_duty CcAssociation#pager_duty}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#pager_duty CcAssociation#pager_duty}
     */
     readonly pagerDuty?: PagerDutyConfigurationProperty;
     /**
     * ServiceNow integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#service_now CcAssociation#service_now}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#service_now CcAssociation#service_now}
     */
     readonly serviceNow?: ServiceNowConfigurationProperty;
     /**
     * Slack workspace integration configuration
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#slack CcAssociation#slack}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#slack CcAssociation#slack}
     */
     readonly slack?: SlackConfigurationProperty;
     /**
     * AWS association for 'source' account
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_association#source_aws CcAssociation#source_aws}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_association#source_aws CcAssociation#source_aws}
     */
     readonly sourceAws?: SourceAwsConfigurationProperty;
 }

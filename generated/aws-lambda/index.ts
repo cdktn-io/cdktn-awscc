@@ -14,3 +14,6 @@ export * from './permission';
 export * from './resource-policy';
 export * from './url';
 export * from './version';
+export * from './web-function';
+export * from './web-function-endpoint';
+export * from './web-function-revision';

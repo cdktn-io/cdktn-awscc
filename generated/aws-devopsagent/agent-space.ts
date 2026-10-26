@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,41 +9,47 @@ export interface CcAgentSpaceProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the AgentSpace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#description CcAgentSpace#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#description CcAgentSpace#description}
     */
     readonly description?: string;
     /**
     * The ARN of the KMS key to use for encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#kms_key_arn CcAgentSpace#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#kms_key_arn CcAgentSpace#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
     * The locale for the AgentSpace, which determines the language used in agent responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#locale CcAgentSpace#locale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#locale CcAgentSpace#locale}
     */
     readonly locale?: string;
     /**
     * The name of the AgentSpace.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#name CcAgentSpace#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#name CcAgentSpace#name}
     */
     readonly name: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#operator_app CcAgentSpace#operator_app}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#operator_app CcAgentSpace#operator_app}
     */
     readonly operatorApp?: CcAgentSpace.OperatorAppProperty;
     /**
+    * Preferences that configure behavior of this AgentSpace. This container fully owns the AgentSpace preferences: the properties supplied here replace the stored preferences in their entirety, and omitting the Preferences container reverts all preferences to their service defaults.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#preferences CcAgentSpace#preferences}
+    */
+    readonly preferences?: CcAgentSpace.PreferencesProperty;
+    /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#tags CcAgentSpace#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#tags CcAgentSpace#tags}
     */
     readonly tags?: CcAgentSpace.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space awscc_devopsagent_agent_space}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space awscc_devopsagent_agent_space}
 */
 export class CcAgentSpace extends cdktn.TerraformResource {
 
@@ -59,7 +65,7 @@ export class CcAgentSpace extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcAgentSpace resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcAgentSpace to import
-    * @param importFromId The id of the existing CcAgentSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcAgentSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcAgentSpace to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -71,7 +77,7 @@ export class CcAgentSpace extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space awscc_devopsagent_agent_space} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space awscc_devopsagent_agent_space} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +88,7 @@ export class CcAgentSpace extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_devopsagent_agent_space',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -97,6 +103,7 @@ export class CcAgentSpace extends cdktn.TerraformResource {
         this._locale = config.locale;
         this._name = config.name;
         this._operatorApp.internalValue = config.operatorApp;
+        this._preferences.internalValue = config.preferences;
         this._tags.internalValue = config.tags;
     }
 
@@ -201,6 +208,22 @@ export class CcAgentSpace extends cdktn.TerraformResource {
         return this._operatorApp.internalValue;
     }
 
+    // preferences - computed: true, optional: true, required: false
+    private _preferences = new CcAgentSpace.PreferencesPropertyOutputReference(this, "preferences");
+    public get preferences() {
+        return this._preferences;
+    }
+    public putPreferences(value: CcAgentSpace.PreferencesProperty) {
+        this._preferences.internalValue = value;
+    }
+    public resetPreferences() {
+        this._preferences.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get preferencesInput() {
+        return this._preferences.internalValue;
+    }
+
     // tags - computed: true, optional: true, required: false
     private _tags = new CcAgentSpace.TagPropertyList(this, "tags", true);
     public get tags() {
@@ -233,6 +256,7 @@ export class CcAgentSpace extends cdktn.TerraformResource {
             locale: cdktn.stringToTerraform(this._locale),
             name: cdktn.stringToTerraform(this._name),
             operator_app: ccAgentSpaceOperatorAppPropertyToTerraform(this._operatorApp.internalValue),
+            preferences: ccAgentSpacePreferencesPropertyToTerraform(this._preferences.internalValue),
             tags: cdktn.listMapper(ccAgentSpaceTagPropertyToTerraform, false)(this._tags.internalValue),
         };
     }
@@ -268,6 +292,12 @@ export class CcAgentSpace extends cdktn.TerraformResource {
                 isBlock: true,
                 type: "struct",
                 storageClassType: "CcAgentSpace.OperatorAppProperty",
+            },
+            preferences: {
+                value: ccAgentSpacePreferencesPropertyToHclTerraform(this._preferences.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcAgentSpace.PreferencesProperty",
             },
             tags: {
                 value: cdktn.listMapperHcl(ccAgentSpaceTagPropertyToHclTerraform, false)(this._tags.internalValue),
@@ -349,6 +379,64 @@ export function ccAgentSpaceIdcAuthConfigurationPropertyToHclTerraform(struct?: 
 }
 
 
+export function ccAgentSpaceIdpPropertyToTerraform(struct?: CcAgentSpace.IdpProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        client_id: cdktn.stringToTerraform(struct!.clientId),
+        client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+        issuer_url: cdktn.stringToTerraform(struct!.issuerUrl),
+        operator_app_role_arn: cdktn.stringToTerraform(struct!.operatorAppRoleArn),
+        provider: cdktn.stringToTerraform(struct!.provider),
+    }
+}
+
+
+export function ccAgentSpaceIdpPropertyToHclTerraform(struct?: CcAgentSpace.IdpProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        client_id: {
+            value: cdktn.stringToHclTerraform(struct!.clientId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        client_secret: {
+            value: cdktn.stringToHclTerraform(struct!.clientSecret),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        issuer_url: {
+            value: cdktn.stringToHclTerraform(struct!.issuerUrl),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        operator_app_role_arn: {
+            value: cdktn.stringToHclTerraform(struct!.operatorAppRoleArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        provider: {
+            value: cdktn.stringToHclTerraform(struct!.provider),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccAgentSpaceOperatorAppPropertyToTerraform(struct?: CcAgentSpace.OperatorAppProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -357,6 +445,7 @@ export function ccAgentSpaceOperatorAppPropertyToTerraform(struct?: CcAgentSpace
     return {
         iam: ccAgentSpaceIamAuthConfigurationPropertyToTerraform(struct!.iam),
         idc: ccAgentSpaceIdcAuthConfigurationPropertyToTerraform(struct!.idc),
+        idp: ccAgentSpaceIdpPropertyToTerraform(struct!.idp),
     }
 }
 
@@ -378,6 +467,42 @@ export function ccAgentSpaceOperatorAppPropertyToHclTerraform(struct?: CcAgentSp
             isBlock: true,
             type: "struct",
             storageClassType: "IdcAuthConfigurationProperty",
+        },
+        idp: {
+            value: ccAgentSpaceIdpPropertyToHclTerraform(struct!.idp),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "IdpProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccAgentSpacePreferencesPropertyToTerraform(struct?: CcAgentSpace.PreferencesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        elevated_actions_enabled: cdktn.booleanToTerraform(struct!.elevatedActionsEnabled),
+    }
+}
+
+
+export function ccAgentSpacePreferencesPropertyToHclTerraform(struct?: CcAgentSpace.PreferencesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        elevated_actions_enabled: {
+            value: cdktn.booleanToHclTerraform(struct!.elevatedActionsEnabled),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "boolean",
         },
     };
 
@@ -426,7 +551,7 @@ export function ccAgentSpaceTagPropertyToHclTerraform(struct?: CcAgentSpace.TagP
 export namespace CcAgentSpace {
 export interface IamAuthConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#operator_app_role_arn CcAgentSpace#operator_app_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#operator_app_role_arn CcAgentSpace#operator_app_role_arn}
     */
     readonly operatorAppRoleArn?: string;
 }
@@ -500,11 +625,11 @@ export class IamAuthConfigurationPropertyOutputReference extends cdktn.ComplexOb
 }
 export interface IdcAuthConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#idc_instance_arn CcAgentSpace#idc_instance_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#idc_instance_arn CcAgentSpace#idc_instance_arn}
     */
     readonly idcInstanceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#operator_app_role_arn CcAgentSpace#operator_app_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#operator_app_role_arn CcAgentSpace#operator_app_role_arn}
     */
     readonly operatorAppRoleArn?: string;
 }
@@ -603,15 +728,214 @@ export class IdcAuthConfigurationPropertyOutputReference extends cdktn.ComplexOb
         return this.getStringAttribute('updated_at');
     }
 }
+export interface IdpProperty {
+    /**
+    * The OIDC client identifier for the external identity provider application.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#client_id CcAgentSpace#client_id}
+    */
+    readonly clientId?: string;
+    /**
+    * The OIDC client secret for the external identity provider application. Use a Secrets Manager dynamic reference to avoid storing the secret in the template.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#client_secret CcAgentSpace#client_secret}
+    */
+    readonly clientSecret?: string;
+    /**
+    * The OIDC issuer URL for the external identity provider.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#issuer_url CcAgentSpace#issuer_url}
+    */
+    readonly issuerUrl?: string;
+    /**
+    * The IAM role that Operator App users assume to access DevOps Agent APIs.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#operator_app_role_arn CcAgentSpace#operator_app_role_arn}
+    */
+    readonly operatorAppRoleArn?: string;
+    /**
+    * The external identity provider type.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#provider CcAgentSpace#provider}
+    */
+    readonly provider?: string;
+}
+export class IdpPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): IdpProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._clientId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.clientId = this._clientId;
+        }
+        if (this._clientSecret !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.clientSecret = this._clientSecret;
+        }
+        if (this._issuerUrl !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.issuerUrl = this._issuerUrl;
+        }
+        if (this._operatorAppRoleArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.operatorAppRoleArn = this._operatorAppRoleArn;
+        }
+        if (this._provider !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.provider = this._provider;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: IdpProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._clientId = undefined;
+            this._clientSecret = undefined;
+            this._issuerUrl = undefined;
+            this._operatorAppRoleArn = undefined;
+            this._provider = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._clientId = value.clientId;
+            this._clientSecret = value.clientSecret;
+            this._issuerUrl = value.issuerUrl;
+            this._operatorAppRoleArn = value.operatorAppRoleArn;
+            this._provider = value.provider;
+        }
+    }
+
+    // client_id - computed: true, optional: true, required: false
+    private _clientId?: string; 
+    public get clientId() {
+        return this.getStringAttribute('client_id');
+    }
+    public set clientId(value: string) {
+        this._clientId = value;
+    }
+    public resetClientId() {
+        this._clientId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get clientIdInput() {
+        return this._clientId;
+    }
+
+    // client_secret - computed: true, optional: true, required: false
+    private _clientSecret?: string; 
+    public get clientSecret() {
+        return this.getStringAttribute('client_secret');
+    }
+    public set clientSecret(value: string) {
+        this._clientSecret = value;
+    }
+    public resetClientSecret() {
+        this._clientSecret = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get clientSecretInput() {
+        return this._clientSecret;
+    }
+
+    // created_at - computed: true, optional: false, required: false
+    public get createdAt() {
+        return this.getStringAttribute('created_at');
+    }
+
+    // issuer_url - computed: true, optional: true, required: false
+    private _issuerUrl?: string; 
+    public get issuerUrl() {
+        return this.getStringAttribute('issuer_url');
+    }
+    public set issuerUrl(value: string) {
+        this._issuerUrl = value;
+    }
+    public resetIssuerUrl() {
+        this._issuerUrl = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get issuerUrlInput() {
+        return this._issuerUrl;
+    }
+
+    // operator_app_role_arn - computed: true, optional: true, required: false
+    private _operatorAppRoleArn?: string; 
+    public get operatorAppRoleArn() {
+        return this.getStringAttribute('operator_app_role_arn');
+    }
+    public set operatorAppRoleArn(value: string) {
+        this._operatorAppRoleArn = value;
+    }
+    public resetOperatorAppRoleArn() {
+        this._operatorAppRoleArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get operatorAppRoleArnInput() {
+        return this._operatorAppRoleArn;
+    }
+
+    // provider - computed: true, optional: true, required: false
+    private _provider?: string; 
+    public get provider() {
+        return this.getStringAttribute('provider');
+    }
+    public set provider(value: string) {
+        this._provider = value;
+    }
+    public resetProvider() {
+        this._provider = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get providerInput() {
+        return this._provider;
+    }
+
+    // updated_at - computed: true, optional: false, required: false
+    public get updatedAt() {
+        return this.getStringAttribute('updated_at');
+    }
+
+    // user_id_claim - computed: true, optional: false, required: false
+    public get userIdClaim() {
+        return this.getStringAttribute('user_id_claim');
+    }
+}
 export interface OperatorAppProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#iam CcAgentSpace#iam}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#iam CcAgentSpace#iam}
     */
     readonly iam?: IamAuthConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#idc CcAgentSpace#idc}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#idc CcAgentSpace#idc}
     */
     readonly idc?: IdcAuthConfigurationProperty;
+    /**
+    * External identity provider configuration for the Operator App.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#idp CcAgentSpace#idp}
+    */
+    readonly idp?: IdpProperty;
 }
 export class OperatorAppPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -639,6 +963,10 @@ export class OperatorAppPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.idc = this._idc?.internalValue;
         }
+        if (this._idp?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.idp = this._idp?.internalValue;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -648,6 +976,7 @@ export class OperatorAppPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._iam.internalValue = undefined;
             this._idc.internalValue = undefined;
+            this._idp.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -658,6 +987,7 @@ export class OperatorAppPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._iam.internalValue = value.iam;
             this._idc.internalValue = value.idc;
+            this._idp.internalValue = value.idp;
         }
     }
 
@@ -692,18 +1022,100 @@ export class OperatorAppPropertyOutputReference extends cdktn.ComplexObject {
     public get idcInput() {
         return this._idc.internalValue;
     }
+
+    // idp - computed: true, optional: true, required: false
+    private _idp = new IdpPropertyOutputReference(this, "idp");
+    public get idp() {
+        return this._idp;
+    }
+    public putIdp(value: IdpProperty) {
+        this._idp.internalValue = value;
+    }
+    public resetIdp() {
+        this._idp.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get idpInput() {
+        return this._idp.internalValue;
+    }
+}
+export interface PreferencesProperty {
+    /**
+    * Indicates whether elevated directed actions are permitted in this AgentSpace. Defaults to false when not set.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#elevated_actions_enabled CcAgentSpace#elevated_actions_enabled}
+    */
+    readonly elevatedActionsEnabled?: boolean | cdktn.IResolvable;
+}
+export class PreferencesPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): PreferencesProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._elevatedActionsEnabled !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.elevatedActionsEnabled = this._elevatedActionsEnabled;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: PreferencesProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._elevatedActionsEnabled = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._elevatedActionsEnabled = value.elevatedActionsEnabled;
+        }
+    }
+
+    // elevated_actions_enabled - computed: true, optional: true, required: false
+    private _elevatedActionsEnabled?: boolean | cdktn.IResolvable; 
+    public get elevatedActionsEnabled() {
+        return this.getBooleanAttribute('elevated_actions_enabled');
+    }
+    public set elevatedActionsEnabled(value: boolean | cdktn.IResolvable) {
+        this._elevatedActionsEnabled = value;
+    }
+    public resetElevatedActionsEnabled() {
+        this._elevatedActionsEnabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get elevatedActionsEnabledInput() {
+        return this._elevatedActionsEnabled;
+    }
 }
 export interface TagProperty {
     /**
     * The key name of the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#key CcAgentSpace#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#key CcAgentSpace#key}
     */
     readonly key?: string;
     /**
     * The value for the tag.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/devopsagent_agent_space#value CcAgentSpace#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/devopsagent_agent_space#value CcAgentSpace#value}
     */
     readonly value?: string;
 }

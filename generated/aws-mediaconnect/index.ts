@@ -5,6 +5,7 @@ export * from './bridge-output';
 export * from './bridge-source';
 export * from './flow';
 export * from './flow-entitlement';
+export * from './flow-media-stream';
 export * from './flow-output';
 export * from './flow-source';
 export * from './flow-vpc-interface';

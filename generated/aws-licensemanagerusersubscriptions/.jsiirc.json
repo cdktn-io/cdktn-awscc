@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_licensemanagerusersubscriptions"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.Licensemanagerusersubscriptions"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.licensemanagerusersubscriptions"
+    }
+  }
+}

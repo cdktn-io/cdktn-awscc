@@ -1,111 +1,117 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcLogAlarmProps extends cdktn.TerraformMetaArguments {
     /**
+    * Configuration that applies to the notifications this alarm sends when it performs its actions.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#action_configuration CcLogAlarm#action_configuration}
+    */
+    readonly actionConfiguration?: CcLogAlarm.ActionConfigurationProperty;
+    /**
     * The number of log lines to include in alarm notifications. Valid values are 0 to 50.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#action_log_line_count CcLogAlarm#action_log_line_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#action_log_line_count CcLogAlarm#action_log_line_count}
     */
     readonly actionLogLineCount?: number;
     /**
     * The ARN of the IAM role that grants CloudWatch permissions to fetch log lines for alarm notifications. Required when ActionLogLineCount is greater than 0.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#action_log_line_role_arn CcLogAlarm#action_log_line_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#action_log_line_role_arn CcLogAlarm#action_log_line_role_arn}
     */
     readonly actionLogLineRoleArn?: string;
     /**
     * Indicates whether actions should be executed during any changes to the alarm state. The default is TRUE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#actions_enabled CcLogAlarm#actions_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#actions_enabled CcLogAlarm#actions_enabled}
     */
     readonly actionsEnabled?: boolean | cdktn.IResolvable;
     /**
     * The list of actions to execute when this alarm transitions into an ALARM state from any other state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#alarm_actions CcLogAlarm#alarm_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#alarm_actions CcLogAlarm#alarm_actions}
     */
     readonly alarmActions?: string[];
     /**
     * The description of the log alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#alarm_description CcLogAlarm#alarm_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#alarm_description CcLogAlarm#alarm_description}
     */
     readonly alarmDescription?: string;
     /**
     * The name of the log alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#alarm_name CcLogAlarm#alarm_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#alarm_name CcLogAlarm#alarm_name}
     */
     readonly alarmName?: string;
     /**
     * The arithmetic operation to use when comparing the specified threshold and the query results. Valid values are GreaterThanOrEqualToThreshold, GreaterThanThreshold, LessThanThreshold, and LessThanOrEqualToThreshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#comparison_operator CcLogAlarm#comparison_operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#comparison_operator CcLogAlarm#comparison_operator}
     */
     readonly comparisonOperator: string;
     /**
     * The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#insufficient_data_actions CcLogAlarm#insufficient_data_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#insufficient_data_actions CcLogAlarm#insufficient_data_actions}
     */
     readonly insufficientDataActions?: string[];
     /**
     * The actions to execute when this alarm transitions to the OK state from any other state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#ok_actions CcLogAlarm#ok_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#ok_actions CcLogAlarm#ok_actions}
     */
     readonly okActions?: string[];
     /**
     * The number of query results that must be breaching to trigger the alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#query_results_to_alarm CcLogAlarm#query_results_to_alarm}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#query_results_to_alarm CcLogAlarm#query_results_to_alarm}
     */
     readonly queryResultsToAlarm: number;
     /**
     * The number of query results over which data is compared to the specified threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#query_results_to_evaluate CcLogAlarm#query_results_to_evaluate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#query_results_to_evaluate CcLogAlarm#query_results_to_evaluate}
     */
     readonly queryResultsToEvaluate: number;
     /**
     * The scheduled query configuration for the log alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#scheduled_query_configuration CcLogAlarm#scheduled_query_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#scheduled_query_configuration CcLogAlarm#scheduled_query_configuration}
     */
     readonly scheduledQueryConfiguration: CcLogAlarm.ScheduledQueryConfigurationProperty;
     /**
     * A list of key-value pairs to associate with the log alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#tags CcLogAlarm#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#tags CcLogAlarm#tags}
     */
     readonly tags?: CcLogAlarm.TagsProperty[] | cdktn.IResolvable;
     /**
     * The value to compare against the results of the scheduled query evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#threshold CcLogAlarm#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#threshold CcLogAlarm#threshold}
     */
     readonly threshold: number;
     /**
     * Sets how this alarm is to handle missing data points. Valid values are breaching, notBreaching, ignore, and missing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#treat_missing_data CcLogAlarm#treat_missing_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#treat_missing_data CcLogAlarm#treat_missing_data}
     */
     readonly treatMissingData?: string;
     /**
     * The warm-up configuration for the alarm. During the warm-up period, the alarm stays in INSUFFICIENT_DATA and doesn't perform alarm actions. For more information, see Alarm warm-up periods in the Amazon CloudWatch User Guide.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#warm_up_configuration CcLogAlarm#warm_up_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#warm_up_configuration CcLogAlarm#warm_up_configuration}
     */
     readonly warmUpConfiguration?: CcLogAlarm.WarmUpConfigurationProperty;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm awscc_cloudwatch_log_alarm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm awscc_cloudwatch_log_alarm}
 */
 export class CcLogAlarm extends cdktn.TerraformResource {
 
@@ -121,7 +127,7 @@ export class CcLogAlarm extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcLogAlarm resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcLogAlarm to import
-    * @param importFromId The id of the existing CcLogAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcLogAlarm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcLogAlarm to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -133,7 +139,7 @@ export class CcLogAlarm extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm awscc_cloudwatch_log_alarm} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm awscc_cloudwatch_log_alarm} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +150,7 @@ export class CcLogAlarm extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_cloudwatch_log_alarm',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -154,6 +160,7 @@ export class CcLogAlarm extends cdktn.TerraformResource {
             connection: config.connection,
             forEach: config.forEach
         });
+        this._actionConfiguration.internalValue = config.actionConfiguration;
         this._actionLogLineCount = config.actionLogLineCount;
         this._actionLogLineRoleArn = config.actionLogLineRoleArn;
         this._actionsEnabled = config.actionsEnabled;
@@ -175,6 +182,22 @@ export class CcLogAlarm extends cdktn.TerraformResource {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // action_configuration - computed: true, optional: true, required: false
+    private _actionConfiguration = new CcLogAlarm.ActionConfigurationPropertyOutputReference(this, "action_configuration");
+    public get actionConfiguration() {
+        return this._actionConfiguration;
+    }
+    public putActionConfiguration(value: CcLogAlarm.ActionConfigurationProperty) {
+        this._actionConfiguration.internalValue = value;
+    }
+    public resetActionConfiguration() {
+        this._actionConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get actionConfigurationInput() {
+        return this._actionConfiguration.internalValue;
+    }
 
     // action_log_line_count - computed: true, optional: true, required: false
     private _actionLogLineCount?: number; 
@@ -433,6 +456,7 @@ export class CcLogAlarm extends cdktn.TerraformResource {
 
     protected synthesizeAttributes(): { [name: string]: any } {
         return {
+            action_configuration: ccLogAlarmActionConfigurationPropertyToTerraform(this._actionConfiguration.internalValue),
             action_log_line_count: cdktn.numberToTerraform(this._actionLogLineCount),
             action_log_line_role_arn: cdktn.stringToTerraform(this._actionLogLineRoleArn),
             actions_enabled: cdktn.booleanToTerraform(this._actionsEnabled),
@@ -454,6 +478,12 @@ export class CcLogAlarm extends cdktn.TerraformResource {
 
     protected synthesizeHclAttributes(): { [name: string]: any } {
         const attrs = {
+            action_configuration: {
+                value: ccLogAlarmActionConfigurationPropertyToHclTerraform(this._actionConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcLogAlarm.ActionConfigurationProperty",
+            },
             action_log_line_count: {
                 value: cdktn.numberToHclTerraform(this._actionLogLineCount),
                 isBlock: false,
@@ -556,6 +586,80 @@ export class CcLogAlarm extends cdktn.TerraformResource {
         return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
     }
 }
+
+export function ccLogAlarmAlarmTagsPropagationPropertyToTerraform(struct?: CcLogAlarm.AlarmTagsPropagationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        enabled: cdktn.booleanToTerraform(struct!.enabled),
+        excluded_tag_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedTagKeys),
+        included_tag_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedTagKeys),
+    }
+}
+
+
+export function ccLogAlarmAlarmTagsPropagationPropertyToHclTerraform(struct?: CcLogAlarm.AlarmTagsPropagationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        enabled: {
+            value: cdktn.booleanToHclTerraform(struct!.enabled),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "boolean",
+        },
+        excluded_tag_keys: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedTagKeys),
+            isBlock: false,
+            type: "set",
+            storageClassType: "stringList",
+        },
+        included_tag_keys: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedTagKeys),
+            isBlock: false,
+            type: "set",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccLogAlarmActionConfigurationPropertyToTerraform(struct?: CcLogAlarm.ActionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        alarm_tags_propagation: ccLogAlarmAlarmTagsPropagationPropertyToTerraform(struct!.alarmTagsPropagation),
+    }
+}
+
+
+export function ccLogAlarmActionConfigurationPropertyToHclTerraform(struct?: CcLogAlarm.ActionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        alarm_tags_propagation: {
+            value: ccLogAlarmAlarmTagsPropagationPropertyToHclTerraform(struct!.alarmTagsPropagation),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "AlarmTagsPropagationProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 
 export function ccLogAlarmScheduleConfigurationPropertyToTerraform(struct?: CcLogAlarm.ScheduleConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
@@ -778,23 +882,211 @@ export function ccLogAlarmWarmUpConfigurationPropertyToHclTerraform(struct?: CcL
 
 
 export namespace CcLogAlarm {
+export interface AlarmTagsPropagationProperty {
+    /**
+    * Whether the alarm's tags are included in its action notifications and state-change events.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#enabled CcLogAlarm#enabled}
+    */
+    readonly enabled?: boolean | cdktn.IResolvable;
+    /**
+    * The tag keys to leave out. Cannot be specified together with IncludedTagKeys.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#excluded_tag_keys CcLogAlarm#excluded_tag_keys}
+    */
+    readonly excludedTagKeys?: string[];
+    /**
+    * The only tag keys to include. Cannot be specified together with ExcludedTagKeys.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#included_tag_keys CcLogAlarm#included_tag_keys}
+    */
+    readonly includedTagKeys?: string[];
+}
+export class AlarmTagsPropagationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): AlarmTagsPropagationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._enabled !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.enabled = this._enabled;
+        }
+        if (this._excludedTagKeys !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.excludedTagKeys = this._excludedTagKeys;
+        }
+        if (this._includedTagKeys !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.includedTagKeys = this._includedTagKeys;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AlarmTagsPropagationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._enabled = undefined;
+            this._excludedTagKeys = undefined;
+            this._includedTagKeys = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._enabled = value.enabled;
+            this._excludedTagKeys = value.excludedTagKeys;
+            this._includedTagKeys = value.includedTagKeys;
+        }
+    }
+
+    // enabled - computed: true, optional: true, required: false
+    private _enabled?: boolean | cdktn.IResolvable; 
+    public get enabled() {
+        return this.getBooleanAttribute('enabled');
+    }
+    public set enabled(value: boolean | cdktn.IResolvable) {
+        this._enabled = value;
+    }
+    public resetEnabled() {
+        this._enabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledInput() {
+        return this._enabled;
+    }
+
+    // excluded_tag_keys - computed: true, optional: true, required: false
+    private _excludedTagKeys?: string[]; 
+    public get excludedTagKeys() {
+        return cdktn.Fn.tolist(this.getListAttribute('excluded_tag_keys'));
+    }
+    public set excludedTagKeys(value: string[]) {
+        this._excludedTagKeys = value;
+    }
+    public resetExcludedTagKeys() {
+        this._excludedTagKeys = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get excludedTagKeysInput() {
+        return this._excludedTagKeys;
+    }
+
+    // included_tag_keys - computed: true, optional: true, required: false
+    private _includedTagKeys?: string[]; 
+    public get includedTagKeys() {
+        return cdktn.Fn.tolist(this.getListAttribute('included_tag_keys'));
+    }
+    public set includedTagKeys(value: string[]) {
+        this._includedTagKeys = value;
+    }
+    public resetIncludedTagKeys() {
+        this._includedTagKeys = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includedTagKeysInput() {
+        return this._includedTagKeys;
+    }
+}
+export interface ActionConfigurationProperty {
+    /**
+    * Whether the alarm's tags are included in its action notifications and state-change events.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#alarm_tags_propagation CcLogAlarm#alarm_tags_propagation}
+    */
+    readonly alarmTagsPropagation?: AlarmTagsPropagationProperty;
+}
+export class ActionConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._alarmTagsPropagation?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.alarmTagsPropagation = this._alarmTagsPropagation?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._alarmTagsPropagation.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._alarmTagsPropagation.internalValue = value.alarmTagsPropagation;
+        }
+    }
+
+    // alarm_tags_propagation - computed: true, optional: true, required: false
+    private _alarmTagsPropagation = new AlarmTagsPropagationPropertyOutputReference(this, "alarm_tags_propagation");
+    public get alarmTagsPropagation() {
+        return this._alarmTagsPropagation;
+    }
+    public putAlarmTagsPropagation(value: AlarmTagsPropagationProperty) {
+        this._alarmTagsPropagation.internalValue = value;
+    }
+    public resetAlarmTagsPropagation() {
+        this._alarmTagsPropagation.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get alarmTagsPropagationInput() {
+        return this._alarmTagsPropagation.internalValue;
+    }
+}
 export interface ScheduleConfigurationProperty {
     /**
     * The number of seconds into the past to end the query window. Must be a non-negative value and cannot exceed 2592000 seconds (30 days).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#end_time_offset CcLogAlarm#end_time_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#end_time_offset CcLogAlarm#end_time_offset}
     */
     readonly endTimeOffset?: number;
     /**
     * The expression that defines when the scheduled query runs, e.g. rate(1 minute).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#schedule_expression CcLogAlarm#schedule_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#schedule_expression CcLogAlarm#schedule_expression}
     */
     readonly scheduleExpression: string;
     /**
     * The number of seconds into the past to start the query window. Must be a positive value and cannot exceed 2592000 seconds (30 days).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#start_time_offset CcLogAlarm#start_time_offset}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#start_time_offset CcLogAlarm#start_time_offset}
     */
     readonly startTimeOffset: number;
 }
@@ -898,13 +1190,13 @@ export interface TagProperty {
     /**
     * A unique identifier for the tag. The combination of tag keys and values can help you organize and categorize your resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#key CcLogAlarm#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#key CcLogAlarm#key}
     */
     readonly key?: string;
     /**
     * The value for the specified tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#value CcLogAlarm#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#value CcLogAlarm#value}
     */
     readonly value?: string;
 }
@@ -1014,37 +1306,37 @@ export interface ScheduledQueryConfigurationProperty {
     /**
     * The aggregation expression for the scheduled query, e.g. count(*) or avg(latency) by host.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#aggregation_expression CcLogAlarm#aggregation_expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#aggregation_expression CcLogAlarm#aggregation_expression}
     */
     readonly aggregationExpression: string;
     /**
     * The log groups to query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#log_group_identifiers CcLogAlarm#log_group_identifiers}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#log_group_identifiers CcLogAlarm#log_group_identifiers}
     */
     readonly logGroupIdentifiers?: string[];
     /**
     * The query string to execute against the specified log groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#query_string CcLogAlarm#query_string}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#query_string CcLogAlarm#query_string}
     */
     readonly queryString: string;
     /**
     * The schedule configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#schedule_configuration CcLogAlarm#schedule_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#schedule_configuration CcLogAlarm#schedule_configuration}
     */
     readonly scheduleConfiguration: ScheduleConfigurationProperty;
     /**
     * The ARN of the IAM role that grants permissions to execute the scheduled query.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#scheduled_query_role_arn CcLogAlarm#scheduled_query_role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#scheduled_query_role_arn CcLogAlarm#scheduled_query_role_arn}
     */
     readonly scheduledQueryRoleArn: string;
     /**
     * A list of key-value pairs to associate with the scheduled query that backs the log alarm.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#tags CcLogAlarm#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#tags CcLogAlarm#tags}
     */
     readonly tags?: TagProperty[] | cdktn.IResolvable;
 }
@@ -1208,13 +1500,13 @@ export interface TagsProperty {
     /**
     * A unique identifier for the tag. The combination of tag keys and values can help you organize and categorize your resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#key CcLogAlarm#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#key CcLogAlarm#key}
     */
     readonly key?: string;
     /**
     * The value for the specified tag key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#value CcLogAlarm#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#value CcLogAlarm#value}
     */
     readonly value?: string;
 }
@@ -1324,13 +1616,13 @@ export interface WarmUpConfigurationProperty {
     /**
     * Specifies whether the alarm waits for the full warm-up period before it starts evaluating. If true, the alarm waits the entire WarmUpPeriodDurationInMinutes before it starts evaluating, even if metric data arrives earlier. If false, the alarm ends the warm-up period early and starts evaluating as soon as it has enough metric data to fill its evaluation window. This is the default behavior.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#only_start_evaluating_after_warm_up_period_ends CcLogAlarm#only_start_evaluating_after_warm_up_period_ends}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#only_start_evaluating_after_warm_up_period_ends CcLogAlarm#only_start_evaluating_after_warm_up_period_ends}
     */
     readonly onlyStartEvaluatingAfterWarmUpPeriodEnds?: boolean | cdktn.IResolvable;
     /**
     * The length of the warm-up period, in minutes. For this duration after you create or update the alarm, the alarm stays in INSUFFICIENT_DATA and doesn't perform alarm actions. Valid values range from 1 to 2,880 minutes (2 days). You can change this value while the alarm is still in its warm-up period. Changes have no effect after the warm-up period ends.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/cloudwatch_log_alarm#warm_up_period_duration_in_minutes CcLogAlarm#warm_up_period_duration_in_minutes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/cloudwatch_log_alarm#warm_up_period_duration_in_minutes CcLogAlarm#warm_up_period_duration_in_minutes}
     */
     readonly warmUpPeriodDurationInMinutes?: number;
 }

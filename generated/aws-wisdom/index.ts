@@ -8,6 +8,8 @@ export * from './ai-prompt';
 export * from './ai-prompt-version';
 export * from './assistant';
 export * from './assistant-association';
+export * from './content';
+export * from './content-association';
 export * from './knowledge-base';
 export * from './message-template';
 export * from './message-template-version';

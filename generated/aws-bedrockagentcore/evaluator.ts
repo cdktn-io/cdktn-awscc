@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator
+// https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,43 +9,43 @@ export interface CcEvaluatorProps extends cdktn.TerraformMetaArguments {
     /**
     * The description of the evaluator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#description CcEvaluator#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#description CcEvaluator#description}
     */
     readonly description?: string;
     /**
-    * The configuration for the evaluator.
+    * The configuration for the evaluator, including LLM-as-a-Judge, code-based, or derived settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#evaluator_config CcEvaluator#evaluator_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#evaluator_config CcEvaluator#evaluator_config}
     */
     readonly evaluatorConfig: CcEvaluator.EvaluatorConfigProperty;
     /**
     * The name of the evaluator. Must be unique within your account.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#evaluator_name CcEvaluator#evaluator_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#evaluator_name CcEvaluator#evaluator_name}
     */
     readonly evaluatorName: string;
     /**
     * The ARN of the KMS key used to encrypt evaluator data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#kms_key_arn CcEvaluator#kms_key_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#kms_key_arn CcEvaluator#kms_key_arn}
     */
     readonly kmsKeyArn?: string;
     /**
-    * The evaluation level that determines the scope of evaluation.
+    * The evaluation level that determines the scope of evaluation. Required for all evaluator configuration types. For Derived evaluators it must match the level of the base evaluator identified by BaseEvaluatorId.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#level CcEvaluator#level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#level CcEvaluator#level}
     */
     readonly level: string;
     /**
     * A list of tags to assign to the evaluator.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#tags CcEvaluator#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#tags CcEvaluator#tags}
     */
     readonly tags?: CcEvaluator.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator}
 */
 export class CcEvaluator extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class CcEvaluator extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcEvaluator resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcEvaluator to import
-    * @param importFromId The id of the existing CcEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcEvaluator to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class CcEvaluator extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator awscc_bedrockagentcore_evaluator} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class CcEvaluator extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_evaluator',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.107.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -163,6 +163,11 @@ export class CcEvaluator extends cdktn.TerraformResource {
         return this._evaluatorName;
     }
 
+    // evaluator_type - computed: true, optional: false, required: false
+    public get evaluatorType() {
+        return this.getStringAttribute('evaluator_type');
+    }
+
     // id - computed: true, optional: false, required: false
     public get id() {
         return this.getStringAttribute('id');
@@ -195,6 +200,11 @@ export class CcEvaluator extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get levelInput() {
         return this._level;
+    }
+
+    // provider_name - computed: true, optional: false, required: false
+    public get providerName() {
+        return this.getStringAttribute('provider_name');
     }
 
     // status - computed: true, optional: false, required: false
@@ -350,6 +360,263 @@ export function ccEvaluatorCodeBasedEvaluatorConfigPropertyToHclTerraform(struct
 }
 
 
+export function ccEvaluatorInferenceConfigPropertyToTerraform(struct?: CcEvaluator.InferenceConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        max_tokens: cdktn.numberToTerraform(struct!.maxTokens),
+        stop_sequences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stopSequences),
+        temperature: cdktn.numberToTerraform(struct!.temperature),
+        top_p: cdktn.numberToTerraform(struct!.topP),
+    }
+}
+
+
+export function ccEvaluatorInferenceConfigPropertyToHclTerraform(struct?: CcEvaluator.InferenceConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        max_tokens: {
+            value: cdktn.numberToHclTerraform(struct!.maxTokens),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        stop_sequences: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stopSequences),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        temperature: {
+            value: cdktn.numberToHclTerraform(struct!.temperature),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        top_p: {
+            value: cdktn.numberToHclTerraform(struct!.topP),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorEvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyToTerraform(struct?: CcEvaluator.EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        additional_model_request_fields: cdktn.stringToTerraform(struct!.additionalModelRequestFields),
+        inference_config: ccEvaluatorInferenceConfigPropertyToTerraform(struct!.inferenceConfig),
+        model_id: cdktn.stringToTerraform(struct!.modelId),
+    }
+}
+
+
+export function ccEvaluatorEvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyToHclTerraform(struct?: CcEvaluator.EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        additional_model_request_fields: {
+            value: cdktn.stringToHclTerraform(struct!.additionalModelRequestFields),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        inference_config: {
+            value: ccEvaluatorInferenceConfigPropertyToHclTerraform(struct!.inferenceConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "InferenceConfigProperty",
+        },
+        model_id: {
+            value: cdktn.stringToHclTerraform(struct!.modelId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorReasoningPropertyToTerraform(struct?: CcEvaluator.ReasoningProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        effort: cdktn.stringToTerraform(struct!.effort),
+    }
+}
+
+
+export function ccEvaluatorReasoningPropertyToHclTerraform(struct?: CcEvaluator.ReasoningProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        effort: {
+            value: cdktn.stringToHclTerraform(struct!.effort),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorResponsesEvaluatorModelConfigPropertyToTerraform(struct?: CcEvaluator.ResponsesEvaluatorModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        max_output_tokens: cdktn.numberToTerraform(struct!.maxOutputTokens),
+        model_id: cdktn.stringToTerraform(struct!.modelId),
+        reasoning: ccEvaluatorReasoningPropertyToTerraform(struct!.reasoning),
+        temperature: cdktn.numberToTerraform(struct!.temperature),
+        top_p: cdktn.numberToTerraform(struct!.topP),
+    }
+}
+
+
+export function ccEvaluatorResponsesEvaluatorModelConfigPropertyToHclTerraform(struct?: CcEvaluator.ResponsesEvaluatorModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        max_output_tokens: {
+            value: cdktn.numberToHclTerraform(struct!.maxOutputTokens),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        model_id: {
+            value: cdktn.stringToHclTerraform(struct!.modelId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        reasoning: {
+            value: ccEvaluatorReasoningPropertyToHclTerraform(struct!.reasoning),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ReasoningProperty",
+        },
+        temperature: {
+            value: cdktn.numberToHclTerraform(struct!.temperature),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        top_p: {
+            value: cdktn.numberToHclTerraform(struct!.topP),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorModelConfigPropertyToTerraform(struct?: CcEvaluator.ModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        bedrock_evaluator_model_config: ccEvaluatorEvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyToTerraform(struct!.bedrockEvaluatorModelConfig),
+        responses_evaluator_model_config: ccEvaluatorResponsesEvaluatorModelConfigPropertyToTerraform(struct!.responsesEvaluatorModelConfig),
+    }
+}
+
+
+export function ccEvaluatorModelConfigPropertyToHclTerraform(struct?: CcEvaluator.ModelConfigProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        bedrock_evaluator_model_config: {
+            value: ccEvaluatorEvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyToHclTerraform(struct!.bedrockEvaluatorModelConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty",
+        },
+        responses_evaluator_model_config: {
+            value: ccEvaluatorResponsesEvaluatorModelConfigPropertyToHclTerraform(struct!.responsesEvaluatorModelConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ResponsesEvaluatorModelConfigProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorDerivedPropertyToTerraform(struct?: CcEvaluator.DerivedProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        base_evaluator_id: cdktn.stringToTerraform(struct!.baseEvaluatorId),
+        model_config: ccEvaluatorModelConfigPropertyToTerraform(struct!.modelConfig),
+    }
+}
+
+
+export function ccEvaluatorDerivedPropertyToHclTerraform(struct?: CcEvaluator.DerivedProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        base_evaluator_id: {
+            value: cdktn.stringToHclTerraform(struct!.baseEvaluatorId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        model_config: {
+            value: ccEvaluatorModelConfigPropertyToHclTerraform(struct!.modelConfig),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ModelConfigProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccEvaluatorInferenceConfigurationPropertyToTerraform(struct?: CcEvaluator.InferenceConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -357,6 +624,7 @@ export function ccEvaluatorInferenceConfigurationPropertyToTerraform(struct?: Cc
     }
     return {
         max_tokens: cdktn.numberToTerraform(struct!.maxTokens),
+        stop_sequences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.stopSequences),
         temperature: cdktn.numberToTerraform(struct!.temperature),
         top_p: cdktn.numberToTerraform(struct!.topP),
     }
@@ -374,6 +642,12 @@ export function ccEvaluatorInferenceConfigurationPropertyToHclTerraform(struct?:
             isBlock: false,
             type: "simple",
             storageClassType: "number",
+        },
+        stop_sequences: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.stopSequences),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
         },
         temperature: {
             value: cdktn.numberToHclTerraform(struct!.temperature),
@@ -600,6 +874,168 @@ export function ccEvaluatorCategoricalScaleDefinitionPropertyToHclTerraform(stru
 }
 
 
+export function ccEvaluatorCategoricalPropertyToTerraform(struct?: CcEvaluator.CategoricalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        definition: cdktn.stringToTerraform(struct!.definition),
+        label: cdktn.stringToTerraform(struct!.label),
+    }
+}
+
+
+export function ccEvaluatorCategoricalPropertyToHclTerraform(struct?: CcEvaluator.CategoricalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        definition: {
+            value: cdktn.stringToHclTerraform(struct!.definition),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        label: {
+            value: cdktn.stringToHclTerraform(struct!.label),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorNumericalPropertyToTerraform(struct?: CcEvaluator.NumericalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        definition: cdktn.stringToTerraform(struct!.definition),
+        label: cdktn.stringToTerraform(struct!.label),
+        value: cdktn.numberToTerraform(struct!.value),
+    }
+}
+
+
+export function ccEvaluatorNumericalPropertyToHclTerraform(struct?: CcEvaluator.NumericalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        definition: {
+            value: cdktn.stringToHclTerraform(struct!.definition),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        label: {
+            value: cdktn.stringToHclTerraform(struct!.label),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.numberToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorDimensionRatingScalePropertyToTerraform(struct?: CcEvaluator.DimensionRatingScaleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        categorical: cdktn.listMapper(ccEvaluatorCategoricalPropertyToTerraform, false)(struct!.categorical),
+        numerical: cdktn.listMapper(ccEvaluatorNumericalPropertyToTerraform, false)(struct!.numerical),
+    }
+}
+
+
+export function ccEvaluatorDimensionRatingScalePropertyToHclTerraform(struct?: CcEvaluator.DimensionRatingScaleProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        categorical: {
+            value: cdktn.listMapperHcl(ccEvaluatorCategoricalPropertyToHclTerraform, false)(struct!.categorical),
+            isBlock: true,
+            type: "list",
+            storageClassType: "CategoricalPropertyList",
+        },
+        numerical: {
+            value: cdktn.listMapperHcl(ccEvaluatorNumericalPropertyToHclTerraform, false)(struct!.numerical),
+            isBlock: true,
+            type: "list",
+            storageClassType: "NumericalPropertyList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccEvaluatorMultiDimensionalPropertyToTerraform(struct?: CcEvaluator.MultiDimensionalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dimension_instruction: cdktn.stringToTerraform(struct!.dimensionInstruction),
+        dimension_name: cdktn.stringToTerraform(struct!.dimensionName),
+        dimension_rating_scale: ccEvaluatorDimensionRatingScalePropertyToTerraform(struct!.dimensionRatingScale),
+    }
+}
+
+
+export function ccEvaluatorMultiDimensionalPropertyToHclTerraform(struct?: CcEvaluator.MultiDimensionalProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dimension_instruction: {
+            value: cdktn.stringToHclTerraform(struct!.dimensionInstruction),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        dimension_name: {
+            value: cdktn.stringToHclTerraform(struct!.dimensionName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        dimension_rating_scale: {
+            value: ccEvaluatorDimensionRatingScalePropertyToHclTerraform(struct!.dimensionRatingScale),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DimensionRatingScaleProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccEvaluatorNumericalScaleDefinitionPropertyToTerraform(struct?: CcEvaluator.NumericalScaleDefinitionProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -651,6 +1087,7 @@ export function ccEvaluatorRatingScalePropertyToTerraform(struct?: CcEvaluator.R
     }
     return {
         categorical: cdktn.listMapper(ccEvaluatorCategoricalScaleDefinitionPropertyToTerraform, false)(struct!.categorical),
+        multi_dimensional: cdktn.listMapper(ccEvaluatorMultiDimensionalPropertyToTerraform, false)(struct!.multiDimensional),
         numerical: cdktn.listMapper(ccEvaluatorNumericalScaleDefinitionPropertyToTerraform, false)(struct!.numerical),
     }
 }
@@ -667,6 +1104,12 @@ export function ccEvaluatorRatingScalePropertyToHclTerraform(struct?: CcEvaluato
             isBlock: true,
             type: "list",
             storageClassType: "CategoricalScaleDefinitionPropertyList",
+        },
+        multi_dimensional: {
+            value: cdktn.listMapperHcl(ccEvaluatorMultiDimensionalPropertyToHclTerraform, false)(struct!.multiDimensional),
+            isBlock: true,
+            type: "list",
+            storageClassType: "MultiDimensionalPropertyList",
         },
         numerical: {
             value: cdktn.listMapperHcl(ccEvaluatorNumericalScaleDefinitionPropertyToHclTerraform, false)(struct!.numerical),
@@ -732,6 +1175,7 @@ export function ccEvaluatorEvaluatorConfigPropertyToTerraform(struct?: CcEvaluat
     }
     return {
         code_based: ccEvaluatorCodeBasedEvaluatorConfigPropertyToTerraform(struct!.codeBased),
+        derived: ccEvaluatorDerivedPropertyToTerraform(struct!.derived),
         llm_as_a_judge: ccEvaluatorLlmAsAJudgeEvaluatorConfigPropertyToTerraform(struct!.llmAsAJudge),
     }
 }
@@ -748,6 +1192,12 @@ export function ccEvaluatorEvaluatorConfigPropertyToHclTerraform(struct?: CcEval
             isBlock: true,
             type: "struct",
             storageClassType: "CodeBasedEvaluatorConfigProperty",
+        },
+        derived: {
+            value: ccEvaluatorDerivedPropertyToHclTerraform(struct!.derived),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DerivedProperty",
         },
         llm_as_a_judge: {
             value: ccEvaluatorLlmAsAJudgeEvaluatorConfigPropertyToHclTerraform(struct!.llmAsAJudge),
@@ -804,13 +1254,13 @@ export interface LambdaEvaluatorConfigProperty {
     /**
     * The ARN of the Lambda function used for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#lambda_arn CcEvaluator#lambda_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#lambda_arn CcEvaluator#lambda_arn}
     */
     readonly lambdaArn?: string;
     /**
     * The timeout in seconds for the Lambda function invocation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#lambda_timeout_in_seconds CcEvaluator#lambda_timeout_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#lambda_timeout_in_seconds CcEvaluator#lambda_timeout_in_seconds}
     */
     readonly lambdaTimeoutInSeconds?: number;
 }
@@ -898,7 +1348,7 @@ export interface CodeBasedEvaluatorConfigProperty {
     /**
     * The Lambda function configuration for code-based evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#lambda_config CcEvaluator#lambda_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#lambda_config CcEvaluator#lambda_config}
     */
     readonly lambdaConfig?: LambdaEvaluatorConfigProperty;
 }
@@ -960,23 +1410,733 @@ export class CodeBasedEvaluatorConfigPropertyOutputReference extends cdktn.Compl
         return this._lambdaConfig.internalValue;
     }
 }
-export interface InferenceConfigurationProperty {
+export interface InferenceConfigProperty {
     /**
     * The maximum number of tokens to generate in the model response.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#max_tokens CcEvaluator#max_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#max_tokens CcEvaluator#max_tokens}
     */
     readonly maxTokens?: number;
     /**
+    * The sequences that make the model stop generating further tokens.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#stop_sequences CcEvaluator#stop_sequences}
+    */
+    readonly stopSequences?: string[];
+    /**
     * The temperature value that controls randomness in the model's responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
     */
     readonly temperature?: number;
     /**
     * The top-p sampling parameter that controls the diversity of the model's responses.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    */
+    readonly topP?: number;
+}
+export class InferenceConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): InferenceConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._maxTokens !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.maxTokens = this._maxTokens;
+        }
+        if (this._stopSequences !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.stopSequences = this._stopSequences;
+        }
+        if (this._temperature !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.temperature = this._temperature;
+        }
+        if (this._topP !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.topP = this._topP;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: InferenceConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._maxTokens = undefined;
+            this._stopSequences = undefined;
+            this._temperature = undefined;
+            this._topP = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._maxTokens = value.maxTokens;
+            this._stopSequences = value.stopSequences;
+            this._temperature = value.temperature;
+            this._topP = value.topP;
+        }
+    }
+
+    // max_tokens - computed: true, optional: true, required: false
+    private _maxTokens?: number; 
+    public get maxTokens() {
+        return this.getNumberAttribute('max_tokens');
+    }
+    public set maxTokens(value: number) {
+        this._maxTokens = value;
+    }
+    public resetMaxTokens() {
+        this._maxTokens = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get maxTokensInput() {
+        return this._maxTokens;
+    }
+
+    // stop_sequences - computed: true, optional: true, required: false
+    private _stopSequences?: string[]; 
+    public get stopSequences() {
+        return this.getListAttribute('stop_sequences');
+    }
+    public set stopSequences(value: string[]) {
+        this._stopSequences = value;
+    }
+    public resetStopSequences() {
+        this._stopSequences = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get stopSequencesInput() {
+        return this._stopSequences;
+    }
+
+    // temperature - computed: true, optional: true, required: false
+    private _temperature?: number; 
+    public get temperature() {
+        return this.getNumberAttribute('temperature');
+    }
+    public set temperature(value: number) {
+        this._temperature = value;
+    }
+    public resetTemperature() {
+        this._temperature = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get temperatureInput() {
+        return this._temperature;
+    }
+
+    // top_p - computed: true, optional: true, required: false
+    private _topP?: number; 
+    public get topP() {
+        return this.getNumberAttribute('top_p');
+    }
+    public set topP(value: number) {
+        this._topP = value;
+    }
+    public resetTopP() {
+        this._topP = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get topPInput() {
+        return this._topP;
+    }
+}
+export interface EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty {
+    /**
+    * Additional model-specific request fields.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#additional_model_request_fields CcEvaluator#additional_model_request_fields}
+    */
+    readonly additionalModelRequestFields?: string;
+    /**
+    * The inference configuration parameters that control model behavior during evaluation.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#inference_config CcEvaluator#inference_config}
+    */
+    readonly inferenceConfig?: InferenceConfigProperty;
+    /**
+    * The identifier of the Amazon Bedrock model to use for evaluation.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    */
+    readonly modelId?: string;
+}
+export class EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._additionalModelRequestFields !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.additionalModelRequestFields = this._additionalModelRequestFields;
+        }
+        if (this._inferenceConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.inferenceConfig = this._inferenceConfig?.internalValue;
+        }
+        if (this._modelId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.modelId = this._modelId;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._additionalModelRequestFields = undefined;
+            this._inferenceConfig.internalValue = undefined;
+            this._modelId = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._additionalModelRequestFields = value.additionalModelRequestFields;
+            this._inferenceConfig.internalValue = value.inferenceConfig;
+            this._modelId = value.modelId;
+        }
+    }
+
+    // additional_model_request_fields - computed: true, optional: true, required: false
+    private _additionalModelRequestFields?: string; 
+    public get additionalModelRequestFields() {
+        return this.getStringAttribute('additional_model_request_fields');
+    }
+    public set additionalModelRequestFields(value: string) {
+        this._additionalModelRequestFields = value;
+    }
+    public resetAdditionalModelRequestFields() {
+        this._additionalModelRequestFields = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get additionalModelRequestFieldsInput() {
+        return this._additionalModelRequestFields;
+    }
+
+    // inference_config - computed: true, optional: true, required: false
+    private _inferenceConfig = new InferenceConfigPropertyOutputReference(this, "inference_config");
+    public get inferenceConfig() {
+        return this._inferenceConfig;
+    }
+    public putInferenceConfig(value: InferenceConfigProperty) {
+        this._inferenceConfig.internalValue = value;
+    }
+    public resetInferenceConfig() {
+        this._inferenceConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get inferenceConfigInput() {
+        return this._inferenceConfig.internalValue;
+    }
+
+    // model_id - computed: true, optional: true, required: false
+    private _modelId?: string; 
+    public get modelId() {
+        return this.getStringAttribute('model_id');
+    }
+    public set modelId(value: string) {
+        this._modelId = value;
+    }
+    public resetModelId() {
+        this._modelId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelIdInput() {
+        return this._modelId;
+    }
+}
+export interface ReasoningProperty {
+    /**
+    * The level of reasoning effort the model applies.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#effort CcEvaluator#effort}
+    */
+    readonly effort?: string;
+}
+export class ReasoningPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ReasoningProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._effort !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.effort = this._effort;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ReasoningProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._effort = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._effort = value.effort;
+        }
+    }
+
+    // effort - computed: true, optional: true, required: false
+    private _effort?: string; 
+    public get effort() {
+        return this.getStringAttribute('effort');
+    }
+    public set effort(value: string) {
+        this._effort = value;
+    }
+    public resetEffort() {
+        this._effort = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get effortInput() {
+        return this._effort;
+    }
+}
+export interface ResponsesEvaluatorModelConfigProperty {
+    /**
+    * The maximum number of output tokens to generate, including visible output and reasoning tokens.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#max_output_tokens CcEvaluator#max_output_tokens}
+    */
+    readonly maxOutputTokens?: number;
+    /**
+    * The identifier of the model to use for evaluation.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    */
+    readonly modelId?: string;
+    /**
+    * The reasoning configuration for reasoning models.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#reasoning CcEvaluator#reasoning}
+    */
+    readonly reasoning?: ReasoningProperty;
+    /**
+    * The sampling temperature between 0 and 2.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    */
+    readonly temperature?: number;
+    /**
+    * The nucleus sampling probability mass between 0 and 1.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    */
+    readonly topP?: number;
+}
+export class ResponsesEvaluatorModelConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ResponsesEvaluatorModelConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._maxOutputTokens !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.maxOutputTokens = this._maxOutputTokens;
+        }
+        if (this._modelId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.modelId = this._modelId;
+        }
+        if (this._reasoning?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.reasoning = this._reasoning?.internalValue;
+        }
+        if (this._temperature !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.temperature = this._temperature;
+        }
+        if (this._topP !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.topP = this._topP;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ResponsesEvaluatorModelConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._maxOutputTokens = undefined;
+            this._modelId = undefined;
+            this._reasoning.internalValue = undefined;
+            this._temperature = undefined;
+            this._topP = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._maxOutputTokens = value.maxOutputTokens;
+            this._modelId = value.modelId;
+            this._reasoning.internalValue = value.reasoning;
+            this._temperature = value.temperature;
+            this._topP = value.topP;
+        }
+    }
+
+    // max_output_tokens - computed: true, optional: true, required: false
+    private _maxOutputTokens?: number; 
+    public get maxOutputTokens() {
+        return this.getNumberAttribute('max_output_tokens');
+    }
+    public set maxOutputTokens(value: number) {
+        this._maxOutputTokens = value;
+    }
+    public resetMaxOutputTokens() {
+        this._maxOutputTokens = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get maxOutputTokensInput() {
+        return this._maxOutputTokens;
+    }
+
+    // model_id - computed: true, optional: true, required: false
+    private _modelId?: string; 
+    public get modelId() {
+        return this.getStringAttribute('model_id');
+    }
+    public set modelId(value: string) {
+        this._modelId = value;
+    }
+    public resetModelId() {
+        this._modelId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelIdInput() {
+        return this._modelId;
+    }
+
+    // reasoning - computed: true, optional: true, required: false
+    private _reasoning = new ReasoningPropertyOutputReference(this, "reasoning");
+    public get reasoning() {
+        return this._reasoning;
+    }
+    public putReasoning(value: ReasoningProperty) {
+        this._reasoning.internalValue = value;
+    }
+    public resetReasoning() {
+        this._reasoning.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get reasoningInput() {
+        return this._reasoning.internalValue;
+    }
+
+    // temperature - computed: true, optional: true, required: false
+    private _temperature?: number; 
+    public get temperature() {
+        return this.getNumberAttribute('temperature');
+    }
+    public set temperature(value: number) {
+        this._temperature = value;
+    }
+    public resetTemperature() {
+        this._temperature = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get temperatureInput() {
+        return this._temperature;
+    }
+
+    // top_p - computed: true, optional: true, required: false
+    private _topP?: number; 
+    public get topP() {
+        return this.getNumberAttribute('top_p');
+    }
+    public set topP(value: number) {
+        this._topP = value;
+    }
+    public resetTopP() {
+        this._topP = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get topPInput() {
+        return this._topP;
+    }
+}
+export interface ModelConfigProperty {
+    /**
+    * The configuration for using Amazon Bedrock models in evaluator assessments.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#bedrock_evaluator_model_config CcEvaluator#bedrock_evaluator_model_config}
+    */
+    readonly bedrockEvaluatorModelConfig?: EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty;
+    /**
+    * The configuration for using OpenResponses-compatible models in evaluator assessments.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#responses_evaluator_model_config CcEvaluator#responses_evaluator_model_config}
+    */
+    readonly responsesEvaluatorModelConfig?: ResponsesEvaluatorModelConfigProperty;
+}
+export class ModelConfigPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ModelConfigProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._bedrockEvaluatorModelConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.bedrockEvaluatorModelConfig = this._bedrockEvaluatorModelConfig?.internalValue;
+        }
+        if (this._responsesEvaluatorModelConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.responsesEvaluatorModelConfig = this._responsesEvaluatorModelConfig?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ModelConfigProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._bedrockEvaluatorModelConfig.internalValue = undefined;
+            this._responsesEvaluatorModelConfig.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._bedrockEvaluatorModelConfig.internalValue = value.bedrockEvaluatorModelConfig;
+            this._responsesEvaluatorModelConfig.internalValue = value.responsesEvaluatorModelConfig;
+        }
+    }
+
+    // bedrock_evaluator_model_config - computed: true, optional: true, required: false
+    private _bedrockEvaluatorModelConfig = new EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigPropertyOutputReference(this, "bedrock_evaluator_model_config");
+    public get bedrockEvaluatorModelConfig() {
+        return this._bedrockEvaluatorModelConfig;
+    }
+    public putBedrockEvaluatorModelConfig(value: EvaluatorConfigDerivedModelConfigBedrockEvaluatorModelConfigProperty) {
+        this._bedrockEvaluatorModelConfig.internalValue = value;
+    }
+    public resetBedrockEvaluatorModelConfig() {
+        this._bedrockEvaluatorModelConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get bedrockEvaluatorModelConfigInput() {
+        return this._bedrockEvaluatorModelConfig.internalValue;
+    }
+
+    // responses_evaluator_model_config - computed: true, optional: true, required: false
+    private _responsesEvaluatorModelConfig = new ResponsesEvaluatorModelConfigPropertyOutputReference(this, "responses_evaluator_model_config");
+    public get responsesEvaluatorModelConfig() {
+        return this._responsesEvaluatorModelConfig;
+    }
+    public putResponsesEvaluatorModelConfig(value: ResponsesEvaluatorModelConfigProperty) {
+        this._responsesEvaluatorModelConfig.internalValue = value;
+    }
+    public resetResponsesEvaluatorModelConfig() {
+        this._responsesEvaluatorModelConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get responsesEvaluatorModelConfigInput() {
+        return this._responsesEvaluatorModelConfig.internalValue;
+    }
+}
+export interface DerivedProperty {
+    /**
+    * The identifier of the base evaluator whose logic to run (a Builtin.* or ThirdParty.* evaluator).
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#base_evaluator_id CcEvaluator#base_evaluator_id}
+    */
+    readonly baseEvaluatorId?: string;
+    /**
+    * The model configuration that specifies which foundation model to use for evaluation.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_config CcEvaluator#model_config}
+    */
+    readonly modelConfig?: ModelConfigProperty;
+}
+export class DerivedPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DerivedProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._baseEvaluatorId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.baseEvaluatorId = this._baseEvaluatorId;
+        }
+        if (this._modelConfig?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.modelConfig = this._modelConfig?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DerivedProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._baseEvaluatorId = undefined;
+            this._modelConfig.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._baseEvaluatorId = value.baseEvaluatorId;
+            this._modelConfig.internalValue = value.modelConfig;
+        }
+    }
+
+    // base_evaluator_id - computed: true, optional: true, required: false
+    private _baseEvaluatorId?: string; 
+    public get baseEvaluatorId() {
+        return this.getStringAttribute('base_evaluator_id');
+    }
+    public set baseEvaluatorId(value: string) {
+        this._baseEvaluatorId = value;
+    }
+    public resetBaseEvaluatorId() {
+        this._baseEvaluatorId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get baseEvaluatorIdInput() {
+        return this._baseEvaluatorId;
+    }
+
+    // model_config - computed: true, optional: true, required: false
+    private _modelConfig = new ModelConfigPropertyOutputReference(this, "model_config");
+    public get modelConfig() {
+        return this._modelConfig;
+    }
+    public putModelConfig(value: ModelConfigProperty) {
+        this._modelConfig.internalValue = value;
+    }
+    public resetModelConfig() {
+        this._modelConfig.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelConfigInput() {
+        return this._modelConfig.internalValue;
+    }
+}
+export interface InferenceConfigurationProperty {
+    /**
+    * The maximum number of tokens to generate in the model response.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#max_tokens CcEvaluator#max_tokens}
+    */
+    readonly maxTokens?: number;
+    /**
+    * The sequences that make the model stop generating further tokens.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#stop_sequences CcEvaluator#stop_sequences}
+    */
+    readonly stopSequences?: string[];
+    /**
+    * The temperature value that controls randomness in the model's responses.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    */
+    readonly temperature?: number;
+    /**
+    * The top-p sampling parameter that controls the diversity of the model's responses.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
     */
     readonly topP?: number;
 }
@@ -1002,6 +2162,10 @@ export class InferenceConfigurationPropertyOutputReference extends cdktn.Complex
             hasAnyValues = true;
             internalValueResult.maxTokens = this._maxTokens;
         }
+        if (this._stopSequences !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.stopSequences = this._stopSequences;
+        }
         if (this._temperature !== undefined) {
             hasAnyValues = true;
             internalValueResult.temperature = this._temperature;
@@ -1018,6 +2182,7 @@ export class InferenceConfigurationPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._maxTokens = undefined;
+            this._stopSequences = undefined;
             this._temperature = undefined;
             this._topP = undefined;
         }
@@ -1029,6 +2194,7 @@ export class InferenceConfigurationPropertyOutputReference extends cdktn.Complex
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._maxTokens = value.maxTokens;
+            this._stopSequences = value.stopSequences;
             this._temperature = value.temperature;
             this._topP = value.topP;
         }
@@ -1048,6 +2214,22 @@ export class InferenceConfigurationPropertyOutputReference extends cdktn.Complex
     // Temporarily expose input value. Use with caution.
     public get maxTokensInput() {
         return this._maxTokens;
+    }
+
+    // stop_sequences - computed: true, optional: true, required: false
+    private _stopSequences?: string[]; 
+    public get stopSequences() {
+        return this.getListAttribute('stop_sequences');
+    }
+    public set stopSequences(value: string[]) {
+        this._stopSequences = value;
+    }
+    public resetStopSequences() {
+        this._stopSequences = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get stopSequencesInput() {
+        return this._stopSequences;
     }
 
     // temperature - computed: true, optional: true, required: false
@@ -1086,19 +2268,19 @@ export interface BedrockEvaluatorModelConfigProperty {
     /**
     * Additional model-specific request fields.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#additional_model_request_fields CcEvaluator#additional_model_request_fields}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#additional_model_request_fields CcEvaluator#additional_model_request_fields}
     */
     readonly additionalModelRequestFields?: string;
     /**
     * The inference configuration parameters that control model behavior during evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#inference_config CcEvaluator#inference_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#inference_config CcEvaluator#inference_config}
     */
     readonly inferenceConfig?: InferenceConfigurationProperty;
     /**
     * The identifier of the Amazon Bedrock model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
     */
     readonly modelId?: string;
 }
@@ -1208,7 +2390,7 @@ export interface ReasoningConfigurationProperty {
     /**
     * The level of reasoning effort the model applies.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#effort CcEvaluator#effort}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#effort CcEvaluator#effort}
     */
     readonly effort?: string;
 }
@@ -1274,31 +2456,31 @@ export interface OpenResponsesEvaluatorModelConfigProperty {
     /**
     * The maximum number of output tokens to generate, including visible output and reasoning tokens.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#max_output_tokens CcEvaluator#max_output_tokens}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#max_output_tokens CcEvaluator#max_output_tokens}
     */
     readonly maxOutputTokens?: number;
     /**
     * The identifier of the model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_id CcEvaluator#model_id}
     */
     readonly modelId?: string;
     /**
     * The reasoning configuration for reasoning models.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#reasoning CcEvaluator#reasoning}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#reasoning CcEvaluator#reasoning}
     */
     readonly reasoning?: ReasoningConfigurationProperty;
     /**
     * The sampling temperature between 0 and 2.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#temperature CcEvaluator#temperature}
     */
     readonly temperature?: number;
     /**
     * The nucleus sampling probability mass between 0 and 1.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#top_p CcEvaluator#top_p}
     */
     readonly topP?: number;
 }
@@ -1452,13 +2634,13 @@ export interface EvaluatorModelConfigProperty {
     /**
     * The configuration for using Amazon Bedrock models in evaluator assessments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#bedrock_evaluator_model_config CcEvaluator#bedrock_evaluator_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#bedrock_evaluator_model_config CcEvaluator#bedrock_evaluator_model_config}
     */
     readonly bedrockEvaluatorModelConfig?: BedrockEvaluatorModelConfigProperty;
     /**
     * The configuration for using OpenResponses-compatible models in evaluator assessments.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#responses_evaluator_model_config CcEvaluator#responses_evaluator_model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#responses_evaluator_model_config CcEvaluator#responses_evaluator_model_config}
     */
     readonly responsesEvaluatorModelConfig?: OpenResponsesEvaluatorModelConfigProperty;
 }
@@ -1546,13 +2728,13 @@ export interface CategoricalScaleDefinitionProperty {
     /**
     * The description that explains what this categorical rating represents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
     */
     readonly definition?: string;
     /**
     * The label of this categorical rating option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
     */
     readonly label?: string;
 }
@@ -1658,23 +2840,521 @@ export class CategoricalScaleDefinitionPropertyList extends cdktn.ComplexList {
         return new CategoricalScaleDefinitionPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
-export interface NumericalScaleDefinitionProperty {
+export interface CategoricalProperty {
+    /**
+    * The description that explains what this categorical rating represents.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    */
+    readonly definition?: string;
+    /**
+    * The label of this categorical rating option.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    */
+    readonly label?: string;
+}
+export class CategoricalPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): CategoricalProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._definition !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.definition = this._definition;
+        }
+        if (this._label !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.label = this._label;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: CategoricalProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._definition = undefined;
+            this._label = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._definition = value.definition;
+            this._label = value.label;
+        }
+    }
+
+    // definition - computed: true, optional: true, required: false
+    private _definition?: string; 
+    public get definition() {
+        return this.getStringAttribute('definition');
+    }
+    public set definition(value: string) {
+        this._definition = value;
+    }
+    public resetDefinition() {
+        this._definition = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get definitionInput() {
+        return this._definition;
+    }
+
+    // label - computed: true, optional: true, required: false
+    private _label?: string; 
+    public get label() {
+        return this.getStringAttribute('label');
+    }
+    public set label(value: string) {
+        this._label = value;
+    }
+    public resetLabel() {
+        this._label = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get labelInput() {
+        return this._label;
+    }
+}
+
+export class CategoricalPropertyList extends cdktn.ComplexList {
+    public internalValue? : CategoricalProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): CategoricalPropertyOutputReference {
+        return new CategoricalPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface NumericalProperty {
     /**
     * The description that explains what this numerical rating represents.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
     */
     readonly definition?: string;
     /**
     * The label that describes this numerical rating option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
     */
     readonly label?: string;
     /**
     * The numerical value for this rating scale option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
+    */
+    readonly value?: number;
+}
+export class NumericalPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): NumericalProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._definition !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.definition = this._definition;
+        }
+        if (this._label !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.label = this._label;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: NumericalProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._definition = undefined;
+            this._label = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._definition = value.definition;
+            this._label = value.label;
+            this._value = value.value;
+        }
+    }
+
+    // definition - computed: true, optional: true, required: false
+    private _definition?: string; 
+    public get definition() {
+        return this.getStringAttribute('definition');
+    }
+    public set definition(value: string) {
+        this._definition = value;
+    }
+    public resetDefinition() {
+        this._definition = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get definitionInput() {
+        return this._definition;
+    }
+
+    // label - computed: true, optional: true, required: false
+    private _label?: string; 
+    public get label() {
+        return this.getStringAttribute('label');
+    }
+    public set label(value: string) {
+        this._label = value;
+    }
+    public resetLabel() {
+        this._label = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get labelInput() {
+        return this._label;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: number; 
+    public get value() {
+        return this.getNumberAttribute('value');
+    }
+    public set value(value: number) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+
+export class NumericalPropertyList extends cdktn.ComplexList {
+    public internalValue? : NumericalProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): NumericalPropertyOutputReference {
+        return new NumericalPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface DimensionRatingScaleProperty {
+    /**
+    * The categorical rating scale for this dimension.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#categorical CcEvaluator#categorical}
+    */
+    readonly categorical?: CategoricalProperty[] | cdktn.IResolvable;
+    /**
+    * The numerical rating scale for this dimension.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#numerical CcEvaluator#numerical}
+    */
+    readonly numerical?: NumericalProperty[] | cdktn.IResolvable;
+}
+export class DimensionRatingScalePropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DimensionRatingScaleProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._categorical?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.categorical = this._categorical?.internalValue;
+        }
+        if (this._numerical?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.numerical = this._numerical?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DimensionRatingScaleProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._categorical.internalValue = undefined;
+            this._numerical.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._categorical.internalValue = value.categorical;
+            this._numerical.internalValue = value.numerical;
+        }
+    }
+
+    // categorical - computed: true, optional: true, required: false
+    private _categorical = new CategoricalPropertyList(this, "categorical", false);
+    public get categorical() {
+        return this._categorical;
+    }
+    public putCategorical(value: CategoricalProperty[] | cdktn.IResolvable) {
+        this._categorical.internalValue = value;
+    }
+    public resetCategorical() {
+        this._categorical.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get categoricalInput() {
+        return this._categorical.internalValue;
+    }
+
+    // numerical - computed: true, optional: true, required: false
+    private _numerical = new NumericalPropertyList(this, "numerical", false);
+    public get numerical() {
+        return this._numerical;
+    }
+    public putNumerical(value: NumericalProperty[] | cdktn.IResolvable) {
+        this._numerical.internalValue = value;
+    }
+    public resetNumerical() {
+        this._numerical.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get numericalInput() {
+        return this._numerical.internalValue;
+    }
+}
+export interface MultiDimensionalProperty {
+    /**
+    * The instruction to the evaluator model describing what to judge for this dimension.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#dimension_instruction CcEvaluator#dimension_instruction}
+    */
+    readonly dimensionInstruction?: string;
+    /**
+    * The name of the dimension. Must be unique within the evaluator.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#dimension_name CcEvaluator#dimension_name}
+    */
+    readonly dimensionName?: string;
+    /**
+    * The rating scale for one dimension of an LLM-as-a-Judge evaluator.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#dimension_rating_scale CcEvaluator#dimension_rating_scale}
+    */
+    readonly dimensionRatingScale?: DimensionRatingScaleProperty;
+}
+export class MultiDimensionalPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): MultiDimensionalProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dimensionInstruction !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dimensionInstruction = this._dimensionInstruction;
+        }
+        if (this._dimensionName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dimensionName = this._dimensionName;
+        }
+        if (this._dimensionRatingScale?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dimensionRatingScale = this._dimensionRatingScale?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: MultiDimensionalProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dimensionInstruction = undefined;
+            this._dimensionName = undefined;
+            this._dimensionRatingScale.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dimensionInstruction = value.dimensionInstruction;
+            this._dimensionName = value.dimensionName;
+            this._dimensionRatingScale.internalValue = value.dimensionRatingScale;
+        }
+    }
+
+    // dimension_instruction - computed: true, optional: true, required: false
+    private _dimensionInstruction?: string; 
+    public get dimensionInstruction() {
+        return this.getStringAttribute('dimension_instruction');
+    }
+    public set dimensionInstruction(value: string) {
+        this._dimensionInstruction = value;
+    }
+    public resetDimensionInstruction() {
+        this._dimensionInstruction = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dimensionInstructionInput() {
+        return this._dimensionInstruction;
+    }
+
+    // dimension_name - computed: true, optional: true, required: false
+    private _dimensionName?: string; 
+    public get dimensionName() {
+        return this.getStringAttribute('dimension_name');
+    }
+    public set dimensionName(value: string) {
+        this._dimensionName = value;
+    }
+    public resetDimensionName() {
+        this._dimensionName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dimensionNameInput() {
+        return this._dimensionName;
+    }
+
+    // dimension_rating_scale - computed: true, optional: true, required: false
+    private _dimensionRatingScale = new DimensionRatingScalePropertyOutputReference(this, "dimension_rating_scale");
+    public get dimensionRatingScale() {
+        return this._dimensionRatingScale;
+    }
+    public putDimensionRatingScale(value: DimensionRatingScaleProperty) {
+        this._dimensionRatingScale.internalValue = value;
+    }
+    public resetDimensionRatingScale() {
+        this._dimensionRatingScale.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dimensionRatingScaleInput() {
+        return this._dimensionRatingScale.internalValue;
+    }
+}
+
+export class MultiDimensionalPropertyList extends cdktn.ComplexList {
+    public internalValue? : MultiDimensionalProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): MultiDimensionalPropertyOutputReference {
+        return new MultiDimensionalPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface NumericalScaleDefinitionProperty {
+    /**
+    * The description that explains what this numerical rating represents.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#definition CcEvaluator#definition}
+    */
+    readonly definition?: string;
+    /**
+    * The label that describes this numerical rating option.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#label CcEvaluator#label}
+    */
+    readonly label?: string;
+    /**
+    * The numerical value for this rating scale option.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
     */
     readonly value?: number;
 }
@@ -1804,11 +3484,17 @@ export class NumericalScaleDefinitionPropertyList extends cdktn.ComplexList {
 }
 export interface RatingScaleProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#categorical CcEvaluator#categorical}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#categorical CcEvaluator#categorical}
     */
     readonly categorical?: CategoricalScaleDefinitionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#numerical CcEvaluator#numerical}
+    * The dimensions an LLM-as-a-Judge evaluator scores in a single judge call. Each dimension has its own instruction and rating scale.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#multi_dimensional CcEvaluator#multi_dimensional}
+    */
+    readonly multiDimensional?: MultiDimensionalProperty[] | cdktn.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#numerical CcEvaluator#numerical}
     */
     readonly numerical?: NumericalScaleDefinitionProperty[] | cdktn.IResolvable;
 }
@@ -1834,6 +3520,10 @@ export class RatingScalePropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.categorical = this._categorical?.internalValue;
         }
+        if (this._multiDimensional?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.multiDimensional = this._multiDimensional?.internalValue;
+        }
         if (this._numerical?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.numerical = this._numerical?.internalValue;
@@ -1846,6 +3536,7 @@ export class RatingScalePropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._categorical.internalValue = undefined;
+            this._multiDimensional.internalValue = undefined;
             this._numerical.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -1856,6 +3547,7 @@ export class RatingScalePropertyOutputReference extends cdktn.ComplexObject {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._categorical.internalValue = value.categorical;
+            this._multiDimensional.internalValue = value.multiDimensional;
             this._numerical.internalValue = value.numerical;
         }
     }
@@ -1874,6 +3566,22 @@ export class RatingScalePropertyOutputReference extends cdktn.ComplexObject {
     // Temporarily expose input value. Use with caution.
     public get categoricalInput() {
         return this._categorical.internalValue;
+    }
+
+    // multi_dimensional - computed: true, optional: true, required: false
+    private _multiDimensional = new MultiDimensionalPropertyList(this, "multi_dimensional", false);
+    public get multiDimensional() {
+        return this._multiDimensional;
+    }
+    public putMultiDimensional(value: MultiDimensionalProperty[] | cdktn.IResolvable) {
+        this._multiDimensional.internalValue = value;
+    }
+    public resetMultiDimensional() {
+        this._multiDimensional.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get multiDimensionalInput() {
+        return this._multiDimensional.internalValue;
     }
 
     // numerical - computed: true, optional: true, required: false
@@ -1896,19 +3604,19 @@ export interface LlmAsAJudgeEvaluatorConfigProperty {
     /**
     * The evaluation instructions that guide the language model in assessing agent performance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#instructions CcEvaluator#instructions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#instructions CcEvaluator#instructions}
     */
     readonly instructions?: string;
     /**
     * The model configuration that specifies which foundation model to use for evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#model_config CcEvaluator#model_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#model_config CcEvaluator#model_config}
     */
     readonly modelConfig?: EvaluatorModelConfigProperty;
     /**
     * The rating scale that defines how evaluators should score agent performance.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#rating_scale CcEvaluator#rating_scale}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#rating_scale CcEvaluator#rating_scale}
     */
     readonly ratingScale?: RatingScaleProperty;
 }
@@ -2018,13 +3726,19 @@ export interface EvaluatorConfigProperty {
     /**
     * The configuration for code-based evaluation using a Lambda function.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#code_based CcEvaluator#code_based}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#code_based CcEvaluator#code_based}
     */
     readonly codeBased?: CodeBasedEvaluatorConfigProperty;
     /**
+    * The configuration for an evaluator derived from an existing base evaluator (a built-in or third-party evaluator), run on your own model. The base evaluator supplies the prompt and scoring logic.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#derived CcEvaluator#derived}
+    */
+    readonly derived?: DerivedProperty;
+    /**
     * The configuration for LLM-as-a-Judge evaluation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#llm_as_a_judge CcEvaluator#llm_as_a_judge}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#llm_as_a_judge CcEvaluator#llm_as_a_judge}
     */
     readonly llmAsAJudge?: LlmAsAJudgeEvaluatorConfigProperty;
 }
@@ -2050,6 +3764,10 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
             hasAnyValues = true;
             internalValueResult.codeBased = this._codeBased?.internalValue;
         }
+        if (this._derived?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.derived = this._derived?.internalValue;
+        }
         if (this._llmAsAJudge?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.llmAsAJudge = this._llmAsAJudge?.internalValue;
@@ -2062,6 +3780,7 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._codeBased.internalValue = undefined;
+            this._derived.internalValue = undefined;
             this._llmAsAJudge.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -2072,6 +3791,7 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._codeBased.internalValue = value.codeBased;
+            this._derived.internalValue = value.derived;
             this._llmAsAJudge.internalValue = value.llmAsAJudge;
         }
     }
@@ -2092,6 +3812,22 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
         return this._codeBased.internalValue;
     }
 
+    // derived - computed: true, optional: true, required: false
+    private _derived = new DerivedPropertyOutputReference(this, "derived");
+    public get derived() {
+        return this._derived;
+    }
+    public putDerived(value: DerivedProperty) {
+        this._derived.internalValue = value;
+    }
+    public resetDerived() {
+        this._derived.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get derivedInput() {
+        return this._derived.internalValue;
+    }
+
     // llm_as_a_judge - computed: true, optional: true, required: false
     private _llmAsAJudge = new LlmAsAJudgeEvaluatorConfigPropertyOutputReference(this, "llm_as_a_judge");
     public get llmAsAJudge() {
@@ -2110,11 +3846,11 @@ export class EvaluatorConfigPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#key CcEvaluator#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#key CcEvaluator#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.107.0/docs/resources/bedrockagentcore_evaluator#value CcEvaluator#value}
     */
     readonly value?: string;
 }
