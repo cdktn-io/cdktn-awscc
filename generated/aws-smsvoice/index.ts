@@ -1,10 +1,14 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 export * from './configuration-set';
+export * from './notify-configuration';
 export * from './opt-out-list';
 export * from './phone-number';
 export * from './pool';
 export * from './protect-configuration';
+export * from './rcs-agent';
 export * from './registration';
+export * from './registration-attachment';
 export * from './resource-policy';
 export * from './sender-id';
+export * from './verified-destination-number';

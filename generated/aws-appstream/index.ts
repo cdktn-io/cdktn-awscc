@@ -7,6 +7,7 @@ export * from './application-entitlement-association';
 export * from './application-fleet-association';
 export * from './directory-config';
 export * from './entitlement';
+export * from './fleet';
 export * from './image-builder';
 export * from './stack';
 export * from './stack-fleet-association';

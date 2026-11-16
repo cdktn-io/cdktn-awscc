@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,61 @@ export interface CcApplicationV2Props extends cdktn.TerraformMetaArguments {
     /**
     * Use this parameter to configure the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_configuration CcApplicationV2#application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_configuration CcApplicationV2#application_configuration}
     */
     readonly applicationConfiguration?: CcApplicationV2.ApplicationConfigurationProperty;
     /**
     * The description of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_description CcApplicationV2#application_description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_description CcApplicationV2#application_description}
     */
     readonly applicationDescription?: string;
     /**
     * Used to configure start of maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_configuration CcApplicationV2#application_maintenance_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_configuration CcApplicationV2#application_maintenance_configuration}
     */
     readonly applicationMaintenanceConfiguration?: CcApplicationV2.ApplicationMaintenanceConfigurationProperty;
     /**
     * To create a Kinesis Data Analytics Studio notebook, you must set the mode to `INTERACTIVE`. However, for a Kinesis Data Analytics for Apache Flink application, the mode is optional.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_mode CcApplicationV2#application_mode}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_mode CcApplicationV2#application_mode}
     */
     readonly applicationMode?: string;
     /**
     * The name of the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_name CcApplicationV2#application_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_name CcApplicationV2#application_name}
     */
     readonly applicationName?: string;
     /**
     * Specifies run configuration (start parameters) of a Kinesis Data Analytics application. Evaluated on update for RUNNING applications an only.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#run_configuration CcApplicationV2#run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#run_configuration CcApplicationV2#run_configuration}
     */
     readonly runConfiguration?: CcApplicationV2.RunConfigurationProperty;
     /**
     * The runtime environment for the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#runtime_environment CcApplicationV2#runtime_environment}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#runtime_environment CcApplicationV2#runtime_environment}
     */
     readonly runtimeEnvironment: string;
     /**
     * Specifies the IAM role that the application uses to access external resources.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#service_execution_role CcApplicationV2#service_execution_role}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#service_execution_role CcApplicationV2#service_execution_role}
     */
     readonly serviceExecutionRole: string;
     /**
     * A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#tags CcApplicationV2#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#tags CcApplicationV2#tags}
     */
     readonly tags?: CcApplicationV2.TagProperty[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application}
 */
 export class CcApplicationV2 extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcApplicationV2 resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcApplicationV2 to import
-    * @param importFromId The id of the existing CcApplicationV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcApplicationV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcApplicationV2 to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application awscc_kinesisanalyticsv2_application} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class CcApplicationV2 extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_kinesisanalyticsv2_application',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -519,6 +519,7 @@ export function ccApplicationV2ApplicationSnapshotConfigurationPropertyToTerrafo
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        snapshot_mode: cdktn.stringToTerraform(struct!.snapshotMode),
         snapshots_enabled: cdktn.booleanToTerraform(struct!.snapshotsEnabled),
     }
 }
@@ -530,6 +531,12 @@ export function ccApplicationV2ApplicationSnapshotConfigurationPropertyToHclTerr
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        snapshot_mode: {
+            value: cdktn.stringToHclTerraform(struct!.snapshotMode),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
         snapshots_enabled: {
             value: cdktn.booleanToHclTerraform(struct!.snapshotsEnabled),
             isBlock: false,
@@ -822,480 +829,6 @@ export function ccApplicationV2FlinkApplicationConfigurationPropertyToHclTerrafo
             isBlock: true,
             type: "struct",
             storageClassType: "ParallelismConfigurationProperty",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2InputParallelismPropertyToTerraform(struct?: CcApplicationV2.InputParallelismProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        count: cdktn.numberToTerraform(struct!.count),
-    }
-}
-
-
-export function ccApplicationV2InputParallelismPropertyToHclTerraform(struct?: CcApplicationV2.InputParallelismProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        count: {
-            value: cdktn.numberToHclTerraform(struct!.count),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "number",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2InputLambdaProcessorPropertyToTerraform(struct?: CcApplicationV2.InputLambdaProcessorProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
-    }
-}
-
-
-export function ccApplicationV2InputLambdaProcessorPropertyToHclTerraform(struct?: CcApplicationV2.InputLambdaProcessorProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        resource_arn: {
-            value: cdktn.stringToHclTerraform(struct!.resourceArn),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2InputProcessingConfigurationPropertyToTerraform(struct?: CcApplicationV2.InputProcessingConfigurationProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        input_lambda_processor: ccApplicationV2InputLambdaProcessorPropertyToTerraform(struct!.inputLambdaProcessor),
-    }
-}
-
-
-export function ccApplicationV2InputProcessingConfigurationPropertyToHclTerraform(struct?: CcApplicationV2.InputProcessingConfigurationProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        input_lambda_processor: {
-            value: ccApplicationV2InputLambdaProcessorPropertyToHclTerraform(struct!.inputLambdaProcessor),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "InputLambdaProcessorProperty",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2RecordColumnPropertyToTerraform(struct?: CcApplicationV2.RecordColumnProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        mapping: cdktn.stringToTerraform(struct!.mapping),
-        name: cdktn.stringToTerraform(struct!.name),
-        sql_type: cdktn.stringToTerraform(struct!.sqlType),
-    }
-}
-
-
-export function ccApplicationV2RecordColumnPropertyToHclTerraform(struct?: CcApplicationV2.RecordColumnProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        mapping: {
-            value: cdktn.stringToHclTerraform(struct!.mapping),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        name: {
-            value: cdktn.stringToHclTerraform(struct!.name),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        sql_type: {
-            value: cdktn.stringToHclTerraform(struct!.sqlType),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2CSVMappingParametersPropertyToTerraform(struct?: CcApplicationV2.CSVMappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        record_column_delimiter: cdktn.stringToTerraform(struct!.recordColumnDelimiter),
-        record_row_delimiter: cdktn.stringToTerraform(struct!.recordRowDelimiter),
-    }
-}
-
-
-export function ccApplicationV2CSVMappingParametersPropertyToHclTerraform(struct?: CcApplicationV2.CSVMappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        record_column_delimiter: {
-            value: cdktn.stringToHclTerraform(struct!.recordColumnDelimiter),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        record_row_delimiter: {
-            value: cdktn.stringToHclTerraform(struct!.recordRowDelimiter),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2JSONMappingParametersPropertyToTerraform(struct?: CcApplicationV2.JSONMappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        record_row_path: cdktn.stringToTerraform(struct!.recordRowPath),
-    }
-}
-
-
-export function ccApplicationV2JSONMappingParametersPropertyToHclTerraform(struct?: CcApplicationV2.JSONMappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        record_row_path: {
-            value: cdktn.stringToHclTerraform(struct!.recordRowPath),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2MappingParametersPropertyToTerraform(struct?: CcApplicationV2.MappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        csv_mapping_parameters: ccApplicationV2CSVMappingParametersPropertyToTerraform(struct!.csvMappingParameters),
-        json_mapping_parameters: ccApplicationV2JSONMappingParametersPropertyToTerraform(struct!.jsonMappingParameters),
-    }
-}
-
-
-export function ccApplicationV2MappingParametersPropertyToHclTerraform(struct?: CcApplicationV2.MappingParametersProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        csv_mapping_parameters: {
-            value: ccApplicationV2CSVMappingParametersPropertyToHclTerraform(struct!.csvMappingParameters),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "CSVMappingParametersProperty",
-        },
-        json_mapping_parameters: {
-            value: ccApplicationV2JSONMappingParametersPropertyToHclTerraform(struct!.jsonMappingParameters),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "JSONMappingParametersProperty",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2RecordFormatPropertyToTerraform(struct?: CcApplicationV2.RecordFormatProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        mapping_parameters: ccApplicationV2MappingParametersPropertyToTerraform(struct!.mappingParameters),
-        record_format_type: cdktn.stringToTerraform(struct!.recordFormatType),
-    }
-}
-
-
-export function ccApplicationV2RecordFormatPropertyToHclTerraform(struct?: CcApplicationV2.RecordFormatProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        mapping_parameters: {
-            value: ccApplicationV2MappingParametersPropertyToHclTerraform(struct!.mappingParameters),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "MappingParametersProperty",
-        },
-        record_format_type: {
-            value: cdktn.stringToHclTerraform(struct!.recordFormatType),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2InputSchemaPropertyToTerraform(struct?: CcApplicationV2.InputSchemaProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        record_columns: cdktn.listMapper(ccApplicationV2RecordColumnPropertyToTerraform, false)(struct!.recordColumns),
-        record_encoding: cdktn.stringToTerraform(struct!.recordEncoding),
-        record_format: ccApplicationV2RecordFormatPropertyToTerraform(struct!.recordFormat),
-    }
-}
-
-
-export function ccApplicationV2InputSchemaPropertyToHclTerraform(struct?: CcApplicationV2.InputSchemaProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        record_columns: {
-            value: cdktn.listMapperHcl(ccApplicationV2RecordColumnPropertyToHclTerraform, false)(struct!.recordColumns),
-            isBlock: true,
-            type: "list",
-            storageClassType: "RecordColumnPropertyList",
-        },
-        record_encoding: {
-            value: cdktn.stringToHclTerraform(struct!.recordEncoding),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-        record_format: {
-            value: ccApplicationV2RecordFormatPropertyToHclTerraform(struct!.recordFormat),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "RecordFormatProperty",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2KinesisFirehoseInputPropertyToTerraform(struct?: CcApplicationV2.KinesisFirehoseInputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
-    }
-}
-
-
-export function ccApplicationV2KinesisFirehoseInputPropertyToHclTerraform(struct?: CcApplicationV2.KinesisFirehoseInputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        resource_arn: {
-            value: cdktn.stringToHclTerraform(struct!.resourceArn),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2KinesisStreamsInputPropertyToTerraform(struct?: CcApplicationV2.KinesisStreamsInputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        resource_arn: cdktn.stringToTerraform(struct!.resourceArn),
-    }
-}
-
-
-export function ccApplicationV2KinesisStreamsInputPropertyToHclTerraform(struct?: CcApplicationV2.KinesisStreamsInputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        resource_arn: {
-            value: cdktn.stringToHclTerraform(struct!.resourceArn),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2InputPropertyToTerraform(struct?: CcApplicationV2.InputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        input_parallelism: ccApplicationV2InputParallelismPropertyToTerraform(struct!.inputParallelism),
-        input_processing_configuration: ccApplicationV2InputProcessingConfigurationPropertyToTerraform(struct!.inputProcessingConfiguration),
-        input_schema: ccApplicationV2InputSchemaPropertyToTerraform(struct!.inputSchema),
-        kinesis_firehose_input: ccApplicationV2KinesisFirehoseInputPropertyToTerraform(struct!.kinesisFirehoseInput),
-        kinesis_streams_input: ccApplicationV2KinesisStreamsInputPropertyToTerraform(struct!.kinesisStreamsInput),
-        name_prefix: cdktn.stringToTerraform(struct!.namePrefix),
-    }
-}
-
-
-export function ccApplicationV2InputPropertyToHclTerraform(struct?: CcApplicationV2.InputProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        input_parallelism: {
-            value: ccApplicationV2InputParallelismPropertyToHclTerraform(struct!.inputParallelism),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "InputParallelismProperty",
-        },
-        input_processing_configuration: {
-            value: ccApplicationV2InputProcessingConfigurationPropertyToHclTerraform(struct!.inputProcessingConfiguration),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "InputProcessingConfigurationProperty",
-        },
-        input_schema: {
-            value: ccApplicationV2InputSchemaPropertyToHclTerraform(struct!.inputSchema),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "InputSchemaProperty",
-        },
-        kinesis_firehose_input: {
-            value: ccApplicationV2KinesisFirehoseInputPropertyToHclTerraform(struct!.kinesisFirehoseInput),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "KinesisFirehoseInputProperty",
-        },
-        kinesis_streams_input: {
-            value: ccApplicationV2KinesisStreamsInputPropertyToHclTerraform(struct!.kinesisStreamsInput),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "KinesisStreamsInputProperty",
-        },
-        name_prefix: {
-            value: cdktn.stringToHclTerraform(struct!.namePrefix),
-            isBlock: false,
-            type: "simple",
-            storageClassType: "string",
-        },
-    };
-
-    // remove undefined attributes
-    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-
-export function ccApplicationV2SqlApplicationConfigurationPropertyToTerraform(struct?: CcApplicationV2.SqlApplicationConfigurationProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    return {
-        inputs: cdktn.listMapper(ccApplicationV2InputPropertyToTerraform, false)(struct!.inputs),
-    }
-}
-
-
-export function ccApplicationV2SqlApplicationConfigurationPropertyToHclTerraform(struct?: CcApplicationV2.SqlApplicationConfigurationProperty | cdktn.IResolvable): any {
-    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-    if (cdktn.isComplexElement(struct)) {
-        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-    }
-    const attrs = {
-        inputs: {
-            value: cdktn.listMapperHcl(ccApplicationV2InputPropertyToHclTerraform, false)(struct!.inputs),
-            isBlock: true,
-            type: "list",
-            storageClassType: "InputPropertyList",
         },
     };
 
@@ -1693,7 +1226,6 @@ export function ccApplicationV2ApplicationConfigurationPropertyToTerraform(struc
         application_system_rollback_configuration: ccApplicationV2ApplicationSystemRollbackConfigurationPropertyToTerraform(struct!.applicationSystemRollbackConfiguration),
         environment_properties: ccApplicationV2EnvironmentPropertiesPropertyToTerraform(struct!.environmentProperties),
         flink_application_configuration: ccApplicationV2FlinkApplicationConfigurationPropertyToTerraform(struct!.flinkApplicationConfiguration),
-        sql_application_configuration: ccApplicationV2SqlApplicationConfigurationPropertyToTerraform(struct!.sqlApplicationConfiguration),
         vpc_configurations: cdktn.listMapper(ccApplicationV2VpcConfigurationPropertyToTerraform, false)(struct!.vpcConfigurations),
         zeppelin_application_configuration: ccApplicationV2ZeppelinApplicationConfigurationPropertyToTerraform(struct!.zeppelinApplicationConfiguration),
     }
@@ -1741,12 +1273,6 @@ export function ccApplicationV2ApplicationConfigurationPropertyToHclTerraform(st
             isBlock: true,
             type: "struct",
             storageClassType: "FlinkApplicationConfigurationProperty",
-        },
-        sql_application_configuration: {
-            value: ccApplicationV2SqlApplicationConfigurationPropertyToHclTerraform(struct!.sqlApplicationConfiguration),
-            isBlock: true,
-            type: "struct",
-            storageClassType: "SqlApplicationConfigurationProperty",
         },
         vpc_configurations: {
             value: cdktn.listMapperHcl(ccApplicationV2VpcConfigurationPropertyToHclTerraform, false)(struct!.vpcConfigurations),
@@ -1804,6 +1330,7 @@ export function ccApplicationV2ApplicationRestoreConfigurationPropertyToTerrafor
     }
     return {
         application_restore_type: cdktn.stringToTerraform(struct!.applicationRestoreType),
+        snapshot_arn: cdktn.stringToTerraform(struct!.snapshotArn),
         snapshot_name: cdktn.stringToTerraform(struct!.snapshotName),
     }
 }
@@ -1817,6 +1344,12 @@ export function ccApplicationV2ApplicationRestoreConfigurationPropertyToHclTerra
     const attrs = {
         application_restore_type: {
             value: cdktn.stringToHclTerraform(struct!.applicationRestoreType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        snapshot_arn: {
+            value: cdktn.stringToHclTerraform(struct!.snapshotArn),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
@@ -1943,19 +1476,19 @@ export interface S3ContentLocationProperty {
     /**
     * The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The file key for the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
     */
     readonly fileKey?: string;
     /**
     * The version of the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
     */
     readonly objectVersion?: string;
 }
@@ -2065,19 +1598,19 @@ export interface CodeContentProperty {
     /**
     * Information about the Amazon S3 bucket that contains the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: S3ContentLocationProperty;
     /**
-    * The text-format code for a Flink-based Kinesis Data Analytics application.
+    * The text-format code for a Kinesis Data Analytics Studio notebook, as a Zeppelin note JSON object.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#text_content CcApplicationV2#text_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#text_content CcApplicationV2#text_content}
     */
     readonly textContent?: string;
     /**
     * The zip-format code for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#zip_file_content CcApplicationV2#zip_file_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#zip_file_content CcApplicationV2#zip_file_content}
     */
     readonly zipFileContent?: string;
 }
@@ -2187,13 +1720,13 @@ export interface ApplicationCodeConfigurationProperty {
     /**
     * The location and type of the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#code_content CcApplicationV2#code_content}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#code_content CcApplicationV2#code_content}
     */
     readonly codeContent?: CodeContentProperty;
     /**
     * Specifies whether the code content is in text or zip format.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#code_content_type CcApplicationV2#code_content_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#code_content_type CcApplicationV2#code_content_type}
     */
     readonly codeContentType?: string;
 }
@@ -2281,13 +1814,13 @@ export interface ApplicationEncryptionConfigurationProperty {
     /**
     * KMS KeyId. Can be either key uuid or full key arn or key alias arn or short key alias
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key_id CcApplicationV2#key_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#key_id CcApplicationV2#key_id}
     */
     readonly keyId?: string;
     /**
     * Specifies whether application data is encrypted using service key: AWS_OWNED_KEY or customer key: CUSTOMER_MANAGED_KEY
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key_type CcApplicationV2#key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#key_type CcApplicationV2#key_type}
     */
     readonly keyType?: string;
 }
@@ -2373,9 +1906,15 @@ export class ApplicationEncryptionConfigurationPropertyOutputReference extends c
 }
 export interface ApplicationSnapshotConfigurationProperty {
     /**
+    * The snapshot mode of a Flink-based Kinesis Data Analytics application. Changing from APPLICATION_SNAPSHOTS_LEGACY to ENHANCED_SNAPSHOTS is one-way; an application in ENHANCED_SNAPSHOTS mode cannot return to APPLICATION_SNAPSHOTS_LEGACY.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#snapshot_mode CcApplicationV2#snapshot_mode}
+    */
+    readonly snapshotMode?: string;
+    /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#snapshots_enabled CcApplicationV2#snapshots_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#snapshots_enabled CcApplicationV2#snapshots_enabled}
     */
     readonly snapshotsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2397,6 +1936,10 @@ export class ApplicationSnapshotConfigurationPropertyOutputReference extends cdk
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._snapshotMode !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.snapshotMode = this._snapshotMode;
+        }
         if (this._snapshotsEnabled !== undefined) {
             hasAnyValues = true;
             internalValueResult.snapshotsEnabled = this._snapshotsEnabled;
@@ -2408,6 +1951,7 @@ export class ApplicationSnapshotConfigurationPropertyOutputReference extends cdk
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._snapshotMode = undefined;
             this._snapshotsEnabled = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -2417,8 +1961,25 @@ export class ApplicationSnapshotConfigurationPropertyOutputReference extends cdk
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._snapshotMode = value.snapshotMode;
             this._snapshotsEnabled = value.snapshotsEnabled;
         }
+    }
+
+    // snapshot_mode - computed: true, optional: true, required: false
+    private _snapshotMode?: string; 
+    public get snapshotMode() {
+        return this.getStringAttribute('snapshot_mode');
+    }
+    public set snapshotMode(value: string) {
+        this._snapshotMode = value;
+    }
+    public resetSnapshotMode() {
+        this._snapshotMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get snapshotModeInput() {
+        return this._snapshotMode;
     }
 
     // snapshots_enabled - computed: true, optional: true, required: false
@@ -2441,7 +2002,7 @@ export interface ApplicationSystemRollbackConfigurationProperty {
     /**
     * Describes whether system initiated rollbacks are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#rollback_enabled CcApplicationV2#rollback_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#rollback_enabled CcApplicationV2#rollback_enabled}
     */
     readonly rollbackEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2507,13 +2068,13 @@ export interface PropertyGroupProperty {
     /**
     * Describes the key of an application execution property key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_group_id CcApplicationV2#property_group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#property_group_id CcApplicationV2#property_group_id}
     */
     readonly propertyGroupId?: string;
     /**
     * Describes the value of an application execution property key-value pair.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_map CcApplicationV2#property_map}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#property_map CcApplicationV2#property_map}
     */
     readonly propertyMap?: { [key: string]: string };
 }
@@ -2623,7 +2184,7 @@ export interface EnvironmentPropertiesProperty {
     /**
     * Describes the execution property groups.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#property_groups CcApplicationV2#property_groups}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#property_groups CcApplicationV2#property_groups}
     */
     readonly propertyGroups?: PropertyGroupProperty[] | cdktn.IResolvable;
 }
@@ -2689,25 +2250,25 @@ export interface CheckpointConfigurationProperty {
     /**
     * Describes the interval in milliseconds between checkpoint operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpoint_interval CcApplicationV2#checkpoint_interval}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#checkpoint_interval CcApplicationV2#checkpoint_interval}
     */
     readonly checkpointInterval?: number;
     /**
     * Describes whether checkpointing is enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpointing_enabled CcApplicationV2#checkpointing_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#checkpointing_enabled CcApplicationV2#checkpointing_enabled}
     */
     readonly checkpointingEnabled?: boolean | cdktn.IResolvable;
     /**
     * Describes whether the application uses Kinesis Data Analytics' default checkpointing behavior. You must set this property to `CUSTOM` in order to set the `CheckpointingEnabled`, `CheckpointInterval`, or `MinPauseBetweenCheckpoints` parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the minimum time in milliseconds after a checkpoint operation completes that a new checkpoint operation can start. If a checkpoint operation takes longer than the CheckpointInterval, the application otherwise performs continual checkpoint operations. For more information, see Tuning Checkpointing in the Apache Flink Documentation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#min_pause_between_checkpoints CcApplicationV2#min_pause_between_checkpoints}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#min_pause_between_checkpoints CcApplicationV2#min_pause_between_checkpoints}
     */
     readonly minPauseBetweenCheckpoints?: number;
 }
@@ -2839,19 +2400,19 @@ export interface MonitoringConfigurationProperty {
     /**
     * Describes whether to use the default CloudWatch logging configuration for an application. You must set this property to CUSTOM in order to set the LogLevel or MetricsLevel parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the verbosity of the CloudWatch Logs for an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
     */
     readonly logLevel?: string;
     /**
     * Describes the granularity of the CloudWatch Logs for an application. The Parallelism level is not recommended for applications with a Parallelism over 64 due to excessive costs.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#metrics_level CcApplicationV2#metrics_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#metrics_level CcApplicationV2#metrics_level}
     */
     readonly metricsLevel?: string;
 }
@@ -2961,25 +2522,25 @@ export interface ParallelismConfigurationProperty {
     /**
     * Describes whether the Kinesis Data Analytics service can increase the parallelism of the application in response to increased throughput.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#auto_scaling_enabled CcApplicationV2#auto_scaling_enabled}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#auto_scaling_enabled CcApplicationV2#auto_scaling_enabled}
     */
     readonly autoScalingEnabled?: boolean | cdktn.IResolvable;
     /**
     * Describes whether the application uses the default parallelism for the Kinesis Data Analytics service. You must set this property to `CUSTOM` in order to change your application's `AutoScalingEnabled`, `Parallelism`, or `ParallelismPerKPU` properties.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#configuration_type CcApplicationV2#configuration_type}
     */
     readonly configurationType?: string;
     /**
     * Describes the initial number of parallel tasks that a Java-based Kinesis Data Analytics application can perform. The Kinesis Data Analytics service can increase this number automatically if ParallelismConfiguration:AutoScalingEnabled is set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism CcApplicationV2#parallelism}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#parallelism CcApplicationV2#parallelism}
     */
     readonly parallelism?: number;
     /**
     * Describes the number of parallel tasks that a Java-based Kinesis Data Analytics application can perform per Kinesis Processing Unit (KPU) used by the application. For more information about KPUs, see Amazon Kinesis Data Analytics Pricing.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism_per_kpu CcApplicationV2#parallelism_per_kpu}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#parallelism_per_kpu CcApplicationV2#parallelism_per_kpu}
     */
     readonly parallelismPerKpu?: number;
 }
@@ -3111,19 +2672,19 @@ export interface FlinkApplicationConfigurationProperty {
     /**
     * Describes an application's checkpointing configuration. Checkpointing is the process of persisting application state for fault tolerance. For more information, see Checkpoints for Fault Tolerance in the Apache Flink Documentation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#checkpoint_configuration CcApplicationV2#checkpoint_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#checkpoint_configuration CcApplicationV2#checkpoint_configuration}
     */
     readonly checkpointConfiguration?: CheckpointConfigurationProperty;
     /**
     * Describes configuration parameters for Amazon CloudWatch logging for an application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
     */
     readonly monitoringConfiguration?: MonitoringConfigurationProperty;
     /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#parallelism_configuration CcApplicationV2#parallelism_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#parallelism_configuration CcApplicationV2#parallelism_configuration}
     */
     readonly parallelismConfiguration?: ParallelismConfigurationProperty;
 }
@@ -3229,1255 +2790,17 @@ export class FlinkApplicationConfigurationPropertyOutputReference extends cdktn.
         return this._parallelismConfiguration.internalValue;
     }
 }
-export interface InputParallelismProperty {
-    /**
-    * The number of in-application streams to create.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#count CcApplicationV2#count}
-    */
-    readonly count?: number;
-}
-export class InputParallelismPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): InputParallelismProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._count !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.count = this._count;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: InputParallelismProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._count = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._count = value.count;
-        }
-    }
-
-    // count - computed: true, optional: true, required: false
-    private _count?: number; 
-    public get count() {
-        return this.getNumberAttribute('count');
-    }
-    public set count(value: number) {
-        this._count = value;
-    }
-    public resetCount() {
-        this._count = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get countInput() {
-        return this._count;
-    }
-}
-export interface InputLambdaProcessorProperty {
-    /**
-    * The ARN of the Amazon Lambda function that operates on records in the stream.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
-    */
-    readonly resourceArn?: string;
-}
-export class InputLambdaProcessorPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): InputLambdaProcessorProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._resourceArn !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.resourceArn = this._resourceArn;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: InputLambdaProcessorProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._resourceArn = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._resourceArn = value.resourceArn;
-        }
-    }
-
-    // resource_arn - computed: true, optional: true, required: false
-    private _resourceArn?: string; 
-    public get resourceArn() {
-        return this.getStringAttribute('resource_arn');
-    }
-    public set resourceArn(value: string) {
-        this._resourceArn = value;
-    }
-    public resetResourceArn() {
-        this._resourceArn = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get resourceArnInput() {
-        return this._resourceArn;
-    }
-}
-export interface InputProcessingConfigurationProperty {
-    /**
-    * The InputLambdaProcessor that is used to preprocess the records in the stream before being processed by your application code.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_lambda_processor CcApplicationV2#input_lambda_processor}
-    */
-    readonly inputLambdaProcessor?: InputLambdaProcessorProperty;
-}
-export class InputProcessingConfigurationPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): InputProcessingConfigurationProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._inputLambdaProcessor?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.inputLambdaProcessor = this._inputLambdaProcessor?.internalValue;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: InputProcessingConfigurationProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._inputLambdaProcessor.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._inputLambdaProcessor.internalValue = value.inputLambdaProcessor;
-        }
-    }
-
-    // input_lambda_processor - computed: true, optional: true, required: false
-    private _inputLambdaProcessor = new InputLambdaProcessorPropertyOutputReference(this, "input_lambda_processor");
-    public get inputLambdaProcessor() {
-        return this._inputLambdaProcessor;
-    }
-    public putInputLambdaProcessor(value: InputLambdaProcessorProperty) {
-        this._inputLambdaProcessor.internalValue = value;
-    }
-    public resetInputLambdaProcessor() {
-        this._inputLambdaProcessor.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get inputLambdaProcessorInput() {
-        return this._inputLambdaProcessor.internalValue;
-    }
-}
-export interface RecordColumnProperty {
-    /**
-    * A reference to the data element in the streaming input or the reference data source.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#mapping CcApplicationV2#mapping}
-    */
-    readonly mapping?: string;
-    /**
-    * The name of the column that is created in the in-application input stream or reference table.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#name CcApplicationV2#name}
-    */
-    readonly name?: string;
-    /**
-    * The type of column created in the in-application input stream or reference table.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#sql_type CcApplicationV2#sql_type}
-    */
-    readonly sqlType?: string;
-}
-export class RecordColumnPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    * @param complexObjectIndex the index of this item in the list
-    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-    }
-
-    public get internalValue(): RecordColumnProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._mapping !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.mapping = this._mapping;
-        }
-        if (this._name !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.name = this._name;
-        }
-        if (this._sqlType !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.sqlType = this._sqlType;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: RecordColumnProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._mapping = undefined;
-            this._name = undefined;
-            this._sqlType = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._mapping = value.mapping;
-            this._name = value.name;
-            this._sqlType = value.sqlType;
-        }
-    }
-
-    // mapping - computed: true, optional: true, required: false
-    private _mapping?: string; 
-    public get mapping() {
-        return this.getStringAttribute('mapping');
-    }
-    public set mapping(value: string) {
-        this._mapping = value;
-    }
-    public resetMapping() {
-        this._mapping = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get mappingInput() {
-        return this._mapping;
-    }
-
-    // name - computed: true, optional: true, required: false
-    private _name?: string; 
-    public get name() {
-        return this.getStringAttribute('name');
-    }
-    public set name(value: string) {
-        this._name = value;
-    }
-    public resetName() {
-        this._name = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get nameInput() {
-        return this._name;
-    }
-
-    // sql_type - computed: true, optional: true, required: false
-    private _sqlType?: string; 
-    public get sqlType() {
-        return this.getStringAttribute('sql_type');
-    }
-    public set sqlType(value: string) {
-        this._sqlType = value;
-    }
-    public resetSqlType() {
-        this._sqlType = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get sqlTypeInput() {
-        return this._sqlType;
-    }
-}
-
-export class RecordColumnPropertyList extends cdktn.ComplexList {
-    public internalValue? : RecordColumnProperty[] | cdktn.IResolvable
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-    */
-    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-        super(terraformResource, terraformAttribute, wrapsSet);
-    }
-
-    /**
-    * @param index the index of the item to return
-    */
-    public get(index: number): RecordColumnPropertyOutputReference {
-        return new RecordColumnPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-    }
-}
-export interface CSVMappingParametersProperty {
-    /**
-    * The column delimiter. For example, in a CSV format, a comma (",") is the typical column delimiter.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_column_delimiter CcApplicationV2#record_column_delimiter}
-    */
-    readonly recordColumnDelimiter?: string;
-    /**
-    * The row delimiter. For example, in a CSV format, '\n' is the typical row delimiter.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_row_delimiter CcApplicationV2#record_row_delimiter}
-    */
-    readonly recordRowDelimiter?: string;
-}
-export class CSVMappingParametersPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): CSVMappingParametersProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._recordColumnDelimiter !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordColumnDelimiter = this._recordColumnDelimiter;
-        }
-        if (this._recordRowDelimiter !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordRowDelimiter = this._recordRowDelimiter;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: CSVMappingParametersProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._recordColumnDelimiter = undefined;
-            this._recordRowDelimiter = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._recordColumnDelimiter = value.recordColumnDelimiter;
-            this._recordRowDelimiter = value.recordRowDelimiter;
-        }
-    }
-
-    // record_column_delimiter - computed: true, optional: true, required: false
-    private _recordColumnDelimiter?: string; 
-    public get recordColumnDelimiter() {
-        return this.getStringAttribute('record_column_delimiter');
-    }
-    public set recordColumnDelimiter(value: string) {
-        this._recordColumnDelimiter = value;
-    }
-    public resetRecordColumnDelimiter() {
-        this._recordColumnDelimiter = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordColumnDelimiterInput() {
-        return this._recordColumnDelimiter;
-    }
-
-    // record_row_delimiter - computed: true, optional: true, required: false
-    private _recordRowDelimiter?: string; 
-    public get recordRowDelimiter() {
-        return this.getStringAttribute('record_row_delimiter');
-    }
-    public set recordRowDelimiter(value: string) {
-        this._recordRowDelimiter = value;
-    }
-    public resetRecordRowDelimiter() {
-        this._recordRowDelimiter = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordRowDelimiterInput() {
-        return this._recordRowDelimiter;
-    }
-}
-export interface JSONMappingParametersProperty {
-    /**
-    * The path to the top-level parent that contains the records.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_row_path CcApplicationV2#record_row_path}
-    */
-    readonly recordRowPath?: string;
-}
-export class JSONMappingParametersPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): JSONMappingParametersProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._recordRowPath !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordRowPath = this._recordRowPath;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: JSONMappingParametersProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._recordRowPath = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._recordRowPath = value.recordRowPath;
-        }
-    }
-
-    // record_row_path - computed: true, optional: true, required: false
-    private _recordRowPath?: string; 
-    public get recordRowPath() {
-        return this.getStringAttribute('record_row_path');
-    }
-    public set recordRowPath(value: string) {
-        this._recordRowPath = value;
-    }
-    public resetRecordRowPath() {
-        this._recordRowPath = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordRowPathInput() {
-        return this._recordRowPath;
-    }
-}
-export interface MappingParametersProperty {
-    /**
-    * Provides additional mapping information when the record format uses delimiters (for example, CSV).
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#csv_mapping_parameters CcApplicationV2#csv_mapping_parameters}
-    */
-    readonly csvMappingParameters?: CSVMappingParametersProperty;
-    /**
-    * Provides additional mapping information when JSON is the record format on the streaming source.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#json_mapping_parameters CcApplicationV2#json_mapping_parameters}
-    */
-    readonly jsonMappingParameters?: JSONMappingParametersProperty;
-}
-export class MappingParametersPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): MappingParametersProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._csvMappingParameters?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.csvMappingParameters = this._csvMappingParameters?.internalValue;
-        }
-        if (this._jsonMappingParameters?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.jsonMappingParameters = this._jsonMappingParameters?.internalValue;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: MappingParametersProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._csvMappingParameters.internalValue = undefined;
-            this._jsonMappingParameters.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._csvMappingParameters.internalValue = value.csvMappingParameters;
-            this._jsonMappingParameters.internalValue = value.jsonMappingParameters;
-        }
-    }
-
-    // csv_mapping_parameters - computed: true, optional: true, required: false
-    private _csvMappingParameters = new CSVMappingParametersPropertyOutputReference(this, "csv_mapping_parameters");
-    public get csvMappingParameters() {
-        return this._csvMappingParameters;
-    }
-    public putCsvMappingParameters(value: CSVMappingParametersProperty) {
-        this._csvMappingParameters.internalValue = value;
-    }
-    public resetCsvMappingParameters() {
-        this._csvMappingParameters.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get csvMappingParametersInput() {
-        return this._csvMappingParameters.internalValue;
-    }
-
-    // json_mapping_parameters - computed: true, optional: true, required: false
-    private _jsonMappingParameters = new JSONMappingParametersPropertyOutputReference(this, "json_mapping_parameters");
-    public get jsonMappingParameters() {
-        return this._jsonMappingParameters;
-    }
-    public putJsonMappingParameters(value: JSONMappingParametersProperty) {
-        this._jsonMappingParameters.internalValue = value;
-    }
-    public resetJsonMappingParameters() {
-        this._jsonMappingParameters.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get jsonMappingParametersInput() {
-        return this._jsonMappingParameters.internalValue;
-    }
-}
-export interface RecordFormatProperty {
-    /**
-    * When you configure application input at the time of creating or updating an application, provides additional mapping information specific to the record format (such as JSON, CSV, or record fields delimited by some delimiter) on the streaming source.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#mapping_parameters CcApplicationV2#mapping_parameters}
-    */
-    readonly mappingParameters?: MappingParametersProperty;
-    /**
-    * The type of record format.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_format_type CcApplicationV2#record_format_type}
-    */
-    readonly recordFormatType?: string;
-}
-export class RecordFormatPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): RecordFormatProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._mappingParameters?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.mappingParameters = this._mappingParameters?.internalValue;
-        }
-        if (this._recordFormatType !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordFormatType = this._recordFormatType;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: RecordFormatProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._mappingParameters.internalValue = undefined;
-            this._recordFormatType = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._mappingParameters.internalValue = value.mappingParameters;
-            this._recordFormatType = value.recordFormatType;
-        }
-    }
-
-    // mapping_parameters - computed: true, optional: true, required: false
-    private _mappingParameters = new MappingParametersPropertyOutputReference(this, "mapping_parameters");
-    public get mappingParameters() {
-        return this._mappingParameters;
-    }
-    public putMappingParameters(value: MappingParametersProperty) {
-        this._mappingParameters.internalValue = value;
-    }
-    public resetMappingParameters() {
-        this._mappingParameters.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get mappingParametersInput() {
-        return this._mappingParameters.internalValue;
-    }
-
-    // record_format_type - computed: true, optional: true, required: false
-    private _recordFormatType?: string; 
-    public get recordFormatType() {
-        return this.getStringAttribute('record_format_type');
-    }
-    public set recordFormatType(value: string) {
-        this._recordFormatType = value;
-    }
-    public resetRecordFormatType() {
-        this._recordFormatType = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordFormatTypeInput() {
-        return this._recordFormatType;
-    }
-}
-export interface InputSchemaProperty {
-    /**
-    * A list of `RecordColumn` objects.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_columns CcApplicationV2#record_columns}
-    */
-    readonly recordColumns?: RecordColumnProperty[] | cdktn.IResolvable;
-    /**
-    * Specifies the encoding of the records in the streaming source. For example, UTF-8.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_encoding CcApplicationV2#record_encoding}
-    */
-    readonly recordEncoding?: string;
-    /**
-    * Specifies the format of the records on the streaming source.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#record_format CcApplicationV2#record_format}
-    */
-    readonly recordFormat?: RecordFormatProperty;
-}
-export class InputSchemaPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): InputSchemaProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._recordColumns?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordColumns = this._recordColumns?.internalValue;
-        }
-        if (this._recordEncoding !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordEncoding = this._recordEncoding;
-        }
-        if (this._recordFormat?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.recordFormat = this._recordFormat?.internalValue;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: InputSchemaProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._recordColumns.internalValue = undefined;
-            this._recordEncoding = undefined;
-            this._recordFormat.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._recordColumns.internalValue = value.recordColumns;
-            this._recordEncoding = value.recordEncoding;
-            this._recordFormat.internalValue = value.recordFormat;
-        }
-    }
-
-    // record_columns - computed: true, optional: true, required: false
-    private _recordColumns = new RecordColumnPropertyList(this, "record_columns", false);
-    public get recordColumns() {
-        return this._recordColumns;
-    }
-    public putRecordColumns(value: RecordColumnProperty[] | cdktn.IResolvable) {
-        this._recordColumns.internalValue = value;
-    }
-    public resetRecordColumns() {
-        this._recordColumns.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordColumnsInput() {
-        return this._recordColumns.internalValue;
-    }
-
-    // record_encoding - computed: true, optional: true, required: false
-    private _recordEncoding?: string; 
-    public get recordEncoding() {
-        return this.getStringAttribute('record_encoding');
-    }
-    public set recordEncoding(value: string) {
-        this._recordEncoding = value;
-    }
-    public resetRecordEncoding() {
-        this._recordEncoding = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordEncodingInput() {
-        return this._recordEncoding;
-    }
-
-    // record_format - computed: true, optional: true, required: false
-    private _recordFormat = new RecordFormatPropertyOutputReference(this, "record_format");
-    public get recordFormat() {
-        return this._recordFormat;
-    }
-    public putRecordFormat(value: RecordFormatProperty) {
-        this._recordFormat.internalValue = value;
-    }
-    public resetRecordFormat() {
-        this._recordFormat.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get recordFormatInput() {
-        return this._recordFormat.internalValue;
-    }
-}
-export interface KinesisFirehoseInputProperty {
-    /**
-    * The Amazon Resource Name (ARN) of the delivery stream.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
-    */
-    readonly resourceArn?: string;
-}
-export class KinesisFirehoseInputPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): KinesisFirehoseInputProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._resourceArn !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.resourceArn = this._resourceArn;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: KinesisFirehoseInputProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._resourceArn = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._resourceArn = value.resourceArn;
-        }
-    }
-
-    // resource_arn - computed: true, optional: true, required: false
-    private _resourceArn?: string; 
-    public get resourceArn() {
-        return this.getStringAttribute('resource_arn');
-    }
-    public set resourceArn(value: string) {
-        this._resourceArn = value;
-    }
-    public resetResourceArn() {
-        this._resourceArn = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get resourceArnInput() {
-        return this._resourceArn;
-    }
-}
-export interface KinesisStreamsInputProperty {
-    /**
-    * The ARN of the input Kinesis data stream to read.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#resource_arn CcApplicationV2#resource_arn}
-    */
-    readonly resourceArn?: string;
-}
-export class KinesisStreamsInputPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): KinesisStreamsInputProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._resourceArn !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.resourceArn = this._resourceArn;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: KinesisStreamsInputProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._resourceArn = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._resourceArn = value.resourceArn;
-        }
-    }
-
-    // resource_arn - computed: true, optional: true, required: false
-    private _resourceArn?: string; 
-    public get resourceArn() {
-        return this.getStringAttribute('resource_arn');
-    }
-    public set resourceArn(value: string) {
-        this._resourceArn = value;
-    }
-    public resetResourceArn() {
-        this._resourceArn = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get resourceArnInput() {
-        return this._resourceArn;
-    }
-}
-export interface InputProperty {
-    /**
-    * Describes the number of in-application streams to create.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_parallelism CcApplicationV2#input_parallelism}
-    */
-    readonly inputParallelism?: InputParallelismProperty;
-    /**
-    * The InputProcessingConfiguration for the input. An input processor transforms records as they are received from the stream, before the application's SQL code executes. Currently, the only input processing configuration available is InputLambdaProcessor.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_processing_configuration CcApplicationV2#input_processing_configuration}
-    */
-    readonly inputProcessingConfiguration?: InputProcessingConfigurationProperty;
-    /**
-    * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#input_schema CcApplicationV2#input_schema}
-    */
-    readonly inputSchema?: InputSchemaProperty;
-    /**
-    * If the streaming source is an Amazon Kinesis Data Firehose delivery stream, identifies the delivery stream's ARN.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#kinesis_firehose_input CcApplicationV2#kinesis_firehose_input}
-    */
-    readonly kinesisFirehoseInput?: KinesisFirehoseInputProperty;
-    /**
-    * If the streaming source is an Amazon Kinesis data stream, identifies the stream's Amazon Resource Name (ARN).
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#kinesis_streams_input CcApplicationV2#kinesis_streams_input}
-    */
-    readonly kinesisStreamsInput?: KinesisStreamsInputProperty;
-    /**
-    * The name prefix to use when creating an in-application stream. Suppose that you specify a prefix `"MyInApplicationStream"`. Kinesis Data Analytics then creates one or more (as per the InputParallelism count you specified) in-application streams with the names `"MyInApplicationStream_001"`, `"MyInApplicationStream_002"`, and so on.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#name_prefix CcApplicationV2#name_prefix}
-    */
-    readonly namePrefix?: string;
-}
-export class InputPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    * @param complexObjectIndex the index of this item in the list
-    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-    }
-
-    public get internalValue(): InputProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._inputParallelism?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.inputParallelism = this._inputParallelism?.internalValue;
-        }
-        if (this._inputProcessingConfiguration?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.inputProcessingConfiguration = this._inputProcessingConfiguration?.internalValue;
-        }
-        if (this._inputSchema?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.inputSchema = this._inputSchema?.internalValue;
-        }
-        if (this._kinesisFirehoseInput?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.kinesisFirehoseInput = this._kinesisFirehoseInput?.internalValue;
-        }
-        if (this._kinesisStreamsInput?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.kinesisStreamsInput = this._kinesisStreamsInput?.internalValue;
-        }
-        if (this._namePrefix !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.namePrefix = this._namePrefix;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: InputProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._inputParallelism.internalValue = undefined;
-            this._inputProcessingConfiguration.internalValue = undefined;
-            this._inputSchema.internalValue = undefined;
-            this._kinesisFirehoseInput.internalValue = undefined;
-            this._kinesisStreamsInput.internalValue = undefined;
-            this._namePrefix = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._inputParallelism.internalValue = value.inputParallelism;
-            this._inputProcessingConfiguration.internalValue = value.inputProcessingConfiguration;
-            this._inputSchema.internalValue = value.inputSchema;
-            this._kinesisFirehoseInput.internalValue = value.kinesisFirehoseInput;
-            this._kinesisStreamsInput.internalValue = value.kinesisStreamsInput;
-            this._namePrefix = value.namePrefix;
-        }
-    }
-
-    // input_parallelism - computed: true, optional: true, required: false
-    private _inputParallelism = new InputParallelismPropertyOutputReference(this, "input_parallelism");
-    public get inputParallelism() {
-        return this._inputParallelism;
-    }
-    public putInputParallelism(value: InputParallelismProperty) {
-        this._inputParallelism.internalValue = value;
-    }
-    public resetInputParallelism() {
-        this._inputParallelism.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get inputParallelismInput() {
-        return this._inputParallelism.internalValue;
-    }
-
-    // input_processing_configuration - computed: true, optional: true, required: false
-    private _inputProcessingConfiguration = new InputProcessingConfigurationPropertyOutputReference(this, "input_processing_configuration");
-    public get inputProcessingConfiguration() {
-        return this._inputProcessingConfiguration;
-    }
-    public putInputProcessingConfiguration(value: InputProcessingConfigurationProperty) {
-        this._inputProcessingConfiguration.internalValue = value;
-    }
-    public resetInputProcessingConfiguration() {
-        this._inputProcessingConfiguration.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get inputProcessingConfigurationInput() {
-        return this._inputProcessingConfiguration.internalValue;
-    }
-
-    // input_schema - computed: true, optional: true, required: false
-    private _inputSchema = new InputSchemaPropertyOutputReference(this, "input_schema");
-    public get inputSchema() {
-        return this._inputSchema;
-    }
-    public putInputSchema(value: InputSchemaProperty) {
-        this._inputSchema.internalValue = value;
-    }
-    public resetInputSchema() {
-        this._inputSchema.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get inputSchemaInput() {
-        return this._inputSchema.internalValue;
-    }
-
-    // kinesis_firehose_input - computed: true, optional: true, required: false
-    private _kinesisFirehoseInput = new KinesisFirehoseInputPropertyOutputReference(this, "kinesis_firehose_input");
-    public get kinesisFirehoseInput() {
-        return this._kinesisFirehoseInput;
-    }
-    public putKinesisFirehoseInput(value: KinesisFirehoseInputProperty) {
-        this._kinesisFirehoseInput.internalValue = value;
-    }
-    public resetKinesisFirehoseInput() {
-        this._kinesisFirehoseInput.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get kinesisFirehoseInputInput() {
-        return this._kinesisFirehoseInput.internalValue;
-    }
-
-    // kinesis_streams_input - computed: true, optional: true, required: false
-    private _kinesisStreamsInput = new KinesisStreamsInputPropertyOutputReference(this, "kinesis_streams_input");
-    public get kinesisStreamsInput() {
-        return this._kinesisStreamsInput;
-    }
-    public putKinesisStreamsInput(value: KinesisStreamsInputProperty) {
-        this._kinesisStreamsInput.internalValue = value;
-    }
-    public resetKinesisStreamsInput() {
-        this._kinesisStreamsInput.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get kinesisStreamsInputInput() {
-        return this._kinesisStreamsInput.internalValue;
-    }
-
-    // name_prefix - computed: true, optional: true, required: false
-    private _namePrefix?: string; 
-    public get namePrefix() {
-        return this.getStringAttribute('name_prefix');
-    }
-    public set namePrefix(value: string) {
-        this._namePrefix = value;
-    }
-    public resetNamePrefix() {
-        this._namePrefix = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get namePrefixInput() {
-        return this._namePrefix;
-    }
-}
-
-export class InputPropertyList extends cdktn.ComplexList {
-    public internalValue? : InputProperty[] | cdktn.IResolvable
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-    */
-    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-        super(terraformResource, terraformAttribute, wrapsSet);
-    }
-
-    /**
-    * @param index the index of the item to return
-    */
-    public get(index: number): InputPropertyOutputReference {
-        return new InputPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-    }
-}
-export interface SqlApplicationConfigurationProperty {
-    /**
-    * The array of Input objects describing the input streams used by the application.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#inputs CcApplicationV2#inputs}
-    */
-    readonly inputs?: InputProperty[] | cdktn.IResolvable;
-}
-export class SqlApplicationConfigurationPropertyOutputReference extends cdktn.ComplexObject {
-    private isEmptyObject = false;
-    private resolvableValue?: cdktn.IResolvable;
-
-    /**
-    * @param terraformResource The parent resource
-    * @param terraformAttribute The attribute on the parent resource this class is referencing
-    */
-    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-        super(terraformResource, terraformAttribute, false);
-    }
-
-    public get internalValue(): SqlApplicationConfigurationProperty | cdktn.IResolvable | undefined {
-        if (this.resolvableValue) {
-            return this.resolvableValue;
-        }
-        let hasAnyValues = this.isEmptyObject;
-        const internalValueResult: any = {};
-        if (this._inputs?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.inputs = this._inputs?.internalValue;
-        }
-        return hasAnyValues ? internalValueResult : undefined;
-    }
-
-    public set internalValue(value: SqlApplicationConfigurationProperty | cdktn.IResolvable | undefined) {
-        if (value === undefined) {
-            this.isEmptyObject = false;
-            this.resolvableValue = undefined;
-            this._inputs.internalValue = undefined;
-        }
-        else if (cdktn.Tokenization.isResolvable(value)) {
-            this.isEmptyObject = false;
-            this.resolvableValue = value;
-        }
-        else {
-            this.isEmptyObject = Object.keys(value).length === 0;
-            this.resolvableValue = undefined;
-            this._inputs.internalValue = value.inputs;
-        }
-    }
-
-    // inputs - computed: true, optional: true, required: false
-    private _inputs = new InputPropertyList(this, "inputs", false);
-    public get inputs() {
-        return this._inputs;
-    }
-    public putInputs(value: InputProperty[] | cdktn.IResolvable) {
-        this._inputs.internalValue = value;
-    }
-    public resetInputs() {
-        this._inputs.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get inputsInput() {
-        return this._inputs.internalValue;
-    }
-}
 export interface VpcConfigurationProperty {
     /**
     * The array of SecurityGroup IDs used by the VPC configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#security_group_ids CcApplicationV2#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#security_group_ids CcApplicationV2#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
     * The array of Subnet IDs used by the VPC configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#subnet_ids CcApplicationV2#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#subnet_ids CcApplicationV2#subnet_ids}
     */
     readonly subnetIds?: string[];
 }
@@ -4587,7 +2910,7 @@ export interface GlueDataCatalogConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the database.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#database_arn CcApplicationV2#database_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#database_arn CcApplicationV2#database_arn}
     */
     readonly databaseArn?: string;
 }
@@ -4653,7 +2976,7 @@ export interface CatalogConfigurationProperty {
     /**
     * The configuration parameters for the default Amazon Glue database. You use this database for Apache Flink SQL queries and table API transforms that you write in a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#glue_data_catalog_configuration CcApplicationV2#glue_data_catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#glue_data_catalog_configuration CcApplicationV2#glue_data_catalog_configuration}
     */
     readonly glueDataCatalogConfiguration?: GlueDataCatalogConfigurationProperty;
 }
@@ -4719,19 +3042,19 @@ export interface MavenReferenceProperty {
     /**
     * The artifact ID of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#artifact_id CcApplicationV2#artifact_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#artifact_id CcApplicationV2#artifact_id}
     */
     readonly artifactId?: string;
     /**
     * The group ID of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#group_id CcApplicationV2#group_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#group_id CcApplicationV2#group_id}
     */
     readonly groupId?: string;
     /**
     * The version of the Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#version CcApplicationV2#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#version CcApplicationV2#version}
     */
     readonly version?: string;
 }
@@ -4841,19 +3164,19 @@ export interface ApplicationConfigurationZeppelinApplicationConfigurationCustomA
     /**
     * The Amazon Resource Name (ARN) for the S3 bucket containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
     /**
     * The file key for the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#file_key CcApplicationV2#file_key}
     */
     readonly fileKey?: string;
     /**
     * The version of the object containing the application code.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#object_version CcApplicationV2#object_version}
     */
     readonly objectVersion?: string;
 }
@@ -4963,19 +3286,19 @@ export interface CustomArtifactConfigurationProperty {
     /**
     * Set this to either `UDF` or `DEPENDENCY_JAR`. `UDF` stands for user-defined functions. This type of artifact must be in an S3 bucket. A `DEPENDENCY_JAR` can be in either Maven or an S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#artifact_type CcApplicationV2#artifact_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#artifact_type CcApplicationV2#artifact_type}
     */
     readonly artifactType?: string;
     /**
     * The parameters required to fully specify a Maven reference.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#maven_reference CcApplicationV2#maven_reference}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#maven_reference CcApplicationV2#maven_reference}
     */
     readonly mavenReference?: MavenReferenceProperty;
     /**
     * The location of the custom artifacts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: ApplicationConfigurationZeppelinApplicationConfigurationCustomArtifactsConfigurationS3ContentLocationProperty;
 }
@@ -5107,13 +3430,13 @@ export interface S3ContentBaseLocationProperty {
     /**
     * The base path for the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#base_path CcApplicationV2#base_path}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#base_path CcApplicationV2#base_path}
     */
     readonly basePath?: string;
     /**
     * The Amazon Resource Name (ARN) of the S3 bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#bucket_arn CcApplicationV2#bucket_arn}
     */
     readonly bucketArn?: string;
 }
@@ -5201,7 +3524,7 @@ export interface DeployAsApplicationConfigurationProperty {
     /**
     * The description of an Amazon S3 object that contains the Amazon Data Analytics application, including the Amazon Resource Name (ARN) of the S3 bucket, the name of the Amazon S3 object that contains the data, and the version number of the Amazon S3 object that contains the data.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#s3_content_location CcApplicationV2#s3_content_location}
     */
     readonly s3ContentLocation?: S3ContentBaseLocationProperty;
 }
@@ -5267,7 +3590,7 @@ export interface ZeppelinMonitoringConfigurationProperty {
     /**
     * The verbosity of the CloudWatch Logs for an application. You can set it to `INFO`, `WARN`, `ERROR`, or `DEBUG`.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#log_level CcApplicationV2#log_level}
     */
     readonly logLevel?: string;
 }
@@ -5333,25 +3656,25 @@ export interface ZeppelinApplicationConfigurationProperty {
     /**
     * The Amazon Glue Data Catalog that you use in queries in a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#catalog_configuration CcApplicationV2#catalog_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#catalog_configuration CcApplicationV2#catalog_configuration}
     */
     readonly catalogConfiguration?: CatalogConfigurationProperty;
     /**
     * A list of CustomArtifactConfiguration objects.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#custom_artifacts_configuration CcApplicationV2#custom_artifacts_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#custom_artifacts_configuration CcApplicationV2#custom_artifacts_configuration}
     */
     readonly customArtifactsConfiguration?: CustomArtifactConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The information required to deploy a Kinesis Data Analytics Studio notebook as an application with durable state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#deploy_as_application_configuration CcApplicationV2#deploy_as_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#deploy_as_application_configuration CcApplicationV2#deploy_as_application_configuration}
     */
     readonly deployAsApplicationConfiguration?: DeployAsApplicationConfigurationProperty;
     /**
     * The monitoring configuration of a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#monitoring_configuration CcApplicationV2#monitoring_configuration}
     */
     readonly monitoringConfiguration?: ZeppelinMonitoringConfigurationProperty;
 }
@@ -5483,55 +3806,49 @@ export interface ApplicationConfigurationProperty {
     /**
     * The code location and type parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_code_configuration CcApplicationV2#application_code_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_code_configuration CcApplicationV2#application_code_configuration}
     */
     readonly applicationCodeConfiguration?: ApplicationCodeConfigurationProperty;
     /**
     * Describes whether customer managed key is enabled and key details for customer data encryption
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_encryption_configuration CcApplicationV2#application_encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_encryption_configuration CcApplicationV2#application_encryption_configuration}
     */
     readonly applicationEncryptionConfiguration?: ApplicationEncryptionConfigurationProperty;
     /**
     * Describes whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_snapshot_configuration CcApplicationV2#application_snapshot_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_snapshot_configuration CcApplicationV2#application_snapshot_configuration}
     */
     readonly applicationSnapshotConfiguration?: ApplicationSnapshotConfigurationProperty;
     /**
     * Describes whether system initiated rollbacks are enabled for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_system_rollback_configuration CcApplicationV2#application_system_rollback_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_system_rollback_configuration CcApplicationV2#application_system_rollback_configuration}
     */
     readonly applicationSystemRollbackConfiguration?: ApplicationSystemRollbackConfigurationProperty;
     /**
     * Describes execution properties for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#environment_properties CcApplicationV2#environment_properties}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#environment_properties CcApplicationV2#environment_properties}
     */
     readonly environmentProperties?: EnvironmentPropertiesProperty;
     /**
     * The creation and update parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#flink_application_configuration CcApplicationV2#flink_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#flink_application_configuration CcApplicationV2#flink_application_configuration}
     */
     readonly flinkApplicationConfiguration?: FlinkApplicationConfigurationProperty;
     /**
-    * The creation and update parameters for a SQL-based Kinesis Data Analytics application.
-    *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#sql_application_configuration CcApplicationV2#sql_application_configuration}
-    */
-    readonly sqlApplicationConfiguration?: SqlApplicationConfigurationProperty;
-    /**
     * The array of descriptions of VPC configurations available to the application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#vpc_configurations CcApplicationV2#vpc_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#vpc_configurations CcApplicationV2#vpc_configurations}
     */
     readonly vpcConfigurations?: VpcConfigurationProperty[] | cdktn.IResolvable;
     /**
     * The configuration parameters for a Kinesis Data Analytics Studio notebook.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#zeppelin_application_configuration CcApplicationV2#zeppelin_application_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#zeppelin_application_configuration CcApplicationV2#zeppelin_application_configuration}
     */
     readonly zeppelinApplicationConfiguration?: ZeppelinApplicationConfigurationProperty;
 }
@@ -5577,10 +3894,6 @@ export class ApplicationConfigurationPropertyOutputReference extends cdktn.Compl
             hasAnyValues = true;
             internalValueResult.flinkApplicationConfiguration = this._flinkApplicationConfiguration?.internalValue;
         }
-        if (this._sqlApplicationConfiguration?.internalValue !== undefined) {
-            hasAnyValues = true;
-            internalValueResult.sqlApplicationConfiguration = this._sqlApplicationConfiguration?.internalValue;
-        }
         if (this._vpcConfigurations?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.vpcConfigurations = this._vpcConfigurations?.internalValue;
@@ -5602,7 +3915,6 @@ export class ApplicationConfigurationPropertyOutputReference extends cdktn.Compl
             this._applicationSystemRollbackConfiguration.internalValue = undefined;
             this._environmentProperties.internalValue = undefined;
             this._flinkApplicationConfiguration.internalValue = undefined;
-            this._sqlApplicationConfiguration.internalValue = undefined;
             this._vpcConfigurations.internalValue = undefined;
             this._zeppelinApplicationConfiguration.internalValue = undefined;
         }
@@ -5619,7 +3931,6 @@ export class ApplicationConfigurationPropertyOutputReference extends cdktn.Compl
             this._applicationSystemRollbackConfiguration.internalValue = value.applicationSystemRollbackConfiguration;
             this._environmentProperties.internalValue = value.environmentProperties;
             this._flinkApplicationConfiguration.internalValue = value.flinkApplicationConfiguration;
-            this._sqlApplicationConfiguration.internalValue = value.sqlApplicationConfiguration;
             this._vpcConfigurations.internalValue = value.vpcConfigurations;
             this._zeppelinApplicationConfiguration.internalValue = value.zeppelinApplicationConfiguration;
         }
@@ -5721,22 +4032,6 @@ export class ApplicationConfigurationPropertyOutputReference extends cdktn.Compl
         return this._flinkApplicationConfiguration.internalValue;
     }
 
-    // sql_application_configuration - computed: true, optional: true, required: false
-    private _sqlApplicationConfiguration = new SqlApplicationConfigurationPropertyOutputReference(this, "sql_application_configuration");
-    public get sqlApplicationConfiguration() {
-        return this._sqlApplicationConfiguration;
-    }
-    public putSqlApplicationConfiguration(value: SqlApplicationConfigurationProperty) {
-        this._sqlApplicationConfiguration.internalValue = value;
-    }
-    public resetSqlApplicationConfiguration() {
-        this._sqlApplicationConfiguration.internalValue = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get sqlApplicationConfigurationInput() {
-        return this._sqlApplicationConfiguration.internalValue;
-    }
-
     // vpc_configurations - computed: true, optional: true, required: false
     private _vpcConfigurations = new VpcConfigurationPropertyList(this, "vpc_configurations", false);
     public get vpcConfigurations() {
@@ -5773,7 +4068,7 @@ export interface ApplicationMaintenanceConfigurationProperty {
     /**
     * The start time for the maintenance window.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_window_start_time CcApplicationV2#application_maintenance_window_start_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_maintenance_window_start_time CcApplicationV2#application_maintenance_window_start_time}
     */
     readonly applicationMaintenanceWindowStartTime?: string;
 }
@@ -5839,13 +4134,19 @@ export interface ApplicationRestoreConfigurationProperty {
     /**
     * Specifies how the application should be restored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_restore_type CcApplicationV2#application_restore_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_restore_type CcApplicationV2#application_restore_type}
     */
     readonly applicationRestoreType?: string;
     /**
-    * The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for the ApplicationRestoreType.
+    * The ARN of an existing snapshot to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for the ApplicationRestoreType. Specify either SnapshotName or SnapshotArn, not both.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#snapshot_name CcApplicationV2#snapshot_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#snapshot_arn CcApplicationV2#snapshot_arn}
+    */
+    readonly snapshotArn?: string;
+    /**
+    * The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if RESTORE_FROM_CUSTOM_SNAPSHOT is specified for the ApplicationRestoreType. Specify either SnapshotName or SnapshotArn, not both.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#snapshot_name CcApplicationV2#snapshot_name}
     */
     readonly snapshotName?: string;
 }
@@ -5871,6 +4172,10 @@ export class ApplicationRestoreConfigurationPropertyOutputReference extends cdkt
             hasAnyValues = true;
             internalValueResult.applicationRestoreType = this._applicationRestoreType;
         }
+        if (this._snapshotArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.snapshotArn = this._snapshotArn;
+        }
         if (this._snapshotName !== undefined) {
             hasAnyValues = true;
             internalValueResult.snapshotName = this._snapshotName;
@@ -5883,6 +4188,7 @@ export class ApplicationRestoreConfigurationPropertyOutputReference extends cdkt
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._applicationRestoreType = undefined;
+            this._snapshotArn = undefined;
             this._snapshotName = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -5893,6 +4199,7 @@ export class ApplicationRestoreConfigurationPropertyOutputReference extends cdkt
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._applicationRestoreType = value.applicationRestoreType;
+            this._snapshotArn = value.snapshotArn;
             this._snapshotName = value.snapshotName;
         }
     }
@@ -5911,6 +4218,22 @@ export class ApplicationRestoreConfigurationPropertyOutputReference extends cdkt
     // Temporarily expose input value. Use with caution.
     public get applicationRestoreTypeInput() {
         return this._applicationRestoreType;
+    }
+
+    // snapshot_arn - computed: true, optional: true, required: false
+    private _snapshotArn?: string; 
+    public get snapshotArn() {
+        return this.getStringAttribute('snapshot_arn');
+    }
+    public set snapshotArn(value: string) {
+        this._snapshotArn = value;
+    }
+    public resetSnapshotArn() {
+        this._snapshotArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get snapshotArnInput() {
+        return this._snapshotArn;
     }
 
     // snapshot_name - computed: true, optional: true, required: false
@@ -5933,7 +4256,7 @@ export interface FlinkRunConfigurationProperty {
     /**
     * When restoring from a snapshot, specifies whether the runtime is allowed to skip a state that cannot be mapped to the new program. Defaults to false. If you update your application without specifying this parameter, AllowNonRestoredState will be set to false, even if it was previously set to true.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#allow_non_restored_state CcApplicationV2#allow_non_restored_state}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#allow_non_restored_state CcApplicationV2#allow_non_restored_state}
     */
     readonly allowNonRestoredState?: boolean | cdktn.IResolvable;
 }
@@ -5999,13 +4322,13 @@ export interface RunConfigurationProperty {
     /**
     * Describes the restore behavior of a restarting application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#application_restore_configuration CcApplicationV2#application_restore_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#application_restore_configuration CcApplicationV2#application_restore_configuration}
     */
     readonly applicationRestoreConfiguration?: ApplicationRestoreConfigurationProperty;
     /**
     * Describes the starting parameters for a Flink-based Kinesis Data Analytics application.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#flink_run_configuration CcApplicationV2#flink_run_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#flink_run_configuration CcApplicationV2#flink_run_configuration}
     */
     readonly flinkRunConfiguration?: FlinkRunConfigurationProperty;
 }
@@ -6093,13 +4416,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that's 1 to 128 Unicode characters in length and can't be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#key CcApplicationV2#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#key CcApplicationV2#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that's 0 to 256 characters in length.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/kinesisanalyticsv2_application#value CcApplicationV2#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/kinesisanalyticsv2_application#value CcApplicationV2#value}
     */
     readonly value?: string;
 }

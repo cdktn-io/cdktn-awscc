@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,61 +9,67 @@ export interface CcCalculatedAttributeDefinitionProps extends cdktn.TerraformMet
     /**
     * Mathematical expression and a list of attribute items specified in that expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#attribute_details CcCalculatedAttributeDefinition#attribute_details}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#attribute_details CcCalculatedAttributeDefinition#attribute_details}
     */
     readonly attributeDetails: CcCalculatedAttributeDefinition.AttributeDetailsProperty;
     /**
     * The unique name of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#calculated_attribute_name CcCalculatedAttributeDefinition#calculated_attribute_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#calculated_attribute_name CcCalculatedAttributeDefinition#calculated_attribute_name}
     */
     readonly calculatedAttributeName: string;
     /**
     * The conditions including range, object count, and threshold for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#conditions CcCalculatedAttributeDefinition#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#conditions CcCalculatedAttributeDefinition#conditions}
     */
     readonly conditions?: CcCalculatedAttributeDefinition.ConditionsProperty;
     /**
     * The description of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#description CcCalculatedAttributeDefinition#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#description CcCalculatedAttributeDefinition#description}
     */
     readonly description?: string;
     /**
     * The display name of the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#display_name CcCalculatedAttributeDefinition#display_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#display_name CcCalculatedAttributeDefinition#display_name}
     */
     readonly displayName?: string;
     /**
     * The unique name of the domain.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#domain_name CcCalculatedAttributeDefinition#domain_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#domain_name CcCalculatedAttributeDefinition#domain_name}
     */
     readonly domainName: string;
     /**
+    * Defines how to filter the objects coming in for calculated attributes.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#filter CcCalculatedAttributeDefinition#filter}
+    */
+    readonly filter?: CcCalculatedAttributeDefinition.FilterProperty;
+    /**
     * The aggregation operation to perform for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#statistic CcCalculatedAttributeDefinition#statistic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#statistic CcCalculatedAttributeDefinition#statistic}
     */
     readonly statistic: string;
     /**
     * An array of key-value pairs to apply to this resource.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#tags CcCalculatedAttributeDefinition#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#tags CcCalculatedAttributeDefinition#tags}
     */
     readonly tags?: CcCalculatedAttributeDefinition.TagProperty[] | cdktn.IResolvable;
     /**
     * Whether to use historical data for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#use_historical_data CcCalculatedAttributeDefinition#use_historical_data}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#use_historical_data CcCalculatedAttributeDefinition#use_historical_data}
     */
     readonly useHistoricalData?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition}
 */
 export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
 
@@ -79,7 +85,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcCalculatedAttributeDefinition resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcCalculatedAttributeDefinition to import
-    * @param importFromId The id of the existing CcCalculatedAttributeDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcCalculatedAttributeDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcCalculatedAttributeDefinition to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +97,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition awscc_customerprofiles_calculated_attribute_definition} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +108,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_customerprofiles_calculated_attribute_definition',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -118,6 +124,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
         this._description = config.description;
         this._displayName = config.displayName;
         this._domainName = config.domainName;
+        this._filter.internalValue = config.filter;
         this._statistic = config.statistic;
         this._tags.internalValue = config.tags;
         this._useHistoricalData = config.useHistoricalData;
@@ -219,6 +226,22 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
         return this._domainName;
     }
 
+    // filter - computed: true, optional: true, required: false
+    private _filter = new CcCalculatedAttributeDefinition.FilterPropertyOutputReference(this, "filter");
+    public get filter() {
+        return this._filter;
+    }
+    public putFilter(value: CcCalculatedAttributeDefinition.FilterProperty) {
+        this._filter.internalValue = value;
+    }
+    public resetFilter() {
+        this._filter.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get filterInput() {
+        return this._filter.internalValue;
+    }
+
     // id - computed: true, optional: false, required: false
     public get id() {
         return this.getStringAttribute('id');
@@ -297,6 +320,7 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
             description: cdktn.stringToTerraform(this._description),
             display_name: cdktn.stringToTerraform(this._displayName),
             domain_name: cdktn.stringToTerraform(this._domainName),
+            filter: ccCalculatedAttributeDefinitionFilterPropertyToTerraform(this._filter.internalValue),
             statistic: cdktn.stringToTerraform(this._statistic),
             tags: cdktn.listMapper(ccCalculatedAttributeDefinitionTagPropertyToTerraform, false)(this._tags.internalValue),
             use_historical_data: cdktn.booleanToTerraform(this._useHistoricalData),
@@ -340,6 +364,12 @@ export class CcCalculatedAttributeDefinition extends cdktn.TerraformResource {
                 isBlock: false,
                 type: "simple",
                 storageClassType: "string",
+            },
+            filter: {
+                value: ccCalculatedAttributeDefinitionFilterPropertyToHclTerraform(this._filter.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcCalculatedAttributeDefinition.FilterProperty",
             },
             statistic: {
                 value: cdktn.stringToHclTerraform(this._statistic),
@@ -609,6 +639,147 @@ export function ccCalculatedAttributeDefinitionConditionsPropertyToHclTerraform(
 }
 
 
+export function ccCalculatedAttributeDefinitionAttributesPropertyToTerraform(struct?: CcCalculatedAttributeDefinition.AttributesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dimension_type: cdktn.stringToTerraform(struct!.dimensionType),
+        values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+    }
+}
+
+
+export function ccCalculatedAttributeDefinitionAttributesPropertyToHclTerraform(struct?: CcCalculatedAttributeDefinition.AttributesProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dimension_type: {
+            value: cdktn.stringToHclTerraform(struct!.dimensionType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        values: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+            isBlock: false,
+            type: "set",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccCalculatedAttributeDefinitionDimensionsPropertyToTerraform(struct?: CcCalculatedAttributeDefinition.DimensionsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        attributes: cdktn.hashMapper(ccCalculatedAttributeDefinitionAttributesPropertyToTerraform)(struct!.attributes),
+    }
+}
+
+
+export function ccCalculatedAttributeDefinitionDimensionsPropertyToHclTerraform(struct?: CcCalculatedAttributeDefinition.DimensionsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        attributes: {
+            value: cdktn.hashMapperHcl(ccCalculatedAttributeDefinitionAttributesPropertyToHclTerraform)(struct!.attributes),
+            isBlock: true,
+            type: "map",
+            storageClassType: "AttributesPropertyMap",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccCalculatedAttributeDefinitionGroupsPropertyToTerraform(struct?: CcCalculatedAttributeDefinition.GroupsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        dimensions: cdktn.listMapper(ccCalculatedAttributeDefinitionDimensionsPropertyToTerraform, false)(struct!.dimensions),
+        type: cdktn.stringToTerraform(struct!.type),
+    }
+}
+
+
+export function ccCalculatedAttributeDefinitionGroupsPropertyToHclTerraform(struct?: CcCalculatedAttributeDefinition.GroupsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        dimensions: {
+            value: cdktn.listMapperHcl(ccCalculatedAttributeDefinitionDimensionsPropertyToHclTerraform, false)(struct!.dimensions),
+            isBlock: true,
+            type: "set",
+            storageClassType: "DimensionsPropertyList",
+        },
+        type: {
+            value: cdktn.stringToHclTerraform(struct!.type),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccCalculatedAttributeDefinitionFilterPropertyToTerraform(struct?: CcCalculatedAttributeDefinition.FilterProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        groups: cdktn.listMapper(ccCalculatedAttributeDefinitionGroupsPropertyToTerraform, false)(struct!.groups),
+        include: cdktn.stringToTerraform(struct!.include),
+    }
+}
+
+
+export function ccCalculatedAttributeDefinitionFilterPropertyToHclTerraform(struct?: CcCalculatedAttributeDefinition.FilterProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        groups: {
+            value: cdktn.listMapperHcl(ccCalculatedAttributeDefinitionGroupsPropertyToHclTerraform, false)(struct!.groups),
+            isBlock: true,
+            type: "set",
+            storageClassType: "GroupsPropertyList",
+        },
+        include: {
+            value: cdktn.stringToHclTerraform(struct!.include),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccCalculatedAttributeDefinitionReadinessPropertyToTerraform(struct?: CcCalculatedAttributeDefinition.ReadinessProperty): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -672,7 +843,7 @@ export interface AttributeItemProperty {
     /**
     * The name of an attribute defined in a profile object type.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#name CcCalculatedAttributeDefinition#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#name CcCalculatedAttributeDefinition#name}
     */
     readonly name: string;
 }
@@ -757,13 +928,13 @@ export interface AttributeDetailsProperty {
     /**
     * A list of attribute items specified in the mathematical expression.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#attributes CcCalculatedAttributeDefinition#attributes}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#attributes CcCalculatedAttributeDefinition#attributes}
     */
     readonly attributes: AttributeItemProperty[] | cdktn.IResolvable;
     /**
     * Mathematical expression that is performed on attribute items provided in the attribute list. Each element in the expression should follow the structure of "{ObjectTypeName.AttributeName}".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#expression CcCalculatedAttributeDefinition#expression}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#expression CcCalculatedAttributeDefinition#expression}
     */
     readonly expression: string;
 }
@@ -845,13 +1016,13 @@ export interface ValueRangeProperty {
     /**
     * The ending point for this range. Positive numbers indicate how many days in the past data should be included, and negative numbers indicate how many days in the future.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#end CcCalculatedAttributeDefinition#end}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#end CcCalculatedAttributeDefinition#end}
     */
     readonly end?: number;
     /**
     * The starting point for this range. Positive numbers indicate how many days in the past data should be included, and negative numbers indicate how many days in the future.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#start CcCalculatedAttributeDefinition#start}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#start CcCalculatedAttributeDefinition#start}
     */
     readonly start?: number;
 }
@@ -939,31 +1110,31 @@ export interface RangeProperty {
     /**
     * The format the timestamp field in your JSON object is specified. This value should be one of EPOCHMILLI or ISO_8601. E.g. if your object type is MyType and source JSON is {"generatedAt": {"timestamp": "2001-07-04T12:08:56.235Z"}}, then TimestampFormat should be "ISO_8601".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_format CcCalculatedAttributeDefinition#timestamp_format}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_format CcCalculatedAttributeDefinition#timestamp_format}
     */
     readonly timestampFormat?: string;
     /**
     * An expression specifying the field in your JSON object from which the date should be parsed. The expression should follow the structure of \"{ObjectTypeName.<Location of timestamp field in JSON pointer format>}\". E.g. if your object type is MyType and source JSON is {"generatedAt": {"timestamp": "1737587945945"}}, then TimestampSource should be "{MyType.generatedAt.timestamp}".
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_source CcCalculatedAttributeDefinition#timestamp_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#timestamp_source CcCalculatedAttributeDefinition#timestamp_source}
     */
     readonly timestampSource?: string;
     /**
     * The unit of time.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#unit CcCalculatedAttributeDefinition#unit}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#unit CcCalculatedAttributeDefinition#unit}
     */
     readonly unit?: string;
     /**
     * The amount of time of the specified unit.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: number;
     /**
     * A structure specifying the endpoints of the relative time period over which data is included in the aggregation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#value_range CcCalculatedAttributeDefinition#value_range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#value_range CcCalculatedAttributeDefinition#value_range}
     */
     readonly valueRange?: ValueRangeProperty;
 }
@@ -1117,13 +1288,13 @@ export interface ThresholdProperty {
     /**
     * The operator of the threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#operator CcCalculatedAttributeDefinition#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#operator CcCalculatedAttributeDefinition#operator}
     */
     readonly operator?: string;
     /**
     * The value of the threshold.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: string;
 }
@@ -1211,19 +1382,19 @@ export interface ConditionsProperty {
     /**
     * The number of profile objects used for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#object_count CcCalculatedAttributeDefinition#object_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#object_count CcCalculatedAttributeDefinition#object_count}
     */
     readonly objectCount?: number;
     /**
     * The relative time period over which data is included in the aggregation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#range CcCalculatedAttributeDefinition#range}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#range CcCalculatedAttributeDefinition#range}
     */
     readonly range?: RangeProperty;
     /**
     * The threshold for the calculated attribute.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#threshold CcCalculatedAttributeDefinition#threshold}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#threshold CcCalculatedAttributeDefinition#threshold}
     */
     readonly threshold?: ThresholdProperty;
 }
@@ -1329,6 +1500,418 @@ export class ConditionsPropertyOutputReference extends cdktn.ComplexObject {
         return this._threshold.internalValue;
     }
 }
+export interface AttributesProperty {
+    /**
+    * The action to filter with.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#dimension_type CcCalculatedAttributeDefinition#dimension_type}
+    */
+    readonly dimensionType?: string;
+    /**
+    * The values to apply the DimensionType on.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#values CcCalculatedAttributeDefinition#values}
+    */
+    readonly values?: string[];
+}
+export class AttributesPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectKey the key of this item in the map
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+        super(terraformResource, terraformAttribute, false, complexObjectKey);
+    }
+
+    public get internalValue(): AttributesProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dimensionType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dimensionType = this._dimensionType;
+        }
+        if (this._values !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.values = this._values;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AttributesProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dimensionType = undefined;
+            this._values = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dimensionType = value.dimensionType;
+            this._values = value.values;
+        }
+    }
+
+    // dimension_type - computed: true, optional: true, required: false
+    private _dimensionType?: string; 
+    public get dimensionType() {
+        return this.getStringAttribute('dimension_type');
+    }
+    public set dimensionType(value: string) {
+        this._dimensionType = value;
+    }
+    public resetDimensionType() {
+        this._dimensionType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dimensionTypeInput() {
+        return this._dimensionType;
+    }
+
+    // values - computed: true, optional: true, required: false
+    private _values?: string[]; 
+    public get values() {
+        return cdktn.Fn.tolist(this.getListAttribute('values'));
+    }
+    public set values(value: string[]) {
+        this._values = value;
+    }
+    public resetValues() {
+        this._values = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valuesInput() {
+        return this._values;
+    }
+}
+
+export class AttributesPropertyMap extends cdktn.ComplexMap {
+    public internalValue? : { [key: string]: AttributesProperty } | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute);
+    }
+
+    /**
+    * @param key the key of the item to return
+    */
+    public get(key: string): AttributesPropertyOutputReference {
+        return new AttributesPropertyOutputReference(this.terraformResource, this.terraformAttribute, key);
+    }
+}
+export interface DimensionsProperty {
+    /**
+    * Is the attribute within the FilterDimension map
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#attributes CcCalculatedAttributeDefinition#attributes}
+    */
+    readonly attributes?: { [key: string]: AttributesProperty } | cdktn.IResolvable;
+}
+export class DimensionsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): DimensionsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._attributes?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.attributes = this._attributes?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DimensionsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._attributes.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._attributes.internalValue = value.attributes;
+        }
+    }
+
+    // attributes - computed: true, optional: true, required: false
+    private _attributes = new AttributesPropertyMap(this, "attributes");
+    public get attributes() {
+        return this._attributes;
+    }
+    public putAttributes(value: { [key: string]: AttributesProperty } | cdktn.IResolvable) {
+        this._attributes.internalValue = value;
+    }
+    public resetAttributes() {
+        this._attributes.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get attributesInput() {
+        return this._attributes.internalValue;
+    }
+}
+
+export class DimensionsPropertyList extends cdktn.ComplexList {
+    public internalValue? : DimensionsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): DimensionsPropertyOutputReference {
+        return new DimensionsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface GroupsProperty {
+    /**
+    * Object that holds the attributes to filter on.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#dimensions CcCalculatedAttributeDefinition#dimensions}
+    */
+    readonly dimensions?: DimensionsProperty[] | cdktn.IResolvable;
+    /**
+    * The type of logical relationship between the dimensions of the Filter group.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#type CcCalculatedAttributeDefinition#type}
+    */
+    readonly type?: string;
+}
+export class GroupsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): GroupsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._dimensions?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.dimensions = this._dimensions?.internalValue;
+        }
+        if (this._type !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.type = this._type;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: GroupsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._dimensions.internalValue = undefined;
+            this._type = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._dimensions.internalValue = value.dimensions;
+            this._type = value.type;
+        }
+    }
+
+    // dimensions - computed: true, optional: true, required: false
+    private _dimensions = new DimensionsPropertyList(this, "dimensions", true);
+    public get dimensions() {
+        return this._dimensions;
+    }
+    public putDimensions(value: DimensionsProperty[] | cdktn.IResolvable) {
+        this._dimensions.internalValue = value;
+    }
+    public resetDimensions() {
+        this._dimensions.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dimensionsInput() {
+        return this._dimensions.internalValue;
+    }
+
+    // type - computed: true, optional: true, required: false
+    private _type?: string; 
+    public get type() {
+        return this.getStringAttribute('type');
+    }
+    public set type(value: string) {
+        this._type = value;
+    }
+    public resetType() {
+        this._type = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get typeInput() {
+        return this._type;
+    }
+}
+
+export class GroupsPropertyList extends cdktn.ComplexList {
+    public internalValue? : GroupsProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): GroupsPropertyOutputReference {
+        return new GroupsPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface FilterProperty {
+    /**
+    * Holds the list of Filter groups within the Filter definition.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#groups CcCalculatedAttributeDefinition#groups}
+    */
+    readonly groups?: GroupsProperty[] | cdktn.IResolvable;
+    /**
+    * Define whether to include or exclude objects for Calculated Attributed calculation that fit the filter groups criteria.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#include CcCalculatedAttributeDefinition#include}
+    */
+    readonly include?: string;
+}
+export class FilterPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): FilterProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._groups?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.groups = this._groups?.internalValue;
+        }
+        if (this._include !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.include = this._include;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: FilterProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._groups.internalValue = undefined;
+            this._include = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._groups.internalValue = value.groups;
+            this._include = value.include;
+        }
+    }
+
+    // groups - computed: true, optional: true, required: false
+    private _groups = new GroupsPropertyList(this, "groups", true);
+    public get groups() {
+        return this._groups;
+    }
+    public putGroups(value: GroupsProperty[] | cdktn.IResolvable) {
+        this._groups.internalValue = value;
+    }
+    public resetGroups() {
+        this._groups.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get groupsInput() {
+        return this._groups.internalValue;
+    }
+
+    // include - computed: true, optional: true, required: false
+    private _include?: string; 
+    public get include() {
+        return this.getStringAttribute('include');
+    }
+    public set include(value: string) {
+        this._include = value;
+    }
+    public resetInclude() {
+        this._include = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeInput() {
+        return this._include;
+    }
+}
 export interface ReadinessProperty {
 }
 export class ReadinessPropertyOutputReference extends cdktn.ComplexObject {
@@ -1371,13 +1954,13 @@ export interface TagProperty {
     /**
     * The key name of the tag. You can specify a value that is 1 to 128 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#key CcCalculatedAttributeDefinition#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#key CcCalculatedAttributeDefinition#key}
     */
     readonly key?: string;
     /**
     * The value for the tag. You can specify a value that is 0 to 256 Unicode characters in length and cannot be prefixed with aws:. You can use any of the following characters: the set of Unicode letters, digits, whitespace, _, ., /, =, +, and -.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/customerprofiles_calculated_attribute_definition#value CcCalculatedAttributeDefinition#value}
     */
     readonly value?: string;
 }

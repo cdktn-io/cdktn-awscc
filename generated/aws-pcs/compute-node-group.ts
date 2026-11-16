@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,85 +9,103 @@ export interface CcComputeNodeGroupProps extends cdktn.TerraformMetaArguments {
     /**
     * The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. If not provided, AWS PCS uses the AMI ID specified in the custom launch template.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#ami_id CcComputeNodeGroup#ami_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#ami_id CcComputeNodeGroup#ami_id}
     */
     readonly amiId?: string;
     /**
     * The ID of the cluster of the compute node group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#cluster_id CcComputeNodeGroup#cluster_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#cluster_id CcComputeNodeGroup#cluster_id}
     */
     readonly clusterId: string;
     /**
     * An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#custom_launch_template CcComputeNodeGroup#custom_launch_template}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#custom_launch_template CcComputeNodeGroup#custom_launch_template}
     */
-    readonly customLaunchTemplate: CcComputeNodeGroup.CustomLaunchTemplateProperty;
+    readonly customLaunchTemplate?: CcComputeNodeGroup.CustomLaunchTemplateProperty;
     /**
     * The Amazon Resource Name (ARN) of the IAM instance profile used to pass an IAM role when launching EC2 instances. The role contained in your instance profile must have pcs:RegisterComputeNodeGroupInstance permissions attached to provision instances correctly.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#iam_instance_profile_arn CcComputeNodeGroup#iam_instance_profile_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#iam_instance_profile_arn CcComputeNodeGroup#iam_instance_profile_arn}
     */
     readonly iamInstanceProfileArn: string;
     /**
     * A list of EC2 instance configurations that AWS PCS can provision in the compute node group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#instance_configs CcComputeNodeGroup#instance_configs}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#instance_configs CcComputeNodeGroup#instance_configs}
     */
     readonly instanceConfigs: CcComputeNodeGroup.InstanceConfigProperty[] | cdktn.IResolvable;
     /**
+    * How AWS PCS gets the launch template for the compute node group. CUSTOM uses CustomLaunchTemplate. MANAGED has AWS PCS generate and manage the launch template from the instance settings; omit CustomLaunchTemplate. Defaults to CUSTOM on create.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#launch_template_mode CcComputeNodeGroup#launch_template_mode}
+    */
+    readonly launchTemplateMode?: string;
+    /**
     * The name that identifies the compute node group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
     */
     readonly name?: string;
     /**
     * Custom scripts that run at defined points in a compute node's lifecycle.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#node_lifecycle_actions CcComputeNodeGroup#node_lifecycle_actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#node_lifecycle_actions CcComputeNodeGroup#node_lifecycle_actions}
     */
     readonly nodeLifecycleActions?: CcComputeNodeGroup.NodeLifecycleActionsProperty;
     /**
     * Specifies how EC2 instances are purchased on your behalf. AWS PCS supports On-Demand, Spot, Capacity Block, and Interruptible Capacity Reservation instances. For more information, see Instance purchasing options in the Amazon Elastic Compute Cloud User Guide. If you don't provide this option, it defaults to On-Demand.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#purchase_option CcComputeNodeGroup#purchase_option}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#purchase_option CcComputeNodeGroup#purchase_option}
     */
     readonly purchaseOption?: string;
     /**
     * Specifies the boundaries of the compute node group auto scaling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#scaling_configuration CcComputeNodeGroup#scaling_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#scaling_configuration CcComputeNodeGroup#scaling_configuration}
     */
     readonly scalingConfiguration: CcComputeNodeGroup.ScalingConfigurationProperty;
     /**
+    * The IDs of the EC2 security groups configured directly on the compute node group. These replace the security groups from the custom launch template. A request cannot specify this property with a launch template that defines NetworkInterfaces. When not provided and a custom launch template is present, AWS PCS uses the security groups from the launch template.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#security_group_ids CcComputeNodeGroup#security_group_ids}
+    */
+    readonly securityGroupIds?: string[];
+    /**
     * Additional options related to the Slurm scheduler.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#slurm_configuration CcComputeNodeGroup#slurm_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#slurm_configuration CcComputeNodeGroup#slurm_configuration}
     */
     readonly slurmConfiguration?: CcComputeNodeGroup.SlurmConfigurationProperty;
     /**
     * Additional configuration when you specify SPOT as the purchase option.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#spot_options CcComputeNodeGroup#spot_options}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#spot_options CcComputeNodeGroup#spot_options}
     */
     readonly spotOptions?: CcComputeNodeGroup.SpotOptionsProperty;
     /**
+    * The name of the EC2 key pair configured directly on the compute node group. The key pair must exist in the caller's account and Region and overrides the key pair from the custom launch template. When not provided and a custom launch template is present, AWS PCS uses the key pair from the launch template.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#ssh_key_name CcComputeNodeGroup#ssh_key_name}
+    */
+    readonly sshKeyName?: string;
+    /**
     * The list of subnet IDs where instances are provisioned by the compute node group. The subnets must be in the same VPC as the cluster.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#subnet_ids CcComputeNodeGroup#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#subnet_ids CcComputeNodeGroup#subnet_ids}
     */
     readonly subnetIds: string[];
     /**
     * 1 or more tags added to the resource. Each tag consists of a tag key and tag value. The tag value is optional and can be an empty string.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#tags CcComputeNodeGroup#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#tags CcComputeNodeGroup#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group awscc_pcs_compute_node_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group awscc_pcs_compute_node_group}
 */
 export class CcComputeNodeGroup extends cdktn.TerraformResource {
 
@@ -103,7 +121,7 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcComputeNodeGroup resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcComputeNodeGroup to import
-    * @param importFromId The id of the existing CcComputeNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcComputeNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcComputeNodeGroup to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +133,7 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group awscc_pcs_compute_node_group} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group awscc_pcs_compute_node_group} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +144,7 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_pcs_compute_node_group',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -141,12 +159,15 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
         this._customLaunchTemplate.internalValue = config.customLaunchTemplate;
         this._iamInstanceProfileArn = config.iamInstanceProfileArn;
         this._instanceConfigs.internalValue = config.instanceConfigs;
+        this._launchTemplateMode = config.launchTemplateMode;
         this._name = config.name;
         this._nodeLifecycleActions.internalValue = config.nodeLifecycleActions;
         this._purchaseOption = config.purchaseOption;
         this._scalingConfiguration.internalValue = config.scalingConfiguration;
+        this._securityGroupIds = config.securityGroupIds;
         this._slurmConfiguration.internalValue = config.slurmConfiguration;
         this._spotOptions.internalValue = config.spotOptions;
+        this._sshKeyName = config.sshKeyName;
         this._subnetIds = config.subnetIds;
         this._tags = config.tags;
     }
@@ -194,13 +215,16 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
         return this.getStringAttribute('compute_node_group_id');
     }
 
-    // custom_launch_template - computed: false, optional: false, required: true
+    // custom_launch_template - computed: true, optional: true, required: false
     private _customLaunchTemplate = new CcComputeNodeGroup.CustomLaunchTemplatePropertyOutputReference(this, "custom_launch_template");
     public get customLaunchTemplate() {
         return this._customLaunchTemplate;
     }
     public putCustomLaunchTemplate(value: CcComputeNodeGroup.CustomLaunchTemplateProperty) {
         this._customLaunchTemplate.internalValue = value;
+    }
+    public resetCustomLaunchTemplate() {
+        this._customLaunchTemplate.internalValue = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get customLaunchTemplateInput() {
@@ -242,6 +266,22 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get instanceConfigsInput() {
         return this._instanceConfigs.internalValue;
+    }
+
+    // launch_template_mode - computed: true, optional: true, required: false
+    private _launchTemplateMode?: string; 
+    public get launchTemplateMode() {
+        return this.getStringAttribute('launch_template_mode');
+    }
+    public set launchTemplateMode(value: string) {
+        this._launchTemplateMode = value;
+    }
+    public resetLaunchTemplateMode() {
+        this._launchTemplateMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get launchTemplateModeInput() {
+        return this._launchTemplateMode;
     }
 
     // name - computed: true, optional: true, required: false
@@ -305,6 +345,22 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
         return this._scalingConfiguration.internalValue;
     }
 
+    // security_group_ids - computed: true, optional: true, required: false
+    private _securityGroupIds?: string[]; 
+    public get securityGroupIds() {
+        return this.getListAttribute('security_group_ids');
+    }
+    public set securityGroupIds(value: string[]) {
+        this._securityGroupIds = value;
+    }
+    public resetSecurityGroupIds() {
+        this._securityGroupIds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get securityGroupIdsInput() {
+        return this._securityGroupIds;
+    }
+
     // slurm_configuration - computed: true, optional: true, required: false
     private _slurmConfiguration = new CcComputeNodeGroup.SlurmConfigurationPropertyOutputReference(this, "slurm_configuration");
     public get slurmConfiguration() {
@@ -335,6 +391,22 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
     // Temporarily expose input value. Use with caution.
     public get spotOptionsInput() {
         return this._spotOptions.internalValue;
+    }
+
+    // ssh_key_name - computed: true, optional: true, required: false
+    private _sshKeyName?: string; 
+    public get sshKeyName() {
+        return this.getStringAttribute('ssh_key_name');
+    }
+    public set sshKeyName(value: string) {
+        this._sshKeyName = value;
+    }
+    public resetSshKeyName() {
+        this._sshKeyName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sshKeyNameInput() {
+        return this._sshKeyName;
     }
 
     // status - computed: true, optional: false, required: false
@@ -382,12 +454,15 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
             custom_launch_template: ccComputeNodeGroupCustomLaunchTemplatePropertyToTerraform(this._customLaunchTemplate.internalValue),
             iam_instance_profile_arn: cdktn.stringToTerraform(this._iamInstanceProfileArn),
             instance_configs: cdktn.listMapper(ccComputeNodeGroupInstanceConfigPropertyToTerraform, false)(this._instanceConfigs.internalValue),
+            launch_template_mode: cdktn.stringToTerraform(this._launchTemplateMode),
             name: cdktn.stringToTerraform(this._name),
             node_lifecycle_actions: ccComputeNodeGroupNodeLifecycleActionsPropertyToTerraform(this._nodeLifecycleActions.internalValue),
             purchase_option: cdktn.stringToTerraform(this._purchaseOption),
             scaling_configuration: ccComputeNodeGroupScalingConfigurationPropertyToTerraform(this._scalingConfiguration.internalValue),
+            security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
             slurm_configuration: ccComputeNodeGroupSlurmConfigurationPropertyToTerraform(this._slurmConfiguration.internalValue),
             spot_options: ccComputeNodeGroupSpotOptionsPropertyToTerraform(this._spotOptions.internalValue),
+            ssh_key_name: cdktn.stringToTerraform(this._sshKeyName),
             subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
             tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
         };
@@ -425,6 +500,12 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
                 type: "list",
                 storageClassType: "CcComputeNodeGroup.InstanceConfigPropertyList",
             },
+            launch_template_mode: {
+                value: cdktn.stringToHclTerraform(this._launchTemplateMode),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
+            },
             name: {
                 value: cdktn.stringToHclTerraform(this._name),
                 isBlock: false,
@@ -449,6 +530,12 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
                 type: "struct",
                 storageClassType: "CcComputeNodeGroup.ScalingConfigurationProperty",
             },
+            security_group_ids: {
+                value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
+                isBlock: false,
+                type: "list",
+                storageClassType: "stringList",
+            },
             slurm_configuration: {
                 value: ccComputeNodeGroupSlurmConfigurationPropertyToHclTerraform(this._slurmConfiguration.internalValue),
                 isBlock: true,
@@ -460,6 +547,12 @@ export class CcComputeNodeGroup extends cdktn.TerraformResource {
                 isBlock: true,
                 type: "struct",
                 storageClassType: "CcComputeNodeGroup.SpotOptionsProperty",
+            },
+            ssh_key_name: {
+                value: cdktn.stringToHclTerraform(this._sshKeyName),
+                isBlock: false,
+                type: "simple",
+                storageClassType: "string",
             },
             subnet_ids: {
                 value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
@@ -926,6 +1019,7 @@ export function ccComputeNodeGroupSlurmConfigurationPropertyToTerraform(struct?:
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        gres_custom_settings: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(struct!.gresCustomSettings),
         scale_down_idle_time_in_seconds: cdktn.numberToTerraform(struct!.scaleDownIdleTimeInSeconds),
         slurm_custom_settings: cdktn.listMapper(ccComputeNodeGroupSlurmCustomSettingPropertyToTerraform, false)(struct!.slurmCustomSettings),
     }
@@ -938,6 +1032,12 @@ export function ccComputeNodeGroupSlurmConfigurationPropertyToHclTerraform(struc
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        gres_custom_settings: {
+            value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(struct!.gresCustomSettings),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringMapList",
+        },
         scale_down_idle_time_in_seconds: {
             value: cdktn.numberToHclTerraform(struct!.scaleDownIdleTimeInSeconds),
             isBlock: false,
@@ -992,15 +1092,15 @@ export interface CustomLaunchTemplateProperty {
     /**
     * The ID of the EC2 launch template to use to provision instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#template_id CcComputeNodeGroup#template_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#template_id CcComputeNodeGroup#template_id}
     */
     readonly templateId?: string;
     /**
     * The version of the EC2 launch template to use to provision instances.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#version CcComputeNodeGroup#version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#version CcComputeNodeGroup#version}
     */
-    readonly version: string;
+    readonly version?: string;
 }
 export class CustomLaunchTemplatePropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -1066,13 +1166,16 @@ export class CustomLaunchTemplatePropertyOutputReference extends cdktn.ComplexOb
         return this._templateId;
     }
 
-    // version - computed: false, optional: false, required: true
+    // version - computed: true, optional: true, required: false
     private _version?: string; 
     public get version() {
         return this.getStringAttribute('version');
     }
     public set version(value: string) {
         this._version = value;
+    }
+    public resetVersion() {
+        this._version = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get versionInput() {
@@ -1142,7 +1245,7 @@ export interface InstanceConfigProperty {
     /**
     * The EC2 instance type that AWS PCS can provision in the compute node group.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#instance_type CcComputeNodeGroup#instance_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#instance_type CcComputeNodeGroup#instance_type}
     */
     readonly instanceType?: string;
 }
@@ -1230,19 +1333,19 @@ export interface ScriptSourceProperty {
     /**
     * A 64-character hexadecimal SHA-256 digest used to verify script integrity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#checksum CcComputeNodeGroup#checksum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#checksum CcComputeNodeGroup#checksum}
     */
     readonly checksum?: string;
     /**
     * The S3 object version ID of the script, when stored in a versioned bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#s3_version_id CcComputeNodeGroup#s3_version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#s3_version_id CcComputeNodeGroup#s3_version_id}
     */
     readonly s3VersionId?: string;
     /**
     * The S3 URI or HTTPS URL where the script is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#script_location CcComputeNodeGroup#script_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#script_location CcComputeNodeGroup#script_location}
     */
     readonly scriptLocation?: string;
 }
@@ -1352,31 +1455,31 @@ export interface NodeLifecycleScriptProperty {
     /**
     * An ordered list of arguments passed to the script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#arguments CcComputeNodeGroup#arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#arguments CcComputeNodeGroup#arguments}
     */
     readonly arguments?: string[];
     /**
     * Whether the script runs only on the node's first boot (FIRST_BOOT_ONLY) or on every boot including reboots (EVERY_BOOT). Defaults to FIRST_BOOT_ONLY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#execution_policy CcComputeNodeGroup#execution_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#execution_policy CcComputeNodeGroup#execution_policy}
     */
     readonly executionPolicy?: string;
     /**
     * A human-readable name that identifies the script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
     */
     readonly name?: string;
     /**
     * The behavior when the script exits with an error. Defaults to TERMINATE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#on_error CcComputeNodeGroup#on_error}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#on_error CcComputeNodeGroup#on_error}
     */
     readonly onError?: string;
     /**
     * The external location of a lifecycle script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#script_source CcComputeNodeGroup#script_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#script_source CcComputeNodeGroup#script_source}
     */
     readonly scriptSource?: ScriptSourceProperty;
 }
@@ -1552,19 +1655,19 @@ export interface NodeLifecycleActionsStagesNodeReadyScriptSourceProperty {
     /**
     * A 64-character hexadecimal SHA-256 digest used to verify script integrity.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#checksum CcComputeNodeGroup#checksum}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#checksum CcComputeNodeGroup#checksum}
     */
     readonly checksum?: string;
     /**
     * The S3 object version ID of the script, when stored in a versioned bucket.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#s3_version_id CcComputeNodeGroup#s3_version_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#s3_version_id CcComputeNodeGroup#s3_version_id}
     */
     readonly s3VersionId?: string;
     /**
     * The S3 URI or HTTPS URL where the script is stored.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#script_location CcComputeNodeGroup#script_location}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#script_location CcComputeNodeGroup#script_location}
     */
     readonly scriptLocation?: string;
 }
@@ -1674,31 +1777,31 @@ export interface NodeReadyProperty {
     /**
     * An ordered list of arguments passed to the script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#arguments CcComputeNodeGroup#arguments}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#arguments CcComputeNodeGroup#arguments}
     */
     readonly arguments?: string[];
     /**
     * Whether the script runs only on the node's first boot (FIRST_BOOT_ONLY) or on every boot including reboots (EVERY_BOOT). Defaults to FIRST_BOOT_ONLY.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#execution_policy CcComputeNodeGroup#execution_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#execution_policy CcComputeNodeGroup#execution_policy}
     */
     readonly executionPolicy?: string;
     /**
     * A human-readable name that identifies the script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#name CcComputeNodeGroup#name}
     */
     readonly name?: string;
     /**
     * The behavior when the script exits with an error. Defaults to TERMINATE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#on_error CcComputeNodeGroup#on_error}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#on_error CcComputeNodeGroup#on_error}
     */
     readonly onError?: string;
     /**
     * The external location of a lifecycle script.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#script_source CcComputeNodeGroup#script_source}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#script_source CcComputeNodeGroup#script_source}
     */
     readonly scriptSource?: NodeLifecycleActionsStagesNodeReadyScriptSourceProperty;
 }
@@ -1874,13 +1977,13 @@ export interface NodeLifecycleStagesProperty {
     /**
     * Scripts to run after the node is bootstrapped, once the PCS configuration phase completes and before slurmd starts.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#node_bootstrapped CcComputeNodeGroup#node_bootstrapped}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#node_bootstrapped CcComputeNodeGroup#node_bootstrapped}
     */
     readonly nodeBootstrapped?: NodeLifecycleScriptProperty[] | cdktn.IResolvable;
     /**
     * Scripts to execute when the node becomes ready (every boot).
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#node_ready CcComputeNodeGroup#node_ready}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#node_ready CcComputeNodeGroup#node_ready}
     */
     readonly nodeReady?: NodeReadyProperty[] | cdktn.IResolvable;
 }
@@ -1968,13 +2071,13 @@ export interface NodeLifecycleActionsProperty {
     /**
     * Controls whether lifecycle scripts are downloaded once at first boot (CACHE_ONCE) or re-downloaded on every reboot (REFRESH_ON_REBOOT). Defaults to CACHE_ONCE.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#script_caching_policy CcComputeNodeGroup#script_caching_policy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#script_caching_policy CcComputeNodeGroup#script_caching_policy}
     */
     readonly scriptCachingPolicy?: string;
     /**
     * The ordered scripts to run at each compute node lifecycle stage.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#stages CcComputeNodeGroup#stages}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#stages CcComputeNodeGroup#stages}
     */
     readonly stages?: NodeLifecycleStagesProperty;
 }
@@ -2062,13 +2165,13 @@ export interface ScalingConfigurationProperty {
     /**
     * The upper bound of the number of instances allowed in the compute fleet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#max_instance_count CcComputeNodeGroup#max_instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#max_instance_count CcComputeNodeGroup#max_instance_count}
     */
     readonly maxInstanceCount: number;
     /**
     * The lower bound of the number of instances allowed in the compute fleet.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#min_instance_count CcComputeNodeGroup#min_instance_count}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#min_instance_count CcComputeNodeGroup#min_instance_count}
     */
     readonly minInstanceCount: number;
 }
@@ -2150,13 +2253,13 @@ export interface SlurmCustomSettingProperty {
     /**
     * AWS PCS supports configuration of the following Slurm parameters for compute node groups: Weight and RealMemory.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#parameter_name CcComputeNodeGroup#parameter_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#parameter_name CcComputeNodeGroup#parameter_name}
     */
     readonly parameterName?: string;
     /**
     * The value for the configured Slurm setting.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#parameter_value CcComputeNodeGroup#parameter_value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#parameter_value CcComputeNodeGroup#parameter_value}
     */
     readonly parameterValue?: string;
 }
@@ -2264,15 +2367,21 @@ export class SlurmCustomSettingPropertyList extends cdktn.ComplexList {
 }
 export interface SlurmConfigurationProperty {
     /**
+    * Additional Slurm gres.conf records for the compute node group. Each item is a map of gres.conf attribute names to values describing one gres.conf record (for example a GPU topology, MIG, MPS, or custom GRES entry). AWS PCS adds the NodeName= prefix and merges these records with the GPU record it derives from the instance type.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#gres_custom_settings CcComputeNodeGroup#gres_custom_settings}
+    */
+    readonly gresCustomSettings?: { [key: string]: string }[] | cdktn.IResolvable;
+    /**
     * The time before an idle node is scaled down.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#scale_down_idle_time_in_seconds CcComputeNodeGroup#scale_down_idle_time_in_seconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#scale_down_idle_time_in_seconds CcComputeNodeGroup#scale_down_idle_time_in_seconds}
     */
     readonly scaleDownIdleTimeInSeconds?: number;
     /**
     * Additional Slurm-specific configuration that directly maps to Slurm settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#slurm_custom_settings CcComputeNodeGroup#slurm_custom_settings}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#slurm_custom_settings CcComputeNodeGroup#slurm_custom_settings}
     */
     readonly slurmCustomSettings?: SlurmCustomSettingProperty[] | cdktn.IResolvable;
 }
@@ -2294,6 +2403,10 @@ export class SlurmConfigurationPropertyOutputReference extends cdktn.ComplexObje
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._gresCustomSettings !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.gresCustomSettings = this._gresCustomSettings;
+        }
         if (this._scaleDownIdleTimeInSeconds !== undefined) {
             hasAnyValues = true;
             internalValueResult.scaleDownIdleTimeInSeconds = this._scaleDownIdleTimeInSeconds;
@@ -2309,6 +2422,7 @@ export class SlurmConfigurationPropertyOutputReference extends cdktn.ComplexObje
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._gresCustomSettings = undefined;
             this._scaleDownIdleTimeInSeconds = undefined;
             this._slurmCustomSettings.internalValue = undefined;
         }
@@ -2319,9 +2433,26 @@ export class SlurmConfigurationPropertyOutputReference extends cdktn.ComplexObje
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._gresCustomSettings = value.gresCustomSettings;
             this._scaleDownIdleTimeInSeconds = value.scaleDownIdleTimeInSeconds;
             this._slurmCustomSettings.internalValue = value.slurmCustomSettings;
         }
+    }
+
+    // gres_custom_settings - computed: true, optional: true, required: false
+    private _gresCustomSettings?: { [key: string]: string }[] | cdktn.IResolvable; 
+    public get gresCustomSettings() {
+        return this.interpolationForAttribute('gres_custom_settings');
+    }
+    public set gresCustomSettings(value: { [key: string]: string }[] | cdktn.IResolvable) {
+        this._gresCustomSettings = value;
+    }
+    public resetGresCustomSettings() {
+        this._gresCustomSettings = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get gresCustomSettingsInput() {
+        return this._gresCustomSettings;
     }
 
     // scale_down_idle_time_in_seconds - computed: true, optional: true, required: false
@@ -2360,7 +2491,7 @@ export interface SpotOptionsProperty {
     /**
     * The Amazon EC2 allocation strategy AWS PCS uses to provision EC2 instances. AWS PCS supports lowest price, capacity optimized, and price capacity optimized. If you don't provide this option, it defaults to price capacity optimized.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/pcs_compute_node_group#allocation_strategy CcComputeNodeGroup#allocation_strategy}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/pcs_compute_node_group#allocation_strategy CcComputeNodeGroup#allocation_strategy}
     */
     readonly allocationStrategy?: string;
 }

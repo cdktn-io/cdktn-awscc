@@ -6,6 +6,8 @@ export * from './cloud-watch-alarm-template-group';
 export * from './cluster';
 export * from './event-bridge-rule-template';
 export * from './event-bridge-rule-template-group';
+export * from './input';
+export * from './input-security-group';
 export * from './multiplex';
 export * from './multiplexprogram';
 export * from './network';

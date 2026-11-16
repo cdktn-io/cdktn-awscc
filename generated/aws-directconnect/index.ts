@@ -6,4 +6,5 @@ export * from './direct-connect-gateway-association';
 export * from './lag';
 export * from './private-virtual-interface';
 export * from './public-virtual-interface';
+export * from './resiliency-group';
 export * from './transit-virtual-interface';
