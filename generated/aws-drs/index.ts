@@ -1,3 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './launch-configuration-template';
+export * from './recovery-plan';
+export * from './replication-configuration-template';
 export * from './source-network';

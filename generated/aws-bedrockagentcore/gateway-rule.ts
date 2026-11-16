@@ -1,35 +1,35 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface CcGatewayRuleProps extends cdktn.TerraformMetaArguments {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#actions CcGatewayRule#actions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#actions CcGatewayRule#actions}
     */
     readonly actions: CcGatewayRule.ActionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#conditions CcGatewayRule#conditions}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#conditions CcGatewayRule#conditions}
     */
     readonly conditions?: CcGatewayRule.ConditionProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#gateway_identifier CcGatewayRule#gateway_identifier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#gateway_identifier CcGatewayRule#gateway_identifier}
     */
     readonly gatewayIdentifier?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#priority CcGatewayRule#priority}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#priority CcGatewayRule#priority}
     */
     readonly priority: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule}
 */
 export class CcGatewayRule extends cdktn.TerraformResource {
 
@@ -45,7 +45,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcGatewayRule resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcGatewayRule to import
-    * @param importFromId The id of the existing CcGatewayRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcGatewayRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcGatewayRule to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -57,7 +57,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule awscc_bedrockagentcore_gateway_rule} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class CcGatewayRule extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_bedrockagentcore_gateway_rule',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -186,6 +186,12 @@ export class CcGatewayRule extends cdktn.TerraformResource {
     // status - computed: true, optional: false, required: false
     public get status() {
         return this.getStringAttribute('status');
+    }
+
+    // system - computed: true, optional: false, required: false
+    private _system = new CcGatewayRule.SystemPropertyOutputReference(this, "system");
+    public get systemAttribute() {
+        return this._system;
     }
 
     // updated_at - computed: true, optional: false, required: false
@@ -445,12 +451,220 @@ export function ccGatewayRuleConfigurationBundleActionPropertyToHclTerraform(str
 }
 
 
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        mode: cdktn.stringToTerraform(struct!.mode),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        mode: {
+            value: cdktn.stringToHclTerraform(struct!.mode),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        errors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.errors),
+        status_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statusCodes),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        errors: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.errors),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        status_codes: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statusCodes),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        first_byte_timeout_milliseconds: cdktn.numberToTerraform(struct!.firstByteTimeoutMilliseconds),
+        model: cdktn.stringToTerraform(struct!.model),
+        target_name: cdktn.stringToTerraform(struct!.targetName),
+        trigger_on: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyToTerraform(struct!.triggerOn),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        first_byte_timeout_milliseconds: {
+            value: cdktn.numberToHclTerraform(struct!.firstByteTimeoutMilliseconds),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        model: {
+            value: cdktn.stringToHclTerraform(struct!.model),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        target_name: {
+            value: cdktn.stringToHclTerraform(struct!.targetName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        trigger_on: {
+            value: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyToHclTerraform(struct!.triggerOn),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        errors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.errors),
+        status_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statusCodes),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        errors: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.errors),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        status_codes: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statusCodes),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        circuit_breaker: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyToTerraform(struct!.circuitBreaker),
+        first_byte_timeout_milliseconds: cdktn.numberToTerraform(struct!.firstByteTimeoutMilliseconds),
+        target_fallback: cdktn.listMapper(ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyToTerraform, false)(struct!.targetFallback),
+        trigger_on: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyToTerraform(struct!.triggerOn),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetStaticRouteFallbackPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetStaticRouteFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        circuit_breaker: {
+            value: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyToHclTerraform(struct!.circuitBreaker),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty",
+        },
+        first_byte_timeout_milliseconds: {
+            value: cdktn.numberToHclTerraform(struct!.firstByteTimeoutMilliseconds),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        target_fallback: {
+            value: cdktn.listMapperHcl(ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyToHclTerraform, false)(struct!.targetFallback),
+            isBlock: true,
+            type: "list",
+            storageClassType: "ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyList",
+        },
+        trigger_on: {
+            value: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyToHclTerraform(struct!.triggerOn),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccGatewayRuleStaticRoutePropertyToTerraform(struct?: CcGatewayRule.StaticRouteProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        fallback: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackPropertyToTerraform(struct!.fallback),
+        model: cdktn.stringToTerraform(struct!.model),
         target_name: cdktn.stringToTerraform(struct!.targetName),
     }
 }
@@ -462,11 +676,229 @@ export function ccGatewayRuleStaticRoutePropertyToHclTerraform(struct?: CcGatewa
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        fallback: {
+            value: ccGatewayRuleActionsRouteToTargetStaticRouteFallbackPropertyToHclTerraform(struct!.fallback),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetStaticRouteFallbackProperty",
+        },
+        model: {
+            value: cdktn.stringToHclTerraform(struct!.model),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
         target_name: {
             value: cdktn.stringToHclTerraform(struct!.targetName),
             isBlock: false,
             type: "simple",
             storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        mode: cdktn.stringToTerraform(struct!.mode),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        mode: {
+            value: cdktn.stringToHclTerraform(struct!.mode),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        errors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.errors),
+        status_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statusCodes),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        errors: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.errors),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        status_codes: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statusCodes),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        first_byte_timeout_milliseconds: cdktn.numberToTerraform(struct!.firstByteTimeoutMilliseconds),
+        model: cdktn.stringToTerraform(struct!.model),
+        target_name: cdktn.stringToTerraform(struct!.targetName),
+        trigger_on: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyToTerraform(struct!.triggerOn),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        first_byte_timeout_milliseconds: {
+            value: cdktn.numberToHclTerraform(struct!.firstByteTimeoutMilliseconds),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        model: {
+            value: cdktn.stringToHclTerraform(struct!.model),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        target_name: {
+            value: cdktn.stringToHclTerraform(struct!.targetName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        trigger_on: {
+            value: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyToHclTerraform(struct!.triggerOn),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        errors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.errors),
+        status_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statusCodes),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        errors: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.errors),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+        status_codes: {
+            value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statusCodes),
+            isBlock: false,
+            type: "list",
+            storageClassType: "stringList",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyToTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        circuit_breaker: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyToTerraform(struct!.circuitBreaker),
+        first_byte_timeout_milliseconds: cdktn.numberToTerraform(struct!.firstByteTimeoutMilliseconds),
+        target_fallback: cdktn.listMapper(ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyToTerraform, false)(struct!.targetFallback),
+        trigger_on: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyToTerraform(struct!.triggerOn),
+    }
+}
+
+
+export function ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyToHclTerraform(struct?: CcGatewayRule.ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        circuit_breaker: {
+            value: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyToHclTerraform(struct!.circuitBreaker),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty",
+        },
+        first_byte_timeout_milliseconds: {
+            value: cdktn.numberToHclTerraform(struct!.firstByteTimeoutMilliseconds),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        target_fallback: {
+            value: cdktn.listMapperHcl(ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyToHclTerraform, false)(struct!.targetFallback),
+            isBlock: true,
+            type: "list",
+            storageClassType: "ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyList",
+        },
+        trigger_on: {
+            value: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyToHclTerraform(struct!.triggerOn),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty",
         },
     };
 
@@ -482,7 +914,9 @@ export function ccGatewayRuleTargetTrafficSplitEntryPropertyToTerraform(struct?:
     }
     return {
         description: cdktn.stringToTerraform(struct!.description),
+        fallback: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyToTerraform(struct!.fallback),
         metadata: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.metadata),
+        model: cdktn.stringToTerraform(struct!.model),
         name: cdktn.stringToTerraform(struct!.name),
         target_name: cdktn.stringToTerraform(struct!.targetName),
         weight: cdktn.numberToTerraform(struct!.weight),
@@ -502,11 +936,23 @@ export function ccGatewayRuleTargetTrafficSplitEntryPropertyToHclTerraform(struc
             type: "simple",
             storageClassType: "string",
         },
+        fallback: {
+            value: ccGatewayRuleActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyToHclTerraform(struct!.fallback),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty",
+        },
         metadata: {
             value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.metadata),
             isBlock: false,
             type: "map",
             storageClassType: "stringMap",
+        },
+        model: {
+            value: cdktn.stringToHclTerraform(struct!.model),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
         },
         name: {
             value: cdktn.stringToHclTerraform(struct!.name),
@@ -629,6 +1075,73 @@ export function ccGatewayRuleActionPropertyToHclTerraform(struct?: CcGatewayRule
             isBlock: true,
             type: "struct",
             storageClassType: "RouteToTargetActionProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleAnyOfPropertyToTerraform(struct?: CcGatewayRule.AnyOfProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        operator: cdktn.stringToTerraform(struct!.operator),
+        value: cdktn.stringToTerraform(struct!.value),
+    }
+}
+
+
+export function ccGatewayRuleAnyOfPropertyToHclTerraform(struct?: CcGatewayRule.AnyOfProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        operator: {
+            value: cdktn.stringToHclTerraform(struct!.operator),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        value: {
+            value: cdktn.stringToHclTerraform(struct!.value),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccGatewayRuleMatchModelsPropertyToTerraform(struct?: CcGatewayRule.MatchModelsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        any_of: cdktn.listMapper(ccGatewayRuleAnyOfPropertyToTerraform, false)(struct!.anyOf),
+    }
+}
+
+
+export function ccGatewayRuleMatchModelsPropertyToHclTerraform(struct?: CcGatewayRule.MatchModelsProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        any_of: {
+            value: cdktn.listMapperHcl(ccGatewayRuleAnyOfPropertyToHclTerraform, false)(struct!.anyOf),
+            isBlock: true,
+            type: "list",
+            storageClassType: "AnyOfPropertyList",
         },
     };
 
@@ -770,6 +1283,7 @@ export function ccGatewayRuleConditionPropertyToTerraform(struct?: CcGatewayRule
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
+        match_models: ccGatewayRuleMatchModelsPropertyToTerraform(struct!.matchModels),
         match_paths: ccGatewayRuleMatchPathsPropertyToTerraform(struct!.matchPaths),
         match_principals: ccGatewayRuleMatchPrincipalsPropertyToTerraform(struct!.matchPrincipals),
     }
@@ -782,6 +1296,12 @@ export function ccGatewayRuleConditionPropertyToHclTerraform(struct?: CcGatewayR
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     const attrs = {
+        match_models: {
+            value: ccGatewayRuleMatchModelsPropertyToHclTerraform(struct!.matchModels),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "MatchModelsProperty",
+        },
         match_paths: {
             value: ccGatewayRuleMatchPathsPropertyToHclTerraform(struct!.matchPaths),
             isBlock: true,
@@ -801,14 +1321,35 @@ export function ccGatewayRuleConditionPropertyToHclTerraform(struct?: CcGatewayR
 }
 
 
+export function ccGatewayRuleSystemPropertyToTerraform(struct?: CcGatewayRule.SystemProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+    }
+}
+
+
+export function ccGatewayRuleSystemPropertyToHclTerraform(struct?: CcGatewayRule.SystemProperty): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+    };
+    return attrs;
+}
+
+
 export namespace CcGatewayRule {
 export interface StaticOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
     */
     readonly bundleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
     */
     readonly bundleVersion?: string;
 }
@@ -894,11 +1435,11 @@ export class StaticOverridePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface ConfigurationBundleReferenceProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#bundle_arn CcGatewayRule#bundle_arn}
     */
     readonly bundleArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#bundle_version CcGatewayRule#bundle_version}
     */
     readonly bundleVersion?: string;
 }
@@ -984,23 +1525,23 @@ export class ConfigurationBundleReferencePropertyOutputReference extends cdktn.C
 }
 export interface TrafficSplitEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
     */
     readonly configurationBundle?: ConfigurationBundleReferenceProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
     */
     readonly description?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
     */
     readonly metadata?: { [key: string]: string };
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
     */
     readonly name?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
     */
     readonly weight?: number;
 }
@@ -1174,7 +1715,7 @@ export class TrafficSplitEntryPropertyList extends cdktn.ComplexList {
 }
 export interface WeightedOverrideProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
     */
     readonly trafficSplit?: TrafficSplitEntryProperty[] | cdktn.IResolvable;
 }
@@ -1238,11 +1779,11 @@ export class WeightedOverridePropertyOutputReference extends cdktn.ComplexObject
 }
 export interface ConfigurationBundleActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#static_override CcGatewayRule#static_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#static_override CcGatewayRule#static_override}
     */
     readonly staticOverride?: StaticOverrideProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weighted_override CcGatewayRule#weighted_override}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#weighted_override CcGatewayRule#weighted_override}
     */
     readonly weightedOverride?: WeightedOverrideProperty;
 }
@@ -1326,9 +1867,567 @@ export class ConfigurationBundleActionPropertyOutputReference extends cdktn.Comp
         return this._weightedOverride.internalValue;
     }
 }
+export interface ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#mode CcGatewayRule#mode}
+    */
+    readonly mode?: string;
+}
+export class ActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._mode !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mode = this._mode;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._mode = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._mode = value.mode;
+        }
+    }
+
+    // mode - computed: true, optional: true, required: false
+    private _mode?: string; 
+    public get mode() {
+        return this.getStringAttribute('mode');
+    }
+    public set mode(value: string) {
+        this._mode = value;
+    }
+    public resetMode() {
+        this._mode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modeInput() {
+        return this._mode;
+    }
+}
+export interface ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#errors CcGatewayRule#errors}
+    */
+    readonly errors?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#status_codes CcGatewayRule#status_codes}
+    */
+    readonly statusCodes?: string[];
+}
+export class ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._errors !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.errors = this._errors;
+        }
+        if (this._statusCodes !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.statusCodes = this._statusCodes;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._errors = undefined;
+            this._statusCodes = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._errors = value.errors;
+            this._statusCodes = value.statusCodes;
+        }
+    }
+
+    // errors - computed: true, optional: true, required: false
+    private _errors?: string[]; 
+    public get errors() {
+        return this.getListAttribute('errors');
+    }
+    public set errors(value: string[]) {
+        this._errors = value;
+    }
+    public resetErrors() {
+        this._errors = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get errorsInput() {
+        return this._errors;
+    }
+
+    // status_codes - computed: true, optional: true, required: false
+    private _statusCodes?: string[]; 
+    public get statusCodes() {
+        return this.getListAttribute('status_codes');
+    }
+    public set statusCodes(value: string[]) {
+        this._statusCodes = value;
+    }
+    public resetStatusCodes() {
+        this._statusCodes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusCodesInput() {
+        return this._statusCodes;
+    }
+}
+export interface ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#first_byte_timeout_milliseconds CcGatewayRule#first_byte_timeout_milliseconds}
+    */
+    readonly firstByteTimeoutMilliseconds?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#model CcGatewayRule#model}
+    */
+    readonly model?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    */
+    readonly targetName?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#trigger_on CcGatewayRule#trigger_on}
+    */
+    readonly triggerOn?: ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty;
+}
+export class ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._firstByteTimeoutMilliseconds !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.firstByteTimeoutMilliseconds = this._firstByteTimeoutMilliseconds;
+        }
+        if (this._model !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.model = this._model;
+        }
+        if (this._targetName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetName = this._targetName;
+        }
+        if (this._triggerOn?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.triggerOn = this._triggerOn?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._firstByteTimeoutMilliseconds = undefined;
+            this._model = undefined;
+            this._targetName = undefined;
+            this._triggerOn.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._firstByteTimeoutMilliseconds = value.firstByteTimeoutMilliseconds;
+            this._model = value.model;
+            this._targetName = value.targetName;
+            this._triggerOn.internalValue = value.triggerOn;
+        }
+    }
+
+    // first_byte_timeout_milliseconds - computed: true, optional: true, required: false
+    private _firstByteTimeoutMilliseconds?: number; 
+    public get firstByteTimeoutMilliseconds() {
+        return this.getNumberAttribute('first_byte_timeout_milliseconds');
+    }
+    public set firstByteTimeoutMilliseconds(value: number) {
+        this._firstByteTimeoutMilliseconds = value;
+    }
+    public resetFirstByteTimeoutMilliseconds() {
+        this._firstByteTimeoutMilliseconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get firstByteTimeoutMillisecondsInput() {
+        return this._firstByteTimeoutMilliseconds;
+    }
+
+    // model - computed: true, optional: true, required: false
+    private _model?: string; 
+    public get model() {
+        return this.getStringAttribute('model');
+    }
+    public set model(value: string) {
+        this._model = value;
+    }
+    public resetModel() {
+        this._model = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelInput() {
+        return this._model;
+    }
+
+    // target_name - computed: true, optional: true, required: false
+    private _targetName?: string; 
+    public get targetName() {
+        return this.getStringAttribute('target_name');
+    }
+    public set targetName(value: string) {
+        this._targetName = value;
+    }
+    public resetTargetName() {
+        this._targetName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetNameInput() {
+        return this._targetName;
+    }
+
+    // trigger_on - computed: true, optional: true, required: false
+    private _triggerOn = new ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnPropertyOutputReference(this, "trigger_on");
+    public get triggerOn() {
+        return this._triggerOn;
+    }
+    public putTriggerOn(value: ActionsRouteToTargetStaticRouteFallbackTargetFallbackTriggerOnProperty) {
+        this._triggerOn.internalValue = value;
+    }
+    public resetTriggerOn() {
+        this._triggerOn.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get triggerOnInput() {
+        return this._triggerOn.internalValue;
+    }
+}
+
+export class ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyList extends cdktn.ComplexList {
+    public internalValue? : ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyOutputReference {
+        return new ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#errors CcGatewayRule#errors}
+    */
+    readonly errors?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#status_codes CcGatewayRule#status_codes}
+    */
+    readonly statusCodes?: string[];
+}
+export class ActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._errors !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.errors = this._errors;
+        }
+        if (this._statusCodes !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.statusCodes = this._statusCodes;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._errors = undefined;
+            this._statusCodes = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._errors = value.errors;
+            this._statusCodes = value.statusCodes;
+        }
+    }
+
+    // errors - computed: true, optional: true, required: false
+    private _errors?: string[]; 
+    public get errors() {
+        return this.getListAttribute('errors');
+    }
+    public set errors(value: string[]) {
+        this._errors = value;
+    }
+    public resetErrors() {
+        this._errors = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get errorsInput() {
+        return this._errors;
+    }
+
+    // status_codes - computed: true, optional: true, required: false
+    private _statusCodes?: string[]; 
+    public get statusCodes() {
+        return this.getListAttribute('status_codes');
+    }
+    public set statusCodes(value: string[]) {
+        this._statusCodes = value;
+    }
+    public resetStatusCodes() {
+        this._statusCodes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusCodesInput() {
+        return this._statusCodes;
+    }
+}
+export interface ActionsRouteToTargetStaticRouteFallbackProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#circuit_breaker CcGatewayRule#circuit_breaker}
+    */
+    readonly circuitBreaker?: ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#first_byte_timeout_milliseconds CcGatewayRule#first_byte_timeout_milliseconds}
+    */
+    readonly firstByteTimeoutMilliseconds?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_fallback CcGatewayRule#target_fallback}
+    */
+    readonly targetFallback?: ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty[] | cdktn.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#trigger_on CcGatewayRule#trigger_on}
+    */
+    readonly triggerOn?: ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty;
+}
+export class ActionsRouteToTargetStaticRouteFallbackPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetStaticRouteFallbackProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._circuitBreaker?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.circuitBreaker = this._circuitBreaker?.internalValue;
+        }
+        if (this._firstByteTimeoutMilliseconds !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.firstByteTimeoutMilliseconds = this._firstByteTimeoutMilliseconds;
+        }
+        if (this._targetFallback?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetFallback = this._targetFallback?.internalValue;
+        }
+        if (this._triggerOn?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.triggerOn = this._triggerOn?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetStaticRouteFallbackProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._circuitBreaker.internalValue = undefined;
+            this._firstByteTimeoutMilliseconds = undefined;
+            this._targetFallback.internalValue = undefined;
+            this._triggerOn.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._circuitBreaker.internalValue = value.circuitBreaker;
+            this._firstByteTimeoutMilliseconds = value.firstByteTimeoutMilliseconds;
+            this._targetFallback.internalValue = value.targetFallback;
+            this._triggerOn.internalValue = value.triggerOn;
+        }
+    }
+
+    // circuit_breaker - computed: true, optional: true, required: false
+    private _circuitBreaker = new ActionsRouteToTargetStaticRouteFallbackCircuitBreakerPropertyOutputReference(this, "circuit_breaker");
+    public get circuitBreaker() {
+        return this._circuitBreaker;
+    }
+    public putCircuitBreaker(value: ActionsRouteToTargetStaticRouteFallbackCircuitBreakerProperty) {
+        this._circuitBreaker.internalValue = value;
+    }
+    public resetCircuitBreaker() {
+        this._circuitBreaker.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get circuitBreakerInput() {
+        return this._circuitBreaker.internalValue;
+    }
+
+    // first_byte_timeout_milliseconds - computed: true, optional: true, required: false
+    private _firstByteTimeoutMilliseconds?: number; 
+    public get firstByteTimeoutMilliseconds() {
+        return this.getNumberAttribute('first_byte_timeout_milliseconds');
+    }
+    public set firstByteTimeoutMilliseconds(value: number) {
+        this._firstByteTimeoutMilliseconds = value;
+    }
+    public resetFirstByteTimeoutMilliseconds() {
+        this._firstByteTimeoutMilliseconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get firstByteTimeoutMillisecondsInput() {
+        return this._firstByteTimeoutMilliseconds;
+    }
+
+    // target_fallback - computed: true, optional: true, required: false
+    private _targetFallback = new ActionsRouteToTargetStaticRouteFallbackTargetFallbackPropertyList(this, "target_fallback", false);
+    public get targetFallback() {
+        return this._targetFallback;
+    }
+    public putTargetFallback(value: ActionsRouteToTargetStaticRouteFallbackTargetFallbackProperty[] | cdktn.IResolvable) {
+        this._targetFallback.internalValue = value;
+    }
+    public resetTargetFallback() {
+        this._targetFallback.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetFallbackInput() {
+        return this._targetFallback.internalValue;
+    }
+
+    // trigger_on - computed: true, optional: true, required: false
+    private _triggerOn = new ActionsRouteToTargetStaticRouteFallbackTriggerOnPropertyOutputReference(this, "trigger_on");
+    public get triggerOn() {
+        return this._triggerOn;
+    }
+    public putTriggerOn(value: ActionsRouteToTargetStaticRouteFallbackTriggerOnProperty) {
+        this._triggerOn.internalValue = value;
+    }
+    public resetTriggerOn() {
+        this._triggerOn.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get triggerOnInput() {
+        return this._triggerOn.internalValue;
+    }
+}
 export interface StaticRouteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#fallback CcGatewayRule#fallback}
+    */
+    readonly fallback?: ActionsRouteToTargetStaticRouteFallbackProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#model CcGatewayRule#model}
+    */
+    readonly model?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
     */
     readonly targetName?: string;
 }
@@ -1350,6 +2449,14 @@ export class StaticRoutePropertyOutputReference extends cdktn.ComplexObject {
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._fallback?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fallback = this._fallback?.internalValue;
+        }
+        if (this._model !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.model = this._model;
+        }
         if (this._targetName !== undefined) {
             hasAnyValues = true;
             internalValueResult.targetName = this._targetName;
@@ -1361,6 +2468,8 @@ export class StaticRoutePropertyOutputReference extends cdktn.ComplexObject {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._fallback.internalValue = undefined;
+            this._model = undefined;
             this._targetName = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -1370,8 +2479,42 @@ export class StaticRoutePropertyOutputReference extends cdktn.ComplexObject {
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._fallback.internalValue = value.fallback;
+            this._model = value.model;
             this._targetName = value.targetName;
         }
+    }
+
+    // fallback - computed: true, optional: true, required: false
+    private _fallback = new ActionsRouteToTargetStaticRouteFallbackPropertyOutputReference(this, "fallback");
+    public get fallback() {
+        return this._fallback;
+    }
+    public putFallback(value: ActionsRouteToTargetStaticRouteFallbackProperty) {
+        this._fallback.internalValue = value;
+    }
+    public resetFallback() {
+        this._fallback.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fallbackInput() {
+        return this._fallback.internalValue;
+    }
+
+    // model - computed: true, optional: true, required: false
+    private _model?: string; 
+    public get model() {
+        return this.getStringAttribute('model');
+    }
+    public set model(value: string) {
+        this._model = value;
+    }
+    public resetModel() {
+        this._model = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelInput() {
+        return this._model;
     }
 
     // target_name - computed: true, optional: true, required: false
@@ -1390,25 +2533,583 @@ export class StaticRoutePropertyOutputReference extends cdktn.ComplexObject {
         return this._targetName;
     }
 }
-export interface TargetTrafficSplitEntryProperty {
+export interface ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#mode CcGatewayRule#mode}
     */
-    readonly description?: string;
+    readonly mode?: string;
+}
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
     */
-    readonly metadata?: { [key: string]: string };
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._mode !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.mode = this._mode;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._mode = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._mode = value.mode;
+        }
+    }
+
+    // mode - computed: true, optional: true, required: false
+    private _mode?: string; 
+    public get mode() {
+        return this.getStringAttribute('mode');
+    }
+    public set mode(value: string) {
+        this._mode = value;
+    }
+    public resetMode() {
+        this._mode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modeInput() {
+        return this._mode;
+    }
+}
+export interface ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#errors CcGatewayRule#errors}
     */
-    readonly name?: string;
+    readonly errors?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#status_codes CcGatewayRule#status_codes}
+    */
+    readonly statusCodes?: string[];
+}
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._errors !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.errors = this._errors;
+        }
+        if (this._statusCodes !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.statusCodes = this._statusCodes;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._errors = undefined;
+            this._statusCodes = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._errors = value.errors;
+            this._statusCodes = value.statusCodes;
+        }
+    }
+
+    // errors - computed: true, optional: true, required: false
+    private _errors?: string[]; 
+    public get errors() {
+        return this.getListAttribute('errors');
+    }
+    public set errors(value: string[]) {
+        this._errors = value;
+    }
+    public resetErrors() {
+        this._errors = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get errorsInput() {
+        return this._errors;
+    }
+
+    // status_codes - computed: true, optional: true, required: false
+    private _statusCodes?: string[]; 
+    public get statusCodes() {
+        return this.getListAttribute('status_codes');
+    }
+    public set statusCodes(value: string[]) {
+        this._statusCodes = value;
+    }
+    public resetStatusCodes() {
+        this._statusCodes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusCodesInput() {
+        return this._statusCodes;
+    }
+}
+export interface ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#first_byte_timeout_milliseconds CcGatewayRule#first_byte_timeout_milliseconds}
+    */
+    readonly firstByteTimeoutMilliseconds?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#model CcGatewayRule#model}
+    */
+    readonly model?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
     */
     readonly targetName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#trigger_on CcGatewayRule#trigger_on}
+    */
+    readonly triggerOn?: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty;
+}
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._firstByteTimeoutMilliseconds !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.firstByteTimeoutMilliseconds = this._firstByteTimeoutMilliseconds;
+        }
+        if (this._model !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.model = this._model;
+        }
+        if (this._targetName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetName = this._targetName;
+        }
+        if (this._triggerOn?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.triggerOn = this._triggerOn?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._firstByteTimeoutMilliseconds = undefined;
+            this._model = undefined;
+            this._targetName = undefined;
+            this._triggerOn.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._firstByteTimeoutMilliseconds = value.firstByteTimeoutMilliseconds;
+            this._model = value.model;
+            this._targetName = value.targetName;
+            this._triggerOn.internalValue = value.triggerOn;
+        }
+    }
+
+    // first_byte_timeout_milliseconds - computed: true, optional: true, required: false
+    private _firstByteTimeoutMilliseconds?: number; 
+    public get firstByteTimeoutMilliseconds() {
+        return this.getNumberAttribute('first_byte_timeout_milliseconds');
+    }
+    public set firstByteTimeoutMilliseconds(value: number) {
+        this._firstByteTimeoutMilliseconds = value;
+    }
+    public resetFirstByteTimeoutMilliseconds() {
+        this._firstByteTimeoutMilliseconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get firstByteTimeoutMillisecondsInput() {
+        return this._firstByteTimeoutMilliseconds;
+    }
+
+    // model - computed: true, optional: true, required: false
+    private _model?: string; 
+    public get model() {
+        return this.getStringAttribute('model');
+    }
+    public set model(value: string) {
+        this._model = value;
+    }
+    public resetModel() {
+        this._model = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelInput() {
+        return this._model;
+    }
+
+    // target_name - computed: true, optional: true, required: false
+    private _targetName?: string; 
+    public get targetName() {
+        return this.getStringAttribute('target_name');
+    }
+    public set targetName(value: string) {
+        this._targetName = value;
+    }
+    public resetTargetName() {
+        this._targetName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetNameInput() {
+        return this._targetName;
+    }
+
+    // trigger_on - computed: true, optional: true, required: false
+    private _triggerOn = new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnPropertyOutputReference(this, "trigger_on");
+    public get triggerOn() {
+        return this._triggerOn;
+    }
+    public putTriggerOn(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackTriggerOnProperty) {
+        this._triggerOn.internalValue = value;
+    }
+    public resetTriggerOn() {
+        this._triggerOn.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get triggerOnInput() {
+        return this._triggerOn.internalValue;
+    }
+}
+
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyList extends cdktn.ComplexList {
+    public internalValue? : ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyOutputReference {
+        return new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#errors CcGatewayRule#errors}
+    */
+    readonly errors?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#status_codes CcGatewayRule#status_codes}
+    */
+    readonly statusCodes?: string[];
+}
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._errors !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.errors = this._errors;
+        }
+        if (this._statusCodes !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.statusCodes = this._statusCodes;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._errors = undefined;
+            this._statusCodes = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._errors = value.errors;
+            this._statusCodes = value.statusCodes;
+        }
+    }
+
+    // errors - computed: true, optional: true, required: false
+    private _errors?: string[]; 
+    public get errors() {
+        return this.getListAttribute('errors');
+    }
+    public set errors(value: string[]) {
+        this._errors = value;
+    }
+    public resetErrors() {
+        this._errors = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get errorsInput() {
+        return this._errors;
+    }
+
+    // status_codes - computed: true, optional: true, required: false
+    private _statusCodes?: string[]; 
+    public get statusCodes() {
+        return this.getListAttribute('status_codes');
+    }
+    public set statusCodes(value: string[]) {
+        this._statusCodes = value;
+    }
+    public resetStatusCodes() {
+        this._statusCodes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusCodesInput() {
+        return this._statusCodes;
+    }
+}
+export interface ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#circuit_breaker CcGatewayRule#circuit_breaker}
+    */
+    readonly circuitBreaker?: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#first_byte_timeout_milliseconds CcGatewayRule#first_byte_timeout_milliseconds}
+    */
+    readonly firstByteTimeoutMilliseconds?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_fallback CcGatewayRule#target_fallback}
+    */
+    readonly targetFallback?: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty[] | cdktn.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#trigger_on CcGatewayRule#trigger_on}
+    */
+    readonly triggerOn?: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty;
+}
+export class ActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._circuitBreaker?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.circuitBreaker = this._circuitBreaker?.internalValue;
+        }
+        if (this._firstByteTimeoutMilliseconds !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.firstByteTimeoutMilliseconds = this._firstByteTimeoutMilliseconds;
+        }
+        if (this._targetFallback?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.targetFallback = this._targetFallback?.internalValue;
+        }
+        if (this._triggerOn?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.triggerOn = this._triggerOn?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._circuitBreaker.internalValue = undefined;
+            this._firstByteTimeoutMilliseconds = undefined;
+            this._targetFallback.internalValue = undefined;
+            this._triggerOn.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._circuitBreaker.internalValue = value.circuitBreaker;
+            this._firstByteTimeoutMilliseconds = value.firstByteTimeoutMilliseconds;
+            this._targetFallback.internalValue = value.targetFallback;
+            this._triggerOn.internalValue = value.triggerOn;
+        }
+    }
+
+    // circuit_breaker - computed: true, optional: true, required: false
+    private _circuitBreaker = new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerPropertyOutputReference(this, "circuit_breaker");
+    public get circuitBreaker() {
+        return this._circuitBreaker;
+    }
+    public putCircuitBreaker(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackCircuitBreakerProperty) {
+        this._circuitBreaker.internalValue = value;
+    }
+    public resetCircuitBreaker() {
+        this._circuitBreaker.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get circuitBreakerInput() {
+        return this._circuitBreaker.internalValue;
+    }
+
+    // first_byte_timeout_milliseconds - computed: true, optional: true, required: false
+    private _firstByteTimeoutMilliseconds?: number; 
+    public get firstByteTimeoutMilliseconds() {
+        return this.getNumberAttribute('first_byte_timeout_milliseconds');
+    }
+    public set firstByteTimeoutMilliseconds(value: number) {
+        this._firstByteTimeoutMilliseconds = value;
+    }
+    public resetFirstByteTimeoutMilliseconds() {
+        this._firstByteTimeoutMilliseconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get firstByteTimeoutMillisecondsInput() {
+        return this._firstByteTimeoutMilliseconds;
+    }
+
+    // target_fallback - computed: true, optional: true, required: false
+    private _targetFallback = new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackPropertyList(this, "target_fallback", false);
+    public get targetFallback() {
+        return this._targetFallback;
+    }
+    public putTargetFallback(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTargetFallbackProperty[] | cdktn.IResolvable) {
+        this._targetFallback.internalValue = value;
+    }
+    public resetTargetFallback() {
+        this._targetFallback.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get targetFallbackInput() {
+        return this._targetFallback.internalValue;
+    }
+
+    // trigger_on - computed: true, optional: true, required: false
+    private _triggerOn = new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnPropertyOutputReference(this, "trigger_on");
+    public get triggerOn() {
+        return this._triggerOn;
+    }
+    public putTriggerOn(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackTriggerOnProperty) {
+        this._triggerOn.internalValue = value;
+    }
+    public resetTriggerOn() {
+        this._triggerOn.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get triggerOnInput() {
+        return this._triggerOn.internalValue;
+    }
+}
+export interface TargetTrafficSplitEntryProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#description CcGatewayRule#description}
+    */
+    readonly description?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#fallback CcGatewayRule#fallback}
+    */
+    readonly fallback?: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#metadata CcGatewayRule#metadata}
+    */
+    readonly metadata?: { [key: string]: string };
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#model CcGatewayRule#model}
+    */
+    readonly model?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#name CcGatewayRule#name}
+    */
+    readonly name?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#target_name CcGatewayRule#target_name}
+    */
+    readonly targetName?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#weight CcGatewayRule#weight}
     */
     readonly weight?: number;
 }
@@ -1436,9 +3137,17 @@ export class TargetTrafficSplitEntryPropertyOutputReference extends cdktn.Comple
             hasAnyValues = true;
             internalValueResult.description = this._description;
         }
+        if (this._fallback?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.fallback = this._fallback?.internalValue;
+        }
         if (this._metadata !== undefined) {
             hasAnyValues = true;
             internalValueResult.metadata = this._metadata;
+        }
+        if (this._model !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.model = this._model;
         }
         if (this._name !== undefined) {
             hasAnyValues = true;
@@ -1460,7 +3169,9 @@ export class TargetTrafficSplitEntryPropertyOutputReference extends cdktn.Comple
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._description = undefined;
+            this._fallback.internalValue = undefined;
             this._metadata = undefined;
+            this._model = undefined;
             this._name = undefined;
             this._targetName = undefined;
             this._weight = undefined;
@@ -1473,7 +3184,9 @@ export class TargetTrafficSplitEntryPropertyOutputReference extends cdktn.Comple
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._description = value.description;
+            this._fallback.internalValue = value.fallback;
             this._metadata = value.metadata;
+            this._model = value.model;
             this._name = value.name;
             this._targetName = value.targetName;
             this._weight = value.weight;
@@ -1496,6 +3209,22 @@ export class TargetTrafficSplitEntryPropertyOutputReference extends cdktn.Comple
         return this._description;
     }
 
+    // fallback - computed: true, optional: true, required: false
+    private _fallback = new ActionsRouteToTargetWeightedRouteTrafficSplitFallbackPropertyOutputReference(this, "fallback");
+    public get fallback() {
+        return this._fallback;
+    }
+    public putFallback(value: ActionsRouteToTargetWeightedRouteTrafficSplitFallbackProperty) {
+        this._fallback.internalValue = value;
+    }
+    public resetFallback() {
+        this._fallback.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fallbackInput() {
+        return this._fallback.internalValue;
+    }
+
     // metadata - computed: true, optional: true, required: false
     private _metadata?: { [key: string]: string }; 
     public get metadata() {
@@ -1510,6 +3239,22 @@ export class TargetTrafficSplitEntryPropertyOutputReference extends cdktn.Comple
     // Temporarily expose input value. Use with caution.
     public get metadataInput() {
         return this._metadata;
+    }
+
+    // model - computed: true, optional: true, required: false
+    private _model?: string; 
+    public get model() {
+        return this.getStringAttribute('model');
+    }
+    public set model(value: string) {
+        this._model = value;
+    }
+    public resetModel() {
+        this._model = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modelInput() {
+        return this._model;
     }
 
     // name - computed: true, optional: true, required: false
@@ -1582,7 +3327,7 @@ export class TargetTrafficSplitEntryPropertyList extends cdktn.ComplexList {
 }
 export interface WeightedRouteProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#traffic_split CcGatewayRule#traffic_split}
     */
     readonly trafficSplit?: TargetTrafficSplitEntryProperty[] | cdktn.IResolvable;
 }
@@ -1646,11 +3391,11 @@ export class WeightedRoutePropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface RouteToTargetActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#static_route CcGatewayRule#static_route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#static_route CcGatewayRule#static_route}
     */
     readonly staticRoute?: StaticRouteProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#weighted_route CcGatewayRule#weighted_route}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#weighted_route CcGatewayRule#weighted_route}
     */
     readonly weightedRoute?: WeightedRouteProperty;
 }
@@ -1736,11 +3481,11 @@ export class RouteToTargetActionPropertyOutputReference extends cdktn.ComplexObj
 }
 export interface ActionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#configuration_bundle CcGatewayRule#configuration_bundle}
     */
     readonly configurationBundle?: ConfigurationBundleActionProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#route_to_target CcGatewayRule#route_to_target}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#route_to_target CcGatewayRule#route_to_target}
     */
     readonly routeToTarget?: RouteToTargetActionProperty;
 }
@@ -1846,9 +3591,185 @@ export class ActionPropertyList extends cdktn.ComplexList {
         return new ActionPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
     }
 }
+export interface AnyOfProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#operator CcGatewayRule#operator}
+    */
+    readonly operator?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#value CcGatewayRule#value}
+    */
+    readonly value?: string;
+}
+export class AnyOfPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param complexObjectIndex the index of this item in the list
+    * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+        super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+    }
+
+    public get internalValue(): AnyOfProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._operator !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.operator = this._operator;
+        }
+        if (this._value !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.value = this._value;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: AnyOfProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._operator = undefined;
+            this._value = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._operator = value.operator;
+            this._value = value.value;
+        }
+    }
+
+    // operator - computed: true, optional: true, required: false
+    private _operator?: string; 
+    public get operator() {
+        return this.getStringAttribute('operator');
+    }
+    public set operator(value: string) {
+        this._operator = value;
+    }
+    public resetOperator() {
+        this._operator = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get operatorInput() {
+        return this._operator;
+    }
+
+    // value - computed: true, optional: true, required: false
+    private _value?: string; 
+    public get value() {
+        return this.getStringAttribute('value');
+    }
+    public set value(value: string) {
+        this._value = value;
+    }
+    public resetValue() {
+        this._value = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get valueInput() {
+        return this._value;
+    }
+}
+
+export class AnyOfPropertyList extends cdktn.ComplexList {
+    public internalValue? : AnyOfProperty[] | cdktn.IResolvable
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+    */
+    constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+        super(terraformResource, terraformAttribute, wrapsSet);
+    }
+
+    /**
+    * @param index the index of the item to return
+    */
+    public get(index: number): AnyOfPropertyOutputReference {
+        return new AnyOfPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface MatchModelsProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
+    */
+    readonly anyOf?: AnyOfProperty[] | cdktn.IResolvable;
+}
+export class MatchModelsPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): MatchModelsProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._anyOf?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.anyOf = this._anyOf?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: MatchModelsProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._anyOf.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._anyOf.internalValue = value.anyOf;
+        }
+    }
+
+    // any_of - computed: true, optional: true, required: false
+    private _anyOf = new AnyOfPropertyList(this, "any_of", false);
+    public get anyOf() {
+        return this._anyOf;
+    }
+    public putAnyOf(value: AnyOfProperty[] | cdktn.IResolvable) {
+        this._anyOf.internalValue = value;
+    }
+    public resetAnyOf() {
+        this._anyOf.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get anyOfInput() {
+        return this._anyOf.internalValue;
+    }
+}
 export interface MatchPathsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
     */
     readonly anyOf?: string[];
 }
@@ -1912,11 +3833,11 @@ export class MatchPathsPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface IamPrincipalProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#arn CcGatewayRule#arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#arn CcGatewayRule#arn}
     */
     readonly arn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#operator CcGatewayRule#operator}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#operator CcGatewayRule#operator}
     */
     readonly operator?: string;
 }
@@ -2002,7 +3923,7 @@ export class IamPrincipalPropertyOutputReference extends cdktn.ComplexObject {
 }
 export interface MatchPrincipalEntryProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#iam_principal CcGatewayRule#iam_principal}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#iam_principal CcGatewayRule#iam_principal}
     */
     readonly iamPrincipal?: IamPrincipalProperty;
 }
@@ -2088,7 +4009,7 @@ export class MatchPrincipalEntryPropertyList extends cdktn.ComplexList {
 }
 export interface MatchPrincipalsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#any_of CcGatewayRule#any_of}
     */
     readonly anyOf?: MatchPrincipalEntryProperty[] | cdktn.IResolvable;
 }
@@ -2152,11 +4073,15 @@ export class MatchPrincipalsPropertyOutputReference extends cdktn.ComplexObject 
 }
 export interface ConditionProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#match_paths CcGatewayRule#match_paths}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#match_models CcGatewayRule#match_models}
+    */
+    readonly matchModels?: MatchModelsProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#match_paths CcGatewayRule#match_paths}
     */
     readonly matchPaths?: MatchPathsProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/bedrockagentcore_gateway_rule#match_principals CcGatewayRule#match_principals}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/bedrockagentcore_gateway_rule#match_principals CcGatewayRule#match_principals}
     */
     readonly matchPrincipals?: MatchPrincipalsProperty;
 }
@@ -2180,6 +4105,10 @@ export class ConditionPropertyOutputReference extends cdktn.ComplexObject {
         }
         let hasAnyValues = this.isEmptyObject;
         const internalValueResult: any = {};
+        if (this._matchModels?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.matchModels = this._matchModels?.internalValue;
+        }
         if (this._matchPaths?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.matchPaths = this._matchPaths?.internalValue;
@@ -2195,6 +4124,7 @@ export class ConditionPropertyOutputReference extends cdktn.ComplexObject {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
+            this._matchModels.internalValue = undefined;
             this._matchPaths.internalValue = undefined;
             this._matchPrincipals.internalValue = undefined;
         }
@@ -2205,9 +4135,26 @@ export class ConditionPropertyOutputReference extends cdktn.ComplexObject {
         else {
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
+            this._matchModels.internalValue = value.matchModels;
             this._matchPaths.internalValue = value.matchPaths;
             this._matchPrincipals.internalValue = value.matchPrincipals;
         }
+    }
+
+    // match_models - computed: true, optional: true, required: false
+    private _matchModels = new MatchModelsPropertyOutputReference(this, "match_models");
+    public get matchModels() {
+        return this._matchModels;
+    }
+    public putMatchModels(value: MatchModelsProperty) {
+        this._matchModels.internalValue = value;
+    }
+    public resetMatchModels() {
+        this._matchModels.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get matchModelsInput() {
+        return this._matchModels.internalValue;
     }
 
     // match_paths - computed: true, optional: true, required: false
@@ -2260,6 +4207,39 @@ export class ConditionPropertyList extends cdktn.ComplexList {
     */
     public get(index: number): ConditionPropertyOutputReference {
         return new ConditionPropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+    }
+}
+export interface SystemProperty {
+}
+export class SystemPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): SystemProperty | undefined {
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SystemProperty | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+        }
+    }
+
+    // managed_by - computed: true, optional: false, required: false
+    public get managedBy() {
+        return this.getStringAttribute('managed_by');
     }
 }
 }

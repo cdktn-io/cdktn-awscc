@@ -6,6 +6,8 @@ export * from './cluster-capacity-provider-associations';
 export * from './daemon';
 export * from './daemon-task-definition';
 export * from './express-gateway-service';
+export * from './gateway';
+export * from './gateway-cluster-associations';
 export * from './primary-task-set';
 export * from './service';
 export * from './task-definition';

@@ -1,0 +1,13 @@
+{
+  "targets": {
+    "python": {
+      "module": "cdktn_awscc.aws_bcm"
+    },
+    "dotnet": {
+      "namespace": "Io.Cdktn.AwsCc.BCM"
+    },
+    "java": {
+      "package": "io.cdktn.awscc.services.bcm"
+    }
+  }
+}

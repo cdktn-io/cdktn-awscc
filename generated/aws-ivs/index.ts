@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './ad-configuration';
 export * from './channel';
 export * from './encoder-configuration';
 export * from './ingest-configuration';

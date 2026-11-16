@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,31 +9,31 @@ export interface CcConfigurationProps extends cdktn.TerraformMetaArguments {
     /**
     * Optional description for the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#description CcConfiguration#description}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#description CcConfiguration#description}
     */
     readonly description?: string;
     /**
     * User-friendly name for the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#name CcConfiguration#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#name CcConfiguration#name}
     */
     readonly name: string;
     /**
     * Required run-specific configurations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#run_configurations CcConfiguration#run_configurations}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#run_configurations CcConfiguration#run_configurations}
     */
     readonly runConfigurations: CcConfiguration.RunConfigurationsProperty;
     /**
     * Tags for the configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#tags CcConfiguration#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#tags CcConfiguration#tags}
     */
     readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration awscc_omics_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration awscc_omics_configuration}
 */
 export class CcConfiguration extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CcConfiguration extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcConfiguration resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcConfiguration to import
-    * @param importFromId The id of the existing CcConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcConfiguration to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CcConfiguration extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration awscc_omics_configuration} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration awscc_omics_configuration} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CcConfiguration extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_omics_configuration',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -229,6 +229,7 @@ export function ccConfigurationVpcConfigPropertyToTerraform(struct?: CcConfigura
     return {
         security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityGroupIds),
         subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnetIds),
+        vpc_owner_account_id: cdktn.stringToTerraform(struct!.vpcOwnerAccountId),
     }
 }
 
@@ -250,6 +251,12 @@ export function ccConfigurationVpcConfigPropertyToHclTerraform(struct?: CcConfig
             isBlock: false,
             type: "list",
             storageClassType: "stringList",
+        },
+        vpc_owner_account_id: {
+            value: cdktn.stringToHclTerraform(struct!.vpcOwnerAccountId),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
         },
     };
 
@@ -291,13 +298,19 @@ export function ccConfigurationRunConfigurationsPropertyToHclTerraform(struct?: 
 export namespace CcConfiguration {
 export interface VpcConfigProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#security_group_ids CcConfiguration#security_group_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#security_group_ids CcConfiguration#security_group_ids}
     */
     readonly securityGroupIds?: string[];
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#subnet_ids CcConfiguration#subnet_ids}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#subnet_ids CcConfiguration#subnet_ids}
     */
     readonly subnetIds?: string[];
+    /**
+    * The Amazon Web Services account ID of the cross-account VPC owner for RAM-shared VPC configurations.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#vpc_owner_account_id CcConfiguration#vpc_owner_account_id}
+    */
+    readonly vpcOwnerAccountId?: string;
 }
 export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -325,6 +338,10 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
             hasAnyValues = true;
             internalValueResult.subnetIds = this._subnetIds;
         }
+        if (this._vpcOwnerAccountId !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.vpcOwnerAccountId = this._vpcOwnerAccountId;
+        }
         return hasAnyValues ? internalValueResult : undefined;
     }
 
@@ -334,6 +351,7 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._securityGroupIds = undefined;
             this._subnetIds = undefined;
+            this._vpcOwnerAccountId = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
             this.isEmptyObject = false;
@@ -344,6 +362,7 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
             this.resolvableValue = undefined;
             this._securityGroupIds = value.securityGroupIds;
             this._subnetIds = value.subnetIds;
+            this._vpcOwnerAccountId = value.vpcOwnerAccountId;
         }
     }
 
@@ -378,10 +397,26 @@ export class VpcConfigPropertyOutputReference extends cdktn.ComplexObject {
     public get subnetIdsInput() {
         return this._subnetIds;
     }
+
+    // vpc_owner_account_id - computed: true, optional: true, required: false
+    private _vpcOwnerAccountId?: string; 
+    public get vpcOwnerAccountId() {
+        return this.getStringAttribute('vpc_owner_account_id');
+    }
+    public set vpcOwnerAccountId(value: string) {
+        this._vpcOwnerAccountId = value;
+    }
+    public resetVpcOwnerAccountId() {
+        this._vpcOwnerAccountId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get vpcOwnerAccountIdInput() {
+        return this._vpcOwnerAccountId;
+    }
 }
 export interface RunConfigurationsProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/omics_configuration#vpc_config CcConfiguration#vpc_config}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/omics_configuration#vpc_config CcConfiguration#vpc_config}
     */
     readonly vpcConfig?: VpcConfigProperty;
 }

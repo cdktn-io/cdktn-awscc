@@ -1,5 +1,6 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
+export * from './backup-access-point';
 export * from './backup-plan';
 export * from './backup-selection';
 export * from './backup-vault';

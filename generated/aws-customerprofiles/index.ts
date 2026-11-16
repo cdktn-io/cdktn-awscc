@@ -8,4 +8,5 @@ export * from './event-trigger';
 export * from './integration';
 export * from './object-type';
 export * from './recommender';
+export * from './recommender-filter';
 export * from './segment-definition';

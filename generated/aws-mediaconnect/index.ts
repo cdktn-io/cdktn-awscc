@@ -3,8 +3,10 @@
 export * from './bridge';
 export * from './bridge-output';
 export * from './bridge-source';
+export * from './destination-endpoint';
 export * from './flow';
 export * from './flow-entitlement';
+export * from './flow-media-stream';
 export * from './flow-output';
 export * from './flow-source';
 export * from './flow-vpc-interface';
@@ -12,3 +14,4 @@ export * from './gateway';
 export * from './router-input';
 export * from './router-network-interface';
 export * from './router-output';
+export * from './source-endpoint';

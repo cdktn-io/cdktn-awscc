@@ -1,7 +1,7 @@
 // Copyright (c) cdktn-io
 // SPDX-License-Identifier: MPL-2.0
 // generated from terraform resource schema (awscc provider) — do not edit by hand
-// https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output
+// https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output
 
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
@@ -9,57 +9,63 @@ export interface CcRouterOutputProps extends cdktn.TerraformMetaArguments {
     /**
     * The Availability Zone where you want to create the router output. This must be a valid Availability Zone for the region specified by regionName, or the current region if no regionName is provided.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#availability_zone CcRouterOutput#availability_zone}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#availability_zone CcRouterOutput#availability_zone}
     */
     readonly availabilityZone?: string;
     /**
     * The configuration settings for a router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#configuration CcRouterOutput#configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#configuration CcRouterOutput#configuration}
     */
     readonly configuration: CcRouterOutput.RouterOutputConfigurationProperty;
     /**
+    * The fabric configuration settings for the router output.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#fabric_configuration CcRouterOutput#fabric_configuration}
+    */
+    readonly fabricConfiguration?: CcRouterOutput.FabricConfigurationProperty;
+    /**
     * The configuration settings for maintenance operations, including preferred maintenance windows and schedules.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#maintenance_configuration CcRouterOutput#maintenance_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#maintenance_configuration CcRouterOutput#maintenance_configuration}
     */
     readonly maintenanceConfiguration?: CcRouterOutput.MaintenanceConfigurationProperty;
     /**
     * The maximum bitrate for the router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#maximum_bitrate CcRouterOutput#maximum_bitrate}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#maximum_bitrate CcRouterOutput#maximum_bitrate}
     */
     readonly maximumBitrate: number;
     /**
     * The name of the router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#name CcRouterOutput#name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#name CcRouterOutput#name}
     */
     readonly name: string;
     /**
     * The Amazon Web Services Region for the router output. Defaults to the current region if not specified.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#region_name CcRouterOutput#region_name}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#region_name CcRouterOutput#region_name}
     */
     readonly regionName?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#routing_scope CcRouterOutput#routing_scope}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#routing_scope CcRouterOutput#routing_scope}
     */
     readonly routingScope: string;
     /**
     * Key-value pairs that can be used to tag this router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#tags CcRouterOutput#tags}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#tags CcRouterOutput#tags}
     */
     readonly tags?: CcRouterOutput.TagProperty[] | cdktn.IResolvable;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#tier CcRouterOutput#tier}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#tier CcRouterOutput#tier}
     */
     readonly tier: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output awscc_mediaconnect_router_output}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output awscc_mediaconnect_router_output}
 */
 export class CcRouterOutput extends cdktn.TerraformResource {
 
@@ -75,7 +81,7 @@ export class CcRouterOutput extends cdktn.TerraformResource {
     * Generates CDKTN code for importing a CcRouterOutput resource upon running "cdktn plan <stack-name>"
     * @param scope The scope in which to define this construct
     * @param importToId The construct id used in the generated config for the CcRouterOutput to import
-    * @param importFromId The id of the existing CcRouterOutput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#import import section} in the documentation of this resource for the id to use
+    * @param importFromId The id of the existing CcRouterOutput that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#import import section} in the documentation of this resource for the id to use
     * @param provider? Optional instance of the provider where the CcRouterOutput to import is found
     */
     public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -87,7 +93,7 @@ export class CcRouterOutput extends cdktn.TerraformResource {
     // ===========
 
     /**
-    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output awscc_mediaconnect_router_output} Resource
+    * Create a new {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output awscc_mediaconnect_router_output} Resource
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -98,7 +104,7 @@ export class CcRouterOutput extends cdktn.TerraformResource {
             terraformResourceType: 'awscc_mediaconnect_router_output',
             terraformGeneratorMetadata: {
                 providerName: 'awscc',
-                providerVersion: '1.99.0'
+                providerVersion: '1.110.0'
             },
             provider: config.provider,
             dependsOn: config.dependsOn,
@@ -110,6 +116,7 @@ export class CcRouterOutput extends cdktn.TerraformResource {
         });
         this._availabilityZone = config.availabilityZone;
         this._configuration.internalValue = config.configuration;
+        this._fabricConfiguration.internalValue = config.fabricConfiguration;
         this._maintenanceConfiguration.internalValue = config.maintenanceConfiguration;
         this._maximumBitrate = config.maximumBitrate;
         this._name = config.name;
@@ -126,6 +133,11 @@ export class CcRouterOutput extends cdktn.TerraformResource {
     // arn - computed: true, optional: false, required: false
     public get arn() {
         return this.getStringAttribute('arn');
+    }
+
+    // associated_source_endpoint_arns - computed: true, optional: false, required: false
+    public get associatedSourceEndpointArns() {
+        return this.getListAttribute('associated_source_endpoint_arns');
     }
 
     // availability_zone - computed: true, optional: true, required: false
@@ -160,6 +172,22 @@ export class CcRouterOutput extends cdktn.TerraformResource {
     // created_at - computed: true, optional: false, required: false
     public get createdAt() {
         return this.getStringAttribute('created_at');
+    }
+
+    // fabric_configuration - computed: true, optional: true, required: false
+    private _fabricConfiguration = new CcRouterOutput.FabricConfigurationPropertyOutputReference(this, "fabric_configuration");
+    public get fabricConfiguration() {
+        return this._fabricConfiguration;
+    }
+    public putFabricConfiguration(value: CcRouterOutput.FabricConfigurationProperty) {
+        this._fabricConfiguration.internalValue = value;
+    }
+    public resetFabricConfiguration() {
+        this._fabricConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fabricConfigurationInput() {
+        return this._fabricConfiguration.internalValue;
     }
 
     // id - computed: true, optional: false, required: false
@@ -310,6 +338,7 @@ export class CcRouterOutput extends cdktn.TerraformResource {
         return {
             availability_zone: cdktn.stringToTerraform(this._availabilityZone),
             configuration: ccRouterOutputRouterOutputConfigurationPropertyToTerraform(this._configuration.internalValue),
+            fabric_configuration: ccRouterOutputFabricConfigurationPropertyToTerraform(this._fabricConfiguration.internalValue),
             maintenance_configuration: ccRouterOutputMaintenanceConfigurationPropertyToTerraform(this._maintenanceConfiguration.internalValue),
             maximum_bitrate: cdktn.numberToTerraform(this._maximumBitrate),
             name: cdktn.stringToTerraform(this._name),
@@ -333,6 +362,12 @@ export class CcRouterOutput extends cdktn.TerraformResource {
                 isBlock: true,
                 type: "struct",
                 storageClassType: "CcRouterOutput.RouterOutputConfigurationProperty",
+            },
+            fabric_configuration: {
+                value: ccRouterOutputFabricConfigurationPropertyToHclTerraform(this._fabricConfiguration.internalValue),
+                isBlock: true,
+                type: "struct",
+                storageClassType: "CcRouterOutput.FabricConfigurationProperty",
             },
             maintenance_configuration: {
                 value: ccRouterOutputMaintenanceConfigurationPropertyToHclTerraform(this._maintenanceConfiguration.internalValue),
@@ -538,7 +573,7 @@ export function ccRouterOutputMediaConnectFlowRouterOutputConfigurationPropertyT
 }
 
 
-export function ccRouterOutputSecretsManagerPropertyToTerraform(struct?: CcRouterOutput.SecretsManagerProperty | cdktn.IResolvable): any {
+export function ccRouterOutputConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyToTerraform(struct?: CcRouterOutput.ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -550,7 +585,7 @@ export function ccRouterOutputSecretsManagerPropertyToTerraform(struct?: CcRoute
 }
 
 
-export function ccRouterOutputSecretsManagerPropertyToHclTerraform(struct?: CcRouterOutput.SecretsManagerProperty | cdktn.IResolvable): any {
+export function ccRouterOutputConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyToHclTerraform(struct?: CcRouterOutput.ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -582,7 +617,7 @@ export function ccRouterOutputMediaLiveTransitEncryptionKeyConfigurationProperty
     }
     return {
         automatic: cdktn.stringToTerraform(struct!.automatic),
-        secrets_manager: ccRouterOutputSecretsManagerPropertyToTerraform(struct!.secretsManager),
+        secrets_manager: ccRouterOutputConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyToTerraform(struct!.secretsManager),
     }
 }
 
@@ -600,10 +635,10 @@ export function ccRouterOutputMediaLiveTransitEncryptionKeyConfigurationProperty
             storageClassType: "string",
         },
         secrets_manager: {
-            value: ccRouterOutputSecretsManagerPropertyToHclTerraform(struct!.secretsManager),
+            value: ccRouterOutputConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyToHclTerraform(struct!.secretsManager),
             isBlock: true,
             type: "struct",
-            storageClassType: "SecretsManagerProperty",
+            storageClassType: "ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty",
         },
     };
 
@@ -693,6 +728,154 @@ export function ccRouterOutputMediaLiveInputRouterOutputConfigurationPropertyToH
 }
 
 
+export function ccRouterOutputEncryptionSecretPropertyToTerraform(struct?: CcRouterOutput.EncryptionSecretProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        secret_arn: cdktn.stringToTerraform(struct!.secretArn),
+    }
+}
+
+
+export function ccRouterOutputEncryptionSecretPropertyToHclTerraform(struct?: CcRouterOutput.EncryptionSecretProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        secret_arn: {
+            value: cdktn.stringToHclTerraform(struct!.secretArn),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyToTerraform(struct?: CcRouterOutput.ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        encryption_secret: ccRouterOutputEncryptionSecretPropertyToTerraform(struct!.encryptionSecret),
+        encryption_secret_type: cdktn.stringToTerraform(struct!.encryptionSecretType),
+    }
+}
+
+
+export function ccRouterOutputConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyToHclTerraform(struct?: CcRouterOutput.ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        encryption_secret: {
+            value: ccRouterOutputEncryptionSecretPropertyToHclTerraform(struct!.encryptionSecret),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "EncryptionSecretProperty",
+        },
+        encryption_secret_type: {
+            value: cdktn.stringToHclTerraform(struct!.encryptionSecretType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputDestinationTransitEncryptionPropertyToTerraform(struct?: CcRouterOutput.DestinationTransitEncryptionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        automatic: cdktn.stringToTerraform(struct!.automatic),
+        secrets_manager: ccRouterOutputConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyToTerraform(struct!.secretsManager),
+    }
+}
+
+
+export function ccRouterOutputDestinationTransitEncryptionPropertyToHclTerraform(struct?: CcRouterOutput.DestinationTransitEncryptionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        automatic: {
+            value: cdktn.stringToHclTerraform(struct!.automatic),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        secrets_manager: {
+            value: ccRouterOutputConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyToHclTerraform(struct!.secretsManager),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputSourceEndpointPropertyToTerraform(struct?: CcRouterOutput.SourceEndpointProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        destination_transit_encryption: ccRouterOutputDestinationTransitEncryptionPropertyToTerraform(struct!.destinationTransitEncryption),
+        destination_transit_encryption_type: cdktn.stringToTerraform(struct!.destinationTransitEncryptionType),
+        endpoint_lifecycle_management: cdktn.stringToTerraform(struct!.endpointLifecycleManagement),
+    }
+}
+
+
+export function ccRouterOutputSourceEndpointPropertyToHclTerraform(struct?: CcRouterOutput.SourceEndpointProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        destination_transit_encryption: {
+            value: ccRouterOutputDestinationTransitEncryptionPropertyToHclTerraform(struct!.destinationTransitEncryption),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "DestinationTransitEncryptionProperty",
+        },
+        destination_transit_encryption_type: {
+            value: cdktn.stringToHclTerraform(struct!.destinationTransitEncryptionType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        endpoint_lifecycle_management: {
+            value: cdktn.stringToHclTerraform(struct!.endpointLifecycleManagement),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 export function ccRouterOutputRistRouterOutputConfigurationPropertyToTerraform(struct?: CcRouterOutput.RistRouterOutputConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
@@ -722,6 +905,131 @@ export function ccRouterOutputRistRouterOutputConfigurationPropertyToHclTerrafor
             isBlock: false,
             type: "simple",
             storageClassType: "number",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyToTerraform(struct?: CcRouterOutput.ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        public: cdktn.stringToTerraform(struct!.public),
+    }
+}
+
+
+export function ccRouterOutputConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyToHclTerraform(struct?: CcRouterOutput.ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        public: {
+            value: cdktn.stringToHclTerraform(struct!.public),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputTlsEncryptionPropertyToTerraform(struct?: CcRouterOutput.TlsEncryptionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        encryption_configuration: ccRouterOutputConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyToTerraform(struct!.encryptionConfiguration),
+        encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    }
+}
+
+
+export function ccRouterOutputTlsEncryptionPropertyToHclTerraform(struct?: CcRouterOutput.TlsEncryptionProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        encryption_configuration: {
+            value: ccRouterOutputConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyToHclTerraform(struct!.encryptionConfiguration),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty",
+        },
+        encryption_type: {
+            value: cdktn.stringToHclTerraform(struct!.encryptionType),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputRtmpPushPropertyToTerraform(struct?: CcRouterOutput.RtmpPushProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        application_name: cdktn.stringToTerraform(struct!.applicationName),
+        destination_address: cdktn.stringToTerraform(struct!.destinationAddress),
+        destination_port: cdktn.numberToTerraform(struct!.destinationPort),
+        stream_name: cdktn.stringToTerraform(struct!.streamName),
+        tls_encryption: ccRouterOutputTlsEncryptionPropertyToTerraform(struct!.tlsEncryption),
+    }
+}
+
+
+export function ccRouterOutputRtmpPushPropertyToHclTerraform(struct?: CcRouterOutput.RtmpPushProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        application_name: {
+            value: cdktn.stringToHclTerraform(struct!.applicationName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        destination_address: {
+            value: cdktn.stringToHclTerraform(struct!.destinationAddress),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        destination_port: {
+            value: cdktn.numberToHclTerraform(struct!.destinationPort),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "number",
+        },
+        stream_name: {
+            value: cdktn.stringToHclTerraform(struct!.streamName),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
+        },
+        tls_encryption: {
+            value: ccRouterOutputTlsEncryptionPropertyToHclTerraform(struct!.tlsEncryption),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "TlsEncryptionProperty",
         },
     };
 
@@ -936,7 +1244,7 @@ export function ccRouterOutputConfigurationStandardProtocolConfigurationSrtListe
 }
 
 
-export function ccRouterOutputEncryptionConfigurationPropertyToTerraform(struct?: CcRouterOutput.EncryptionConfigurationProperty | cdktn.IResolvable): any {
+export function ccRouterOutputConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyToTerraform(struct?: CcRouterOutput.ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -947,7 +1255,7 @@ export function ccRouterOutputEncryptionConfigurationPropertyToTerraform(struct?
 }
 
 
-export function ccRouterOutputEncryptionConfigurationPropertyToHclTerraform(struct?: CcRouterOutput.EncryptionConfigurationProperty | cdktn.IResolvable): any {
+export function ccRouterOutputConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyToHclTerraform(struct?: CcRouterOutput.ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty | cdktn.IResolvable): any {
     if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
     if (cdktn.isComplexElement(struct)) {
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -972,7 +1280,7 @@ export function ccRouterOutputSrtListenerRouterOutputConfigurationPropertyToTerr
         throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
     }
     return {
-        encryption_configuration: ccRouterOutputEncryptionConfigurationPropertyToTerraform(struct!.encryptionConfiguration),
+        encryption_configuration: ccRouterOutputConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyToTerraform(struct!.encryptionConfiguration),
         minimum_latency_milliseconds: cdktn.numberToTerraform(struct!.minimumLatencyMilliseconds),
         port: cdktn.numberToTerraform(struct!.port),
     }
@@ -986,10 +1294,10 @@ export function ccRouterOutputSrtListenerRouterOutputConfigurationPropertyToHclT
     }
     const attrs = {
         encryption_configuration: {
-            value: ccRouterOutputEncryptionConfigurationPropertyToHclTerraform(struct!.encryptionConfiguration),
+            value: ccRouterOutputConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyToHclTerraform(struct!.encryptionConfiguration),
             isBlock: true,
             type: "struct",
-            storageClassType: "EncryptionConfigurationProperty",
+            storageClassType: "ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty",
         },
         minimum_latency_milliseconds: {
             value: cdktn.numberToHclTerraform(struct!.minimumLatencyMilliseconds),
@@ -1017,6 +1325,7 @@ export function ccRouterOutputRouterOutputProtocolConfigurationPropertyToTerrafo
     }
     return {
         rist: ccRouterOutputRistRouterOutputConfigurationPropertyToTerraform(struct!.rist),
+        rtmp_push: ccRouterOutputRtmpPushPropertyToTerraform(struct!.rtmpPush),
         rtp: ccRouterOutputRtpRouterOutputConfigurationPropertyToTerraform(struct!.rtp),
         srt_caller: ccRouterOutputSrtCallerRouterOutputConfigurationPropertyToTerraform(struct!.srtCaller),
         srt_listener: ccRouterOutputSrtListenerRouterOutputConfigurationPropertyToTerraform(struct!.srtListener),
@@ -1035,6 +1344,12 @@ export function ccRouterOutputRouterOutputProtocolConfigurationPropertyToHclTerr
             isBlock: true,
             type: "struct",
             storageClassType: "RistRouterOutputConfigurationProperty",
+        },
+        rtmp_push: {
+            value: ccRouterOutputRtmpPushPropertyToHclTerraform(struct!.rtmpPush),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "RtmpPushProperty",
         },
         rtp: {
             value: ccRouterOutputRtpRouterOutputConfigurationPropertyToHclTerraform(struct!.rtp),
@@ -1113,6 +1428,7 @@ export function ccRouterOutputRouterOutputConfigurationPropertyToTerraform(struc
     return {
         media_connect_flow: ccRouterOutputMediaConnectFlowRouterOutputConfigurationPropertyToTerraform(struct!.mediaConnectFlow),
         media_live_input: ccRouterOutputMediaLiveInputRouterOutputConfigurationPropertyToTerraform(struct!.mediaLiveInput),
+        source_endpoint: ccRouterOutputSourceEndpointPropertyToTerraform(struct!.sourceEndpoint),
         standard: ccRouterOutputStandardRouterOutputConfigurationPropertyToTerraform(struct!.standard),
     }
 }
@@ -1136,11 +1452,47 @@ export function ccRouterOutputRouterOutputConfigurationPropertyToHclTerraform(st
             type: "struct",
             storageClassType: "MediaLiveInputRouterOutputConfigurationProperty",
         },
+        source_endpoint: {
+            value: ccRouterOutputSourceEndpointPropertyToHclTerraform(struct!.sourceEndpoint),
+            isBlock: true,
+            type: "struct",
+            storageClassType: "SourceEndpointProperty",
+        },
         standard: {
             value: ccRouterOutputStandardRouterOutputConfigurationPropertyToHclTerraform(struct!.standard),
             isBlock: true,
             type: "struct",
             storageClassType: "StandardRouterOutputConfigurationProperty",
+        },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
+export function ccRouterOutputFabricConfigurationPropertyToTerraform(struct?: CcRouterOutput.FabricConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    return {
+        recovery_latency_mode: cdktn.stringToTerraform(struct!.recoveryLatencyMode),
+    }
+}
+
+
+export function ccRouterOutputFabricConfigurationPropertyToHclTerraform(struct?: CcRouterOutput.FabricConfigurationProperty | cdktn.IResolvable): any {
+    if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+    if (cdktn.isComplexElement(struct)) {
+        throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+    }
+    const attrs = {
+        recovery_latency_mode: {
+            value: cdktn.stringToHclTerraform(struct!.recoveryLatencyMode),
+            isBlock: false,
+            type: "simple",
+            storageClassType: "string",
         },
     };
 
@@ -1265,13 +1617,13 @@ export interface SecretsManagerEncryptionKeyConfigurationProperty {
     /**
     * The ARN of the IAM role assumed by MediaConnect to access the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the Secrets Manager secret used for transit encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -1359,13 +1711,13 @@ export interface FlowTransitEncryptionKeyConfigurationProperty {
     /**
     * Configuration settings for automatic encryption key management, where MediaConnect handles key creation and rotation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#automatic CcRouterOutput#automatic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#automatic CcRouterOutput#automatic}
     */
     readonly automatic?: string;
     /**
     * The configuration settings for transit encryption using Secrets Manager, including the secret ARN and role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secrets_manager CcRouterOutput#secrets_manager}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secrets_manager CcRouterOutput#secrets_manager}
     */
     readonly secretsManager?: SecretsManagerEncryptionKeyConfigurationProperty;
 }
@@ -1453,11 +1805,11 @@ export interface FlowTransitEncryptionProperty {
     /**
     * Configuration settings for flow transit encryption keys.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key_configuration CcRouterOutput#encryption_key_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key_configuration CcRouterOutput#encryption_key_configuration}
     */
     readonly encryptionKeyConfiguration?: FlowTransitEncryptionKeyConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key_type CcRouterOutput#encryption_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key_type CcRouterOutput#encryption_key_type}
     */
     readonly encryptionKeyType?: string;
 }
@@ -1545,19 +1897,19 @@ export interface MediaConnectFlowRouterOutputConfigurationProperty {
     /**
     * The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_transit_encryption CcRouterOutput#destination_transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_transit_encryption CcRouterOutput#destination_transit_encryption}
     */
     readonly destinationTransitEncryption?: FlowTransitEncryptionProperty;
     /**
     * The ARN of the flow to connect to this router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#flow_arn CcRouterOutput#flow_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#flow_arn CcRouterOutput#flow_arn}
     */
     readonly flowArn?: string;
     /**
     * The ARN of the flow source to connect to this router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#flow_source_arn CcRouterOutput#flow_source_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#flow_source_arn CcRouterOutput#flow_source_arn}
     */
     readonly flowSourceArn?: string;
 }
@@ -1663,21 +2015,21 @@ export class MediaConnectFlowRouterOutputConfigurationPropertyOutputReference ex
         return this._flowSourceArn;
     }
 }
-export interface SecretsManagerProperty {
+export interface ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty {
     /**
     * The ARN of the IAM role assumed by MediaConnect to access the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the Secrets Manager secret used for transit encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
-export class SecretsManagerPropertyOutputReference extends cdktn.ComplexObject {
+export class ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -1689,7 +2041,7 @@ export class SecretsManagerPropertyOutputReference extends cdktn.ComplexObject {
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): SecretsManagerProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -1706,7 +2058,7 @@ export class SecretsManagerPropertyOutputReference extends cdktn.ComplexObject {
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: SecretsManagerProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -1761,15 +2113,15 @@ export interface MediaLiveTransitEncryptionKeyConfigurationProperty {
     /**
     * Configuration settings for automatic encryption key management, where MediaConnect handles key creation and rotation.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#automatic CcRouterOutput#automatic}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#automatic CcRouterOutput#automatic}
     */
     readonly automatic?: string;
     /**
     * The configuration settings for transit encryption using Secrets Manager, including the secret ARN and role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secrets_manager CcRouterOutput#secrets_manager}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secrets_manager CcRouterOutput#secrets_manager}
     */
-    readonly secretsManager?: SecretsManagerProperty;
+    readonly secretsManager?: ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty;
 }
 export class MediaLiveTransitEncryptionKeyConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
@@ -1836,11 +2188,11 @@ export class MediaLiveTransitEncryptionKeyConfigurationPropertyOutputReference e
     }
 
     // secrets_manager - computed: true, optional: true, required: false
-    private _secretsManager = new SecretsManagerPropertyOutputReference(this, "secrets_manager");
+    private _secretsManager = new ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerPropertyOutputReference(this, "secrets_manager");
     public get secretsManager() {
         return this._secretsManager;
     }
-    public putSecretsManager(value: SecretsManagerProperty) {
+    public putSecretsManager(value: ConfigurationMediaLiveInputDestinationTransitEncryptionEncryptionKeyConfigurationSecretsManagerProperty) {
         this._secretsManager.internalValue = value;
     }
     public resetSecretsManager() {
@@ -1855,11 +2207,11 @@ export interface MediaLiveTransitEncryptionProperty {
     /**
     * Configuration settings for the MediaLive transit encryption key.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key_configuration CcRouterOutput#encryption_key_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key_configuration CcRouterOutput#encryption_key_configuration}
     */
     readonly encryptionKeyConfiguration?: MediaLiveTransitEncryptionKeyConfigurationProperty;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key_type CcRouterOutput#encryption_key_type}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key_type CcRouterOutput#encryption_key_type}
     */
     readonly encryptionKeyType?: string;
 }
@@ -1947,17 +2299,17 @@ export interface MediaLiveInputRouterOutputConfigurationProperty {
     /**
     * The encryption configuration that defines how content is encrypted during transit between MediaConnect Router and MediaLive. This configuration determines whether encryption keys are automatically managed by the service or manually managed through Secrets Manager.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_transit_encryption CcRouterOutput#destination_transit_encryption}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_transit_encryption CcRouterOutput#destination_transit_encryption}
     */
     readonly destinationTransitEncryption?: MediaLiveTransitEncryptionProperty;
     /**
     * The ARN of the MediaLive input to connect to this router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#media_live_input_arn CcRouterOutput#media_live_input_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#media_live_input_arn CcRouterOutput#media_live_input_arn}
     */
     readonly mediaLiveInputArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#media_live_pipeline_id CcRouterOutput#media_live_pipeline_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#media_live_pipeline_id CcRouterOutput#media_live_pipeline_id}
     */
     readonly mediaLivePipelineId?: string;
 }
@@ -2063,17 +2415,387 @@ export class MediaLiveInputRouterOutputConfigurationPropertyOutputReference exte
         return this._mediaLivePipelineId;
     }
 }
+export interface EncryptionSecretProperty {
+    /**
+    * The ARN of the Secrets Manager secret that holds the key or passphrase. The secret must be encrypted with a customer managed Amazon Web Services KMS key that is enabled and symmetric; it cannot use the Amazon Web Services managed key aws/secretsmanager. The secret must be in the same Amazon Web Services account and Region as the endpoint.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
+    */
+    readonly secretArn?: string;
+}
+export class EncryptionSecretPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): EncryptionSecretProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._secretArn !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.secretArn = this._secretArn;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: EncryptionSecretProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._secretArn = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._secretArn = value.secretArn;
+        }
+    }
+
+    // secret_arn - computed: true, optional: true, required: false
+    private _secretArn?: string; 
+    public get secretArn() {
+        return this.getStringAttribute('secret_arn');
+    }
+    public set secretArn(value: string) {
+        this._secretArn = value;
+    }
+    public resetSecretArn() {
+        this._secretArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get secretArnInput() {
+        return this._secretArn;
+    }
+}
+export interface ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty {
+    /**
+    * The configuration for the Secrets Manager secret that holds the key or passphrase used to encrypt an endpoint connection.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_secret CcRouterOutput#encryption_secret}
+    */
+    readonly encryptionSecret?: EncryptionSecretProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_secret_type CcRouterOutput#encryption_secret_type}
+    */
+    readonly encryptionSecretType?: string;
+}
+export class ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._encryptionSecret?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.encryptionSecret = this._encryptionSecret?.internalValue;
+        }
+        if (this._encryptionSecretType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.encryptionSecretType = this._encryptionSecretType;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._encryptionSecret.internalValue = undefined;
+            this._encryptionSecretType = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._encryptionSecret.internalValue = value.encryptionSecret;
+            this._encryptionSecretType = value.encryptionSecretType;
+        }
+    }
+
+    // encryption_secret - computed: true, optional: true, required: false
+    private _encryptionSecret = new EncryptionSecretPropertyOutputReference(this, "encryption_secret");
+    public get encryptionSecret() {
+        return this._encryptionSecret;
+    }
+    public putEncryptionSecret(value: EncryptionSecretProperty) {
+        this._encryptionSecret.internalValue = value;
+    }
+    public resetEncryptionSecret() {
+        this._encryptionSecret.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionSecretInput() {
+        return this._encryptionSecret.internalValue;
+    }
+
+    // encryption_secret_type - computed: true, optional: true, required: false
+    private _encryptionSecretType?: string; 
+    public get encryptionSecretType() {
+        return this.getStringAttribute('encryption_secret_type');
+    }
+    public set encryptionSecretType(value: string) {
+        this._encryptionSecretType = value;
+    }
+    public resetEncryptionSecretType() {
+        this._encryptionSecretType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionSecretTypeInput() {
+        return this._encryptionSecretType;
+    }
+}
+export interface DestinationTransitEncryptionProperty {
+    /**
+    * The configuration for automatic endpoint encryption. In this mode, MediaConnect determines the encryption key when the endpoint connects. This type does not require any additional settings.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#automatic CcRouterOutput#automatic}
+    */
+    readonly automatic?: string;
+    /**
+    * The endpoint encryption configuration for connections that use a key or passphrase that you store in Secrets Manager.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secrets_manager CcRouterOutput#secrets_manager}
+    */
+    readonly secretsManager?: ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty;
+}
+export class DestinationTransitEncryptionPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): DestinationTransitEncryptionProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._automatic !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.automatic = this._automatic;
+        }
+        if (this._secretsManager?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.secretsManager = this._secretsManager?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: DestinationTransitEncryptionProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._automatic = undefined;
+            this._secretsManager.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._automatic = value.automatic;
+            this._secretsManager.internalValue = value.secretsManager;
+        }
+    }
+
+    // automatic - computed: true, optional: true, required: false
+    private _automatic?: string; 
+    public get automatic() {
+        return this.getStringAttribute('automatic');
+    }
+    public set automatic(value: string) {
+        this._automatic = value;
+    }
+    public resetAutomatic() {
+        this._automatic = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get automaticInput() {
+        return this._automatic;
+    }
+
+    // secrets_manager - computed: true, optional: true, required: false
+    private _secretsManager = new ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerPropertyOutputReference(this, "secrets_manager");
+    public get secretsManager() {
+        return this._secretsManager;
+    }
+    public putSecretsManager(value: ConfigurationSourceEndpointDestinationTransitEncryptionSecretsManagerProperty) {
+        this._secretsManager.internalValue = value;
+    }
+    public resetSecretsManager() {
+        this._secretsManager.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get secretsManagerInput() {
+        return this._secretsManager.internalValue;
+    }
+}
+export interface SourceEndpointProperty {
+    /**
+    * The encryption settings for an endpoint connection. This is a union type, so exactly one of its members is set: secretsManager when you store the encryption key or passphrase in Secrets Manager, or automatic when you let MediaConnect determine the encryption key when the endpoint connects.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_transit_encryption CcRouterOutput#destination_transit_encryption}
+    */
+    readonly destinationTransitEncryption?: DestinationTransitEncryptionProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_transit_encryption_type CcRouterOutput#destination_transit_encryption_type}
+    */
+    readonly destinationTransitEncryptionType?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#endpoint_lifecycle_management CcRouterOutput#endpoint_lifecycle_management}
+    */
+    readonly endpointLifecycleManagement?: string;
+}
+export class SourceEndpointPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): SourceEndpointProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._destinationTransitEncryption?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.destinationTransitEncryption = this._destinationTransitEncryption?.internalValue;
+        }
+        if (this._destinationTransitEncryptionType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.destinationTransitEncryptionType = this._destinationTransitEncryptionType;
+        }
+        if (this._endpointLifecycleManagement !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.endpointLifecycleManagement = this._endpointLifecycleManagement;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: SourceEndpointProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._destinationTransitEncryption.internalValue = undefined;
+            this._destinationTransitEncryptionType = undefined;
+            this._endpointLifecycleManagement = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._destinationTransitEncryption.internalValue = value.destinationTransitEncryption;
+            this._destinationTransitEncryptionType = value.destinationTransitEncryptionType;
+            this._endpointLifecycleManagement = value.endpointLifecycleManagement;
+        }
+    }
+
+    // destination_transit_encryption - computed: true, optional: true, required: false
+    private _destinationTransitEncryption = new DestinationTransitEncryptionPropertyOutputReference(this, "destination_transit_encryption");
+    public get destinationTransitEncryption() {
+        return this._destinationTransitEncryption;
+    }
+    public putDestinationTransitEncryption(value: DestinationTransitEncryptionProperty) {
+        this._destinationTransitEncryption.internalValue = value;
+    }
+    public resetDestinationTransitEncryption() {
+        this._destinationTransitEncryption.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get destinationTransitEncryptionInput() {
+        return this._destinationTransitEncryption.internalValue;
+    }
+
+    // destination_transit_encryption_type - computed: true, optional: true, required: false
+    private _destinationTransitEncryptionType?: string; 
+    public get destinationTransitEncryptionType() {
+        return this.getStringAttribute('destination_transit_encryption_type');
+    }
+    public set destinationTransitEncryptionType(value: string) {
+        this._destinationTransitEncryptionType = value;
+    }
+    public resetDestinationTransitEncryptionType() {
+        this._destinationTransitEncryptionType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get destinationTransitEncryptionTypeInput() {
+        return this._destinationTransitEncryptionType;
+    }
+
+    // endpoint_lifecycle_management - computed: true, optional: true, required: false
+    private _endpointLifecycleManagement?: string; 
+    public get endpointLifecycleManagement() {
+        return this.getStringAttribute('endpoint_lifecycle_management');
+    }
+    public set endpointLifecycleManagement(value: string) {
+        this._endpointLifecycleManagement = value;
+    }
+    public resetEndpointLifecycleManagement() {
+        this._endpointLifecycleManagement = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get endpointLifecycleManagementInput() {
+        return this._endpointLifecycleManagement;
+    }
+}
 export interface RistRouterOutputConfigurationProperty {
     /**
     * The destination IP address for the RIST protocol in the router output configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
     */
     readonly destinationAddress?: string;
     /**
     * The destination port number for the RIST protocol in the router output configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
     */
     readonly destinationPort?: number;
 }
@@ -2157,21 +2879,357 @@ export class RistRouterOutputConfigurationPropertyOutputReference extends cdktn.
         return this._destinationPort;
     }
 }
+export interface ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty {
+    /**
+    * The TLS encryption configuration for destinations that present a certificate from a publicly trusted certificate authority. This type does not require any additional settings.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#public CcRouterOutput#public}
+    */
+    readonly public?: string;
+}
+export class ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._public !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.public = this._public;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._public = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._public = value.public;
+        }
+    }
+
+    // public - computed: true, optional: true, required: false
+    private _public?: string; 
+    public get public() {
+        return this.getStringAttribute('public');
+    }
+    public set public(value: string) {
+        this._public = value;
+    }
+    public resetPublic() {
+        this._public = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get publicInput() {
+        return this._public;
+    }
+}
+export interface TlsEncryptionProperty {
+    /**
+    * The configuration settings for TLS encryption.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_configuration CcRouterOutput#encryption_configuration}
+    */
+    readonly encryptionConfiguration?: ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty;
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_type CcRouterOutput#encryption_type}
+    */
+    readonly encryptionType?: string;
+}
+export class TlsEncryptionPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): TlsEncryptionProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._encryptionConfiguration?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.encryptionConfiguration = this._encryptionConfiguration?.internalValue;
+        }
+        if (this._encryptionType !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.encryptionType = this._encryptionType;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: TlsEncryptionProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._encryptionConfiguration.internalValue = undefined;
+            this._encryptionType = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._encryptionConfiguration.internalValue = value.encryptionConfiguration;
+            this._encryptionType = value.encryptionType;
+        }
+    }
+
+    // encryption_configuration - computed: true, optional: true, required: false
+    private _encryptionConfiguration = new ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationPropertyOutputReference(this, "encryption_configuration");
+    public get encryptionConfiguration() {
+        return this._encryptionConfiguration;
+    }
+    public putEncryptionConfiguration(value: ConfigurationStandardProtocolConfigurationRtmpPushTlsEncryptionEncryptionConfigurationProperty) {
+        this._encryptionConfiguration.internalValue = value;
+    }
+    public resetEncryptionConfiguration() {
+        this._encryptionConfiguration.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionConfigurationInput() {
+        return this._encryptionConfiguration.internalValue;
+    }
+
+    // encryption_type - computed: true, optional: true, required: false
+    private _encryptionType?: string; 
+    public get encryptionType() {
+        return this.getStringAttribute('encryption_type');
+    }
+    public set encryptionType(value: string) {
+        this._encryptionType = value;
+    }
+    public resetEncryptionType() {
+        this._encryptionType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionTypeInput() {
+        return this._encryptionType;
+    }
+}
+export interface RtmpPushProperty {
+    /**
+    * The name of the RTMP application on the destination server. Together with the stream name, the application name forms the RTMP URL path, in the pattern rtmp://destinationAddress/applicationName/streamName.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#application_name CcRouterOutput#application_name}
+    */
+    readonly applicationName?: string;
+    /**
+    * The IP address or hostname of the destination RTMP server that the router output pushes the stream to. Provide only the server address; specify the application and stream names separately.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
+    */
+    readonly destinationAddress?: string;
+    /**
+    * The TCP port on the destination RTMP server. For RTMP, valid values range from 1024 to 65535. For RTMPS (RTMP over TLS), valid values are 443 or 1024 to 65535. RTMP typically uses port 1935, and RTMPS typically uses port 443.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
+    */
+    readonly destinationPort?: number;
+    /**
+    * The name of the RTMP stream that the output publishes to the destination application. The stream name forms the final segment of the RTMP URL path.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#stream_name CcRouterOutput#stream_name}
+    */
+    readonly streamName?: string;
+    /**
+    * The Transport Layer Security (TLS) encryption settings used to establish a secure connection to a destination.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#tls_encryption CcRouterOutput#tls_encryption}
+    */
+    readonly tlsEncryption?: TlsEncryptionProperty;
+}
+export class RtmpPushPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): RtmpPushProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._applicationName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.applicationName = this._applicationName;
+        }
+        if (this._destinationAddress !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.destinationAddress = this._destinationAddress;
+        }
+        if (this._destinationPort !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.destinationPort = this._destinationPort;
+        }
+        if (this._streamName !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.streamName = this._streamName;
+        }
+        if (this._tlsEncryption?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.tlsEncryption = this._tlsEncryption?.internalValue;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: RtmpPushProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._applicationName = undefined;
+            this._destinationAddress = undefined;
+            this._destinationPort = undefined;
+            this._streamName = undefined;
+            this._tlsEncryption.internalValue = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._applicationName = value.applicationName;
+            this._destinationAddress = value.destinationAddress;
+            this._destinationPort = value.destinationPort;
+            this._streamName = value.streamName;
+            this._tlsEncryption.internalValue = value.tlsEncryption;
+        }
+    }
+
+    // application_name - computed: true, optional: true, required: false
+    private _applicationName?: string; 
+    public get applicationName() {
+        return this.getStringAttribute('application_name');
+    }
+    public set applicationName(value: string) {
+        this._applicationName = value;
+    }
+    public resetApplicationName() {
+        this._applicationName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get applicationNameInput() {
+        return this._applicationName;
+    }
+
+    // destination_address - computed: true, optional: true, required: false
+    private _destinationAddress?: string; 
+    public get destinationAddress() {
+        return this.getStringAttribute('destination_address');
+    }
+    public set destinationAddress(value: string) {
+        this._destinationAddress = value;
+    }
+    public resetDestinationAddress() {
+        this._destinationAddress = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get destinationAddressInput() {
+        return this._destinationAddress;
+    }
+
+    // destination_port - computed: true, optional: true, required: false
+    private _destinationPort?: number; 
+    public get destinationPort() {
+        return this.getNumberAttribute('destination_port');
+    }
+    public set destinationPort(value: number) {
+        this._destinationPort = value;
+    }
+    public resetDestinationPort() {
+        this._destinationPort = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get destinationPortInput() {
+        return this._destinationPort;
+    }
+
+    // stream_name - computed: true, optional: true, required: false
+    private _streamName?: string; 
+    public get streamName() {
+        return this.getStringAttribute('stream_name');
+    }
+    public set streamName(value: string) {
+        this._streamName = value;
+    }
+    public resetStreamName() {
+        this._streamName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get streamNameInput() {
+        return this._streamName;
+    }
+
+    // tls_encryption - computed: true, optional: true, required: false
+    private _tlsEncryption = new TlsEncryptionPropertyOutputReference(this, "tls_encryption");
+    public get tlsEncryption() {
+        return this._tlsEncryption;
+    }
+    public putTlsEncryption(value: TlsEncryptionProperty) {
+        this._tlsEncryption.internalValue = value;
+    }
+    public resetTlsEncryption() {
+        this._tlsEncryption.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tlsEncryptionInput() {
+        return this._tlsEncryption.internalValue;
+    }
+}
 export interface RtpRouterOutputConfigurationProperty {
     /**
     * The destination IP address for the RTP protocol in the router output configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
     */
     readonly destinationAddress?: string;
     /**
     * The destination port number for the RTP protocol in the router output configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
     */
     readonly destinationPort?: number;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#forward_error_correction CcRouterOutput#forward_error_correction}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#forward_error_correction CcRouterOutput#forward_error_correction}
     */
     readonly forwardErrorCorrection?: string;
 }
@@ -2281,13 +3339,13 @@ export interface ConfigurationStandardProtocolConfigurationSrtCallerEncryptionCo
     /**
     * The ARN of the IAM role assumed by MediaConnect to access the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the Secrets Manager secret used for transit encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -2375,7 +3433,7 @@ export interface SrtEncryptionConfigurationProperty {
     /**
     * The configuration settings for transit encryption using Secrets Manager, including the secret ARN and role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key CcRouterOutput#encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key CcRouterOutput#encryption_key}
     */
     readonly encryptionKey?: ConfigurationStandardProtocolConfigurationSrtCallerEncryptionConfigurationEncryptionKeyProperty;
 }
@@ -2441,31 +3499,31 @@ export interface SrtCallerRouterOutputConfigurationProperty {
     /**
     * The destination IP address for the SRT protocol in caller mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_address CcRouterOutput#destination_address}
     */
     readonly destinationAddress?: string;
     /**
     * The destination port number for the SRT protocol in caller mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#destination_port CcRouterOutput#destination_port}
     */
     readonly destinationPort?: number;
     /**
     * Contains the configuration settings for encrypting SRT streams, including the encryption key details and encryption parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_configuration CcRouterOutput#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_configuration CcRouterOutput#encryption_configuration}
     */
     readonly encryptionConfiguration?: SrtEncryptionConfigurationProperty;
     /**
     * The minimum latency in milliseconds for the SRT protocol in caller mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#minimum_latency_milliseconds CcRouterOutput#minimum_latency_milliseconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#minimum_latency_milliseconds CcRouterOutput#minimum_latency_milliseconds}
     */
     readonly minimumLatencyMilliseconds?: number;
     /**
     * The stream ID for the SRT protocol in caller mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#stream_id CcRouterOutput#stream_id}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#stream_id CcRouterOutput#stream_id}
     */
     readonly streamId?: string;
 }
@@ -2619,13 +3677,13 @@ export interface ConfigurationStandardProtocolConfigurationSrtListenerEncryption
     /**
     * The ARN of the IAM role assumed by MediaConnect to access the Secrets Manager secret.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#role_arn CcRouterOutput#role_arn}
     */
     readonly roleArn?: string;
     /**
     * The ARN of the Secrets Manager secret used for transit encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#secret_arn CcRouterOutput#secret_arn}
     */
     readonly secretArn?: string;
 }
@@ -2709,15 +3767,15 @@ export class ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConf
         return this._secretArn;
     }
 }
-export interface EncryptionConfigurationProperty {
+export interface ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty {
     /**
     * The configuration settings for transit encryption using Secrets Manager, including the secret ARN and role ARN.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_key CcRouterOutput#encryption_key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_key CcRouterOutput#encryption_key}
     */
     readonly encryptionKey?: ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationEncryptionKeyProperty;
 }
-export class EncryptionConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+export class ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyOutputReference extends cdktn.ComplexObject {
     private isEmptyObject = false;
     private resolvableValue?: cdktn.IResolvable;
 
@@ -2729,7 +3787,7 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
         super(terraformResource, terraformAttribute, false);
     }
 
-    public get internalValue(): EncryptionConfigurationProperty | cdktn.IResolvable | undefined {
+    public get internalValue(): ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty | cdktn.IResolvable | undefined {
         if (this.resolvableValue) {
             return this.resolvableValue;
         }
@@ -2742,7 +3800,7 @@ export class EncryptionConfigurationPropertyOutputReference extends cdktn.Comple
         return hasAnyValues ? internalValueResult : undefined;
     }
 
-    public set internalValue(value: EncryptionConfigurationProperty | cdktn.IResolvable | undefined) {
+    public set internalValue(value: ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty | cdktn.IResolvable | undefined) {
         if (value === undefined) {
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
@@ -2779,19 +3837,19 @@ export interface SrtListenerRouterOutputConfigurationProperty {
     /**
     * Contains the configuration settings for encrypting SRT streams, including the encryption key details and encryption parameters.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#encryption_configuration CcRouterOutput#encryption_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#encryption_configuration CcRouterOutput#encryption_configuration}
     */
-    readonly encryptionConfiguration?: EncryptionConfigurationProperty;
+    readonly encryptionConfiguration?: ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty;
     /**
     * The minimum latency in milliseconds for the SRT protocol in listener mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#minimum_latency_milliseconds CcRouterOutput#minimum_latency_milliseconds}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#minimum_latency_milliseconds CcRouterOutput#minimum_latency_milliseconds}
     */
     readonly minimumLatencyMilliseconds?: number;
     /**
     * The port number for the SRT protocol in listener mode.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#port CcRouterOutput#port}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#port CcRouterOutput#port}
     */
     readonly port?: number;
 }
@@ -2850,11 +3908,11 @@ export class SrtListenerRouterOutputConfigurationPropertyOutputReference extends
     }
 
     // encryption_configuration - computed: true, optional: true, required: false
-    private _encryptionConfiguration = new EncryptionConfigurationPropertyOutputReference(this, "encryption_configuration");
+    private _encryptionConfiguration = new ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationPropertyOutputReference(this, "encryption_configuration");
     public get encryptionConfiguration() {
         return this._encryptionConfiguration;
     }
-    public putEncryptionConfiguration(value: EncryptionConfigurationProperty) {
+    public putEncryptionConfiguration(value: ConfigurationStandardProtocolConfigurationSrtListenerEncryptionConfigurationProperty) {
         this._encryptionConfiguration.internalValue = value;
     }
     public resetEncryptionConfiguration() {
@@ -2901,25 +3959,31 @@ export interface RouterOutputProtocolConfigurationProperty {
     /**
     * The configuration settings for a router output using the RIST (Reliable Internet Stream Transport) protocol, including the destination address and port.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#rist CcRouterOutput#rist}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#rist CcRouterOutput#rist}
     */
     readonly rist?: RistRouterOutputConfigurationProperty;
     /**
+    * The configuration settings for a router output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified. These settings include the destination address and port, the application and stream names, and optional TLS encryption configuration.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#rtmp_push CcRouterOutput#rtmp_push}
+    */
+    readonly rtmpPush?: RtmpPushProperty;
+    /**
     * The configuration settings for a router output using the RTP (Real-Time Transport Protocol) protocol, including the destination address and port, and forward error correction state.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#rtp CcRouterOutput#rtp}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#rtp CcRouterOutput#rtp}
     */
     readonly rtp?: RtpRouterOutputConfigurationProperty;
     /**
     * The configuration settings for a router output using the SRT (Secure Reliable Transport) protocol in caller mode, including the destination address and port, minimum latency, stream ID, and encryption key configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#srt_caller CcRouterOutput#srt_caller}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#srt_caller CcRouterOutput#srt_caller}
     */
     readonly srtCaller?: SrtCallerRouterOutputConfigurationProperty;
     /**
     * The configuration settings for a router output using the SRT (Secure Reliable Transport) protocol in listener mode, including the port, minimum latency, and encryption key configuration.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#srt_listener CcRouterOutput#srt_listener}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#srt_listener CcRouterOutput#srt_listener}
     */
     readonly srtListener?: SrtListenerRouterOutputConfigurationProperty;
 }
@@ -2945,6 +4009,10 @@ export class RouterOutputProtocolConfigurationPropertyOutputReference extends cd
             hasAnyValues = true;
             internalValueResult.rist = this._rist?.internalValue;
         }
+        if (this._rtmpPush?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.rtmpPush = this._rtmpPush?.internalValue;
+        }
         if (this._rtp?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.rtp = this._rtp?.internalValue;
@@ -2965,6 +4033,7 @@ export class RouterOutputProtocolConfigurationPropertyOutputReference extends cd
             this.isEmptyObject = false;
             this.resolvableValue = undefined;
             this._rist.internalValue = undefined;
+            this._rtmpPush.internalValue = undefined;
             this._rtp.internalValue = undefined;
             this._srtCaller.internalValue = undefined;
             this._srtListener.internalValue = undefined;
@@ -2977,6 +4046,7 @@ export class RouterOutputProtocolConfigurationPropertyOutputReference extends cd
             this.isEmptyObject = Object.keys(value).length === 0;
             this.resolvableValue = undefined;
             this._rist.internalValue = value.rist;
+            this._rtmpPush.internalValue = value.rtmpPush;
             this._rtp.internalValue = value.rtp;
             this._srtCaller.internalValue = value.srtCaller;
             this._srtListener.internalValue = value.srtListener;
@@ -2997,6 +4067,22 @@ export class RouterOutputProtocolConfigurationPropertyOutputReference extends cd
     // Temporarily expose input value. Use with caution.
     public get ristInput() {
         return this._rist.internalValue;
+    }
+
+    // rtmp_push - computed: true, optional: true, required: false
+    private _rtmpPush = new RtmpPushPropertyOutputReference(this, "rtmp_push");
+    public get rtmpPush() {
+        return this._rtmpPush;
+    }
+    public putRtmpPush(value: RtmpPushProperty) {
+        this._rtmpPush.internalValue = value;
+    }
+    public resetRtmpPush() {
+        this._rtmpPush.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get rtmpPushInput() {
+        return this._rtmpPush.internalValue;
     }
 
     // rtp - computed: true, optional: true, required: false
@@ -3051,17 +4137,17 @@ export interface StandardRouterOutputConfigurationProperty {
     /**
     * The Amazon Resource Name (ARN) of the network interface associated with the standard router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#network_interface_arn CcRouterOutput#network_interface_arn}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#network_interface_arn CcRouterOutput#network_interface_arn}
     */
     readonly networkInterfaceArn?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#protocol CcRouterOutput#protocol}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#protocol CcRouterOutput#protocol}
     */
     readonly protocol?: string;
     /**
     * The protocol configuration settings for a router output.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#protocol_configuration CcRouterOutput#protocol_configuration}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#protocol_configuration CcRouterOutput#protocol_configuration}
     */
     readonly protocolConfiguration?: RouterOutputProtocolConfigurationProperty;
 }
@@ -3169,21 +4255,27 @@ export class StandardRouterOutputConfigurationPropertyOutputReference extends cd
 }
 export interface RouterOutputConfigurationProperty {
     /**
-    * Configuration settings for connecting a router output to a MediaConnect flow source.
+    * Configuration settings for connecting a router output to a MediaConnect flow source. To connect the router output to the flow source, provide both flowArn and flowSourceArn. To disconnect it, call the update operation and omit both fields while keeping this configuration object. You can't change destinationTransitEncryption while the router output is connected to a flow source. To change it, first disconnect the router output, then update the encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#media_connect_flow CcRouterOutput#media_connect_flow}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#media_connect_flow CcRouterOutput#media_connect_flow}
     */
     readonly mediaConnectFlow?: MediaConnectFlowRouterOutputConfigurationProperty;
     /**
-    * Configuration settings for connecting a router output to a MediaLive input.
+    * Configuration settings for connecting a router output to a MediaLive input. To connect the router output to the MediaLive input, provide both mediaLiveInputArn and mediaLivePipelineId. To disconnect it, call the update operation and omit both fields while keeping this configuration object. You can't change destinationTransitEncryption while the router output is connected to a MediaLive input. To change it, first disconnect the router output, then update the encryption.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#media_live_input CcRouterOutput#media_live_input}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#media_live_input CcRouterOutput#media_live_input}
     */
     readonly mediaLiveInput?: MediaLiveInputRouterOutputConfigurationProperty;
     /**
+    * Configuration settings for a router output that is represented by a source endpoint.
+    *
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#source_endpoint CcRouterOutput#source_endpoint}
+    */
+    readonly sourceEndpoint?: SourceEndpointProperty;
+    /**
     * The configuration settings for a standard router output, including the protocol, protocol-specific configuration, network interface, and availability zone.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#standard CcRouterOutput#standard}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#standard CcRouterOutput#standard}
     */
     readonly standard?: StandardRouterOutputConfigurationProperty;
 }
@@ -3213,6 +4305,10 @@ export class RouterOutputConfigurationPropertyOutputReference extends cdktn.Comp
             hasAnyValues = true;
             internalValueResult.mediaLiveInput = this._mediaLiveInput?.internalValue;
         }
+        if (this._sourceEndpoint?.internalValue !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.sourceEndpoint = this._sourceEndpoint?.internalValue;
+        }
         if (this._standard?.internalValue !== undefined) {
             hasAnyValues = true;
             internalValueResult.standard = this._standard?.internalValue;
@@ -3226,6 +4322,7 @@ export class RouterOutputConfigurationPropertyOutputReference extends cdktn.Comp
             this.resolvableValue = undefined;
             this._mediaConnectFlow.internalValue = undefined;
             this._mediaLiveInput.internalValue = undefined;
+            this._sourceEndpoint.internalValue = undefined;
             this._standard.internalValue = undefined;
         }
         else if (cdktn.Tokenization.isResolvable(value)) {
@@ -3237,6 +4334,7 @@ export class RouterOutputConfigurationPropertyOutputReference extends cdktn.Comp
             this.resolvableValue = undefined;
             this._mediaConnectFlow.internalValue = value.mediaConnectFlow;
             this._mediaLiveInput.internalValue = value.mediaLiveInput;
+            this._sourceEndpoint.internalValue = value.sourceEndpoint;
             this._standard.internalValue = value.standard;
         }
     }
@@ -3273,6 +4371,22 @@ export class RouterOutputConfigurationPropertyOutputReference extends cdktn.Comp
         return this._mediaLiveInput.internalValue;
     }
 
+    // source_endpoint - computed: true, optional: true, required: false
+    private _sourceEndpoint = new SourceEndpointPropertyOutputReference(this, "source_endpoint");
+    public get sourceEndpoint() {
+        return this._sourceEndpoint;
+    }
+    public putSourceEndpoint(value: SourceEndpointProperty) {
+        this._sourceEndpoint.internalValue = value;
+    }
+    public resetSourceEndpoint() {
+        this._sourceEndpoint.internalValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sourceEndpointInput() {
+        return this._sourceEndpoint.internalValue;
+    }
+
     // standard - computed: true, optional: true, required: false
     private _standard = new StandardRouterOutputConfigurationPropertyOutputReference(this, "standard");
     public get standard() {
@@ -3289,15 +4403,79 @@ export class RouterOutputConfigurationPropertyOutputReference extends cdktn.Comp
         return this._standard.internalValue;
     }
 }
+export interface FabricConfigurationProperty {
+    /**
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#recovery_latency_mode CcRouterOutput#recovery_latency_mode}
+    */
+    readonly recoveryLatencyMode?: string;
+}
+export class FabricConfigurationPropertyOutputReference extends cdktn.ComplexObject {
+    private isEmptyObject = false;
+    private resolvableValue?: cdktn.IResolvable;
+
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    */
+    public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+        super(terraformResource, terraformAttribute, false);
+    }
+
+    public get internalValue(): FabricConfigurationProperty | cdktn.IResolvable | undefined {
+        if (this.resolvableValue) {
+            return this.resolvableValue;
+        }
+        let hasAnyValues = this.isEmptyObject;
+        const internalValueResult: any = {};
+        if (this._recoveryLatencyMode !== undefined) {
+            hasAnyValues = true;
+            internalValueResult.recoveryLatencyMode = this._recoveryLatencyMode;
+        }
+        return hasAnyValues ? internalValueResult : undefined;
+    }
+
+    public set internalValue(value: FabricConfigurationProperty | cdktn.IResolvable | undefined) {
+        if (value === undefined) {
+            this.isEmptyObject = false;
+            this.resolvableValue = undefined;
+            this._recoveryLatencyMode = undefined;
+        }
+        else if (cdktn.Tokenization.isResolvable(value)) {
+            this.isEmptyObject = false;
+            this.resolvableValue = value;
+        }
+        else {
+            this.isEmptyObject = Object.keys(value).length === 0;
+            this.resolvableValue = undefined;
+            this._recoveryLatencyMode = value.recoveryLatencyMode;
+        }
+    }
+
+    // recovery_latency_mode - computed: true, optional: true, required: false
+    private _recoveryLatencyMode?: string; 
+    public get recoveryLatencyMode() {
+        return this.getStringAttribute('recovery_latency_mode');
+    }
+    public set recoveryLatencyMode(value: string) {
+        this._recoveryLatencyMode = value;
+    }
+    public resetRecoveryLatencyMode() {
+        this._recoveryLatencyMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get recoveryLatencyModeInput() {
+        return this._recoveryLatencyMode;
+    }
+}
 export interface PreferredDayTimeMaintenanceConfigurationProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#day CcRouterOutput#day}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#day CcRouterOutput#day}
     */
     readonly day?: string;
     /**
     * The preferred time for maintenance operations.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#time CcRouterOutput#time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#time CcRouterOutput#time}
     */
     readonly time?: string;
 }
@@ -3385,13 +4563,13 @@ export interface MaintenanceConfigurationProperty {
     /**
     * Configuration settings for default maintenance scheduling.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#default CcRouterOutput#default}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#default CcRouterOutput#default}
     */
     readonly default?: string;
     /**
     * Configuration for preferred day and time maintenance settings.
     *
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#preferred_day_time CcRouterOutput#preferred_day_time}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#preferred_day_time CcRouterOutput#preferred_day_time}
     */
     readonly preferredDayTime?: PreferredDayTimeMaintenanceConfigurationProperty;
 }
@@ -3477,11 +4655,11 @@ export class MaintenanceConfigurationPropertyOutputReference extends cdktn.Compl
 }
 export interface TagProperty {
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#key CcRouterOutput#key}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#key CcRouterOutput#key}
     */
     readonly key?: string;
     /**
-    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.99.0/docs/resources/mediaconnect_router_output#value CcRouterOutput#value}
+    * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/awscc/1.110.0/docs/resources/mediaconnect_router_output#value CcRouterOutput#value}
     */
     readonly value?: string;
 }
